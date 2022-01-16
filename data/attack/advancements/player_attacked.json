@@ -87,7 +87,7 @@
         "damage": {
           "dealt": {
             "min": 2.0,
-            "max": 13.999
+            "max": 11.999
           }
         }
       }
@@ -97,7 +97,7 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 14.0,
+            "min": 12.0,
             "max": 20.0
           }
         }
@@ -109,7 +109,7 @@
         "damage": {
           "dealt": {
             "min": 0,
-            "max": 0.299
+            "max": 0.399
           }
         }
       }
@@ -119,8 +119,8 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 0.3,
-            "max": 0.399
+            "min": 0.4,
+            "max": 0.749
           }
         }
       }
@@ -130,8 +130,8 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 0.4,
-            "max": 0.499
+            "min": 0.75,
+            "max": 0.999
           }
         }
       }
@@ -141,8 +141,8 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 0.5,
-            "max": 0.599
+            "min": 1.0,
+            "max": 1.199
           }
         }
       }
@@ -152,62 +152,7 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 0.6,
-            "max": 0.699
-          }
-        }
-      }
-    },
-    "melee_charge5": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0.7,
-            "max": 0.799
-          }
-        }
-      }
-    },
-    "melee_charge6": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0.8,
-            "max": 0.899
-          }
-        }
-      }
-    },
-    "melee_charge7": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0.9,
-            "max": 0.999
-          }
-        }
-      }
-    },
-    "melee_charge8": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 1.0,
-            "max": 1.099
-          }
-        }
-      }
-    },
-    "melee_charge9": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 1.1,
+            "min": 1.2,
             "max": 1.999
           }
         }
@@ -219,7 +164,7 @@
         "damage": {
           "dealt": {
             "min": 2.0,
-            "max": 3.999
+            "max": 5.999
           }
         }
       }
@@ -229,8 +174,8 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 4.0,
-            "max": 5.999
+            "min": 6.0,
+            "max": 9.499
           }
         }
       }
@@ -240,35 +185,13 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 6.0,
-            "max": 7.999
-          }
-        }
-      }
-    },
-    "ranged_charge3": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 8.0,
-            "max": 9.999
-          }
-        }
-      }
-    },
-    "ranged_charge4": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 10.0,
+            "min": 9.5,
             "max": 11.999
           }
         }
       }
     },
-    "ranged_charge5": {
+    "ranged_charge3": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "damage": {
@@ -279,7 +202,7 @@
         }
       }
     },
-    "ranged_charge6": {
+    "ranged_charge4": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "damage": {
@@ -461,18 +384,11 @@
       "melee_charge2",
       "melee_charge3",
       "melee_charge4",
-      "melee_charge5",
-      "melee_charge6",
-      "melee_charge7",
-      "melee_charge8",
-      "melee_charge9",
       "ranged_charge0",
       "ranged_charge1",
       "ranged_charge2",
       "ranged_charge3",
-      "ranged_charge4",
-      "ranged_charge5",
-      "ranged_charge6"
+      "ranged_charge4"
     ],
     [
       "MobID8.1",
