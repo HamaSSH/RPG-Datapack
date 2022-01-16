@@ -1,0 +1,35 @@
+{
+  "datapack.lint.selectorSortKeys":[
+    "warning",
+    [
+      "type",
+      "gamemode",
+      "gamemodeNeg",
+      "team",
+      "teamNeg",
+      "typeNeg",
+      "tag",
+      "tagNeg",
+      "name",
+      "nameNeg",
+      "scores",
+      "advancements",
+      "nbt",
+      "nbtNeg",
+      "predicate",
+      "predicateNeg",
+      "level",
+      "x_rotation",
+      "y_rotation",
+      "distance",
+      "x",
+      "y",
+      "z",
+      "dx",
+      "dy",
+      "dz",
+      "sort",
+      "limit"
+    ]
+  ]
+}
