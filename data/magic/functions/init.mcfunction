@@ -7,3 +7,6 @@
 # 魔法呼び出し
   execute store result score $MagicID Temporary run data get storage magic:temp Data.tag.CustomModelData
   execute if score $MagicID Temporary matches 4101 run function magic:asset/4101.fire_ball/cost
+# リセット
+  scoreboard players reset $MagicDamage
+  scoreboard players reset $MagicID
