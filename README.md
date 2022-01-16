@@ -1,2 +1,2 @@
 # RPG-Datapack
-マイクラ本格RPGのデータパックリポジトリ
+マイクラ本格RPGのDatapackリポジトリ
