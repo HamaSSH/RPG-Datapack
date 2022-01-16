@@ -41,4 +41,4 @@
   # execute if entity @s[advancements={attack:player_attacked={ranged_charge5=true}}] run say ranged_charge5
   # execute if entity @s[advancements={attack:player_attacked={ranged_charge6=true}}] run say ranged_charge6
 # クリティカルダメージ
-  execute if entity @s[scores={crt=1..},advancements={attack:player_attacked={allow_critical=true}}] run function player:status/crt/_
+  execute if predicate attack:allow_critical run function player:status/crt/_

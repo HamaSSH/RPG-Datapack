@@ -10,7 +10,7 @@
     "player": {
       "advancements": {
         "attack:player_attacked": {
-          "allow_critical": false
+          "melee_crit": false
         }
       }
     }
