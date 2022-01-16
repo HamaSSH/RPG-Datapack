@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Tags:[\"SwordSkill\"]}",
+    "equipment": {
+      "mainhand": {
+        "nbt": "{sword:1b}"
+      }
+    }
+  }
+}

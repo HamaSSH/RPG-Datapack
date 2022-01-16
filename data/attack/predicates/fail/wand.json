@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "nbt": "{wand:1b}"
+      }
+    },
+    "player": {
+      "advancements": {
+        "attack:player_attacked": {
+          "allow_critical": false
+        }
+      }
+    }
+  }
+}

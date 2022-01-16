@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Tags:[\"WandSkill\"]}",
+    "equipment": {
+      "mainhand": {
+        "nbt": "{wand:1b}"
+      }
+    }
+  }
+}

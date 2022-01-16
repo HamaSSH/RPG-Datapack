@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "item:gold"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "player:get_gold"
+  }
+}

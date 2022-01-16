@@ -1,0 +1,8 @@
+execute if score $MobID Temporary matches 504 run data modify storage mob:temp CustomName set from storage mob:name Data[504]
+execute if score $MobID Temporary matches 505 run data modify storage mob:temp CustomName set from storage mob:name Data[505]
+execute if score $MobID Temporary matches 506 run data modify storage mob:temp CustomName set from storage mob:name Data[506]
+execute if score $MobID Temporary matches 507 run data modify storage mob:temp CustomName set from storage mob:name Data[507]
+execute if score $MobID Temporary matches 508 run data modify storage mob:temp CustomName set from storage mob:name Data[508]
+execute if score $MobID Temporary matches 509 run data modify storage mob:temp CustomName set from storage mob:name Data[509]
+execute if score $MobID Temporary matches 510 run data modify storage mob:temp CustomName set from storage mob:name Data[510]
+execute if score $MobID Temporary matches 511 run data modify storage mob:temp CustomName set from storage mob:name Data[511]

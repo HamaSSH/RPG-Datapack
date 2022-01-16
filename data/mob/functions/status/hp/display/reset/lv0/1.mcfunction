@@ -1,0 +1,8 @@
+execute if score $MobID Temporary matches 8 run data modify storage mob:temp CustomName set from storage mob:name Data[8]
+execute if score $MobID Temporary matches 9 run data modify storage mob:temp CustomName set from storage mob:name Data[9]
+execute if score $MobID Temporary matches 10 run data modify storage mob:temp CustomName set from storage mob:name Data[10]
+execute if score $MobID Temporary matches 11 run data modify storage mob:temp CustomName set from storage mob:name Data[11]
+execute if score $MobID Temporary matches 12 run data modify storage mob:temp CustomName set from storage mob:name Data[12]
+execute if score $MobID Temporary matches 13 run data modify storage mob:temp CustomName set from storage mob:name Data[13]
+execute if score $MobID Temporary matches 14 run data modify storage mob:temp CustomName set from storage mob:name Data[14]
+execute if score $MobID Temporary matches 15 run data modify storage mob:temp CustomName set from storage mob:name Data[15]

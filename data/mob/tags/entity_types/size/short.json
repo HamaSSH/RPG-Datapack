@@ -1,0 +1,29 @@
+{
+  "description": "Short Mobs",
+  "values": [
+    "minecraft:axolotl",
+    "minecraft:bat",
+    "minecraft:bee",
+    "minecraft:cat",
+    "minecraft:cave_spider",
+    "minecraft:chicken",
+    "minecraft:cod",
+    "minecraft:dolphin",
+    "minecraft:endermite",
+    "minecraft:fox",
+    "minecraft:glow_squid",
+    "minecraft:ocelot",
+    "minecraft:parrot",
+    "minecraft:phantom",
+    "minecraft:pufferfish",
+    "minecraft:rabbit",
+    "minecraft:salmon",
+    "minecraft:silverfish",
+    "minecraft:spider",
+    "minecraft:squid",
+    "minecraft:tropical_fish",
+    "minecraft:turtle",
+    "minecraft:vex",
+    "minecraft:wolf"
+  ]
+}

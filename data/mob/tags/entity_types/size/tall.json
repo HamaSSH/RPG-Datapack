@@ -1,0 +1,8 @@
+{
+	"description": "Tall Mobs",
+  "values": [
+    "minecraft:enderman",
+    "minecraft:iron_golem",
+    "minecraft:wither_skeleton"
+  ]
+}

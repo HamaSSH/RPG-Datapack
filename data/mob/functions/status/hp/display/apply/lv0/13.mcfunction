@@ -1,0 +1,2 @@
+execute if score @s hp_ratio matches 27 run data modify entity @s CustomName set value '[{"text":"██████▊","color":"green"},{"text":"▎███","color":"dark_gray"}]'
+execute if score @s hp_ratio matches 28 run data modify entity @s CustomName set value '[{"text":"███████","color":"green"},{"text":"███","color":"dark_gray"}]'
