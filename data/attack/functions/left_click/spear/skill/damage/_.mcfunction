@@ -3,6 +3,8 @@
     scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
     scoreboard players operation $DmgDealt Temporary *= #4 Constant
     scoreboard players add $DmgDealt Temporary 10
+  # クリティカル時のダメージ表示用
+    execute if entity @s[tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4
   # ノックバック
     scoreboard players set $XPower Temporary 100
     scoreboard players set $YPower Temporary 300
@@ -11,6 +13,7 @@
   # リセット
     function core:trigger/sneak/reset
     scoreboard players reset $DmgDealt
+    scoreboard players reset $DamageColor
     scoreboard players reset $XPower
     scoreboard players reset $YPower
 # 属性

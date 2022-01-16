@@ -1,5 +1,7 @@
 ### ハンマーの左クリック検知
 
+# クリティカル時のダメージ表示用
+  execute if entity @s[tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4
 # ノックバック
   scoreboard players set $XPower Temporary 120
   scoreboard players set $YPower Temporary 150
@@ -11,5 +13,6 @@
   playsound minecraft:custom.hammer master @a ~ ~ ~ 1 0.9
 # リセット
   function core:trigger/sneak/reset
+  scoreboard players reset $DamageColor
   scoreboard players reset $XPower
   scoreboard players reset $YPower

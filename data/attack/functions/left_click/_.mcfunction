@@ -25,4 +25,5 @@
 # 弓の左クリック検知
   execute if predicate attack:charged/bow run function attack:left_click/bow/_
 # リセット
+  tag @s remove CriticalHit
   scoreboard players reset $DmgDealt

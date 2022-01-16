@@ -151,6 +151,37 @@
                   "range": 3
                 }
               ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "-",
+                  "color": "#FC806B",
+                  "bold": true
+                },
+                {
+                  "nbt": "Damage",
+                  "storage": "attack:temp",
+                  "color": "#FC806B",
+                  "bold": true
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:value_check",
+                  "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "$DamageColor"
+                    },
+                    "score": "Temporary"
+                  },
+                  "range": 4
+                }
+              ]
             }
           ]
         }

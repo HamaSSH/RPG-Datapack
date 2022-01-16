@@ -6,6 +6,8 @@
 # 一の位四捨五入
   scoreboard players add @s dmg_dealt 350
   scoreboard players operation @s dmg_dealt /= #700 Constant
+# 会心攻撃成功！
+  tag @s add CriticalHit
 # 演出(ゴｷｨ)
   playsound minecraft:custom.crit master @s ~ ~ ~ 0.6 1.0
 # リセット
