@@ -197,7 +197,7 @@
         "damage": {
           "dealt": {
             "min": 12.0,
-            "max": 13.999
+            "max": 15.999
           }
         }
       }
@@ -207,7 +207,7 @@
       "conditions": {
         "damage": {
           "dealt": {
-            "min": 14.0,
+            "min": 16.0,
             "max": 20.0
           }
         }
