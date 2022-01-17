@@ -6,4 +6,4 @@
   particle minecraft:crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 1
   particle minecraft:crit ^ ^1.7 ^2 0.25 0.1 0.25 0.2 1
   particle minecraft:crit ^ ^1.7 ^4 0.25 0.1 0.25 0.2 1
-  playsound minecraft:custom.fail master @a ~ ~ ~ 0.9 0.9
+  playsound minecraft:custom.weapon.fail master @a ~ ~ ~ 1.0 1.0

@@ -5,7 +5,7 @@
   scoreboard players operation $GoldIngot Temporary *= #10 Constant
   scoreboard players operation $GoldBlock Temporary *= #100 Constant
 # 直接加算
-  playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
+  playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
   scoreboard players operation @s gold += $GoldNugget Temporary
   scoreboard players operation @s gold += $GoldIngot Temporary
   scoreboard players operation @s gold += $GoldBlock Temporary
