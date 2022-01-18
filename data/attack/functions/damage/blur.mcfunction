@@ -7,4 +7,3 @@
 # リセット
   scoreboard players reset $DmgDistribute
   scoreboard players reset $DmgBlur
-  tellraw @p {"score":{"name": "@s","objective": "dmg_received"}}

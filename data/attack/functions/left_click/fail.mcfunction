@@ -14,4 +14,4 @@
   tag @s add HurtTime
   scoreboard players set @s combat_timer 10
 # 死亡処理
-  execute if score @s hp matches ..0 run function mob:death
+  execute if score @s hp matches ..0 run function mob:on_death/_

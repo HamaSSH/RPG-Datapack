@@ -1,6 +1,7 @@
 # test
   scoreboard players set @s hp 1000
   scoreboard players set @s hp_max 1000
+  scoreboard players set @s xp 50
 # 重複のないようなMobIDの生成
   scoreboard players add World MobID 1
   scoreboard players operation World MobID %= #512 Constant

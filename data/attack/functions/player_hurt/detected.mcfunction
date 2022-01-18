@@ -8,5 +8,3 @@
     function player:status/def/apply
     function attack:damage/blur
   execute as @a[tag=this,limit=1] at @s run function player:on_hurt/dmg_received
-# 死亡処理
-  tellraw @p {"score":{"name":"@a[tag=this,limit=1]","objective":"dmg_received"}}

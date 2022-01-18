@@ -14,5 +14,7 @@
 # 無敵時間
   tag @s add HurtTime
   scoreboard players set @s combat_timer 10
+# 攻撃したプレイヤーを記録
+  scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
 # 死亡処理
-  execute if score @s hp matches ..0 run function mob:death
+  execute if score @s hp matches ..0 run function mob:on_death/_
