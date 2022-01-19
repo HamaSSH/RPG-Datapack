@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "player:get_gold"
+    "function": "player:status/gold/get"
   }
 }

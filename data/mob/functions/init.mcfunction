@@ -1,7 +1,7 @@
-# test
-  scoreboard players set @s hp 1000
-  scoreboard players set @s hp_max 1000
-  scoreboard players set @s xp 50
+# スコアセット
+  execute store result score @s hp run data get storage mob:temp Data.hp
+  execute store result score @s hp_max run data get storage mob:temp Data.hp
+  execute store result score @s ad run data get storage mob:temp Data.ad
 # 重複のないようなMobIDの生成
   scoreboard players add World MobID 1
   scoreboard players operation World MobID %= #512 Constant
@@ -38,5 +38,6 @@
 # 名前をstorageに保存
   function mob:status/hp/display/name/_
 # リセット
+  data remove storage mob:temp Data
   scoreboard players reset $IDtoTag
   tag @s remove Init

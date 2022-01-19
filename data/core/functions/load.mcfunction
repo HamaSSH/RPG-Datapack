@@ -8,6 +8,8 @@ say reload
   scoreboard objectives add PreviousSlot dummy "選択スロット"
   scoreboard objectives add PreviousMP dummy "MP値保存"
   scoreboard objectives add XPValue dummy "XP値"
+  scoreboard objectives add GoldDisplay dummy "Gold表示"
+  scoreboard objectives add gold_timer dummy "Gold表示までの時間"
   scoreboard objectives add combat_timer dummy "無敵時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
 # 定数
