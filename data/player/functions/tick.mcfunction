@@ -1,5 +1,7 @@
 ### プレイヤー関連の#tick
 
+# 職業関連の#tick
+  function player:class/tick
 # HPMPの自然回復
   function player:status/regeneration
 # HPMPBarの操作

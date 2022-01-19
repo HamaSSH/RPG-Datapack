@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "team": "Warrior",
+    "equipment": {
+      "mainhand": {
+        "nbt": "{hammer:1b}"
+      }
+    }
+  }
+}
