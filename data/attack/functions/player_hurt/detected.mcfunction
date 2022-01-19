@@ -5,6 +5,6 @@
   scoreboard players operation @a[tag=this,limit=1] dmg_received = @s dmg_dealt
 # ダメージ処理
   # 防御＋ダメージブレ補正
-    function player:status/def/apply
-    function attack:damage/blur
+    execute as @a[tag=this,limit=1] run function player:status/def/apply
+    execute as @a[tag=this,limit=1] run function attack:damage/blur
   execute as @a[tag=this,limit=1] at @s run function player:on_hurt/dmg_received

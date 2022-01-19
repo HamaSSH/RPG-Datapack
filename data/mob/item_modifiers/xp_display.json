@@ -1,0 +1,17 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "text": "獲得XP: ",
+      "color": "#A3FEFF"
+    },
+    {
+      "score": {
+        "name": "$XPDisplay",
+        "objective": "Temporary"
+      },
+      "color": "#EDFFFE"
+    }
+  ]
+}

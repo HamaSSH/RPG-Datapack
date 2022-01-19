@@ -2,6 +2,7 @@
   execute store result score @s hp run data get storage mob:temp Data.hp
   execute store result score @s hp_max run data get storage mob:temp Data.hp
   execute store result score @s ad run data get storage mob:temp Data.ad
+  execute store result score @s xp run data get storage mob:temp Data.xp
 # 重複のないようなMobIDの生成
   scoreboard players add World MobID 1
   scoreboard players operation World MobID %= #512 Constant

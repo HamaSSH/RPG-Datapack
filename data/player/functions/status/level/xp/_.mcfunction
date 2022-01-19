@@ -8,8 +8,10 @@
   execute if entity @s[team=Warrior] run scoreboard players operation @s xp_warrior += @s xp_gained
   execute if entity @s[team=Wizard] run scoreboard players operation @s xp_wizard += @s xp_gained
   execute if entity @s[team=Hunter] run scoreboard players operation @s xp_hunter += @s xp_gained
-# xp加算処理
+# XP加算処理
   scoreboard players operation @s xp += @s xp_gained
   execute if score @s xp >= @s xp_next run function player:status/level/up
+# XP表示
+  function player:status/level/xp/display/_
 # リセット
   scoreboard players reset @s xp_gained
