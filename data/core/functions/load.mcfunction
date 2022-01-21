@@ -9,8 +9,11 @@ say reload
   scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
   scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick "右クリック"
   scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
-# 一定時間の保持が必要なスコア
+# asset用ID類
   scoreboard objectives add PlayerID dummy "プレイヤーID"
+  scoreboard objectives add MagicID dummy "魔法ID"
+  scoreboard objectives add MobID dummy "モブID"
+# 一定時間の保持が必要なスコア
   scoreboard objectives add PreviousSlot dummy "選択スロット"
   scoreboard objectives add PreviousMP dummy "MP値保存"
   scoreboard objectives add XPValue dummy "XP値"
