@@ -1,3 +1,5 @@
+# 魔法を使ったプレイヤーをタグ付け
+  tag @s add this
 # オフハンドのアイテムデータ → storage
   data modify storage magic:temp Data set from entity @s Inventory[{Slot:-106b}]
   execute store result score $MagicDamage Temporary run data get storage magic:temp Data.tag.bonus.magic_damage
@@ -6,7 +8,10 @@
   scoreboard players operation @s dmg_dealt += $MagicDamage Temporary
 # 魔法呼び出し
   execute store result score $MagicID Temporary run data get storage magic:temp Data.tag.CustomModelData
-  execute if score $MagicID Temporary matches 4101 run function magic:asset/4101.fire_ball/cost
+  execute store result score $MPCost Temporary run data get storage magic:temp Data.tag.bonus.magic_cost
+  function magic:lookup/_
 # リセット
+  tag @s remove this
+  data remove storage magic:temp Data
   scoreboard players reset $MagicDamage
   scoreboard players reset $MagicID
