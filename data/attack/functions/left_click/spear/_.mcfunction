@@ -11,7 +11,7 @@
   particle minecraft:crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 2 force
   particle minecraft:crit ^ ^1.7 ^2 0.25 0.1 0.25 0.2 3 force
   particle minecraft:crit ^ ^1.7 ^4 0.25 0.1 0.25 0.2 3 force
-  playsound minecraft:custom.weapon.spear master @a ~ ~ ~ 1.0 1.0
+  playsound resource:custom.weapon.spear master @a ~ ~ ~ 1.0 1.0
 # リセット
   function core:trigger/sneak/reset
   scoreboard players reset $DamageColor

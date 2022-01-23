@@ -9,6 +9,6 @@
 # 会心攻撃成功！
   tag @s add CriticalHit
 # 演出(ゴｷｨ)
-  playsound minecraft:custom.weapon.crit master @s ~ ~ ~ 1.0 1.0
+  playsound resource:custom.weapon.crit master @s ~ ~ ~ 1.0 1.0
 # リセット
   scoreboard players reset $CritMultiplier

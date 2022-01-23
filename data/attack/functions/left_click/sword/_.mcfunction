@@ -10,7 +10,7 @@
   execute positioned ^ ^ ^1 unless entity @e[type=#mob:mobs,tag=Enemy,distance=..2,limit=1] positioned ^ ^ ^1 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..5,sort=nearest,limit=4] if entity @s[distance=..2.4] run function attack:left_click/hit
 # 演出
   particle minecraft:sweep_attack ^ ^1 ^1 0 0 0 0.01 1 force
-  playsound minecraft:custom.weapon.sword player @a ~ ~ ~ 1.0 1.0
+  playsound resource:custom.weapon.sword master @a ~ ~ ~ 1.0 1.0
 # リセット
   function core:trigger/sneak/reset
   scoreboard players reset $DamageColor
