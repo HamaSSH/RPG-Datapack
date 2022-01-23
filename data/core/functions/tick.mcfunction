@@ -9,6 +9,7 @@
   execute as @a run function core:actionbar/_
 # 各namespaceの#tick呼び出し
   function attack:tick
+  execute at @a run function item:tick
   execute as @e[tag=Magic] at @s run function magic:tick
   execute as @e[type=#mob:mobs,tag=Enemy] at @s run function mob:tick
   execute as @a at @s run function player:tick
