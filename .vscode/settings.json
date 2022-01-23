@@ -31,5 +31,9 @@
       "sort",
       "limit"
     ]
+  ],
+  "datapack.lint.strictSoundEventCheck": [
+      "error",
+      "only-default-namespace"
   ]
 }
