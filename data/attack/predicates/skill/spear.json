@@ -5,7 +5,7 @@
     "nbt": "{Tags:[\"SpearSkill\"]}",
     "equipment": {
       "mainhand": {
-        "nbt": "{spear:1b}"
+        "nbt": "{weapon:\"spear\"}"
       }
     }
   }

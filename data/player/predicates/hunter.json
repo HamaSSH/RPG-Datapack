@@ -8,7 +8,7 @@
         "team": "Hunter",
         "equipment": {
           "mainhand": {
-            "nbt": "{wand:1b}"
+            "nbt": "{weapon:\"wand\"}"
           }
         }
       }
@@ -20,7 +20,7 @@
         "team": "Hunter",
         "equipment": {
           "offhand": {
-            "nbt": "{wand:1b}"
+            "nbt": "{weapon:\"wand\"}"
           }
         }
       }

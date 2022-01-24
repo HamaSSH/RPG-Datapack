@@ -4,7 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "nbt": "{sword:1b}"
+        "nbt": "{weapon:\"sword\"}"
       }
     }
   }

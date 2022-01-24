@@ -5,7 +5,7 @@
     "team": "Knight",
     "equipment": {
       "mainhand": {
-        "nbt": "{spear:1b}"
+        "nbt": "{weapon:\"spear\"}"
       }
     }
   }

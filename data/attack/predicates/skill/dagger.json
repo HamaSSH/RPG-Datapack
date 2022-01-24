@@ -5,7 +5,7 @@
     "nbt": "{Tags:[\"DaggerSkill\"]}",
     "equipment": {
       "mainhand": {
-        "nbt": "{dagger:1b}"
+        "nbt": "{weapon:\"dagger\"}"
       }
     }
   }

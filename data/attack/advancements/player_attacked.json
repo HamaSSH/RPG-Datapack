@@ -12,7 +12,7 @@
               "predicate": {
                 "equipment": {
                   "mainhand": {
-                    "nbt": "{wand:1b}"
+                    "nbt": "{weapon:\"wand\"}"
                   }
                 }
               }
@@ -36,7 +36,7 @@
             "predicate": {
               "equipment": {
                 "mainhand": {
-                  "nbt": "{wand:1b}"
+                  "nbt": "{weapon:\"wand\"}"
                 }
               }
             }
