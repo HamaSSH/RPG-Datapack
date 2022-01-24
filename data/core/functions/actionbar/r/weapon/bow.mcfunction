@@ -1,0 +1,1 @@
+data modify storage actionbar:temp weapon2 set value '{"text":"\\uE0C0"}'

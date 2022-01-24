@@ -1,5 +1,5 @@
 # スニークスコアのリセット
-  scoreboard players reset @s sneak
+  scoreboard players set @s sneak 0
 # 武器スキルReadyタグリセット
   tag @s remove DaggerSkill
   tag @s remove SwordSkill
