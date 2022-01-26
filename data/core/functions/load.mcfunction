@@ -8,6 +8,7 @@ say reload
 # トリガー
   scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
   scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick "右クリック"
+  scoreboard objectives add bow_shot minecraft.used:minecraft.bow "弓使用"
   scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
 # asset用ID類
   scoreboard objectives add PlayerID dummy "プレイヤーID"

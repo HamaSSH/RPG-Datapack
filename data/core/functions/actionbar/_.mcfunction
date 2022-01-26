@@ -24,16 +24,20 @@
     execute if predicate core:actionbar/l/weapon/bow unless data storage actionbar:temp weapon run function core:actionbar/l/weapon/bow
   # 表示(右) mainhand:武器(弓以外), offhand:弓
     execute if predicate core:actionbar/r/weapon/bow run function core:actionbar/r/weapon/bow
-  
+# もし表示させるものが無ければ空白  
   execute unless data storage actionbar:temp weapon run data modify storage actionbar:temp weapon set value '{"text":"\\uF82A\\uF807"}'
   execute unless data storage actionbar:temp weapon2 run data modify storage actionbar:temp weapon2 set value '{"text":"\\uF82A\\uF807"}'
-
-  scoreboard players operation $ActionBarArrow Temporary = @s arrow
-  data modify storage actionbar:temp arrow set value '{"text":"\\uF809\\uF802"}'
 # 最大HP表示
   function core:actionbar/hp_bar
+
 # 適用
-  title @s actionbar ["\uF821",{"nbt":"weapon2","storage":"actionbar:temp","interpret":true},{"nbt":"weapon1","storage":"actionbar:temp","interpret":true},{"nbt":"arrow","storage":"actionbar:temp","interpret":true},{"score":{"name":"$ActionBarArrow","objective":"Temporary"},"font":"resource:descent31"},{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},"\uF82E","\uF80C","\uF829","\uF828","\uE2A0","\uF822",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"text":"/","font":"resource:descent16","color":"gray"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16","color":"gray"},"\uF82C","\uF82B","\uF82A","\uF821",{"nbt":"weapon2","storage":"actionbar:temp","interpret":true},"\uF80A","\uF809","\uF803",{"nbt":"weapon","storage":"actionbar:temp","interpret":true},{"nbt":"arrow","storage":"actionbar:temp","interpret":true},{"score":{"name":"$ActionBarArrow","objective":"Temporary"},"font":"resource:descent31"},"\uF82A","\uF828","\uF823","\uF80D",{"nbt":"hp_bar","storage":"actionbar:temp","interpret":true},"\uF829","\uF823",{"text":"Lv.","font":"resource:descent13","color":"gray"},"\uF822",{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},"\uF822",{"text":"(","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13","color":"#9EE082"},{"text":"/","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13","color":"gray"},{"text":")","font":"resource:descent13","color":"gray"},"\uF828",{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},{"text":"G","font":"resource:descent13","color":"#FFEE59"},"\uF822","\uE2A1","\uF808","\uF806","\uF806","\uF806","\uF82E",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16"}]
+  title @s actionbar ["",{"nbt":"weapon","storage":"actionbar:temp","interpret":true},{"nbt":"weapon2","storage":"actionbar:temp","interpret":true},{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},"\uF82E","\uF80B","\uF80A","\uF809","\uF802","\uE2A0","\uF822",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"text":"/","font":"resource:descent16","color":"gray"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16","color":"gray"},"\uF828","\uF823",{"nbt":"hp_bar","storage":"actionbar:temp","interpret":true},"\uF829","\uF823",{"text":"Lv.","font":"resource:descent13","color":"gray"},"\uF822",{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},"\uF822",{"text":"(","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13","color":"#9EE082"},{"text":"/","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13","color":"gray"},{"text":")","font":"resource:descent13","color":"gray"},"\uF828",{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},{"text":"G","font":"resource:descent13","color":"#FFEE59"},"\uF822","\uE2A1","\uF80B",{"nbt":"weapon","storage":"actionbar:temp","interpret":true},"\uF822",{"nbt":"weapon2","storage":"actionbar:temp","interpret":true},"\uF82E",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16"}]
+# weapon weapon2 $level $xp $xp_next $gold +512 ######## 左画面外
+# -64 -32 -16 -2 ♡ +2 hp / hp_max +8 +3 hp_bar +16 +3 ## HP、HPバー
+# Lv. +2 $level +2 ($xp/$xp_next) +8 gold G +2 ｺﾞ ###### レベル・経験値・ゴールド
+# -32 weapon +2 weapon2 ################################ チャージ・魔法・矢表示
+# +512 hp hp_max ####################################### 右画面外
+
 # リセット
   data remove storage actionbar:temp mainhand
   data remove storage actionbar:temp offhand
