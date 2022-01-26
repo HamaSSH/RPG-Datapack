@@ -1,8 +1,0 @@
-execute if score $MobID Temporary matches 400 run data modify storage mob:temp CustomName set from storage mob:name Data[400]
-execute if score $MobID Temporary matches 401 run data modify storage mob:temp CustomName set from storage mob:name Data[401]
-execute if score $MobID Temporary matches 402 run data modify storage mob:temp CustomName set from storage mob:name Data[402]
-execute if score $MobID Temporary matches 403 run data modify storage mob:temp CustomName set from storage mob:name Data[403]
-execute if score $MobID Temporary matches 404 run data modify storage mob:temp CustomName set from storage mob:name Data[404]
-execute if score $MobID Temporary matches 405 run data modify storage mob:temp CustomName set from storage mob:name Data[405]
-execute if score $MobID Temporary matches 406 run data modify storage mob:temp CustomName set from storage mob:name Data[406]
-execute if score $MobID Temporary matches 407 run data modify storage mob:temp CustomName set from storage mob:name Data[407]

@@ -1,3 +1,8 @@
+# 見た目設定
+  execute unless data storage mob:temp Data.Armor[3].id run data modify storage mob:temp Data.Armor[3] set value {id:"minecraft:barrier",Count:1b}
+  data modify entity @s ArmorItems set from storage mob:temp Data.Armor
+  item modify entity @s armor.head mob:set_name
+  data modify entity @s CustomName set from entity @s ArmorItems[3].tag.display.Name
 # スコアセット
   execute store result score @s hp run data get storage mob:temp Data.hp
   execute store result score @s hp_max run data get storage mob:temp Data.hp
@@ -36,8 +41,6 @@
   execute if score $IDtoTag MobID matches 1.. run tag @s add MobID0.1
   execute unless score $IDtoTag MobID matches 1.. run tag @s add MobID0.0
   execute if score $IDtoTag MobID matches 1.. run scoreboard players remove $IDtoTag MobID 1
-# 名前をstorageに保存
-  function mob:status/hp/display/name/_
 # リセット
   data remove storage mob:temp Data
   scoreboard players reset $IDtoTag

@@ -1,8 +1,0 @@
-execute if score $MobID Temporary matches 200 run data modify storage mob:temp CustomName set from storage mob:name Data[200]
-execute if score $MobID Temporary matches 201 run data modify storage mob:temp CustomName set from storage mob:name Data[201]
-execute if score $MobID Temporary matches 202 run data modify storage mob:temp CustomName set from storage mob:name Data[202]
-execute if score $MobID Temporary matches 203 run data modify storage mob:temp CustomName set from storage mob:name Data[203]
-execute if score $MobID Temporary matches 204 run data modify storage mob:temp CustomName set from storage mob:name Data[204]
-execute if score $MobID Temporary matches 205 run data modify storage mob:temp CustomName set from storage mob:name Data[205]
-execute if score $MobID Temporary matches 206 run data modify storage mob:temp CustomName set from storage mob:name Data[206]
-execute if score $MobID Temporary matches 207 run data modify storage mob:temp CustomName set from storage mob:name Data[207]

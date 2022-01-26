@@ -1,0 +1,29 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "text": " ",
+      "color": "white"
+    },
+    {
+      "nbt": "Data.CustomName",
+      "storage": "mob:temp",
+      "interpret": true
+    },
+    {
+      "text": "【lv.",
+      "color": "gray"
+    },
+    {
+      "nbt": "Data.lvl",
+      "storage": "mob:temp",
+      "color": "gray",
+      "bold": true
+    },
+    {
+      "text": "】",
+      "color": "gray"
+    }
+  ]
+}

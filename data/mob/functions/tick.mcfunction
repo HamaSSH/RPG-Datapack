@@ -1,7 +1,7 @@
 ### モブ関連の#tick
 
 # HP表示 → 名前
-  execute if entity @s[tag=InCombat] if data entity @s {PortalCooldown:0} run function mob:status/hp/display/reset/_
+  execute if entity @s[tag=InCombat] if data entity @s {PortalCooldown:0} run function mob:status/hp/display/reset
   execute if entity @s[tag=HurtTime,scores={combat_timer=1..}] run function mob:hurt_time
 # 自然・エフェクトダメージ
   execute unless data entity @s {FallDistance:0.0f} store result score @s fall_distance run data get entity @s FallDistance
