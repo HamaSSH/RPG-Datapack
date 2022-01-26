@@ -1,1 +1,5 @@
-data modify storage actionbar:temp weapon set value '{"text":"\\uE0C0"}'
+# 矢筒と弓矢を同時に表示
+  execute if score @s arrow matches ..9 run data modify storage actionbar:temp iconL set value '[{"text":"\\uE0C0"},"\\uF807",{"score":{"name":"@s","objective":"arrow"},"font":"resource:descent31"},"\\uF821"]'
+  execute if score @s arrow matches 10..999 run data modify storage actionbar:temp iconL set value '[{"text":"\\uE0C0"},"\\uF808\\uF805",{"score":{"name":"@s","objective":"arrow"},"font":"resource:descent31"},"\\uF821"]'
+  execute if score @s arrow matches 100..999 run data modify storage actionbar:temp iconL set value '[{"text":"\\uE0C0"},"\\uF809\\uF803",{"score":{"name":"@s","objective":"arrow"},"font":"resource:descent31"},"\\uF821"]'
+  execute if score @s arrow matches 1000.. run data modify storage actionbar:temp iconL set value '[{"text":"\\uE0C0"},"\\uF809\\uF803",{"text":"999+","font":"resource:descent31"},"\\uF805"]'
