@@ -32,11 +32,11 @@
 
 # 適用
   title @s actionbar ["",{"nbt":"iconL","storage":"actionbar:temp","interpret":true},{"nbt":"iconR","storage":"actionbar:temp","interpret":true},{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13"},{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},"\uF82E","\uF80B","\uF80A","\uF806","\uE2A0","\uF822",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"text":"/","font":"resource:descent16","color":"gray"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16","color":"gray"},"\uF828","\uF823",{"nbt":"hp_bar","storage":"actionbar:temp","interpret":true},"\uF829","\uF823","\uF82B","\uF829","\uF828",{"nbt":"iconL","storage":"actionbar:temp","interpret":true},"\uF822",{"nbt":"iconR","storage":"actionbar:temp","interpret":true},"\uF80C","\uF808","\uF804",{"text":"Lv.","font":"resource:descent13","color":"gray"},"\uF822",{"score":{"name":"@s","objective":"level"},"font":"resource:descent13"},"\uF822",{"text":"(","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp"},"font":"resource:descent13","color":"#9EE082"},{"text":"/","font":"resource:descent13","color":"gray"},{"score":{"name":"@s","objective":"xp_next"},"font":"resource:descent13","color":"gray"},{"text":")","font":"resource:descent13","color":"gray"},"\uF828",{"score":{"name":"@s","objective":"gold"},"font":"resource:descent13"},{"text":"G","font":"resource:descent13","color":"#FFEE59"},"\uF822","\uE2A1","\uF82E",{"score":{"name":"@s","objective":"hp"},"font":"resource:descent16"},{"score":{"name":"@s","objective":"hp_max"},"font":"resource:descent16"}]
-# iconL iconR $level $xp $xp_next $gold +512 ######### 左画面外
-# -64 -32 -6 ♡ +2 hp / hp_max +8 +3 hp_bar +16 +3 #### HP、HPバー
-# +64 +16 +8 iconL +2 iconR -128 -8 -4 ############### チャージ・魔法・矢表示
-# Lv. +2 $level +2 ($xp/$xp_next) +8 gold G +2 ｺﾞ #### レベル・経験値・ゴールド
-# +512 hp hp_max ##################################### 右画面外
+# iconL iconR $level $xp $xp_next $gold +512 ########## 左画面外
+# -64 -32 -6 ♡ +2 $hp / $hp_max +8 +3 hp_bar +16 +3 ### HP、HPバー
+# +64 +16 +8 iconL +2 iconR -128 -8 -4 ################ チャージ・魔法・矢表示
+# Lv. +2 $level +2 ($xp/$xp_next) +8 $gold G +2 ｺﾞ #### レベル・経験値・ゴールド
+# +512 $hp $hp_max #################################### 右画面外
 
 # リセット
   data remove storage actionbar:temp mainhand
