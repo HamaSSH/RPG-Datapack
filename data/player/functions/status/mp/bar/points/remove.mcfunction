@@ -1,8 +1,5 @@
 ### function player:status/mp/bar/points/remove
 
-execute if score $XPBarDif Temporary matches ..-1024 run function player:status/mp/bar/points/-1024
-execute if score $XPBarDif Temporary matches -1023..-512 run function player:status/mp/bar/points/-512
-execute if score $XPBarDif Temporary matches -511..-256 run function player:status/mp/bar/points/-256
 execute if score $XPBarDif Temporary matches -255..-128 run function player:status/mp/bar/points/-128
 execute if score $XPBarDif Temporary matches -127..-64 run function player:status/mp/bar/points/-64
 execute if score $XPBarDif Temporary matches -63..-32 run function player:status/mp/bar/points/-32
