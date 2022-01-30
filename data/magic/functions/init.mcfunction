@@ -9,7 +9,7 @@
 # 魔法呼び出し
   execute store result score $MagicID Temporary run data get storage magic:temp Data.tag.CustomModelData
   execute store result score $MPCost Temporary run data get storage magic:temp Data.tag.bonus.magic_cost
-  function magic:lookup/_
+  function #magic:lookup
 # クールダウン
   execute store result storage magic:temp gametime int 1 run time query gametime
   execute if entity @s[tag=CDCheck,tag=MPCheck] run item modify entity @s weapon.offhand magic:store_gametime

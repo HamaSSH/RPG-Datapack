@@ -1,0 +1,1 @@
+execute if data storage magic:temp Data.tag{CustomModelData:4101} run function magic:asset/4101.fire_ball/check/_
