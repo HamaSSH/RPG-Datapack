@@ -22,3 +22,5 @@ scoreboard players set #400 Constant 400
 scoreboard players set #512 Constant 512
 scoreboard players set #700 Constant 700
 scoreboard players set #2000 Constant 2000
+scoreboard players set #2^17 Constant 131072
+scoreboard players set #2^21 Constant 2097152
