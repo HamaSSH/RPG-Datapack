@@ -14,8 +14,9 @@ say reload
   scoreboard objectives add PlayerID dummy "プレイヤーID"
   scoreboard objectives add MagicID dummy "魔法ID"
   scoreboard objectives add MobID dummy "モブID"
-# 一定時間の保持が必要なスコア
+# 保持が必要なスコア
   scoreboard objectives add PreviousSlot dummy "選択スロット"
+  scoreboard objectives add PreviousHP dummy "HP値保存"
   scoreboard objectives add PreviousMP dummy "MP値保存"
   scoreboard objectives add GoldDisplay dummy "Gold表示"
 # タイマー

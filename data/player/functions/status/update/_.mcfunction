@@ -43,9 +43,8 @@
   execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run function player:status/update/accessory9
   execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run function player:status/update/accessory10
   execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run function player:status/update/accessory11
-# リセット
-  data remove storage player:temp Inventory
-  data remove storage player:temp SelectedItem
+# 職業のパッシブスキルからの補正
+  execute if data storage player:temp Data run function player:class/bonus 
 # 最終的なステータス += 補正ステータス
   scoreboard players operation @s hp_max += @s hp_bonus
   scoreboard players operation @s mp_max += @s mp_bonus
@@ -90,3 +89,7 @@
 # scoreboard players operation ad_class status = @s ad_class
 # scoreboard players operation def_class status = @s def_class
 # scoreboard players operation hp_ratio status = @s hp_ratio
+# リセット
+  data remove storage player:temp Inventory
+  data remove storage player:temp SelectedItem
+  data remove storage player:temp Data

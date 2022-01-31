@@ -10,6 +10,6 @@
   execute if score $Time Temporary >= $Cooldown Temporary run tag @s add CDCheck
 # リセット
   data remove storage magic:temp offhand
-  # scoreboard players reset $Cooldown
-  # scoreboard players reset $TimeUsed
-  # scoreboard players reset $Time
+  scoreboard players reset $Cooldown
+  scoreboard players reset $TimeUsed
+  scoreboard players reset $Time

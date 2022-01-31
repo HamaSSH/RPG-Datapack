@@ -11,7 +11,7 @@
   execute if score @s hp_list matches 0 run scoreboard players set @s hp_list 1
 # HPの割合計算
   execute if score @s hp_max matches ..200 run scoreboard players operation @s hp_ratio /= #200 Constant
-  execute if score @s hp_max matches 201.. run scoreboard players operation @s hp_ratio /= @s hp_max
+  execute unless score @s hp_max matches ..200 run scoreboard players operation @s hp_ratio /= @s hp_max
 # HPの割合に応じてCustomNameをHPBarに変換、分岐
   execute if score @s hp_ratio matches ..16 run function player:status/hp/bar/apply/lv3/0
   execute if score @s hp_ratio matches 17..32 run function player:status/hp/bar/apply/lv3/1
