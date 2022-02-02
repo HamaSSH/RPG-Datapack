@@ -17,4 +17,4 @@
   execute if entity @s[advancements={attack:player_attacked={ranged_charge3=true}}] run scoreboard players operation @s dmg_dealt /= #10 Constant
   execute if entity @s[advancements={attack:player_attacked={ranged_charge4=true}}] run scoreboard players operation @s dmg_dealt /= #8 Constant
 # クリティカルダメージ
-  execute if predicate attack:allow_critical run function player:status/crt/_
+  execute if predicate attack:allow_critical run function player:status/crt/chance

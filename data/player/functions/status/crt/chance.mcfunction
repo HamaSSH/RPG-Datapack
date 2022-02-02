@@ -8,6 +8,7 @@
 # 一の位四捨五入
   scoreboard players add $CritChance Temporary 500
   scoreboard players operation $CritChance Temporary /= #1000 Constant
+  execute if score @s crt matches 1000.. run scoreboard players set $CritChance Temporary 1000
 # 0~1000 $RNG <= $CritChance → ダメージ補正
   scoreboard players set $RNGMax Temporary 1000
   function core:rng
