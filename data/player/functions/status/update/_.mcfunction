@@ -34,12 +34,12 @@
   data modify storage player:temp Inventory set from entity @s Inventory
   data modify storage player:temp SelectedItem set from entity @s SelectedItem
   execute if data storage player:temp SelectedItem.tag.mainhand run function player:status/update/mainhand
-  execute if data storage player:temp Inventory[{Slot:-106b}].tag.bow unless data storage player:temp SelectedItem.tag.bow run function player:status/update/offhand
+  execute if data storage player:temp Inventory[{Slot:-106b}].tag{weapon:"bow"} unless data storage player:temp SelectedItem.tag{weapon:"bow"} run function player:status/update/offhand
   execute if data storage player:temp Inventory[{Slot:-106b}].tag.offhand run function player:status/update/offhand
-  execute if data storage player:temp {Inventory:[{Slot:103b,tag:{armor:"helmet"}}]} run function player:status/update/helmet
-  execute if data storage player:temp {Inventory:[{Slot:102b,tag:{armor:"chestplate"}}]} run function player:status/update/chestplate
-  execute if data storage player:temp {Inventory:[{Slot:101b,tag:{armor:"leggings"}}]} run function player:status/update/leggings
-  execute if data storage player:temp {Inventory:[{Slot:100b,tag:{armor:"boots"}}]} run function player:status/update/boots
+  execute if data storage player:temp Inventory.[{Slot:103b}].tag{armor:"helmet"} run function player:status/update/helmet
+  execute if data storage player:temp Inventory.[{Slot:102b}].tag{armor:"chestplate"} run function player:status/update/chestplate
+  execute if data storage player:temp Inventory.[{Slot:101b}].tag{armor:"leggings"} run function player:status/update/leggings
+  execute if data storage player:temp Inventory.[{Slot:100b}].tag{armor:"boots"} run function player:status/update/boots
   execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run function player:status/update/accessory9
   execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run function player:status/update/accessory10
   execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run function player:status/update/accessory11
@@ -58,7 +58,9 @@
   scoreboard players operation @s crt += @s crt_bonus
   scoreboard players operation @s luk += @s luk_bonus
 # 最大値を超えた場合の調整
-  function status:maxed
+  function player:status/maxed
+# attribute操作
+  execute unless score @s PreviousSPD = @s spd run function player:status/spd/apply
 # バフ、最大値を超えるように
 #  scoreboard players operation @s hp_max += @s hp_buff
 #  scoreboard players operation @s mp_max += @s mp_buff
@@ -71,8 +73,6 @@
 #  scoreboard players operation @s spd += @s spd_buff
 #  scoreboard players operation @s crt += @s crt_buff
 #  scoreboard players operation @s luk += @s luk_buff
-# attribute操作
-#  function status:speed/movement_speed/lv10
 
 # scoreboard objectives add status dummy
 # scoreboard players operation HP status = @s hp_max
