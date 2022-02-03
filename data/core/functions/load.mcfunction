@@ -20,6 +20,7 @@ say reload
   scoreboard objectives add PreviousMP dummy "MP値保存"
   scoreboard objectives add PreviousSPD dummy "SPD値保存"
   scoreboard objectives add GoldDisplay dummy "Gold表示"
+  scoreboard objectives add HurtTime dummy "無敵時間"
 # タイマー
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
   scoreboard objectives add combat_timer dummy "無敵時間"
