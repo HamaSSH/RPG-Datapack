@@ -23,7 +23,6 @@ say reload
   scoreboard objectives add HurtTime dummy "無敵時間"
 # タイマー
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
-  scoreboard objectives add combat_timer dummy "無敵時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
 # システム
   scoreboard objectives add dmg_dealt dummy "与ダメージ"

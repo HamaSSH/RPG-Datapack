@@ -13,7 +13,7 @@
   execute if entity @s[type=#mob:normal] run effect give @s instant_damage 1 1
 # 無敵時間
   tag @s add HurtTime
-  scoreboard players set @s combat_timer 10
+  scoreboard players set @s HurtTime 10
 # 攻撃したプレイヤーを記録
   scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
 # 死亡処理
