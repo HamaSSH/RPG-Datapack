@@ -1,6 +1,7 @@
 {
 	"values": [
     "magic:asset/4101.fire_ball/check/id",
-    "magic:asset/4201.water_ball/check/id"
+    "magic:asset/4201.water_ball/check/id",
+    "magic:asset/4301.thunder_ball/check/id"
   ]
 }
