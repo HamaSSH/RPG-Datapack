@@ -7,7 +7,6 @@
   scoreboard players add $RNGMax Temporary 1
 # －と＋側にダメージブレを生成
   function core:rng
-  tellraw @a {"score":{"name": "$RNG","objective": "Temporary"}}
   scoreboard players operation $RNG Temporary -= $DmgBlur Temporary
   execute if score @s dmg_received matches 1.. run scoreboard players operation @s dmg_received += $RNG Temporary
 # リセット

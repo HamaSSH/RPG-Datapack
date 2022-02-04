@@ -5,7 +5,7 @@
 # ダメージ処理
   # 防御＋ダメージブレ補正
     function mob:status/def/apply
-    function attack:damage/blur
+    # function attack:damage/blur
   execute at @s run function mob:on_hurt/dmg_received
 # 演出
   execute if entity @s[type=#mob:undead] run effect give @s instant_health 1 1
