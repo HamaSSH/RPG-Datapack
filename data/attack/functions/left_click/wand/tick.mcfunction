@@ -8,8 +8,9 @@
 # 移動
   tp @s ^ ^ ^1
 # 演出
-  function attack:left_click/wand/effect/_
+  function attack:left_click/wand/particle/_
 # リセット
   execute unless block ^ ^ ^1 #attack:pass run kill @s
   scoreboard players reset $DamageColor
+  scoreboard players reset $DmgDealt
   tag @s remove this
