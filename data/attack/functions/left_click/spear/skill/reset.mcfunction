@@ -1,6 +1,6 @@
 # リセット
-  tag @s remove FireSkill
-  tag @s remove WaterSkill
-  tag @s remove ThunderSkill
-  tag @s remove EarthSkill
-  tag @s remove WindSkill
+  tag @s remove FireAttack
+  tag @s remove WaterAttack
+  tag @s remove ThunderAttack
+  tag @s remove EarthAttack
+  tag @s remove WindAttack

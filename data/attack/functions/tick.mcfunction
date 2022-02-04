@@ -1,7 +1,12 @@
 ### 攻撃処理関連の#tick
 
-# 溜め攻撃の#tick
+# 攻撃の#tick
   execute as @a at @s if score @s skill_cd matches 1.. run function attack:left_click/tick
+  execute as @a if score @s FireAttack matches 1.. run scoreboard players remove @s FireAttack 1
+  execute as @a if score @s WaterAttack matches 1.. run scoreboard players remove @s WaterAttack 1
+  execute as @a if score @s ThunderAttack matches 1.. run scoreboard players remove @s ThunderAttack 1
+  execute as @a if score @s EarthAttack matches 1.. run scoreboard players remove @s EarthAttack 1
+  execute as @a if score @s WindAttack matches 1.. run scoreboard players remove @s WindAttack 1
 # 杖の通常攻撃弾の#tick
   execute as @e[type=area_effect_cloud,tag=Wand] at @s run function attack:left_click/wand/tick
 # 弓矢は敵を貫通

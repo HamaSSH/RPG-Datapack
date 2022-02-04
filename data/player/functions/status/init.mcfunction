@@ -33,6 +33,11 @@
   scoreboard players set @s lv_wizard 1
   scoreboard players set @s lv_hunter 1
   scoreboard players set @s skill_cd 0
+  scoreboard players set @s FireAttack 0
+  scoreboard players set @s WaterAttack 0
+  scoreboard players set @s ThunderAttack 0
+  scoreboard players set @s EarthAttack 0
+  scoreboard players set @s WindAttack 0
   scoreboard players set @s cdr 0
 # 当たり判定の無効化
   team join NoCollision @s

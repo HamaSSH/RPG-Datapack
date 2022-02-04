@@ -4,6 +4,8 @@
   function player:class/tick
 # HPMPの自然回復
   function player:status/regeneration
+# 属性particle
+  function player:particle/_
 # HPMPBarの操作
   function player:status/hp/bar/apply/_
   execute unless score @s PreviousMP = @s mp run function player:status/mp/bar/_

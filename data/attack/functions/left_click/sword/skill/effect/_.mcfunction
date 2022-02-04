@@ -2,4 +2,4 @@
   particle minecraft:sweep_attack ^ ^1.8 ^1.5 0.15 0.15 0.15 1 1 force
   playsound resource:custom.weapon.sword master @a ~ ~ ~ 0.4 1.0
 # 属性がある場合の演出
-  execute if entity @s[tag=FireSkill] run function attack:left_click/sword/skill/effect/fire
+  execute if score @s FireAttack matches 1.. run function attack:left_click/sword/skill/effect/fire

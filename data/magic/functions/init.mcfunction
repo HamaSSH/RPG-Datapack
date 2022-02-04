@@ -13,6 +13,8 @@
 # クールダウン
   execute store result storage magic:temp gametime int 1 run time query gametime
   execute if entity @s[tag=CDCheck,tag=MPCheck] run item modify entity @s weapon.offhand magic:store_gametime
+# 属性を纏う
+  execute if entity @s[tag=CDCheck,tag=MPCheck] run function magic:element
 # リセット
   tag @s remove CDCheck
   tag @s remove MPCheck

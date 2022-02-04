@@ -5,4 +5,4 @@
   playsound minecraft:item.trident.thunder master @a ~ ~ ~ 0.1 2.0
   playsound minecraft:item.trident.riptide_1 master @a ~ ~ ~ 1.0 1.1
 # 属性がある場合の演出
-  execute if entity @s[tag=FireSkill] run function attack:left_click/spear/skill/effect/fire
+  execute if score @s FireAttack matches 1.. run function attack:left_click/spear/skill/effect/fire
