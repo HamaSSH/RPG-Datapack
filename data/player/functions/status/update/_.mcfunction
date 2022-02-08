@@ -33,7 +33,7 @@
 # 装備の補正ステータス
   data modify storage player:temp Inventory set from entity @s Inventory
   data modify storage player:temp SelectedItem set from entity @s SelectedItem
-  execute if data storage player:temp SelectedItem.tag.mainhand run function player:status/update/mainhand
+  execute if data storage player:temp SelectedItem.tag.weapon run function player:status/update/mainhand
   execute if data storage player:temp Inventory[{Slot:-106b}].tag{weapon:"bow"} unless data storage player:temp SelectedItem.tag{weapon:"bow"} run function player:status/update/offhand
   execute if data storage player:temp Inventory[{Slot:-106b}].tag.offhand run function player:status/update/offhand
   execute if data storage player:temp Inventory.[{Slot:103b}].tag{armor:"helmet"} run function player:status/update/helmet
