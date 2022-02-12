@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "y-1": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "offsetY": -1,
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:farmland"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:farmland"
+  }
+}
