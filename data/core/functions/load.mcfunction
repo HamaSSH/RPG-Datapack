@@ -8,6 +8,7 @@ say reload
 # トリガー
   scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
   scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick "右クリック"
+  scoreboard objectives add fall_distance minecraft.custom:minecraft.fall_one_cm "落下距離"
   scoreboard objectives add bow_shot minecraft.used:minecraft.bow "弓使用"
   scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
 # asset用ID類
@@ -20,6 +21,7 @@ say reload
   scoreboard objectives add PreviousMP dummy "MP値保存"
   scoreboard objectives add PreviousSPD dummy "SPD値保存"
   scoreboard objectives add GoldDisplay dummy "Gold表示"
+  scoreboard objectives add FallDistance dummy "畑荒らし対策"
 # タイマー
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
