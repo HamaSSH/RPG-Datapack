@@ -1,1 +1,1 @@
-execute if data storage magic:asset {id:4101} run function magic:asset/4101.fire_ball/tick/_
+execute if data storage magic:asset {id:4301} run function magic:asset/4301.thunder_ball/tick/_
