@@ -10,7 +10,7 @@
   execute if score @a[tag=this,limit=1] ThunderAttack matches 1.. run tag @s add ThunderAttack
   execute if score @a[tag=this,limit=1] EarthAttack matches 1.. run tag @s add EarthAttack
   execute if score @a[tag=this,limit=1] WindAttack matches 1.. run tag @s add WindAttack
-  execute if entity @s[tag=!FireAttack,tag=!WaterAttack,tag=!ThunderAttack,tag=!EarthAttack,tag=!WindAttack] run tag @s add NeutralAttack
+  execute unless score @a[tag=this,limit=1] ElementAttack matches 1.. run tag @s add NeutralAttack
 # 向きを合わせる
   execute rotated as @a[tag=this,limit=1] run tp @s ~ ~1.5 ~ ~ ~
 # 初期タグ削除

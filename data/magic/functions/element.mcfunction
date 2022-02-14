@@ -1,4 +1,5 @@
 # 属性ごとのタイマー
+  scoreboard players set @s ElementAttack 100
   execute if data storage magic:temp Data.tag{magic:"fire"} run scoreboard players set @s FireAttack 100
   execute if data storage magic:temp Data.tag{magic:"water"} run scoreboard players set @s WaterAttack 100
   execute if data storage magic:temp Data.tag{magic:"thunder"} run scoreboard players set @s ThunderAttack 100

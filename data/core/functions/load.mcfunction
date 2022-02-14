@@ -26,6 +26,7 @@ say reload
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
   scoreboard objectives add HurtTime dummy "無敵時間"
+  scoreboard objectives add ElementAttack dummy "属性攻撃"
   scoreboard objectives add FireAttack dummy "火属性攻撃"
   scoreboard objectives add WaterAttack dummy "水属性攻撃"
   scoreboard objectives add ThunderAttack dummy "雷属性攻撃"

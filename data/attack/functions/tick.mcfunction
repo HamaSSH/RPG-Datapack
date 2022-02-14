@@ -2,6 +2,7 @@
 
 # 攻撃の#tick
   execute as @a at @s if score @s skill_cd matches 1.. run function attack:left_click/tick
+  execute as @a if score @s ElementAttack matches 1.. run scoreboard players remove @s ElementAttack 1
   execute as @a if score @s FireAttack matches 1.. run scoreboard players remove @s FireAttack 1
   execute as @a if score @s WaterAttack matches 1.. run scoreboard players remove @s WaterAttack 1
   execute as @a if score @s ThunderAttack matches 1.. run scoreboard players remove @s ThunderAttack 1
