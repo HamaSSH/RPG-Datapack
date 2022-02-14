@@ -27,7 +27,7 @@
             "entity": "this",
             "scores": {
               "FallDistance": {
-                "min": 11,
+                "min": 7,
                 "max": 187
               }
             }
