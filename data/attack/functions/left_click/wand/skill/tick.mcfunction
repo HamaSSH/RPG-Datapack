@@ -1,7 +1,7 @@
 # マナバースト
-  execute if score @s skill_cd matches 300 run say fire
-  execute if score @s skill_cd matches 298 run say water
-  execute if score @s skill_cd matches 296 run say thunder
-  execute if score @s skill_cd matches 294 run say earth
-  execute if score @s skill_cd matches 292 run say wind
+  execute if score @s skill_cd matches 300 positioned ^4 ^0.6 ^-1 run function attack:left_click/wand/skill/bullet/1
+  execute if score @s skill_cd matches 298 positioned ^2 ^1.15 ^-1 run function attack:left_click/wand/skill/bullet/1
+  execute if score @s skill_cd matches 296 positioned ^ ^1.4 ^-1 run function attack:left_click/wand/skill/bullet/1
+  execute if score @s skill_cd matches 294 positioned ^-2 ^1.15 ^-1 run function attack:left_click/wand/skill/bullet/1
+  execute if score @s skill_cd matches 292 positioned ^-4 ^0.6 ^-1 run function attack:left_click/wand/skill/bullet/1
   execute if score @s skill_cd matches 292 run function attack:left_click/wand/skill/reset

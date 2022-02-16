@@ -1,6 +1,8 @@
-# 属性を纏っていた場合のタグリセット
-  tag @s add FireWandSkill
-  tag @s add WaterWandSki
-  tag @s add ThunderWan
-  tag @s add EarthWandSki
-  tag @s add WindWandSkill
+# タグリセット
+  tag @s remove WandTick
+  tag @s remove NeutralWandSkill
+  tag @s remove FireWandSkill
+  tag @s remove WaterWandSkill
+  tag @s remove ThunderWandSkill
+  tag @s remove EarthWandSkill
+  tag @s remove WindWandSkill

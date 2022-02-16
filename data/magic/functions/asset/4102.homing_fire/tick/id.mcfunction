@@ -1,0 +1,1 @@
+execute if data storage magic:asset {id:4102} run function magic:asset/4102.homing_fire/tick/_
