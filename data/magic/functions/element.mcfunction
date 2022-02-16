@@ -1,3 +1,10 @@
+# 属性タイマーリセット
+  scoreboard players set @s ElementAttack 0
+  scoreboard players set @s FireAttack 0
+  scoreboard players set @s WaterAttack 0
+  scoreboard players set @s ThunderAttack 0
+  scoreboard players set @s EarthAttack 0
+  scoreboard players set @s WindAttack 0
 # 属性ごとのタイマー
   scoreboard players set @s ElementAttack 100
   execute if data storage magic:temp Data.tag{magic:"fire"} run scoreboard players set @s FireAttack 100
