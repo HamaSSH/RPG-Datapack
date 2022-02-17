@@ -6,3 +6,7 @@
   playsound minecraft:item.trident.riptide_1 master @a ~ ~ ~ 1.0 1.1
 # 属性がある場合の演出
   execute if score @s FireAttack matches 1.. run function attack:left_click/spear/skill/effect/fire
+  execute if score @s WaterAttack matches 1.. run function attack:left_click/spear/skill/effect/water
+  execute if score @s ThunderAttack matches 1.. run function attack:left_click/spear/skill/effect/thunder
+  execute if score @s EarthAttack matches 1.. run function attack:left_click/spear/skill/effect/earth
+  execute if score @s WindAttack matches 1.. run function attack:left_click/spear/skill/effect/wind
