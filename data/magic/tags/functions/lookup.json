@@ -3,8 +3,12 @@
     "magic:asset/4101.fire_ball/check/id",
     "magic:asset/4102.homing_fire/check/id",
     "magic:asset/4201.water_ball/check/id",
+    "magic:asset/4202.homing_water/check/id",
     "magic:asset/4301.thunder_ball/check/id",
+    "magic:asset/4302.homing_thunder/check/id",
     "magic:asset/4401.earth_ball/check/id",
-    "magic:asset/4501.wind_ball/check/id"
+    "magic:asset/4402.homing_earth/check/id",
+    "magic:asset/4501.wind_ball/check/id",
+    "magic:asset/4502.homing_wind/check/id"
   ]
 }
