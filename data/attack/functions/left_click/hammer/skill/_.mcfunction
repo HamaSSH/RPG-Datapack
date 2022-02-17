@@ -10,9 +10,7 @@
 # 当たり判定
   execute as @e[type=#mob:mobs,tag=Enemy,distance=..5] run function attack:left_click/hit
 # 演出
-  particle minecraft:explosion ~ ~0.5 ~ 1.0 0.7 1.0 0 10 force
-  playsound resource:custom.hammer player @a ~ ~ ~ 0.4 1.0
-  playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.7 0.7
+  function attack:left_click/hammer/skill/effect/_
 # リセット
   function attack:left_click/hammer/skill/reset
   function core:trigger/sneak/reset
