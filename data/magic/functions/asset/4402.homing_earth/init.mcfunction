@@ -5,5 +5,6 @@
   scoreboard players set @s MagicID 4402
 # 向きを合わせる
   execute rotated as @a[tag=this,limit=1] run tp @s ~ ~1.5 ~ ~ ~
+  tag @s add WandSkill
 # 初期タグ削除
   tag @s remove WandInit
