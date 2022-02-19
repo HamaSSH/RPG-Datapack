@@ -5,4 +5,4 @@
   execute if entity @s[tag=WaterAttack] run function attack:left_click/wand/particle/water
   execute if entity @s[tag=ThunderAttack] run function attack:left_click/wand/particle/thunder
   execute if entity @s[tag=EarthAttack] run function attack:left_click/wand/particle/earth
-  execute if entity @s[tag=WandAttack] run function attack:left_click/wand/particle/wand
+  execute if entity @s[tag=WindAttack] run function attack:left_click/wand/particle/wind
