@@ -7,7 +7,7 @@
   scoreboard players set $YPower Temporary 80
 # 当たり判定
   execute positioned ^ ^ ^2 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..5,sort=nearest,limit=10] positioned ^10 ^ ^ if entity @s[distance=..10.7] positioned ^-20 ^ ^ if entity @s[distance=..10.7] run function attack:left_click/hit
-# 演出
+# 演出(槍通常)
   function attack:left_click/spear/effect/_
 # リセット
   function core:trigger/sneak/reset

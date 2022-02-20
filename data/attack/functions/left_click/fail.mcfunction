@@ -7,7 +7,7 @@
     function mob:status/def/apply
     # function attack:damage/blur
   execute at @s run function mob:on_hurt/dmg_received
-# 演出
+# 被ダメージ時の赤演出
   execute if entity @s[type=#mob:undead] run effect give @s instant_health 1 1
   execute if entity @s[type=#mob:normal] run effect give @s instant_damage 1 1
 # 無敵時間

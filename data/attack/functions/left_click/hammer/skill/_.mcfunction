@@ -9,7 +9,7 @@
   scoreboard players set $YPower Temporary 200
 # 当たり判定
   execute as @e[type=#mob:mobs,tag=Enemy,distance=..5] run function attack:left_click/hit
-# 演出
+# 演出(ハンマー溜め)
   function attack:left_click/hammer/skill/effect/_
 # リセット
   function attack:left_click/hammer/skill/reset

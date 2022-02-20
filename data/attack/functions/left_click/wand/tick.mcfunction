@@ -7,7 +7,7 @@
   scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
   execute if entity @e[tag=Enemy,tag=!HurtTime,distance=..2] run data modify entity @s Age set value 18
   execute as @e[tag=Enemy,tag=!HurtTime,distance=..2] run function attack:left_click/wand/hit
-# 演出
+# 演出(杖通常)
   function attack:left_click/wand/particle/_
 # リセット
   execute unless block ^ ^ ^1 #attack:pass run kill @s
