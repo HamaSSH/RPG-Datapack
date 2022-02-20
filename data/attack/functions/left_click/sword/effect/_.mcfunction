@@ -3,3 +3,7 @@
   playsound resource:custom.weapon.sword master @a ~ ~ ~ 1.0 1.0
 # 属性がある場合の演出
   execute if score @s FireAttack matches 1.. run function attack:left_click/sword/effect/fire
+  execute if score @s WaterAttack matches 1.. run function attack:left_click/sword/effect/water
+  execute if score @s ThunderAttack matches 1.. run function attack:left_click/sword/effect/thunder
+  execute if score @s EarthAttack matches 1.. run function attack:left_click/sword/effect/earth
+  execute if score @s WindAttack matches 1.. run function attack:left_click/sword/effect/wind
