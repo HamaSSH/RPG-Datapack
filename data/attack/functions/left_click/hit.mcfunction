@@ -22,5 +22,7 @@
   execute if score @a[tag=this,limit=1] WindAttack matches 1.. run function mob:on_hurt/element/wind
 # 攻撃したプレイヤーを記録
   scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
+# Hitタグリセット
+  tag @s remove Hit
 # 死亡処理
   execute if score @s hp matches ..0 run function mob:on_death/_
