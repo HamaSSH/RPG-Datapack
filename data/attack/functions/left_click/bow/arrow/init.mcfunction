@@ -8,5 +8,6 @@
   execute unless entity @a[tag=this,predicate=core:is_sneaking,limit=1] run tp ~ ~-98.36 ~
 # 矢を飛ばす
   data modify entity @s Motion set from entity @e[type=area_effect_cloud,tag=Knockback,sort=nearest,limit=1] Pos
+  kill @e[type=area_effect_cloud,tag=Knockback,sort=nearest,limit=1]
 # リセット
   tag @s remove ArrowInit

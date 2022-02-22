@@ -120,4 +120,4 @@ say reload
   team modify Hunter prefix "【ハンター】"
   team modify Hunter collisionRule never
 # forceload
-  forceload add 0 0 0 0
+  execute in overworld run forceload add -1 -1 0 0
