@@ -13,6 +13,7 @@
 # 弓矢は敵を貫通
   execute as @e[type=arrow] run data modify entity @s PierceLevel set value 5b
   execute as @e[type=arrow,tag=!ArrowLand] if data entity @s {inGround:1b} run function attack:arrow/land
+  execute as @e[type=arrow,tag=LCArrow] at @s if data entity @s {inGround:0b} run particle crit ~ ~ ~ 0 0 0 0 1 force
 # 時間経過でkillするエンティティ
   execute as @e[type=magma_cube,tag=LeftClick] if data entity @s {PortalCooldown:0} run function attack:left_click/kill
   execute as @e[type=item,tag=DmgDisplay] if data entity @s {PortalCooldown:0} run kill @s
