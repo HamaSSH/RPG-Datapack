@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ],
+            "nbt": "{quiver:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "item:quiver/_"
+  }
+}

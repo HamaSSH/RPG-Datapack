@@ -17,6 +17,7 @@ say reload
   scoreboard objectives add MobID dummy "モブID"
 # 保持が必要なスコア
   scoreboard objectives add Arrow dummy "弓矢"
+  scoreboard objectives add PreviousArrow dummy "弓矢値保存"
   scoreboard objectives add PreviousSlot dummy "選択スロット"
   scoreboard objectives add PreviousHP dummy "HP値保存"
   scoreboard objectives add PreviousMP dummy "MP値保存"

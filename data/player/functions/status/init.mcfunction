@@ -16,6 +16,8 @@
   scoreboard players set @s spd_base 0
   scoreboard players set @s crt_base 0
   scoreboard players set @s luk_base 0
+  scoreboard players set @s Arrow 0
+  scoreboard players set @s PreviousArrow 0
   function player:status/update/_
 # 内部スコアの初期化
   scoreboard players set @s sneak 0
