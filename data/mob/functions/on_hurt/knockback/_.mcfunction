@@ -22,6 +22,7 @@
   execute store result storage mob:temp Pos[2] double -0.0001 run scoreboard players get $KnockbackZ Temporary
   data modify entity @s Motion set from storage mob:temp Pos
 # リセット
+  data remove storage mob:temp AECPos
   data remove storage mob:temp Pos
   scoreboard players reset $KnockbackX
   scoreboard players reset $KnockbackY

@@ -17,6 +17,9 @@ say reload
   scoreboard objectives add MobID dummy "モブID"
 # 保持が必要なスコア
   scoreboard objectives add Arrow dummy "弓矢"
+  scoreboard objectives add LCArrow dummy "左クリック弓矢表示"
+  scoreboard objectives add BowCharge dummy "弓長押し検知"
+  scoreboard objectives add IfBowCharge dummy "弓長押ししてない検知"
   scoreboard objectives add PreviousArrow dummy "弓矢値保存"
   scoreboard objectives add PreviousSlot dummy "選択スロット"
   scoreboard objectives add PreviousHP dummy "HP値保存"

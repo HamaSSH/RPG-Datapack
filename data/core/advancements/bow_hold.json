@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "nbt": "{weapon:\"bow\"}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "core:trigger/bow/hold"
+  }
+}

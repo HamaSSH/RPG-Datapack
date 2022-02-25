@@ -21,9 +21,9 @@
     execute if predicate core:actionbar/l/weapon/spear run function core:actionbar/l/weapon/spear
     execute if predicate core:actionbar/l/weapon/hammer run function core:actionbar/l/weapon/hammer
     execute if predicate core:actionbar/l/weapon/wand run function core:actionbar/l/weapon/wand
-    execute if predicate core:actionbar/l/weapon/bow unless data storage actionbar:temp iconL run function core:actionbar/l/weapon/bow
+    execute if predicate core:actionbar/l/weapon/bow unless data storage actionbar:temp iconL run function core:actionbar/l/weapon/bow/_
   # 表示(右) mainhand:武器(弓以外), offhand:弓
-    execute if predicate core:actionbar/r/weapon/bow run function core:actionbar/r/weapon/bow
+    execute if predicate core:actionbar/r/weapon/bow run function core:actionbar/r/weapon/bow/_
 # もし表示させるものが無ければ空白  
   execute unless data storage actionbar:temp iconL run data modify storage actionbar:temp iconL set value '{"text":"\\uF82A\\uF807"}'
   execute unless data storage actionbar:temp iconR run data modify storage actionbar:temp iconR set value '{"text":"\\uF82A\\uF807"}'
@@ -44,7 +44,7 @@
   data remove storage actionbar:temp offhand
   data remove storage actionbar:temp iconL
   data remove storage actionbar:temp iconR
-  data remove storage actionbar:temp arrow
+  data remove storage actionbar:temp quiver
   data remove storage actionbar:temp hp
   data remove storage actionbar:temp hp_bar
   scoreboard players reset $ActionBarArrow

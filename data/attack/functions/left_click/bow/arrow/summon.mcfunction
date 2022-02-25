@@ -1,3 +1,5 @@
+# 左クリック弓矢数減算
+  scoreboard players remove @s LCArrow 1
 # 弓矢の召喚
   execute positioned ~ ~100 ~ run summon arrow ~ ~ ~ {Tags:["ArrowInit","LCArrow"]}
   execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^3 {Tags:["Knockback"]}
