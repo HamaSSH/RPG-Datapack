@@ -22,7 +22,7 @@
   execute if score @s gold_timer matches 0.. run scoreboard players remove @s gold_timer 1
   execute if score @s gold_timer matches 0 positioned ~ ~0.8 ~ run function player:status/gold/display/_
 # 死亡検知
-  effect give @s minecraft:resistance 1000000 10 true
+  effect give @s resistance 1000000 10 true
   execute if score @s hp matches ..0 run function player:death
 # 獲得経験値
   execute if score @s xp_gained matches 1.. run function player:status/level/xp/_

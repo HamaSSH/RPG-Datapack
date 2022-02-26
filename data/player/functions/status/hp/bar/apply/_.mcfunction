@@ -16,6 +16,6 @@
   execute if score @s hp_ratio matches ..16 run function player:status/hp/bar/apply/lv3/0
   execute if score @s hp_ratio matches 17..32 run function player:status/hp/bar/apply/lv3/1
   execute if score @s hp_ratio matches 33.. run function player:status/hp/bar/apply/lv2/4
-  effect give @s minecraft:instant_health 1 20 true
-  effect give @s minecraft:health_boost 1 0 true
-  effect clear @s minecraft:health_boost
+  effect give @s instant_health 1 20 true
+  effect give @s health_boost 1 0 true
+  effect clear @s health_boost
