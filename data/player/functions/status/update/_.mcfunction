@@ -35,6 +35,8 @@
   data modify storage player:temp SelectedItem set from entity @s SelectedItem
   execute if data storage player:temp SelectedItem.tag.weapon run function player:status/update/mainhand
   execute if data storage player:temp Inventory[{Slot:-106b}].tag{weapon:"bow"} unless data storage player:temp SelectedItem.tag{weapon:"bow"} run function player:status/update/offhand
+  # 職業のパッシブスキルからの補正
+    function player:class/bonus/_
   execute if data storage player:temp Inventory[{Slot:-106b}].tag.offhand run function player:status/update/offhand
   execute if data storage player:temp Inventory.[{Slot:103b}].tag{armor:"helmet"} run function player:status/update/helmet
   execute if data storage player:temp Inventory.[{Slot:102b}].tag{armor:"chestplate"} run function player:status/update/chestplate
@@ -43,8 +45,6 @@
   execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run function player:status/update/accessory9
   execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run function player:status/update/accessory10
   execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run function player:status/update/accessory11
-# 職業のパッシブスキルからの補正
-  execute if data storage player:temp Data run function player:class/bonus 
 # 最終的なステータス += 補正ステータス
   scoreboard players operation @s hp_max += @s hp_bonus
   scoreboard players operation @s mp_max += @s mp_bonus

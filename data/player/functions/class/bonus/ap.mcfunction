@@ -1,4 +1,4 @@
-# ウィザードで杖を持っていた場合
+# 適正武器を持っていた場合(AP)
   scoreboard players operation $APBonus Temporary = @s ap_bonus
   scoreboard players operation $APBonus Temporary *= #10 Constant
   scoreboard players add $APBonus Temporary 45

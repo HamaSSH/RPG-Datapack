@@ -1,4 +1,4 @@
-# ハンターで弓を持っていた場合
+# 適正武器を持っていた場合(DEX)
   scoreboard players operation $DEXBonus Temporary = @s dex_bonus
   scoreboard players operation $DEXBonus Temporary *= #10 Constant
   scoreboard players add $DEXBonus Temporary 45

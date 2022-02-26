@@ -1,12 +1,53 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "team": "Knight",
-    "equipment": {
-      "mainhand": {
-        "nbt": "{weapon:\"spear\"}"
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "team": "Knight",
+        "equipment": {
+          "mainhand": {
+            "nbt": "{weapon:\"dagger\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "team": "Knight",
+        "equipment": {
+          "mainhand": {
+            "nbt": "{weapon:\"sword\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "team": "Knight",
+        "equipment": {
+          "mainhand": {
+            "nbt": "{weapon:\"spear\"}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "team": "Knight",
+        "equipment": {
+          "mainhand": {
+            "nbt": "{weapon:\"hammer\"}"
+          }
+        }
       }
     }
-  }
+  ]
 }
