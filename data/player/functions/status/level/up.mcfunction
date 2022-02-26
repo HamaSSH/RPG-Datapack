@@ -23,8 +23,3 @@
   scoreboard players remove $LevelUp Temporary 1
   execute if score $LevelUp Temporary matches 0 run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
   execute if score $LevelUp Temporary matches 0 run tellraw @s ["☆ ",{"selector":"@s","bold":true},{"text":" がレベルアップしました！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"$CurrentLevel","objective":"Temporary"},"color":"yellow","bold":true},{"text":" )"}]
-# リセット
-  scoreboard players reset $LevelUp
-  scoreboard players reset $PreviousLevel
-  scoreboard players reset $CurrentLevel
-  scoreboard players reset $SkillLevel
