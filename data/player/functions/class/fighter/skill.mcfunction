@@ -22,7 +22,7 @@
   scoreboard players operation @s spd_class += $A Temporary
   scoreboard players operation @s crt_class += $A Temporary
   scoreboard players operation @s luk_class += $A Temporary
-# HPが50%以下出なければリセット
+# HPが50%以下でなければリセット
   execute if score $HPRatio Temporary matches 51.. run function player:class/bonus/reset
   function player:status/update/_
 # リセット
