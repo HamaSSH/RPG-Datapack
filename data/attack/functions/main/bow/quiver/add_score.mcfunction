@@ -1,5 +1,5 @@
 # Arrowスコアの加算
-  execute if score @s PreviousArrow matches 1.. run function item:quiver/equip
+  execute if score @s PreviousArrow matches 1.. run function attack:main/bow/quiver/equip
   execute store result score $ArrowCount Temporary run clear @s arrow{arrow:1b} 0
   scoreboard players operation @s Arrow += $ArrowCount Temporary
 # リセット

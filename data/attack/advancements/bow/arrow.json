@@ -5,13 +5,16 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{quiver:1b}"
+            "items": [
+              "minecraft:arrow"
+            ],
+            "nbt": "{arrow:1b}"
           }
         ]
       }
     }
   },
   "rewards": {
-    "function": "item:quiver/_"
+    "function": "attack:main/bow/quiver/_"
   }
 }
