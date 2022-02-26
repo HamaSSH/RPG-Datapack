@@ -10,14 +10,14 @@
   execute as @a if score @s WindAttack matches 1.. run scoreboard players remove @s WindAttack 1
 # 杖の通常攻撃弾の#tick
   execute as @e[type=area_effect_cloud,tag=Wand] at @s run function attack:main/wand/tick
-# 弓矢関連
+# 弓矢の弾の#tick
   execute as @e[type=arrow] run data modify entity @s PierceLevel set value 5b
-  execute as @e[type=arrow,tag=!ArrowLand] if data entity @s {inGround:1b} run function attack:main/bow/arrow/land
-  execute as @e[type=arrow,tag=LCArrow] at @s if data entity @s {inGround:0b} run particle crit ~ ~ ~ 0 0 0 0 1 force
+  execute as @e[type=arrow,tag=Arrow] at @s run function attack:main/bow/arrow/tick/_
+# 弓長押し検知チェック用のスコア加算
+  execute as @a if entity @s[tag=BowCharging] run scoreboard players add @s IfBowCharge 1
 # 時間経過でkillするエンティティ
   execute as @e[type=magma_cube,tag=LeftClick] if data entity @s {PortalCooldown:0} run function attack:main/kill
   execute as @e[type=item,tag=DmgDisplay] if data entity @s {PortalCooldown:0} run kill @s
   execute as @e[type=armor_stand,tag=GoldDisplay] if data entity @s {PortalCooldown:0} run kill @s
   execute as @e[type=armor_stand,tag=XPDisplay] if data entity @s {PortalCooldown:0} run kill @s
-  execute as @e[type=arrow,tag=ArrowLand] at @s if data entity @s {inGround:1b,PortalCooldown:0} run function attack:main/bow/arrow/kill
 # チェストに視点合わせたらスライム召喚しない
