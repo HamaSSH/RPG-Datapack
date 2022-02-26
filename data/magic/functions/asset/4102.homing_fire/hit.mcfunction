@@ -2,7 +2,7 @@
   function mob:on_hurt/element/fire
   scoreboard players set $XPower Temporary 80
   scoreboard players set $YPower Temporary 80
-  function attack:left_click/hit
+  function attack:main/hit
 # 演出
   particle minecraft:flame ~ ~ ~ 0.1 0.6 0.1 0.05 15 force
   particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force
