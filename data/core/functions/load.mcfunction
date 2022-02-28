@@ -11,13 +11,13 @@ say reload
   scoreboard objectives add fall_distance minecraft.custom:minecraft.fall_one_cm "落下距離"
   scoreboard objectives add bow_shot minecraft.used:minecraft.bow "弓使用"
   scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
-# asset用ID類
+# asset用ID等
   scoreboard objectives add PlayerID dummy "プレイヤーID"
   scoreboard objectives add MagicID dummy "魔法ID"
   scoreboard objectives add MobID dummy "モブID"
-# 保持が必要なスコア
+# 保持させておくスコア
   scoreboard objectives add Arrow dummy "弓矢"
-  scoreboard objectives add LCArrow dummy "左クリック弓矢表示"
+  scoreboard objectives add LCArrow dummy "左クリック弓矢"
   scoreboard objectives add BowCharge dummy "弓長押し検知"
   scoreboard objectives add IfBowCharge dummy "弓長押ししてない検知"
   scoreboard objectives add PreviousArrow dummy "弓矢値保存"
@@ -28,6 +28,7 @@ say reload
   scoreboard objectives add GoldDisplay dummy "Gold表示"
   scoreboard objectives add FallDistance dummy "畑荒らし対策"
 # タイマー
+  scoreboard objectives add InCombat dummy "戦闘タイマー"
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
   scoreboard objectives add HurtTime dummy "無敵時間"

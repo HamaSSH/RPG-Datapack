@@ -19,3 +19,4 @@
   scoreboard players set @s luk_base 0
   scoreboard players set @s cdr 0
   function player:status/update/_
+  function player:class/warrior/on_levelup
