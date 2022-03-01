@@ -17,5 +17,4 @@
   scoreboard players set @s spd_base 0
   scoreboard players set @s crt_base 0
   scoreboard players set @s luk_base 0
-  scoreboard players set @s cdr 0
   function player:status/update/_

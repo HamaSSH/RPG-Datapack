@@ -60,6 +60,7 @@ say reload
   scoreboard objectives add spd dummy "素早さ"
   scoreboard objectives add crt dummy "会心率"
   scoreboard objectives add luk dummy "運"
+  scoreboard objectives add cdr dummy "CD軽減"
   scoreboard objectives add lv_assassin dummy "アサシンLV"
   scoreboard objectives add lv_fighter dummy "ファイターLV"
   scoreboard objectives add lv_knight dummy "ナイトLV"
