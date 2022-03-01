@@ -1,5 +1,11 @@
-# 回復タイマーを加算してHPを1奪取
-  scoreboard players add @s hp_regen_timer 2000
-  scoreboard players remove @s hp 1
-# ダメージは1tickでどかんと食らって欲しいので再帰
-  execute if score @s hp_regen_timer matches ..-2000 run function player:status/hp/degen
+# ダメージ
+  scoreboard players operation $HPDegen Temporary = @s hp_regen_timer
+  scoreboard players operation $HPDegen Temporary /= #2000 Constant
+  scoreboard players operation @s hp += $HPDegen Temporary
+# 回復タイマーを減算
+  scoreboard players operation $HPDegen Temporary *= #2000 Constant
+  scoreboard players operation @s hp_regen_timer -= $HPDegen Temporary
+# 最小値を下回っていたら死
+  execute if score @s hp matches ..0 run function player:death
+# リセット
+  scoreboard players reset $HPDegen

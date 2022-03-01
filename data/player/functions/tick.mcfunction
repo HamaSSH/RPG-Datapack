@@ -2,17 +2,13 @@
 
 # 職業関連の#tick
   function player:class/tick
-# HPMPの自然回復
-  function player:status/regeneration
 # 属性particle
   function player:particle/_
 # HPMPBarの操作
   function player:status/hp/bar/apply/_
   execute unless score @s PreviousMP = @s mp run function player:status/mp/bar/_
-  execute if entity @s[tag=!HPFull] if score @s hp = @s hp_max run tag @s add HPFull
-  execute if entity @s[tag=HPFull] unless score @s hp = @s hp_max run tag @s remove HPFull
-  execute if entity @s[tag=!MPFull] if score @s mp = @s mp_max run tag @s add MPFull
-  execute if entity @s[tag=MPFull] unless score @s mp = @s mp_max run tag @s remove MPFull
+# HPMPの自然回復
+  function player:status/regeneration
 # 自然・エフェクトダメージ(+落下距離)
   execute store result score @s FallDistance run data get entity @s FallDistance 10
   execute if score @s fall_distance matches 1.. run function player:on_hurt/natural/fall

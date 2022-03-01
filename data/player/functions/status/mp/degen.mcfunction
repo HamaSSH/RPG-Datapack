@@ -1,5 +1,11 @@
-# 回復タイマーを加算してMPを1奪取
-  scoreboard players add @s mp_regen_timer 2000
-  scoreboard players remove @s mp 1
-# MPダメージ(?)は1tickでどかんと食らって欲しいので再帰
-  execute if score @s mp_regen_timer matches ..-2000 run function player:status/mp/degen
+# MPを減算
+  scoreboard players operation $MPDegen Temporary = @s mp_regen_timer
+  scoreboard players operation $MPDegen Temporary /= #2000 Constant
+  scoreboard players operation @s mp += $MPDegen Temporary
+# 回復タイマーを減算
+  scoreboard players operation $MPDegen Temporary *= #2000 Constant
+  scoreboard players operation @s mp_regen_timer -= $MPDegen Temporary
+# 最小値を下回っていたら戻す
+  execute if score @s mp matches ..0 run scoreboard players set @s mp 0
+# リセット
+  scoreboard players reset $MPDegen
