@@ -7,7 +7,7 @@
   scoreboard players set $YPower Temporary 100
 # 当たり判定
   execute positioned ~ ~-1.18 ~ as @e[type=#mob:mobs,tag=Enemy,distance=..3] run function attack:main/hit
-# 演出(弓溜め)
+# 演出(弓溜め2)
   particle explosion ~ ~ ~ 0.5 0.5 0.5 1 3 force
   playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.4 0.8
 # リセット
