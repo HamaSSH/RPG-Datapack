@@ -6,7 +6,8 @@
   scoreboard players set $XPower Temporary 100
   scoreboard players set $YPower Temporary 300
 # 当たり判定
-  execute positioned ~ ~-1.18 ~ as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..2] run function attack:main/hit
+  tag @s add this
+  execute positioned ~ ~-1.18 ~ as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..2] run function attack:main/bow/skill/hit
 # 演出(弓溜め1)
   function attack:main/bow/skill/1/effect/_
 # 着弾したらkill
@@ -16,3 +17,4 @@
   scoreboard players reset $DmgDealt
   scoreboard players reset $XPower
   scoreboard players reset $YPower
+  tag @s remove this
