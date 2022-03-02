@@ -18,4 +18,5 @@
 # リセット
   tag @s remove this
   tag @s remove Quiver
+  tag @s remove BowSkillOnCD
   scoreboard players reset @s bow_shot

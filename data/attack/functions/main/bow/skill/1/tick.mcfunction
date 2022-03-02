@@ -1,7 +1,7 @@
 # 与ダメージ計算
   scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
-  scoreboard players operation $DmgDealt Temporary *= #5 Constant
-  scoreboard players add $DmgDealt Temporary 15
+  scoreboard players operation $DmgDealt Temporary *= #4 Constant
+  scoreboard players add $DmgDealt Temporary 10
 # ノックバック
   scoreboard players set $XPower Temporary 100
   scoreboard players set $YPower Temporary 300

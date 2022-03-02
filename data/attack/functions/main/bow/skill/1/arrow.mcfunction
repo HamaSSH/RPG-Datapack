@@ -7,7 +7,7 @@
 # 溜め攻撃弓矢の初期処理
   data modify entity @s NoGravity set value 1b
   data modify entity @s PortalCooldown set value 30
-  tag @s add ArrowSkill
+  tag @s add ArrowSkill1
 # 弓矢と放ったプレイヤーの紐づけ
   scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
   scoreboard players operation @s dmg_dealt = @a[tag=this,limit=1] dex
