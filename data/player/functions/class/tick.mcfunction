@@ -3,5 +3,4 @@
   execute if entity @s[team=Fighter] run function player:class/fighter/_
   execute if entity @s[team=Knight] run function player:class/knight/_
   execute if entity @s[team=Warrior] run function player:class/warrior/_
-  #on_change execute if entity @s[team=Wizard] run function player:class/wizard/_
-  # execute if entity @s[team=Hunter] run function player:class/hunter/_
+  #homing execute if entity @s[team=Wizard] run function player:class/wizard/_
