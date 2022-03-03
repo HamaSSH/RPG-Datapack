@@ -1,13 +1,16 @@
+say hi
 # 操作前のレベルを一旦保存
   execute store result score $XPBarLevels Temporary run scoreboard players get @s mp
 # レベル129はポイントが 0~1002 なので割合を調べるのに最適
   xp set @s 129 levels
   execute store result score $XPBarPoints Temporary run xp query @s points
+  scoreboard players operation $Query PreviousMP = $XPBarPoints Temporary
 # MPの割合(0~100%)との違いを調べ、適用
   scoreboard players operation $XPBarDif Temporary = @s mp_ratio
-  scoreboard players operation $XPBarDif Temporary *= #10 Constant
   scoreboard players operation $XPBarDif Temporary -= $XPBarPoints Temporary
-  scoreboard players operation $XPBarDif Temporary /= #5 Constant
+  scoreboard players operation $XPBarDif PreviousMP = $XPBarDif Temporary
+  scoreboard players operation $mpratio PreviousMP = @s mp_ratio
+  scoreboard players operation $XPBarDif Temporary /= #6 Constant
   execute if score $XPBarDif Temporary matches 0 run scoreboard players operation @s PreviousMP = @s mp
 # 経験値ポイント加算
   xp set @s 0 points
@@ -65,6 +68,6 @@
   scoreboard players operation $XPBarLevels Temporary *= #2 Constant
   execute if score $XPBarLevels Temporary matches ..-1 run xp add @s 1 levels
 # リセット
-  scoreboard players reset $XPBarDif
-  scoreboard players reset $XPBarLevels
-  scoreboard players reset $XPBarPoints
+  # scoreboard players reset $XPBarDif
+  # scoreboard players reset $XPBarLevels
+  # scoreboard players reset $XPBarPoints
