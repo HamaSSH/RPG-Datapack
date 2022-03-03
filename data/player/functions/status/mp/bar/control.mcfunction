@@ -1,4 +1,3 @@
-say hi
 # 操作前のレベルを一旦保存
   execute store result score $XPBarLevels Temporary run scoreboard players get @s mp
 # レベル129はポイントが 0~1002 なので割合を調べるのに最適
