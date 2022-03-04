@@ -11,6 +11,7 @@
   execute as @e[type=#mob:mobs,tag=Enemy,tag=Hit,distance=..5] run function attack:main/wand/hit
 # 移動
   tp @s ^ ^ ^1
+  execute if score @s skill_level matches 1.. run function attack:main/wand/homing
 # 演出(杖通常)
   function attack:main/wand/particle/_
 # リセット

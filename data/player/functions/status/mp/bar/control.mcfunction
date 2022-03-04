@@ -67,6 +67,6 @@
   scoreboard players operation $XPBarLevels Temporary *= #2 Constant
   execute if score $XPBarLevels Temporary matches ..-1 run xp add @s 1 levels
 # リセット
-  # scoreboard players reset $XPBarDif
-  # scoreboard players reset $XPBarLevels
-  # scoreboard players reset $XPBarPoints
+  scoreboard players reset $XPBarDif
+  scoreboard players reset $XPBarLevels
+  scoreboard players reset $XPBarPoints

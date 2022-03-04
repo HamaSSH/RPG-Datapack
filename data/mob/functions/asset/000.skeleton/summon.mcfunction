@@ -5,7 +5,7 @@ summon skeleton ~ ~ ~ {CustomNameVisible:1b,DeathLootTable:"mob:asset/000.zombie
 # ステータス
   data modify storage mob:temp Data.lvl set value 2
   data modify storage mob:temp Data.hp set value 100
-  data modify storage mob:temp Data.ad set value 20
+  data modify storage mob:temp Data.ad set value 7
   data modify storage mob:temp Data.xp set value 20
 # データの適用
   execute as @e[type=#mob:mobs,tag=Init,sort=nearest,limit=1] run function mob:init
