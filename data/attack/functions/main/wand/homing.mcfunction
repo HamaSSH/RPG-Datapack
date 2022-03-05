@@ -5,6 +5,7 @@
 # ホーミング角度設定
   scoreboard players set $Homing Temporary 10
   scoreboard players operation $Homing Temporary *= @s skill_level
+  execute if entity @s[tag=WandSkill] run scoreboard players set $Homing Temporary 50
   # 敵が右に居たら右に旋回
     execute facing entity @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..20,sort=nearest,limit=1] eyes positioned ^0.5 ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run scoreboard players operation $RotationX Temporary += $Homing Temporary
   # 敵が左に居たら左に旋回

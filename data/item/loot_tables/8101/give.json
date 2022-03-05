@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Unbreakable:1b,CustomModelData:8101,bonus:{hp:5,ad:10},weapon:\"dagger\",HideFlags:127,sell_price:10,rarity:\"normal\"}"
+              "tag": "{Unbreakable:1b,CustomModelData:8101,bonus:{hp:5,ad:6},weapon:\"dagger\",HideFlags:127,sell_price:10,rarity:\"normal\"}"
             },
             {
               "function": "minecraft:set_attributes",
@@ -18,7 +18,7 @@
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "attack_speed",
-                  "amount": -1.8,
+                  "amount": -2.0,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -106,7 +106,7 @@
                     "color": "#E0E0E0"
                   },
                   {
-                    "text": "+10",
+                    "text": "+6",
                     "color": "#72FF5C"
                   }
                 ]

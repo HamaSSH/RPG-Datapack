@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Unbreakable:1b,CustomModelData:8101,bonus:{hp:5,ad:10},weapon:\"dagger\",HideFlags:127,shop_value:50,rarity:\"normal\"}"
+              "tag": "{Unbreakable:1b,CustomModelData:8101,bonus:{hp:5,ad:6},weapon:\"dagger\",HideFlags:127,shop_value:50,rarity:\"normal\"}"
             },
             {
               "function": "minecraft:set_attributes",
@@ -117,7 +117,7 @@
                     "color": "#E0E0E0"
                   },
                   {
-                    "text": "+10",
+                    "text": "+6",
                     "color": "#72FF5C"
                   }
                 ]

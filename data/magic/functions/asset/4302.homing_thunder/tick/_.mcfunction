@@ -1,6 +1,6 @@
-# ホーミング的な
-  execute unless entity @e[tag=Enemy,distance=..15,limit=1] run tp ^ ^ ^1
-  execute facing entity @e[tag=Enemy,distance=..15,sort=nearest,limit=1] eyes run tp ^ ^ ^0.9
+# ホーミング
+  tp @s ^ ^ ^1
+  function attack:main/wand/homing
 # 当たり判定
   scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
   execute if entity @e[tag=Enemy,distance=..2.5] run data modify entity @s Age set value 49
