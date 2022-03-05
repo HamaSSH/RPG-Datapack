@@ -16,11 +16,16 @@
     execute if predicate core:actionbar/r/magic/wind run function core:actionbar/r/magic/wind
 # 武器
   # 表示(左) mainhand:武器, 弓はmainhand/offhand
-    execute if predicate core:actionbar/l/weapon/dagger run function core:actionbar/l/weapon/dagger
-    execute if predicate core:actionbar/l/weapon/sword run function core:actionbar/l/weapon/sword
-    execute if predicate core:actionbar/l/weapon/spear run function core:actionbar/l/weapon/spear
-    execute if predicate core:actionbar/l/weapon/hammer run function core:actionbar/l/weapon/hammer
-    execute if predicate core:actionbar/l/weapon/wand run function core:actionbar/l/weapon/wand
+    execute if predicate core:actionbar/l/weapon/dagger if score @s skill_cd matches 0 run function core:actionbar/l/weapon/dagger
+    execute if predicate core:actionbar/l/weapon/sword if score @s skill_cd matches 0 run function core:actionbar/l/weapon/sword
+    execute if predicate core:actionbar/l/weapon/spear if score @s skill_cd matches 0 run function core:actionbar/l/weapon/spear
+    execute if predicate core:actionbar/l/weapon/hammer if score @s skill_cd matches 0 run function core:actionbar/l/weapon/hammer
+    execute if predicate core:actionbar/l/weapon/wand if score @s skill_cd matches 0 run function core:actionbar/l/weapon/wand
+    execute if predicate core:actionbar/l/weapon/dagger unless score @s skill_cd matches 0 run function core:actionbar/l/weapon/on_cd/dagger
+    execute if predicate core:actionbar/l/weapon/sword unless score @s skill_cd matches 0 run function core:actionbar/l/weapon/on_cd/sword
+    execute if predicate core:actionbar/l/weapon/spear unless score @s skill_cd matches 0 run function core:actionbar/l/weapon/on_cd/spear
+    execute if predicate core:actionbar/l/weapon/hammer unless score @s skill_cd matches 0 run function core:actionbar/l/weapon/on_cd/hammer
+    execute if predicate core:actionbar/l/weapon/wand unless score @s skill_cd matches 0 run function core:actionbar/l/weapon/on_cd/wand
     execute if predicate core:actionbar/l/weapon/bow unless data storage actionbar:temp iconL run function core:actionbar/l/weapon/bow/_
   # 表示(右) mainhand:武器(弓以外), offhand:弓
     execute if predicate core:actionbar/r/weapon/bow run function core:actionbar/r/weapon/bow/_

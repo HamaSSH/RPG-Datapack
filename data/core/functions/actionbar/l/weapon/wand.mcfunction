@@ -31,4 +31,3 @@
   execute if score @s sneak matches 30 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0BD"}'
   execute if score @s sneak matches 31 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0BE"}'
   execute if score @s sneak matches 32.. run data modify storage actionbar:temp iconL set value '{"text":"\\uE0BF"}'
-# 
