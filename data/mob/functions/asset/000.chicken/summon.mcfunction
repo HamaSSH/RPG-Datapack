@@ -1,4 +1,4 @@
-summon chicken ~ ~ ~ {CustomNameVisible:1b,Health:1000f,Tags:["Init","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}],DeathLootTable:"none"}
+summon chicken ~ ~ ~ {CustomNameVisible:1b,Health:1000f,Team:Enemy,Tags:["Init","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}],DeathLootTable:"none"}
 # 見た目
   data modify storage mob:temp Data.CustomName set value '{"text":"チケン"}'
   data modify storage mob:temp Data.Armor set value [{},{},{},{}]

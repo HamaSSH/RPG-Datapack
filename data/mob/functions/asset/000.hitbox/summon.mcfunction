@@ -1,6 +1,6 @@
-summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,CustomNameVisible:1b,Health:1000f,Team:Enemy,Tags:["Init","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+execute align xyz run summon slime ~2.5 ~ ~2.5 {Size:1,NoAI:1b,Silent:1b,CustomNameVisible:1b,Health:1000f,Team:Enemy,Tags:["Init","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}]}
 # 見た目
-  data modify storage mob:temp Data.CustomName set value '{"text":"ゾンビィ"}'
+  data modify storage mob:temp Data.CustomName set value '{"text":""}'
   data modify storage mob:temp Data.Armor set value [{},{},{},{}]
 # ステータス
   data modify storage mob:temp Data.lvl set value 1
