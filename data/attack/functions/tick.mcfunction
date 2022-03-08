@@ -11,8 +11,7 @@
 # 杖の通常攻撃弾の#tick
   execute as @e[type=area_effect_cloud,tag=Wand] at @s run function attack:main/wand/tick
 # 弓矢の弾の#tick
-  execute as @e[type=arrow] run data modify entity @s PierceLevel set value 5b
-  execute as @e[type=arrow,tag=Arrow] at @s run function attack:main/bow/arrow/tick/_
+  execute as @e[type=arrow] at @s run function attack:main/bow/arrow/tick/_
 # 弓長押し検知チェック用のスコア加算
   execute as @a if entity @s[tag=BowCharging] run scoreboard players add @s IfBowCharge 1
 # 時間経過でkillするエンティティ
