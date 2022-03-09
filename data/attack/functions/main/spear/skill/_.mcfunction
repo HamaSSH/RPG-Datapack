@@ -5,11 +5,11 @@
     scoreboard players add $DmgDealt Temporary 10
   # クリティカル時のダメージ表示用
     execute if entity @s[tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4
-  # ノックバック
+  # ノックバック($XPowerは固定)
     scoreboard players set $XPower Temporary 100
-    scoreboard players set $YPower Temporary 400
+    scoreboard players set $YPower Temporary 150
   # 当たり判定
-    execute positioned ^ ^ ^3 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..6] positioned ^9.6 ^ ^ if entity @s[distance=..11] positioned ^-19.2 ^ ^ if entity @s[distance=..11] run function attack:main/hit
+    execute anchored eyes positioned ^ ^ ^ run function attack:main/spear/skill/rec
   # リセット
     function core:trigger/sneak/reset
     scoreboard players reset $DmgDealt
