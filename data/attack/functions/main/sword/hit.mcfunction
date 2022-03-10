@@ -1,4 +1,6 @@
 # Hitタグのついたエンティティへの攻撃
   function attack:main/hit
 # Hitタグのついたエンティティの左右も攻撃
-  execute at @s as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..1.5,sort=nearest,limit=1] run function attack:main/hit
+  execute at @s positioned ~-0.75 ~ ~-0.75 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,dx=0.5,dy=0.5,dz=0.5,sort=nearest,limit=5] run function attack:main/hit
+  # execute at @s run particle wax_on ~-0.75 ~ ~-0.75 0 0 0 0 10 force
+  # execute at @s run particle wax_off ~0.75 ~1.6 ~0.75 0 0 0 0 10 force
