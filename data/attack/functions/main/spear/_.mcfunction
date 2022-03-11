@@ -7,7 +7,7 @@
   scoreboard players set $YPower Temporary 80
 # 当たり判定
   execute anchored eyes positioned ^ ^ ^-0.1 run function attack:main/spear/rec
-  execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,tag=!HurtTime,distance=..9] run function attack:main/hit
+  execute positioned ~-4.5 ~-4.5 ~-4.5 as @e[type=#mob:mobs,tag=Hit,tag=Enemy,dx=8,dy=8,dz=8] run function attack:main/hit
 # 演出(槍通常)
   function attack:main/spear/effect/_
 # リセット

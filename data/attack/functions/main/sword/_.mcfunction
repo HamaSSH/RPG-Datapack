@@ -8,7 +8,7 @@
 # 当たり判定
   execute anchored eyes positioned ^ ^ ^-0.2 run function attack:main/sword/rec
   execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,tag=!HurtTime,distance=..8,sort=nearest,limit=1] run function attack:main/sword/hit
-  execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,distance=..8] run tag @s remove Hit
+  execute positioned ~-4 ~-4 ~-4 as @e[type=#mob:mobs,tag=Hit,tag=Enemy,dx=7,dy=7,dz=7] run tag @s remove Hit
 # 演出(刀剣通常)
   function attack:main/sword/effect/_
 # リセット

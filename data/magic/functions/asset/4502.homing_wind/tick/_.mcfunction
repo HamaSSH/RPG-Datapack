@@ -1,5 +1,5 @@
 # ホーミング
-  tp @s ^ ^ ^0.9
+  tp @s ^ ^ ^0.8
   function attack:main/wand/homing
 # 当たり判定
   scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
@@ -8,8 +8,8 @@
 # 演出
   particle minecraft:enchant ~ ~ ~ 0.3 0.3 0.3 0 15 force
   particle minecraft:dust 0.478 0.784 0.275 2 ~ ~ ~ 0.2 0.1 0.2 0 4 force
-  particle minecraft:dust 0.478 0.784 0.275 2 ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+  particle minecraft:dust 0.478 0.784 0.275 2 ^ ^ ^0.4 0.2 0.1 0.2 0 4 force
   particle minecraft:dust 0.725 1 0.506 2 ~ ~ ~ 0.2 0.1 0.2 0 4 force
-  particle minecraft:dust 0.725 1 0.506 2 ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+  particle minecraft:dust 0.725 1 0.506 2 ^ ^ ^0.4 0.2 0.1 0.2 0 4 force
 # リセット
   scoreboard players reset $DmgDealt

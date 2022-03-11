@@ -8,7 +8,7 @@
 # 当たり判定
   execute anchored eyes positioned ^ ^ ^-0.1 run function attack:main/dagger/rec
   execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,distance=..7,sort=nearest,limit=2] run function attack:main/dagger/hit
-  execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,distance=..7] run tag @s remove Hit
+  execute positioned ~-3.5 ~-3.5 ~-3.5 as @e[type=#mob:mobs,tag=Hit,tag=Enemy,dx=6,dy=6,dz=6] run tag @s remove Hit
 # 演出(短剣通常)
   function attack:main/dagger/effect/_
 # リセット
