@@ -19,5 +19,6 @@
   execute store result entity @s Rotation[1] float 0.1 run scoreboard players get $RotationY Temporary
 # リセット
   data remove storage attack:temp Rotation
+  scoreboard players reset $Homing
   scoreboard players reset $RotationX
   scoreboard players reset $RotationY
