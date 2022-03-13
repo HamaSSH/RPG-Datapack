@@ -1,17 +1,17 @@
 {
-	"description": "Undead Mobs (No Boss)",
-	"values": [
+  "description": "Undead Mobs (No Boss)",
+  "values": [
     "minecraft:drowned",
-		"minecraft:husk",
+    "minecraft:husk",
     "minecraft:phantom",
-		"minecraft:skeleton",
+    "minecraft:skeleton",
     "minecraft:skeleton_horse",
-		"minecraft:stray",
-		"minecraft:wither_skeleton",
-		"minecraft:zoglin",
-		"minecraft:zombie",
+    "minecraft:stray",
+    "minecraft:wither_skeleton",
+    "minecraft:zoglin",
+    "minecraft:zombie",
     "minecraft:zombie_horse",
-		"minecraft:zombie_villager",
-		"minecraft:zombified_piglin"
-	]
+    "minecraft:zombie_villager",
+    "minecraft:zombified_piglin"
+  ]
 }
