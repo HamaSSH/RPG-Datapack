@@ -1,14 +1,14 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:block",
+    "pools": [
         {
-          "type": "minecraft:loot_table",
-          "name": "item:asset/5001/_"
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "item:asset/5001/_"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

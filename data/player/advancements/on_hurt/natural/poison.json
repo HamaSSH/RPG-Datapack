@@ -1,23 +1,23 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "effects": {
-                "minecraft:poison": {}
-              }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "effects": {
+                                "minecraft:poison": {}
+                            }
+                        }
+                    }
+                ]
             }
-          }
-        ]
-      }
+        }
+    },
+    "rewards": {
+        "function": "player:on_hurt/natural/poison"
     }
-  },
-  "rewards": {
-    "function": "player:on_hurt/natural/poison"
-  }
 }

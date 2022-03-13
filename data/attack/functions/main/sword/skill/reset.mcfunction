@@ -1,2 +1,2 @@
 # リセット
-  tag @s remove SwordTick
+    tag @s remove SwordTick

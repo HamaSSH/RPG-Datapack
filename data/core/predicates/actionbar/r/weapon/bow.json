@@ -1,73 +1,73 @@
 [
-  {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{weapon:\"dagger\"}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{weapon:\"sword\"}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{weapon:\"spear\"}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{weapon:\"hammer\"}"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{weapon:\"wand\"}"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{weapon:\"dagger\"}"
+            "equipment": {
+                "offhand": {
+                    "nbt": "{weapon:\"bow\"}"
+                }
             }
-          }
         }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{weapon:\"sword\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{weapon:\"spear\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{weapon:\"hammer\"}"
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "equipment": {
-            "mainhand": {
-              "nbt": "{weapon:\"wand\"}"
-            }
-          }
-        }
-      }
-    ]
-  },
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "offhand": {
-          "nbt": "{weapon:\"bow\"}"
-        }
-      }
     }
-  }
 ]

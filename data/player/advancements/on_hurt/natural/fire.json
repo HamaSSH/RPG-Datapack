@@ -1,17 +1,17 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:entity_hurt_player",
-      "conditions": {
-        "damage": {
-          "type": {
-            "is_fire": true
-          }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_fire": true
+                    }
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "player:on_hurt/natural/fire"
     }
-  },
-  "rewards": {
-    "function": "player:on_hurt/natural/fire"
-  }
 }

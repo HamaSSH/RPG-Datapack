@@ -1,12 +1,12 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "team": "Warrior",
-    "equipment": {
-      "mainhand": {
-        "nbt": "{weapon:\"hammer\"}"
-      }
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "team": "Warrior",
+        "equipment": {
+            "mainhand": {
+                "nbt": "{weapon:\"hammer\"}"
+            }
+        }
     }
-  }
 }

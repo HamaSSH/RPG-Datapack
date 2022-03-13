@@ -1,20 +1,20 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:arrow"
-            ],
-            "nbt": "{arrow:1b}"
-          }
-        ]
-      }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:arrow"
+                        ],
+                        "nbt": "{arrow:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "attack:main/bow/quiver/_"
     }
-  },
-  "rewards": {
-    "function": "attack:main/bow/quiver/_"
-  }
 }

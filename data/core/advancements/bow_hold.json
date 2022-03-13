@@ -1,15 +1,15 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:using_item",
-      "conditions": {
-        "item": {
-          "nbt": "{weapon:\"bow\"}"
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{weapon:\"bow\"}"
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "core:trigger/bow/hold"
     }
-  },
-  "rewards": {
-    "function": "core:trigger/bow/hold"
-  }
 }

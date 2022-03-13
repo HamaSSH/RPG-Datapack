@@ -1,12 +1,12 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "team": "Wizard",
-    "equipment": {
-      "mainhand": {
-        "nbt": "{weapon:\"wand\"}"
-      }
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "team": "Wizard",
+        "equipment": {
+            "mainhand": {
+                "nbt": "{weapon:\"wand\"}"
+            }
+        }
     }
-  }
 }

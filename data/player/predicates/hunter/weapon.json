@@ -1,29 +1,29 @@
 {
-  "condition": "minecraft:alternative",
-  "terms": [
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "Hunter",
-        "equipment": {
-          "mainhand": {
-            "nbt": "{weapon:\"wand\"}"
-          }
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "team": "Hunter",
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{weapon:\"wand\"}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "team": "Hunter",
+                "equipment": {
+                    "offhand": {
+                        "nbt": "{weapon:\"wand\"}"
+                    }
+                }
+            }
         }
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "team": "Hunter",
-        "equipment": {
-          "offhand": {
-            "nbt": "{weapon:\"wand\"}"
-          }
-        }
-      }
-    }
-  ]
+    ]
 }

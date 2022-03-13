@@ -1,47 +1,47 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:tick",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:alternative",
-            "terms": [
-              {
-                "condition": "minecraft:entity_scores",
-                "entity": "this",
-                "scores": {
-                  "BowCharge": {
-                    "min": 1
-                  },
-                  "bow_shot": {
-                    "min": 1
-                  }
-                }
-              },
-              {
-                "condition": "minecraft:inverted",
-                "term": {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "this",
-                  "scores": {
-                    "BowCharge": {
-                      "min": {
-                        "type": "minecraft:score",
-                        "target": "this",
-                        "score": "IfBowCharge"
-                      }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_scores",
+                                "entity": "this",
+                                "scores": {
+                                    "BowCharge": {
+                                        "min": 1
+                                    },
+                                    "bow_shot": {
+                                        "min": 1
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "BowCharge": {
+                                            "min": {
+                                                "type": "minecraft:score",
+                                                "target": "this",
+                                                "score": "IfBowCharge"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
                     }
-                  }
-                }
-              }
-            ]
-          }
-        ]
-      }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "core:trigger/bow/release"
     }
-  },
-  "rewards": {
-    "function": "core:trigger/bow/release"
-  }
 }

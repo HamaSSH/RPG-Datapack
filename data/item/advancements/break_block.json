@@ -1,10 +1,10 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:item_durability_changed"
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_durability_changed"
+        }
+    },
+    "rewards": {
+        "function": "item:collect/break_block"
     }
-  },
-  "rewards": {
-    "function": "item:collect/break_block"
-  }
 }

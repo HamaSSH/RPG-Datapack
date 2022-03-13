@@ -1,19 +1,19 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "mainhand": {
-        "nbt": "{weapon:\"sword\"}"
-      }
-    },
-    "player": {
-      "advancements": {
-        "attack:player_attacked": {
-          "melee_crit": false,
-          "projectile": false
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "nbt": "{weapon:\"sword\"}"
+            }
+        },
+        "player": {
+            "advancements": {
+                "attack:player_attacked": {
+                    "melee_crit": false,
+                    "projectile": false
+                }
+            }
         }
-      }
     }
-  }
 }

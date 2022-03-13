@@ -1,2 +1,2 @@
 # リセット
-  tag @s remove HammerTick
+    tag @s remove HammerTick

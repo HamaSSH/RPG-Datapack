@@ -1,7 +1,7 @@
 {
-  "values": [
-    "minecraft:gold_nugget",
-    "minecraft:gold_ingot",
-    "minecraft:gold_block"
-  ]
+    "values": [
+        "minecraft:gold_nugget",
+        "minecraft:gold_ingot",
+        "minecraft:gold_block"
+    ]
 }

@@ -1,17 +1,17 @@
 {
-  "function": "minecraft:set_name",
-  "entity": "this",
-  "name": [
-    {
-      "text": "獲得G: ",
-      "color": "#FBFFA3"
-    },
-    {
-      "score": {
-        "name": "$GoldDisplay",
-        "objective": "Temporary"
-      },
-      "color": "#FEFFED"
-    }
-  ]
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+        {
+            "text": "獲得G: ",
+            "color": "#FBFFA3"
+        },
+        {
+            "score": {
+                "name": "$GoldDisplay",
+                "objective": "Temporary"
+            },
+            "color": "#FEFFED"
+        }
+    ]
 }

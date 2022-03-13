@@ -1,442 +1,442 @@
 {
-  "criteria": {
-    "melee_ad": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "equipment": {
-                  "mainhand": {
-                    "nbt": "{weapon:\"wand\"}"
-                  }
+    "criteria": {
+        "melee_ad": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{weapon:\"wand\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_projectile": false
+                    }
                 }
-              }
             }
-          }
-        ],
-        "damage": {
-          "type": {
-            "is_projectile": false
-          }
-        }
-      }
-    },
-    "melee_ap": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "equipment": {
-                "mainhand": {
-                  "nbt": "{weapon:\"wand\"}"
+        },
+        "melee_ap": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{weapon:\"wand\"}"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_projectile": false
+                    }
                 }
-              }
             }
-          }
+        },
+        "projectile": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_projectile": true
+                    }
+                }
+            }
+        },
+        "melee_nocrit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0,
+                        "max": 0.999
+                    }
+                }
+            }
+        },
+        "melee_crit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1.0,
+                        "max": 1.999
+                    }
+                }
+            }
+        },
+        "bow_nocrit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 2.0,
+                        "max": 11.999
+                    }
+                }
+            }
+        },
+        "bow_crit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 12.0,
+                        "max": 20.0
+                    }
+                }
+            }
+        },
+        "melee_charge0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0,
+                        "max": 0.399
+                    }
+                }
+            }
+        },
+        "melee_charge1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0.4,
+                        "max": 0.749
+                    }
+                }
+            }
+        },
+        "melee_charge2": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0.75,
+                        "max": 0.999
+                    }
+                }
+            }
+        },
+        "melee_charge3": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1.0,
+                        "max": 1.199
+                    }
+                }
+            }
+        },
+        "melee_charge4": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1.2,
+                        "max": 1.999
+                    }
+                }
+            }
+        },
+        "ranged_charge0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 2.0,
+                        "max": 5.999
+                    }
+                }
+            }
+        },
+        "ranged_charge1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 6.0,
+                        "max": 9.499
+                    }
+                }
+            }
+        },
+        "ranged_charge2": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 9.5,
+                        "max": 11.999
+                    }
+                }
+            }
+        },
+        "ranged_charge3": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 12.0,
+                        "max": 15.999
+                    }
+                }
+            }
+        },
+        "ranged_charge4": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 16.0,
+                        "max": 20.0
+                    }
+                }
+            }
+        },
+        "MobID8.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID8.1\"]}"
+                }
+            }
+        },
+        "MobID8.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID8.0\"]}"
+                }
+            }
+        },
+        "MobID7.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID7.1\"]}"
+                }
+            }
+        },
+        "MobID7.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID7.0\"]}"
+                }
+            }
+        },
+        "MobID6.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID6.1\"]}"
+                }
+            }
+        },
+        "MobID6.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID6.0\"]}"
+                }
+            }
+        },
+        "MobID5.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID5.1\"]}"
+                }
+            }
+        },
+        "MobID5.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID5.0\"]}"
+                }
+            }
+        },
+        "MobID4.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID4.1\"]}"
+                }
+            }
+        },
+        "MobID4.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID4.0\"]}"
+                }
+            }
+        },
+        "MobID3.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID3.1\"]}"
+                }
+            }
+        },
+        "MobID3.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID3.0\"]}"
+                }
+            }
+        },
+        "MobID2.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID2.1\"]}"
+                }
+            }
+        },
+        "MobID2.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID2.0\"]}"
+                }
+            }
+        },
+        "MobID1.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID1.1\"]}"
+                }
+            }
+        },
+        "MobID1.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID1.0\"]}"
+                }
+            }
+        },
+        "MobID0.1": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID0.1\"]}"
+                }
+            }
+        },
+        "MobID0.0": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"MobID0.0\"]}"
+                }
+            }
+        },
+        "LeftClick": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"LeftClick\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "melee_nocrit",
+            "melee_crit",
+            "bow_nocrit",
+            "bow_crit"
         ],
-        "damage": {
-          "type": {
-            "is_projectile": false
-          }
-        }
-      }
-    },
-    "projectile": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "type": {
-            "is_projectile": true
-          }
-        }
-      }
-    },
-    "melee_nocrit": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0,
-            "max": 0.999
-          }
-        }
-      }
-    },
-    "melee_crit": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 1.0,
-            "max": 1.999
-          }
-        }
-      }
-    },
-    "bow_nocrit": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 2.0,
-            "max": 11.999
-          }
-        }
-      }
-    },
-    "bow_crit": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 12.0,
-            "max": 20.0
-          }
-        }
-      }
-    },
-    "melee_charge0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0,
-            "max": 0.399
-          }
-        }
-      }
-    },
-    "melee_charge1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0.4,
-            "max": 0.749
-          }
-        }
-      }
-    },
-    "melee_charge2": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 0.75,
-            "max": 0.999
-          }
-        }
-      }
-    },
-    "melee_charge3": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 1.0,
-            "max": 1.199
-          }
-        }
-      }
-    },
-    "melee_charge4": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 1.2,
-            "max": 1.999
-          }
-        }
-      }
-    },
-    "ranged_charge0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 2.0,
-            "max": 5.999
-          }
-        }
-      }
-    },
-    "ranged_charge1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 6.0,
-            "max": 9.499
-          }
-        }
-      }
-    },
-    "ranged_charge2": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 9.5,
-            "max": 11.999
-          }
-        }
-      }
-    },
-    "ranged_charge3": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 12.0,
-            "max": 15.999
-          }
-        }
-      }
-    },
-    "ranged_charge4": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "damage": {
-          "dealt": {
-            "min": 16.0,
-            "max": 20.0
-          }
-        }
-      }
-    },
-    "MobID8.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID8.1\"]}"
-        }
-      }
-    },
-    "MobID8.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID8.0\"]}"
-        }
-      }
-    },
-    "MobID7.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID7.1\"]}"
-        }
-      }
-    },
-    "MobID7.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID7.0\"]}"
-        }
-      }
-    },
-    "MobID6.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID6.1\"]}"
-        }
-      }
-    },
-    "MobID6.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID6.0\"]}"
-        }
-      }
-    },
-    "MobID5.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID5.1\"]}"
-        }
-      }
-    },
-    "MobID5.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID5.0\"]}"
-        }
-      }
-    },
-    "MobID4.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID4.1\"]}"
-        }
-      }
-    },
-    "MobID4.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID4.0\"]}"
-        }
-      }
-    },
-    "MobID3.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID3.1\"]}"
-        }
-      }
-    },
-    "MobID3.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID3.0\"]}"
-        }
-      }
-    },
-    "MobID2.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID2.1\"]}"
-        }
-      }
-    },
-    "MobID2.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID2.0\"]}"
-        }
-      }
-    },
-    "MobID1.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID1.1\"]}"
-        }
-      }
-    },
-    "MobID1.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID1.0\"]}"
-        }
-      }
-    },
-    "MobID0.1": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID0.1\"]}"
-        }
-      }
-    },
-    "MobID0.0": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"MobID0.0\"]}"
-        }
-      }
-    },
-    "LeftClick": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"LeftClick\"]}"
-        }
-      }
+        [
+            "melee_ad",
+            "melee_ap",
+            "projectile"
+        ],
+        [
+            "melee_charge0",
+            "melee_charge1",
+            "melee_charge2",
+            "melee_charge3",
+            "melee_charge4",
+            "ranged_charge0",
+            "ranged_charge1",
+            "ranged_charge2",
+            "ranged_charge3",
+            "ranged_charge4"
+        ],
+        [
+            "MobID8.1",
+            "MobID8.0",
+            "LeftClick"
+        ],
+        [
+            "MobID7.1",
+            "MobID7.0",
+            "LeftClick"
+        ],
+        [
+            "MobID6.1",
+            "MobID6.0",
+            "LeftClick"
+        ],
+        [
+            "MobID5.1",
+            "MobID5.0",
+            "LeftClick"
+        ],
+        [
+            "MobID4.1",
+            "MobID4.0",
+            "LeftClick"
+        ],
+        [
+            "MobID3.1",
+            "MobID3.0",
+            "LeftClick"
+        ],
+        [
+            "MobID2.1",
+            "MobID2.0",
+            "LeftClick"
+        ],
+        [
+            "MobID1.1",
+            "MobID1.0",
+            "LeftClick"
+        ],
+        [
+            "MobID0.1",
+            "MobID0.0",
+            "LeftClick"
+        ]
+    ],
+    "rewards": {
+        "function": "attack:player_attacked/_"
     }
-  },
-  "requirements": [
-    [
-      "melee_nocrit",
-      "melee_crit",
-      "bow_nocrit",
-      "bow_crit"
-    ],
-    [
-      "melee_ad",
-      "melee_ap",
-      "projectile"
-    ],
-    [
-      "melee_charge0",
-      "melee_charge1",
-      "melee_charge2",
-      "melee_charge3",
-      "melee_charge4",
-      "ranged_charge0",
-      "ranged_charge1",
-      "ranged_charge2",
-      "ranged_charge3",
-      "ranged_charge4"
-    ],
-    [
-      "MobID8.1",
-      "MobID8.0",
-      "LeftClick"
-    ],
-    [
-      "MobID7.1",
-      "MobID7.0",
-      "LeftClick"
-    ],
-    [
-      "MobID6.1",
-      "MobID6.0",
-      "LeftClick"
-    ],
-    [
-      "MobID5.1",
-      "MobID5.0",
-      "LeftClick"
-    ],
-    [
-      "MobID4.1",
-      "MobID4.0",
-      "LeftClick"
-    ],
-    [
-      "MobID3.1",
-      "MobID3.0",
-      "LeftClick"
-    ],
-    [
-      "MobID2.1",
-      "MobID2.0",
-      "LeftClick"
-    ],
-    [
-      "MobID1.1",
-      "MobID1.0",
-      "LeftClick"
-    ],
-    [
-      "MobID0.1",
-      "MobID0.0",
-      "LeftClick"
-    ]
-  ],
-  "rewards": {
-    "function": "attack:player_attacked/_"
-  }
 }

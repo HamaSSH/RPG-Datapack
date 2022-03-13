@@ -1,12 +1,12 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Tags:[\"DaggerSkill\"]}",
-    "equipment": {
-      "mainhand": {
-        "nbt": "{weapon:\"dagger\"}"
-      }
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{Tags:[\"DaggerSkill\"]}",
+        "equipment": {
+            "mainhand": {
+                "nbt": "{weapon:\"dagger\"}"
+            }
+        }
     }
-  }
 }

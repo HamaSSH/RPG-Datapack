@@ -1,42 +1,42 @@
 [
-  {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-      "crt": {
-        "min": 1
-      }
+    {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+            "crt": {
+                "min": 1
+            }
+        }
+    },
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "player": {
+                        "advancements": {
+                            "attack:player_attacked": {
+                                "melee_crit": true
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "player": {
+                        "advancements": {
+                            "attack:player_attacked": {
+                                "bow_crit": true
+                            }
+                        }
+                    }
+                }
+            }
+        ]
     }
-  },
-  {
-    "condition": "minecraft:alternative",
-    "terms": [
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "player": {
-            "advancements": {
-              "attack:player_attacked": {
-                "melee_crit": true
-              }
-            }
-          }
-        }
-      },
-      {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-          "player": {
-            "advancements": {
-              "attack:player_attacked": {
-                "bow_crit": true
-              }
-            }
-          }
-        }
-      }
-    ]
-  }
 ]

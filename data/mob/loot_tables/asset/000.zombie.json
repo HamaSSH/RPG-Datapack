@@ -1,64 +1,64 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "type": "minecraft:entity",
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_nugget",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 18
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{gold: 1b, display: {Name:'[{\"italic\":false,\"color\":\"white\",\"text\":\"1\"},{\"italic\":false,\"color\":\"#FFEE59\",\"text\":\"G\"}]'}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 18
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{gold: 1b, display: {Name:'[{\"italic\":false,\"color\":\"white\",\"text\":\"1\"},{\"italic\":false,\"color\":\"#FFEE59\",\"text\":\"G\"}]'}}"
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:rotten_flesh",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": true,
-              "conditions": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
+                    "type": "minecraft:item",
+                    "name": "minecraft:rotten_flesh",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1,
+                            "add": true,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Unbreakable: 1b, CustomModelData: 5001, material: 1b, HideFlags: 127, price: 0, display: {Lore: ['{\"text\":\"腐った、肉。異臭がする。\",\"color\":\"#D8D8D8\",\"italic\":false}', '{\"text\":\"今すぐ手放してしまいたいが。\",\"color\":\"#D8D8D8\",\"italic\":false}', '{\"strikethrough\":true,\"color\":\"dark_gray\",\"text\":\"⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯\"}', '{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"▸ \"},{\"color\":\"#E0E0E0\",\"text\":\"売価: \"},{\"color\":\"white\",\"text\":\"8\"},{\"color\":\"#FFEE59\",\"text\":\"G\"}],\"text\":\"\"}', '{\"strikethrough\":true,\"color\":\"dark_gray\",\"text\":\"⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯\"}', '{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"▸ \"},{\"text\":\"素材\"},{\"text\":\"【\"},{\"bold\":true,\"italic\":false,\"color\":\"white\",\"translate\":\"ノーマル\"},{\"text\":\"】\"}],\"text\":\"\"}'], Name: '{\"italic\":false,\"color\":\"white\",\"text\":\"腐った肉\"}'}, value: 8, rarity: \"normal\"}"
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Unbreakable: 1b, CustomModelData: 5001, material: 1b, HideFlags: 127, price: 0, display: {Lore: ['{\"text\":\"腐った、肉。異臭がする。\",\"color\":\"#D8D8D8\",\"italic\":false}', '{\"text\":\"今すぐ手放してしまいたいが。\",\"color\":\"#D8D8D8\",\"italic\":false}', '{\"strikethrough\":true,\"color\":\"dark_gray\",\"text\":\"⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯\"}', '{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"▸ \"},{\"color\":\"#E0E0E0\",\"text\":\"売価: \"},{\"color\":\"white\",\"text\":\"8\"},{\"color\":\"#FFEE59\",\"text\":\"G\"}],\"text\":\"\"}', '{\"strikethrough\":true,\"color\":\"dark_gray\",\"text\":\"⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯\"}', '{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"▸ \"},{\"text\":\"素材\"},{\"text\":\"【\"},{\"bold\":true,\"italic\":false,\"color\":\"white\",\"translate\":\"ノーマル\"},{\"text\":\"】\"}],\"text\":\"\"}'], Name: '{\"italic\":false,\"color\":\"white\",\"text\":\"腐った肉\"}'}, value: 8, rarity: \"normal\"}"
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

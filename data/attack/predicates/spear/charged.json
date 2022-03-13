@@ -1,31 +1,31 @@
 [
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "mainhand": {
-          "nbt": "{weapon:\"spear\"}"
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt": "{weapon:\"spear\"}"
+                }
+            },
+            "player": {
+                "advancements": {
+                    "attack:player_attacked": {
+                        "melee_crit": true,
+                        "projectile": false
+                    }
+                }
+            }
         }
-      },
-      "player": {
-        "advancements": {
-          "attack:player_attacked": {
-            "melee_crit": true,
-            "projectile": false
-          }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"SpearSkill\"]}"
+            }
         }
-      }
     }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Tags:[\"SpearSkill\"]}"
-      }
-    }
-  }
 ]

@@ -1,17 +1,17 @@
 {
-  "criteria": {
-    "requirement": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "item:gold"
-          }
-        ]
-      }
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "item:gold"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:status/gold/get"
     }
-  },
-  "rewards": {
-    "function": "player:status/gold/get"
-  }
 }

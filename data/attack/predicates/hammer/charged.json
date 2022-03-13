@@ -1,31 +1,31 @@
 [
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "mainhand": {
-          "nbt": "{weapon:\"hammer\"}"
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt": "{weapon:\"hammer\"}"
+                }
+            },
+            "player": {
+                "advancements": {
+                    "attack:player_attacked": {
+                        "melee_crit": true,
+                        "projectile": false
+                    }
+                }
+            }
         }
-      },
-      "player": {
-        "advancements": {
-          "attack:player_attacked": {
-            "melee_crit": true,
-            "projectile": false
-          }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"HammerSkill\"]}"
+            }
         }
-      }
     }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Tags:[\"HammerSkill\"]}"
-      }
-    }
-  }
 ]

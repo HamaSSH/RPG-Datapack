@@ -1,31 +1,31 @@
 [
-  {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "equipment": {
-        "mainhand": {
-          "nbt": "{weapon:\"wand\"}"
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt": "{weapon:\"wand\"}"
+                }
+            },
+            "player": {
+                "advancements": {
+                    "attack:player_attacked": {
+                        "melee_crit": true,
+                        "projectile": false
+                    }
+                }
+            }
         }
-      },
-      "player": {
-        "advancements": {
-          "attack:player_attacked": {
-            "melee_crit": true,
-            "projectile": false
-          }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"WandSkill\"]}"
+            }
         }
-      }
     }
-  },
-  {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Tags:[\"WandSkill\"]}"
-      }
-    }
-  }
 ]

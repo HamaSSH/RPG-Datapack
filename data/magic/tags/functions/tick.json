@@ -1,14 +1,14 @@
 {
-  "values": [
-    "magic:asset/4101.fire_ball/tick/id",
-    "magic:asset/4102.homing_fire/tick/id",
-    "magic:asset/4201.water_ball/tick/id",
-    "magic:asset/4202.homing_water/tick/id",
-    "magic:asset/4301.thunder_ball/tick/id",
-    "magic:asset/4302.homing_thunder/tick/id",
-    "magic:asset/4401.earth_ball/tick/id",
-    "magic:asset/4402.homing_earth/tick/id",
-    "magic:asset/4501.wind_ball/tick/id",
-    "magic:asset/4502.homing_wind/tick/id"
-  ]
+    "values": [
+        "magic:asset/4101.fire_ball/tick/id",
+        "magic:asset/4102.homing_fire/tick/id",
+        "magic:asset/4201.water_ball/tick/id",
+        "magic:asset/4202.homing_water/tick/id",
+        "magic:asset/4301.thunder_ball/tick/id",
+        "magic:asset/4302.homing_thunder/tick/id",
+        "magic:asset/4401.earth_ball/tick/id",
+        "magic:asset/4402.homing_earth/tick/id",
+        "magic:asset/4501.wind_ball/tick/id",
+        "magic:asset/4502.homing_wind/tick/id"
+    ]
 }
