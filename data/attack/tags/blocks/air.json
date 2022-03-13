@@ -1,7 +1,7 @@
 {
-   "values": [
-      "minecraft:air",
-      "minecraft:cave_air",
-      "minecraft:void_air"
-   ]
+  "values": [
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air"
+  ]
 }
