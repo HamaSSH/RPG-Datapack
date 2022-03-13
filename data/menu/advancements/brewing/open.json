@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "open_menu": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:chest_minecart",
+          "nbt": "{Tags:[\"MenuInit\",\"Brewing\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "menu:brewing/open"
+  }
+}

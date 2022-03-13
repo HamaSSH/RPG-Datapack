@@ -1,0 +1,25 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "text": "所持ゴールド: ",
+      "color": "white",
+      "italic": false
+    },
+    {
+      "score": {
+        "name": "@p",
+        "objective": "gold"
+      },
+      "color": "white",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "text": "G",
+      "color": "#FFEE59",
+      "italic": false
+    }
+  ]
+}

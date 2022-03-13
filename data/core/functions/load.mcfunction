@@ -30,6 +30,7 @@ say reload
 # タイマー
   scoreboard objectives add InCombat dummy "戦闘タイマー"
   scoreboard objectives add gold_timer dummy "Gold表示までの時間"
+  scoreboard objectives add menu_timer dummy "メニューを開いている時間"
   scoreboard objectives add skill_cd dummy "スキルCD"
   scoreboard objectives add HurtTime dummy "無敵時間"
   scoreboard objectives add ElementAttack dummy "属性攻撃"

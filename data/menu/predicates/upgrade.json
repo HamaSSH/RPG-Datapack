@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "player": {
+      "looking_at": {
+        "type": "minecraft:magma_cube",
+        "nbt": "{Tags:[\"Upgrade\"]}",
+        "distance": {
+          "absolute": {
+            "min": 0,
+            "max": 5.5
+          }
+        }
+      }
+    }
+  }
+}
