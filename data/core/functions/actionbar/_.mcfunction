@@ -29,7 +29,7 @@
     execute if predicate core:actionbar/l/weapon/bow unless data storage actionbar:temp iconL run function core:actionbar/l/weapon/bow/_
   # 表示(右) mainhand:武器(弓以外), offhand:弓
     execute if predicate core:actionbar/r/weapon/bow run function core:actionbar/r/weapon/bow/_
-# もし表示させるものが無ければ空白  
+# もし表示させるものが無ければ空白
   execute unless data storage actionbar:temp iconL run data modify storage actionbar:temp iconL set value '{"text":"\\uF82A\\uF807"}'
   execute unless data storage actionbar:temp iconR run data modify storage actionbar:temp iconR set value '{"text":"\\uF82A\\uF807"}'
 # HP表示

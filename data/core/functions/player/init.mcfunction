@@ -4,4 +4,3 @@
   tag @s add PlayerID
 # baseステータス設定
   function player:status/init
-  

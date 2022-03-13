@@ -1,2 +1,1 @@
 # プレイヤーSelectedItem → storage
-  
