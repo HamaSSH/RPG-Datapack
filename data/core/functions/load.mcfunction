@@ -139,3 +139,4 @@ say reload
     team modify Hunter collisionRule never
 # forceload
     execute in overworld run forceload add -1 -1 0 0
+    setblock 0 0 0 minecraft:white_shulker_box

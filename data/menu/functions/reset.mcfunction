@@ -4,8 +4,4 @@
     execute as @e[type=marker,tag=MenuManager] if score @s PlayerID = @p PlayerID run kill @s
 # リセット
     tag @s remove Menu
-    tag @s remove BrewingMenu
-    tag @s remove CookingMenu
-    tag @s remove CraftingMenu
-    tag @s remove UpgradeMenu
     scoreboard players reset @s menu_timer

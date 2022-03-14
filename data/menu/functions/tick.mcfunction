@@ -4,7 +4,8 @@
     execute if predicate menu:brewing run function menu:brewing/summon
     execute if predicate menu:cooking run function menu:cooking/
     execute if predicate menu:crafting run function menu:crafting/
-    execute if predicate menu:upgrade run function menu:upgrade/
+    execute if predicate menu:upgrading run function menu:upgrading/
+
 # メニュー操作検知
     execute if entity @s[tag=Menu] positioned ^ ^ ^10 as @e[type=marker,tag=MenuManager,distance=..5] positioned ^ ^ ^-10 if score @s PlayerID = @p PlayerID run function menu:manager
 # メニューを閉じたことの検知(ESCクリック検知は出来ない;;)
