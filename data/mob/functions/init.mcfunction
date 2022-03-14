@@ -44,4 +44,4 @@
 # リセット
     data remove storage mob:temp Data
     scoreboard players reset $IDtoTag
-    tag @s remove Init
+    tag @s remove MobInit
