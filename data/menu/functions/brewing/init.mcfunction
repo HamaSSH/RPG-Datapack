@@ -6,7 +6,7 @@
 # チェストトロッコ初期処理
     item modify entity @s container.17 menu:set_gold
     data modify storage menu:temp Data.Items set from entity @s Items
-    tp @s ~ ~5.0 ~
+    tp @s ~ ~-2 ~
     tag @s remove MenuInit
     tag @s add Open
 # メニュー管理マーカー初期処理
