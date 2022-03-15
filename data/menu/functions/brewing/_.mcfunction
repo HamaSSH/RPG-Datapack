@@ -11,7 +11,7 @@
 # ボタンクリック
     clear @p #item:everything{menu:{blank:1b}}
     execute unless data storage menu:temp Data.Items[{Slot:9b,tag:{menu:{blank:1b}}}] positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:brewing/refresh
-    execute unless data storage menu:temp Data.Items[{Slot:13b,tag:{menu:{button:"brew"}}}] run scoreboard players set $ButtonClicked Temporary 1
+    execute unless data storage menu:temp Data.Items[{Slot:13b,tag:{menu:{button:"brew"}}}] run function menu:brewing/brew/check
     execute unless data storage menu:temp Data.Items[{Slot:17b,tag:{menu:{blank:1b}}}] positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:brewing/refresh
 # メニュー内の操作音
     execute unless score $ButtonClicked Temporary matches 1 run playsound ui.button.click master @p ~ ~ ~ 0.3 2.0
