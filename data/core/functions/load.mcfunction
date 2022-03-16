@@ -40,6 +40,7 @@ say reload
 # システム
     scoreboard objectives add dmg_dealt dummy "与ダメージ"
     scoreboard objectives add dmg_received dummy "被ダメージ"
+    scoreboard objectives add page dummy "ページ"
 # ステータス
     scoreboard objectives add hp dummy "現在のHP"
     scoreboard objectives add mp dummy "現在のMP"

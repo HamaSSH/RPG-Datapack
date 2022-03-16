@@ -16,7 +16,7 @@
             "player": {
                 "looking_at": {
                     "type": "minecraft:magma_cube",
-                    "nbt": "{Tags:[\"Upgrade\"]}",
+                    "nbt": "{Tags:[\"Upgrading\"]}",
                     "distance": {
                         "absolute": {
                             "min": 0,
