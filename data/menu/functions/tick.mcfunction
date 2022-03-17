@@ -3,7 +3,7 @@
 # メニュー召喚
     execute if predicate menu:brewing run function menu:brewing/summon
     execute if predicate menu:cooking run function menu:cooking/summon
-    execute if predicate menu:crafting run function menu:crafting/
+    execute if predicate menu:crafting run function menu:crafting/summon
     execute if predicate menu:upgrading run function menu:upgrading/summon
 
 # 他プレイヤーのチェストトロッコ覗き防止(ちょっとガバ)
