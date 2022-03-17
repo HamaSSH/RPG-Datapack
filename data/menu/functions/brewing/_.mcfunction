@@ -5,6 +5,9 @@
     data modify storage menu:temp Data.return set from storage menu:temp Data.Items
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]
     data remove storage menu:temp Data.return[{tag:{menu:{brewable:1b}}}]
+    data remove storage menu:temp Data.return[{Slot:14b,tag:{potion:1b}}]
+    data remove storage menu:temp Data.return[{Slot:15b,tag:{potion:1b}}]
+    data remove storage menu:temp Data.return[{Slot:16b,tag:{potion:1b}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ボタンクリック
     clear @p #item:everything{menu:{blank:1b}}

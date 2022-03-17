@@ -1,7 +1,7 @@
 # 既にスロットに配置されているアイテムは除外
-    execute if data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:10b}]
-    execute if data storage menu:temp Data.Items[{Slot:11b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:11b}]
-    execute if data storage menu:temp Data.Items[{Slot:12b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:12b}]
+    execute if data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:10b,tag:{menu:{brewable:1b}}}]
+    execute if data storage menu:temp Data.Items[{Slot:11b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:11b,tag:{menu:{brewable:1b}}}]
+    execute if data storage menu:temp Data.Items[{Slot:12b,tag:{menu:{brewable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:12b,tag:{menu:{brewable:1b}}}]
     data remove storage menu:temp Data.brewing[{Slot:10b,tag:{menu:{brewable:1b}}}]
     data remove storage menu:temp Data.brewing[{Slot:11b,tag:{menu:{brewable:1b}}}]
     data remove storage menu:temp Data.brewing[{Slot:12b,tag:{menu:{brewable:1b}}}]
