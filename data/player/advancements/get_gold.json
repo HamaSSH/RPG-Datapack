@@ -5,7 +5,8 @@
             "conditions": {
                 "items": [
                     {
-                        "tag": "item:gold"
+                        "tag": "item:gold",
+                        "nbt": "{gold:1b}"
                     }
                 ]
             }
