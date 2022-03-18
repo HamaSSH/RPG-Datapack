@@ -11,9 +11,6 @@
     execute if score @s page matches 300..399 run function menu:crafting/tool/page
     execute if score @s page matches 400..499 run function menu:crafting/others/page
     execute if score @s page matches 1000.. run scoreboard players remove @s page 1000
-# 二重更新を防ぐためにメニュー管理マーカー更新
-    execute positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run data modify storage menu:temp Data.Items set from entity @s Items
-    data modify entity @s data.Items set from storage menu:temp Data.Items
 # メニュー更新
     execute if score @s page matches 0 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:crafting/refresh
     execute if score @s page matches 100 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:crafting/weapon/refresh
@@ -23,3 +20,6 @@
 # メニュー内の操作音
     execute unless score $ButtonClicked Temporary matches 1 run playsound minecraft:ui.button.click master @p ~ ~ ~ 0.3 2.0
     scoreboard players reset $ButtonClicked
+# 二重更新を防ぐためにメニュー管理マーカー更新
+    execute positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run data modify storage menu:temp Data.Items set from entity @s Items
+    data modify entity @s data.Items set from storage menu:temp Data.Items
