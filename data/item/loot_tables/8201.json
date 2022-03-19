@@ -9,8 +9,17 @@
                     "name": "minecraft:carrot_on_a_stick",
                     "functions": [
                         {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": {
+                                "text": "木の刀剣",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Unbreakable:1b,CustomModelData:8201,bonus:{ad:10},weapon:\"sword\",HideFlags:127,sell_price:10,rarity:\"normal\"}"
+                            "tag": "{Unbreakable:1b,CustomModelData:8201,rarity:1,buy:50,sell:10,bonus:{ad:10},weapon:\"sword\",HideFlags:127}"
                         },
                         {
                             "function": "minecraft:set_attributes",
@@ -23,15 +32,6 @@
                                     "slot": "mainhand"
                                 }
                             ]
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "entity": "this",
-                            "name": {
-                                "text": "木の刀剣",
-                                "color": "white",
-                                "italic": false
-                            }
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -54,7 +54,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "切れ味はよく、とても軽い。"
+                                        "text": "とても軽く切れ味が良い。"
                                     }
                                 ]
                             ]
@@ -116,7 +116,11 @@
                                         "text": "▸ 刀剣"
                                     },
                                     {
-                                        "text": "【ノーマル】"
+                                        "text": "【★☆☆☆☆",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "】"
                                     },
                                     {
                                         "text": "\uE2A2\uF808\uF80210",

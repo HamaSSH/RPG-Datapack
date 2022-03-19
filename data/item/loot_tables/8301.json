@@ -9,22 +9,6 @@
                     "name": "minecraft:carrot_on_a_stick",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Unbreakable:1b,CustomModelData:8301,bonus:{ad:9},weapon:\"spear\",HideFlags:127,sell_price:10,rarity:\"normal\"}"
-                        },
-                        {
-                            "function": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "minecraft:generic.attack_speed",
-                                    "name": "attack_speed",
-                                    "amount": -2.7,
-                                    "operation": "addition",
-                                    "slot": "mainhand"
-                                }
-                            ]
-                        },
-                        {
                             "function": "minecraft:set_name",
                             "entity": "this",
                             "name": {
@@ -32,6 +16,22 @@
                                 "color": "white",
                                 "italic": false
                             }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Unbreakable:1b,CustomModelData:8301,rarity:1,buy:50,sell:10,bonus:{ad:9},weapon:\"spear\",HideFlags:127}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "name": "attack_speed",
+                                    "amount": -2.8,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                }
+                            ]
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -116,7 +116,11 @@
                                         "text": "▸ 槍"
                                     },
                                     {
-                                        "text": "【ノーマル】"
+                                        "text": "【★☆☆☆☆",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "】"
                                     },
                                     {
                                         "text": "\uE2A2\uF808\uF80210",

@@ -9,17 +9,6 @@
                     "name": "minecraft:bow",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Unbreakable:1b,CustomModelData:8601,bonus:{dex:10,spd:10},weapon:\"bow\",HideFlags:127,sell_price:10,rarity:\"normal\"}"
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "minecraft:infinity": 1,
-                                "minecraft:power": 3
-                            }
-                        },
-                        {
                             "function": "minecraft:set_name",
                             "entity": "this",
                             "name": {
@@ -27,6 +16,22 @@
                                 "color": "white",
                                 "italic": false
                             }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Unbreakable:1b,CustomModelData:8601,rarity:1,buy:50,sell:10,bonus:{dex:10,spd:10},weapon:\"bow\",HideFlags:127}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "name": "attack_speed",
+                                    "amount": -2.0,
+                                    "operation": "addition",
+                                    "slot": "mainhand"
+                                }
+                            ]
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -132,7 +137,11 @@
                                         "text": "▸ 弓"
                                     },
                                     {
-                                        "text": "【ノーマル】"
+                                        "text": "【★☆☆☆☆",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": "】"
                                     },
                                     {
                                         "text": "\uE2A2\uF808\uF80210",
