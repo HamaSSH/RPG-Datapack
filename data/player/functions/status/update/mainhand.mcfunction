@@ -23,13 +23,6 @@
     execute if data storage player:temp mainhand.crt run scoreboard players operation @s crt_bonus += $Bonus Temporary
     execute if data storage player:temp mainhand.luk store result score $Bonus Temporary run data get storage player:temp mainhand.luk
     execute if data storage player:temp mainhand.luk run scoreboard players operation @s luk_bonus += $Bonus Temporary
-# 職業の補正ステータス
-    execute if predicate player:assassin/weapon run function player:class/assassin/bonus_status
-    execute if predicate player:fighter/weapon run function player:class/fighter/bonus_status
-    execute if predicate player:knight/weapon run function player:class/knight/bonus_status
-    execute if predicate player:warrior/weapon run function player:class/warrior/bonus_status
-    execute if predicate player:wizard/weapon run function player:class/wizard/bonus_status
-    execute if predicate player:hunter/weapon run function player:class/hunter/bonus_status
 # リセット
     data remove storage player:temp mainhand
     scoreboard players reset $Bonus

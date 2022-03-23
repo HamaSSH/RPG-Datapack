@@ -1,8 +1,7 @@
 # 職業ステータスリセット
     function player:class/bonus/reset
 # 「戦闘の天才」スキルレベルごとにステータス補正
-    scoreboard players operation $HPRegen Temporary = @s hp_regen_base
-    scoreboard players operation $MPRegen Temporary = @s mp_regen_base
+    function player:class/knight/get_regen
     scoreboard players operation $A Temporary = @s skill_level
     scoreboard players add $A Temporary 1
     scoreboard players operation $HPRegen Temporary *= $A Temporary
@@ -10,8 +9,13 @@
     scoreboard players operation $MPRegen Temporary *= $A Temporary
     scoreboard players operation $MPRegen Temporary /= #4 Constant
 # HP/MP_REGEN補正
-    scoreboard players operation @s hp_regen_class += $HPRegen Temporary
-    scoreboard players operation @s mp_regen_class += $MPRegen Temporary
+    scoreboard players operation @s hp_regen_class = $HPRegen Temporary
+    scoreboard players operation @s mp_regen_class = $MPRegen Temporary
+# OutOfCombat後3秒回復ブースト
+    execute if score @s InCombat matches -60..-1 run function player:class/knight/regen_boost
+    execute if score @s InCombat matches 1.. run function player:class/bonus/reset
     function player:status/update/_
 # リセット
+    scoreboard players reset $HPRegen
+    scoreboard players reset $MPRegen
     scoreboard players reset $A

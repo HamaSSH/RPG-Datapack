@@ -31,10 +31,10 @@
     function player:class/bonus/_
 # 装備品の補正ステータス
     execute if data storage player:temp Inventory[{Slot:-106b}].tag.offhand run function player:status/update/offhand
-    execute if data storage player:temp Inventory.[{Slot:103b}].tag{armor:"helmet"} run function player:status/update/helmet
-    execute if data storage player:temp Inventory.[{Slot:102b}].tag{armor:"chestplate"} run function player:status/update/chestplate
-    execute if data storage player:temp Inventory.[{Slot:101b}].tag{armor:"leggings"} run function player:status/update/leggings
-    execute if data storage player:temp Inventory.[{Slot:100b}].tag{armor:"boots"} run function player:status/update/boots
+    execute if data storage player:temp Inventory.[{Slot:103b}].tag{equipment:"helmet"} run function player:status/update/helmet
+    execute if data storage player:temp Inventory.[{Slot:102b}].tag{equipment:"chestplate"} run function player:status/update/chestplate
+    execute if data storage player:temp Inventory.[{Slot:101b}].tag{equipment:"leggings"} run function player:status/update/leggings
+    execute if data storage player:temp Inventory.[{Slot:100b}].tag{equipment:"boots"} run function player:status/update/boots
     execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run function player:status/update/accessory9
     execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run function player:status/update/accessory10
     execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run function player:status/update/accessory11

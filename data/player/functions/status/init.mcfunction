@@ -41,7 +41,6 @@
     scoreboard players set @s ThunderAttack 0
     scoreboard players set @s EarthAttack 0
     scoreboard players set @s WindAttack 0
-    scoreboard players set @s InCombat 0
     scoreboard players set @s cdr 0
 # 当たり判定の無効化
     team join NoCollision @s
