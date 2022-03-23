@@ -23,7 +23,7 @@
         execute if predicate attack:wand/skill run function attack:main/wand/skill/cost
         execute if predicate attack:wand/fail run function attack:main/wand/fail
 # 弓の左クリック検知
-    execute if predicate attack:/chargedbow run function attack:main/bow/_
+    execute if predicate attack:bow/charged run function attack:main/bow/_
 # リセット
     tag @s remove CriticalHit
     scoreboard players reset $DmgDealt
