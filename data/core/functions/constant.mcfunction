@@ -11,6 +11,7 @@
     scoreboard players set #35 Constant 35
     scoreboard players set #40 Constant 40
     scoreboard players set #50 Constant 50
+    scoreboard players set #56 Constant 56
     scoreboard players set #60 Constant 60
     scoreboard players set #70 Constant 70
     scoreboard players set #75 Constant 75
@@ -28,3 +29,4 @@
     scoreboard players set #2^17 Constant 131072
     scoreboard players set #10^6 Constant 1000000
     scoreboard players set #2^21 Constant 2097152
+    scoreboard players set #2^22 Constant 4194304

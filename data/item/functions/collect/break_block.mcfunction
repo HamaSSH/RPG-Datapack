@@ -8,7 +8,8 @@
     item modify entity @s weapon.mainhand item:collect/use_tool
 # 耐久値計算＋耐久値バー設定
     scoreboard players operation $Remain Temporary -= $Damage Temporary
-    scoreboard players operation $Damage Temporary *= #229 Constant
+    execute if data storage item:temp Data{id:"minecraft:shears"} run scoreboard players operation $Damage Temporary *= #229 Constant
+    execute unless data storage item:temp Data{id:"minecraft:shears"} run scoreboard players operation $Damage Temporary *= #56 Constant
     scoreboard players operation $Damage Temporary /= $Durability Temporary
     execute store result storage item:temp Data.Damage int 1 run scoreboard players add $Damage Temporary 1
     item modify entity @s weapon.mainhand item:collect/damage
