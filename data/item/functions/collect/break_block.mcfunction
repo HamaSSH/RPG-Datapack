@@ -13,9 +13,12 @@
     scoreboard players operation $Damage Temporary /= $Durability Temporary
     execute store result storage item:temp Data.Damage int 1 run scoreboard players add $Damage Temporary 1
     item modify entity @s weapon.mainhand item:collect/damage
+# 耐久値のLore編集
+    item modify entity @s weapon.mainhand item:collect/remain
 # もし耐久値が0になったら壊れる
     execute if score $Remain Temporary matches 0 run function item:collect/no_durability
 # リセット
+    data remove storage item:temp Data
     scoreboard players reset $Damage
     scoreboard players reset $Durability
     scoreboard players reset $Remain
