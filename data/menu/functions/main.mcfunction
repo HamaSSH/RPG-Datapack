@@ -3,3 +3,5 @@
     execute if data storage menu:temp Data{type:"Cooking"} run function menu:cooking/_
     execute if data storage menu:temp Data{type:"Crafting"} run function menu:crafting/_
     execute if data storage menu:temp Data{type:"Upgrading"} run function menu:upgrading/_
+# NPC
+    execute if data storage menu:temp Data{type:"Shop"} run function menu:shop/_

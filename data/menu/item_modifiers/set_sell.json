@@ -1,0 +1,90 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "(+"
+                },
+                {
+                    "score": {
+                        "name": "$TotalSellPrice",
+                        "objective": "Temporary"
+                    }
+                },
+                {
+                    "text": "G",
+                    "color": "#FFEE59"
+                },
+                {
+                    "text": ")"
+                }
+            ]
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$TotalSellPrice"
+                    },
+                    "score": "Temporary"
+                },
+                "range": {
+                    "min": 1
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "(+"
+                },
+                0,
+                {
+                    "text": "G",
+                    "color": "#FFEE59"
+                },
+                {
+                    "text": ")"
+                }
+            ]
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "$TotalSellPrice"
+                        },
+                        "score": "Temporary"
+                    },
+                    "range": {
+                        "min": 1
+                    }
+                }
+            }
+        ]
+    }
+]
