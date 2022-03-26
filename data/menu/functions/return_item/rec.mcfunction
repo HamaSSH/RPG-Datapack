@@ -13,9 +13,7 @@
     execute if score $Inventory Temporary matches 36.. run loot spawn ~ ~ ~ mine 0 0 0 barrier
 # 返却するアイテムがなくなるまで再帰
     data remove storage menu:temp Data.return[0]
-    scoreboard players remove $NumOfItems Temporary 1
-    execute if score $NumOfItems Temporary matches 1.. run function menu:return_item/rec
+    execute if data storage menu:temp Data.return[] run function menu:return_item/rec
 # リセット
     data remove storage menu:temp Inventory
     scoreboard players reset $Inventory
-    scoreboard players reset $NumOfItems
