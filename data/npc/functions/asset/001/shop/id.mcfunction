@@ -1,0 +1,1 @@
+execute if data storage menu:temp Data.tag.menu{id:1} run function npc:asset/001/shop/page/_
