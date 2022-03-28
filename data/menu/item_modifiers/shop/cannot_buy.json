@@ -1,0 +1,45 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{menu:{blank:1b,button:\"buy!\"}}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "name": {
+            "text": "お金が足りない！",
+            "color": "#FF4B4B",
+            "italic": false
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "(-",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "score": {
+                        "name": "$BuyPrice",
+                        "objective": "Temporary"
+                    },
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "G",
+                    "color": "#FFEE59",
+                    "italic": false
+                },
+                {
+                    "text": ")",
+                    "color": "white",
+                    "italic": false
+                }
+            ]
+        ]
+    }
+]
