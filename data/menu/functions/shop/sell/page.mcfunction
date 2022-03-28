@@ -7,3 +7,6 @@
         execute unless data storage menu:temp Data.Items[{Slot:8b,tag:{menu:{blank:1b}}}] run function menu:return_item/_
     # 「売却」を実行
         execute unless data storage menu:temp Data.Items[{Slot:17b,tag:{menu:{button:"sell!"}}}] unless data storage menu:temp Data.return[{tag:{menu:{sellable:0b}}}] run function menu:shop/sell/_
+    # スロット17に売却不可アイテムがある場合
+        execute if data storage menu:temp Data.Items[{Slot:17b,tag:{menu:{sellable:0b}}}] run scoreboard players set @s page 10
+        execute if data storage menu:temp Data.Items[{Slot:17b,tag:{menu:{sellable:0b}}}] run function menu:return_item/_

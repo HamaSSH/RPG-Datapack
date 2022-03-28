@@ -4,6 +4,6 @@
 # 既にスロットに入っていたアイテムはそのまま
     data modify entity @s Items append from storage menu:temp Data.return[]
 # 売却ボタンのLoreに売却額を代入
-    item modify entity @s container.17 menu:set_sell
+    item modify entity @s container.17 menu:shop/set_sell
 # 売却不可能なアイテムがあった場合
-    execute if data storage menu:temp Data.return[{tag:{menu:{sellable:0b}}}] run item modify entity @s container.17 menu:unsellable
+    execute if data storage menu:temp Data.return[{tag:{menu:{sellable:0b}}}] run item modify entity @s container.17 menu:shop/unsellable

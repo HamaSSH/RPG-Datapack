@@ -13,3 +13,4 @@
     execute as @a at @s run function menu:tick
     execute as @e[type=#mob:mobs,tag=Enemy] at @s run function mob:tick
     execute as @a at @s run function player:tick
+    execute as @a at @s run function npc:tick
