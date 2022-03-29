@@ -14,6 +14,8 @@
     scoreboard players operation @s gold += $GoldNugget Temporary
     scoreboard players operation @s gold += $GoldIngot Temporary
     scoreboard players operation @s gold += $GoldBlock Temporary
+# メニュー操作中にゴールドを得た場合
+    execute if score @s menu_timer matches 1.. positioned ^ ^ ^10 as @e[type=marker,tag=MenuManager,distance=..5] positioned ^ ^ ^-10 if score @s PlayerID = @p PlayerID run function menu:shop/buy/gold_gained
 # リセット
     scoreboard players reset $GoldNugget
     scoreboard players reset $GoldIngot
