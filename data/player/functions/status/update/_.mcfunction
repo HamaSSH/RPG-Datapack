@@ -78,7 +78,7 @@
     # scoreboard players operation 物理攻撃力 status = @s ad
     # scoreboard players operation 素早さ status = @s spd
     # scoreboard players operation 会心 status = @s crt
-    # scoreboard players operation 運 status = @s luk
+    # scoreboard players operation 幸運 status = @s luk
     # scoreboard players operation 防御 status = @s def
     # scoreboard players operation ad_class status = @s ad_class
     # scoreboard players operation def_class status = @s def_class

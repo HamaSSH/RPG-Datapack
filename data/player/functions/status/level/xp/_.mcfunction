@@ -1,4 +1,4 @@
-# 運ステータス補正
+# 幸運ステータス補正
     execute if score @s luk matches 1.. run function player:status/luk/xp_boost
     playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
 # 職業XP保存
