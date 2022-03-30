@@ -1,0 +1,1 @@
+summon villager ~ ~ ~ {NoAI:1b,Tags:["NPC.002"]}

@@ -10,12 +10,14 @@
     execute if score @s page matches 0 run function menu:shop/page
     execute if score @s page matches 1 run function menu:shop/sell/page
     execute if score @s page matches 2 run function menu:shop/buy/page
+    execute if score @s page matches 3 run function menu:shop/multiple/page
     execute if score @s page matches 10.. run scoreboard players remove @s page 10
 # メニュー更新
     data modify storage menu:temp Data.buy set from entity @s data.buy
     execute if score @s page matches 0 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:shop/refresh
     execute if score @s page matches 1 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:shop/sell/refresh
     execute if score @s page matches 2 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:shop/buy/refresh
+    execute if score @s page matches 3 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:shop/multiple/refresh
 # メニュー内の操作音
     execute unless score $ButtonClicked Temporary matches 1 run playsound minecraft:ui.button.click master @p ~ ~ ~ 0.3 2.0
     scoreboard players reset $ButtonClicked
