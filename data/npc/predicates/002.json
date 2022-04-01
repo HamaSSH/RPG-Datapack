@@ -13,6 +13,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+            "nbt": "{Tags:[\"NPC.002\"]}",
             "player": {
                 "looking_at": {
                     "type": "minecraft:villager",
