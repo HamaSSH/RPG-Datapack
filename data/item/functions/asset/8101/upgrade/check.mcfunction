@@ -1,0 +1,1 @@
+execute if data storage menu:temp Data{CustomModelData:8101} run function item:asset/8101/upgrade/_

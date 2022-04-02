@@ -6,4 +6,4 @@
     scoreboard players operation $TotalCount Temporary += $Count Temporary
 # アイテムが無くなるまで再帰
     data remove storage menu:temp Data.sell[0]
-    execute if data storage menu:temp Data.sell[] run function menu:shop/sell/price
+    execute if data storage menu:temp Data.sell[0] run function menu:shop/sell/price
