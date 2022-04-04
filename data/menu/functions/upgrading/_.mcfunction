@@ -1,9 +1,10 @@
 # 強化可能アイテムが入れられたら配置
     data modify storage menu:temp Data.upgrading append from storage menu:temp Data.Items[{tag:{menu:{upgradable:1b}}}]
-    execute if data storage menu:temp Data.upgrading[] run function menu:upgrading/put_items/_
+    execute if data storage menu:temp Data.upgrading[] run function menu:upgrading/put_items/page0
 # 関係ないアイテムが入れられた場合返却
     data modify storage menu:temp Data.return set from storage menu:temp Data.Items
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]
+    execute if score @s page matches 2 run data remove storage menu:temp Data.return[{tag:{menu:{combinable:1b}}}]
     data remove storage menu:temp Data.return[{tag:{menu:{upgradable:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ページごとのボタンクリック
