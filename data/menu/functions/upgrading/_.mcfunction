@@ -7,6 +7,9 @@
     execute if score @s page matches 2 run data remove storage menu:temp Data.return[{tag:{menu:{combinable:1b}}}]
     data remove storage menu:temp Data.return[{tag:{menu:{upgradable:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
+# アイテムが交換された場合
+    execute store success score $ItemsChanged Temporary run data modify entity @s data.Upgrade set from storage menu:temp Data.Items[{Slot:10b}].tag.AttributeModifiers[0].UUID
+    execute if score @s page matches 2 if score $ItemsChanged Temporary matches 1 run function menu:upgrading/combine/swapped_item
 # ページごとのボタンクリック
     clear @p #item:everything{menu:{blank:1b}}
     scoreboard players add @s page 0
