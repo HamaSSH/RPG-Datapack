@@ -10,5 +10,5 @@
     execute if score $Rarity Temporary matches 3.. unless data storage menu:temp Data.Items[{Slot:12b,Count:1b,tag:{menu:{combinable:1b}}}] run function menu:upgrading/put_items/12
     execute if score $Rarity Temporary matches 4.. unless data storage menu:temp Data.Items[{Slot:13b,Count:1b,tag:{menu:{combinable:1b}}}] run function menu:upgrading/put_items/13
 # スロットが一杯であれば返却
-    execute if data storage menu:temp Data.combine[] run data modify storage menu:temp Data.return set from storage menu:temp Data.combine
-    function menu:return_item/_
+    execute unless score @s page matches 10 run execute if data storage menu:temp Data.combine[] run data modify storage menu:temp Data.return set from storage menu:temp Data.combine
+    execute unless score @s page matches 10 run function menu:return_item/_
