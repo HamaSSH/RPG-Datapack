@@ -6,7 +6,6 @@
     execute if data storage menu:temp Data.combine[] run function menu:upgrading/put_items/page2
 # 合成アイテム(+板ガラス)を鍛冶台のタグに入れる
     data modify storage menu:temp Data.smithing set from storage menu:temp Data.Items[{Slot:14b,tag:{menu:{button:"combine"}}}]
-    data modify storage menu:temp Data.smithing.Count set value 2b
     data modify storage menu:temp Data.smithing.tag.menu.combine append from storage menu:temp Data.refresh[{tag:{menu:{combinable:1b}}}]
     data modify storage menu:temp Data.smithing.tag.menu.combine append from storage menu:temp Data.Items[{id:"minecraft:black_stained_glass_pane"}]
     data modify storage menu:temp Data.smithing.tag.previous set from storage menu:temp Data.Items[{Slot:10b,tag:{menu:{upgradable:1b}}}]
