@@ -1,7 +1,18 @@
 {
     "criteria": {
         "tick1": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"LevelUp\"]}"
+                        }
+                    }
+                ]
+            }
         },
         "tick2": {
             "trigger": "minecraft:tick",
@@ -11,7 +22,6 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{Tags:[\"LevelUp\"]}",
                             "player": {
                                 "advancements": {
                                     "player:level_up": {
