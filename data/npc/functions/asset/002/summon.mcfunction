@@ -1,1 +1,1 @@
-summon villager ~ ~ ~ {NoAI:1b,Tags:["NPC.002"]}
+summon villager ~ ~ ~ {NoAI:1b,Tags:["NPC","NPC.002"]}
