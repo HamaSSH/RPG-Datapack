@@ -101,6 +101,6 @@
         }
     },
     "rewards": {
-        "function": "attack:main/magma_cube"
+        "function": "attack:left_click/summon"
     }
 }
