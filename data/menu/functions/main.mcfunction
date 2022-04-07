@@ -5,3 +5,7 @@
     execute if data storage menu:temp Data{type:"Upgrading"} run function menu:upgrading/_
 # NPC
     execute if data storage menu:temp Data{type:"Shop"} run function menu:shop/_
+# ホバーオフハンドキー対策
+    execute as @p run function menu:hover_offhand
+# ホバードロップキー対策
+    execute positioned ~ ~1.32 ~ as @e[type=item,distance=..0.01] if data entity @s Item.tag.menu{blank:1b} run kill @s
