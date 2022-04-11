@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:golden_apple"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "core:trigger/consume_item/hold"
+    }
+}

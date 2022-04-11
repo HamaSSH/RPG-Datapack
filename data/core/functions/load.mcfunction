@@ -16,8 +16,10 @@ say reload
 # 保持させておくスコア
     scoreboard objectives add Arrow dummy "弓矢"
     scoreboard objectives add LCArrow dummy "左クリック弓矢"
-    scoreboard objectives add BowCharge dummy "弓長押し検知"
-    scoreboard objectives add IfBowCharge dummy "弓長押ししてない検知"
+    scoreboard objectives add BowCharge dummy "弓溜め"
+    scoreboard objectives add ChargingBow dummy "弓長押し検知"
+    scoreboard objectives add ConsumeItem dummy "アイテム消費"
+    scoreboard objectives add ConsumingItem dummy "アイテム消費長押し検知"
     scoreboard objectives add PreviousArrow dummy "弓矢値保存"
     scoreboard objectives add PreviousSlot dummy "選択スロット"
     scoreboard objectives add PreviousHPRatio dummy "HP割合保存"
