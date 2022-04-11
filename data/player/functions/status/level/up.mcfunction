@@ -1,5 +1,5 @@
 # レベルアップ前のレベル
-    execute if entity @s[tag=!LevelUp] run scoreboard players operation @s PreviousLevel = @s level
+    execute if entity @s[advancements={player:level_up={tick0=false}}] run scoreboard players operation @s PreviousLevel = @s level
 # レベルアップ処理
     scoreboard players operation @s xp -= @s xp_next
     scoreboard players add @s level 1
@@ -9,8 +9,8 @@
     execute if entity @s[team=Warrior] run scoreboard players add @s lv_warrior 1
     execute if entity @s[team=Wizard] run scoreboard players add @s lv_wizard 1
     execute if entity @s[team=Hunter] run scoreboard players add @s lv_hunter 1
-# レベルアップ表示用のタグ付け
-    tag @s add LevelUp
+# レベルアップ表示用のadvancement呼び出し
+    advancement grant @s only player:level_up tick0
 # 職業スキルレベル
     scoreboard players operation $SkillLevel Temporary = @s level
     scoreboard players operation $SkillLevel Temporary %= #10 Constant
