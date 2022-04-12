@@ -52,20 +52,20 @@
     scoreboard players operation @s luk += @s luk_bonus
 # 最大値を超えた場合の調整
     function player:status/maxed
+# バフ、最大値を超えるように
+   scoreboard players operation @s hp_max += @s hp_buff
+   scoreboard players operation @s mp_max += @s mp_buff
+   scoreboard players operation @s hp_regen += @s hp_regen_buff
+   scoreboard players operation @s mp_regen += @s mp_regen_buff
+   scoreboard players operation @s ad += @s ad_buff
+   scoreboard players operation @s ap += @s ap_buff
+   scoreboard players operation @s dex += @s dex_buff
+   scoreboard players operation @s def += @s def_buff
+   scoreboard players operation @s spd += @s spd_buff
+   scoreboard players operation @s crt += @s crt_buff
+   scoreboard players operation @s luk += @s luk_buff
 # attribute操作
     execute unless score @s PreviousSPD = @s spd run function player:status/spd/apply
-# バフ、最大値を超えるように
-#    scoreboard players operation @s hp_max += @s hp_buff
-#    scoreboard players operation @s mp_max += @s mp_buff
-#    scoreboard players operation @s hp_regen += @s hp_regen_buff
-#    scoreboard players operation @s mp_regen += @s mp_regen_buff
-#    scoreboard players operation @s ad += @s ad_buff
-#    scoreboard players operation @s ap += @s ap_buff
-#    scoreboard players operation @s dex += @s dex_buff
-#    scoreboard players operation @s def += @s def_buff
-#    scoreboard players operation @s spd += @s spd_buff
-#    scoreboard players operation @s crt += @s crt_buff
-#    scoreboard players operation @s luk += @s luk_buff
 
 # scoreboard objectives add status dummy
     # scoreboard players operation HP status = @s hp_max

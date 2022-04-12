@@ -119,6 +119,18 @@ say reload
     scoreboard objectives add spd_class dummy "職業SPD"
     scoreboard objectives add crt_class dummy "職業CRT"
     scoreboard objectives add luk_class dummy "職業LUK"
+# ステータスバフ
+    scoreboard objectives add hp_buff dummy "HPバフ"
+    scoreboard objectives add mp_buff dummy "MPバフ"
+    scoreboard objectives add hp_regen_buff dummy "HPRバフ"
+    scoreboard objectives add mp_regen_buff dummy "MPRバフ"
+    scoreboard objectives add ad_buff dummy "ADバフ"
+    scoreboard objectives add ap_buff dummy "APバフ"
+    scoreboard objectives add dex_buff dummy "DEXバフ"
+    scoreboard objectives add def_buff dummy "DEFバフ"
+    scoreboard objectives add spd_buff dummy "SPDバフ"
+    scoreboard objectives add crt_buff dummy "CRTバフ"
+    scoreboard objectives add luk_buff dummy "LUKバフ"
 # チーム定義
     team add Enemy
     team add NoCollision "重なり判定無視"
