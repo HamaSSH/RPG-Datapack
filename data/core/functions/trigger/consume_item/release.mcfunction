@@ -1,5 +1,5 @@
 # 長押し時間が31tick未満の時食べない
-    say 食べない
+    # say 食べない
 # リセット
     tag @s remove ConsumingItem
     scoreboard players set @s ConsumeItem 0
