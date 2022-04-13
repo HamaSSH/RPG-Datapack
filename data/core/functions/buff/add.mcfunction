@@ -11,19 +11,19 @@
     execute if data storage core:temp Data.buff{bonus:"spd"} run scoreboard players operation @s spd_buff += $Bonus Temporary
     execute if data storage core:temp Data.buff{bonus:"crt"} run scoreboard players operation @s crt_buff += $Bonus Temporary
     execute if data storage core:temp Data.buff{bonus:"luk"} run scoreboard players operation @s luk_buff += $Bonus Temporary
-    execute if data storage core:temp Data.buff{bonus:"hp"} run say add hp_buff
-    execute if data storage core:temp Data.buff{bonus:"mp"} run say add mp_buff
-    execute if data storage core:temp Data.buff{bonus:"hp_regen"} run say add hp_regen_buff
-    execute if data storage core:temp Data.buff{bonus:"mp_regen"} run say add mp_regen_buff
-    execute if data storage core:temp Data.buff{bonus:"ad"} run say add ad_buff
-    execute if data storage core:temp Data.buff{bonus:"ap"} run say add ap_buff
-    execute if data storage core:temp Data.buff{bonus:"dex"} run say add dex_buff
-    execute if data storage core:temp Data.buff{bonus:"def"} run say add def_buff
-    execute if data storage core:temp Data.buff{bonus:"spd"} run say add spd_buff
-    execute if data storage core:temp Data.buff{bonus:"crt"} run say add crt_buff
-    execute if data storage core:temp Data.buff{bonus:"luk"} run say add luk_buff
-    tellraw @s {"score":{"name": "$Bonus","objective": "Temporary"}}
     function player:status/update/_
+    
+    # execute if data storage core:temp Data.buff{bonus:"hp"} run say add hp_buff
+    # execute if data storage core:temp Data.buff{bonus:"mp"} run say add mp_buff
+    # execute if data storage core:temp Data.buff{bonus:"hp_regen"} run say add hp_regen_buff
+    # execute if data storage core:temp Data.buff{bonus:"mp_regen"} run say add mp_regen_buff
+    # execute if data storage core:temp Data.buff{bonus:"ad"} run say add ad_buff
+    # execute if data storage core:temp Data.buff{bonus:"ap"} run say add ap_buff
+    # execute if data storage core:temp Data.buff{bonus:"dex"} run say add dex_buff
+    # execute if data storage core:temp Data.buff{bonus:"def"} run say add def_buff
+    # execute if data storage core:temp Data.buff{bonus:"spd"} run say add spd_buff
+    # execute if data storage core:temp Data.buff{bonus:"crt"} run say add crt_buff
+    # execute if data storage core:temp Data.buff{bonus:"luk"} run say add luk_buff
+    # tellraw @s {"score":{"name": "$Bonus","objective": "Temporary"}}
 # リセット
-    data remove storage core:temp Data.buff
     scoreboard players reset $Bonus

@@ -4,6 +4,5 @@
     data modify entity @s data.buff set from storage core:temp Data.buff
 # もしプレイヤーが既により強いバフを受けていたら
     execute if score $KillNewBuff Temporary matches 1 run kill @s
-    execute if score $KillNewBuff Temporary matches 1 run say kill @s
 # 初期化終わり
     tag @s remove BuffInit

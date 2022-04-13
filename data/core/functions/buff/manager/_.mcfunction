@@ -13,5 +13,4 @@
 # storage Data.buffの中身がなくなるまで再帰
     data remove storage core:temp Data.newBuff[0]
     execute unless data storage core:temp Data.newBuff[0] run data remove storage core:temp Data
-    tellraw @a ""
     execute if data storage core:temp Data.newBuff[0] run function core:buff/manager/_

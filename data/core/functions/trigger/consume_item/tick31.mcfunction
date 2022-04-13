@@ -19,7 +19,6 @@
 # 1tick後に食べた処理呼び出し
     advancement grant @s only core:trigger/consume_item/_ tick0
 # リセット
-    data modify storage core:temp test set from storage core:temp Data
     data remove storage core:temp Data
     tag @s remove ConsumingItem
     tag @s remove ConsumeOffhand
