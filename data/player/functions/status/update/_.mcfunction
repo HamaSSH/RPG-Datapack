@@ -72,8 +72,8 @@
     # scoreboard players operation MP status = @s mp_max
     # scoreboard players operation HP_regen status = @s hp_regen
     # scoreboard players operation MP_regen status = @s mp_regen
-    # scoreboard players operation AD status = @s ad
-    # scoreboard players operation AP status = @s ap
+    scoreboard players operation AD status = @s ad
+    scoreboard players operation AP status = @s ap
     # scoreboard players operation DEX status = @s dex
     # scoreboard players operation 物理攻撃力 status = @s ad
     # scoreboard players operation 素早さ status = @s spd

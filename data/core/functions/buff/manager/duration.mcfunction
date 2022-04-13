@@ -5,4 +5,5 @@
 # storage → markerのdata.buff
     data modify entity @s data.buff set from storage core:temp Data.buff
 # durationが0の場合はkill
+    execute if data storage core:temp Data.buff{duration:0} as @a[tag=this,limit=1] run function core:buff/remove
     execute if data storage core:temp Data.buff{duration:0} run kill @s

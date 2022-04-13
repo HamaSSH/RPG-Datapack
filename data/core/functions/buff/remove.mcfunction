@@ -22,6 +22,7 @@
     execute if data storage core:temp Data.buff{bonus:"spd"} run say remove spd_buff
     execute if data storage core:temp Data.buff{bonus:"crt"} run say remove crt_buff
     execute if data storage core:temp Data.buff{bonus:"luk"} run say remove luk_buff
+    tellraw @s ["-",{"score":{"name": "$Bonus","objective": "Temporary"}}]
     function player:status/update/_
 # リセット
     scoreboard players reset $Bonus

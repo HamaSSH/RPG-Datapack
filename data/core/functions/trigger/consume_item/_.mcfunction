@@ -1,8 +1,8 @@
 # 食べたプレイヤーをタグ付け
     tag @s add this
 # バフ呼び出し
-    # data modify storage core:temp Data.buff set from entity @s data.buff
-    data modify storage core:temp Data.buff set value [{bonus:"ad",duration:8,value:10},{bonus:"ap",duration:4,value:10}]
+    execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTemp,distance=..0.01,limit=1] if score @s PlayerID = @a[tag=this,limit=1] PlayerID run data modify storage core:temp Data.newBuff set from entity @s data.buff
+    execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTemp,distance=..0.01,limit=1] run kill @s
     function core:buff/manager/_
 # 演出
     playsound entity.player.burp master @s ~ ~ ~ 0.6 1
