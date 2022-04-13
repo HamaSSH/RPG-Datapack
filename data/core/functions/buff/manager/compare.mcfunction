@@ -4,7 +4,7 @@
     execute store result score $Bonus Temporary run data get storage core:temp Data.buff.value
     execute store result score $CompareBonus Temporary run data get storage core:temp Data.compareBuff.value
 # バフの数値をいじったり
-
+    
 # バフの種類が一致した場合の処理
     execute if data storage core:temp Data.buff{bonus:"hp"} if data storage core:temp Data.compareBuff{bonus:"hp"} run tag @s add ReplaceCheck
     execute if data storage core:temp Data.buff{bonus:"mp"} if data storage core:temp Data.compareBuff{bonus:"mp"} run tag @s add ReplaceCheck

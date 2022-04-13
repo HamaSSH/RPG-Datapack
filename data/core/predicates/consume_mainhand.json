@@ -1,0 +1,27 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{consumables:1b}"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "offhand": {
+                    "nbt": "{consumables:1b}"
+                }
+            }
+        }
+    }
+]
