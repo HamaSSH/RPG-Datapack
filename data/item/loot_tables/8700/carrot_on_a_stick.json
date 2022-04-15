@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Unbreakable:1b,CustomModelData:8700,quiver:1b,HideFlags:127}"
+                            "tag": "{Unbreakable:1b,CustomModelData:3101,quiver:1b,HideFlags:127}"
                         },
                         {
                             "function": "minecraft:set_name",
