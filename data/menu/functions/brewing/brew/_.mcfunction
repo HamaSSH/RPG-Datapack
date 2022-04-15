@@ -6,9 +6,9 @@
         execute store result score $RGB1 Temporary run data get storage menu:temp Data.Items[{Slot:10b}].tag.menu.color 1
         execute store result score $RGB2 Temporary run data get storage menu:temp Data.Items[{Slot:11b}].tag.menu.color 1
         execute store result score $RGB3 Temporary run data get storage menu:temp Data.Items[{Slot:12b}].tag.menu.color 1
-        scoreboard players remove $RGB1 Temporary 100000000
-        scoreboard players remove $RGB2 Temporary 100000000
-        scoreboard players remove $RGB3 Temporary 100000000
+        scoreboard players remove $RGB1 Temporary 1000000000
+        scoreboard players remove $RGB2 Temporary 1000000000
+        scoreboard players remove $RGB3 Temporary 1000000000
         scoreboard players operation $RGB1 Temporary += $RGB2 Temporary
         scoreboard players operation $RGB1 Temporary += $RGB3 Temporary
     # RGBそれぞれの値の平均を求める
