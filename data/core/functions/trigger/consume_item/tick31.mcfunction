@@ -5,6 +5,8 @@
     execute store result storage core:temp Data.Count byte 0.999 run data get storage core:temp Data.Count
     execute if data storage core:temp Data{id:"minecraft:golden_apple"} run data modify storage core:temp Data.newId set value "minecraft:enchanted_golden_apple"
     execute if data storage core:temp Data{id:"minecraft:enchanted_golden_apple"} run data modify storage core:temp Data.newId set value "minecraft:golden_apple"
+    execute if data storage core:temp Data{id:"minecraft:beef"} run data modify storage core:temp Data.newId set value "minecraft:cooked_beef"
+    execute if data storage core:temp Data{id:"minecraft:cooked_beef"} run data modify storage core:temp Data.newId set value "minecraft:beef"
     data modify storage core:temp Data.id set from storage core:temp Data.newId
     data modify storage core:temp Data.Slot set value 0b
     data remove storage core:temp Data.newId

@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "nbt": "{consumables:1b}"
+                "nbt": "{consumable:1b}"
             }
         }
     }
