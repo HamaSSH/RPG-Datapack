@@ -7,7 +7,7 @@
     execute as @e[type=marker,tag=BuffInit,limit=1] run function core:buff/manager/init
 # プレイヤーのバフスコアを加算
     execute unless score $KillNewBuff Temporary matches 1 run function core:buff/add
-    execute if entity @s[advancements={core:buff/1sec={tick0=false}}] run advancement grant @s only core:buff/1sec tick0
+    execute if entity @s[advancements={core:buff/4tick={tick0=false}}] run advancement grant @s only core:buff/4tick tick0
 # リセット
     scoreboard players reset $KillNewBuff
 # storage Data.buffの中身がなくなるまで再帰
