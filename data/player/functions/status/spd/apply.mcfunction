@@ -11,6 +11,7 @@
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-0
 # 移動速度のAttributeModifier適用
     scoreboard players operation $MovementSpeed Temporary = @s spd
+    execute if score $MovementSpeed Temporary matches ..-1 run function player:status/spd/negative
     scoreboard players operation $MovementSpeed Temporary *= #2^21 Constant
     scoreboard players operation $MovementSpeed Temporary *= #2 Constant
     execute if score $MovementSpeed Temporary matches ..-1 run attribute @s minecraft:generic.movement_speed modifier add 1-0-0-0-9 "MovementSpeed9" 0.1024 add
