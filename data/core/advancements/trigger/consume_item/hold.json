@@ -6,7 +6,9 @@
                 "item": {
                     "items": [
                         "minecraft:golden_apple",
-                        "minecraft:enchanted_golden_apple"
+                        "minecraft:enchanted_golden_apple",
+                        "minecraft:beef",
+                        "minecraft:cooked_beef"
                     ]
                 }
             }

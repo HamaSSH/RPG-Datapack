@@ -1,5 +1,7 @@
 # 食べたプレイヤーをタグ付け
     tag @s add this
+# 満腹度回復
+    function core:trigger/consume_item/saturation
 # バフ呼び出し
     execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTemp,distance=..0.01,limit=1] if score @s PlayerID = @a[tag=this,limit=1] PlayerID run data modify storage core:temp Data.newBuff set from entity @s data.buff
     execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTemp,distance=..0.01,limit=1] run kill @s
