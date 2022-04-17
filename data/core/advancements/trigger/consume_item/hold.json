@@ -8,7 +8,8 @@
                         "minecraft:golden_apple",
                         "minecraft:enchanted_golden_apple",
                         "minecraft:beef",
-                        "minecraft:cooked_beef"
+                        "minecraft:cooked_beef",
+                        "minecraft:potion"
                     ]
                 }
             }
