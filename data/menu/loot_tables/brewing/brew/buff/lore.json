@@ -1,0 +1,1734 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrier",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE240▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "最大ＨＰ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$HPBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE240▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "最大ＨＰ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$HPBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE241▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "自然回復: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenBuffInt",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenBuffDec",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "/s",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$HPRegenBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE241▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "自然回復: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "-",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenBuffInt",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenBuffDec",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "/s",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$HPRegenDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$HPRegenBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE242▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "最大ＭＰ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$MPBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE242▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "最大ＭＰ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$MPBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE243▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "自然回復: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenBuffInt",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenBuffDec",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "/s",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$MPRegenBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE243▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "自然回復: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "-",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenBuffInt",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ".",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenBuffDec",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "/s",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$MPRegenDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$MPRegenBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE244▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "物理攻撃: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$ADBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE244▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "物理攻撃: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$ADDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$ADBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE245▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "魔法攻撃: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$APBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE245▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "魔法攻撃: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$APDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$APBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE246▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "器用さ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DEXBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE246▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "器用さ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEXDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DEXBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE248▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "防御力: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DEFBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE248▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "防御力: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$DEFDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DEFBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE249▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "素早さ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$SPDBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE249▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "素早さ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$SPDDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$SPDBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE24A▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "会心: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$CRTBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE24A▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "会心: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$CRTDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$CRTBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE24B▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "幸運: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "+",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#72FF5C"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#72FF5C"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$LUKBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "\uE24B▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "幸運: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKBuff",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "（",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurMin",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": ":",
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurSec10",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "$LUKDurSec1",
+                                            "objective": "Temporary"
+                                        },
+                                        "color": "#FF4D4D"
+                                    },
+                                    {
+                                        "text": "）",
+                                        "color": "#FF4D4D"
+                                    }
+                                ]
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$LUKBuff"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

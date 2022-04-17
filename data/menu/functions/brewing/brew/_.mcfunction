@@ -1,11 +1,18 @@
 # スロットに先客がいれば返却
-    execute if data storage menu:temp Data.Items[{tag:{potion:1b}}] run data modify storage menu:temp Data.return append from storage menu:temp Data.Items[{tag:{potion:1b}}]
+    execute if data storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}] run data modify storage menu:temp Data.return append from storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}]
     function menu:return_item/_
+# バフ情報の設定
+    data modify storage menu:temp Data.newBuff set from storage menu:temp Data.refresh[{Slot:10b}].tag.buff
+    execute if data storage menu:temp Data.newBuff[0] run function menu:brewing/brew/buff/_
+    data modify storage menu:temp Data.newBuff set from storage menu:temp Data.refresh[{Slot:11b}].tag.buff
+    execute if data storage menu:temp Data.newBuff[0] run function menu:brewing/brew/buff/_
+    data modify storage menu:temp Data.newBuff set from storage menu:temp Data.refresh[{Slot:12b}].tag.buff
+    execute if data storage menu:temp Data.newBuff[0] run function menu:brewing/brew/buff/_
 # ポーションの色決定
     # それぞれのアイテムによるポーションの色取得
-        execute store result score $RGB1 Temporary run data get storage menu:temp Data.Items[{Slot:10b}].tag.menu.color 1
-        execute store result score $RGB2 Temporary run data get storage menu:temp Data.Items[{Slot:11b}].tag.menu.color 1
-        execute store result score $RGB3 Temporary run data get storage menu:temp Data.Items[{Slot:12b}].tag.menu.color 1
+        execute store result score $RGB1 Temporary run data get storage menu:temp Data.refresh[{Slot:10b}].tag.menu.color 1
+        execute store result score $RGB2 Temporary run data get storage menu:temp Data.refresh[{Slot:11b}].tag.menu.color 1
+        execute store result score $RGB3 Temporary run data get storage menu:temp Data.refresh[{Slot:12b}].tag.menu.color 1
         scoreboard players remove $RGB1 Temporary 1000000000
         scoreboard players remove $RGB2 Temporary 1000000000
         scoreboard players remove $RGB3 Temporary 1000000000
@@ -38,8 +45,14 @@
     execute store result score $Count Temporary run data get storage menu:temp Data.refresh[{Slot:12b}].Count
     execute store result storage menu:temp Data.refresh[{Slot:12b}].Count byte 0.999 run scoreboard players get $Count Temporary
 # クラフトポーション完成
-    data modify storage menu:temp Data.done set value [{Count:1b,Slot:14b,id:"minecraft:potion",tag:{potion:1b,display:{Name:'{"text":"クラフトポーション","italic":false}'}}},{Count:1b,Slot:15b,id:"minecraft:potion",tag:{potion:1b,display:{Name:'{"text":"クラフトポーション","italic":false}'}}},{Count:1b,Slot:16b,id:"minecraft:potion",tag:{potion:1b,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}]
-    data modify storage menu:temp Data.done[].tag.CustomPotionColor set from storage menu:temp Data.color
+    data modify storage menu:temp Data.done append value {Count:1b,Slot:14b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    execute if score $BrewIngredients Temporary matches 2.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:15b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    execute if score $BrewIngredients Temporary matches 3.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:16b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    # Lore バフ情報 ポーションの色
+        function menu:brewing/brew/buff/lore/_
+        data modify storage menu:temp Data.done[].tag.display.Lore set from storage menu:temp NewLore
+        data modify storage menu:temp Data.done[].tag.buff set from storage menu:temp Data.potionBuff
+        data modify storage menu:temp Data.done[].tag.CustomPotionColor set from storage menu:temp Data.color
 # 演出
     scoreboard players set $ButtonClicked Temporary 1
     playsound minecraft:block.brewing_stand.brew master @p ~ ~ ~ 0.4 0.9
@@ -54,3 +67,4 @@
     scoreboard players reset $Blue
     scoreboard players reset $RGB
     scoreboard players reset $Count
+    data remove storage menu:temp NewLore
