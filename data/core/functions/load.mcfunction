@@ -120,6 +120,7 @@ say reload
     scoreboard objectives add crt_class dummy "職業CRT"
     scoreboard objectives add luk_class dummy "職業LUK"
 # ステータスバフ
+    scoreboard objectives add assassin_crt dummy "会心バフ"
     scoreboard objectives add hp_buff dummy "HPバフ"
     scoreboard objectives add mp_buff dummy "MPバフ"
     scoreboard objectives add hp_regen_buff dummy "HPRバフ"
