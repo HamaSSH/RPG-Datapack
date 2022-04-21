@@ -9,7 +9,7 @@
 # 会心攻撃成功！
     tag @s add CriticalHit
 # アサシンであればバフ
-    execute if entity @s[team=Assassin] run function player:class/assassin/crt
+    execute if entity @s[team=Assassin] run function player:class/assassin/on_crit
 # 演出(会心音ゴｷｨ)
     playsound resource:custom.weapon.crit master @s ~ ~ ~ 1.0 1.0
 # リセット
