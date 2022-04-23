@@ -10,16 +10,21 @@
     execute if score $Bonus Temporary matches 1.. if score $Bonus Temporary <= $NewBonus Temporary run tag @s add ReplaceBuff
     execute if score $Bonus Temporary matches ..-1 if score $Bonus Temporary >= $NewBonus Temporary run tag @s add ReplaceBuff
 # バフ置き換え
+    data modify storage core:temp Data.compareSource set from storage core:temp Data.oldBuff.source
     data modify storage core:temp Data.compareBuff set from storage core:temp Data.oldBuff.bonus
+    execute store success score $SourceMatched Temporary run data modify storage core:temp Data.compareSource set from storage core:temp Data.buff.source
     execute store success score $BonusMatched Temporary run data modify storage core:temp Data.compareBuff set from storage core:temp Data.buff.bonus
-    execute if score $BonusMatched Temporary matches 0 unless entity @s[tag=ReplaceBuff] run scoreboard players set $KillNewBuff Temporary 1
-    execute if score $BonusMatched Temporary matches 0 if entity @s[tag=ReplaceBuff] run function core:buff/manager/replace
+    execute if data storage core:temp Data.buff{source:"mob"} run scoreboard players set $SourceMatched Temporary 0
+    execute if score $SourceMatched Temporary matches 0 if score $BonusMatched Temporary matches 0 unless entity @s[tag=ReplaceBuff] run scoreboard players set $KillNewBuff Temporary 1
+    execute if score $SourceMatched Temporary matches 0 if score $BonusMatched Temporary matches 0 if entity @s[tag=ReplaceBuff] run function core:buff/manager/replace
 # リセット
     data remove storage core:temp Data.buff
     data remove storage core:temp Data.oldBuff
+    data remove storage core:temp Data.compareSource
     data remove storage core:temp Data.compareBuff
     scoreboard players reset $NewBonus
     scoreboard players reset $Bonus
     scoreboard players reset $ReplaceBuff
+    scoreboard players reset $SourceMatched
     scoreboard players reset $BonusMatched
     tag @s remove ReplaceBuff
