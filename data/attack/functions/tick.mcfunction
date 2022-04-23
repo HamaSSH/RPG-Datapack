@@ -19,4 +19,3 @@
     execute as @e[type=item,tag=DmgDisplay] if data entity @s {PortalCooldown:0} run kill @s
     execute as @e[type=armor_stand,tag=GoldDisplay] if data entity @s {PortalCooldown:0} run kill @s
     execute as @e[type=armor_stand,tag=XPDisplay] if data entity @s {PortalCooldown:0} run kill @s
-# チェストに視点合わせたらスライム召喚しない

@@ -9,7 +9,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#mob:mobs,tag=Enemy,tag=Hit,dx=0] run function attack:main/wand/hit
 # 移動
     tp @s ^ ^ ^1
-    execute if score @s skill_level matches 1.. run function attack:main/wand/homing
+    execute if score @s skill_level matches 1.. run function attack:main/wand/homing/_
 # 演出(杖通常)
     function attack:main/wand/particle/_
 # リセット
