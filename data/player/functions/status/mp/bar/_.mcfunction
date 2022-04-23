@@ -1,3 +1,5 @@
+# PreviousMP ≠ mp のとき PreviousMPは-1にしておく
+    scoreboard players set @s PreviousMP -1
 # 調整
     execute if score @s mp matches ..0 run scoreboard players set @s mp 0
     execute if score @s mp >= @s mp_max run scoreboard players operation @s mp = @s mp_max
