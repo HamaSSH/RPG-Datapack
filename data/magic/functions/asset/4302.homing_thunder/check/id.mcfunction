@@ -1,1 +1,0 @@
-execute if data storage magic:temp Data.tag{CustomModelData:4302} run function magic:asset/4302.homing_thunder/check/_

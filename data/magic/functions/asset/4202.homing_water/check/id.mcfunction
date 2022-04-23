@@ -1,1 +1,0 @@
-execute if data storage magic:temp Data.tag{CustomModelData:4202} run function magic:asset/4202.homing_water/check/_

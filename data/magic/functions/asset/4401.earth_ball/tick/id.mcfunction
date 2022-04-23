@@ -1,1 +1,0 @@
-execute if data storage magic:asset {id:4401} run function magic:asset/4401.earth_ball/tick/_

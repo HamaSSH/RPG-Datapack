@@ -1,1 +1,0 @@
-execute if data storage magic:asset {id:4402} run function magic:asset/4402.homing_earth/tick/_
