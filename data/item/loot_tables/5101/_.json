@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{magic:{mp_cost:20,damage:10,element:\"fire\"}}"
+                            "tag": "{magic:{cooldown:60,mp_cost:5,damage:10,element:\"fire\"}}"
                         },
                         {
                             "function": "minecraft:set_lore",

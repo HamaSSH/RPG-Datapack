@@ -1,6 +1,6 @@
 # クールダウン計算
     data modify storage magic:temp offhand set from entity @s Inventory[{Slot:-106b}]
-    execute store result score $Cooldown Temporary run data get storage magic:temp offhand.tag.cooldown
+    execute store result score $Cooldown Temporary run data get storage magic:temp offhand.tag.magic.cooldown
     execute store result score $TimeUsed Temporary run data get storage magic:temp offhand.tag.gametime
     execute store result score $Time Temporary run time query gametime
     execute if score @s cdr matches 1.. run function player:status/cd/reduction
