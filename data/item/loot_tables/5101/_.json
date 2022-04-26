@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{magic:{cooldown:60,mp_cost:5,damage:10,element:\"fire\"}}"
+                            "tag": "{magic:{damage:10,cooldown:100,mp_cost:10,element:\"fire\"}}"
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -47,6 +47,77 @@
                                     },
                                     {
                                         "text": ""
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "ダメージ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "10"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "クールダウン: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "100"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "▸ ",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "消費ＭＰ: ",
+                                        "color": "#E0E0E0"
+                                    },
+                                    {
+                                        "text": "10"
                                     }
                                 ]
                             ]
