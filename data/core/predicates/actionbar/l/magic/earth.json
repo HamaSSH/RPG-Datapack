@@ -79,7 +79,7 @@
         "predicate": {
             "equipment": {
                 "offhand": {
-                    "nbt": "{magic:\"earth\"}"
+                    "nbt": "{magic:{element:\"earth\"}}"
                 }
             }
         }

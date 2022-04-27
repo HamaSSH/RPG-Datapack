@@ -76,7 +76,7 @@
         "predicate": {
             "equipment": {
                 "offhand": {
-                    "nbt": "{magic:\"fire\"}"
+                    "nbt": "{magic:{element:\"fire\"}}"
                 }
             }
         }
