@@ -21,3 +21,5 @@
     execute if data storage core:temp Data{saturation:18} run effect give @s saturation 1 17 true
     execute if data storage core:temp Data{saturation:19} run effect give @s saturation 1 18 true
     execute if data storage core:temp Data{saturation:20} run effect give @s saturation 1 19 true
+# リセット
+    data remove storage core:temp Data.saturation

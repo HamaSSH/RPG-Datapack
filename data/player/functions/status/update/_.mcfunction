@@ -93,4 +93,3 @@
 # リセット
     data remove storage player:temp Inventory
     data remove storage player:temp SelectedItem
-    data remove storage player:temp Data

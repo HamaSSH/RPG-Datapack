@@ -26,8 +26,8 @@
     data modify storage player:temp Data.buff set value [{bonus:"ad",source:"class",duration:5},{bonus:"spd",source:"class",duration:5}]
     execute store result storage player:temp Data.buff[{bonus:"ad"}].value int 1 run scoreboard players get $ADValue Temporary
     execute store result storage player:temp Data.buff[{bonus:"spd"}].value int 1 run scoreboard players get $SPDValue Temporary
-    data modify storage core:temp Data.newBuff set from storage player:temp Data.buff
-    function core:buff/manager/_
+    data modify storage player:temp Data.newBuff set from storage player:temp Data.buff
+    function player:buff/manager/_
 # バフタイマー
     scoreboard players add @s assassin_crt 200000
 # リセット
@@ -35,4 +35,3 @@
     scoreboard players reset $SPDValue
     scoreboard players reset $SkillLevel
     scoreboard players reset $CrtTimer
-    data remove storage player:temp Data

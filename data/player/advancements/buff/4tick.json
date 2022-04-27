@@ -13,7 +13,7 @@
                         "predicate": {
                             "player": {
                                 "advancements": {
-                                    "core:buff/4tick": {
+                                    "player:buff/4tick": {
                                         "tick0": true
                                     }
                                 }
@@ -33,7 +33,7 @@
                         "predicate": {
                             "player": {
                                 "advancements": {
-                                    "core:buff/4tick": {
+                                    "player:buff/4tick": {
                                         "tick1": true
                                     }
                                 }
@@ -53,7 +53,7 @@
                         "predicate": {
                             "player": {
                                 "advancements": {
-                                    "core:buff/4tick": {
+                                    "player:buff/4tick": {
                                         "tick2": true
                                     }
                                 }
@@ -73,7 +73,7 @@
                         "predicate": {
                             "player": {
                                 "advancements": {
-                                    "core:buff/4tick": {
+                                    "player:buff/4tick": {
                                         "tick3": true
                                     }
                                 }
@@ -85,6 +85,6 @@
         }
     },
     "rewards": {
-        "function": "core:buff/manager/4tick"
+        "function": "player:buff/manager/4tick"
     }
 }
