@@ -1,4 +1,4 @@
-# AttributeModifierリセット
+# AttributeModifierリセット(SPD>=0)
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-A
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-9
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-8
@@ -10,6 +10,15 @@
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-2
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-1
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-0
+# AttributeModifierリセット(SPD<0)
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-7
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-6
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-5
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-4
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-3
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-2
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-1
+    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-0
 # 移動速度のAttributeModifier適用
     scoreboard players operation $MovementSpeed Temporary = @s spd
     execute if score $MovementSpeed Temporary matches ..-1 run function player:status/spd/negative

@@ -51,7 +51,7 @@
     scoreboard players operation @s crt += @s crt_bonus
     scoreboard players operation @s luk += @s luk_bonus
 # 最大値を超えた場合の調整
-    function player:status/maxed
+    function player:status/max
 # バフ、最大値を超えるように
    scoreboard players operation @s hp_max += @s hp_buff
    scoreboard players operation @s mp_max += @s mp_buff
@@ -64,6 +64,8 @@
    scoreboard players operation @s spd += @s spd_buff
    scoreboard players operation @s crt += @s crt_buff
    scoreboard players operation @s luk += @s luk_buff
+# 最小値を下回った場合の調整
+    function player:status/min
 # attribute操作
     execute unless score @s PreviousSPD = @s spd run function player:status/spd/apply
 
@@ -72,8 +74,12 @@
     # scoreboard players operation MP status = @s mp_max
     # scoreboard players operation HP_regen status = @s hp_regen
     # scoreboard players operation MP_regen status = @s mp_regen
-    scoreboard players operation AD status = @s ad
-    scoreboard players operation AP status = @s ap
+    # scoreboard players operation AD status = @s ad
+    # scoreboard players operation AP status = @s ap
+    # scoreboard players operation DEX status = @s dex
+    # scoreboard players operation SPD status = @s spd
+    # scoreboard players operation preSPD status = @s PreviousSPD
+    # scoreboard players operation bufSPD status = @s spd_buff
     # scoreboard players operation DEX status = @s dex
     # scoreboard players operation 物理攻撃力 status = @s ad
     # scoreboard players operation 素早さ status = @s spd

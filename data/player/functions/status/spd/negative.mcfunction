@@ -1,12 +1,3 @@
-# AttributeModifierリセット
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-7
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-6
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-5
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-4
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-3
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-2
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-1
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-1-0
 # 移動速度のAttributeModifier適用
     scoreboard players operation $MovementSpeed Temporary *= #-1 Constant
     scoreboard players operation $MovementSpeed Temporary *= #2^23 Constant
