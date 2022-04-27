@@ -1,3 +1,5 @@
 # 範囲攻撃
     function attack:main/hit
-    function mob:on_hurt/element/water
+# 弱体効果
+    data modify storage mob:temp Data.newBuff set value [{source:"weakness",value:-10,bonus:"ad",duration:20},{source:"weakness",value:-10,bonus:"ap",duration:20},{source:"weakness",value:-10,bonus:"dex",duration:20}]
+    function mob:buff/manager/_

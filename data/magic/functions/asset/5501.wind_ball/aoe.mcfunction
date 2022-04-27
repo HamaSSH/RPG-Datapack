@@ -1,3 +1,5 @@
 # 範囲攻撃
     function attack:main/hit
-    function mob:on_hurt/element/wind
+# 毒効果
+    effect give @s wither 4 2
+    effect give @s poison 4 2

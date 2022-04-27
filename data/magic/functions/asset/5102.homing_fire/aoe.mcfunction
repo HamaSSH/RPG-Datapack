@@ -1,3 +1,4 @@
 # 範囲攻撃
     function attack:main/hit
-    function mob:on_hurt/element/fire
+# 炎上効果
+    data modify entity @s Fire set value 80s
