@@ -1,5 +1,7 @@
 ### モブ関連の#tick
 
+# バフタイマー
+    function mob:on_tick/_
 # HP表示 → 名前
     execute if entity @s[tag=InCombat] if data entity @s {PortalCooldown:0} run function mob:status/hp/display/reset
     execute if entity @s[tag=HurtTime,scores={HurtTime=1..}] run function mob:hurt_time

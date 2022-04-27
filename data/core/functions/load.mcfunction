@@ -29,6 +29,8 @@ say reload
     scoreboard objectives add GoldDisplay dummy "Gold表示"
     scoreboard objectives add FallDistance dummy "畑荒らし対策"
 # タイマー
+    scoreboard objectives add buff_timer dummy "バフタイマー"
+    scoreboard objectives add ai_timer dummy "敵モブAI"
     scoreboard objectives add InCombat dummy "戦闘タイマー"
     scoreboard objectives add gold_timer dummy "Gold表示までの時間"
     scoreboard objectives add menu_timer dummy "メニューを開いている時間"
@@ -108,8 +110,6 @@ say reload
     scoreboard objectives add crt_bonus dummy "追加CRT"
     scoreboard objectives add luk_bonus dummy "追加LUK"
 # 職業パッシブスキルステータス補正値
-    # scoreboard objectives add hp_class dummy "職業HP"
-    # scoreboard objectives add mp_class dummy "職業MP"
     scoreboard objectives add hp_regen_class dummy "職業HPR"
     scoreboard objectives add mp_regen_class dummy "職業MPR"
     scoreboard objectives add ad_class dummy "職業AD"
