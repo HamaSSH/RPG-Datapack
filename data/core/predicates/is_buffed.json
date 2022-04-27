@@ -14,8 +14,26 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "hp_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "hp_regen_buff": {
                     "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "hp_regen_buff": {
+                    "max": -1
                 }
             }
         },
@@ -32,8 +50,26 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "mp_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "mp_regen_buff": {
                     "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "mp_regen_buff": {
+                    "max": -1
                 }
             }
         },
@@ -50,8 +86,26 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "ad_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "ap_buff": {
                     "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "ap_buff": {
+                    "max": -1
                 }
             }
         },
@@ -68,8 +122,26 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "dex_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "def_buff": {
                     "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "def_buff": {
+                    "max": -1
                 }
             }
         },
@@ -86,6 +158,15 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "spd_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "luk_buff": {
                     "min": 1
                 }
@@ -95,8 +176,26 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
+                "luk_buff": {
+                    "max": -1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
                 "crt_buff": {
                     "min": 1
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "crt_buff": {
+                    "max": -1
                 }
             }
         }

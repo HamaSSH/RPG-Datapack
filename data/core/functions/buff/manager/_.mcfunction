@@ -1,3 +1,5 @@
+# バフを受けるプレイヤーをタグ付け
+    tag @s add this
 # バフmarkerの召喚
     summon marker ~ ~ ~ {Tags:["BuffInit","Buff"]}
 # バフの重複防止
@@ -9,6 +11,7 @@
     execute unless score $KillNewBuff Temporary matches 1 run function core:buff/add
     execute if entity @s[advancements={core:buff/4tick={tick0=false}}] run advancement grant @s only core:buff/4tick tick0
 # リセット
+    tag @s remove this
     scoreboard players reset $KillNewBuff
 # storage Data.buffの中身がなくなるまで再帰
     data remove storage core:temp Data.newBuff[0]
