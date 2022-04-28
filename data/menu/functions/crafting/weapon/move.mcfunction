@@ -2,4 +2,4 @@
     scoreboard players set @s page 1100
 # 演出
     scoreboard players set $ButtonClicked Temporary 1
-    playsound block.anvil.use master @p ~ ~ ~ 1 2
+    playsound resource:block.smithing_table.smithing_table2 master @p ~ ~ ~ 0.8 1.3
