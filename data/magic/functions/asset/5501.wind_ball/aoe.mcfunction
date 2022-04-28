@@ -1,5 +1,4 @@
 # 範囲攻撃
     function attack:main/hit
-# 毒効果
-    effect give @s wither 4 2
-    effect give @s poison 4 2
+# 飛ばすぜ
+    data modify entity @s Motion[1] set value 0.8
