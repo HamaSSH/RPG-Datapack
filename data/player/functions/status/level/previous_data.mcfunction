@@ -1,6 +1,6 @@
 # レベルアップ前のステータス情報を保存
     scoreboard players operation $PreviousLevel Temporary = @s level
-    # ステータス
+    # ステータススコア
         scoreboard players operation $PreviousHP Temporary = @s hp_base
         scoreboard players operation $PreviousMP Temporary = @s mp_base
         scoreboard players operation $PreviousHPRegen Temporary = @s hp_regen_base
@@ -12,3 +12,12 @@
         scoreboard players operation $PreviousSPD Temporary = @s spd_base
         scoreboard players operation $PreviousCRT Temporary = @s crt_base
         scoreboard players operation $PreviousLUK Temporary = @s luk_base
+    # 自然回復スコア
+        scoreboard players operation $PreviousHPRegenInt Temporary = $PreviousHPRegen Temporary
+        scoreboard players operation $PreviousHPRegenInt Temporary /= #100 Constant
+        scoreboard players operation $PreviousHPRegenDec Temporary = $PreviousHPRegen Temporary
+        scoreboard players operation $PreviousHPRegenDec Temporary %= #100 Constant
+        scoreboard players operation $PreviousMPRegenInt Temporary = $PreviousMPRegen Temporary
+        scoreboard players operation $PreviousMPRegenInt Temporary /= #100 Constant
+        scoreboard players operation $PreviousMPRegenDec Temporary = $PreviousMPRegen Temporary
+        scoreboard players operation $PreviousMPRegenDec Temporary %= #100 Constant
