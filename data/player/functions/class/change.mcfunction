@@ -9,5 +9,9 @@
     scoreboard players reset @s crt_class
     scoreboard players reset @s luk_class
 # パッシブスキル関連リセット
-    execute if entity @s[team=Warrior] run function player:class/warrior/reset
-    execute if entity @s[team=Wizard] run scoreboard players set @s cdr 0
+    attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-0
+    attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-1
+    attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-2
+    attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-3
+    attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-4
+    scoreboard players set @s cdr 0

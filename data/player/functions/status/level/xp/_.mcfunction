@@ -16,4 +16,3 @@
     scoreboard players reset $LevelUp
     scoreboard players reset $PreviousLevel
     scoreboard players reset $CurrentLevel
-    scoreboard players reset $SkillLevel
