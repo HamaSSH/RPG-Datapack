@@ -1,0 +1,142 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "転生する"
+            },
+            {
+                "text": " (Lv.50～)",
+                "color": "gray"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$Class"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 3
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "【ナイト】に転職する",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:value_check",
+                    "value": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "$Class"
+                        },
+                        "score": "Temporary"
+                    },
+                    "range": 3
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "レベル: ",
+                    "color": "#FAFF75"
+                },
+                {
+                    "score": {
+                        "name": "@p",
+                        "objective": "lv_knight"
+                    },
+                    "bold": true
+                }
+            ]
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "レベル: ",
+                    "color": "#FAFF75"
+                },
+                {
+                    "score": {
+                        "name": "@p",
+                        "objective": "lv_knight"
+                    },
+                    "bold": true
+                },
+                {
+                    "text": " → 1"
+                }
+            ]
+        ],
+        "replace": true,
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$Class"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 3
+            },
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:score",
+                    "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$Level"
+                    },
+                    "score": "Temporary"
+                },
+                "range": {
+                    "min": 50
+                }
+            }
+        ]
+    }
+]

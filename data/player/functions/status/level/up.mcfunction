@@ -10,7 +10,7 @@
     execute if entity @s[team=Wizard] run scoreboard players add @s lv_wizard 1
     execute if entity @s[team=Hunter] run scoreboard players add @s lv_hunter 1
 # レベルアップ表示用のadvancement呼び出し
-    advancement grant @s only player:level_up tick0
+    execute unless entity @s[tag=ClassChange] run advancement grant @s only player:level_up tick0
 # 職業スキルレベル
     scoreboard players operation $SkillLevel Temporary = @s level
     scoreboard players operation $SkillLevel Temporary %= #10 Constant

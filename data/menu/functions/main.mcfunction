@@ -5,6 +5,7 @@
     execute if data storage menu:temp Data{type:"Upgrading"} run function menu:upgrading/_
 # NPC
     execute if data storage menu:temp Data{type:"Shop"} run function menu:shop/_
+    execute if data storage menu:temp Data{type:"Class"} run function menu:class/_
 # ホバーオフハンドキー対策
     execute as @p run function menu:hover_offhand
 # ホバードロップキー対策

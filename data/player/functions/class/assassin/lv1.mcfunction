@@ -5,9 +5,9 @@
     scoreboard players set @s xp 0
     scoreboard players set @s xp_next 50
     scoreboard players set @s hp 40
-    scoreboard players set @s mp 50
+    scoreboard players set @s mp 40
     scoreboard players set @s hp_base 40
-    scoreboard players set @s mp_base 50
+    scoreboard players set @s mp_base 40
     scoreboard players set @s hp_regen_base 25
     scoreboard players set @s mp_regen_base 25
     scoreboard players set @s ad_base 3
