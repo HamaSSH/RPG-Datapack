@@ -25,7 +25,6 @@ say reload
     scoreboard objectives add PreviousHPRatio dummy "HP割合保存"
     scoreboard objectives add PreviousMP dummy "MP値保存"
     scoreboard objectives add PreviousSPD dummy "SPD値保存"
-    scoreboard objectives add PreviousLevel dummy "レベル保存"
     scoreboard objectives add GoldDisplay dummy "Gold表示"
     scoreboard objectives add FallDistance dummy "畑荒らし対策"
 # タイマー
