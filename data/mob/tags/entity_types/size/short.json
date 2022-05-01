@@ -1,6 +1,7 @@
 {
     "description": "Short Mobs",
     "values": [
+        "minecraft:allay",
         "minecraft:axolotl",
         "minecraft:bat",
         "minecraft:bee",
@@ -11,6 +12,7 @@
         "minecraft:dolphin",
         "minecraft:endermite",
         "minecraft:fox",
+        "minecraft:frog",
         "minecraft:glow_squid",
         "minecraft:ocelot",
         "minecraft:parrot",
@@ -21,6 +23,7 @@
         "minecraft:silverfish",
         "minecraft:spider",
         "minecraft:squid",
+        "minecraft:tadpole",
         "minecraft:tropical_fish",
         "minecraft:turtle",
         "minecraft:vex",

@@ -1,6 +1,7 @@
 {
     "description": "Tall Mobs",
     "values": [
+        "minecraft:elder_guardian",
         "minecraft:enderman",
         "minecraft:iron_golem",
         "minecraft:wither_skeleton"
