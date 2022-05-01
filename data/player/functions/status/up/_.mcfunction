@@ -10,7 +10,7 @@
 # 職業スキルレベル
     scoreboard players operation $SkillLevel Temporary = @s level
     scoreboard players operation $SkillLevel Temporary %= #10 Constant
-    execute if score $SkillLevel Temporary matches 0 if score @s skill_level matches ..4 run function player:class/skill_level_up
+    execute if score $SkillLevel Temporary matches 0 if score @s skill_level matches ..4 run scoreboard players add @s skill_level 1
 # 職業ごとの分岐
     scoreboard players add @s hp_base 6
     scoreboard players add @s hp_regen_base 5

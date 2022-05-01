@@ -13,4 +13,3 @@
     execute if score @s xp >= @s xp_next run function player:status/level/up
 # リセット
     scoreboard players reset @s xp_gained
-    scoreboard players reset $PreviousLevel

@@ -1,11 +1,12 @@
 # 演出(レベルアップ一度きり)
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
-    # 自分以外にtellraw
+    # 自分以外へのtellraw
         tag @s add LevelUp
-        tellraw @a[tag=!LevelUp] ["☆ ",{"selector":"@s","bold":true},{"text":"の レベルが 上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
+        tellraw @a[tag=!LevelUp] ["☆ ",{"selector":"@s","bold":true},{"text":"のレベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
         tag @s remove LevelUp
-    # 自分のみのtellraw
-        tellraw @s ["☆ ",{"text":"レベルが 上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
+    # 自分へのtellraw
+        tellraw @s ["☆ ",{"text":"レベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
+        execute unless score @s skill_level = $PreviousSkillLevel Temporary run function player:class/skill_level_up
 # ステータススコア上昇値計算
     scoreboard players operation $DifferenceHP Temporary = @s hp_base
     scoreboard players operation $DifferenceMP Temporary = @s mp_base
@@ -61,6 +62,8 @@
     execute if score $DifferenceLUK Temporary matches 1.. run tellraw @s [{"text":"\uE24B 幸運:       \uF002"},{"score":{"name":"$PreviousLUK","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"luk_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceLUK","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
     tellraw @s ""
 # リセット
+    scoreboard players reset $PreviousLevel
+    scoreboard players reset $PreviousSkillLevel
     scoreboard players reset $MPRegenInt
     scoreboard players reset $MPRegenDec
     scoreboard players reset $HPRegenInt

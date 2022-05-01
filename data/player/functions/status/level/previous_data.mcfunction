@@ -1,5 +1,6 @@
 # レベルアップ前のステータス情報を保存
     scoreboard players operation $PreviousLevel Temporary = @s level
+    scoreboard players operation $PreviousSkillLevel Temporary = @s skill_level
     # ステータススコア
         scoreboard players operation $PreviousHP Temporary = @s hp_base
         scoreboard players operation $PreviousMP Temporary = @s mp_base
