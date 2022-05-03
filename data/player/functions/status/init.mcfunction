@@ -22,6 +22,7 @@
     function player:status/update/_
 # 内部スコアの初期化
     scoreboard players set @s sneak 0
+    scoreboard players set @s HurtTime 0
     scoreboard players set @s skill_level 1
     scoreboard players set @s xp_assassin 0
     scoreboard players set @s xp_fighter 0
