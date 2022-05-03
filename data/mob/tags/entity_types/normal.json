@@ -1,7 +1,6 @@
 {
     "description": "non-Undead Mobs (No Boss)",
     "values": [
-        "minecraft:allay",
         "minecraft:axolotl",
         "minecraft:bat",
         "minecraft:bee",
@@ -19,7 +18,6 @@
         "minecraft:endermite",
         "minecraft:evoker",
         "minecraft:fox",
-        "minecraft:frog",
         "minecraft:ghast",
         "minecraft:giant",
         "minecraft:glow_squid",
@@ -53,7 +51,6 @@
         "minecraft:spider",
         "minecraft:squid",
         "minecraft:strider",
-        "minecraft:tadpole",
         "minecraft:trader_llama",
         "minecraft:tropical_fish",
         "minecraft:turtle",
@@ -61,7 +58,6 @@
         "minecraft:villager",
         "minecraft:vindicator",
         "minecraft:wandering_trader",
-        "minecraft:warden",
         "minecraft:witch",
         "minecraft:wolf"
     ]
