@@ -7,4 +7,4 @@
     execute if predicate npc:004 run function npc:asset/004/shop/summon
     execute if predicate npc:005 run function npc:asset/005/shop/summon
 # プレイヤーの方向を向く村人
-    execute if entity @e[type=villager,distance=..5] as @e[type=villager,distance=..5] at @s run tp @s ~ ~ ~ facing entity @p
+    execute if entity @e[type=villager,distance=..10] as @e[type=villager,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p

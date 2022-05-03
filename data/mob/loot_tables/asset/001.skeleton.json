@@ -1,17 +1,17 @@
 {
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 2,
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "item:5401/_"
+                    "name": "item:1601/_"
                 }
             ],
             "conditions": [
                 {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.8
+                    "chance": 0.7
                 }
             ]
         },
@@ -23,7 +23,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "item:5402/_"
+                    "name": "item:1602/_"
                 }
             ]
         }

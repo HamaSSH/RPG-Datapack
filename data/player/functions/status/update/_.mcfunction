@@ -68,7 +68,6 @@
     function player:status/min
 # attribute操作
     execute unless score @s PreviousSPD = @s spd run function player:status/spd/apply
-
 # scoreboard objectives add status dummy
     # scoreboard players operation HP status = @s hp_max
     # scoreboard players operation MP status = @s mp_max
