@@ -20,7 +20,7 @@
                     "distance": {
                         "absolute": {
                             "min": 0,
-                            "max": 5.5
+                            "max": 4.0
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 [
     {
         "function": "minecraft:set_nbt",
-        "tag": "{CustomModelData:6100,menu:{blank:1b}}"
+        "tag": "{CustomModelData:6016,menu:{blank:1b}}"
     },
     {
         "function": "minecraft:set_name",

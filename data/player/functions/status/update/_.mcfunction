@@ -35,9 +35,9 @@
     execute if data storage player:temp Inventory.[{Slot:102b}].tag{equipment:"chestplate"} run function player:status/update/chestplate
     execute if data storage player:temp Inventory.[{Slot:101b}].tag{equipment:"leggings"} run function player:status/update/leggings
     execute if data storage player:temp Inventory.[{Slot:100b}].tag{equipment:"boots"} run function player:status/update/boots
-    execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run function player:status/update/accessory9
-    execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run function player:status/update/accessory10
-    execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run function player:status/update/accessory11
+    execute if data storage player:temp Inventory[{Slot:9b}].tag{equipment:"accessory"} run function player:status/update/accessory9
+    execute if data storage player:temp Inventory[{Slot:10b}].tag{equipment:"accessory"} run function player:status/update/accessory10
+    execute if data storage player:temp Inventory[{Slot:11b}].tag{equipment:"accessory"} run function player:status/update/accessory11
 # 最終的なステータス += 補正ステータス
     scoreboard players operation @s hp_max += @s hp_bonus
     scoreboard players operation @s mp_max += @s mp_bonus

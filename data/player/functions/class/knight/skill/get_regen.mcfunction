@@ -11,19 +11,19 @@
         execute if data storage player:temp helmet.mp_regen store result score $Bonus Temporary run data get storage player:temp helmet.mp_regen
         execute if data storage player:temp helmet.mp_regen run scoreboard players operation $MPRegen Temporary += $Bonus Temporary
     # 装備品(スロット9)
-        execute if data storage player:temp Inventory[{Slot:9b}].tag.accessory run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:9b}].tag.bonus
+        execute if data storage player:temp Inventory[{Slot:9b}].tag{equipment:"accessory"} run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:9b}].tag.bonus
         execute if data storage player:temp accessory.hp_regen store result score $Bonus Temporary run data get storage player:temp accessory.hp_regen
         execute if data storage player:temp accessory.hp_regen run scoreboard players operation $HPRegen Temporary += $Bonus Temporary
         execute if data storage player:temp accessory.mp_regen store result score $Bonus Temporary run data get storage player:temp accessory.mp_regen
         execute if data storage player:temp accessory.mp_regen run scoreboard players operation $MPRegen Temporary += $Bonus Temporary
     # 装備品(スロット10)
-        execute if data storage player:temp Inventory[{Slot:10b}].tag.accessory run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:10b}].tag.bonus
+        execute if data storage player:temp Inventory[{Slot:10b}].tag{equipment:"accessory"} run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:10b}].tag.bonus
         execute if data storage player:temp accessory.hp_regen store result score $Bonus Temporary run data get storage player:temp accessory.hp_regen
         execute if data storage player:temp accessory.hp_regen run scoreboard players operation $HPRegen Temporary += $Bonus Temporary
         execute if data storage player:temp accessory.mp_regen store result score $Bonus Temporary run data get storage player:temp accessory.mp_regen
         execute if data storage player:temp accessory.mp_regen run scoreboard players operation $MPRegen Temporary += $Bonus Temporary
     # 装備品(スロット11)
-        execute if data storage player:temp Inventory[{Slot:11b}].tag.accessory run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:11b}].tag.bonus
+        execute if data storage player:temp Inventory[{Slot:11b}].tag{equipment:"accessory"} run data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:11b}].tag.bonus
         execute if data storage player:temp accessory.hp_regen store result score $Bonus Temporary run data get storage player:temp accessory.hp_regen
         execute if data storage player:temp accessory.hp_regen run scoreboard players operation $HPRegen Temporary += $Bonus Temporary
         execute if data storage player:temp accessory.mp_regen store result score $Bonus Temporary run data get storage player:temp accessory.mp_regen
