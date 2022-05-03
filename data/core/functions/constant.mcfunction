@@ -5,6 +5,7 @@
     scoreboard players set #4 Constant 4
     scoreboard players set #5 Constant 5
     scoreboard players set #6 Constant 6
+    scoreboard players set #7 Constant 7
     scoreboard players set #8 Constant 8
     scoreboard players set #10 Constant 10
     scoreboard players set #11 Constant 11
