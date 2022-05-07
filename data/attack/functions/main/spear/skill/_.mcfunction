@@ -11,7 +11,6 @@
     # 当たり判定
         execute anchored eyes positioned ^ ^ ^ run function attack:main/spear/skill/rec
     # リセット
-        function core:trigger/sneak/reset
         scoreboard players reset $DmgDealt
         scoreboard players reset $DamageColor
         scoreboard players reset $XPower

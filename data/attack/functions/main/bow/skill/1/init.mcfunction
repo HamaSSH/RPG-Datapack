@@ -6,5 +6,3 @@
 # 演出(弓溜め1初期)
     playsound minecraft:entity.zombie.attack_iron_door master @a ~ ~ ~ 0.6 1.3
     playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.4 0.8
-# リセット
-    function core:trigger/sneak/reset

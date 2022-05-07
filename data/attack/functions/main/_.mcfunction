@@ -25,5 +25,6 @@
 # 弓の左クリック検知
     execute if predicate attack:bow/charged run function attack:main/bow/_
 # リセット
+    function core:trigger/sneak/reset
     tag @s remove CriticalHit
     scoreboard players reset $DmgDealt

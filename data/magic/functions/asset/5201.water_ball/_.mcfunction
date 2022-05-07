@@ -7,5 +7,3 @@
     playsound minecraft:entity.bee.sting master @a ~ ~ ~ 1 1.3
     playsound minecraft:block.shroomlight.place master @a ~ ~ ~ 0.6 1.5
     playsound minecraft:entity.glow_squid.hurt master @a ~ ~ ~ 0.6 1
-# リセット
-    function core:trigger/sneak/reset

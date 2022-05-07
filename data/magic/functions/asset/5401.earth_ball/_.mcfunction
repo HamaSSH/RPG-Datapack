@@ -4,5 +4,3 @@
 # 演出
     playsound minecraft:block.stem.step master @a ~ ~ ~ 1.0 0.9
     playsound minecraft:block.shroomlight.step master @a ~ ~ ~ 1.0 0.9
-# リセット
-    function core:trigger/sneak/reset

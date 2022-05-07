@@ -9,5 +9,3 @@
     tag @s add WandTick
 # クールダウン
     scoreboard players set @s skill_cd 300
-# リセット
-    function core:trigger/sneak/reset

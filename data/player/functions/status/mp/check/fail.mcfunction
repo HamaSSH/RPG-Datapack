@@ -3,5 +3,3 @@
     playsound minecraft:block.candle.extinguish master @s ~ ~ ~ 1 2
     playsound minecraft:block.candle.extinguish master @s ~ ~ ~ 1 2
     playsound minecraft:block.candle.extinguish master @s ~ ~ ~ 1 2
-# 溜め攻撃リセット
-    function core:trigger/sneak/reset

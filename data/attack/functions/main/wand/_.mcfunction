@@ -9,5 +9,3 @@
     execute if score @s ThunderAttack matches 1.. run function attack:main/wand/effect/thunder
     execute if score @s EarthAttack matches 1.. run function attack:main/wand/effect/earth
     execute if score @s WindAttack matches 1.. run function attack:main/wand/effect/wind
-# リセット
-    function core:trigger/sneak/reset

@@ -4,5 +4,3 @@
 # 演出
     playsound minecraft:item.firecharge.use master @a ~ ~ ~ 0.6 1.4
     playsound minecraft:entity.shulker.shoot master @a ~ ~ ~ 0.6 1.5
-# リセット
-    function core:trigger/sneak/reset

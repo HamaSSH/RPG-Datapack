@@ -5,5 +5,3 @@
     playsound minecraft:item.firecharge.use master @a ~ ~ ~ 0.6 1.4
     playsound minecraft:entity.goat.screaming.long_jump master @a ~ ~ ~ 0.8 1.0
     playsound resource:custom.weapon.sword master @a ~ ~ ~ 0.5 1.0
-# リセット
-    function core:trigger/sneak/reset

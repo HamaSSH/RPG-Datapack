@@ -10,7 +10,6 @@
 # 演出(短剣通常)
     function attack:main/dagger/effect/_
 # リセット
-    function core:trigger/sneak/reset
     scoreboard players reset $DamageColor
     scoreboard players reset $XPower
     scoreboard players reset $YPower

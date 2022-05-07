@@ -13,7 +13,6 @@
     function attack:main/hammer/skill/effect/_
 # リセット
     function attack:main/hammer/skill/reset
-    function core:trigger/sneak/reset
     scoreboard players reset $DmgDealt
     scoreboard players reset $DamageColor
     scoreboard players reset $XPower

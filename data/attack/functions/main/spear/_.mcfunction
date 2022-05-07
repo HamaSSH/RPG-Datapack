@@ -9,7 +9,6 @@
 # 演出(槍通常)
     function attack:main/spear/effect/_
 # リセット
-    function core:trigger/sneak/reset
     scoreboard players reset $DamageColor
     scoreboard players reset $XPower
     scoreboard players reset $YPower

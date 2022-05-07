@@ -10,7 +10,6 @@
 # 演出(ハンマー通常)
     function attack:main/hammer/effect/_
 # リセット
-    function core:trigger/sneak/reset
     scoreboard players reset $DamageColor
     scoreboard players reset $XPower
     scoreboard players reset $YPower
