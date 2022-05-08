@@ -1,0 +1,30 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "nbt": "{equipment:\"helmet\"}"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "items": [
+                        "minecraft:carrot_on_a_stick"
+                    ],
+                    "nbt": "{equipment:\"helmet\"}"
+                }
+            }
+        }
+    }
+]
