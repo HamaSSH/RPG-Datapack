@@ -2,7 +2,7 @@
     scoreboard players set @s level 1
     scoreboard players set @s xp_next 50
     scoreboard players set @s xp 0
-    scoreboard players set @s gold 0
+    scoreboard players set @s gold 200
     scoreboard players set @s hp 50
     scoreboard players set @s mp 50
     scoreboard players set @s hp_base 50
@@ -37,6 +37,7 @@
     scoreboard players set @s lv_wizard 1
     scoreboard players set @s lv_hunter 1
     scoreboard players set @s skill_cd 0
+    scoreboard players set @s ElementAttack 0
     scoreboard players set @s FireAttack 0
     scoreboard players set @s WaterAttack 0
     scoreboard players set @s ThunderAttack 0
