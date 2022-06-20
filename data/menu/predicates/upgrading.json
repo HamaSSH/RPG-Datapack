@@ -13,14 +13,15 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-            "player": {
+            "type_specific": {
+                "type": "player",
                 "looking_at": {
                     "type": "minecraft:magma_cube",
                     "nbt": "{Tags:[\"Upgrading\"]}",
                     "distance": {
                         "absolute": {
                             "min": 0,
-                            "max": 4.0
+                            "max": 4
                         }
                     }
                 }

@@ -11,7 +11,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "core:trigger/consume_item/_": {
                                         "tick0": true

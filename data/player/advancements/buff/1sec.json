@@ -11,7 +11,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick0": true
@@ -31,7 +32,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick1": true
@@ -51,7 +53,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick2": true
@@ -71,7 +74,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick3": true
@@ -91,7 +95,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick4": true
@@ -111,7 +116,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick5": true
@@ -131,7 +137,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick6": true
@@ -151,7 +158,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick7": true
@@ -171,7 +179,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick8": true
@@ -191,7 +200,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick9": true
@@ -211,7 +221,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick10": true
@@ -231,7 +242,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick11": true
@@ -251,7 +263,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick12": true
@@ -271,7 +284,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick13": true
@@ -291,7 +305,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick14": true
@@ -311,7 +326,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick15": true
@@ -331,7 +347,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick16": true
@@ -351,7 +368,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick17": true
@@ -371,7 +389,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick18": true
@@ -391,7 +410,8 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "player": {
+                            "type_specific": {
+                                "type": "player",
                                 "advancements": {
                                     "player:buff/1sec": {
                                         "tick19": true

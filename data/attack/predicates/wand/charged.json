@@ -8,7 +8,8 @@
                     "nbt": "{weapon:\"wand\"}"
                 }
             },
-            "player": {
+            "type_specific": {
+                "type": "player",
                 "advancements": {
                     "attack:player_attacked": {
                         "melee_crit": true,
