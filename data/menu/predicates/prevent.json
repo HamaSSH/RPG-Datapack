@@ -5,7 +5,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "player": {
+                "type_specific": {
+                    "type": "player",
                     "looking_at": {
                         "type": "minecraft:chest_minecart",
                         "nbt": "{Tags:[\"MenuInit\"]}",
@@ -23,7 +24,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-                "player": {
+                "type_specific": {
+                    "type": "player",
                     "looking_at": {
                         "type": "minecraft:chest_minecart",
                         "nbt": "{Tags:[\"Open\"]}",

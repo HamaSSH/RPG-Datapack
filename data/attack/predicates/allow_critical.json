@@ -15,7 +15,8 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                    "player": {
+                    "type_specific": {
+                        "type": "player",
                         "advancements": {
                             "attack:player_attacked": {
                                 "melee_crit": true
@@ -28,7 +29,8 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                    "player": {
+                    "type_specific": {
+                        "type": "player",
                         "advancements": {
                             "attack:player_attacked": {
                                 "bow_crit": true
