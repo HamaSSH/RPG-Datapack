@@ -1,0 +1,50 @@
+{
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+        {
+            "text": "",
+            "font": "resource:_"
+        },
+        {
+            "nbt": "Name.HPBar1h",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.ExtraSpace",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.Char",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.Level",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.ResetName",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.Char",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.Level",
+            "storage": "mob:temp",
+            "interpret": true
+        },
+        {
+            "nbt": "Name.HPBar2h",
+            "storage": "mob:temp",
+            "interpret": true
+        }
+    ]
+}

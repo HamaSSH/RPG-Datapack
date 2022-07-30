@@ -3,9 +3,11 @@
     data modify entity @s ArmorItems set from storage mob:temp Data.Armor
     item modify entity @s armor.head mob:set_name
     data modify entity @s CustomName set from entity @s ArmorItems[3].tag.display.Name
+    data modify entity @s ArmorItems[3].tag.ResetName set from entity @s ArmorItems[3].tag.display.Name
 # 召喚演出
     particle minecraft:poof ~ ~0.5 ~ 0.2 0.5 0.2 0.01 20
 # スコアセット
+    execute store result score @s level run data get storage mob:temp Data.lvl
     execute store result score @s hp run data get storage mob:temp Data.hp
     execute store result score @s hp_max run data get storage mob:temp Data.hp
     execute store result score @s ad run data get storage mob:temp Data.ad
