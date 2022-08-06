@@ -59,6 +59,29 @@
                 }
             }
         },
+        "flash": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{flash:1b}"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "damage": {
+                    "type": {
+                        "is_projectile": false
+                    }
+                }
+            }
+        },
         "melee_nocrit": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
@@ -368,15 +391,16 @@
     },
     "requirements": [
         [
+            "melee_ad",
+            "melee_ap",
+            "projectile",
+            "flash"
+        ],
+        [
             "melee_nocrit",
             "melee_crit",
             "bow_nocrit",
             "bow_crit"
-        ],
-        [
-            "melee_ad",
-            "melee_ap",
-            "projectile"
         ],
         [
             "melee_charge0",

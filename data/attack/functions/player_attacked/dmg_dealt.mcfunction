@@ -3,6 +3,7 @@
     execute if entity @s[advancements={attack:player_attacked={melee_ad=true}}] run scoreboard players operation @s dmg_dealt = @s ad
     execute if entity @s[advancements={attack:player_attacked={melee_ap=true}}] run scoreboard players operation @s dmg_dealt = @s ap
     execute if entity @s[advancements={attack:player_attacked={projectile=true}}] run scoreboard players operation @s dmg_dealt = @s dex
+    execute if entity @s[advancements={attack:player_attacked={flash=true}}] run scoreboard players operation @s dmg_dealt = @s ad
 # チャージ率に応じてダメージ補正(melee)
     scoreboard players operation @s dmg_dealt *= #10 Constant
     execute if entity @s[advancements={attack:player_attacked={melee_charge0=true}}] run scoreboard players set @s dmg_dealt 0
