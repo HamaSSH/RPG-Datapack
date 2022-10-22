@@ -4,7 +4,7 @@ summon skeleton ~ ~ ~ {CustomNameVisible:1b,DeathLootTable:"mob:asset/001.skelet
     data modify storage mob:temp Data.NameChar set value 2
     data modify storage mob:temp Data.Armor set value [{},{},{},{}]
 # ステータス
-    data modify storage mob:temp Data.lvl set value 100
+    data modify storage mob:temp Data.lvl set value 6
     data modify storage mob:temp Data.hp set value 100
     data modify storage mob:temp Data.ad set value 7
     data modify storage mob:temp Data.xp set value 20

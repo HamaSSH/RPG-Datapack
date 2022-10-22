@@ -1,8 +1,7 @@
 # 弓を撃った人のタグ付け
     tag @s add this
 # 撃った弓矢としての処理
-    execute unless predicate core:is_sneaking positioned ~ ~1.52 ~ as @e[type=arrow,distance=..0.6] run function attack:main/bow/init
-    execute if predicate core:is_sneaking positioned ~ ~1.16 ~ as @e[type=arrow,distance=..0.2] run function attack:main/bow/init
+    execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.1 ~ as @e[type=arrow,distance=..0.6] run function attack:main/bow/init
     execute if score @s skill_cd matches 0 if score @s BowCharge matches 40.. run function attack:main/bow/skill/cost
 # 矢筒を持っていたらスコア減算
     function attack:main/bow/quiver/check
@@ -19,4 +18,5 @@
     tag @s remove this
     tag @s remove Quiver
     tag @s remove BowSkillOnCD
+    scoreboard players reset @s BowCharge
     scoreboard players reset @s bow_shot

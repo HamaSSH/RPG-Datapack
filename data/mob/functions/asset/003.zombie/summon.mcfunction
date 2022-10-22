@@ -4,7 +4,7 @@ summon zombie ~ ~ ~ {CustomNameVisible:1b,Health:1000f,Team:Enemy,Tags:["MobInit
     data modify storage mob:temp Data.NameChar set value 4
     data modify storage mob:temp Data.Armor set value [{},{},{},{}]
 # ステータス
-    data modify storage mob:temp Data.lvl set value 32
+    data modify storage mob:temp Data.lvl set value 12
     data modify storage mob:temp Data.hp set value 100
     data modify storage mob:temp Data.ad set value 10
     data modify storage mob:temp Data.xp set value 20
