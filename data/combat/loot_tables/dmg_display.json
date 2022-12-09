@@ -1,0 +1,191 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrier",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-"
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DmgReceived"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-",
+                                    "color": "#999999"
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp",
+                                    "color": "#999999"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DmgReceived"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": 0
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-",
+                                    "color": "#F4B566"
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp",
+                                    "color": "#F4B566"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DamageColor"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": 1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-",
+                                    "color": "#AAE675"
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp",
+                                    "color": "#AAE675"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DamageColor"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": 2
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-",
+                                    "color": "#CAA8F6"
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp",
+                                    "color": "#CAA8F6"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DamageColor"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": 3
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "-",
+                                    "color": "#FC806B",
+                                    "bold": true
+                                },
+                                {
+                                    "nbt": "Damage",
+                                    "storage": "combat:temp",
+                                    "color": "#FC806B",
+                                    "bold": true
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$DamageColor"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": 4
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

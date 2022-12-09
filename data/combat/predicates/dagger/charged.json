@@ -1,0 +1,32 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "nbt": "{weapon:\"dagger\"}"
+                }
+            },
+            "type_specific": {
+                "type": "player",
+                "advancements": {
+                    "combat:player_attacked": {
+                        "melee_crit": true,
+                        "projectile": false
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"DaggerSkill\"]}"
+            }
+        }
+    }
+]

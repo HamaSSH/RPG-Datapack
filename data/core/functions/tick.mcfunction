@@ -8,7 +8,7 @@
     execute as @a run function core:actionbar/_
 # 各namespaceの#tick呼び出し
     execute as @a at @s run function advancement:tick
-    function attack:tick
+    function combat:tick
     execute at @a run function item:tick
     execute as @e[tag=Magic] at @s run function magic:tick
     execute as @a at @s run function menu:tick

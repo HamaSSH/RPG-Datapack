@@ -13,5 +13,5 @@
     particle minecraft:dust 0.518 0.71 1 2 ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
     particle minecraft:bubble_pop ~ ~ ~ 0.2 0.2 0.2 0.03 15 force
 # リセット
-    execute unless block ^ ^ ^1 #attack:pass run kill @s
+    execute unless block ^ ^ ^1 #combat:pass run kill @s
     scoreboard players reset $DmgDealt

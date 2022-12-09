@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "nbt": "{weapon:\"sword\"}"
+            }
+        },
+        "type_specific": {
+            "type": "player",
+            "advancements": {
+                "combat:player_attacked": {
+                    "melee_crit": false,
+                    "projectile": false
+                }
+            }
+        }
+    }
+}
