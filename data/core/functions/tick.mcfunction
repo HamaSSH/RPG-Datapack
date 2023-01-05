@@ -1,7 +1,7 @@
 ### 全てを司る#tick
 
 # 初join処理
-    execute as @a if entity @s[tag=!PlayerID] run function core:first_join
+    execute as @a unless score @s PlayerID matches 0.. run function core:first_join
 # プレイヤー動作のトリガー
     execute as @a at @s run function core:trigger/_
 # ステータス表示GUI
