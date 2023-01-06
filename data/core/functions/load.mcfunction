@@ -9,6 +9,7 @@ say reload
     scoreboard objectives add fall_distance minecraft.custom:minecraft.fall_one_cm "落下距離"
     scoreboard objectives add bow_shot minecraft.used:minecraft.bow "弓使用"
     scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
+    scoreboard objectives add UsedFishingRod minecraft.used:minecraft.fishing_rod "浮き投げ検知"
 # asset用ID等
     scoreboard objectives add PlayerID dummy "プレイヤーID"
     scoreboard objectives add MagicID dummy "魔法ID"
@@ -28,6 +29,7 @@ say reload
     scoreboard objectives add GoldDisplay dummy "Gold表示"
     scoreboard objectives add FallDistance dummy "畑荒らし対策"
 # タイマー
+    scoreboard objectives add Timer dummy "汎用タイマー"
     scoreboard objectives add flash_timer dummy "懐中電灯"
     scoreboard objectives add buff_timer dummy "バフタイマー"
     scoreboard objectives add ai_timer dummy "敵モブAI"
