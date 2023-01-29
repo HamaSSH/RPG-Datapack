@@ -1,0 +1,18 @@
+{
+    "pack": {
+        "pack_format": 10,
+        "description": "RPG datapack"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "recipes/.*"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
+    }
+}
