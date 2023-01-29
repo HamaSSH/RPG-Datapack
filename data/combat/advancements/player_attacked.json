@@ -385,6 +385,11 @@
             "conditions": {
                 "entity": {
                     "nbt": "{Tags:[\"LeftClick\"]}"
+                },
+                "damage": {
+                    "type": {
+                        "is_projectile": false
+                    }
                 }
             }
         }

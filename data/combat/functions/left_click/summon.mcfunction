@@ -4,7 +4,9 @@
 # 左クリック検知用のVex召喚
 
 # 1. 目前のVex
-    execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ run summon vex ~ ~-0.45 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+    #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ run summon vex ~ ~-0.45 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+    execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ run summon vex ~ ~-0.4 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+    execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ run summon vex ~ ~-1.2 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
 # 2. ^^^0.5のVex
     execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #combat:air positioned ^ ^ ^0.5 if block ~ ~ ~ #combat:air positioned as @s anchored eyes positioned ^ ^ ^0.5 run summon minecraft:vex ~ ~-0.45 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
 
