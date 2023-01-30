@@ -2,9 +2,6 @@
     data modify storage combat:temp Rotation set from entity @s Rotation
     execute store result score $RotationX Temporary run data get storage combat:temp Rotation[0] 100
     execute store result score $RotationY Temporary run data get storage combat:temp Rotation[1] 100
-    #tellraw @a {"score":{"name":"$RotationX","objective": "Temporary"}}
-    #tellraw @a {"score":{"name":"$RotationY","objective": "Temporary"}}
-    #tellraw @a ""
 # ホーミング角度設定
     scoreboard players set $Homing Temporary 100
     scoreboard players operation $Homing Temporary *= @s skill_level

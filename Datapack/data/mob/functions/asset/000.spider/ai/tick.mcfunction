@@ -14,19 +14,3 @@
     execute if score @s Timer matches 31..32 run particle dust 0.275 0.239 0.239 3 ~ ~0.3 ~ 0.6 0.6 0.6 0 10 force
     execute if score @s Timer matches 31 run function mob:asset/000.spider/ai/init
     execute if score @s Timer matches 33 run effect clear @s levitation
-# とびかかり
-    # execute if score @s Timer matches 130 run playsound entity.spider.ambient master @a ~ ~ ~ 0.7 1.2
-    # execute if score @s Timer matches 130 run data modify entity @s Motion[1] set value 0.4
-    # execute if score @s Timer matches 130 run particle dust 1 1 1 3 ~ ~ ~ 0.5 0.2 0.5 0 20 force
-    # execute if score @s Timer matches 140 run scoreboard players set $XPower Temporary 200
-    # execute if score @s Timer matches 140 run scoreboard players set $YPower Temporary 100
-    # execute if score @s Timer matches 140 run function mob:ai/leap/_
-# とびかかり
-    # execute if score @s Timer matches 220 run playsound entity.spider.ambient master @a ~ ~ ~ 0.7 1.2
-    # execute if score @s Timer matches 220 run data modify entity @s Motion[1] set value 0.4
-    # execute if score @s Timer matches 220 run particle dust 1 1 1 3 ~ ~ ~ 0.5 0.2 0.5 0 20 force
-    # execute if score @s Timer matches 230 run scoreboard players set $XPower Temporary 200
-    # execute if score @s Timer matches 230 run scoreboard players set $YPower Temporary 100
-    # execute if score @s Timer matches 230 run function mob:ai/leap/_
-# リセット
-    # execute if score @s Timer matches 400 run scoreboard players set @s Timer 100

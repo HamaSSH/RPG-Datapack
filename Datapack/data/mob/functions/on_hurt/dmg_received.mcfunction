@@ -5,5 +5,4 @@
 # ダメージ表示
     function combat:damage/display/type
 # リセット
-    # tellraw @a {"score":{"name":"@s","objective":"dmg_received"}}
     scoreboard players reset @s dmg_received
