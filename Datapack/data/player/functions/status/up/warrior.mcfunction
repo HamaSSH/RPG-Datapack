@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 毎回
     scoreboard players operation @s hp_base += /10 Temporary
     scoreboard players operation @s mp_base += /10 Temporary

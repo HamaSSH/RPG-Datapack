@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 職業ステータスリセット
     scoreboard players reset @s hp_regen_class
     scoreboard players reset @s mp_regen_class

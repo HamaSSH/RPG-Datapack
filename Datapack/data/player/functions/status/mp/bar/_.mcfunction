@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # PreviousMP ≠ mp のとき PreviousMPは-1にしておく
     scoreboard players set @s PreviousMP -1
 # 調整

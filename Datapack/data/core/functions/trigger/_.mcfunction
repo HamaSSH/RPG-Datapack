@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 選択中スロット変更
     execute store result score $SelectedItemSlot Temporary run data get entity @s SelectedItemSlot
     execute unless score @s PreviousSlot = $SelectedItemSlot Temporary run function core:trigger/slot_changed

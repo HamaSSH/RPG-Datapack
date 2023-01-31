@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 保持スコア設定
     scoreboard players operation @s assassin_crt %= #1000 Constant
     scoreboard players operation @s assassin_crt += @s skill_level

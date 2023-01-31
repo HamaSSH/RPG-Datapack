@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Knockbackを受けるモブの座標取得とY方向Motion指定
     data modify storage mob:temp Pos set from entity @s Pos
     data modify storage mob:temp Pos[1] set value 0.00032

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # クールダウンの計算
     execute store result score $Cooldown Temporary run data get storage actionbar:temp offhand.tag.magic.cooldown
     execute store result score $TimeUsed Temporary run data get storage actionbar:temp offhand.tag.gametime

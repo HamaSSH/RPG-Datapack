@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 見た目設定
     execute unless data storage mob:temp Data.Armor[3].id run data modify storage mob:temp Data.Armor[3] set value {id:"minecraft:barrier",Count:1b}
     data modify entity @s ArmorItems set from storage mob:temp Data.Armor

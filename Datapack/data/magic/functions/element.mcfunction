@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 属性タイマーリセット
     scoreboard players set @s ElementAttack 0
     scoreboard players set @s FireAttack 0

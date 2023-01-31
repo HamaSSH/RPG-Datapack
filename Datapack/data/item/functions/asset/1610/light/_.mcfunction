@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 ### 各光源AECとしての常時実行function
 
     execute store result score $LightLevel Temporary run data get entity @s PortalCooldown

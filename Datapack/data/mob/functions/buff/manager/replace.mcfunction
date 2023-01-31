@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフの種類ごとの置き換え
     execute if data storage mob:temp Data.buff{bonus:"ad"} if data storage mob:temp Data.oldBuff{bonus:"ad"} run scoreboard players operation @e[tag=Enemy,tag=this,limit=1] ad_buff -= $Bonus Temporary
     execute if data storage mob:temp Data.buff{bonus:"ad"} if data storage mob:temp Data.oldBuff{bonus:"ad"} run scoreboard players operation @e[tag=Enemy,tag=this,limit=1] ad -= $Bonus Temporary

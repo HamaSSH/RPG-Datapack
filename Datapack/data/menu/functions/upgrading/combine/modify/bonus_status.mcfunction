@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # bonusタグ消す
     data remove storage menu:temp Data.refresh[{Slot:10b}].tag.bonus
 # 新しいbonusタグを代入

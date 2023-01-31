@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 攻撃
     # 与ダメージ計算
         scoreboard players operation $DmgDealt Temporary = @s dmg_dealt

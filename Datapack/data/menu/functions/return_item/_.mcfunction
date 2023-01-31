@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # アイテムの返却
     execute if data storage menu:temp Data.return[] run function menu:return_item/rec
 # 演出

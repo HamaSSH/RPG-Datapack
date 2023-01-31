@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $DEXBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"dex"}].value
     execute store result score $DEXDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"dex"}].duration

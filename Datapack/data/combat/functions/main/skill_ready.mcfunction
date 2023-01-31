@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 武器ごとで分岐
     execute if predicate combat:mainhand/dagger run function combat:main/dagger/skill/ready
     execute if predicate combat:mainhand/sword run function combat:main/sword/skill/ready

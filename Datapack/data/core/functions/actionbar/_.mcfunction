@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーの装備 → storage
     data modify storage actionbar:temp mainhand set from entity @s SelectedItem
     data modify storage actionbar:temp offhand set from entity @s Inventory[{Slot:-106b}]

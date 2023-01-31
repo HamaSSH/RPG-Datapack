@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓矢の#tick
     execute as @e[type=arrow] run data modify entity @s PierceLevel set value 5b
     execute if data entity @s {inGround:0b} run function combat:main/bow/arrow/particle/_

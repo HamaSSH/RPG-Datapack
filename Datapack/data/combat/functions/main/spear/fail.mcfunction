@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^-0.1 run function combat:main/spear/rec
     execute positioned ~-4.5 ~-4.5 ~-4.5 as @e[type=#mob:mobs,tag=Hit,tag=Enemy,dx=8,dy=8,dz=8] run function combat:main/fail

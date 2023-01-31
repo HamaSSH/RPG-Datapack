@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 無属性の演出
     execute if entity @s[tag=NeutralAttack] run function combat:main/wand/particle/neutral
 # 属性がある場合の演出

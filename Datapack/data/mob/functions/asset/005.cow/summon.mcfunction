@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 summon cow ~ ~ ~ {CustomNameVisible:1b,Health:1000f,Team:Enemy,Tags:["MobInit","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}],DeathLootTable:"mob:asset/005.cow"}
 # 見た目
     data modify storage mob:temp Data.CustomName set value '{"text":"カウ"}'

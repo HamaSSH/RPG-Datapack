@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ばらまく
     loot spawn ~ ~ ~ loot minecraft:blocks/coal_ore
     loot spawn ~ ~ ~ loot minecraft:blocks/coal_ore

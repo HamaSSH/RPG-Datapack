@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 武器の強化回数(Grade)に応じたアイテムをgive
     data remove block 0 0 0 Items
     execute if data storage menu:temp Data{grade:0} run loot replace block 0 0 0 container.0 loot item:2201/_1

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 角度取得
     data modify storage combat:temp Rotation set from entity @s Rotation
     execute store result score $RotationX Temporary run data get storage combat:temp Rotation[0] 100

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーSelectedItem → storage
     data modify storage item:temp Data set from entity @s SelectedItem
     execute store result score $Damage Temporary run data get storage item:temp Data.tag.collect.damage

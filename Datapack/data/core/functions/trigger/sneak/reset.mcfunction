@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スニークスコアのリセット
     scoreboard players set @s sneak 0
 # 武器スキルReadyタグリセット

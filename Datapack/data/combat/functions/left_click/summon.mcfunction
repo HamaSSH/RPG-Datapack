@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # チェスト/メニューGUIを開かせたい時は召喚しない
     execute if entity @e[tag=Container,distance=..5,sort=nearest,limit=1] run function combat:left_click/container
     execute if entity @e[type=villager,tag=NPC,distance=..5,sort=nearest,limit=1] anchored eyes positioned ^ ^ ^ run function combat:left_click/npc
@@ -16,7 +20,7 @@
 # 没: マグマキューブ
     #execute unless entity @s[tag=DisableLC] if entity @s[nbt={SelectedItem:{tag:{weapon:spear}}}] anchored eyes positioned ^ ^ ^ positioned ~ ~-0.5 ~ run summon minecraft:magma_cube ~ ~ ~ {Size:0,PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
     #execute unless entity @s[tag=DisableLC] if entity @s[nbt={SelectedItem:{tag:{weapon:spear}}}] anchored eyes positioned ^ ^ ^0.5 positioned ~ ~-0.5 ~ run summon minecraft:magma_cube ~ ~ ~ {Size:0,PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
-    
+
 # リセット
     tag @s remove DisableLC
     advancement revoke @s only combat:left_click/summon

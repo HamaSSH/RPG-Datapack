@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # アイテムを与える
     data modify storage menu:temp Data.CustomModelData set from storage menu:temp Data.Items[{Slot:10b}].tag.CustomModelData
     data modify storage menu:temp Data.grade set from storage menu:temp Data.Items[{Slot:10b}].tag.grade

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ツールを使えないようにする
     item modify entity @s weapon.mainhand item:collect/no_durability
 # 演出

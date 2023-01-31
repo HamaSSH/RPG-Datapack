@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 防御計算式 → dmg_received = dmg_received * (100 - def)
     scoreboard players operation $MobDef Temporary = @s def
     scoreboard players set $DamageCut Temporary 100

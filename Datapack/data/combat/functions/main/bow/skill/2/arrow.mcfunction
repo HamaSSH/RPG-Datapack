@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 溜め攻撃弓矢の初期処理
     data modify entity @s PortalCooldown set value 20
     tag @s add ArrowSkill2

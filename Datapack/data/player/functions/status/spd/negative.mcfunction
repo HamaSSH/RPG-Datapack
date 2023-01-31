@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 移動速度のAttributeModifier適用
     scoreboard players operation $MovementSpeed Temporary *= #-1 Constant
     scoreboard players operation $MovementSpeed Temporary *= #2^23 Constant

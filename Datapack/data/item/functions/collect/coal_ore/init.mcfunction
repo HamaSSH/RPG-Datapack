@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 最初のブロック設置
     setblock ~ ~ ~ coal_ore
     scoreboard players set @s hp 5

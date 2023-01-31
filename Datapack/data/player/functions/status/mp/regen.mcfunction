@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # MPを回復
     scoreboard players operation $MPRegen Temporary = @s mp_regen_timer
     scoreboard players operation $MPRegen Temporary /= #2000 Constant

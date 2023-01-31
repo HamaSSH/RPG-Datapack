@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフの種類ごとの置き換え
     execute if data storage player:temp Data.buff{bonus:"hp"} if data storage player:temp Data.oldBuff{bonus:"hp"} run scoreboard players operation @a[tag=this,limit=1] hp_buff -= $Bonus Temporary
     execute if data storage player:temp Data.buff{bonus:"mp"} if data storage player:temp Data.oldBuff{bonus:"mp"} run scoreboard players operation @a[tag=this,limit=1] mp_buff -= $Bonus Temporary

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 残り秒数計算
     scoreboard players operation $CDSec Temporary = $Cooldown Temporary
     scoreboard players operation $CDSec Temporary -= $Time Temporary

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage chestplateにInventory[{Slot:102b}].tag.bonusを代入
     data modify storage player:temp chestplate set from storage player:temp Inventory[{Slot:102b}].tag.bonus
 # chestplateスロットにステータス加算アイテムがあれば加算

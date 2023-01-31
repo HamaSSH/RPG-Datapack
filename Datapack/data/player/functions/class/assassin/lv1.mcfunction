@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 初期ステータス
     scoreboard players set @s level 1
     scoreboard players set @s lv_assassin 1

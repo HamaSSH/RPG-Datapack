@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 持っているアイテム数取得
     execute store result score $Count Temporary run data get storage menu:temp Data.NewInv[-1].Count
 # アイテム数減算後のCountを代入

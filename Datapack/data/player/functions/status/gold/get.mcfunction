@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Gold換算
     execute store result score $GoldNugget Temporary run clear @s gold_nugget{gold:1b}
     execute store result score $GoldIngot Temporary run clear @s gold_ingot{gold:1b}

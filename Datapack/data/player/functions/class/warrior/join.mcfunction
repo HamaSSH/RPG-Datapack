@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 「アサシン」に転職
     execute unless entity @s[team=Warrior] run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ウォリアー】","color":"#9BAFEB"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"lv_warrior"},"bold":true},{"text":" に転職しました ！"}]
     execute unless entity @s[team=Warrior] at @s run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0

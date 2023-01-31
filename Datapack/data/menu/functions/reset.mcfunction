@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # アイテムのデータ → storage
     execute positioned ^ ^ ^10 as @e[type=marker,tag=MenuManager,distance=..5] if score @s PlayerID = @p PlayerID run data modify storage menu:temp Data.Items set from entity @s data.Items
 # 返却されるべきアイテムを返却する

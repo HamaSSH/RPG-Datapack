@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 必要XP計算式 → xp_next ≃ xp_next + level^2/5 + level*5 + 10
 # = xp_next + (level^2 + 25*level + 50) / 5
     scoreboard players operation $NextXP Temporary = @s level

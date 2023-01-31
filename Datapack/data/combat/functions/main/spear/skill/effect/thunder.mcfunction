@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 雷属性の演出(槍溜め)
     particle minecraft:dust 1 1 0.3 2 ^ ^1.0 ^2 0.6 0.2 0.6 1 20 force
     particle minecraft:dust 1 1 0.7 2 ^ ^1.0 ^2 0.6 0.2 0.6 1 20 force

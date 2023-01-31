@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # CustomModelDataに応じたアイテムをgive
     data remove block 0 0 0 Items
     execute if data storage menu:temp Data.buy.tag{CustomModelData:2101} run loot replace block 0 0 0 container.0 loot item:2101/_

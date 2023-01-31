@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 経験値ブレ幅の決定
     scoreboard players operation $XPDrop Temporary = @s xp
     scoreboard players add $XPDrop Temporary 9

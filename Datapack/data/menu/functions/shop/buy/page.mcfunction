@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 購入額の計算
     data modify storage menu:temp Data.buy set from entity @s data.buy
     execute store result score $BuyPrice Temporary run data get storage menu:temp Data.buy.tag.buy

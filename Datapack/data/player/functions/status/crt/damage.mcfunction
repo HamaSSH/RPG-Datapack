@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 会心攻撃力上昇率 dmg_dealt = dmg_dealt * (crt/7 + 110) / 100
 # = dmg_dealt * (crt + 800) / 700
     scoreboard players operation $CritMultiplier Temporary = @s crt

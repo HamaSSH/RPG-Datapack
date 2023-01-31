@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフスコアの減算
     execute store result score $Bonus Temporary run data get storage mob:temp Data.buff.value
     execute if data storage mob:temp Data.buff{bonus:"ad"} run scoreboard players operation @s ad_buff -= $Bonus Temporary

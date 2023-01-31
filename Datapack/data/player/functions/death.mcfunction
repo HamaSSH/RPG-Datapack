@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 title @s title {"text":"you died.","bold":true,"color":"dark_red"}
 # ステータス値整理
     function player:status/update/_

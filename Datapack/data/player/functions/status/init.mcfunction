@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 基礎ステータス・スコアの設定
     scoreboard players set @s level 1
     scoreboard players set @s xp_next 50

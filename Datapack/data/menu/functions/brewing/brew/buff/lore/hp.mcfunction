@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $HPBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"hp"}].value
     execute store result score $HPDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"hp"}].duration

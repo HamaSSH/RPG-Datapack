@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 満腹度回復値を取得
     execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTemp,distance=..0.01,limit=1] if score @s PlayerID = @a[tag=this,limit=1] PlayerID store result score $Saturation Temporary run data get entity @s data.saturation
 # 空腹エフェクト

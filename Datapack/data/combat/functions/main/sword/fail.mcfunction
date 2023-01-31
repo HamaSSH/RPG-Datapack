@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^-0.2 run function combat:main/sword/rec
     execute as @e[type=#mob:mobs,tag=Hit,tag=Enemy,tag=!HurtTime,distance=..4,sort=nearest,limit=1] run function combat:main/fail

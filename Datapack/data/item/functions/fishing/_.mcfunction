@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 浮きのPlayerID ＝ 釣った人
     scoreboard players operation $PlayerID Temporary = @s PlayerID
 # チェストの召喚

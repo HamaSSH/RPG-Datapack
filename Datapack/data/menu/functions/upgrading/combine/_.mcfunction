@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 鍛冶台に入っている合成アイテム(+板ガラス)のデータを武器に代入
     data modify storage menu:temp Data.refresh[{Slot:10b}].tag.menu.combine set from storage menu:temp Data.smithing.tag.menu.combine
 # それぞれのアイテムに対して合成元アイテムにbonusタグ分を加算

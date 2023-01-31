@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 初期処理
     execute unless score @s ElementAttack matches 1.. run tag @s add NeutralWandSkill
     execute if score @s FireAttack matches 1.. run tag @s add FireWandSkill

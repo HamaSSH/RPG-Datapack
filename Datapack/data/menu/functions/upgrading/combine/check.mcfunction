@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 素材スロットに入っているアイテムをカウント
     scoreboard players add $CombineIngredients Temporary 0
     execute unless data storage menu:temp Data.Items[{Slot:10b}].tag.menu.combine[{Slot:11b,tag:{menu:{combinable:1b}}}] if data storage menu:temp Data.refresh[{Slot:11b,tag:{menu:{combinable:1b}}}] run scoreboard players add $CombineIngredients Temporary 1

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ホーミング
     tp @s ^ ^ ^1
     function combat:main/wand/homing/_

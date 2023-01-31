@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 溜め攻撃チャージ中の演出
     execute if score @s BowCharge matches 28..32 run particle crit ~ ~0. ~ 0.3 0.3 0.3 0.1 3 force
     execute if score @s BowCharge matches 28..32 run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.05 1.4

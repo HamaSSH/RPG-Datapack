@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 買えなかった
     execute unless score @p gold >= $BuyPrice Temporary run playsound minecraft:entity.villager.no master @p ~ ~ ~ 1 1.1
 # 買えた

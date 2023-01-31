@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # もしGUI付きのブロックがそこにあればタグ付け
     execute positioned ~ ~1.62 ~ if block ~ ~ ~ #combat:gui run tag @s add DisableLC
 # リーチの限界まで再帰

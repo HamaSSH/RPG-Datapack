@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 十分な素材を持っているか検知
     data modify storage menu:temp Data.Inventory set from entity @p Inventory
     data modify storage menu:temp Data.clear set from storage menu:temp Data.Items[{Slot:10b}].tag.menu.evolve

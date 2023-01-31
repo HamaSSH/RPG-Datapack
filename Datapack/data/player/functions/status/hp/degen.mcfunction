@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ダメージ
     scoreboard players operation $HPDegen Temporary = @s hp_regen_timer
     scoreboard players operation $HPDegen Temporary /= #2000 Constant

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 演出(レベルアップ一度きり)
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
     # 自分以外へのtellraw

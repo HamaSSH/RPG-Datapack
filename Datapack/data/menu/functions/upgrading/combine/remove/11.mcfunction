@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スロット11に合成されていたアイテムを取り除く
     data remove storage menu:temp Data.refresh[{Slot:10b}].tag.menu.combine[{Slot:11b}]
 # 合成元アイテムのbonusタグ加減算

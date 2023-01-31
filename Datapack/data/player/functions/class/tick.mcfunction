@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 職業ごとの#tick
     execute if entity @s[team=Assassin] run function player:class/assassin/_
     execute if entity @s[team=Fighter] run function player:class/fighter/_

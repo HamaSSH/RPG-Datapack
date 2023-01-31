@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Pos取得用AECの召喚
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^1 {Tags:["Knockback"]}
     data modify storage mob:temp Pos set from entity @e[type=area_effect_cloud,tag=Knockback,sort=nearest,limit=1] Pos

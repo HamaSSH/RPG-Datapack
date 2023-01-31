@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage offhandにInventory[{Slot:-106b}].tag.bonusを代入
     data modify storage player:temp offhand set from storage player:temp Inventory[{Slot:-106b}].tag.bonus
 # offhandにステータス加算アイテムがあれば加算

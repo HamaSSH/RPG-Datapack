@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 最終的なステータス = baseステータス
     scoreboard players operation @s hp_max = @s hp_base
     scoreboard players operation @s mp_max = @s mp_base

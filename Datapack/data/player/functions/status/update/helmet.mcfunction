@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage helmetにInventory[{Slot:103b}].tag.bonusを代入
     data modify storage player:temp helmet set from storage player:temp Inventory[{Slot:103b}].tag.bonus
 # helmetスロットにステータス加算アイテムがあれば加算

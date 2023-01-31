@@ -1,10 +1,14 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $HPRegenBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"hp_regen"}].value
     execute store result score $HPRegenDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"hp_regen"}].duration
 # 素材アイテムのバフ
     execute store result score $AddBuff Temporary run data get storage menu:temp Data.buff.value
     execute store result score $AddDuration Temporary run data get storage menu:temp Data.buff.duration
-# 足し合わせ    
+# 足し合わせ
     scoreboard players operation $HPRegenBuff Temporary += $AddBuff Temporary
     scoreboard players operation $HPRegenDuration Temporary += $AddDuration Temporary
 # バフ情報をstorageに格納

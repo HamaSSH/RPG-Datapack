@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフを受けているプレイヤーをタグ付け
     tag @s add this
 # PlayerIDが一致するmarkerのbuff.durationを1減算

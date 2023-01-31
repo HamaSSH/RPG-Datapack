@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓を弾き絞っている間スコア加算
     scoreboard players add @s BowCharge 1
 # 溜め攻撃の演出

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # HPを減算
     execute if score @s dmg_received matches ..0 run scoreboard players set @s dmg_received 0
     scoreboard players operation @s hp -= @s dmg_received

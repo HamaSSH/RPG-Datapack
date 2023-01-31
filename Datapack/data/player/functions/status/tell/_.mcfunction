@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 計算して出力
     execute if score @s hp_regen matches ..0 run scoreboard players set @s hp_regen 0
     execute if score @s mp_regen matches ..0 run scoreboard players set @s mp_regen 0

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 summon spider 194.40 64 348.00 {DeathLootTable:"",Health:1000f,Team:Enemy,Tags:["MobInit","Enemy"],Attributes:[{Name:"generic.max_health",Base:1000}]}
 # 見た目
     data modify storage mob:temp Data.CustomName set value '{"text":"Dinnerbone"}'

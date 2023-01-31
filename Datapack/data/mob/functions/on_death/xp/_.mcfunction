@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # XPブレと計算
     function mob:on_death/xp/blur
     scoreboard players operation $XPDrop Temporary = @s xp

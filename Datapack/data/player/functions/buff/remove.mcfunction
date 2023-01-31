@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフスコアの減算
     execute store result score $Bonus Temporary run data get storage player:temp Data.buff.value
     execute if data storage player:temp Data.buff{bonus:"hp"} run scoreboard players operation @s hp_buff -= $Bonus Temporary

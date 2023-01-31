@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # HPの最大値に応じて♥(黒背景)を表示
     execute if score @s hp_max matches ..9 run data modify storage actionbar:temp hp_bar set value '{"text":"\\uE200"}'
     execute if score @s hp_max matches 10..14 run data modify storage actionbar:temp hp_bar set value '{"text":"\\uE201"}'

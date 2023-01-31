@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スコア
     scoreboard players operation $XPDisplay Temporary = @s xp
 # XP表示

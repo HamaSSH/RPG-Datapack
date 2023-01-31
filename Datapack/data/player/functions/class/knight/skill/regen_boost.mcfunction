@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 更にHP/MP_REGEN補正
     scoreboard players operation $HPRegen Temporary *= #4 Constant
     scoreboard players operation $MPRegen Temporary *= #4 Constant

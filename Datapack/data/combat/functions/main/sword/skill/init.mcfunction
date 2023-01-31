@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 初期処理
     execute if score @s ThunderAttack matches 1.. run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2
 # ループ処理

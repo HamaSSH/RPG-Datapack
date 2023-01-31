@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 醸造可能アイテムが入れられたら配置
     data modify storage menu:temp Data.brewing append from storage menu:temp Data.Items[{tag:{menu:{brewable:1b}}}]
     execute if data storage menu:temp Data.brewing[] run function menu:brewing/put_items/_

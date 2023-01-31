@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 素材がスタックしていた場合はCount-1したアイテムを返却
     execute store result storage menu:temp Data.combine[0].Count byte 0.999 run data get storage menu:temp Data.combine[0].Count
     data modify storage menu:temp Data.return append from storage menu:temp Data.combine[0]

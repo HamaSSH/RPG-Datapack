@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # チェストを開ける
     scoreboard players set $HeadPose Temporary -1100000
     execute store result score $CurrentAngle Temporary run data get entity @s Pose.Head[0] 10000

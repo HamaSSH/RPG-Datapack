@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $APBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"ap"}].value
     execute store result score $APDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"ap"}].duration

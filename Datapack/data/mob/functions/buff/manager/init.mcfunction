@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーとバフ管理マーカーの結び付け
     scoreboard players operation @s MobID = @e[tag=Enemy,tag=this,limit=1] MobID
 # バフの情報を格納

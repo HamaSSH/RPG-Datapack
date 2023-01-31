@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # もし視点の先にNPCがいればタグ付け
     tag @s add this
     execute positioned ~-0.15 ~-0.15 ~-0.15 as @e[type=villager,tag=NPC,dx=0] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] run tag @a[tag=this,limit=1] add DisableLC

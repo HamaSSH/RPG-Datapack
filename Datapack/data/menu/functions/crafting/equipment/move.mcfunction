@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ページスコアを設定
     scoreboard players set @s page 1200
 # 演出

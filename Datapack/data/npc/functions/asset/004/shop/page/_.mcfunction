@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 店のアイテムを配置
     loot replace entity @s container.10 loot item:3201/buy
     loot replace entity @s container.11 loot item:3301/buy

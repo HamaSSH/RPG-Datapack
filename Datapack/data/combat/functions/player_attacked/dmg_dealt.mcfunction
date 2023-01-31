@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 物理攻撃・魔法攻撃・器用攻撃に応じたステータス
     scoreboard players reset @s dmg_dealt
     execute if entity @s[advancements={combat:player_attacked={melee_ad=true}}] run scoreboard players operation @s dmg_dealt = @s ad

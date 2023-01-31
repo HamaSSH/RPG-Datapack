@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage leggingsにInventory[{Slot:101b}].tag.bonusを代入
     data modify storage player:temp leggings set from storage player:temp Inventory[{Slot:101b}].tag.bonus
 # leggingsスロットにステータス加算アイテムがあれば加算

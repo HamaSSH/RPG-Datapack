@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 適正武器を持っていた場合(AD)
     scoreboard players operation $ADBonus Temporary = @s ad_bonus
     scoreboard players operation $ADBonus Temporary *= #10 Constant

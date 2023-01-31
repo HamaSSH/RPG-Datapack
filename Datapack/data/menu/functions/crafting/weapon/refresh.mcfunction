@@ -1,2 +1,6 @@
+##########
+#>
+#
+
 # 武器クラフトメニューの初期化
     data modify entity @s Items set value [{Count:1b,Slot:9b,id:"minecraft:gray_stained_glass_pane",tag:{menu:{blank:1b},display:{Name:'{"text":""}'}}},{Count:1b,Slot:10b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"dagger"},CustomModelData:6000,display:{Name:'{"text":"短剣","color":"white","bold":true,"italic":false}'}}},{Count:1b,Slot:11b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"sword"},CustomModelData:6001,display:{Name:'{"text":"刀剣","color":"white","bold":true,"italic":false}'}}},{Count:1b,Slot:12b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"spear"},CustomModelData:6002,display:{Name:'{"text":"槍","color":"white","bold":true,"italic":false}'}}},{Count:1b,Slot:13b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"hammer"},CustomModelData:6003,display:{Name:'{"text":"ハンマー","color":"white","bold":true,"italic":false}'}}},{Count:1b,Slot:14b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"wand"},CustomModelData:6004,display:{Name:'{"text":"杖","color":"white","bold":true,"italic":false}'}}},{Count:1b,Slot:15b,id:"minecraft:barrier",tag:{menu:{blank:1b,button:"bow"},CustomModelData:6005,display:{Name:'{"text":"弓","color":"white","bold":true,"italic":false}'}}}]

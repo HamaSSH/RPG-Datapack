@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage bootsにInventory[{Slot:100b}].tag.bonusを代入
     data modify storage player:temp boots set from storage player:temp Inventory[{Slot:100b}].tag.bonus
 # bootsスロットにステータス加算アイテムがあれば加算

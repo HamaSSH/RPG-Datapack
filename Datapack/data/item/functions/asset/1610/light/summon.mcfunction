@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 光源を置く用のAECを召喚
     execute anchored eyes positioned ^ ^ ^ align xyz if block ~ ~ ~ #item:air run summon area_effect_cloud ~ ~ ~ {Duration:2,Tags:["Light"]}
     execute anchored eyes positioned ^ ^ ^ align xyz if block ~ ~ ~ light[waterlogged=false] run summon area_effect_cloud ~ ~ ~ {Duration:2,Tags:["Light"]}

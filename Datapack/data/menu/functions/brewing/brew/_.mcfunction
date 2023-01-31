@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スロットに先客がいれば返却
     execute if data storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}] run data modify storage menu:temp Data.return append from storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}]
     function menu:return_item/_

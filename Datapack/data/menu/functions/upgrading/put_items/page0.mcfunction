@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 既にスロットに配置されているアイテムは除外
     execute if data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{upgradable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:10b}]
     data remove storage menu:temp Data.upgrading[{Slot:10b,tag:{menu:{upgradable:1b}}}]

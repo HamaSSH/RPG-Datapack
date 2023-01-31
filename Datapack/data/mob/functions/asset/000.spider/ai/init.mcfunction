@@ -1,4 +1,8 @@
-# 初期設定    
+##########
+#>
+#
+
+# 初期設定
     data modify storage mob:temp Data.CustomName set value '{"text":"スパイダー"}'
     data modify storage mob:temp Data.NameChar set value 5
     data modify storage mob:temp Data.lvl set value 6

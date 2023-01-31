@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Hit処理
     scoreboard players set $XPower Temporary 80
     scoreboard players set $YPower Temporary 80

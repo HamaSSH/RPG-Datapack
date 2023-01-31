@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 懐中電灯ON
     playsound block.amethyst_cluster.step master @s ~ ~ ~ 1.0 1.0
     playsound block.amethyst_cluster.step master @s ~ ~ ~ 1.0 1.0

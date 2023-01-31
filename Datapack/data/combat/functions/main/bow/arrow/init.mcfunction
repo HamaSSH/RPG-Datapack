@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓矢と放ったプレイヤーの紐づけ
     scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
     scoreboard players operation @s dmg_dealt = @a[tag=this,limit=1] dex

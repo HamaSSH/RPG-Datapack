@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage mainhandにSelectedItem.tag.bonusを代入
     data modify storage player:temp mainhand set from storage player:temp SelectedItem.tag.bonus
 # mainhandにステータス加算アイテムがあれば加算

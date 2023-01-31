@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage accessoryにInventory[{Slot:10b}].tag.bonusを代入
     data modify storage player:temp accessory set from storage player:temp Inventory[{Slot:10b}].tag.bonus
 # accessoryスロットにステータス加算アイテムがあれば加算

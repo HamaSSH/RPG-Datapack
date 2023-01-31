@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # レベルアップ前のレベル
     execute unless entity @s[tag=ClassChange] unless score $PreviousLevel Temporary matches 1.. run function player:status/level/previous_data
 # レベルアップ処理

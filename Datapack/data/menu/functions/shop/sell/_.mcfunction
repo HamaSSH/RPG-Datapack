@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # お金足す
     scoreboard players operation @p gold += $TotalSellPrice Temporary
     execute if score $TotalCount Temporary matches 1.. run tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalSellPrice","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]

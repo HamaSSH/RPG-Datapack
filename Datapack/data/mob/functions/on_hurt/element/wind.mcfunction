@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 持続ダメージ効果
     effect give @s wither 2 1 true
     effect give @s poison 2 1 true

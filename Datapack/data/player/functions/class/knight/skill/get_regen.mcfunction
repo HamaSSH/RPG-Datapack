@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Inventory → storage
     data modify storage player:temp Inventory set from entity @s Inventory
 # 基礎ステータス(regen)

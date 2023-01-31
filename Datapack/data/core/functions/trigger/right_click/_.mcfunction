@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 魔法使用
     execute if predicate magic:offhand run function magic:init
 # 頭装備

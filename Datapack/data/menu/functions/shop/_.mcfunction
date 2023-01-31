@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 関係ないアイテムが入れられた場合返却
     data modify storage menu:temp Data.return set from storage menu:temp Data.Items
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]

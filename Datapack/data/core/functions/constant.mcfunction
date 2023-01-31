@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 定数スコアの設定(一度きり)
     scoreboard players set #-1000 Constant -1000
     scoreboard players set #-1 Constant -1

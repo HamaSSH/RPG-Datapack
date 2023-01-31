@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 say reload
 # 一時的・定数スコア
     scoreboard objectives add Temporary dummy "一時的"

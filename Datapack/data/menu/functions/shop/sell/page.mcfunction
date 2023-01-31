@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 売却額の計算
     data modify storage menu:temp Data.sell set from storage menu:temp Data.return
     execute if data storage menu:temp Data.sell[] run function menu:shop/sell/price

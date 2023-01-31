@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 死亡アニメーション時の見た目調整
     #execute unless entity @s[tag=CustomModelHurt] run function mob:custom_model/hurt
     execute if entity @s[type=slime] run data modify entity @s Size set value 0

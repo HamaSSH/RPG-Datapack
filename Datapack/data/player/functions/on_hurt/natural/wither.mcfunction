@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ダメージ表示色用
     scoreboard players set $DamageColor Temporary 3
 # ウィザーダメージ

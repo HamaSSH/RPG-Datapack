@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 溜め攻撃のクールダウン中表示
     execute if score @s skill_cd matches 1..10 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0A0"}'
     execute if score @s skill_cd matches 11..20 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0A1"}'

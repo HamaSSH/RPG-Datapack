@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # タイマー駆動
     scoreboard players add @s Timer 1
 # チェストを開ける

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 強化可能アイテムが入れられたら配置
     data modify storage menu:temp Data.upgrading append from storage menu:temp Data.Items[{tag:{menu:{upgradable:1b}}}]
     execute if data storage menu:temp Data.upgrading[] run function menu:upgrading/put_items/page0

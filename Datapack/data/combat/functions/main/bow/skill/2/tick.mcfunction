@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # メテオライト弓矢の召喚
     execute if data entity @s {PortalCooldown:9} run function combat:main/bow/skill/2/meteor/summon
     execute if data entity @s {PortalCooldown:6} run function combat:main/bow/skill/2/meteor/summon

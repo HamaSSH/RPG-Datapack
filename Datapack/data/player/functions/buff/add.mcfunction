@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフスコアの加算
     execute store result score $Bonus Temporary run data get storage player:temp Data.buff.value
     execute if data storage player:temp Data.buff{bonus:"hp"} run scoreboard players operation @s hp_buff += $Bonus Temporary
@@ -12,7 +16,7 @@
     execute if data storage player:temp Data.buff{bonus:"crt"} run scoreboard players operation @s crt_buff += $Bonus Temporary
     execute if data storage player:temp Data.buff{bonus:"luk"} run scoreboard players operation @s luk_buff += $Bonus Temporary
     function player:status/update/_
-    
+
     # execute if data storage player:temp Data.buff{bonus:"hp"} run say add hp_buff
     # execute if data storage player:temp Data.buff{bonus:"mp"} run say add mp_buff
     # execute if data storage player:temp Data.buff{bonus:"hp_regen"} run say add hp_regen_buff

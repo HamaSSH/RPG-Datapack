@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 「アサシン」に転職
     execute unless entity @s[team=Assassin] run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【アサシン】","color":"#E07D80"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"lv_assassin"},"bold":true},{"text":" に転職しました ！"}]
     execute unless entity @s[team=Assassin] at @s run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
