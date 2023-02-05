@@ -144,22 +144,22 @@ say reload
     team add NoCollision "重なり判定無視"
     team modify NoCollision collisionRule never
     team add Assassin "アサシン"
-    team modify Assassin prefix "【アサシン】"
+    team modify Assassin prefix "\uE26A"
     team modify Assassin collisionRule never
     team add Fighter "ファイター"
-    team modify Fighter prefix "【ファイター】"
+    team modify Fighter prefix "\uE26B"
     team modify Fighter collisionRule never
     team add Knight "ナイト"
-    team modify Knight prefix "【ナイト】"
+    team modify Knight prefix "\uE26C"
     team modify Knight collisionRule never
     team add Warrior "ウォーリア"
-    team modify Warrior prefix "【ウォーリア】"
+    team modify Warrior prefix "\uE26D"
     team modify Warrior collisionRule never
     team add Wizard "ウィザード"
-    team modify Wizard prefix "【ウィザード】"
+    team modify Wizard prefix "\uE26E"
     team modify Wizard collisionRule never
     team add Hunter "ハンター"
-    team modify Hunter prefix "【ハンター】"
+    team modify Hunter prefix "\uE26F"
     team modify Hunter collisionRule never
 # forceload
     execute in overworld run forceload add -1 -1 0 0
