@@ -18,6 +18,7 @@ say reload
     scoreboard objectives add PlayerID dummy "プレイヤーID"
     scoreboard objectives add MagicID dummy "魔法ID"
     scoreboard objectives add MobID dummy "モブID"
+    scoreboard objectives add MobUUID dummy "モブUUID"
 # 保持させておくスコア
     scoreboard objectives add Arrow dummy "弓矢"
     scoreboard objectives add LCArrow dummy "左クリック弓矢"
@@ -163,3 +164,6 @@ say reload
 # forceload
     execute in overworld run forceload add -1 -1 0 0
     setblock 0 0 0 minecraft:white_shulker_box
+# 汎用エンティティの召喚
+    summon marker 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 0]}
+    summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 1],Marker:1b,Invisible:1b}

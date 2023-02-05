@@ -1,27 +1,36 @@
-##########
-#>
-#
+#> mob:summon/set_data
+# モブデータの適用
 
-# 見た目設定
-    execute unless data storage mob:temp Data.Armor[3].id run data modify storage mob:temp Data.Armor[3] set value {id:"minecraft:barrier",Count:1b}
-    data modify entity @s ArmorItems set from storage mob:temp Data.Armor
-    item modify entity @s armor.head mob:set_name
-    data modify entity @s CustomName set from entity @s ArmorItems[3].tag.display.Name
-    data modify entity @s ArmorItems[3].tag.ResetName set from entity @s ArmorItems[3].tag.display.Name
-# 召喚演出
-    particle minecraft:poof ~ ~0.5 ~ 0.2 0.5 0.2 0.01 20
-# スコアセット
-    execute store result score @s level run data get storage mob:temp Data.lvl
-    execute store result score @s hp run data get storage mob:temp Data.hp
-    execute store result score @s hp_max run data get storage mob:temp Data.hp
-    execute store result score @s ad run data get storage mob:temp Data.ad
-    execute store result score @s xp run data get storage mob:temp Data.xp
-# 重複のないようなMobIDの生成
+# 共通データの設定
+    tag @s add Enemy
+    attribute @s minecraft:generic.max_health base set 1024
+    data modify entity @s Health set value 1024f
+# 装備の設定
+    data modify storage asset:mob ArmorItems set value []
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Feet
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Legs
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Chest
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Head
+    data modify storage asset:mob HandItems set value []
+    data modify storage asset:mob HandItems append from storage asset:mob Data.Mainhand
+    data modify storage asset:mob HandItems append from storage asset:mob Data.Offhand
+# 名前と装備の適用
+    function mob:summon/set_name
+    data modify entity @s ArmorItems set from storage asset:mob ArmorItems
+# ステータススコア
+    execute store result score @s MobID run data get storage asset:mob Data.MobID
+    execute store result score @s level run data get storage asset:mob Data.Status.lv
+    execute store result score @s hp_max run data get storage asset:mob Data.Status.hp
+    execute store result score @s hp run data get storage asset:mob Data.Status.hp
+    execute store result score @s ad run data get storage asset:mob Data.Status.ad
+    execute store result score @s xp run data get storage asset:mob Data.Status.xp
+
+# 重複のないようなMobUUIDの生成
     scoreboard players add World MobID 1
     scoreboard players operation World MobID %= #512 Constant
-    scoreboard players operation @s MobID = World MobID
+    scoreboard players operation @s MobUUID = World MobID
     scoreboard players operation $IDtoTag MobID = World MobID
-# MobID → タグに変換
+# MobUUID → タグに変換
     execute if score $IDtoTag MobID matches 256.. run tag @s add MobID8.1
     execute unless score $IDtoTag MobID matches 256.. run tag @s add MobID8.0
     execute if score $IDtoTag MobID matches 256.. run scoreboard players remove $IDtoTag MobID 256
@@ -49,7 +58,10 @@
     execute if score $IDtoTag MobID matches 1.. run tag @s add MobID0.1
     execute unless score $IDtoTag MobID matches 1.. run tag @s add MobID0.0
     execute if score $IDtoTag MobID matches 1.. run scoreboard players remove $IDtoTag MobID 1
+
 # リセット
-    data remove storage mob:temp Data
+    data remove storage asset:mob Data
+    data remove storage asset:mob ArmorItems
+    data remove storage asset:mob HandItems
     scoreboard players reset $IDtoTag
     tag @s remove MobInit

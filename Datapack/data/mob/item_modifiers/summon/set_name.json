@@ -9,15 +9,15 @@
             },
             {
                 "nbt": "Data.CustomName",
-                "storage": "mob:temp",
+                "storage": "asset:mob",
                 "interpret": true
             },
             {
                 "text": " Lv. "
             },
             {
-                "nbt": "Data.lvl",
-                "storage": "mob:temp"
+                "nbt": "Data.Status.lv",
+                "storage": "asset:mob"
             }
         ]
     },
@@ -25,7 +25,7 @@
         "function": "minecraft:copy_nbt",
         "source": {
             "type": "minecraft:storage",
-            "source": "mob:temp"
+            "source": "asset:mob"
         },
         "ops": [
             {
