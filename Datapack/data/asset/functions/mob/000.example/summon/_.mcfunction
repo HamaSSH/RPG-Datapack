@@ -23,4 +23,4 @@
         data modify storage asset:mob Data.Status.xp set value 0
 
 # データの適用
-    execute as @e[type=skeleton,tag=MobInit,distance=..0.01] run function mob:summon/set_data
+    execute as @e[type=skeleton,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data

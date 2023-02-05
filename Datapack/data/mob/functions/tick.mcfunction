@@ -4,6 +4,11 @@
 
 ### モブ関連の#tick
 
+# tick時の処理
+    execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
+    function #asset:mob/tick
+    data remove storage asset:mob id
+
 # バフタイマー
     function mob:on_tick/_
 # HP表示 → 名前

@@ -8,5 +8,10 @@
     function mob:status/hp/display/apply/_
 # ダメージ表示
     function combat:damage/display/type
+# ダメージ時の処理
+    execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
+    function #asset:mob/hurt
+    data remove storage asset:mob id
+
 # リセット
     scoreboard players reset @s dmg_received
