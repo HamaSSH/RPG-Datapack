@@ -21,6 +21,7 @@
         data modify storage asset:mob Data.Status.hp set value 50
         data modify storage asset:mob Data.Status.ad set value 4
         data modify storage asset:mob Data.Status.xp set value 30
+        data modify storage asset:mob Data.Status.spd set value 150
 
 # データの適用
     execute as @e[type=silverfish,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data

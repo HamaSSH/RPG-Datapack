@@ -24,6 +24,7 @@
     execute store result score @s hp run data get storage asset:mob Data.Status.hp
     execute store result score @s ad run data get storage asset:mob Data.Status.ad
     execute store result score @s xp run data get storage asset:mob Data.Status.xp
+    function mob:summon/set_speed
 
 # 重複のないようなMobUUIDの生成
     scoreboard players add World MobID 1
