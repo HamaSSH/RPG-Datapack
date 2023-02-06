@@ -6,7 +6,7 @@
 
 # tick時の処理
     execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
-    function #asset:mob/tick
+    execute at @s run function #asset:mob/tick
     data remove storage asset:mob id
 
 # バフタイマー

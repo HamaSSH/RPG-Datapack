@@ -9,7 +9,7 @@
     scoreboard players operation @a[tag=this,limit=1] dmg_received = @s dmg_dealt
 # 攻撃時のトリガー
     execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
-    function #asset:mob/attack
+    execute at @s run function #asset:mob/attack
     data remove storage asset:mob id
 # ダメージ処理
     # 防御＋ダメージブレ補正
