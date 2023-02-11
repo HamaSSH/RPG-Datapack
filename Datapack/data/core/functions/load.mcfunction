@@ -65,6 +65,7 @@ say reload
     scoreboard objectives add xp_next dummy "必要経験値"
     scoreboard objectives add xp_gained dummy "取得経験値"
     scoreboard objectives add gold_gained dummy "取得ゴールド"
+    scoreboard objectives add FoodSaturation dummy "満腹度回復量"
 
 # ステータス
     scoreboard objectives add hp dummy "現在のHP"

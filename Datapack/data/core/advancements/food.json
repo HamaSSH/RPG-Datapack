@@ -1,0 +1,10 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item"
+      }
+    },
+    "rewards": {
+      "function": "core:food"
+    }
+  }
