@@ -76,7 +76,7 @@
                 {
                     "score": {
                         "name": "@p",
-                        "objective": "lv_wizard"
+                        "objective": "WizardLVL"
                     },
                     "bold": true
                 }
@@ -100,7 +100,7 @@
                 {
                     "score": {
                         "name": "@p",
-                        "objective": "lv_wizard"
+                        "objective": "WizardLVL"
                     },
                     "bold": true
                 },

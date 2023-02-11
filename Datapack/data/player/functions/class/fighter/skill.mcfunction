@@ -9,7 +9,7 @@
     scoreboard players operation $A Temporary -= $HPRatio Temporary
     scoreboard players add $A Temporary 5
     scoreboard players set $B Temporary 6
-    scoreboard players operation $B Temporary -= @s skill_level
+    scoreboard players operation $B Temporary -= @s SkillLevel
     scoreboard players operation $A Temporary /= $B Temporary
 # AD/AP/DEX/DEF/SPD/CRT/LUK補正
     scoreboard players operation @s ClassAD += $A Temporary

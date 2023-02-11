@@ -76,7 +76,7 @@
                 {
                     "score": {
                         "name": "@p",
-                        "objective": "lv_assassin"
+                        "objective": "AssassinLVL"
                     },
                     "bold": true
                 }
@@ -100,7 +100,7 @@
                 {
                     "score": {
                         "name": "@p",
-                        "objective": "lv_assassin"
+                        "objective": "AssassinLVL"
                     },
                     "bold": true
                 },

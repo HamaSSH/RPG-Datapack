@@ -6,7 +6,7 @@
     scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
     scoreboard players operation @s dmg_dealt = @a[tag=this,limit=1] dmg_dealt
     execute if entity @a[tag=this,tag=CriticalHit,limit=1] run tag @s add CriticalHit
-    execute if entity @a[team=Wizard,tag=this,limit=1] run scoreboard players operation @s skill_level = @a[tag=this,limit=1] skill_level
+    execute if entity @a[team=Wizard,tag=this,limit=1] run scoreboard players operation @s SkillLevel = @a[tag=this,limit=1] SkillLevel
 # 属性付け
     execute if score @a[tag=this,limit=1] FireAttack matches 1.. run tag @s add FireAttack
     execute if score @a[tag=this,limit=1] WaterAttack matches 1.. run tag @s add WaterAttack

@@ -12,6 +12,6 @@
     execute if entity @s[team=Warrior] run data modify storage player:temp Skill set value '{"text":"強靭な体"}'
     execute if entity @s[team=Wizard] run data modify storage player:temp Skill set value '{"text":"賢者の叡智"}'
     execute if entity @s[team=Hunter] run data modify storage player:temp Skill set value '{"text":"弓の達人"}'
-    tellraw @s [{"text":"★ スキル「","color":"gray"},{"nbt":"Skill","storage":"player:temp","interpret":true},{"text":"」が強化された ( "},{"score":{"name":"$PreviousSkillLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"skill_level"}},{"text":" )"}]
+    tellraw @s [{"text":"★ スキル「","color":"gray"},{"nbt":"Skill","storage":"player:temp","interpret":true},{"text":"」が強化された ( "},{"score":{"name":"$PreviousSkillLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"SkillLevel"}},{"text":" )"}]
 # リセット
     data remove storage player:temp Skill

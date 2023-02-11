@@ -6,7 +6,7 @@
     function player:class/bonus/reset
 # 「戦闘の天才」スキルレベルごとにステータス補正
     function player:class/knight/skill/get_regen
-    scoreboard players operation $A Temporary = @s skill_level
+    scoreboard players operation $A Temporary = @s SkillLevel
     scoreboard players add $A Temporary 1
     scoreboard players operation $HPRegen Temporary *= $A Temporary
     scoreboard players operation $HPRegen Temporary /= #2 Constant

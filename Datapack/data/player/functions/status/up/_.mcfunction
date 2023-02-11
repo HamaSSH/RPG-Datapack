@@ -16,7 +16,7 @@
     scoreboard players operation /10 Temporary = @s level
     scoreboard players operation /10 Temporary /= #10 Constant
 # 職業スキルレベル
-    execute if score %10 Temporary matches 0 if score @s skill_level matches ..4 run scoreboard players add @s skill_level 1
+    execute if score %10 Temporary matches 0 if score @s SkillLevel matches ..4 run scoreboard players add @s SkillLevel 1
 # 職業ごとの分岐
     execute if entity @s[team=Assassin] run function player:status/up/assassin
     execute if entity @s[team=Fighter] run function player:status/up/fighter

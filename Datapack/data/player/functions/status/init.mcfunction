@@ -27,19 +27,19 @@
 # 内部スコアの初期化
     scoreboard players set @s sneak 0
     scoreboard players set @s HurtTime 0
-    scoreboard players set @s skill_level 1
-    scoreboard players set @s xp_assassin 0
-    scoreboard players set @s xp_fighter 0
-    scoreboard players set @s xp_knight 0
-    scoreboard players set @s xp_warrior 0
-    scoreboard players set @s xp_wizard 0
-    scoreboard players set @s xp_hunter 0
-    scoreboard players set @s lv_assassin 1
-    scoreboard players set @s lv_fighter 1
-    scoreboard players set @s lv_knight 1
-    scoreboard players set @s lv_warrior 1
-    scoreboard players set @s lv_wizard 1
-    scoreboard players set @s lv_hunter 1
+    scoreboard players set @s SkillLevel 1
+    scoreboard players set @s AssassinXP 0
+    scoreboard players set @s FighterXP 0
+    scoreboard players set @s KnightXP 0
+    scoreboard players set @s WarriorXP 0
+    scoreboard players set @s WizardXP 0
+    scoreboard players set @s HunterXP 0
+    scoreboard players set @s AssassinLVL 1
+    scoreboard players set @s FighterLVL 1
+    scoreboard players set @s KnightLVL 1
+    scoreboard players set @s WarriorLVL 1
+    scoreboard players set @s WizardLVL 1
+    scoreboard players set @s HunterLVL 1
     scoreboard players set @s skill_cd 0
     scoreboard players set @s ElementAttack 0
     scoreboard players set @s FireAttack 0

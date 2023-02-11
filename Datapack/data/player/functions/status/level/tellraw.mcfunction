@@ -10,7 +10,7 @@
         tag @s remove LevelUp
     # 自分へのtellraw
         tellraw @s ["☆ ",{"text":"レベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
-        execute unless score @s skill_level = $PreviousSkillLevel Temporary run function player:class/skill_level_up
+        execute unless score @s SkillLevel = $PreviousSkillLevel Temporary run function player:class/skill_level_up
 # ステータススコア上昇値計算
     scoreboard players operation $DifferenceHP Temporary = @s BaseHP
     scoreboard players operation $DifferenceMP Temporary = @s BaseMP

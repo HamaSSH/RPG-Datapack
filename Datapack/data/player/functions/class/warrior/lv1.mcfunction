@@ -4,8 +4,8 @@
 
 # 初期ステータス
     scoreboard players set @s level 1
-    scoreboard players set @s lv_warrior 1
-    scoreboard players set @s skill_level 1
+    scoreboard players set @s WarriorLVL 1
+    scoreboard players set @s SkillLevel 1
     scoreboard players set @s xp 0
     scoreboard players set @s xp_next 50
     scoreboard players set @s hp 70

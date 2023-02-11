@@ -7,7 +7,7 @@
 # 「強靭な体」スキルレベルごとにステータス補正
     scoreboard players set $A Temporary 60
     scoreboard players operation $A Temporary -= $HPRatio Temporary
-    scoreboard players operation $A Temporary *= @s skill_level
+    scoreboard players operation $A Temporary *= @s SkillLevel
 # DEF補正
     scoreboard players operation @s ClassDEF += $A Temporary
 # HPが50%以下でなければリセット
