@@ -3,12 +3,12 @@
 #
 
 # 職業ステータスリセット
-    scoreboard players set @s hp_regen_class 0
-    scoreboard players set @s mp_regen_class 0
-    scoreboard players set @s ad_class 0
-    scoreboard players set @s ap_class 0
-    scoreboard players set @s dex_class 0
-    scoreboard players set @s def_class 0
-    scoreboard players set @s spd_class 0
-    scoreboard players set @s crt_class 0
-    scoreboard players set @s luk_class 0
+    scoreboard players set @s ClassHPRegen 0
+    scoreboard players set @s ClassMPRegen 0
+    scoreboard players set @s ClassAD 0
+    scoreboard players set @s ClassAP 0
+    scoreboard players set @s ClassDEX 0
+    scoreboard players set @s ClassDEF 0
+    scoreboard players set @s ClassSPD 0
+    scoreboard players set @s ClassCRT 0
+    scoreboard players set @s ClassLUK 0

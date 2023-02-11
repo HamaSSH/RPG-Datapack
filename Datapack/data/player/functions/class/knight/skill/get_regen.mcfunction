@@ -5,8 +5,8 @@
 # Inventory → storage
     data modify storage player:temp Inventory set from entity @s Inventory
 # 基礎ステータス(regen)
-    scoreboard players operation $HPRegen Temporary = @s hp_regen_base
-    scoreboard players operation $MPRegen Temporary = @s mp_regen_base
+    scoreboard players operation $HPRegen Temporary = @s BaseHPRegen
+    scoreboard players operation $MPRegen Temporary = @s BaseMPRegen
 # 装備品の補正ステータス(regen)
     # ヘルメット
         execute if data storage player:temp Inventory.[{Slot:103b}].tag{equipment:"helmet"} run data modify storage player:temp helmet set from storage player:temp Inventory[{Slot:103b}].tag.bonus

@@ -13,8 +13,8 @@
     scoreboard players operation $MPRegen Temporary *= $A Temporary
     scoreboard players operation $MPRegen Temporary /= #4 Constant
 # HP/MP_REGEN補正
-    scoreboard players operation @s hp_regen_class = $HPRegen Temporary
-    scoreboard players operation @s mp_regen_class = $MPRegen Temporary
+    scoreboard players operation @s ClassHPRegen = $HPRegen Temporary
+    scoreboard players operation @s ClassMPRegen = $MPRegen Temporary
 # OutOfCombat後3秒回復ブースト
     execute if score @s InCombat matches -60..-1 run function player:class/knight/skill/regen_boost
     execute if score @s InCombat matches 1.. run function player:class/bonus/reset

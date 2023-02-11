@@ -9,7 +9,7 @@
     scoreboard players operation $A Temporary -= $HPRatio Temporary
     scoreboard players operation $A Temporary *= @s skill_level
 # DEF補正
-    scoreboard players operation @s def_class += $A Temporary
+    scoreboard players operation @s ClassDEF += $A Temporary
 # HPが50%以下でなければリセット
     execute if score $HPRatio Temporary matches 61.. run function player:class/bonus/reset
     function player:status/update/_

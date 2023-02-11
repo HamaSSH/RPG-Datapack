@@ -1,12 +1,13 @@
-##########
-#>
-#
+#> core:load
+# /reload時の初期処理
 
 say reload
-# 一時的・定数スコア
+
+# 汎用スコア
     scoreboard objectives add Temporary dummy "一時的"
     scoreboard objectives add Constant dummy "定数"
     function core:constant
+
 # トリガー
     scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
     scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick "右クリック"
@@ -14,11 +15,13 @@ say reload
     scoreboard objectives add bow_shot minecraft.used:minecraft.bow "弓使用"
     scoreboard objectives add relog minecraft.custom:minecraft.leave_game "リログ"
     scoreboard objectives add UsedFishingRod minecraft.used:minecraft.fishing_rod "浮き投げ検知"
+
 # asset用ID等
     scoreboard objectives add PlayerID dummy "プレイヤーID"
     scoreboard objectives add MagicID dummy "魔法ID"
     scoreboard objectives add MobID dummy "モブID"
     scoreboard objectives add MobUUID dummy "モブUUID"
+
 # 保持させておくスコア
     scoreboard objectives add Arrow dummy "弓矢"
     scoreboard objectives add LCArrow dummy "左クリック弓矢"
@@ -33,6 +36,7 @@ say reload
     scoreboard objectives add PreviousSPD dummy "SPD値保存"
     scoreboard objectives add GoldDisplay dummy "Gold表示"
     scoreboard objectives add FallDistance dummy "畑荒らし対策"
+
 # タイマー
     scoreboard objectives add Timer dummy "汎用タイマー"
     scoreboard objectives add flash_timer dummy "懐中電灯"
@@ -53,6 +57,7 @@ say reload
     scoreboard objectives add dmg_dealt dummy "与ダメージ"
     scoreboard objectives add dmg_received dummy "被ダメージ"
     scoreboard objectives add page dummy "ページ"
+
 # ステータス
     scoreboard objectives add hp dummy "現在のHP"
     scoreboard objectives add mp dummy "現在のMP"
@@ -93,74 +98,76 @@ say reload
     scoreboard objectives add gold_gained dummy "取得ゴールド"
     scoreboard objectives add gold dummy "ゴールド"
 # ステータス基礎値
-    scoreboard objectives add hp_base dummy "基礎HP"
-    scoreboard objectives add mp_base dummy "基礎MP"
-    scoreboard objectives add hp_regen_base dummy "基礎HPR"
-    scoreboard objectives add mp_regen_base dummy "基礎MPR"
-    scoreboard objectives add ad_base dummy "基礎AD"
-    scoreboard objectives add ap_base dummy "基礎AP"
-    scoreboard objectives add dex_base dummy "基礎DEX"
-    scoreboard objectives add def_base dummy "基礎DEF"
-    scoreboard objectives add spd_base dummy "基礎SPD"
-    scoreboard objectives add crt_base dummy "基礎CRT"
-    scoreboard objectives add luk_base dummy "基礎LUK"
+    scoreboard objectives add BaseHP dummy "基礎HP"
+    scoreboard objectives add BaseMP dummy "基礎MP"
+    scoreboard objectives add BaseHPRegen dummy "基礎HPR"
+    scoreboard objectives add BaseMPRegen dummy "基礎MPR"
+    scoreboard objectives add BaseAD dummy "基礎AD"
+    scoreboard objectives add BaseAP dummy "基礎AP"
+    scoreboard objectives add BaseDEX dummy "基礎DEX"
+    scoreboard objectives add BaseDEF dummy "基礎DEF"
+    scoreboard objectives add BaseSPD dummy "基礎SPD"
+    scoreboard objectives add BaseCRT dummy "基礎CRT"
+    scoreboard objectives add BaseLUK dummy "基礎LUK"
 # ステータス追加値
-    scoreboard objectives add hp_bonus dummy "追加HP"
-    scoreboard objectives add mp_bonus dummy "追加MP"
-    scoreboard objectives add hp_regen_bonus dummy "追加HPR"
-    scoreboard objectives add mp_regen_bonus dummy "追加MPR"
-    scoreboard objectives add ad_bonus dummy "追加AD"
-    scoreboard objectives add ap_bonus dummy "追加AP"
-    scoreboard objectives add dex_bonus dummy "追加DEX"
-    scoreboard objectives add def_bonus dummy "追加DEF"
-    scoreboard objectives add spd_bonus dummy "追加SPD"
-    scoreboard objectives add crt_bonus dummy "追加CRT"
-    scoreboard objectives add luk_bonus dummy "追加LUK"
-# 職業パッシブスキルステータス補正値
-    scoreboard objectives add hp_regen_class dummy "職業HPR"
-    scoreboard objectives add mp_regen_class dummy "職業MPR"
-    scoreboard objectives add ad_class dummy "職業AD"
-    scoreboard objectives add ap_class dummy "職業AP"
-    scoreboard objectives add dex_class dummy "職業DEX"
-    scoreboard objectives add def_class dummy "職業DEF"
-    scoreboard objectives add spd_class dummy "職業SPD"
-    scoreboard objectives add crt_class dummy "職業CRT"
-    scoreboard objectives add luk_class dummy "職業LUK"
+    scoreboard objectives add BonusHP dummy "追加HP"
+    scoreboard objectives add BonusMP dummy "追加MP"
+    scoreboard objectives add BonusHPRegen dummy "追加HPR"
+    scoreboard objectives add BonusMPRegen dummy "追加MPR"
+    scoreboard objectives add BonusAD dummy "追加AD"
+    scoreboard objectives add BonusAP dummy "追加AP"
+    scoreboard objectives add BonusDEX dummy "追加DEX"
+    scoreboard objectives add BonusDEF dummy "追加DEF"
+    scoreboard objectives add BonusSPD dummy "追加SPD"
+    scoreboard objectives add BonusCRT dummy "追加CRT"
+    scoreboard objectives add BonusLUK dummy "追加LUK"
 # ステータスバフ
-    scoreboard objectives add assassin_crt dummy "会心バフ"
-    scoreboard objectives add hp_buff dummy "HPバフ"
-    scoreboard objectives add mp_buff dummy "MPバフ"
-    scoreboard objectives add hp_regen_buff dummy "HPRバフ"
-    scoreboard objectives add mp_regen_buff dummy "MPRバフ"
-    scoreboard objectives add ad_buff dummy "ADバフ"
-    scoreboard objectives add ap_buff dummy "APバフ"
-    scoreboard objectives add dex_buff dummy "DEXバフ"
-    scoreboard objectives add def_buff dummy "DEFバフ"
-    scoreboard objectives add spd_buff dummy "SPDバフ"
-    scoreboard objectives add crt_buff dummy "CRTバフ"
-    scoreboard objectives add luk_buff dummy "LUKバフ"
-# チーム定義
-    team add Enemy
+    scoreboard objectives add BuffHP dummy "HPバフ"
+    scoreboard objectives add BuffMP dummy "MPバフ"
+    scoreboard objectives add BuffHPRegen dummy "HPRバフ"
+    scoreboard objectives add BuffMPRegen dummy "MPRバフ"
+    scoreboard objectives add BuffAD dummy "ADバフ"
+    scoreboard objectives add BuffAP dummy "APバフ"
+    scoreboard objectives add BuffDEX dummy "DEXバフ"
+    scoreboard objectives add BuffDEF dummy "DEFバフ"
+    scoreboard objectives add BuffSPD dummy "SPDバフ"
+    scoreboard objectives add BuffCRT dummy "CRTバフ"
+    scoreboard objectives add BuffLUK dummy "LUKバフ"
+    scoreboard objectives add AssassinCRT dummy "会心バフ"
+# 職業ステータス補正値
+    scoreboard objectives add ClassHPRegen dummy "職業HPR"
+    scoreboard objectives add ClassMPRegen dummy "職業MPR"
+    scoreboard objectives add ClassAD dummy "職業AD"
+    scoreboard objectives add ClassAP dummy "職業AP"
+    scoreboard objectives add ClassDEX dummy "職業DEX"
+    scoreboard objectives add ClassDEF dummy "職業DEF"
+    scoreboard objectives add ClassSPD dummy "職業SPD"
+    scoreboard objectives add ClassCRT dummy "職業CRT"
+    scoreboard objectives add ClassLUK dummy "職業LUK"
+
+# 職業用team
+    team add Assassin "アサシン"
+    team add Fighter "ファイター"
+    team add Knight "ナイト"
+    team add Warrior "ウォーリア"
+    team add Wizard "ウィザード"
+    team add Hunter "ハンター"
+    team modify Assassin collisionRule never
+    team modify Fighter collisionRule never
+    team modify Knight collisionRule never
+    team modify Warrior collisionRule never
+    team modify Wizard collisionRule never
+    team modify Hunter collisionRule never
+    team modify Assassin prefix "\uE26A"
+    team modify Fighter prefix "\uE26B"
+    team modify Knight prefix "\uE26C"
+    team modify Warrior prefix "\uE26D"
+    team modify Wizard prefix "\uE26E"
+    team modify Hunter prefix "\uE26F"
+# NoCollision用team
     team add NoCollision "重なり判定無視"
     team modify NoCollision collisionRule never
-    team add Assassin "アサシン"
-    team modify Assassin prefix "\uE26A"
-    team modify Assassin collisionRule never
-    team add Fighter "ファイター"
-    team modify Fighter prefix "\uE26B"
-    team modify Fighter collisionRule never
-    team add Knight "ナイト"
-    team modify Knight prefix "\uE26C"
-    team modify Knight collisionRule never
-    team add Warrior "ウォーリア"
-    team modify Warrior prefix "\uE26D"
-    team modify Warrior collisionRule never
-    team add Wizard "ウィザード"
-    team modify Wizard prefix "\uE26E"
-    team modify Wizard collisionRule never
-    team add Hunter "ハンター"
-    team modify Hunter prefix "\uE26F"
-    team modify Hunter collisionRule never
+
 # forceload
     execute in overworld run forceload add -1 -1 0 0
     setblock 0 0 0 minecraft:white_shulker_box
