@@ -8,6 +8,10 @@ say reload
     scoreboard objectives add Constant dummy "定数"
     function core:constant
 
+# タイマースコア
+    function #asset:magic/load
+    function #asset:mob/load
+
 # トリガー
     scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
     scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick "右クリック"

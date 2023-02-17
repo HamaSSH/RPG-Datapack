@@ -26,8 +26,9 @@
     execute if score @a[tag=this,limit=1] ThunderAttack matches 1.. run function mob:on_hurt/element/thunder
     execute if score @a[tag=this,limit=1] EarthAttack matches 1.. run function mob:on_hurt/element/earth
     execute if score @a[tag=this,limit=1] WindAttack matches 1.. run function mob:on_hurt/element/wind
-# 攻撃したプレイヤーを記録
+# 攻撃したプレイヤーを記録 TODO:$PlayerIDにする
     scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
+    execute if score $PlayerID Temporary matches 0.. run scoreboard players operation @s PlayerID = $PlayerID Temporary
 # Hitタグリセット
     tag @s remove Hit
 # 死亡処理

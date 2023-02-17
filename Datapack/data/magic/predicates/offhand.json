@@ -7,7 +7,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{magic:{element:\"fire\"}}"
+                        "nbt": "{Magic:{Element:\"Fire\"}}"
                     }
                 }
             }
@@ -18,7 +18,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{magic:{element:\"water\"}}"
+                        "nbt": "{Magic:{Element:\"Water\"}}"
                     }
                 }
             }
@@ -29,7 +29,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{magic:{element:\"thunder\"}}"
+                        "nbt": "{Magic:{Element:\"Thunder\"}}"
                     }
                 }
             }
@@ -40,7 +40,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{magic:{element:\"earth\"}}"
+                        "nbt": "{Magic:{Element:\"Earth\"}}"
                     }
                 }
             }
@@ -51,7 +51,7 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{magic:{element:\"wind\"}}"
+                        "nbt": "{Magic:{Element:\"Wind\"}}"
                     }
                 }
             }
