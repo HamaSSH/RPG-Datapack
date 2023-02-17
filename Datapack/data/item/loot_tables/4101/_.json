@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:golden_apple",
+                    "name": "minecraft:wooden_pickaxe",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
@@ -18,14 +18,15 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "クッキー",
+                                    "text": "木のピッケル",
                                     "color": "white"
                                 }
                             ]
                         },
                         {
+                            "#": "アイテムに必ず持たせるNBT",
                             "function": "minecraft:set_nbt",
-                            "tag": "{Unbreaking:1b,HideFlags:127,CustomModelData:1506,Rarity:1,Buy:7,Sell:1}"
+                            "tag": "{Unbreaking:1b,HideFlags:127,CustomModelData:4101,Rarity:1,Buy:50,Sell:10,}"
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -38,7 +39,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "自家製のクッキー。"
+                                        "text": "木から作られたピッケル。"
                                     }
                                 ],
                                 [
@@ -48,7 +49,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "必ず歯にひっつく。"
+                                        "text": ""
                                     }
                                 ]
                             ]
@@ -71,46 +72,68 @@
                             ]
                         },
                         {
+                            "#": "アイテム種toolのNBT",
+                            "function": "minecraft:set_nbt",
+                            "tag": "{tool:\"pickaxe\",Grade:0,Durability:64,CanDestroy:[\"minecraft:coal_ore\"],Enchantments:[{id:\"minecraft:efficiency\",lvl:1s}]}"
+                        },
+                        {
                             "function": "minecraft:set_lore",
                             "entity": "this",
                             "lore": [
                                 [
                                     {
-                                        "text": "\uE246▸ ",
+                                        "text": "▸ ",
                                         "color": "white",
                                         "italic": false
                                     },
                                     {
-                                        "text": "器用さ: ",
-                                        "color": "#E0E0E0"
+                                        "text": "耐久値: 64"
                                     },
                                     {
-                                        "text": "+3（0:10）",
-                                        "color": "#72FF5C"
+                                        "text": "/",
+                                        "color": "#D8D8D8"
+                                    },
+                                    {
+                                        "text": "64"
                                     }
                                 ]
                             ]
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{consumable:1b,buff:[{source:\"consumables\",bonus:\"dex\",value:3,duration:50}]}}"
-                        },
-                        {
                             "function": "minecraft:set_lore",
                             "entity": "this",
                             "lore": [
                                 [
                                     {
-                                        "text": "▸  \uF003",
+                                        "text": "▸ ",
                                         "color": "white",
                                         "italic": false
                                     },
                                     {
-                                        "text": "満腹度回復: ",
-                                        "color": "#E0E0E0"
+                                        "text": "採集可能: "
                                     },
                                     {
-                                        "text": "\uE24F"
+                                        "text": "\uE300\uF808\uF802\uF000"
+                                    },
+                                    {
+                                        "text": "\uE301\uF808\uF802\uF000",
+                                        "color": "#555555"
+                                    },
+                                    {
+                                        "text": "\uE302\uF808\uF802\uF000",
+                                        "color": "#555555"
+                                    },
+                                    {
+                                        "text": "\uE303\uF808\uF802\uF000",
+                                        "color": "#555555"
+                                    },
+                                    {
+                                        "text": "\uE304\uF808\uF802\uF000",
+                                        "color": "#555555"
+                                    },
+                                    {
+                                        "text": "\uE305\uF808\uF802\uF000",
+                                        "color": "#555555"
                                     }
                                 ]
                             ]
@@ -137,7 +160,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "▸ 消費ｱｲﾃﾑ"
+                                        "text": "▸ 採集ﾂｰﾙ"
                                     },
                                     {
                                         "text": "【\uE2B0"
@@ -146,7 +169,7 @@
                                         "text": "】"
                                     },
                                     {
-                                        "text": "\uE2A2\uF808\uF8021",
+                                        "text": "\uE2A2\uF808\uF80210",
                                         "italic": false
                                     },
                                     {

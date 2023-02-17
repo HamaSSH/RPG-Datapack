@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:bone",
+                    "name": "minecraft:barrier",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
@@ -18,15 +18,27 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "脆い骨",
-                                    "color": "white"
+                                    "text": "石炭",
+                                    "color": "#6FE58D"
+                                },
+                                ": ",
+                                {
+                                    "text": "0",
+                                    "bold": true
+                                },
+                                {
+                                    "text": "G",
+                                    "color": "#FFEE59"
                                 }
                             ]
                         },
                         {
-                            "#": "アイテムに必ず持たせるNBT",
                             "function": "minecraft:set_nbt",
-                            "tag": "{Unbreaking:1b,HideFlags:127,CustomModelData:1601,Rarity:1,Buy:40,Sell:8,}"
+                            "tag": "{Unbreakable:1b,CustomModelData:1101,rarity:2,buy:0,sell:6,HideFlags:127}"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{menu:{blank:1b,button:\"goods\"}}"
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -39,7 +51,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "濁った色の、崩れかけの骨。"
+                                        "text": "その希少性から黒いダイヤと"
                                     }
                                 ],
                                 [
@@ -49,50 +61,10 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "ギリギリ形を保っている。"
+                                        "text": "呼ばれたり呼ばれなかったり。"
                                     }
                                 ]
                             ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "entity": "this",
-                            "lore": [
-                                [
-                                    {
-                                        "text": "",
-                                        "color": "dark_gray",
-                                        "italic": false,
-                                        "strikethrough": true
-                                    },
-                                    {
-                                        "text": "⎯⎯⎯⎯⎯⎯⎯"
-                                    },
-                                    {
-                                        "text": "\uF822合成時\uF822",
-                                        "color": "#777777",
-                                        "strikethrough": false
-                                    },
-                                    {
-                                        "text": "⎯⎯⎯⎯⎯⎯⎯"
-                                    }
-                                ]
-                            ]
-                        },
-                        {
-                            "#": "アイテム種lootのNBT",
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Menu:{Combinable:1b,Brewable:1b,Color:1227227205}}"
-                        },
-                        {
-                            "#": "アイテムのステータスNBT",
-                            "function": "minecraft:set_nbt",
-                            "tag": "{bonus:{ad:2,def:-5}}"
-                        },
-                        {
-                            "#": "アイテムのバフNBT",
-                            "function": "minecraft:set_nbt",
-                            "tag": "{consumable:1b,buff:[{source:\"consumables\",bonus:\"hp\",value:18,duration:50}]}"
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -119,18 +91,10 @@
                                         "text": "▸ 素材"
                                     },
                                     {
-                                        "text": "【\uE2B0"
+                                        "text": "【\uE2B1"
                                     },
                                     {
                                         "text": "】"
-                                    },
-                                    {
-                                        "text": "\uE2A2\uF808\uF8028",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "G",
-                                        "color": "#FFEE59"
                                     }
                                 ]
                             ]

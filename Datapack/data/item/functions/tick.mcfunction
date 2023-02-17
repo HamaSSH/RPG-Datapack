@@ -15,3 +15,5 @@
     execute as @e[type=item] at @s if data entity @s Item.tag{fishing:1b} run function item:fishing/_
     execute as @e[tag=Chest] at @s if data entity @s {OnGround:1b} run function item:fishing/chest/animation
     execute as @e[tag=Top] at @s run function item:fishing/chest/particle
+
+# TODO: アイテムのタグrarity,buy,sell辺りを → Rarity,Buy,Sellに変更する
