@@ -15,4 +15,4 @@
 # 経験値ドロップ
     execute at @s run function mob:on_death/xp/_
 # とどめだ
-    kill @s
+    tag @s add MobDead

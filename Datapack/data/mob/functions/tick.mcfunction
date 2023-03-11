@@ -21,3 +21,4 @@
     execute if data entity @s {HurtTime:10s} if predicate mob:on_hurt/poison run function mob:on_hurt/natural/poison
 
     #execute if entity @s[type=spider] run function mob:asset/000.spider/ai/tick
+    execute if data entity @s {Tags:["MobDead"]} run kill @s
