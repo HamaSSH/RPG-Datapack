@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cod",
+            "nbt": "{CustomModelData:1001}"
+        },
+        "title": "釣りマスター",
+        "description": {
+            "text": "魚を全種類集める。",
+            "color": "white",
+            "italic": false
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
