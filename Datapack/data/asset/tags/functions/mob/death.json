@@ -2,6 +2,7 @@
     "values": [
         "asset:mob/000.example/death/id",
         "asset:mob/001.skeleton/death/id",
-        "asset:mob/002.skull/death/id"
+        "asset:mob/002.skull/death/id",
+        "asset:mob/003.slime/death/id"
     ]
 }
