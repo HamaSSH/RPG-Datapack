@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:barrier"
+        },
+        "title": {
+            "text": "\uF80A",
+            "italic": false
+        },
+        "description": {
+            "text": ""
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "requirements": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
