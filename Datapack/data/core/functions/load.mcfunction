@@ -8,9 +8,10 @@ say reload
     scoreboard objectives add Constant dummy "定数"
     function core:constant
 
-# タイマースコア
+# アセット用スコア
     function #asset:magic/load
     function #asset:mob/load
+    function #asset:quest/load
 
 # トリガー
     scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time "スニーク"
@@ -177,6 +178,7 @@ say reload
 # forceload
     execute in overworld run forceload add -1 -1 0 0
     setblock 0 0 0 minecraft:white_shulker_box
-# 汎用エンティティの召喚
+
+# 汎用エンティティの召喚 83a-51-1-X-X
     summon marker 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 0]}
     summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 1],Marker:1b,Invisible:1b}
