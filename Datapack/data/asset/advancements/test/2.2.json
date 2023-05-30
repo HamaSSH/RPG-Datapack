@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:stone"
+            "item": "minecraft:gold_block"
         },
         "title": {
             "text": "test\uF829",
@@ -13,8 +13,7 @@
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": false,
-        "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+        "hidden": false
     },
     "parent": "asset:test/2.1",
     "criteria": {
