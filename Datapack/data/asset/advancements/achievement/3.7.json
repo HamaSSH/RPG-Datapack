@@ -11,11 +11,11 @@
             "text": ""
         },
         "frame": "challenge",
-        "show_toast": true,
+        "show_toast": false,
         "announce_to_chat": false,
         "hidden": false
     },
-    "parent": "asset:test/1.6",
+    "parent": "asset:test/3.6",
     "criteria": {
         "requirements": {
             "trigger": "minecraft:impossible"
