@@ -15,7 +15,7 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "parent": "asset:test/3.3",
+    "parent": "asset:achievement/3.3",
     "criteria": {
         "requirements": {
             "trigger": "minecraft:impossible"
