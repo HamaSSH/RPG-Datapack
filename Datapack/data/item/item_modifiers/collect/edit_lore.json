@@ -28,7 +28,7 @@
             },
             {
                 "score": {
-                    "name": "$Remain",
+                    "name": "$RemainingUse",
                     "objective": "Temporary"
                 },
                 "color": "white"
@@ -39,7 +39,7 @@
             },
             {
                 "score": {
-                    "name": "$Durability",
+                    "name": "$MaxDurability",
                     "objective": "Temporary"
                 }
             }
