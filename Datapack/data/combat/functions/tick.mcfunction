@@ -18,6 +18,7 @@
     execute as @e[type=arrow] at @s run function combat:main/bow/arrow/tick/_
 # 弓長押し検知チェック用のスコア加算
     execute as @a if entity @s[tag=BowCharging] run scoreboard players add @s IfBowCharge 1
+    execute as @a if entity @s[tag=RightClickBow] run function combat:main/bow/interaction_timer
 # 時間経過でkillするエンティティ
     execute as @e[tag=LeftClick] run scoreboard players add @s Timer 1
     execute as @e[tag=LeftClick] if score @s Timer matches 2 run function combat:main/kill
