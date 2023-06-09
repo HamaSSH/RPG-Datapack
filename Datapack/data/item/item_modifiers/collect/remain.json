@@ -4,17 +4,17 @@
     "lore": [
         {
             "nbt": "Data.tag.display.Lore[0]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         },
         {
             "nbt": "Data.tag.display.Lore[1]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         },
         {
             "nbt": "Data.tag.display.Lore[2]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         },
         [
@@ -46,17 +46,17 @@
         ],
         {
             "nbt": "Data.tag.display.Lore[4]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         },
         {
             "nbt": "Data.tag.display.Lore[5]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         },
         {
             "nbt": "Data.tag.display.Lore[6]",
-            "storage": "item:temp",
+            "storage": "item:",
             "interpret": true
         }
     ],

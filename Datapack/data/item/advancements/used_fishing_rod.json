@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:fishing_rod"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "item:fishing/used_fishing_rod"
+    }
+}
