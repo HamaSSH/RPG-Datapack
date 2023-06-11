@@ -1,14 +1,5 @@
 {
     "values": [
-        "item:asset/2101/upgrade/check",
-        "item:asset/2201/upgrade/check",
-        "item:asset/2301/upgrade/check",
-        "item:asset/2401/upgrade/check",
-        "item:asset/2501/upgrade/check",
-        "item:asset/2601/upgrade/check",
-        "item:asset/3201/upgrade/check",
-        "item:asset/3301/upgrade/check",
-        "item:asset/3401/upgrade/check",
-        "item:asset/3501/upgrade/check"
+        "item:asset/2101/upgrade/check"
     ]
 }
