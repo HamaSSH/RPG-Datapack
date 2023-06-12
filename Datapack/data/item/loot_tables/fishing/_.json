@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/loot/1001.rock_shard/_"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1,Chest:\"Gold\"}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1,Chest:\"Weapon\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

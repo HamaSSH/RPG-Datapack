@@ -9,9 +9,8 @@
 
 # 使用回数 SelectedItem.tag.Use を1加算
     execute store result storage item: Data.tag.Use int 1 run scoreboard players add $Use Temporary 1
-    item modify entity @s weapon.mainhand item:collect/increment_use
 
-# 耐久値計算＋耐久値バー設定
+# 耐久値計算
     scoreboard players operation $RemainingUse Temporary -= $Use Temporary
     scoreboard players set $ToolDurability Temporary 56
     execute if data storage item: Data{id:"minecraft:shears"} run scoreboard players set $ToolDurability Temporary 229
@@ -19,12 +18,13 @@
     scoreboard players operation $Use Temporary *= $ToolDurability Temporary
     scoreboard players operation $Use Temporary /= $MaxDurability Temporary
     execute store result storage item: Data.Damage int 1 run scoreboard players add $Use Temporary 1
-    item modify entity @s weapon.mainhand item:collect/damage
 
 # もし耐久値が0になったら壊れる
     execute if score $RemainingUse Temporary matches 0 run function item:collect/no_durability
 
-# 耐久値のLore編集
+# アイテムのデータ編集
+    item modify entity @s weapon.mainhand item:collect/increment_use
+    item modify entity @s weapon.mainhand item:collect/damage
     item modify entity @s weapon.mainhand item:collect/edit_lore
 
 # リセット
