@@ -71,6 +71,7 @@ say reload
     scoreboard objectives add xp_gained dummy "取得経験値"
     scoreboard objectives add gold_gained dummy "取得ゴールド"
     scoreboard objectives add FoodSaturation dummy "満腹度回復量"
+    scoreboard objectives add FishingPattern dummy "釣りパターン"
 
 # ステータス
     scoreboard objectives add hp dummy "現在のHP"
