@@ -5,7 +5,7 @@
     function item:collect/reduce_durability
 
 # 釣った魚に対しての処理
-    execute as @e[type=item] at @s if data entity @s Item.tag{Fishing:1b} run function item:fishing/_
+    execute as @e[type=item] if data entity @s Item.tag{Fishing:1b} at @s run function item:fishing/_
 
 # 後処理
     kill @e[type=experience_orb,distance=..1]

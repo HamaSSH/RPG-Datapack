@@ -21,6 +21,6 @@
 
     execute as @e[type=fishing_bobber] if entity @s[tag=!FishingBobber] at @s if block ~ ~ ~ lava run function item:fishing/magma/init
     execute as @e[type=fishing_bobber,tag=FishingBobber] at @s run function item:fishing/magma/bobber
-    execute as @e[type=item] if data entity @s Item.tag{MagmaBobber:1b} at @s run function item:fishing/magma/float
+    execute as @e[type=item] if data entity @s Item.tag{MagmaBobber:1b} at @s unless entity @e[type=minecraft:fishing_bobber,distance=..2,limit=1] run kill @s
 
 # TODO: アイテムのタグrarity,buy,sell辺りを → Rarity,Buy,Sellに変更する
