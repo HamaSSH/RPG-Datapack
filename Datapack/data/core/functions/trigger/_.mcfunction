@@ -14,6 +14,6 @@
 # 弓右クリック長押し検知
     execute if score @s BowCharge matches 1.. run function core:trigger/bow/release
 # 釣り竿浮き投げ検知
-    execute if score @s UsedFishingRod matches 1.. run function core:trigger/fishing_rod/id
+    execute if score @s UsedFishingRod matches 1.. run function core:trigger/fishing_rod/use
 # リセット
     scoreboard players reset $SelectedItemSlot

@@ -6,7 +6,7 @@
     data modify storage item: Motion set from entity @s Motion
 
 # 抽選
-    loot spawn ~ ~ ~ loot item:fishing/_
+    loot spawn ~ ~ ~ loot item:fishing/loot
     execute as @e[type=item,distance=..0] run function item:fishing/loot_table
 
 # 後処理
