@@ -1,7 +1,26 @@
 #> item:fishing/magma/game/pattern/1
-# パターン1 (20tick)
+# パターン1 (20tick) 2.0ブロック
 
-tp @s ^ ^ ^-0.1
-execute align y if block ~ ~ ~ lava positioned ~ ~0.9 ~ run particle block fire ~ ~ ~ 0.05 0 0.05 0 2 force
-execute align y if block ~ ~ ~ lava positioned ~ ~0.9 ~ run particle falling_lava ~ ~ ~ 0.2 0.1 0.2 0 2 force
-execute align y if block ~ ~ ~ lava positioned ~ ~0.9 ~ run particle dust_color_transition 1 0.58 0.102 1 0.992 0.31 0.039 ~ ~ ~ 0.05 0 0.05 0 1 force
+# 道筋
+    scoreboard players add @s Timer 1
+    execute if score @s Timer matches 1 run tp @s ^-0.25 ^ ^-0.1
+    execute if score @s Timer matches 2 run tp @s ^-0.20 ^ ^-0.1
+    execute if score @s Timer matches 3 run tp @s ^-0.15 ^ ^-0.1
+    execute if score @s Timer matches 4 run tp @s ^-0.10 ^ ^-0.1
+    execute if score @s Timer matches 5 run tp @s ^-0.05 ^ ^-0.1
+    execute if score @s Timer matches 6 run tp @s ^ ^ ^-0.1
+    execute if score @s Timer matches 7 run tp @s ^0.05 ^ ^-0.1
+    execute if score @s Timer matches 8 run tp @s ^0.10 ^ ^-0.1
+    execute if score @s Timer matches 9 run tp @s ^0.15 ^ ^-0.1
+    execute if score @s Timer matches 10 run tp @s ^0.20 ^ ^-0.1
+    execute if score @s Timer matches 11 run tp @s ^0.25 ^ ^-0.1
+    execute if score @s Timer matches 12 run tp @s ^0.05 ^ ^-0.1
+    execute if score @s Timer matches 13 run tp @s ^0.10 ^ ^-0.1
+    execute if score @s Timer matches 14 run tp @s ^0.10 ^ ^-0.1
+    execute if score @s Timer matches 15 run tp @s ^ ^ ^-0.1
+    execute if score @s Timer matches 16 run tp @s ^ ^ ^-0.1
+    execute if score @s Timer matches 17 run tp @s ^-0.15 ^ ^-0.1
+    execute if score @s Timer matches 18 run tp @s ^-0.05 ^ ^-0.1
+    execute if score @s Timer matches 19 run tp @s ^-0.05 ^ ^-0.1
+    execute if score @s Timer matches 20 run tp @s ^ ^ ^-0.1
+    execute if score @s Timer matches 20.. run scoreboard players reset @s Timer

@@ -14,6 +14,10 @@ tag @s add HookedRod
     execute as @e[type=item,tag=Fishable] if score @s PlayerID = @p[tag=HookedRod] PlayerID at @s run loot spawn ~ ~ ~ loot item:fishing/loot
     execute as @e[type=item,tag=Fishable] if score @s PlayerID = @p[tag=HookedRod] PlayerID at @s as @e[type=item,distance=..0] run function item:fishing/loot_table
 
+# ウキ用のアイテムと魚影用のMarkerをkill
+    execute as @e[type=item] if score @s PlayerID = @p[tag=HookedRod] PlayerID run kill @s
+    execute as @e[type=marker,tag=FishingStart] if score @s PlayerID = @p[tag=HookedRod] PlayerID run kill @s
+
 # 後処理
     tag @s remove HookedRod
     scoreboard players reset $PlayerPosY Temporary

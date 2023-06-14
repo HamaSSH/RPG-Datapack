@@ -2,7 +2,7 @@
 # 釣りゲームの開始処理
 
 # パターンの抽選
-    scoreboard players set $RNGMax Temporary 8
+    scoreboard players set $RNGMax Temporary 14
     function core:rng
     # 釣れるまでにかかる時間
         scoreboard players operation @s FishingPattern = $RNG Temporary

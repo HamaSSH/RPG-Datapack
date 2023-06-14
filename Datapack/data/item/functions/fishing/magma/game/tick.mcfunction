@@ -8,7 +8,7 @@ execute if score @s Timer matches ..1000 run scoreboard players set @s Timer 100
     execute if score @s Timer matches 1000 run function item:fishing/magma/game/init
 
 # 魚がウキに食いつく8パターン
-    execute if score @s Timer matches 1050..1100 run function item:fishing/magma/game/pattern/_
+    execute if score @s Timer matches 1020..1100 run function item:fishing/magma/game/pattern/_
 
 # 右クリック許容タイミング
     # 音とパーティクルで知らせる

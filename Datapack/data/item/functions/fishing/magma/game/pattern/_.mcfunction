@@ -14,6 +14,10 @@ execute if score @s FishingPattern matches 9 as @e[type=marker,tag=FishingStart]
 execute if score @s FishingPattern matches 10 as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary at @s run function item:fishing/magma/game/pattern/10
 execute if score @s FishingPattern matches 11 as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary at @s run function item:fishing/magma/game/pattern/11
 execute if score @s FishingPattern matches 12 as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary at @s run function item:fishing/magma/game/pattern/12
+execute if score @s FishingPattern matches 13 as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary at @s run function item:fishing/magma/game/pattern/13
+
+# 魚影パーティクル
+    execute as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary at @s align y if block ~ ~ ~ lava positioned ~ ~0.9 ~ run function item:fishing/magma/game/particle/fish
 
 # 後処理
     execute if score @s Timer matches 1100 as @e[type=marker,tag=FishingStart] if score @s PlayerID = $PlayerID Temporary run kill @s
