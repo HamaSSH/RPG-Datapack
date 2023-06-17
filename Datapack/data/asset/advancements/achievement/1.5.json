@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:stone"
+            "item": "minecraft:zombie_head"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

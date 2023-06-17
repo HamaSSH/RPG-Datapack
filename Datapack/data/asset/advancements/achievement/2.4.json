@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:suspicious_stew"
+            "item": "minecraft:oak_log"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

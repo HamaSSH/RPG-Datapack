@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:grass_block"
+            "item": "minecraft:brewing_stand"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

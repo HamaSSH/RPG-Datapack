@@ -1,10 +1,11 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:stone"
+            "item": "minecraft:bow",
+            "nbt": "{CustomModelData:2601}"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

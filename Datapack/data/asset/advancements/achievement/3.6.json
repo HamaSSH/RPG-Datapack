@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:stone"
+            "item": "minecraft:music_disc_11"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "\uF829ここにタイトルを入力",
             "italic": false
         },
         "description": {

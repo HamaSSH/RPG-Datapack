@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:gold_block"
+            "item": "minecraft:enchanted_book"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

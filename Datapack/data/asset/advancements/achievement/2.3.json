@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:experience_bottle"
+            "item": "minecraft:enchanted_golden_apple"
         },
         "title": {
-            "text": "test\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
