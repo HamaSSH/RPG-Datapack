@@ -181,5 +181,5 @@ say reload
     setblock 0 0 0 minecraft:white_shulker_box
 
 # 汎用エンティティの召喚 83a-51-1-X-X
-    summon marker 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 0]}
-    summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106, 5308417, 0, 1],Marker:1b,Invisible:1b}
+    summon marker 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,0]}
+    summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,1],Marker:1b,Invisible:1b}
