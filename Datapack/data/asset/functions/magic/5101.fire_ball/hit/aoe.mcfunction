@@ -1,4 +1,4 @@
-#> asset:magic/5000.example/hit/aoe
+#> asset:magic/5101.fire_ball/hit/aoe
 # 範囲攻撃
 
 data modify entity @s Fire set value 30s
