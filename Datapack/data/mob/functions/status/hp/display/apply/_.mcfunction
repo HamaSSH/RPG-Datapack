@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ArmorItems[3]に格納されたデータを取得
     data modify storage mob:temp Name.ArmorItems set from entity @s ArmorItems[3]
 # HPの割合計算

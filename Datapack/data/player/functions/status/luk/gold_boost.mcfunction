@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 獲得ゴールドUP計算式 → gold_gained = gold_gained * (100 + luk/3) / 100
 # = gold_gained * (luk + 300) / 300
     scoreboard players operation $GoldBoost Temporary = @s luk

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ダメージ表示用item召喚
     loot spawn ~ ~ ~ loot combat:dmg_display
 # itemの名前にダメージを代入

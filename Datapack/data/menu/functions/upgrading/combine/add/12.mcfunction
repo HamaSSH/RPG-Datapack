@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スロット12の未合成アイテムを合成
     execute if data storage menu:temp Data.Items[{Slot:12b}].tag.bonus.hp store result score $Bonus Temporary run data get storage menu:temp Data.Items[{Slot:12b}].tag.bonus.hp
     execute if data storage menu:temp Data.Items[{Slot:12b}].tag.bonus.hp run scoreboard players operation $HPCombine Temporary += $Bonus Temporary

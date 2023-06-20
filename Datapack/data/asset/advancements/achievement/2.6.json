@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nautilus_shell",
+            "nbt": "{CustomModelData:1011}"
+        },
+        "title": {
+            "text": "\uF829ここにタイトルを入力",
+            "italic": false
+        },
+        "description": {
+            "text": "概要"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "asset:achievement/2.5",
+    "criteria": {
+        "requirements": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

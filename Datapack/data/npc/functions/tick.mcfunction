@@ -1,4 +1,13 @@
+##########
+#>
+#
+
 ### NPC関連の#tick
+
+# # tick時の処理 TODO: これを村人として実行すればtickとなる
+#   execute store result storage asset:npc id int 1 run scoreboard players get @s MobID
+#   execute at @s run function #asset:npc/tick
+#   data remove storage asset:npc id
 
 # NPCショップ召喚
     execute if predicate npc:001 run function npc:asset/001/shop/summon

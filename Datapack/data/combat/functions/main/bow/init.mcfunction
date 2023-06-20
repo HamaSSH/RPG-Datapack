@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓の初期処理 属性付け
     execute if score @a[tag=this,limit=1] FireAttack matches 1.. run tag @s add FireAttack
     execute if score @a[tag=this,limit=1] WaterAttack matches 1.. run tag @s add WaterAttack

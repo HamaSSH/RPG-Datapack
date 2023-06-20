@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 当たり判定タグ付け
     execute positioned ~-0.15 ~-0.15 ~-0.15 as @e[type=#mob:mobs,tag=Enemy,dx=0] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] run tag @s add Hit
 # 当たり判定可視化

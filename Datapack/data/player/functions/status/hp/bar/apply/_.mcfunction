@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 最大より大きければ調整
     execute if score @s hp >= @s hp_max run scoreboard players operation @s hp = @s hp_max
 # HPの割合計算準備

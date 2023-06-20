@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # InventoryにData.clear内のアイテムが十分にあるか調べてNewInvを生成
     data remove storage menu:temp Data.NewInv
     execute store result score $Required Temporary run data get storage menu:temp Data.clear[0].Count

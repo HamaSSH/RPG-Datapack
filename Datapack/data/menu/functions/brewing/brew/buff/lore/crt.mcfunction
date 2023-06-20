@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $CRTBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"crt"}].value
     execute store result score $CRTDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"crt"}].duration

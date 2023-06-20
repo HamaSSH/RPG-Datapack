@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーとバフ管理マーカーの結び付け
     scoreboard players operation @s PlayerID = @a[tag=this,limit=1] PlayerID
 # 1tickの間だけデータを保存しておくmarker

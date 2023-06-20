@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # クリティカル時のダメージ表示用
     execute if entity @s[tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4
 # ノックバック

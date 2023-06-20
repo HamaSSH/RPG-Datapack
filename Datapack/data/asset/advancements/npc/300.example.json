@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager",
+                    "nbt": "{Tags:[\"300.NPC\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:npc/300.example/dialogue/_"
+    }
+}

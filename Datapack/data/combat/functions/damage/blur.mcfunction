@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ダメージブレ幅の決定
     scoreboard players operation $DmgBlur Temporary = @s dmg_received
     scoreboard players add $DmgBlur Temporary 24

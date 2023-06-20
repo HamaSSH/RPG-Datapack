@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 左クリック弓矢数減算
     scoreboard players remove @s LCArrow 1
 # 弓矢の召喚

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 演出(レベルアップ一度きり)
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
     # 自分以外へのtellraw
@@ -6,19 +10,19 @@
         tag @s remove LevelUp
     # 自分へのtellraw
         tellraw @s ["☆ ",{"text":"レベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLevel","objective":"Temporary"}},{"text":"→"},{"score":{"name":"@s","objective":"level"},"color":"yellow","bold":true},{"text":" )"}]
-        execute unless score @s skill_level = $PreviousSkillLevel Temporary run function player:class/skill_level_up
+        # execute unless score @s SkillLevel = $PreviousSkillLevel Temporary run function player:class/skill_level_up
 # ステータススコア上昇値計算
-    scoreboard players operation $DifferenceHP Temporary = @s hp_base
-    scoreboard players operation $DifferenceMP Temporary = @s mp_base
-    scoreboard players operation $DifferenceHPRegen Temporary = @s hp_regen_base
-    scoreboard players operation $DifferenceMPRegen Temporary = @s mp_regen_base
-    scoreboard players operation $DifferenceAD Temporary = @s ad_base
-    scoreboard players operation $DifferenceAP Temporary = @s ap_base
-    scoreboard players operation $DifferenceDEX Temporary = @s dex_base
-    scoreboard players operation $DifferenceDEF Temporary = @s def_base
-    scoreboard players operation $DifferenceSPD Temporary = @s spd_base
-    scoreboard players operation $DifferenceCRT Temporary = @s crt_base
-    scoreboard players operation $DifferenceLUK Temporary = @s luk_base
+    scoreboard players operation $DifferenceHP Temporary = @s BaseHP
+    scoreboard players operation $DifferenceMP Temporary = @s BaseMP
+    scoreboard players operation $DifferenceHPRegen Temporary = @s BaseHPRegen
+    scoreboard players operation $DifferenceMPRegen Temporary = @s BaseMPRegen
+    scoreboard players operation $DifferenceAD Temporary = @s BaseAD
+    scoreboard players operation $DifferenceAP Temporary = @s BaseAP
+    scoreboard players operation $DifferenceDEX Temporary = @s BaseDEX
+    scoreboard players operation $DifferenceDEF Temporary = @s BaseDEF
+    scoreboard players operation $DifferenceSPD Temporary = @s BaseSPD
+    scoreboard players operation $DifferenceCRT Temporary = @s BaseCRT
+    scoreboard players operation $DifferenceLUK Temporary = @s BaseLUK
         scoreboard players operation $DifferenceHP Temporary -= $PreviousHP Temporary
         scoreboard players operation $DifferenceMP Temporary -= $PreviousMP Temporary
         scoreboard players operation $DifferenceHPRegen Temporary -= $PreviousHPRegen Temporary
@@ -31,13 +35,13 @@
         scoreboard players operation $DifferenceCRT Temporary -= $PreviousCRT Temporary
         scoreboard players operation $DifferenceLUK Temporary -= $PreviousLUK Temporary
 # 自然回復スコア上昇値計算
-    scoreboard players operation $HPRegenInt Temporary = @s hp_regen_base
+    scoreboard players operation $HPRegenInt Temporary = @s BaseHPRegen
     scoreboard players operation $HPRegenInt Temporary /= #100 Constant
-    scoreboard players operation $HPRegenDec Temporary = @s hp_regen_base
+    scoreboard players operation $HPRegenDec Temporary = @s BaseHPRegen
     scoreboard players operation $HPRegenDec Temporary %= #100 Constant
-    scoreboard players operation $MPRegenInt Temporary = @s mp_regen_base
+    scoreboard players operation $MPRegenInt Temporary = @s BaseMPRegen
     scoreboard players operation $MPRegenInt Temporary /= #100 Constant
-    scoreboard players operation $MPRegenDec Temporary = @s mp_regen_base
+    scoreboard players operation $MPRegenDec Temporary = @s BaseMPRegen
     scoreboard players operation $MPRegenDec Temporary %= #100 Constant
         scoreboard players operation $DifferenceHPRegenInt Temporary = $DifferenceHPRegen Temporary
         scoreboard players operation $DifferenceHPRegenInt Temporary /= #100 Constant
@@ -48,19 +52,19 @@
         scoreboard players operation $DifferenceMPRegenDec Temporary = $DifferenceMPRegen Temporary
         scoreboard players operation $DifferenceMPRegenDec Temporary %= #100 Constant
 # ステータス上昇値表示
-    tellraw @s ""
-    execute if score $DifferenceHP Temporary matches 1.. run tellraw @s [{"text":"\uE240 最大ＨＰ:  "},{"score":{"name":"$PreviousHP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"hp_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceHP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceHPRegen Temporary matches 1.. run tellraw @s [{"text":"\uE241 自然回復:  "},{"score":{"name":"$PreviousHPRegenInt","objective":"Temporary"},"color":"#AAAAAA"},{"text":".","color":"#AAAAAA"},{"score":{"name":"$PreviousHPRegenDec","objective":"Temporary"},"color":"#AAAAAA"},{"text":"/s → ","color":"#AAAAAA"},{"score":{"name":"$HPRegenInt","objective":"Temporary"},"bold":true},{"text":".","bold":true},{"score":{"name":"$HPRegenDec","objective":"Temporary"},"bold":true},{"text":"/s","bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceHPRegenInt","objective":"Temporary"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"$DifferenceHPRegenDec","objective":"Temporary"},"color":"green"},{"text":"/s","color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceMP Temporary matches 1.. run tellraw @s [{"text":"\uE242 最大ＭＰ:  "},{"score":{"name":"$PreviousMP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"mp_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceMP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceMPRegen Temporary matches 1.. run tellraw @s [{"text":"\uE243 自然回復:  "},{"score":{"name":"$PreviousMPRegenInt","objective":"Temporary"},"color":"#AAAAAA"},{"text":".","color":"#AAAAAA"},{"score":{"name":"$PreviousMPRegenDec","objective":"Temporary"},"color":"#AAAAAA"},{"text":"/s → ","color":"#AAAAAA"},{"score":{"name":"$MPRegenInt","objective":"Temporary"},"bold":true},{"text":".","bold":true},{"score":{"name":"$MPRegenDec","objective":"Temporary"},"bold":true},{"text":"/s","bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceMPRegenInt","objective":"Temporary"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"$DifferenceMPRegenDec","objective":"Temporary"},"color":"green"},{"text":"/s","color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceAD Temporary matches 1.. run tellraw @s [{"text":"\uE244 物理攻撃:  "},{"score":{"name":"$PreviousAD","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"ad_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceAD","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceAP Temporary matches 1.. run tellraw @s [{"text":"\uE245 魔法攻撃:  "},{"score":{"name":"$PreviousAP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"ap_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceAP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceDEX Temporary matches 1.. run tellraw @s [{"text":"\uE246 器用さ:     \uF003"},{"score":{"name":"$PreviousDEX","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"dex_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceDEX","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceDEF Temporary matches 1.. run tellraw @s [{"text":"\uE248 防御力:     \uF003"},{"score":{"name":"$PreviousDEF","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"def_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceDEF","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceSPD Temporary matches 1.. run tellraw @s [{"text":"\uE249 素早さ:     \uF003"},{"score":{"name":"$PreviousSPD","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"spd_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceSPD","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceCRT Temporary matches 1.. run tellraw @s [{"text":"\uE24A 会心:       \uF002"},{"score":{"name":"$PreviousCRT","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"crt_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceCRT","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    execute if score $DifferenceLUK Temporary matches 1.. run tellraw @s [{"text":"\uE24B 幸運:       \uF002"},{"score":{"name":"$PreviousLUK","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"luk_base"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceLUK","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
-    tellraw @s ""
+    # tellraw @s ""
+    # execute if score $DifferenceHP Temporary matches 1.. run tellraw @s [{"text":"\uE240 最大ＨＰ:  "},{"score":{"name":"$PreviousHP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseHP"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceHP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceHPRegen Temporary matches 1.. run tellraw @s [{"text":"\uE241 自然回復:  "},{"score":{"name":"$PreviousHPRegenInt","objective":"Temporary"},"color":"#AAAAAA"},{"text":".","color":"#AAAAAA"},{"score":{"name":"$PreviousHPRegenDec","objective":"Temporary"},"color":"#AAAAAA"},{"text":"/s → ","color":"#AAAAAA"},{"score":{"name":"$HPRegenInt","objective":"Temporary"},"bold":true},{"text":".","bold":true},{"score":{"name":"$HPRegenDec","objective":"Temporary"},"bold":true},{"text":"/s","bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceHPRegenInt","objective":"Temporary"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"$DifferenceHPRegenDec","objective":"Temporary"},"color":"green"},{"text":"/s","color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceMP Temporary matches 1.. run tellraw @s [{"text":"\uE242 最大ＭＰ:  "},{"score":{"name":"$PreviousMP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseMP"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceMP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceMPRegen Temporary matches 1.. run tellraw @s [{"text":"\uE243 自然回復:  "},{"score":{"name":"$PreviousMPRegenInt","objective":"Temporary"},"color":"#AAAAAA"},{"text":".","color":"#AAAAAA"},{"score":{"name":"$PreviousMPRegenDec","objective":"Temporary"},"color":"#AAAAAA"},{"text":"/s → ","color":"#AAAAAA"},{"score":{"name":"$MPRegenInt","objective":"Temporary"},"bold":true},{"text":".","bold":true},{"score":{"name":"$MPRegenDec","objective":"Temporary"},"bold":true},{"text":"/s","bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceMPRegenInt","objective":"Temporary"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"$DifferenceMPRegenDec","objective":"Temporary"},"color":"green"},{"text":"/s","color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceAD Temporary matches 1.. run tellraw @s [{"text":"\uE244 物理攻撃:  "},{"score":{"name":"$PreviousAD","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseAD"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceAD","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceAP Temporary matches 1.. run tellraw @s [{"text":"\uE245 魔法攻撃:  "},{"score":{"name":"$PreviousAP","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseAP"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceAP","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceDEX Temporary matches 1.. run tellraw @s [{"text":"\uE246 器用さ:     \uF003"},{"score":{"name":"$PreviousDEX","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseDEX"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceDEX","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceDEF Temporary matches 1.. run tellraw @s [{"text":"\uE248 防御力:     \uF003"},{"score":{"name":"$PreviousDEF","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseDEF"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceDEF","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceSPD Temporary matches 1.. run tellraw @s [{"text":"\uE249 素早さ:     \uF003"},{"score":{"name":"$PreviousSPD","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseSPD"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceSPD","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceCRT Temporary matches 1.. run tellraw @s [{"text":"\uE24A 会心:       \uF002"},{"score":{"name":"$PreviousCRT","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseCRT"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceCRT","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # execute if score $DifferenceLUK Temporary matches 1.. run tellraw @s [{"text":"\uE24B 幸運:       \uF002"},{"score":{"name":"$PreviousLUK","objective":"Temporary"},"color":"#AAAAAA"},{"text":" → ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"BaseLUK"},"bold":true},{"text":" (+","color":"green"},{"score":{"name":"$DifferenceLUK","objective":"Temporary"},"color":"green"},{"text":")","color":"green"}]
+    # tellraw @s ""
 # リセット
     scoreboard players reset $PreviousLevel
     scoreboard players reset $PreviousSkillLevel

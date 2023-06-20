@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 落下距離 → ダメージ
     scoreboard players operation $FallDistance Temporary = @s fall_distance
     scoreboard players operation $FallDistance Temporary /= #100 Constant

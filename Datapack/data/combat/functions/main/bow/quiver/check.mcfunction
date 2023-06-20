@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # storage DataにプレイヤーのInventoryを代入
     data modify storage combat:temp Data set from entity @s Inventory
 # 矢筒をもっているか検知

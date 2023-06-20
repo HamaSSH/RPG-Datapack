@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓の減算
     execute store result score $InventoryArrow Temporary run clear @s arrow{arrow:1b} 1
 # 弓矢の数に応じての処理

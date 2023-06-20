@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 ### 攻撃処理関連の#tick
 
 # 攻撃の#tick
@@ -14,8 +18,10 @@
     execute as @e[type=arrow] at @s run function combat:main/bow/arrow/tick/_
 # 弓長押し検知チェック用のスコア加算
     execute as @a if entity @s[tag=BowCharging] run scoreboard players add @s IfBowCharge 1
+    execute as @a if entity @s[tag=RightClickBow] run function combat:main/bow/interaction_timer
 # 時間経過でkillするエンティティ
-    execute as @e[tag=LeftClick] if data entity @s {PortalCooldown:0} run function combat:main/kill
+    execute as @e[tag=LeftClick] run scoreboard players add @s Timer 1
+    execute as @e[tag=LeftClick] if score @s Timer matches 2 run function combat:main/kill
     execute as @e[type=item,tag=DmgDisplay] if data entity @s {PortalCooldown:0} run kill @s
     execute as @e[type=armor_stand,tag=GoldDisplay] if data entity @s {PortalCooldown:0} run kill @s
     execute as @e[type=armor_stand,tag=XPDisplay] if data entity @s {PortalCooldown:0} run kill @s

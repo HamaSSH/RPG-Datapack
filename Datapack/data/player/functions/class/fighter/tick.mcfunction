@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # パッシブスキル「背水の陣」-体力が低くなるとステータスが上がる
     scoreboard players operation $HPRatio Temporary = @s hp
     scoreboard players operation $HPRatio Temporary *= #100 Constant

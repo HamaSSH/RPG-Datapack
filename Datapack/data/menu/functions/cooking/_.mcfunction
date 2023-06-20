@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 醸造可能アイテムが入れられたら配置
     data modify storage menu:temp Data.cooking append from storage menu:temp Data.Items[{tag:{menu:{cookable:1b}}}]
     execute if data storage menu:temp Data.cooking[] run function menu:cooking/put_items/_

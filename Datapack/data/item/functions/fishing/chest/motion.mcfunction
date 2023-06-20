@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーの位置取得
     execute as @a if score @s PlayerID = $PlayerID Temporary run data modify storage item:fishing PlayerPos set from entity @s Pos
 # storage → スコア

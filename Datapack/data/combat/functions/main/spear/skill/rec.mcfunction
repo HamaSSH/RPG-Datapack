@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 当たり判定タグ付け
     scoreboard players add $YPower Temporary 50
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,dx=0] run tag @s add Hit

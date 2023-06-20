@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 地割り
     # execute if score @s skill_cd matches 300 run 防御バフ...
     execute if score @s skill_cd matches 300 run effect give @s levitation 1 20 true

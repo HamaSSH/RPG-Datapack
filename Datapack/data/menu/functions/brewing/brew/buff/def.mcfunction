@@ -1,10 +1,14 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $DEFBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"def"}].value
     execute store result score $DEFDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"def"}].duration
 # 素材アイテムのバフ
     execute store result score $AddBuff Temporary run data get storage menu:temp Data.buff.value
     execute store result score $AddDuration Temporary run data get storage menu:temp Data.buff.duration
-# 足し合わせ    
+# 足し合わせ
     scoreboard players operation $DEFBuff Temporary += $AddBuff Temporary
     scoreboard players operation $DEFDuration Temporary += $AddDuration Temporary
 # バフ情報をstorageに格納

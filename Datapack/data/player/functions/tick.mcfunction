@@ -1,5 +1,13 @@
+##########
+#>
+#
+
 ### プレイヤー関連の#tick
 
+# 魔法のTick
+    function #asset:magic/player
+# 満腹度回復
+    execute if score @s FoodSaturation matches 2.. run function player:food
 # 職業関連の#tick
     function player:class/tick
 # 属性particle

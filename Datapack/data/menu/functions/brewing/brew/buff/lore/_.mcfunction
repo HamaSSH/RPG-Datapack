@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # フレーバーテキスト
     data modify storage menu:temp NewLore append value '{"text":"醸造台で作ったポーション。","color":"#D8D8D8","italic":false}'
     data modify storage menu:temp NewLore append value '{"text":"綺麗ではないが絶妙な色だ。","color":"#D8D8D8","italic":false}'

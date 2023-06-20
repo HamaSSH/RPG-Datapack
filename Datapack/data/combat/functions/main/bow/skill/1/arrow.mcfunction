@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 矢を飛ばす
     tp ~ ~1000 ~
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^2 {Tags:["Knockback"]}

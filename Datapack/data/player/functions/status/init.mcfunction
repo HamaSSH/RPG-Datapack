@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 基礎ステータス・スコアの設定
     scoreboard players set @s level 1
     scoreboard players set @s xp_next 50
@@ -5,17 +9,17 @@
     scoreboard players set @s gold 200
     scoreboard players set @s hp 50
     scoreboard players set @s mp 50
-    scoreboard players set @s hp_base 50
-    scoreboard players set @s mp_base 50
-    scoreboard players set @s hp_regen_base 50
-    scoreboard players set @s mp_regen_base 50
-    scoreboard players set @s ad_base 1
-    scoreboard players set @s ap_base 0
-    scoreboard players set @s dex_base 0
-    scoreboard players set @s def_base 0
-    scoreboard players set @s spd_base 0
-    scoreboard players set @s crt_base 0
-    scoreboard players set @s luk_base 0
+    scoreboard players set @s BaseHP 50
+    scoreboard players set @s BaseMP 50
+    scoreboard players set @s BaseHPRegen 50
+    scoreboard players set @s BaseMPRegen 50
+    scoreboard players set @s BaseAD 1
+    scoreboard players set @s BaseAP 0
+    scoreboard players set @s BaseDEX 0
+    scoreboard players set @s BaseDEF 0
+    scoreboard players set @s BaseSPD 0
+    scoreboard players set @s BaseCRT 0
+    scoreboard players set @s BaseLUK 0
     scoreboard players set @s Arrow 0
     scoreboard players set @s LCArrow 0
     scoreboard players set @s PreviousArrow 0
@@ -23,19 +27,19 @@
 # 内部スコアの初期化
     scoreboard players set @s sneak 0
     scoreboard players set @s HurtTime 0
-    scoreboard players set @s skill_level 1
-    scoreboard players set @s xp_assassin 0
-    scoreboard players set @s xp_fighter 0
-    scoreboard players set @s xp_knight 0
-    scoreboard players set @s xp_warrior 0
-    scoreboard players set @s xp_wizard 0
-    scoreboard players set @s xp_hunter 0
-    scoreboard players set @s lv_assassin 1
-    scoreboard players set @s lv_fighter 1
-    scoreboard players set @s lv_knight 1
-    scoreboard players set @s lv_warrior 1
-    scoreboard players set @s lv_wizard 1
-    scoreboard players set @s lv_hunter 1
+    scoreboard players set @s SkillLevel 1
+    scoreboard players set @s AssassinXP 0
+    scoreboard players set @s FighterXP 0
+    scoreboard players set @s KnightXP 0
+    scoreboard players set @s WarriorXP 0
+    scoreboard players set @s WizardXP 0
+    scoreboard players set @s HunterXP 0
+    scoreboard players set @s AssassinLVL 1
+    scoreboard players set @s FighterLVL 1
+    scoreboard players set @s KnightLVL 1
+    scoreboard players set @s WarriorLVL 1
+    scoreboard players set @s WizardLVL 1
+    scoreboard players set @s HunterLVL 1
     scoreboard players set @s skill_cd 0
     scoreboard players set @s ElementAttack 0
     scoreboard players set @s FireAttack 0

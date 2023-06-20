@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 左上3スロットの矢筒(arrow)→矢筒(carrot_on_a_stick)
     data modify storage combat:temp Inventory set from entity @s Inventory
     data modify storage combat:temp Quiver append from storage combat:temp Inventory[{tag:{quiver:1b}}]

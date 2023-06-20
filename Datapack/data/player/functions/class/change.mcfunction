@@ -1,13 +1,17 @@
+##########
+#>
+#
+
 # 職業ステータスリセット
-    scoreboard players reset @s hp_regen_class
-    scoreboard players reset @s mp_regen_class
-    scoreboard players reset @s ad_class
-    scoreboard players reset @s ap_class
-    scoreboard players reset @s dex_class
-    scoreboard players reset @s def_class
-    scoreboard players reset @s spd_class
-    scoreboard players reset @s crt_class
-    scoreboard players reset @s luk_class
+    scoreboard players reset @s ClassHPRegen
+    scoreboard players reset @s ClassMPRegen
+    scoreboard players reset @s ClassAD
+    scoreboard players reset @s ClassAP
+    scoreboard players reset @s ClassDEX
+    scoreboard players reset @s ClassDEF
+    scoreboard players reset @s ClassSPD
+    scoreboard players reset @s ClassCRT
+    scoreboard players reset @s ClassLUK
 # パッシブスキル関連リセット
     attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-0
     attribute @s minecraft:generic.knockback_resistance modifier remove 2-0-0-0-1

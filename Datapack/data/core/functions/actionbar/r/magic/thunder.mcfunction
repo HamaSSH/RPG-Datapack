@@ -1,6 +1,10 @@
+##########
+#>
+#
+
 # クールダウンの計算
-    execute store result score $Cooldown Temporary run data get storage actionbar:temp offhand.tag.magic.cooldown
-    execute store result score $TimeUsed Temporary run data get storage actionbar:temp offhand.tag.gametime
+    execute store result score $Cooldown Temporary run data get storage actionbar:temp offhand.tag.Magic.Cooldown
+    execute store result score $TimeUsed Temporary run data get storage actionbar:temp offhand.tag.Magic.UsedTick
     execute store result score $Time Temporary run time query gametime
     execute if score @s cdr matches 1.. run function player:status/cd/reduction
     scoreboard players operation $Time Temporary -= $TimeUsed Temporary

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # sneakリセット
     execute unless predicate core:is_sneaking run function core:trigger/sneak/reset
     execute if score @s skill_cd matches 1.. run scoreboard players set @s sneak 0

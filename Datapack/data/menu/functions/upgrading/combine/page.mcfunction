@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 武器のレアリティ
     execute store result score $Rarity Temporary run data get storage menu:temp Data.Items[{Slot:10b,tag:{menu:{upgradable:1b}}}].tag.rarity
 # 合成可能アイテムが入れられたら配置

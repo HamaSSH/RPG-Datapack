@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スコア
     scoreboard players operation $GoldDisplay Temporary = @s GoldDisplay
 # Gold表示

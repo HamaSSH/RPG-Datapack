@@ -1,3 +1,9 @@
+##########
+#>
+#
+
+    execute as @p run function asset:quest/601.craft_potion/reward
+
 # スロットに先客がいれば返却
     execute if data storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}] run data modify storage menu:temp Data.return append from storage menu:temp Data.Items[{tag:{consumable:1b,potion:1b}}]
     function menu:return_item/_
@@ -10,9 +16,9 @@
     execute if data storage menu:temp Data.newBuff[0] run function menu:brewing/brew/buff/_
 # ポーションの色決定
     # それぞれのアイテムによるポーションの色取得
-        execute store result score $RGB1 Temporary run data get storage menu:temp Data.refresh[{Slot:10b}].tag.menu.color 1
-        execute store result score $RGB2 Temporary run data get storage menu:temp Data.refresh[{Slot:11b}].tag.menu.color 1
-        execute store result score $RGB3 Temporary run data get storage menu:temp Data.refresh[{Slot:12b}].tag.menu.color 1
+        execute store result score $RGB1 Temporary run data get storage menu:temp Data.refresh[{Slot:10b}].tag.Menu.Color 1
+        execute store result score $RGB2 Temporary run data get storage menu:temp Data.refresh[{Slot:11b}].tag.Menu.Color 1
+        execute store result score $RGB3 Temporary run data get storage menu:temp Data.refresh[{Slot:12b}].tag.Menu.Color 1
         scoreboard players remove $RGB1 Temporary 1000000000
         scoreboard players remove $RGB2 Temporary 1000000000
         scoreboard players remove $RGB3 Temporary 1000000000

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # InventoryのアイテムをNewInvに追加
     data modify storage menu:temp Data.NewInv append from storage menu:temp Data.Inventory[-1]
 # もしclearするべきアイテムであればCountの置き換え

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 既にスロットに配置されているアイテムは除外
     execute if data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{cookable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:10b}]
     execute if data storage menu:temp Data.Items[{Slot:11b,tag:{menu:{cookable:1b}}}] run data modify storage menu:temp Data.refresh append from storage menu:temp Data.Items[{Slot:11b}]

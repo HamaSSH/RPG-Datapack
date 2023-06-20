@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 武器ページ(100)へ
     execute unless data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{button:"weapon"}}}] run function menu:crafting/weapon/move
 # 装備品ページ(200)へ

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓を撃った人のタグ付け
     tag @s add this
 # 撃った弓矢としての処理
@@ -8,8 +12,8 @@
     execute if entity @s[tag=Quiver] run scoreboard players remove @s Arrow 1
     execute unless entity @s[tag=Quiver] run clear @s arrow{arrow:1b} 1
 # もしBowChargeが20以上であれば左クリック用弓矢のチャージを設定する
-    execute if entity @s[team=Hunter] if score @s BowCharge matches 20.. run scoreboard players operation @s LCArrow = @s skill_level
-    execute if entity @s[team=Hunter] if score @s BowCharge matches 20.. if score @s skill_level matches 3..5 run scoreboard players remove @s LCArrow 1
+    execute if entity @s[team=Hunter] if score @s BowCharge matches 20.. run scoreboard players operation @s LCArrow = @s SkillLevel
+    execute if entity @s[team=Hunter] if score @s BowCharge matches 20.. if score @s SkillLevel matches 3..5 run scoreboard players remove @s LCArrow 1
 # Arrowスコアが0になれば矢筒(arrow)→矢筒(carrot_on_a_stick)
     execute if score @s Arrow matches ..0 run function combat:main/bow/quiver/no_arrow
 # 溜め攻撃バーのリセット

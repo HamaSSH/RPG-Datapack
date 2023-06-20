@@ -1,8 +1,16 @@
+##########
+#>
+#
+
 ### @s = 攻撃してきたエンティティ、@a[tag=this,limit=1] = プレイヤー
 
 # 被ダメージ(補正無し)を設定
     scoreboard players operation @s dmg_dealt = @s ad
     scoreboard players operation @a[tag=this,limit=1] dmg_received = @s dmg_dealt
+# 攻撃時のトリガー
+    execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
+    execute at @s run function #asset:mob/attack
+    data remove storage asset:mob id
 # ダメージ処理
     # 防御＋ダメージブレ補正
         execute as @a[tag=this,limit=1] run function player:status/def/apply

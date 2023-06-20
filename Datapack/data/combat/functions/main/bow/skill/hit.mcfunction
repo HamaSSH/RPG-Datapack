@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 属性ごとの攻撃
     execute if entity @e[type=arrow,tag=this,tag=FireAttack,limit=1] run function mob:on_hurt/element/fire
     execute if entity @e[type=arrow,tag=this,tag=WaterAttack,limit=1] run function mob:on_hurt/element/water

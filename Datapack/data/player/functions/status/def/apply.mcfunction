@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 防御計算式 → dmg_received = dmg_received / 1 + (def / 200)
 # = 200*dmg_received / (200 + def)
     scoreboard players operation $PlayerDef Temporary = @s def

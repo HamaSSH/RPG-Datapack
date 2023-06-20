@@ -1,10 +1,14 @@
+##########
+#>
+#
+
 # 角度取得
     data modify storage combat:temp Rotation set from entity @s Rotation
     execute store result score $RotationX Temporary run data get storage combat:temp Rotation[0] 100
     execute store result score $RotationY Temporary run data get storage combat:temp Rotation[1] 100
 # ホーミング角度設定
     scoreboard players set $Homing Temporary 100
-    scoreboard players operation $Homing Temporary *= @s skill_level
+    scoreboard players operation $Homing Temporary *= @s SkillLevel
     execute if entity @s[tag=WandSkill] run scoreboard players set $Homing Temporary 500
     # ホーミングする敵の特定
         function combat:main/wand/homing/target/_

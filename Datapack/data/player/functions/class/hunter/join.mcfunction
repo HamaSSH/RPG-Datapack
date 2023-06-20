@@ -1,5 +1,9 @@
+##########
+#>
+#
+
 # 「アサシン」に転職
-    execute unless entity @s[team=Hunter] run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ハンター】","color":"#A6ED8F"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"lv_hunter"},"bold":true},{"text":" に転職しました ！"}]
+    execute unless entity @s[team=Hunter] run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ハンター】","color":"#A6ED8F"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"HunterLVL"},"bold":true},{"text":" に転職しました ！"}]
     execute unless entity @s[team=Hunter] at @s run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 # 転生
     execute if entity @s[team=Hunter] if score @s level matches 50.. run say 転生
@@ -11,6 +15,6 @@
     team join Hunter @s
 # XP加算処理
     tag @s add ClassChange
-    scoreboard players operation @s xp = @s xp_hunter
+    scoreboard players operation @s xp = @s HunterXP
     execute if score @s xp >= @s xp_next run function player:status/level/up
     tag @s remove ClassChange

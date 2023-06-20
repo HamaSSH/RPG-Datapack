@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # HPバーの表示
     data modify entity @s CustomNameVisible set value 1b
     data modify entity @s PortalCooldown set value 200

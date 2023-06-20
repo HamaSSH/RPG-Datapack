@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 会心率計算式 → crt_chance = 2*crt - crt^2 / 1000 (crt<1000の時)
 # = (2000*crt - crt^2) / 1000
     scoreboard players operation $CritChance Temporary = @s crt

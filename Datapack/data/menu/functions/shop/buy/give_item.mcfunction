@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # アイテムを与える
     data modify storage menu:temp Data.id set from entity @s data.id
     function #npc:buy

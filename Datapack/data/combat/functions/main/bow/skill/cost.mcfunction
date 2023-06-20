@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 放った時のプレイヤーの角度取得
     execute store result score $Angle Temporary run data get entity @s Rotation[1]
 # MPコスト

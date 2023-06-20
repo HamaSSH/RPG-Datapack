@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # スロット0~26
     data remove block 0 0 0 Items
     data modify block 0 0 0 Items set from storage menu:temp Data.NewInv

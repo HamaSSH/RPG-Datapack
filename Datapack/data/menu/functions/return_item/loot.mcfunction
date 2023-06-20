@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーのインベントリ状況に応じてgiveかspawnかを決定
     execute as @p run data modify storage menu:temp Inventory set from entity @s Inventory
     execute store result score $Inventory Temporary run data get storage menu:temp Inventory

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # HPを回復
     scoreboard players operation $HPRegen Temporary = @s hp_regen_timer
     scoreboard players operation $HPRegen Temporary /= #2000 Constant

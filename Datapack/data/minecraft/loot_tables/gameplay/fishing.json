@@ -7,11 +7,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:cod",
+                    "name": "minecraft:nautilus_shell",
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{fishing:1b,CustomModelData:1}"
+                            "tag": "{CustomModelData:1,Fishing:1b}"
                         }
                     ]
                 }

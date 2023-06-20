@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 範囲攻撃
     function combat:main/hit
 # 炎上効果

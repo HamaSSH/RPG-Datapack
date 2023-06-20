@@ -1,0 +1,38 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "",
+                "color": "white"
+            },
+            {
+                "nbt": "Data.CustomName",
+                "storage": "asset:mob",
+                "interpret": true
+            },
+            {
+                "text": " Lv. "
+            },
+            {
+                "nbt": "Data.Status.lv",
+                "storage": "asset:mob"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "asset:mob"
+        },
+        "ops": [
+            {
+                "source": "Data.NameChar",
+                "target": "NameChar",
+                "op": "replace"
+            }
+        ]
+    }
+]

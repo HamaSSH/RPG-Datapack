@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Data.Items[{Slot:10b}]にあるアイテムのbonus_statusを取得
     execute store result score $HPCombine Temporary run data get storage menu:temp Data.Items[{Slot:10b}].tag.bonus.hp
     execute store result score $MPCombine Temporary run data get storage menu:temp Data.Items[{Slot:10b}].tag.bonus.mp

@@ -2,12 +2,12 @@
     "function": "minecraft:copy_nbt",
     "source": {
         "type": "minecraft:storage",
-        "source": "magic:temp"
+        "source": "magic:"
     },
     "ops": [
         {
-            "source": "gametime",
-            "target": "gametime",
+            "source": "UsedTick",
+            "target": "Magic.UsedTick",
             "op": "replace"
         }
     ]

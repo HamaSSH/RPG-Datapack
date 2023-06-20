@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"Menu\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "menu:inventory/changed/_"
+    }
+  }

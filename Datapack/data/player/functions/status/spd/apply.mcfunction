@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # AttributeModifierリセット(SPD>=0)
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-A
     attribute @s minecraft:generic.movement_speed modifier remove 1-0-0-0-9

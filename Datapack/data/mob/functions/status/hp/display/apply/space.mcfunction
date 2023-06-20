@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # レベル用の空白
     execute if score $Level Temporary matches 1..9 run data modify storage mob:temp Name.Level set value '"\\uF802\\uF808\\uF801\\uF803"'
     execute if score $Level Temporary matches 10..99 run data modify storage mob:temp Name.Level set value '"\\uF802\\uF808\\uF801\\uF803\\uF803"'

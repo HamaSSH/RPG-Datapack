@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # プレイヤーとチェストトロッコの結び付け
     scoreboard players operation @s PlayerID = @p PlayerID
     tag @p add Menu

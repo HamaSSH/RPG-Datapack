@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 落下ダメージ
     scoreboard players operation @s dmg_received = @s fall_distance
     scoreboard players operation @s dmg_received *= #6 Constant

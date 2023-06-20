@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓矢にタグを付ける
     execute unless predicate core:is_sneaking positioned ~ ~1.52 ~ as @e[type=arrow,distance=..0.6] run function combat:main/bow/skill/2/arrow
     execute if predicate core:is_sneaking positioned ~ ~1.16 ~ as @e[type=arrow,distance=..0.2] run function combat:main/bow/skill/2/arrow

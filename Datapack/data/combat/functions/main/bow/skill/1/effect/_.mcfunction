@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 無属性の演出
     particle explosion ~ ~ ~ 0.5 0.5 0.5 1 2 force
     execute if entity @s[tag=NeutralAttack] run particle crit ~ ~ ~ 0.1 0.1 0.1 0 10 force

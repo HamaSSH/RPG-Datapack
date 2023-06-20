@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # フレーバーテキスト
     data modify storage menu:temp NewLore append from storage menu:temp Data.refresh[{Slot:10b}].tag.display.Lore[0]
     data modify storage menu:temp NewLore append from storage menu:temp Data.refresh[{Slot:10b}].tag.display.Lore[1]

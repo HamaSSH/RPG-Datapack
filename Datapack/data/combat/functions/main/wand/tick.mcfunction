@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # クリティカル時のダメージ表示用
     execute if entity @s[tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4
 # Hitタグ付け
@@ -9,7 +13,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#mob:mobs,tag=Enemy,tag=Hit,dx=0] run function combat:main/wand/hit
 # 移動
     tp @s ^ ^ ^1
-    execute if score @s skill_level matches 1.. run function combat:main/wand/homing/_
+    execute if score @s SkillLevel matches 1.. run function combat:main/wand/homing/_
 # 演出(杖通常)
     function combat:main/wand/particle/_
 # リセット

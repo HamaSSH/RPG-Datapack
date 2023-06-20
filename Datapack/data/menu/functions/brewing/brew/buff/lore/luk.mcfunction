@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $LUKBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"luk"}].value
     execute store result score $LUKDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"luk"}].duration

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 弓矢と放ったプレイヤーの紐づけ
     execute store result score @s PlayerID run data get storage combat:temp arrow.PlayerID
     execute store result score @s dmg_dealt run data get storage combat:temp arrow.dmg_dealt

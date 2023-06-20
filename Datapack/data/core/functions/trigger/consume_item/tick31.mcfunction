@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 対応するスロットのアイテムのデータを格納
     execute if entity @s[tag=ConsumeOffhand] run data modify storage core:temp Data set from entity @s Inventory[{Slot:-106b}]
     execute if entity @s[tag=ConsumeMainhand] run data modify storage core:temp Data set from entity @s SelectedItem

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # クールダウン軽減 (CDR)
     scoreboard players set $CDReduction Temporary 1000
     scoreboard players operation $CDReduction Temporary -= @s cdr

@@ -1,12 +1,14 @@
-# 浮きのPlayerID ＝ 釣った人
-    scoreboard players operation $PlayerID Temporary = @s PlayerID
-# チェストの召喚
-    summon armor_stand ~-0.275 ~-1.25 ~-0.275 {DisabledSlots:4144959,Invisible:1b,Tags:["Chest","Top"],ArmorItems:[{},{},{},{id:"minecraft:cod",Count:1b,tag:{CustomModelData:2}}],Pose:{Head:[0.0001f,0.0f,0.0f]}}
-    summon armor_stand ~-0.275 ~-1.25 ~-0.275 {DisabledSlots:4144959,Invisible:1b,Tags:["Chest","Bot"],ArmorItems:[{},{},{},{id:"minecraft:cod",Count:1b,tag:{CustomModelData:3}}],Pose:{Head:[0.0001f,0.0f,0.0f]}}
-# Motionの設定
-    data modify storage item:fishing FishPos set from entity @s Pos
-    execute as @e[type=armor_stand,tag=Chest] run function item:fishing/chest/motion
-# リセット
-    scoreboard players reset $PlayerID Temporary
-    data remove storage item:fishing FishPos
+#> item:fishing/_
+# 釣った魚としての処理
+
+# 拾えないようにする
+    data modify entity @s PickupDelay set value 32767s
+    data modify storage item: Motion set from entity @s Motion
+
+# 抽選
+    loot spawn ~ ~ ~ loot item:fishing/loot
+    execute as @e[type=item,distance=..0] run function item:fishing/loot_table
+
+# 後処理
+    data remove storage item: Motion
     kill @s

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # アイテムを食べようとしている場合スコア加算
     tag @s add this
     scoreboard players add @s ConsumeItem 1

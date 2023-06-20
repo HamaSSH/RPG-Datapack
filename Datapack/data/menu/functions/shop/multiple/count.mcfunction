@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # Countの増減
     execute store result score $Count Temporary run data get entity @s data.buy.Count
     execute unless score $Count Temporary matches 1 run scoreboard players operation $Count Temporary += $AddCount Temporary

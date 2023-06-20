@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $MPRegenBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"mp_regen"}].value
     execute store result score $MPRegenDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"mp_regen"}].duration

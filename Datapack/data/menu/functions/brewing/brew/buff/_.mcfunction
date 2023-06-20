@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # バフの種類ごとに効果加算
     data modify storage menu:temp Data.buff set from storage menu:temp Data.newBuff[0]
     execute if data storage menu:temp Data.buff{bonus:"hp"} run function menu:brewing/brew/buff/hp

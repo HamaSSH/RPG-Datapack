@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ポーションのバフ
     execute store result score $SPDBuff Temporary run data get storage menu:temp Data.potionBuff[{bonus:"spd"}].value
     execute store result score $SPDDuration Temporary run data get storage menu:temp Data.potionBuff[{bonus:"spd"}].duration

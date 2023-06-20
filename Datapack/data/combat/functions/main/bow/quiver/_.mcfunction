@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # もし矢筒を装備していたら弓矢を収納
     function combat:main/bow/quiver/check
     execute if entity @s[tag=Quiver] run function combat:main/bow/quiver/add_score

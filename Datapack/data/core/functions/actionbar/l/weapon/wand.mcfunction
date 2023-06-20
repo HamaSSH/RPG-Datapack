@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 溜め攻撃のチャージ率
     execute if score @s sneak matches ..1 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0A0"}'
     execute if score @s sneak matches 2 run data modify storage actionbar:temp iconL set value '{"text":"\\uE0A1"}'

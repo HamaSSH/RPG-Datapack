@@ -1,9 +1,13 @@
+##########
+#>
+#
+
 # バフを受けるプレイヤーをタグ付け
     tag @s add this
 # バフmarkerの召喚
     summon marker ~ ~ ~ {Tags:["BuffInit","MobBuff"]}
 # バフの重複防止
-    execute as @e[type=marker,tag=!BuffInit] if score @s MobID = @e[tag=Enemy,tag=this,limit=1] MobID run function mob:buff/manager/compare
+    execute as @e[type=marker,tag=!BuffInit] if score @s MobUUID = @e[tag=Enemy,tag=this,limit=1] MobUUID run function mob:buff/manager/compare
 # markerの初期処理
     data modify storage mob:temp Data.buff set from storage mob:temp Data.newBuff[0]
     execute as @e[type=marker,tag=BuffInit,limit=1] run function mob:buff/manager/init

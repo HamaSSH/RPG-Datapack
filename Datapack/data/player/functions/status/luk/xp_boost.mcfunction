@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 獲得経験値UP計算式 → xp_gained = xp_gained * (100 + luk/4) / 100
 # = xp_gained * (luk + 400) / 400
     scoreboard players operation $XPBoost Temporary = @s luk

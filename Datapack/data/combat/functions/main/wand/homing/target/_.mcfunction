@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ホーミングする敵の特定
     execute positioned ^ ^ ^10 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..10] run tag @s add Target
 # Rotationの誤差±5度以上の敵はタグ剥奪

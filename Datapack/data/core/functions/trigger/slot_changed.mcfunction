@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # ステータスのアップデート
     function player:status/update/_
 # スニークスコアのリセット

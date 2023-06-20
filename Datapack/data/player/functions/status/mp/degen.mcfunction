@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # MPを減算
     scoreboard players operation $MPDegen Temporary = @s mp_regen_timer
     scoreboard players operation $MPDegen Temporary /= #2000 Constant

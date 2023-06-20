@@ -1,18 +1,22 @@
+##########
+#>
+#
+
 # レベルアップ前のステータス情報を保存
     scoreboard players operation $PreviousLevel Temporary = @s level
-    scoreboard players operation $PreviousSkillLevel Temporary = @s skill_level
+    scoreboard players operation $PreviousSkillLevel Temporary = @s SkillLevel
     # ステータススコア
-        scoreboard players operation $PreviousHP Temporary = @s hp_base
-        scoreboard players operation $PreviousMP Temporary = @s mp_base
-        scoreboard players operation $PreviousHPRegen Temporary = @s hp_regen_base
-        scoreboard players operation $PreviousMPRegen Temporary = @s mp_regen_base
-        scoreboard players operation $PreviousAD Temporary = @s ad_base
-        scoreboard players operation $PreviousAP Temporary = @s ap_base
-        scoreboard players operation $PreviousDEX Temporary = @s dex_base
-        scoreboard players operation $PreviousDEF Temporary = @s def_base
-        scoreboard players operation $PreviousSPD Temporary = @s spd_base
-        scoreboard players operation $PreviousCRT Temporary = @s crt_base
-        scoreboard players operation $PreviousLUK Temporary = @s luk_base
+        scoreboard players operation $PreviousHP Temporary = @s BaseHP
+        scoreboard players operation $PreviousMP Temporary = @s BaseMP
+        scoreboard players operation $PreviousHPRegen Temporary = @s BaseHPRegen
+        scoreboard players operation $PreviousMPRegen Temporary = @s BaseMPRegen
+        scoreboard players operation $PreviousAD Temporary = @s BaseAD
+        scoreboard players operation $PreviousAP Temporary = @s BaseAP
+        scoreboard players operation $PreviousDEX Temporary = @s BaseDEX
+        scoreboard players operation $PreviousDEF Temporary = @s BaseDEF
+        scoreboard players operation $PreviousSPD Temporary = @s BaseSPD
+        scoreboard players operation $PreviousCRT Temporary = @s BaseCRT
+        scoreboard players operation $PreviousLUK Temporary = @s BaseLUK
     # 自然回復スコア
         scoreboard players operation $PreviousHPRegenInt Temporary = $PreviousHPRegen Temporary
         scoreboard players operation $PreviousHPRegenInt Temporary /= #100 Constant

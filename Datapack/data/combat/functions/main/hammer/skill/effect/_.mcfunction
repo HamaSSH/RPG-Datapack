@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 無属性の演出
     particle minecraft:explosion ~ ~0.5 ~ 1.0 0.7 1.0 0 10 force
     playsound resource:custom.hammer player @a ~ ~ ~ 0.4 1.0

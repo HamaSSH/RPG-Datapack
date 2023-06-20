@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 麻痺効果
     attribute @s generic.movement_speed modifier add 1-0-0-1-A "Paralize" -1.0 add
 # 演出用buff

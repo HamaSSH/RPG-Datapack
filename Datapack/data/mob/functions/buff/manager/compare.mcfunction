@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 比較先のバフを格納
     data modify storage mob:temp Data.buff set from storage mob:temp Data.newBuff[0]
     data modify storage mob:temp Data.oldBuff set from entity @s data.buff

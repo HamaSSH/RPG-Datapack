@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # タグリセット
     tag @s remove WandTick
     tag @s remove NeutralWandSkill

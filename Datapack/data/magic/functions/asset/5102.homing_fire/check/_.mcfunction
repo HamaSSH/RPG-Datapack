@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # MP、CD条件が通れば魔法発動
     function player:status/cd/check/_
     execute if entity @s[tag=CDCheck] run function player:status/mp/check/_

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 購入メニューの初期化
     data modify entity @s Items set value [{Slot:0b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:1b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:2b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:3b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:4b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:5b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:6b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:7b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:8b,id:"minecraft:gray_stained_glass_pane",Count:1b,tag:{menu:{blank:1b}}},{Slot:17b,id:"minecraft:gold_block",Count:1b,tag:{menu:{blank:1b}}}]
     item modify entity @s container.17 menu:set_gold

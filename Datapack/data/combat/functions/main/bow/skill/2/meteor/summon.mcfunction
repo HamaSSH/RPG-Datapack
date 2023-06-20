@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # メテオライト弓矢
     summon arrow ~ ~ ~ {Tags:["ArrowInit","Arrow"]}
     summon arrow ~ ~ ~ {Tags:["ArrowInit","Arrow"]}

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 無属性の演出
     execute if entity @s[tag=LCArrow] run particle minecraft:crit ~ ~ ~ 0.1 0.1 0.1 0 2 force
 # 属性がある場合の演出

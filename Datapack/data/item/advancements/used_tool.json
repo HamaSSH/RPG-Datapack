@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "item": {
+                    "tag": "minecraft:tools"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "item:collect/used_tool"
+    }
+}

@@ -1,3 +1,7 @@
+##########
+#>
+#
+
 # 無属性の演出
     particle minecraft:sweep_attack ^ ^0.5 ^2 0.7 0.2 0.7 0 10 force
     particle minecraft:sweep_attack ^ ^0.5 ^3.5 0.7 0.2 0.7 0 10 force
