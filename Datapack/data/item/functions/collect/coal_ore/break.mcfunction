@@ -11,6 +11,7 @@
     execute if score @s hp matches 2 run data modify entity @s CustomName set value '[{"text":"█","color":"green"},{"text":"████","color":"dark_gray"}]'
     execute if score @s hp matches 1 run data modify entity @s CustomName set value '[{"text":"█████","color":"dark_gray"}]'
 # ダメージ処理
+    loot spawn ~ ~ ~ loot minecraft:blocks/coal_ore
     scoreboard players remove @s hp 1
 # HPの残量によって分岐
     execute unless score @s hp matches 0 run setblock ~ ~ ~ coal_ore

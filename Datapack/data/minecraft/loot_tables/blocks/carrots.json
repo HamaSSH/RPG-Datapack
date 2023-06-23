@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/loot/1030.carrot/_"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/loot/1030.carrot/_"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ],
+            "conditions": [
+                {
+                    "block": "minecraft:carrots",
+                    "condition": "minecraft:block_state_property",
+                    "properties": {
+                        "age": "7"
+                    }
+                }
+            ]
+        }
+    ]
+}
