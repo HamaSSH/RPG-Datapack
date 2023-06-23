@@ -42,6 +42,8 @@ say reload
     scoreboard objectives add PreviousSPD dummy "SPD値保存"
     scoreboard objectives add GoldDisplay dummy "Gold表示"
     scoreboard objectives add FallDistance dummy "畑荒らし対策"
+    scoreboard objectives add UsingShears dummy "ハサミ長押し"
+    scoreboard objectives add UsingShears2 dummy "ハサミ長押し2"
 
 # タイマー
     scoreboard objectives add Timer dummy "汎用タイマー"

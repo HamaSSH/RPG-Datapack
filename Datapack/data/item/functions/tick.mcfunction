@@ -7,6 +7,10 @@
 # 採集スポット用のMarkerの召喚
     execute as @e[type=armor_stand,tag=CollectMarker] at @s run summon marker ~ ~0.8 ~ {Tags:["CollectMarker"]}
     kill @e[type=armor_stand,tag=CollectMarker]
+
+# ハサミ右クリック長押しやめ検知
+    execute as @a if entity @s[tag=UsingShears] run function item:shears/stop
+
 # アイテム採集の#tick
     execute as @e[type=marker,tag=CollectMarker,distance=..6] at @s run function item:collect/tick
     execute as @e[type=armor_stand,tag=Collect] if data entity @s {PortalCooldown:1} run data modify entity @s CustomNameVisible set value 0b
