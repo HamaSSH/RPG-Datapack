@@ -1,10 +1,10 @@
-#> item:fishing/data/get
+#> item:fishing/data/1017
 # 釣ったアイテムのデータを生成
 
 # データ生成用のデータ取得
-    data modify storage item: zukanData set from block 206 96 533 Items[{tag:{CustomModelData:1001}}].tag
-    execute store result score $MaxSize Temporary run data get storage item: zukanData.Buy
-    execute store result score $MinSize Temporary run data get storage item: zukanData.Sell
+    execute in minecraft:overworld run data modify storage item: zukanData set from block 276 -32 -414 Items[{tag:{CustomModelData:1017}}].tag
+    execute store result score $MaxSize Temporary run data get storage item: zukanData.Fish.Max
+    execute store result score $MinSize Temporary run data get storage item: zukanData.Fish.Min
     execute store result score $Count Temporary run data get storage item: zukanData.Fish.Count
     execute store result score $BiggestRN Temporary run data get storage item: zukanData.Fish.Biggest
 
@@ -45,7 +45,7 @@
     scoreboard players operation $Dec1 Temporary %= #10 Constant
     execute if score $Count Temporary matches 0 run data modify storage item:temp Data.New set value '{"text":" NEW!","bold":true,"color":"#F3E478"}'
     execute if score $RNG Temporary >= $BiggestRN Temporary run data modify storage item:temp Data.Updated set value '{"text":" ‐最大サイズ更新‐","color":"gray"}'
-    tellraw @p [{"text":"\uE403"},{"text":" ハリセンボン x1","bold":true},{"nbt":"Data.New","storage":"item:temp","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Data.Crown","storage":"item:temp","interpret":true},"\uF822",{"score":{"objective":"Temporary","name":"$Int"}},".",{"score":{"objective":"Temporary","name":"$Dec10"}},{"score":{"objective":"Temporary","name":"$Dec1"}},"\uF822cm",{"nbt":"Data.Updated","storage":"item:temp","interpret":true}]
+    tellraw @p [{"text":"\uE402"},{"text":" クマノミ x1","bold":true},{"nbt":"Data.New","storage":"item:temp","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Data.Crown","storage":"item:temp","interpret":true},"\uF822",{"score":{"objective":"Temporary","name":"$Int"}},".",{"score":{"objective":"Temporary","name":"$Dec10"}},{"score":{"objective":"Temporary","name":"$Dec1"}},"\uF822cm",{"nbt":"Data.Updated","storage":"item:temp","interpret":true}]
 
 # 図鑑用アイテムの更新
     summon text_display ~ ~ ~ {text:'[{"score":{"objective":"Temporary","name":"$Int"}},".",{"score":{"objective":"Temporary","name":"$Dec10"}},{"score":{"objective":"Temporary","name":"$Dec1"}}]',UUID:[I; 2106,5308417,0,2]}
@@ -53,7 +53,7 @@
     execute if score $RNG Temporary >= $BiggestRN Temporary run data modify storage item: zukanData.Fish.Size set from entity 83a-51-1-0-2 text
     execute if score $RNG Temporary >= $BiggestRN Temporary run data modify storage item: zukanData.Fish.Crown set from storage item:temp Data.Crown
     execute store result storage item: zukanData.Fish.Count int 1 run scoreboard players add $Count Temporary 1
-    data modify block 206 96 533 Items[{tag:{CustomModelData:1001}}].tag set from storage item: zukanData
+    execute in minecraft:overworld run data modify block 276 -32 -414 Items[{tag:{CustomModelData:1017}}].tag set from storage item: zukanData
 
 # リセット
     scoreboard players reset $MaxSize Temporary

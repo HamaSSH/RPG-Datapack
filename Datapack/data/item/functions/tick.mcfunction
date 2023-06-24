@@ -19,9 +19,9 @@
 # 懐中電灯
     execute as @a if score @s flash_timer matches 0.. at @s run function item:asset/1610/tick
 # 釣り
-    #execute as @e[type=item] at @s if data entity @s Item.tag{fishing:1b} run function item:fishing/chest/_
-    #execute as @e[tag=Chest] at @s if data entity @s {OnGround:1b} run function item:fishing/chest/animation
-    #execute as @e[tag=Top] at @s run function item:fishing/chest/particle
+    execute as @e[type=item] if data entity @s Item.tag.Chest if data entity @s {OnGround:1b} run function item:fishing/chest/on_ground
+    execute as @e[tag=Chest] at @s if data entity @s {OnGround:1b} run function item:fishing/chest/animation
+    execute as @e[tag=Top] at @s run function item:fishing/chest/particle
 
     execute as @e[type=fishing_bobber] if entity @s[tag=!FishingBobber] at @s if block ~ ~ ~ lava run function item:fishing/magma/init
     execute as @e[type=fishing_bobber,tag=FishingBobber] at @s run function item:fishing/magma/bobber
