@@ -5,6 +5,7 @@
 # 初期ステータス
     scoreboard players set @s level 1
     scoreboard players set @s WizardLVL 1
+    scoreboard players set @s WizardXP 1
     scoreboard players set @s SkillLevel 1
     scoreboard players set @s xp 0
     scoreboard players set @s xp_next 50
