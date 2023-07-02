@@ -1,7 +1,0 @@
-##########
-#>
-#
-
-# もし溜め攻撃中であればHurtTime無視
-    execute if entity @a[tag=this,tag=DaggerTick,limit=1] unless score @s HurtTime matches 7.. run function combat:main/hit
-    execute if entity @a[tag=this,tag=!DaggerTick,limit=1] if entity @s[tag=!HurtTime] run function combat:main/hit
