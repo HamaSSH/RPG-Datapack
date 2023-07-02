@@ -9,8 +9,7 @@
 
 # 宝箱が抽選された場合
     execute if data storage item: tag.Chest run data modify entity @s PickupDelay set value 32767s
-    execute if data storage item: tag{Chest:"Gold"} run function item:fishing/chest/_
-    execute if data storage item: tag{Chest:"Weapon"} run say Weapon
+    execute if data storage item: tag.Chest run function item:fishing/chest/_
 
 # 釣った魚のデータを生成
     execute if data storage item: tag{CustomModelData:1015} at @s run function item:fishing/data/1015
