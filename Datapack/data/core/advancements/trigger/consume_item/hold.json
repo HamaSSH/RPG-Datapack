@@ -1,15 +1,15 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item",
+            "trigger": "using_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "minecraft:golden_apple",
-                        "minecraft:enchanted_golden_apple",
-                        "minecraft:beef",
-                        "minecraft:cooked_beef",
-                        "minecraft:potion"
+                        "golden_apple",
+                        "enchanted_golden_apple",
+                        "beef",
+                        "cooked_beef",
+                        "potion"
                     ]
                 }
             }

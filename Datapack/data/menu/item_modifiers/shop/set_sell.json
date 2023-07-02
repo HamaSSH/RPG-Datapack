@@ -1,6 +1,6 @@
 [
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -29,11 +29,11 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:score",
+                    "type": "score",
                     "target": {
-                        "type": "minecraft:fixed",
+                        "type": "fixed",
                         "name": "$TotalSellPrice"
                     },
                     "score": "Temporary"
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -69,13 +69,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:inverted",
+                "condition": "inverted",
                 "term": {
-                    "condition": "minecraft:value_check",
+                    "condition": "value_check",
                     "value": {
-                        "type": "minecraft:score",
+                        "type": "score",
                         "target": {
-                            "type": "minecraft:fixed",
+                            "type": "fixed",
                             "name": "$TotalSellPrice"
                         },
                         "score": "Temporary"

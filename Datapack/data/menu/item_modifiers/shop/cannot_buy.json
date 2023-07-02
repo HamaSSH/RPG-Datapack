@@ -1,10 +1,10 @@
 [
     {
-        "function": "minecraft:set_nbt",
+        "function": "set_nbt",
         "tag": "{menu:{blank:1b,button:\"buy!\"}}"
     },
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "name": {
             "text": "お金が足りない！",
             "color": "#FF4B4B",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [

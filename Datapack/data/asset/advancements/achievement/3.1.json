@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:gold_block"
+            "item": "gold_block"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",
@@ -18,7 +18,7 @@
     "parent": "asset:achievement/_",
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

@@ -10,8 +10,8 @@
         data modify storage asset:mob Data.CustomName set value '{"text":"アーマーゾンビ"}'
         data modify storage asset:mob Data.NameChar set value 7
     # 装備
-        data modify storage asset:mob Data.Head set value {id:"minecraft:iron_helmet",Count:1b}
-        data modify storage asset:mob Data.Chest set value {id:"minecraft:iron_chestplate",Count:1b}
+        data modify storage asset:mob Data.Head set value {id:"iron_helmet",Count:1b}
+        data modify storage asset:mob Data.Chest set value {id:"iron_chestplate",Count:1b}
         data modify storage asset:mob Data.Legs set value {}
         data modify storage asset:mob Data.Feet set value {}
         data modify storage asset:mob Data.Mainhand set value {}

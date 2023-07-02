@@ -1,14 +1,14 @@
 {
-    "condition": "minecraft:any_of",
+    "condition": "any_of",
     "terms": [
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific": {
                     "type": "player",
                     "looking_at": {
-                        "type": "minecraft:chest_minecart",
+                        "type": "chest_minecart",
                         "nbt": "{Tags:[\"MenuInit\"]}",
                         "distance": {
                             "absolute": {
@@ -21,13 +21,13 @@
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific": {
                     "type": "player",
                     "looking_at": {
-                        "type": "minecraft:chest_minecart",
+                        "type": "chest_minecart",
                         "nbt": "{Tags:[\"Open\"]}",
                         "distance": {
                             "absolute": {

@@ -1,10 +1,10 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:item_durability_changed",
+            "trigger": "item_durability_changed",
             "conditions": {
                 "item": {
-                    "tag": "minecraft:tools"
+                    "tag": "tools"
                 }
             }
         }

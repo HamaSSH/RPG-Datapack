@@ -14,9 +14,9 @@
 # 合成元アイテムのLoreを上書き
     function menu:upgrading/combine/modify/lore
 # 演出
-    playsound minecraft:entity.villager.work_weaponsmith master @p ~ ~ ~ 0.8 0.7
-    playsound minecraft:block.anvil.use master @p ~ ~ ~ 0.3 0.9
-    playsound minecraft:block.anvil.place master @p ~ ~ ~ 0.7 1.5
+    playsound entity.villager.work_weaponsmith master @p ~ ~ ~ 0.8 0.7
+    playsound block.anvil.use master @p ~ ~ ~ 0.3 0.9
+    playsound block.anvil.place master @p ~ ~ ~ 0.7 1.5
     scoreboard players set $ButtonClicked Temporary 1
 # リセット
     scoreboard players reset $HPCombine

@@ -4,16 +4,16 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 6,
-                    "name": "minecraft:gold_nugget",
+                    "name": "gold_nugget",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{gold:1b}"
                         },
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 5,
                                 "max": 15
@@ -22,16 +22,16 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 3,
-                    "name": "minecraft:gold_ingot",
+                    "name": "gold_ingot",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{gold:1b}"
                         },
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 3
@@ -40,12 +40,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 1,
-                    "name": "minecraft:gold_block",
+                    "name": "gold_block",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{gold:1b}"
                         }
                     ]

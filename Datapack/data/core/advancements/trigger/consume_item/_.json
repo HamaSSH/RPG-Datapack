@@ -1,14 +1,14 @@
 {
     "criteria": {
         "tick0": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         },
         "tick1": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {

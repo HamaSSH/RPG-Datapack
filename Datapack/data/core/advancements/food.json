@@ -1,7 +1,7 @@
 {
     "criteria": {
       "requirement": {
-        "trigger": "minecraft:consume_item"
+        "trigger": "consume_item"
       }
     },
     "rewards": {

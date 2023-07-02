@@ -4,37 +4,37 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1015.cod/_"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1016.spark_salmon/_"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1017.clownfish/_"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1018.pufferfish/_"
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{CustomModelData:1,Chest:\"Gold\"}"
                         }
                     ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{CustomModelData:1,Chest:\"Weapon\"}"
                         }
                     ]

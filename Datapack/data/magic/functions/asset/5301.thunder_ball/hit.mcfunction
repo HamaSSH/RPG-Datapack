@@ -10,7 +10,7 @@
     # execute at @s run particle wax_on ~-0.8 ~-0.8 ~-0.8 0 0 0 0 10 force
     # execute at @s run particle wax_off ~0.8 ~0.8 ~0.8 0 0 0 0 10 force
 # 演出
-    particle minecraft:end_rod ~ ~ ~ 0.1 0.6 0.1 0.02 10 force
-    particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force
-    playsound minecraft:item.firecharge.use master @a ~ ~ ~ 0.4 1.2
-    playsound minecraft:entity.firework_rocket.blast_far master @a ~ ~ ~ 0.7 0.8
+    particle end_rod ~ ~ ~ 0.1 0.6 0.1 0.02 10 force
+    particle explosion ~ ~ ~ 0 0 0 0 1 force
+    playsound item.firecharge.use master @a ~ ~ ~ 0.4 1.2
+    playsound entity.firework_rocket.blast_far master @a ~ ~ ~ 0.7 0.8

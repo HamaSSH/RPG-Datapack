@@ -1,7 +1,7 @@
 {
-    "function": "minecraft:copy_nbt",
+    "function": "copy_nbt",
     "source": {
-        "type": "minecraft:storage",
+        "type": "storage",
         "source": "magic:"
     },
     "ops": [

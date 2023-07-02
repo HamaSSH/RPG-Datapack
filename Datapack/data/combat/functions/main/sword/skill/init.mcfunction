@@ -3,7 +3,7 @@
 #
 
 # 初期処理
-    execute if score @s ThunderAttack matches 1.. run playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2
+    execute if score @s ThunderAttack matches 1.. run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 2
 # ループ処理
     tag @s add SwordTick
 # クールダウン

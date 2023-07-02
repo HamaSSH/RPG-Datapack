@@ -4,7 +4,7 @@
 
 # 幸運ステータス補正
     execute if score @s luk matches 1.. run function player:status/luk/xp_boost
-    playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
+    playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
 # 職業XP保存
     execute if entity @s[team=Assassin] run scoreboard players operation @s AssassinXP += @s xp_gained
     execute if entity @s[team=Fighter] run scoreboard players operation @s FighterXP += @s xp_gained

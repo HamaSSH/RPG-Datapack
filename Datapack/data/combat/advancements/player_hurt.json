@@ -1,7 +1,7 @@
 {
     "criteria": {
         "MobID8.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -11,7 +11,7 @@
             }
         },
         "MobID8.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -21,7 +21,7 @@
             }
         },
         "MobID7.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -31,7 +31,7 @@
             }
         },
         "MobID7.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -41,7 +41,7 @@
             }
         },
         "MobID6.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -51,7 +51,7 @@
             }
         },
         "MobID6.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -61,7 +61,7 @@
             }
         },
         "MobID5.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -71,7 +71,7 @@
             }
         },
         "MobID5.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -81,7 +81,7 @@
             }
         },
         "MobID4.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -91,7 +91,7 @@
             }
         },
         "MobID4.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -101,7 +101,7 @@
             }
         },
         "MobID3.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -111,7 +111,7 @@
             }
         },
         "MobID3.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -121,7 +121,7 @@
             }
         },
         "MobID2.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -131,7 +131,7 @@
             }
         },
         "MobID2.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -141,7 +141,7 @@
             }
         },
         "MobID1.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -151,7 +151,7 @@
             }
         },
         "MobID1.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -161,7 +161,7 @@
             }
         },
         "MobID0.1": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {
@@ -171,7 +171,7 @@
             }
         },
         "MobID0.0": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "damage": {
                     "source_entity": {

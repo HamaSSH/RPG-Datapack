@@ -1,14 +1,14 @@
 {
     "criteria": {
         "tick0": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         },
         "tick1": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -25,11 +25,11 @@
             }
         },
         "tick2": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -46,11 +46,11 @@
             }
         },
         "tick3": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -67,11 +67,11 @@
             }
         },
         "tick4": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -88,11 +88,11 @@
             }
         },
         "tick5": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -109,11 +109,11 @@
             }
         },
         "tick6": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -130,11 +130,11 @@
             }
         },
         "tick7": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -151,11 +151,11 @@
             }
         },
         "tick8": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -172,11 +172,11 @@
             }
         },
         "tick9": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -193,11 +193,11 @@
             }
         },
         "tick10": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -214,11 +214,11 @@
             }
         },
         "tick11": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -235,11 +235,11 @@
             }
         },
         "tick12": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -256,11 +256,11 @@
             }
         },
         "tick13": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -277,11 +277,11 @@
             }
         },
         "tick14": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -298,11 +298,11 @@
             }
         },
         "tick15": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -319,11 +319,11 @@
             }
         },
         "tick16": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -340,11 +340,11 @@
             }
         },
         "tick17": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -361,11 +361,11 @@
             }
         },
         "tick18": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -382,11 +382,11 @@
             }
         },
         "tick19": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
@@ -403,11 +403,11 @@
             }
         },
         "tick20": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {

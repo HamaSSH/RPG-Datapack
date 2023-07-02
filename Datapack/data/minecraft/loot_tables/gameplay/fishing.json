@@ -1,16 +1,16 @@
 {
-    "type": "minecraft:fishing",
+    "type": "fishing",
     "pools": [
         {
             "rolls": 1,
             "bonus_rolls": 0,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{CustomModelData:1,Fishing:1b}"
                         }
                     ]

@@ -3,7 +3,7 @@
 
 # 共通データの設定
     tag @s add Enemy
-    attribute @s minecraft:generic.max_health base set 1024
+    attribute @s generic.max_health base set 1024
     data modify entity @s Health set value 1024f
 # 装備の設定
     data modify storage asset:mob ArmorItems set value []

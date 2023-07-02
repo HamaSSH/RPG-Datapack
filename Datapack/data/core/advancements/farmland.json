@@ -1,16 +1,16 @@
 {
     "criteria": {
         "y-0": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:location_check",
+                        "condition": "location_check",
                         "offsetY": 0,
                         "predicate": {
                             "block": {
                                 "blocks": [
-                                    "minecraft:farmland"
+                                    "farmland"
                                 ]
                             }
                         }
@@ -19,11 +19,11 @@
             }
         },
         "y-1": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_scores",
+                        "condition": "entity_scores",
                         "entity": "this",
                         "scores": {
                             "FallDistance": {
@@ -33,12 +33,12 @@
                         }
                     },
                     {
-                        "condition": "minecraft:location_check",
+                        "condition": "location_check",
                         "offsetY": -1,
                         "predicate": {
                             "block": {
                                 "blocks": [
-                                    "minecraft:farmland"
+                                    "farmland"
                                 ]
                             }
                         }
@@ -47,11 +47,11 @@
             }
         },
         "y-2": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_scores",
+                        "condition": "entity_scores",
                         "entity": "this",
                         "scores": {
                             "FallDistance": {
@@ -61,12 +61,12 @@
                         }
                     },
                     {
-                        "condition": "minecraft:location_check",
+                        "condition": "location_check",
                         "offsetY": -2,
                         "predicate": {
                             "block": {
                                 "blocks": [
-                                    "minecraft:farmland"
+                                    "farmland"
                                 ]
                             }
                         }

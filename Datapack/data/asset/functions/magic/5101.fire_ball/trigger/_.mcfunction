@@ -7,5 +7,5 @@
     summon area_effect_cloud ~ ~ ~ {Tags:["Magic","MagicInit"],Duration:20}
     execute as @e[type=area_effect_cloud,tag=MagicInit,distance=..0.01,limit=1] run function asset:magic/5101.fire_ball/trigger/init
 # 演出
-    particle minecraft:flame ^ ^0.5 ^0.3 0.1 0.3 0.1 0.04 5 force
-    playsound minecraft:item.firecharge.use master @a ~ ~ ~ 0.8 1.4
+    particle flame ^ ^0.5 ^0.3 0.1 0.3 0.1 0.04 5 force
+    playsound item.firecharge.use master @a ~ ~ ~ 0.8 1.4

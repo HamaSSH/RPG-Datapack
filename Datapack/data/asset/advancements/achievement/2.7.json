@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:barrier"
+            "item": "glass_bottle"
         },
         "title": {
             "text": "\uF80A",
@@ -18,7 +18,7 @@
     "parent": "asset:achievement/2.6",
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

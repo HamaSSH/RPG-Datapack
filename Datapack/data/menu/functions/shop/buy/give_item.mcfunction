@@ -11,5 +11,5 @@
 # 金を払う
     scoreboard players operation @p gold -= $BuyPrice Temporary
 # 演出
-    playsound minecraft:entity.villager.yes master @p ~ ~ ~ 1 1.1
-    playsound minecraft:entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5
+    playsound entity.villager.yes master @p ~ ~ ~ 1 1.1
+    playsound entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5

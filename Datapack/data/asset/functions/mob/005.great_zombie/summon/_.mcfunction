@@ -14,7 +14,7 @@
         data modify storage asset:mob Data.Chest set value {}
         data modify storage asset:mob Data.Legs set value {}
         data modify storage asset:mob Data.Feet set value {}
-        data modify storage asset:mob Data.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:2201}}
+        data modify storage asset:mob Data.Mainhand set value {id:"carrot_on_a_stick",Count:1b,tag:{CustomModelData:2201}}
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
         data modify storage asset:mob Data.Status.lv set value 8

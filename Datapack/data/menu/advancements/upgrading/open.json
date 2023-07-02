@@ -1,10 +1,10 @@
 {
     "criteria": {
         "open_menu": {
-            "trigger": "minecraft:player_interacted_with_entity",
+            "trigger": "player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:chest_minecart",
+                    "type": "chest_minecart",
                     "nbt": "{Tags:[\"MenuInit\",\"Upgrading\"]}"
                 }
             }

@@ -2,7 +2,7 @@
 # 釣ったアイテムのデータを生成
 
 # データ生成用のデータ取得
-    execute in minecraft:overworld run data modify storage item: zukanData set from block 276 -32 -414 Items[{tag:{CustomModelData:1019}}].tag
+    execute in overworld run data modify storage item: zukanData set from block 276 -32 -414 Items[{tag:{CustomModelData:1019}}].tag
     execute store result score $MaxSize Temporary run data get storage item: zukanData.Fish.Max
     execute store result score $MinSize Temporary run data get storage item: zukanData.Fish.Min
     execute store result score $Count Temporary run data get storage item: zukanData.Fish.Count
@@ -53,7 +53,7 @@
     execute if score $RNG Temporary >= $BiggestRN Temporary run data modify storage item: zukanData.Fish.Size set from entity 83a-51-1-0-2 text
     execute if score $RNG Temporary >= $BiggestRN Temporary run data modify storage item: zukanData.Fish.Crown set from storage item:temp Data.Crown
     execute store result storage item: zukanData.Fish.Count int 1 run scoreboard players add $Count Temporary 1
-    execute in minecraft:overworld run data modify block 276 -32 -414 Items[{tag:{CustomModelData:1019}}].tag set from storage item: zukanData
+    execute in overworld run data modify block 276 -32 -414 Items[{tag:{CustomModelData:1019}}].tag set from storage item: zukanData
 
 # リセット
     scoreboard players reset $MaxSize Temporary

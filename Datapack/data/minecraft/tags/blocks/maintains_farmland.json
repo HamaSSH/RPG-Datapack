@@ -1,5 +1,6 @@
 {
     "values": [
+        "#lib:air",
         "pumpkin_stem",
         "attached_pumpkin_stem",
         "melon_stem",
@@ -10,9 +11,6 @@
         "torchflower_crop",
         "torchflower",
         "pitcher_crop",
-        "wheat",
-        "air",
-        "cave_air",
-        "void_air"
+        "wheat"
     ]
 }

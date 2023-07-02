@@ -17,7 +17,7 @@
 # 自然・エフェクトダメージ
     execute unless data entity @s {FallDistance:0.0f} store result score @s fall_distance run data get entity @s FallDistance
     execute if data entity @s {OnGround:1b} if score @s fall_distance matches 3.. run function mob:on_hurt/natural/fall
-    execute if data entity @s {HurtTime:9s} if predicate core:is_on_fire run function mob:on_hurt/natural/fire
+    execute if data entity @s {HurtTime:9s} if predicate lib:is_on_fire run function mob:on_hurt/natural/fire
     execute if data entity @s {HurtTime:10s} if predicate mob:on_hurt/poison run function mob:on_hurt/natural/poison
 
     #execute if entity @s[type=spider] run function mob:asset/000.spider/ai/tick

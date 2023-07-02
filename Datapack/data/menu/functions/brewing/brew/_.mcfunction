@@ -51,9 +51,9 @@
     execute store result score $Count Temporary run data get storage menu:temp Data.refresh[{Slot:12b}].Count
     execute store result storage menu:temp Data.refresh[{Slot:12b}].Count byte 0.999 run scoreboard players get $Count Temporary
 # クラフトポーション完成
-    data modify storage menu:temp Data.done append value {Count:1b,Slot:14b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
-    execute if score $BrewIngredients Temporary matches 2.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:15b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
-    execute if score $BrewIngredients Temporary matches 3.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:16b,id:"minecraft:potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    data modify storage menu:temp Data.done append value {Count:1b,Slot:14b,id:"potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    execute if score $BrewIngredients Temporary matches 2.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:15b,id:"potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
+    execute if score $BrewIngredients Temporary matches 3.. run data modify storage menu:temp Data.done append value {Count:1b,Slot:16b,id:"potion",tag:{consumable:1b,potion:1b,HideFlags:127,display:{Name:'{"text":"クラフトポーション","italic":false}'}}}
     # Lore バフ情報 ポーションの色
         function menu:brewing/brew/buff/lore/_
         data modify storage menu:temp Data.done[].tag.display.Lore set from storage menu:temp NewLore
@@ -61,9 +61,9 @@
         data modify storage menu:temp Data.done[].tag.CustomPotionColor set from storage menu:temp Data.color
 # 演出
     scoreboard players set $ButtonClicked Temporary 1
-    playsound minecraft:block.brewing_stand.brew master @p ~ ~ ~ 0.4 0.9
-    playsound minecraft:block.bubble_column.upwards_inside master @p ~ ~ ~ 1 2
-    playsound minecraft:item.firecharge.use master @p ~ ~ ~ 0.25 1.3
+    playsound block.brewing_stand.brew master @p ~ ~ ~ 0.4 0.9
+    playsound block.bubble_column.upwards_inside master @p ~ ~ ~ 1 2
+    playsound item.firecharge.use master @p ~ ~ ~ 0.25 1.3
 # リセット
     scoreboard players reset $RGB1
     scoreboard players reset $RGB2

@@ -2,7 +2,7 @@
 # 釣り竿を右クリック不能にする
 
 # 釣り竿 → ニンジン付きの棒
-    data modify storage item: Data.id set value "minecraft:carrot_on_a_stick"
+    data modify storage item: Data.id set value "carrot_on_a_stick"
     data modify storage item: Data.tag.Damage set value 25
 
 # アイテムをプレイヤーに渡す

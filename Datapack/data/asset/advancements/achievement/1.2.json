@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:fishing_rod"
+            "item": "fishing_rod"
         },
         "title": {
             "text": "\uF824釣りマスター\uF829",
@@ -18,7 +18,7 @@
     "parent": "asset:achievement/1.1",
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

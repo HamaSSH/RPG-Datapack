@@ -4,13 +4,13 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1001.rock_shard/_"
                 }
             ],
             "functions": [
                 {
-                    "function": "minecraft:set_count",
+                    "function": "set_count",
                     "count": {
                         "min": 1,
                         "max": 2
@@ -22,17 +22,17 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "name": "asset:item/loot/1002.rock/_"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 1,
                     "name": "asset:item/loot/1003.iron_shard/_",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 1,
                                 "max": 2

@@ -1,11 +1,11 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item",
+            "trigger": "using_item",
             "conditions": {
                 "item": {
                     "items": [
-                        "minecraft:brush"
+                        "brush"
                     ],
                     "nbt": "{tool:\"shear\"}"
                 }

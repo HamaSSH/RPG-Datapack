@@ -4,13 +4,13 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1027.sweet_berries/_"
                 }
             ],
             "functions": [
                 {
-                    "function": "minecraft:set_count",
+                    "function": "set_count",
                     "count": {
                         "min": 1,
                         "max": 2

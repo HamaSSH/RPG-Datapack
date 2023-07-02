@@ -1,10 +1,10 @@
 {
-    "condition": "minecraft:entity_properties",
+    "condition": "entity_properties",
     "entity": "this",
     "predicate": {
         "location": {
             "fluid": {
-                "tag": "minecraft:lava"
+                "tag": "lava"
             }
         }
     }

@@ -1,11 +1,11 @@
 {
-    "type": "minecraft:block",
+    "type": "block",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1029.potato/_"
                 }
             ]
@@ -14,13 +14,13 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1029.potato/_"
                 }
             ],
             "functions": [
                 {
-                    "function": "minecraft:set_count",
+                    "function": "set_count",
                     "count": {
                         "min": 1,
                         "max": 2
@@ -29,8 +29,8 @@
             ],
             "conditions": [
                 {
-                    "block": "minecraft:potatoes",
-                    "condition": "minecraft:block_state_property",
+                    "block": "potatoes",
+                    "condition": "block_state_property",
                     "properties": {
                         "age": "7"
                     }

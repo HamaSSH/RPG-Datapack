@@ -1,6 +1,6 @@
 [
     {
-        "condition": "minecraft:entity_properties",
+        "condition": "entity_properties",
         "entity": "this",
         "predicate": {
             "equipment": {
@@ -20,9 +20,9 @@
         }
     },
     {
-        "condition": "minecraft:inverted",
+        "condition": "inverted",
         "term": {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "nbt": "{Tags:[\"DaggerSkill\"]}"
