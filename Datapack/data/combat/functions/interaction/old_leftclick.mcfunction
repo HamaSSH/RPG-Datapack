@@ -22,8 +22,8 @@
     tag @s remove Block
 
 # 没(コリジョン無しブロックの中からの左クリック検知不可): ^^^3のVex
-    #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^3 positioned ~-1 ~-1 ~-1 if entity @e[type=#mob:mobs,tag=Enemy,dx=1,dy=1,dz=1,limit=1] positioned ~1 ~1 ~1 run summon vex ~ ~-0.4 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
-    #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^3 positioned ~-1 ~-1 ~-1 if entity @e[type=#mob:mobs,tag=Enemy,dx=1,dy=1,dz=1,limit=1] positioned ~1 ~1 ~1 run summon vex ~ ~-1.2 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+    #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^3 positioned ~-1 ~-1 ~-1 if entity @e[type=#lib:every_mob,tag=Enemy,dx=1,dy=1,dz=1,limit=1] positioned ~1 ~1 ~1 run summon vex ~ ~-0.4 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
+    #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^3 positioned ~-1 ~-1 ~-1 if entity @e[type=#lib:every_mob,tag=Enemy,dx=1,dy=1,dz=1,limit=1] positioned ~1 ~1 ~1 run summon vex ~ ~-1.2 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
 # 没(フルブロックに埋まった際、左クリック検知不可→解決したがVexでいい): パンダ
     #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ run summon panda ~ ~-0.7 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}
     #execute unless entity @s[tag=DisableLC] anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #combat:air positioned ^ ^ ^0.5 if block ~ ~ ~ #combat:air positioned as @s anchored eyes positioned ^ ^ ^1 run summon panda ~ ~-0.7 ~ {PortalCooldown:1,Silent:1b,Team:"NoCollision",NoAI:1b,Health:1000f,Tags:["LeftClick"],Attributes:[{Name:"generic.max_health",Base:1000}]}

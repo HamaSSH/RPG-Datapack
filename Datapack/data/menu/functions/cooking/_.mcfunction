@@ -11,7 +11,7 @@
     data remove storage menu:temp Data.return[{tag:{Menu:{Cookable:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     execute unless data storage menu:temp Data.Items[{Slot:13b,tag:{menu:{button:"cook"}}}] run function menu:cooking/cook/check
 # メニュー更新
     execute positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:cooking/refresh

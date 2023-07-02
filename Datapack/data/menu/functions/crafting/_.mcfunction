@@ -7,7 +7,7 @@
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ページごとのボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     scoreboard players add @s page 0
     execute if score @s page matches 0 run function menu:crafting/page
     execute if score @s page matches 100..199 run function menu:crafting/weapon/page

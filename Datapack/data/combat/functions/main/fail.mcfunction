@@ -11,11 +11,9 @@
         function mob:status/def/apply
         # function combat:damage/blur
     execute at @s run function mob:on_hurt/dmg_received
-# 被ダメージ時の赤演出＆死なないように回復
-    execute if entity @s[type=#mob:undead] run effect give @s instant_health 1 1
-    execute if entity @s[type=#mob:undead] run effect give @s instant_damage 1 10
-    execute if entity @s[type=#mob:normal] run effect give @s instant_damage 1 1
-    execute if entity @s[type=#mob:normal] run effect give @s instant_health 1 10
+# 被ダメージ時の赤演出
+    effect give @s[type=#lib:undead] instant_health
+    effect give @s[type=!#lib:undead] instant_damage
 # 無敵時間
     tag @s add HurtTime
     scoreboard players set @s HurtTime 10

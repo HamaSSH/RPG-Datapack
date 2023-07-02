@@ -15,7 +15,7 @@
     execute store success score $ItemsChanged Temporary run data modify entity @s data.Upgrade set from storage menu:temp Data.Items[{Slot:10b}].tag.AttributeModifiers[0].UUID
     execute if score @s page matches 2 if score $ItemsChanged Temporary matches 1 run function menu:upgrading/combine/swapped_item
 # ページごとのボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     scoreboard players add @s page 0
     execute if score @s page matches 0 run function menu:upgrading/page
     execute if score @s page matches 1 run function menu:upgrading/evolve/page

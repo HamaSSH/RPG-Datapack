@@ -15,7 +15,7 @@
     execute at @a run function item:tick
     execute as @e[tag=Magic] at @s run function magic:tick
     execute as @a at @s run function menu:tick
-    execute as @e[type=#mob:mobs,tag=Enemy] at @s run function mob:tick
+    execute as @e[type=#lib:every_mob,tag=Enemy] at @s run function mob:tick
     execute as @e[tag=AssetMob] at @s run function mob:manager/tick
     execute as @a at @s run function player:tick
     execute as @a at @s run function npc:tick

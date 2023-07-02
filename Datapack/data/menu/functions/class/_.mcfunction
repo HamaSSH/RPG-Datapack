@@ -7,7 +7,7 @@
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     execute unless data storage menu:temp Data.Items[{Slot:10b,tag:{menu:{button:"assassin"}}}] as @p run function player:class/assassin/join
     execute unless data storage menu:temp Data.Items[{Slot:11b,tag:{menu:{button:"fighter"}}}] as @p run function player:class/fighter/join
     execute unless data storage menu:temp Data.Items[{Slot:12b,tag:{menu:{button:"knight"}}}] as @p run function player:class/knight/join

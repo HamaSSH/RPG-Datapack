@@ -9,7 +9,7 @@
 # 商品のデータ → storage
     data modify storage menu:temp Data.Goods set from entity @s data.goods
 # ページごとのボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     scoreboard players add @s page 0
     execute if score @s page matches 0 run function menu:shop/page
     execute if score @s page matches 1 run function menu:shop/sell/page

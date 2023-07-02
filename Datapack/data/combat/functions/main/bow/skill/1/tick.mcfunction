@@ -11,7 +11,7 @@
     scoreboard players set $YPower Temporary 300
 # 当たり判定
     tag @s add this
-    execute positioned ~ ~-1.18 ~ as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..2] run function combat:main/bow/skill/hit
+    execute positioned ~ ~-1.18 ~ as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,distance=..2] run function combat:main/bow/skill/hit
 # 演出(弓溜め1)
     function combat:main/bow/skill/1/effect/_
 # 着弾したらkill

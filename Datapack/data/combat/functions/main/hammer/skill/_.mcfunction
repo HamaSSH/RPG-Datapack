@@ -12,7 +12,7 @@
     scoreboard players set $XPower Temporary 50
     scoreboard players set $YPower Temporary 200
 # 当たり判定
-    execute as @e[type=#mob:mobs,tag=Enemy,distance=..5] run function combat:main/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,distance=..5] run function combat:main/hit
 # 演出(ハンマー溜め)
     function combat:main/hammer/skill/effect/_
 # リセット
