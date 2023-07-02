@@ -17,8 +17,8 @@
 # プレイヤーにアイテムを戻す
     data remove block 0 0 0 Items
     data modify block 0 0 0 Items append from storage core:temp Data
-    execute if entity @s[tag=ConsumeOffhand] run loot replace entity @s weapon.offhand 1 mine 0 0 0 barrier
-    execute if entity @s[tag=ConsumeMainhand] run loot replace entity @s weapon.mainhand 1 mine 0 0 0 barrier
+    execute if entity @s[tag=ConsumeOffhand] run loot replace entity @s weapon.offhand 1 mine 0 0 0 debug_stick
+    execute if entity @s[tag=ConsumeMainhand] run loot replace entity @s weapon.mainhand 1 mine 0 0 0 debug_stick
 # アイテムの情報をmarkerに受け渡す
     summon marker 0 0 0 {Tags:["ConsumeTempInit","ConsumeTemp"]}
     execute positioned 0 0 0 as @e[type=marker,tag=ConsumeTempInit,distance=..0.01,limit=1] run function core:trigger/consume_item/store_data

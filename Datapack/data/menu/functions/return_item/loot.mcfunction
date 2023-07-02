@@ -10,8 +10,8 @@
     execute if data storage menu:temp Inventory[{Slot:102b}] run scoreboard players remove $Inventory Temporary 1
     execute if data storage menu:temp Inventory[{Slot:103b}] run scoreboard players remove $Inventory Temporary 1
     execute if data storage menu:temp Inventory[{Slot:-106b}] run scoreboard players remove $Inventory Temporary 1
-    execute if score $Inventory Temporary matches ..35 run loot give @p mine 0 0 0 barrier
-    execute if score $Inventory Temporary matches 36.. run loot spawn ~ ~ ~ mine 0 0 0 barrier
+    execute if score $Inventory Temporary matches ..35 run loot give @p mine 0 0 0 debug_stick
+    execute if score $Inventory Temporary matches 36.. run loot spawn ~ ~ ~ mine 0 0 0 debug_stick
 # リセット
     data remove storage menu:temp Inventory
     scoreboard players reset $Inventory

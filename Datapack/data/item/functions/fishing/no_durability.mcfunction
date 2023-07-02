@@ -8,4 +8,4 @@
 # アイテムをプレイヤーに渡す
     data remove block 0 0 0 Items
     data modify block 0 0 0 Items append from storage item: Data
-    loot replace entity @s weapon.mainhand 1 mine 0 0 0 barrier
+    loot replace entity @s weapon.mainhand 1 mine 0 0 0 debug_stick
