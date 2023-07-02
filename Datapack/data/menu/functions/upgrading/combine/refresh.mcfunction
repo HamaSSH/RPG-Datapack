@@ -7,4 +7,4 @@
 # 既にスロットに入っていたアイテムはそのまま
     data modify entity @s Items append from storage menu:temp Data.refresh[]
 # 合成素材の表示
-    data modify entity @s Items append from entity @s Items[{Slot:10b}].tag.menu.combine[]
+    data modify entity @s Items append from entity @s Items[{Slot:10b}].tag.Menu.Combine[]
