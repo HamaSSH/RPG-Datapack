@@ -4,11 +4,11 @@
             "item": "minecraft:emerald_block"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "百万長者\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "累計で1000000G取得する"
         },
         "frame": "task",
         "show_toast": true,

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "asset:item/loot/1025.apple/_"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "asset:item/loot/1026.golden_apple/_"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.05
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:brush"
+                    ],
+                    "nbt": "{tool:\"shear\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "item:shears/using"
+    }
+}

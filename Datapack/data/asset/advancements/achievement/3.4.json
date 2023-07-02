@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:sweet_berries"
+            "item": "minecraft:potion"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "はじめてのドーピング\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "クラフトポーションを飲む"
         },
         "frame": "task",
         "show_toast": true,

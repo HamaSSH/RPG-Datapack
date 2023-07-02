@@ -5,7 +5,7 @@
             "nbt": "{CustomModelData:1011}"
         },
         "title": {
-            "text": "\uF829ここにタイトルを入力",
+            "text": "\uF829ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {

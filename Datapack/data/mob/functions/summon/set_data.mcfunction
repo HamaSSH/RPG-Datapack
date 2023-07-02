@@ -17,6 +17,7 @@
 # 名前と装備の適用
     function mob:summon/set_name
     data modify entity @s ArmorItems set from storage asset:mob ArmorItems
+    data modify entity @s HandItems set from storage asset:mob HandItems
 # ステータススコア
     execute store result score @s MobID run data get storage asset:mob Data.MobID
     execute store result score @s level run data get storage asset:mob Data.Status.lv
