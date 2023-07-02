@@ -1,9 +1,0 @@
-{
-    "description": "Huge(? Other) Mobs",
-    "values": [
-        "minecraft:ender_dragon",
-        "minecraft:ghast",
-        "minecraft:giant",
-        "minecraft:wither"
-    ]
-}
