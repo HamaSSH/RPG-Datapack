@@ -1,8 +1,8 @@
 [
     {
-        "condition": "minecraft:inverted",
+        "condition": "inverted",
         "term": {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "equipment": {
@@ -14,13 +14,13 @@
         }
     },
     {
-        "condition": "minecraft:entity_properties",
+        "condition": "entity_properties",
         "entity": "this",
         "predicate": {
             "equipment": {
                 "mainhand": {
                     "items": [
-                        "minecraft:carrot_on_a_stick"
+                        "carrot_on_a_stick"
                     ],
                     "nbt": "{equipment:\"helmet\"}"
                 }

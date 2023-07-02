@@ -12,7 +12,7 @@
     scoreboard players set $XPower Temporary 100
     scoreboard players set $YPower Temporary 100
 # 当たり判定
-    execute as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,distance=..4] positioned ^3 ^ ^2.5 if entity @s[distance=..5] positioned ^-6 ^ ^ if entity @s[distance=..5] run function combat:main/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,distance=..4] positioned ^3 ^ ^2.5 if entity @s[distance=..5] positioned ^-6 ^ ^ if entity @s[distance=..5] run function combat:main/hit
 # 演出(刀剣溜め)
     function combat:main/sword/skill/effect/_
     scoreboard players reset $DmgDealt

@@ -1,15 +1,15 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:entity_hurt_player",
+            "trigger": "entity_hurt_player",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "effects": {
-                                "minecraft:poison": {}
+                                "poison": {}
                             }
                         }
                     }

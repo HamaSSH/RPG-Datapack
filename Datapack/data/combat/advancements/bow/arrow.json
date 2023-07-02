@@ -1,12 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
                         "items": [
-                            "minecraft:arrow"
+                            "arrow"
                         ],
                         "nbt": "{arrow:1b}"
                     }

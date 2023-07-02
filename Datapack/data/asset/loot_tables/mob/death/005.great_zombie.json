@@ -7,7 +7,7 @@
             },
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1020.rotten_flesh/_"
                 }
             ]

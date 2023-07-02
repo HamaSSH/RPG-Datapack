@@ -17,4 +17,4 @@
     data modify entity @s data.buy set from storage menu:temp Data.buy
 # 演出
     scoreboard players set $ButtonClicked Temporary 1
-    playsound minecraft:entity.villager.ambient master @p ~ ~ ~ 1 1
+    playsound entity.villager.ambient master @p ~ ~ ~ 1 1

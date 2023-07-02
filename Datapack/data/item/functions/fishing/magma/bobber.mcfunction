@@ -15,4 +15,4 @@
     execute if entity @s[tag=GameStart] run function item:fishing/magma/game/tick
 
 # 針が地面に引っかかっちゃった！→ kill
-    execute unless entity @e[type=minecraft:item,distance=..1,limit=1] run kill @s
+    execute unless entity @e[type=item,distance=..1,limit=1] run kill @s

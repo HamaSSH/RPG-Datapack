@@ -1,11 +1,11 @@
 {
-    "type": "minecraft:block",
+    "type": "block",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1023.oak_log/_"
                 }
             ]
@@ -14,13 +14,13 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1024.stick/_"
                 }
             ],
             "functions": [
                 {
-                    "function": "minecraft:set_count",
+                    "function": "set_count",
                     "count": {
                         "min": 0,
                         "max": 1

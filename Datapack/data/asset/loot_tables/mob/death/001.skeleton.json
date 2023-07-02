@@ -4,13 +4,13 @@
             "rolls": 2,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1037.bone_meal/_"
                 }
             ],
             "conditions": [
                 {
-                    "condition": "minecraft:random_chance",
+                    "condition": "random_chance",
                     "chance": 0.7
                 }
             ]
@@ -22,7 +22,7 @@
             },
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "name": "asset:item/loot/1021.fragile_bone/_"
                 }
             ]

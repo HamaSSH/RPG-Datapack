@@ -1,18 +1,16 @@
 {
     "values": [
-        "minecraft:pumpkin_stem",
-        "minecraft:attached_pumpkin_stem",
-        "minecraft:melon_stem",
-        "minecraft:attached_melon_stem",
-        "minecraft:beetroots",
-        "minecraft:carrots",
-        "minecraft:potatoes",
-        "minecraft:torchflower_crop",
-        "minecraft:torchflower",
-        "minecraft:pitcher_crop",
-        "minecraft:wheat",
-        "air",
-        "cave_air",
-        "void_air"
+        "#lib:air",
+        "pumpkin_stem",
+        "attached_pumpkin_stem",
+        "melon_stem",
+        "attached_melon_stem",
+        "beetroots",
+        "carrots",
+        "potatoes",
+        "torchflower_crop",
+        "torchflower",
+        "pitcher_crop",
+        "wheat"
     ]
 }

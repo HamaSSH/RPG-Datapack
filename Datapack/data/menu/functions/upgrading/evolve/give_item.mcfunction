@@ -9,9 +9,9 @@
 # プレイヤーのインベントリ状況に応じてgiveかspawnかを決定
     function menu:return_item/loot
 # 演出
-    playsound minecraft:block.anvil.place master @p ~ ~ ~ 0.9 1.5
-    playsound minecraft:block.anvil.destroy master @p ~ ~ ~ 0.7 0.7
-    playsound minecraft:block.anvil.use master @p ~ ~ ~ 0.6
+    playsound block.anvil.place master @p ~ ~ ~ 0.9 1.5
+    playsound block.anvil.destroy master @p ~ ~ ~ 0.7 0.7
+    playsound block.anvil.use master @p ~ ~ ~ 0.6
 # 強化元のアイテムを削除
     data remove storage menu:temp Data.refresh[{Slot:10b}]
 # ホームページ(0)へ戻る

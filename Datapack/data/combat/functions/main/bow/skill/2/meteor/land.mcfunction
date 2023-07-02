@@ -11,7 +11,7 @@
     scoreboard players set $YPower Temporary 100
 # 当たり判定
     tag @s add this
-    execute positioned ~ ~-1.18 ~ as @e[type=#mob:mobs,tag=Enemy,distance=..3] run function combat:main/bow/skill/hit
+    execute positioned ~ ~-1.18 ~ as @e[type=#lib:every_mob,tag=Enemy,distance=..3] run function combat:main/bow/skill/hit
 # 演出(弓溜め2)
     particle explosion ~ ~ ~ 0.5 0.5 0.5 1 3 force
     playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.3 0.8

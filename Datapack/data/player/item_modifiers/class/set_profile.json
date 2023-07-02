@@ -1,6 +1,6 @@
 [
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "entity": "this",
         "name": [
             {
@@ -13,7 +13,7 @@
         ]
     },
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "entity": "this",
         "name": [
             {
@@ -26,11 +26,11 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:score",
+                    "type": "score",
                     "target": {
-                        "type": "minecraft:fixed",
+                        "type": "fixed",
                         "name": "$Class"
                     },
                     "score": "Temporary"
@@ -40,7 +40,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [

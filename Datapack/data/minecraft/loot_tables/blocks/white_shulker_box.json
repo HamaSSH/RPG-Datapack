@@ -1,36 +1,36 @@
 {
-    "type": "minecraft:block",
+    "type": "block",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:alternatives",
+                    "type": "alternatives",
                     "children": [
                         {
-                            "type": "minecraft:dynamic",
-                            "name": "minecraft:contents",
+                            "type": "dynamic",
+                            "name": "contents",
                             "conditions": [
                                 {
-                                    "condition": "minecraft:match_tool",
+                                    "condition": "match_tool",
                                     "predicate": {
                                         "items": [
-                                            "minecraft:barrier"
+                                            "debug_stick"
                                         ]
                                     }
                                 }
                             ]
                         },
                         {
-                            "type": "minecraft:item",
-                            "name": "minecraft:white_shulker_box",
+                            "type": "item",
+                            "name": "white_shulker_box",
                             "functions": [
                                 {
-                                    "function": "minecraft:copy_name",
+                                    "function": "copy_name",
                                     "source": "block_entity"
                                 },
                                 {
-                                    "function": "minecraft:copy_nbt",
+                                    "function": "copy_nbt",
                                     "source": "block_entity",
                                     "ops": [
                                         {
@@ -51,12 +51,12 @@
                                     ]
                                 },
                                 {
-                                    "function": "minecraft:set_contents",
-                                    "type": "minecraft:shulker_box",
+                                    "function": "set_contents",
+                                    "type": "shulker_box",
                                     "entries": [
                                         {
-                                            "type": "minecraft:dynamic",
-                                            "name": "minecraft:contents"
+                                            "type": "dynamic",
+                                            "name": "contents"
                                         }
                                     ]
                                 }

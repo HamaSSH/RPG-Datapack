@@ -1,7 +1,7 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:fishing_rod_hooked",
+            "trigger": "fishing_rod_hooked",
             "conditions": {
                 "item": {
                     "nbt": "{MagmaBobber:1b}"

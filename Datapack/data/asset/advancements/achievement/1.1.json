@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:grass_block"
+            "item": "grass_block"
         },
         "title": {
             "text": "冒険のはじまり\uF829",
@@ -18,7 +18,7 @@
     "parent": "asset:achievement/_",
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

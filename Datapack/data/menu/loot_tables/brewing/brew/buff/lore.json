@@ -1,15 +1,15 @@
 {
-    "type": "minecraft:command",
+    "type": "command",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:barrier",
+                    "type": "item",
+                    "name": "barrier",
                     "functions": [
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -70,11 +70,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$HPBuff"
                                         },
                                         "score": "Temporary"
@@ -86,7 +86,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -143,11 +143,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$HPBuff"
                                         },
                                         "score": "Temporary"
@@ -159,7 +159,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -235,11 +235,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$HPRegenBuff"
                                         },
                                         "score": "Temporary"
@@ -251,7 +251,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -327,11 +327,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$HPRegenBuff"
                                         },
                                         "score": "Temporary"
@@ -343,7 +343,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -404,11 +404,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$MPBuff"
                                         },
                                         "score": "Temporary"
@@ -420,7 +420,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -477,11 +477,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$MPBuff"
                                         },
                                         "score": "Temporary"
@@ -493,7 +493,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -569,11 +569,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$MPRegenBuff"
                                         },
                                         "score": "Temporary"
@@ -585,7 +585,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -661,11 +661,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$MPRegenBuff"
                                         },
                                         "score": "Temporary"
@@ -677,7 +677,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -738,11 +738,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$ADBuff"
                                         },
                                         "score": "Temporary"
@@ -754,7 +754,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -811,11 +811,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$ADBuff"
                                         },
                                         "score": "Temporary"
@@ -827,7 +827,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -888,11 +888,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$APBuff"
                                         },
                                         "score": "Temporary"
@@ -904,7 +904,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -961,11 +961,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$APBuff"
                                         },
                                         "score": "Temporary"
@@ -977,7 +977,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1038,11 +1038,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DEXBuff"
                                         },
                                         "score": "Temporary"
@@ -1054,7 +1054,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1111,11 +1111,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DEXBuff"
                                         },
                                         "score": "Temporary"
@@ -1127,7 +1127,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1188,11 +1188,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DEFBuff"
                                         },
                                         "score": "Temporary"
@@ -1204,7 +1204,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1261,11 +1261,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DEFBuff"
                                         },
                                         "score": "Temporary"
@@ -1277,7 +1277,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1338,11 +1338,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$SPDBuff"
                                         },
                                         "score": "Temporary"
@@ -1354,7 +1354,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1411,11 +1411,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$SPDBuff"
                                         },
                                         "score": "Temporary"
@@ -1427,7 +1427,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1488,11 +1488,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$CRTBuff"
                                         },
                                         "score": "Temporary"
@@ -1504,7 +1504,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1561,11 +1561,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$CRTBuff"
                                         },
                                         "score": "Temporary"
@@ -1577,7 +1577,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1638,11 +1638,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$LUKBuff"
                                         },
                                         "score": "Temporary"
@@ -1654,7 +1654,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_lore",
+                            "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 [
@@ -1711,11 +1711,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$LUKBuff"
                                         },
                                         "score": "Temporary"

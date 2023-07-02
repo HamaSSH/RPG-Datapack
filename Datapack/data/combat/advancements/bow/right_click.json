@@ -1,10 +1,10 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:player_interacted_with_entity",
+            "trigger": "player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:interaction",
+                    "type": "interaction",
                     "nbt": "{Tags:[\"LeftClick\"]}"
                 }
             }

@@ -1,6 +1,6 @@
 [
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "entity": "this",
         "name": [
             {
@@ -18,11 +18,11 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:score",
+                    "type": "score",
                     "target": {
-                        "type": "minecraft:fixed",
+                        "type": "fixed",
                         "name": "$Class"
                     },
                     "score": "Temporary"
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "entity": "this",
         "name": [
             {
@@ -43,13 +43,13 @@
         ],
         "conditions": [
             {
-                "condition": "minecraft:inverted",
+                "condition": "inverted",
                 "term": {
-                    "condition": "minecraft:value_check",
+                    "condition": "value_check",
                     "value": {
-                        "type": "minecraft:score",
+                        "type": "score",
                         "target": {
-                            "type": "minecraft:fixed",
+                            "type": "fixed",
                             "name": "$Class"
                         },
                         "score": "Temporary"
@@ -60,7 +60,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -84,7 +84,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -112,11 +112,11 @@
         "replace": true,
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:score",
+                    "type": "score",
                     "target": {
-                        "type": "minecraft:fixed",
+                        "type": "fixed",
                         "name": "$Class"
                     },
                     "score": "Temporary"
@@ -124,11 +124,11 @@
                 "range": 4
             },
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:score",
+                    "type": "score",
                     "target": {
-                        "type": "minecraft:fixed",
+                        "type": "fixed",
                         "name": "$Level"
                     },
                     "score": "Temporary"

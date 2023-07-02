@@ -8,7 +8,7 @@
     scoreboard players operation $MovementSpeed Temporary *= $Multiplier Temporary
     scoreboard players operation $MovementSpeed Temporary /= #100 Constant
 # generic.movement_speedに代入
-    execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base double 0.0001 run scoreboard players get $MovementSpeed Temporary
+    execute store result entity @s Attributes[{Name:"generic.movement_speed"}].Base double 0.0001 run scoreboard players get $MovementSpeed Temporary
 
 # リセット
     scoreboard players reset $MovementSpeed

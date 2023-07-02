@@ -7,10 +7,10 @@
 # Hitタグ付け
     tag @s add this
     scoreboard players operation $DmgDealt Temporary = @s dmg_dealt
-    execute positioned ~-0.25 ~-0.25 ~-0.25 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run tag @s add Hit
-    execute positioned ^ ^ ^0.5 positioned ~-0.25 ~-0.25 ~-0.25 as @e[type=#mob:mobs,tag=Enemy,tag=!HurtTime,dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run tag @s add Hit
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#mob:mobs,tag=Enemy,tag=Hit,dx=0,limit=1] run data modify entity @s Age set value 19
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#mob:mobs,tag=Enemy,tag=Hit,dx=0] run function combat:main/wand/hit
+    execute positioned ~-0.25 ~-0.25 ~-0.25 as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run tag @s add Hit
+    execute positioned ^ ^ ^0.5 positioned ~-0.25 ~-0.25 ~-0.25 as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run tag @s add Hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:every_mob,tag=Enemy,tag=Hit,dx=0,limit=1] run data modify entity @s Age set value 19
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,dx=0] run function combat:main/wand/hit
 # 移動
     tp @s ^ ^ ^1
     execute if score @s SkillLevel matches 1.. run function combat:main/wand/homing/_

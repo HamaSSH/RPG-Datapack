@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
+            "item": "carrot_on_a_stick",
             "nbt": "{CustomModelData:2102}"
         },
         "title": {
@@ -19,7 +19,7 @@
     "parent": "asset:achievement/1.2",
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

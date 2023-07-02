@@ -5,7 +5,7 @@
 # スロット0~26
     data remove block 0 0 0 Items
     data modify block 0 0 0 Items set from storage menu:temp Data.NewInv
-    loot replace entity @p hotbar.0 27 mine 0 0 0 barrier
+    loot replace entity @p hotbar.0 27 mine 0 0 0 debug_stick
 # スロット27~35
     data modify storage menu:temp Items set value []
     data modify storage menu:temp Items append from storage menu:temp Data.NewInv[{Slot:27b}]
@@ -27,12 +27,12 @@
     data modify storage menu:temp Items append from storage menu:temp Data.NewInv[{Slot:35b}]
     data modify storage menu:temp Items[{Slot:35b}].Slot set value 8b
     execute if data storage menu:temp Items[0] run data modify block 0 0 0 Items set from storage menu:temp Items
-    execute if data storage menu:temp Items[0] run loot replace entity @p inventory.18 9 mine 0 0 0 barrier
+    execute if data storage menu:temp Items[0] run loot replace entity @p inventory.18 9 mine 0 0 0 debug_stick
 # オフハンド
     data modify storage menu:temp Items set value []
     data modify storage menu:temp Items append from storage menu:temp Data.NewInv[{Slot:-106b}]
     data modify storage menu:temp Items[{Slot:-106b}].Slot set value 0b
     execute if data storage menu:temp Items[0] run data modify block 0 0 0 Items set from storage menu:temp Items
-    execute if data storage menu:temp Items[0] run loot replace entity @p weapon.offhand 1 mine 0 0 0 barrier
+    execute if data storage menu:temp Items[0] run loot replace entity @p weapon.offhand 1 mine 0 0 0 debug_stick
 # リセット
     data remove storage menu:temp Items

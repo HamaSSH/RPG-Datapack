@@ -1,4 +1,4 @@
 {
-    "function": "minecraft:set_nbt",
+    "function": "set_nbt",
     "tag": "{CanDestroy:[]}"
 }

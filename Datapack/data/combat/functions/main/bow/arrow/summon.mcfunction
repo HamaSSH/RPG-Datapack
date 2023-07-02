@@ -9,4 +9,4 @@
     execute positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^3 {Tags:["Knockback"]}
     execute positioned ~ ~100 ~ as @e[type=arrow,tag=ArrowInit,distance=..0] run function combat:main/bow/arrow/init
 # 演出(弓通常)
-    playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 1 1.1
+    playsound entity.arrow.shoot master @a ~ ~ ~ 1 1.1

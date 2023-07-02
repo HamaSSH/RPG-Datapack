@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:barrier"
+            "item": "glass_bottle"
         },
         "title": {
             "text": "\uF80A",
@@ -17,7 +17,7 @@
     },
     "criteria": {
         "requirements": {
-            "trigger": "minecraft:impossible"
+            "trigger": "impossible"
         }
     }
 }

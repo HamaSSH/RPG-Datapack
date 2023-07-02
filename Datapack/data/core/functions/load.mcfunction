@@ -181,7 +181,7 @@ say reload
 
 # forceload
     execute in overworld run forceload add -1 -1 0 0
-    setblock 0 0 0 minecraft:white_shulker_box
+    setblock 0 0 0 white_shulker_box
 
 # 汎用エンティティの召喚 83a-51-1-X-X
     summon marker 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,0]}

@@ -4,11 +4,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:barrier",
+                    "type": "item",
+                    "name": "glass_bottle",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -21,11 +21,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DmgReceived"
                                         },
                                         "score": "Temporary"
@@ -37,7 +37,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -52,11 +52,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DmgReceived"
                                         },
                                         "score": "Temporary"
@@ -66,7 +66,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -81,11 +81,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DamageColor"
                                         },
                                         "score": "Temporary"
@@ -95,7 +95,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -110,11 +110,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DamageColor"
                                         },
                                         "score": "Temporary"
@@ -124,7 +124,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -139,11 +139,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DamageColor"
                                         },
                                         "score": "Temporary"
@@ -153,7 +153,7 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -170,11 +170,11 @@
                             ],
                             "conditions": [
                                 {
-                                    "condition": "minecraft:value_check",
+                                    "condition": "value_check",
                                     "value": {
-                                        "type": "minecraft:score",
+                                        "type": "score",
                                         "target": {
-                                            "type": "minecraft:fixed",
+                                            "type": "fixed",
                                             "name": "$DamageColor"
                                         },
                                         "score": "Temporary"

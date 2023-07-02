@@ -1,10 +1,10 @@
 [
     {
-        "function": "minecraft:set_nbt",
+        "function": "set_nbt",
         "tag": "{CustomModelData:6016,menu:{blank:1b}}"
     },
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "name": {
             "text": "売却不可アイテムがあるぞ",
             "color": "red",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "lore": [],
         "replace": true
     }

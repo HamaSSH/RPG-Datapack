@@ -6,7 +6,7 @@
     tag @s add this
     tag @s add Victim
 # モブの絞り込み
-    execute as @e[type=#mob:mobs,distance=..100] run function combat:player_hurt/8
+    execute as @e[type=#lib:every_mob,distance=..100] run function combat:player_hurt/8
 # リセット
     tag @s remove Victim
     tag @s remove this

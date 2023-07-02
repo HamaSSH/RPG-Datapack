@@ -7,7 +7,7 @@
     data remove storage menu:temp Data.return[{tag:{menu:{blank:1b}}}]
     execute if data storage menu:temp Data.return[] run function menu:return_item/_
 # ページごとのボタンクリック
-    clear @p #item:everything{menu:{blank:1b}}
+    clear @p #lib:every_item{menu:{blank:1b}}
     scoreboard players add @s page 0
     execute if score @s page matches 0 run function menu:crafting/page
     execute if score @s page matches 100..199 run function menu:crafting/weapon/page
@@ -22,7 +22,7 @@
     execute if score @s page matches 300 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:crafting/tool/refresh
     execute if score @s page matches 400 positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run function menu:crafting/others/refresh
 # メニュー内の操作音
-    execute unless score $ButtonClicked Temporary matches 1 run playsound minecraft:ui.button.click master @p ~ ~ ~ 0.3 2.0
+    execute unless score $ButtonClicked Temporary matches 1 run playsound ui.button.click master @p ~ ~ ~ 0.3 2.0
     scoreboard players reset $ButtonClicked
 # 二重更新を防ぐためにメニュー管理マーカー更新
     execute positioned ~ ~-2 ~ as @e[type=chest_minecart,tag=Open,distance=..5] positioned ~ ~2 ~ if score @s PlayerID = @p PlayerID run data modify storage menu:temp Data.Items set from entity @s Items
