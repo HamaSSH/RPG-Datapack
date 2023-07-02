@@ -1,5 +1,5 @@
-#> asset:magic/5101.fire_ball/move/_
-# 魔法の移動時の処理
+#> asset:magic/5000.example/tick/_
+# 魔法のtick時の処理
 
 # 演出
     particle enchant ~ ~ ~ 0.3 0.3 0.3 0 15 force
