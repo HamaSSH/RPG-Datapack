@@ -21,7 +21,9 @@
     execute if score @s HPMax matches 201.. run scoreboard players operation $HPRatio Temporary /= @s HPMax
 
 # HPハートの適用
-
+    execute if score $HPRatio Temporary matches ..16 run function player:status/hp/bar/lv3/0
+    execute if score $HPRatio Temporary matches 17..32 run function player:status/hp/bar/lv3/1
+    execute if score $HPRatio Temporary matches 33.. run function player:status/hp/bar/lv2/4
 
 # リセット
     scoreboard players reset $HPRatio Temporary
