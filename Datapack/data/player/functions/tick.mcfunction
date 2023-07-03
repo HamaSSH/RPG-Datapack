@@ -4,3 +4,6 @@
 # バニラ要素から一切のダメージを受けない
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
+
+# ステータスごとの処理
+    function player:status/hp/_
