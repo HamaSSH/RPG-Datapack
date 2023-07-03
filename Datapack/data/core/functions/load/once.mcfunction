@@ -42,6 +42,7 @@
         scoreboard objectives add LVL dummy "レベル"
         scoreboard objectives add EXP dummy "経験値"
         # システム
+            scoreboard objectives add PreviousMP dummy "MPの値保存"
             scoreboard objectives add NextEXP dummy "必要経験値"
             scoreboard objectives add Gold dummy "ゴールド"
             scoreboard objectives add HPRatio dummy "HP割合"

@@ -7,3 +7,4 @@
 
 # ステータスごとの処理
     function player:status/hp/_
+    function player:status/mp/_
