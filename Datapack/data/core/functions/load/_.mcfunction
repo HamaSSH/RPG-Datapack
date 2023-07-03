@@ -1,5 +1,5 @@
 #> core:load/_
-# load時実行するコマンド
+# load時実行するコマンド群
 
 # TODO: リリース時1bにする
     data modify storage global: IsProduction set value 0b
