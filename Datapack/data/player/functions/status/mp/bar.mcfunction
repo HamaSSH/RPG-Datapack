@@ -68,6 +68,10 @@
     execute if score $XPBarLevels Temporary matches 1.. run xp add @s 1 levels
     execute if score $XPBarLevels Temporary matches 1.. run scoreboard players remove $XPBarLevels Temporary 1
 
+# MPに変化がある時だけfunctionを常時実行
+    scoreboard players set @s PreviousMP -1
+    execute if score $XPBarDif Temporary matches 0 store result score @s PreviousMP run xp query @s levels
+
 # リセット
     scoreboard players reset $XPBarDif Temporary
     scoreboard players reset $XPBarLevels Temporary
