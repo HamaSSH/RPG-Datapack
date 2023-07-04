@@ -5,6 +5,9 @@
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
 
+# トリガー
+    function player:trigger/selected_slot/detect
+
 # ステータスごとの処理
     function player:status/hp/_
     function player:status/mp/_
