@@ -1,5 +1,5 @@
 #> player:status/mp/bar
-# MPバー (経験値バー) の操作
+# MPバー(経験値バー)の操作
 
 # 操作前のレベルを一旦保存
     execute store result score $XPBarLevels Temporary run scoreboard players get @s MP

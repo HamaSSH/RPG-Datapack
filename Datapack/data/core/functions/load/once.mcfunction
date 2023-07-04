@@ -1,5 +1,5 @@
 #> core:load/once
-# 一度きり実行されるコマンド (初期設定)
+# 一度きり実行されるコマンド(初期設定)
 
 # ワールドのバージョン
     data modify storage global: Version set value "v0.0.0"
@@ -76,7 +76,7 @@
             scoreboard objectives add BaseAGI dummy "基礎AGI"
             scoreboard objectives add BaseCRT dummy "基礎CRT"
             scoreboard objectives add BaseLUK dummy "基礎LUK"
-        # 補正値 (装備など)
+        # 補正値(装備など)
             scoreboard objectives add BonusHPMax dummy "補正HP"
             scoreboard objectives add BonusMPMax dummy "補正MP"
             scoreboard objectives add BonusHPR dummy "補正HPR"
