@@ -19,10 +19,17 @@
     function core:load/team
 
 # 汎用スコアの定義
+    scoreboard objectives add Global dummy
     scoreboard objectives add Temporary dummy
     scoreboard objectives add Timer dummy
     scoreboard objectives add Constant dummy
     function core:load/constant
+
+# 乱数生成用スコアの設定
+    summon marker ~ ~ ~ {Tags:["RNG"]}
+    execute store result score $RNG.Base Global run data get entity @e[tag=RNG,limit=1] UUID[1]
+    execute store result score $RNG.Carry Global run data get entity @e[tag=RNG,limit=1] UUID[3]
+    kill @e[type=marker,tag=RNG,limit=1]
 
 # スコアボード
     # トリガー用
