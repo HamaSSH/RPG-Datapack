@@ -66,4 +66,4 @@
     scoreboard players operation @s PreviousAGI = @s AGI
 
 # リセット
-    scoreboard players reset $MovementSpeed
+    scoreboard players reset $MovementSpeed Temporary
