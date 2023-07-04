@@ -24,6 +24,8 @@
     execute if score $HPRatio Temporary matches ..16 run function player:status/hp/bar/lv3/0
     execute if score $HPRatio Temporary matches 17..32 run function player:status/hp/bar/lv3/1
     execute if score $HPRatio Temporary matches 33.. run function player:status/hp/bar/lv2/4
+    effect give @s health_boost infinite 0 true
+    effect clear @s health_boost
 
 # リセット
     scoreboard players reset $HPRatio Temporary
