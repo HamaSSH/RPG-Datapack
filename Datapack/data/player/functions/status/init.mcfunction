@@ -30,6 +30,7 @@ scoreboard players set @s KnightLVL 1
 scoreboard players set @s WarriorLVL 1
 scoreboard players set @s WizardLVL 1
 scoreboard players set @s HunterLVL 1
+function player:status/update
 
 ###################################
 # HP/HPMax ... 現在のHP/最大HP MAX-∞
