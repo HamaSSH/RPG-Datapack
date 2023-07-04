@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "music_disc_11"
+        },
+        "title": {
+            "text": "\uF829ここにタイトルを入力\uF829",
+            "italic": false
+        },
+        "description": {
+            "text": "概要"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "asset:achievement/3.5",
+    "criteria": {
+        "requirements": {
+            "trigger": "impossible"
+        }
+    }
+}
