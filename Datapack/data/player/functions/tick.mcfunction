@@ -8,9 +8,12 @@
 # トリガー
     function player:trigger/selected_slot/detect
 
-# ステータスごとの処理
+# ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
+
+# ステータス更新
+    execute if entity @s[tag=StatusUpdate] run function player:status/update
 
 # 職業のtick処理
     function player:class/_

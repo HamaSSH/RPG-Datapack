@@ -101,3 +101,4 @@
     scoreboard players reset @s BonusAGI
     scoreboard players reset @s BonusCRT
     scoreboard players reset @s BonusLUK
+    tag @s remove StatusUpdate
