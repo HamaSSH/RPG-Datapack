@@ -1,22 +1,22 @@
 {
-    "condition": "minecraft:any_of",
+    "condition": "any_of",
     "terms": [
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Fighter"
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Fighter1"
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Fighter2"
