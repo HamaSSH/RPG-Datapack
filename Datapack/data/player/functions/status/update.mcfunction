@@ -48,7 +48,10 @@
     scoreboard players operation @s CRT += @s BonusCRT
     scoreboard players operation @s LUK += @s BonusLUK
 
-# ⓷バフによる補正
+# ⓷適正武器による補正ステータス
+    execute if predicate player:class/weapon/any_of run function player:class/weapon
+
+# ⓸バフによる補正
     scoreboard players operation @s HPMax += @s BuffHPMax
     scoreboard players operation @s MPMax += @s BuffMPMax
     scoreboard players operation @s HPRegen += @s BuffHPR
@@ -61,14 +64,14 @@
     scoreboard players operation @s CRT += @s BuffCRT
     scoreboard players operation @s LUK += @s BuffLUK
 
-# ⓸最大値を超えないよう調整
+# ⓹最大値を超えないよう調整
     execute if score @s MPMax matches 16383.. run scoreboard players set @s MPMax 16383
     execute if score @s DEF matches 1024.. run scoreboard players set @s DEF 1024
     execute if score @s AGI matches 1024.. run scoreboard players set @s AGI 1024
     execute if score @s CRT matches 1024.. run scoreboard players set @s CRT 1024
     execute if score @s LUK matches 1024.. run scoreboard players set @s LUK 1024
 
-# ⓹最小値を下回らないよう調整
+# ⓺最小値を下回らないよう調整
     execute if score @s HPMax matches ..5 run scoreboard players set @s HPMax 5
     execute if score @s MPMax matches ..0 run scoreboard players set @s MPMax 0
     execute if score @s HPRegen matches ..0 run scoreboard players set @s HPRegen 0
@@ -80,7 +83,7 @@
     execute if score @s CRT matches ..0 run scoreboard players set @s CRT 0
     execute if score @s LUK matches ..0 run scoreboard players set @s LUK 0
 
-# ⓺attributeの設定
+# ⓻attributeの設定
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed
 
 # リセット

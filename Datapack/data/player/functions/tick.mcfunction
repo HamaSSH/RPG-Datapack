@@ -8,3 +8,6 @@
 # ステータスごとの処理
     function player:status/hp/_
     function player:status/mp/_
+
+# 職業のtick処理
+    function player:class/_

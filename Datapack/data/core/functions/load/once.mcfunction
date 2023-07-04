@@ -25,7 +25,10 @@
     function core:load/constant
 
 # スコアボード
-    # ステータス
+    # トリガー用
+        scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"
+
+    # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
         scoreboard objectives add MP dummy "現在のMP"
         scoreboard objectives add HPMax dummy "最大HP"
@@ -41,30 +44,17 @@
         scoreboard objectives add LUK dummy "幸運"
         scoreboard objectives add LVL dummy "レベル"
         scoreboard objectives add EXP dummy "経験値"
-        # システム
+        scoreboard objectives add Gold dummy "ゴールド"
+        # ステータスシステム用
             scoreboard objectives add PreviousAGI dummy "AGIの値保存"
             scoreboard objectives add PreviousMP dummy "MPの値保存"
             scoreboard objectives add NextEXP dummy "必要経験値"
-            scoreboard objectives add Gold dummy "ゴールド"
             scoreboard objectives add HPRatio dummy "HP割合"
             scoreboard objectives setdisplay list HPRatio
             scoreboard objectives modify HPRatio rendertype hearts
             scoreboard objectives add MPRatio dummy "MP割合"
             scoreboard objectives add HPRTimer dummy "HP回復タイマー"
             scoreboard objectives add MPRTimer dummy "MP回復タイマー"
-            scoreboard objectives add CDR dummy "クールダウン軽減"
-            scoreboard objectives add AssassinLVL dummy "アサシンLVL"
-            scoreboard objectives add AssassinEXP dummy "アサシンEXP"
-            scoreboard objectives add FighterLVL dummy "ファイターLVL"
-            scoreboard objectives add FighterEXP dummy "ファイターEXP"
-            scoreboard objectives add KnightLVL dummy "ナイトLVL"
-            scoreboard objectives add KnightEXP dummy "ナイトEXP"
-            scoreboard objectives add WarriorLVL dummy "ウォーリアLVL"
-            scoreboard objectives add WarriorEXP dummy "ウォーリアEXP"
-            scoreboard objectives add WizardLVL dummy "ウィザードLVL"
-            scoreboard objectives add WizardEXP dummy "ウィザードEXP"
-            scoreboard objectives add HunterLVL dummy "ハンターLVL"
-            scoreboard objectives add HunterEXP dummy "ハンターEXP"
         # 基礎値
             scoreboard objectives add BaseHPMax dummy "基礎HP"
             scoreboard objectives add BaseMPMax dummy "基礎MP"
@@ -101,3 +91,23 @@
             scoreboard objectives add BuffAGI dummy "バフAGI"
             scoreboard objectives add BuffCRT dummy "バフCRT"
             scoreboard objectives add BuffLUK dummy "バフLUK"
+        # 職業関連
+            scoreboard objectives add CDR dummy "クールダウン軽減"
+            scoreboard objectives add AssassinRank dummy "アサシン転生回数"
+            scoreboard objectives add AssassinLVL dummy "アサシンLVL"
+            scoreboard objectives add AssassinEXP dummy "アサシンEXP"
+            scoreboard objectives add FighterRank dummy "ファイター転生回数"
+            scoreboard objectives add FighterLVL dummy "ファイターLVL"
+            scoreboard objectives add FighterEXP dummy "ファイターEXP"
+            scoreboard objectives add KnightRank dummy "ナイト転生回数"
+            scoreboard objectives add KnightLVL dummy "ナイトLVL"
+            scoreboard objectives add KnightEXP dummy "ナイトEXP"
+            scoreboard objectives add WarriorRank dummy "ウォーリア転生回数"
+            scoreboard objectives add WarriorLVL dummy "ウォーリアLVL"
+            scoreboard objectives add WarriorEXP dummy "ウォーリアEXP"
+            scoreboard objectives add WizardRank dummy "ウィザード転生回数"
+            scoreboard objectives add WizardLVL dummy "ウィザードLVL"
+            scoreboard objectives add WizardEXP dummy "ウィザードEXP"
+            scoreboard objectives add HunterRank dummy "ハンター転生回数"
+            scoreboard objectives add HunterLVL dummy "ハンターLVL"
+            scoreboard objectives add HunterEXP dummy "ハンターEXP"

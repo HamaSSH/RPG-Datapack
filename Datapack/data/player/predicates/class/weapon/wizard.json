@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "player:class/is_wizard"
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{Weapon:\"Wand\"}"
+                    }
+                }
+            }
+        }
+    ]
+}
