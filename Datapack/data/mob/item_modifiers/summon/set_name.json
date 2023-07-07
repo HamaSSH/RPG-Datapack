@@ -16,7 +16,7 @@
                 "text": " Lv. "
             },
             {
-                "nbt": "Data.Status.lv",
+                "nbt": "Data.Status.LVL",
                 "storage": "asset:mob"
             }
         ]

@@ -40,7 +40,7 @@
         scoreboard objectives add PlayerID dummy "プレイヤーID"
         scoreboard objectives add MagicID dummy "魔法ID"
         scoreboard objectives add MobID dummy "モブID"
-        # scoreboard objectives add MobUUID dummy "モブUUID"
+        scoreboard objectives add MobUUID dummy "モブUUID"
 
     # トリガー
         #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
