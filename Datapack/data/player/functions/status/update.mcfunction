@@ -16,8 +16,6 @@
 
 # ⓶補正ステータス
     # 装備をストレージに格納
-        data modify storage player: Inventory set from entity @s Inventory
-        data modify storage player: SelectedItem set from entity @s SelectedItem
         data modify storage player: ItemData.Offhand set from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}]
         data modify storage player: ItemData.Helmet set from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}]
         data modify storage player: ItemData.Chestplate set from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}]
@@ -87,8 +85,6 @@
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed
 
 # リセット
-    data remove storage player: Inventory
-    data remove storage player: SelectedItem
     data remove storage player: ItemData
     scoreboard players reset @s BonusHPMax
     scoreboard players reset @s BonusMPMax
