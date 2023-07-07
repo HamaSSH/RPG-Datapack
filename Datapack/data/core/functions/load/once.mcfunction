@@ -35,6 +35,9 @@
     function #asset:magic/load
 
 # その他スコア
+    # ID
+        scoreboard objectives add PlayerID dummy "プレイヤーID"
+
     # トリガー
         #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
         scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
