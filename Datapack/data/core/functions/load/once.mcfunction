@@ -32,8 +32,14 @@
     kill @e[type=marker,tag=RNG,limit=1]
 
 # スコアボード
-    # トリガー用
+    # トリガー
+        #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
+        #scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
+
+    # ストレージ用途
         scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"
+        scoreboard objectives add PreviousAGI dummy "AGIの値保存"
+        scoreboard objectives add PreviousMP dummy "MPの値保存"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
@@ -52,9 +58,7 @@
         scoreboard objectives add LVL dummy "レベル"
         scoreboard objectives add EXP dummy "経験値"
         scoreboard objectives add Gold dummy "ゴールド"
-        # ステータスシステム用
-            scoreboard objectives add PreviousAGI dummy "AGIの値保存"
-            scoreboard objectives add PreviousMP dummy "MPの値保存"
+        # システム用
             scoreboard objectives add NextEXP dummy "必要経験値"
             scoreboard objectives add HPRatio dummy "HP割合"
             scoreboard objectives setdisplay list HPRatio
