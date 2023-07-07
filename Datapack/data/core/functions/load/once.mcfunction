@@ -37,6 +37,7 @@
 # その他スコア
     # ID
         scoreboard objectives add PlayerID dummy "プレイヤーID"
+        scoreboard objectives add MagicID dummy "魔法ID"
 
     # トリガー
         #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
@@ -65,6 +66,8 @@
         scoreboard objectives add EXP dummy "経験値"
         scoreboard objectives add Gold dummy "ゴールド"
         # システム用
+            scoreboard objectives add DmgDealt dummy "与ダメージ"
+            scoreboard objectives add DmgReceived dummy "被ダメージ"
             scoreboard objectives add NextEXP dummy "必要経験値"
             scoreboard objectives add HPRatio dummy "HP割合"
             scoreboard objectives setdisplay list HPRatio

@@ -12,6 +12,9 @@
     function player:trigger/selected_slot/detect
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
 
+# 魔法を発動したプレイヤーのtick処理
+    function #asset:magic/player
+
 # ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
