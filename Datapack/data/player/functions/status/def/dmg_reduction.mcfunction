@@ -1,7 +1,7 @@
 #> player:status/def/dmg_reduction
 # プレイヤーの防御力によるダメージ軽減計算
 
-# 防御計算式 → DmgReceived = DmgReceived / 1 + (DEF / 200)
+# 防御計算式 → DmgReceived = DmgReceived / (1 + (DEF / 200))
     # = 200 * DmgReceived / (200 + DEF)
         scoreboard players operation $PlayerDEF Temporary = @s DEF
         scoreboard players add $PlayerDEF Temporary 200
