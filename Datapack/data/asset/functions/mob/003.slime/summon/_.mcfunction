@@ -17,11 +17,11 @@
         data modify storage asset:mob Data.Mainhand set value {}
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
-        data modify storage asset:mob Data.Status.lv set value 3
-        data modify storage asset:mob Data.Status.hp set value 50
-        data modify storage asset:mob Data.Status.ad set value 10
-        data modify storage asset:mob Data.Status.xp set value 12
-        data modify storage asset:mob Data.Status.spd set value 100
+        data modify storage asset:mob Data.Status.LVL set value 3
+        data modify storage asset:mob Data.Status.HP set value 50
+        data modify storage asset:mob Data.Status.Dmg set value 10
+        data modify storage asset:mob Data.Status.EXP set value 12
+        data modify storage asset:mob Data.Status.AGI set value 100
 
 # データの適用
     execute as @e[type=slime,tag=MobInit,distance=..0.01,limit=1] run function asset:mob/003.slime/summon/init

@@ -23,11 +23,11 @@
 
 # ステータススコア
     execute store result score @s MobID run data get storage asset:mob Data.MobID
-    execute store result score @s level run data get storage asset:mob Data.Status.lv
-    execute store result score @s hp_max run data get storage asset:mob Data.Status.hp
-    execute store result score @s hp run data get storage asset:mob Data.Status.hp
-    execute store result score @s ad run data get storage asset:mob Data.Status.ad
-    execute store result score @s xp run data get storage asset:mob Data.Status.xp
+    execute store result score @s LVL run data get storage asset:mob Data.Status.LVL
+    execute store result score @s HPMax run data get storage asset:mob Data.Status.HP
+    execute store result score @s HP run data get storage asset:mob Data.Status.HP
+    execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
+    execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
     function mob:summon/set_speed
 
 # 重複のないようなMobUUIDの生成
@@ -68,5 +68,5 @@
     data remove storage asset:mob Data
     data remove storage asset:mob ArmorItems
     data remove storage asset:mob HandItems
-    scoreboard players reset $IDtoTag
+    scoreboard players reset $IDtoTag Temporary
     tag @s remove MobInit

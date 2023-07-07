@@ -3,7 +3,7 @@
 
 # 元のgeneric.movement_speedと補正値を取得
     execute store result score $MovementSpeed Temporary run attribute @s generic.movement_speed get 10000
-    execute store result score $Multiplier Temporary run data get storage asset:mob Data.Status.spd
+    execute store result score $Multiplier Temporary run data get storage asset:mob Data.Status.AGI
 
 # 補正値(%)に基づいて計算
     scoreboard players operation $MovementSpeed Temporary *= $Multiplier Temporary
