@@ -1,6 +1,8 @@
 {
+    "#": "Mob+モデル表示用アマスタ",
     "values": [
         "allay",
+        "armor_stand",
         "axolotl",
         "bat",
         "bee",

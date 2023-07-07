@@ -1,0 +1,13 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/loot/1035.skeleton_skull/_"
+                }
+            ]
+        }
+    ]
+}

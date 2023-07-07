@@ -1,0 +1,31 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/loot/1037.bone_meal/_"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.7
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/loot/1021.fragile_bone/_"
+                }
+            ]
+        }
+    ]
+}
