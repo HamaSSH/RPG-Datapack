@@ -14,7 +14,7 @@
     execute if score @s CDR matches 1.. run function player:status/cd/reduction
 
 # クールダウンが終わっているか
-    execute unless score $Time Temporary >= $Cooldown Temporary run function player:status/cd/check/fail
+    execute if score $Time Temporary < $Cooldown Temporary run function player:status/cd/check/fail
 
 # リセット
     scoreboard players reset $TimeUsed Temporary

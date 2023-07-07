@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "storage",
+        "source": "player:"
+    },
+    "ops": [
+        {
+            "source": "UsedTick",
+            "target": "Magic.UsedTick",
+            "op": "replace"
+        }
+    ]
+}

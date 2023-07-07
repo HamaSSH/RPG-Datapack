@@ -31,10 +31,13 @@
     execute store result score $RNG.Carry Global run data get entity @e[tag=RNG,limit=1] UUID[3]
     kill @e[type=marker,tag=RNG,limit=1]
 
-# スコアボード
+# アセットの初期処理
+    function #asset:magic/load
+
+# その他スコア
     # トリガー
         #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
-        #scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
+        scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
 
     # ストレージ用途
         scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"

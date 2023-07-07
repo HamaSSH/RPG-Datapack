@@ -7,6 +7,7 @@
 
 # トリガー
     function player:trigger/selected_slot/detect
+    execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
 
 # バニラ要素から一切のダメージを受けない
     effect give @s resistance infinite 10 true
