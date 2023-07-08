@@ -13,6 +13,7 @@ scoreboard players set #100 Constant 100
 scoreboard players set #200 Constant 200
 scoreboard players set #1000 Constant 1000
 scoreboard players set #2000 Constant 2000
+scoreboard players set #3000 Constant 3000
 
 # 乱数生成用
     scoreboard players set #31743 Constant 31743

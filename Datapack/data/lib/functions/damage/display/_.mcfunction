@@ -10,7 +10,7 @@
     execute if data storage lib: Damage{Type:"Fire"} run data modify storage lib: Damage.Color set value '{"text":"","color":"#F4B566"}'
     execute if data storage lib: Damage{Type:"Poison"} run data modify storage lib: Damage.Color set value '{"text":"","color":"#AAE675"}'
     execute if data storage lib: Damage{Type:"Wither"} run data modify storage lib: Damage.Color set value '{"text":"","color":"#CAA8F6"}'
-    execute if data storage lib: Damage{Type:"Critical"} run data modify storage lib: Damage.Color set value '{"text":"","color":"#FC806B","bold"true}'
+    execute if data storage lib: Damage{Type:"Critical"} run data modify storage lib: Damage.Color set value '{"text":"","color":"#FC806B","bold":true}'
     execute if score $DmgReceived Temporary matches 0 run data modify storage lib: Damage.Color set value '{"text":"","color":"#999999"}'
     execute anchored eyes positioned ^ ^ ^ positioned ~ ~0.2 ~ run function lib:damage/display/summon
 
