@@ -12,8 +12,8 @@
     # 防御＋ダメージブレ補正
         execute as @p[tag=Victim] run function player:status/def/dmg_reduction
         execute as @p[tag=Victim] run function combat:damage/blur
-    scoreboard players operation @p[tag=Victim] HP -= @p[tag=Victim] DmgReceived
-    #execute as @p[tag=Victim] at @s run function player:on_hurt/dmg_received
+    execute as @p[tag=Victim] at @s run function lib:damage/received
 
 # リセット
+    scoreboard players reset @p[tag=Victim] DmgReceived
     data remove storage asset:mob ID
