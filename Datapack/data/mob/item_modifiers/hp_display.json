@@ -1,0 +1,46 @@
+{
+    "function": "set_name",
+    "entity": "this",
+    "name": [
+        {
+            "nbt": "Space.HPBar[0]",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.Extra",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.NameChar",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.Level",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Data.MobName",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.NameChar",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.Level",
+            "storage": "mob:",
+            "interpret": true
+        },
+        {
+            "nbt": "Space.HPBar[1]",
+            "storage": "mob:",
+            "interpret": true
+        }
+    ]
+}

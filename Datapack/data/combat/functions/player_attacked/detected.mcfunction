@@ -2,24 +2,32 @@
 # プレイヤー(@p[tag=Attacker])から敵モブ(@s)への攻撃処理
 
 # 被ダメージ(補正無し)を設定
-    scoreboard players operation @p[tag=Attacker] DmgDealt = @p[tag=Attacker] STR
-    # execute as @p[tag=Attacker] run function combat:player_attacked/dmg_dealt #TODO: チャージ率ダメージ補正と攻撃に応じてDmgDealtに値を入れるfunction
+    execute as @p[tag=Attacker] run function combat:player_attacked/dmg_dealt
     scoreboard players operation @s DmgReceived = @p[tag=Attacker] DmgDealt
+    execute unless score @s DmgReceived = @p[tag=Attacker] STR run data modify storage lib: Damage.Type set value "Critical"
+
+# 被ダメージ時のトリガー
+    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
+    execute at @s run function #asset:mob/hurt
 
 # ダメージ処理
     # 防御＋ダメージブレ補正
         function mob:status/def/dmg_reduction
         function combat:damage/blur
-    # execute if entity @p[tag=Attacker,tag=CriticalHit] run scoreboard players set $DamageColor Temporary 4 #TODO: クリティカル
-    scoreboard players operation @s HP -= @s DmgReceived
-    # execute at @s run function mob:on_hurt/dmg_received
+    execute at @s run function lib:damage/received
+
+# HP表示
+    function mob:status/hp/display/_
+    scoreboard players set @s InCombat 100
+    tag @s add InCombat
+
+# 無敵時間
+    scoreboard players set @s HurtTime 10
+    tag @s add HurtTime
 
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
 
-# 無敵時間
-    # tag @s add HurtTime　#TODO: 名前(HPバー)更新
-    # scoreboard players set @s HurtTime 10
 
 # #TODO: 属性攻撃
     # execute if score @p[tag=Attacker] FireAttack matches 1.. run function mob:on_hurt/element/fire
@@ -33,5 +41,5 @@
 
 # リセット
     scoreboard players reset @s DmgReceived
-    # tag @p[tag=Attacker] remove CriticalHit
-    # scoreboard players reset $DamageColor
+    data remove storage lib: Damage.Type
+    data remove storage asset:mob ID
