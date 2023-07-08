@@ -8,6 +8,7 @@ scoreboard players set #10 Constant 10
 scoreboard players set #20 Constant 20
 scoreboard players set #30 Constant 30
 scoreboard players set #40 Constant 40
+scoreboard players set #80 Constant 80
 scoreboard players set #100 Constant 100
 scoreboard players set #200 Constant 200
 scoreboard players set #1000 Constant 1000

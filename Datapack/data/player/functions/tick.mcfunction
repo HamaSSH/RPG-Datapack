@@ -12,6 +12,10 @@
     function player:trigger/selected_slot/detect
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
 
+# タイマー
+    execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
+    execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
+
 # 魔法を発動したプレイヤーのtick処理
     function #asset:magic/player
 
