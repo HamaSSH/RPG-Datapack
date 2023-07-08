@@ -11,6 +11,7 @@
 # トリガー
     function player:trigger/selected_slot/detect
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
+    execute if score @s FallDistance matches 1..399 run scoreboard players reset @s FallDistance
 
 # タイマー
     execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
