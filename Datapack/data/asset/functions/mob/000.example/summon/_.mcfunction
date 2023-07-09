@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon skeleton ~ ~ ~ {NoAI:1b,Silent:1b,Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/000.example",ActiveEffects:[{Id:2,Amplifier:0b,Duration:1000000,ShowParticles:0b}]}
+    summon skeleton ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/000.example",ActiveEffects:[{Id:2,Amplifier:0b,Duration:1000000,ShowParticles:0b}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 0

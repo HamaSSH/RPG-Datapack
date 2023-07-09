@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon zombie ~ ~ ~ {Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/004.zombie"}
+    summon zombie ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/004.zombie"}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 2

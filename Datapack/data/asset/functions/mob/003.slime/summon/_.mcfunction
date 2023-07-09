@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon slime ~ ~ ~ {Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/003.slime"}
+    summon slime ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/003.slime"}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 3

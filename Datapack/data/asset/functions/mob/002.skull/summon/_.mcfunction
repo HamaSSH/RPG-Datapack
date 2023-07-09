@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚 #TODO: カスタム当たり判定
-    summon silverfish ~ ~ ~ {Silent:1b,Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/002.skull",Passengers:[{id:"magma_cube",Silent:1b,Tags:["AssetMob","AutoKillVehicle"],Passengers:[{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AssetMob","AutoKillVehicle"],ArmorItems:[{},{},{},{id:"cod",Count:1b,tag:{CustomModelData:4}}]}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/002.skull",Passengers:[{id:"magma_cube",Silent:1b,Tags:["AssetMob","AutoKillVehicle"],Passengers:[{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AssetMob","AutoKillVehicle"],ArmorItems:[{},{},{},{id:"cod",Count:1b,tag:{CustomModelData:4}}]}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 2

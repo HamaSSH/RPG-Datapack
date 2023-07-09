@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon skeleton ~ ~ ~ {Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/001.skeleton"}
+    summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/001.skeleton"}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 1
