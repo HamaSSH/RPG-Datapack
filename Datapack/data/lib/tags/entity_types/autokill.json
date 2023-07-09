@@ -2,6 +2,7 @@
     "#": "表示用エンティティ",
     "values": [
         "armor_stand",
+        "item",
         "magma_cube",
         "silverfish",
         "text_display"
