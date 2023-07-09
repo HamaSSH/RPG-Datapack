@@ -11,7 +11,7 @@
 # ダメージ処理
     # 防御＋ダメージブレ補正
         execute as @p[tag=Victim] run function player:status/def/dmg_reduction
-        execute as @p[tag=Victim] run function combat:damage/blur
+        execute as @p[tag=Victim] run function lib:damage/blur
     execute as @p[tag=Victim] at @s run function lib:damage/received
 
 # リセット

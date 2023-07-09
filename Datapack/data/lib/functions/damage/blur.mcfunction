@@ -1,4 +1,4 @@
-#> combat:damage/blur
+#> lib:damage/blur
 # ダメージブレの設定
 
 # ダメージブレ幅の決定(30ダメージごとにブレ幅+1)
