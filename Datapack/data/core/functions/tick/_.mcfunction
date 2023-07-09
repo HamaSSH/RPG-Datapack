@@ -9,4 +9,4 @@
 
 # モブ関連のtick処理
     execute as @e[type=#lib:every_mob,tag=Enemy] at @s run function mob:tick
-    execute as @e[type=#lib:every_mob,tag=AssetMob] at @s run function mob:manager/tick
+    execute as @e[type=#lib:autokill,tag=AutoKill] at @s run function mob:manager/tick
