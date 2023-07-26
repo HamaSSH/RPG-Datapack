@@ -37,7 +37,7 @@
     # execute if score @p[tag=Attacker] WindAttack matches 1.. run function mob:on_hurt/element/wind
 
 # TODO: 死亡処理
-    execute if score @s HP matches ..0 run function mob:manager/on_death/_
+    execute if score @s HP matches ..0 run function mob:on_death/_
 
 # リセット
     scoreboard players reset @s DmgReceived

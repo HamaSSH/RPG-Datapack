@@ -72,6 +72,8 @@
         scoreboard objectives add EXP dummy "経験値"
         scoreboard objectives add Gold dummy "ゴールド"
         # システム用
+            scoreboard objectives add EXPGained dummy "獲得経験値"
+            scoreboard objectives add GoldGained dummy "獲得ゴールド"
             scoreboard objectives add DmgDealt dummy "与ダメージ"
             scoreboard objectives add DmgReceived dummy "被ダメージ"
             scoreboard objectives add NextEXP dummy "必要経験値"

@@ -11,5 +11,8 @@
     execute if entity @s[tag=HurtTime] run scoreboard players remove @s HurtTime 1
     execute if entity @s[tag=HurtTime,scores={HurtTime=0}] run tag @s remove HurtTime
 
+# 死亡処理
+    execute if entity @s[tag=Dead] run kill @s
+
 # リセット
     data remove storage asset:mob ID
