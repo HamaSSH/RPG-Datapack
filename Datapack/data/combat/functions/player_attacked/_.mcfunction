@@ -5,7 +5,7 @@
     tag @s add Attacker
 
 # モブの絞り込み
-    execute as @e[type=#lib:every_mob,tag=!HurtTime,distance=..100] run function combat:player_attacked/8
+    execute unless predicate player:hold_weapon/melee as @e[type=#lib:every_mob,tag=!HurtTime,distance=..100] run function combat:player_attacked/8
     execute if predicate player:hold_weapon/_ run function combat:main/_
 
 # リセット
