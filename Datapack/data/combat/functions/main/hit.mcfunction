@@ -3,6 +3,7 @@
 
 # ダメージ処理
     function combat:player_attacked/detected
+    damage @s 0.0 generic
 
 # ノックバック
     execute rotated ~ 45 run function lib:motion/knockback
