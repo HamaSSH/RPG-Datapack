@@ -3,19 +3,19 @@
     "terms": [
         {
             "condition": "minecraft:reference",
-            "name": "lib:weapon/dagger"
+            "name": "player:hold_weapon/dagger"
         },
         {
             "condition": "minecraft:reference",
-            "name": "lib:weapon/sword"
+            "name": "player:hold_weapon/sword"
         },
         {
             "condition": "minecraft:reference",
-            "name": "lib:weapon/spear"
+            "name": "player:hold_weapon/spear"
         },
         {
             "condition": "minecraft:reference",
-            "name": "lib:weapon/hammer"
+            "name": "player:hold_weapon/hammer"
         }
     ]
 }

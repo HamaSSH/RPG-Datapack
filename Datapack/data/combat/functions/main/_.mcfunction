@@ -6,7 +6,7 @@
 
 # 武器種によって異なる当たり判定呼び出し
     # 短剣
-        execute if predicate lib:weapon/dagger run function combat:main/dagger/_
+        execute if predicate player:hold_weapon/dagger run function combat:main/dagger/_
 
 # リセット
     scoreboard players reset $DmgDealt Temporary
