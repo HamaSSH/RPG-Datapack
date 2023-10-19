@@ -91,6 +91,6 @@
         }
     },
     "rewards": {
-        "function": "combat:summon_interaction"
+        "function": "combat:leftclick/summon"
     }
 }
