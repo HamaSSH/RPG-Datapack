@@ -6,6 +6,7 @@
 
 # モブの絞り込み
     execute as @e[type=#lib:every_mob,tag=!HurtTime,distance=..100] run function combat:player_attacked/8
+    execute if predicate lib:weapon/_ run function combat:main/_
 
 # リセット
     advancement revoke @s only combat:player_attacked
