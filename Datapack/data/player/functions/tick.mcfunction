@@ -1,6 +1,9 @@
 #> player:tick
 # プレイヤー関連のtick処理
 
+# interactionのkill
+    kill @e[type=interaction]
+
 # プレイヤーの初期化
     execute unless score @s PlayerID matches 0.. run function player:init
 
