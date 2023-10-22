@@ -13,7 +13,7 @@
         scoreboard players operation $CriticalChance Temporary /= #2000 Constant
 
 # 0~1000 $CriticalChanceB <= $CriticalChance → ダメージ補正
-    execute if score @s CRT matches ..999 run execute store result score $CriticalChanceB Temporary run function lib:rng
+    execute if score @s CRT matches ..999 run execute store result score $CriticalChanceB Temporary run random value 0..65534
     execute if score @s CRT matches ..999 run scoreboard players operation $CriticalChanceB Temporary %= #1000 Constant
     execute if score @s CRT matches 1000.. run scoreboard players set $CriticalChanceB Temporary 1000
     execute if score $CriticalChanceB Temporary <= $CriticalChance Temporary run function player:status/crt/damage

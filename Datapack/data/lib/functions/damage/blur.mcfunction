@@ -9,7 +9,7 @@
     scoreboard players add $BlurWidth Temporary 1
 
 # 0~2*floor((DmgReceived+25)/30)+1の乱数を生成
-    execute store result score $DmgBlur Temporary run function lib:rng
+    execute store result score $DmgBlur Temporary run random value 0..65534
     scoreboard players operation $DmgBlur Temporary %= $BlurWidth Temporary
 
 # －と＋側にダメージブレを生成

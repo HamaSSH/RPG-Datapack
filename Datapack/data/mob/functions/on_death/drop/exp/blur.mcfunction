@@ -9,7 +9,7 @@
     scoreboard players add $BlurWidth Temporary 1
 
 # 0~2*floor((EXP+8)/10)+1の乱数を生成
-    execute store result score $EXPBlur Temporary run function lib:rng
+    execute store result score $EXPBlur Temporary run random value 0..65534
     scoreboard players operation $EXPBlur Temporary %= $BlurWidth Temporary
 
 # －と＋側に経験値ブレを生成

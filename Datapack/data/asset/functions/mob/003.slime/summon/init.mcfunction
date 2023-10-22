@@ -5,8 +5,7 @@
     execute if score $SlimeSize Temporary matches 0.. at @s facing entity @p feet run function lib:motion/apply
 # 分裂由来ではない召喚
     # サイズランダム
-        execute unless score $SlimeSize Temporary matches 0.. store result score $SlimeSize Temporary run function lib:rng
-        execute unless score $SlimeSize Temporary matches 0.. run scoreboard players operation $SlimeSize Temporary %= #3 Constant
+        execute unless score $SlimeSize Temporary matches 0.. store result score $SlimeSize Temporary run random value 0..2
 
 # サイズによる可変のステータス
     execute if score $SlimeSize Temporary matches 0 store result storage asset:mob Data.Status.hp int 0.2 run data get storage asset:mob Data.Status.hp
