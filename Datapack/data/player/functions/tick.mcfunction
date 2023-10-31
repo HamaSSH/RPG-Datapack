@@ -8,6 +8,9 @@
     data modify storage player: Inventory set from entity @s Inventory
     data modify storage player: SelectedItem set from entity @s SelectedItem
 
+# プレイヤーUI
+    execute as @a at @s run function player:ui/_
+
 # トリガー
     function player:trigger/selected_slot/detect
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
