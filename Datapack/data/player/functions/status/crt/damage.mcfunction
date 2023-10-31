@@ -1,6 +1,7 @@
 #> player:status/crt/damage
 # クリティカルダメージ補正
 
+tag @s add CriticalHit
 # 会心攻撃力上昇率 DmgDealt = DmgDealt * (CRT/10 + 130) / 100
     # = DmgDealt * (CRT + 1300) / 1000
         scoreboard players operation $CritMultiplier Temporary = @s CRT

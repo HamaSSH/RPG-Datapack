@@ -2,9 +2,8 @@
 # プレイヤー(@p[tag=Attacker])から敵モブ(@s)への攻撃処理
 
 # 被ダメージ(補正無し)を設定
-    execute as @p[tag=Attacker] run function player:combat/player_attacked/dmg_dealt
     scoreboard players operation @s DmgReceived = @p[tag=Attacker] DmgDealt
-    execute unless score @s DmgReceived = @p[tag=Attacker] STR run data modify storage lib: Damage.Type set value "Critical"
+    execute if entity @p[tag=Attacker,tag=CriticalHit] run data modify storage lib: Damage.Type set value "Critical"
 
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
