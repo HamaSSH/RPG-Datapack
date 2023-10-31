@@ -17,13 +17,16 @@
     execute if entity @s[scores={SneakTime=1..}] run function player:trigger/sneak
     execute if score @s FallDistance matches 1..399 run scoreboard players reset @s FallDistance
 
+# 魔法を発動したプレイヤーのtick処理
+    function #asset:magic/player
+
+# ため攻撃をしているプレイヤーのtick処理
+    function player:combat/main/tick
+
 # タイマー
     execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
-
-# 魔法を発動したプレイヤーのtick処理
-    function #asset:magic/player
 
 # ステータスシステムの処理
     function player:status/hp/_
