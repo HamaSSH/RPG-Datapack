@@ -11,11 +11,13 @@
 # トリガー
     function player:trigger/selected_slot/detect
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
+    execute if entity @s[scores={SneakTime=1..}] run function player:trigger/sneak
     execute if score @s FallDistance matches 1..399 run scoreboard players reset @s FallDistance
 
 # タイマー
     execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
+    execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
 
 # 魔法を発動したプレイヤーのtick処理
     function #asset:magic/player

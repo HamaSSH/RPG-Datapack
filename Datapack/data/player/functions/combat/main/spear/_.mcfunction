@@ -6,8 +6,8 @@
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 100
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] rotated ~ 60 run function lib:motion/knockback
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] run function player:combat/main/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] rotated ~ 60 run function lib:motion/knockback
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/hit
 
 # 演出
     particle crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 2 force

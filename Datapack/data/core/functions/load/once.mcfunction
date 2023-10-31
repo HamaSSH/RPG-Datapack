@@ -43,7 +43,7 @@
         scoreboard objectives add MobUUID dummy "モブUUID"
 
     # トリガー
-        #scoreboard objectives add SkillCharge custom:sneak_time "スキル溜め"
+        scoreboard objectives add SneakTime custom:sneak_time "スキル溜め"
         scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
         scoreboard objectives add FallDistance custom:fall_one_cm "落下距離"
 
@@ -83,6 +83,7 @@
             scoreboard objectives add MPRatio dummy "MP割合"
             scoreboard objectives add HPRTimer dummy "HP回復タイマー"
             scoreboard objectives add MPRTimer dummy "MP回復タイマー"
+            scoreboard objectives add SkillTimer dummy "スキル用タイマー"
         # 基礎値
             scoreboard objectives add BaseHPMax dummy "基礎HP"
             scoreboard objectives add BaseMPMax dummy "基礎MP"
