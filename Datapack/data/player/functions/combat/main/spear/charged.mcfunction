@@ -1,4 +1,4 @@
-#> player:combat/main/spear/_
+#> player:combat/main/spear/charged
 # 槍の当たり判定呼び出し
 
 # 当たり判定

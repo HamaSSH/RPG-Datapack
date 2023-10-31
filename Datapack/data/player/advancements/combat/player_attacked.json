@@ -1,5 +1,82 @@
 {
     "criteria": {
+        "melee_uncharged": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0,
+                        "max": 0.999
+                    }
+                }
+            }
+        },
+        "melee_charged": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1,
+                        "max": 1.999
+                    }
+                }
+            }
+        },
+        "melee_charge0": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0,
+                        "max": 0.399
+                    }
+                }
+            }
+        },
+        "melee_charge1": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0.4,
+                        "max": 0.749
+                    }
+                }
+            }
+        },
+        "melee_charge2": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0.75,
+                        "max": 0.999
+                    }
+                }
+            }
+        },
+        "melee_charge3": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1,
+                        "max": 1.199
+                    }
+                }
+            }
+        },
+        "melee_charge4": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 1.2,
+                        "max": 1.999
+                    }
+                }
+            }
+        },
         "MobID8.1": {
             "trigger": "player_hurt_entity",
             "conditions": {
@@ -159,6 +236,17 @@
         }
     },
     "requirements": [
+        [
+            "melee_uncharged",
+            "melee_charged"
+        ],
+        [
+            "melee_charge0",
+            "melee_charge1",
+            "melee_charge2",
+            "melee_charge3",
+            "melee_charge4"
+        ],
         [
             "MobID8.1",
             "MobID8.0",

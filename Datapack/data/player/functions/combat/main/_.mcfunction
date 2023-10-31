@@ -8,7 +8,8 @@
         execute if predicate player:hold_weapon/sword unless score @s SneakTime matches 30.. run function player:combat/main/sword/_
         execute if predicate player:hold_weapon/sword if score @s SneakTime matches 30.. run function player:combat/main/sword/skill/init
     # 槍
-        execute if predicate player:hold_weapon/spear unless score @s SneakTime matches 30.. run function player:combat/main/spear/_
+        execute if predicate player:charged/spear unless score @s SneakTime matches 30.. run function player:combat/main/spear/charged
+        execute if predicate player:uncharged/spear unless score @s SneakTime matches 30.. run function player:combat/main/spear/uncharged
         execute if predicate player:hold_weapon/spear if score @s SneakTime matches 30.. run function player:combat/main/spear/skill/init
     # ハンマー
         execute if predicate player:hold_weapon/hammer run function player:combat/main/hammer/_

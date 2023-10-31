@@ -1,0 +1,20 @@
+[
+    {
+        "condition": "minecraft:reference",
+        "name": "player:hold_weapon/spear"
+    },
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type_specific": {
+                "type": "player",
+                "advancements": {
+                    "player:combat/player_attacked": {
+                        "melee_uncharged": true
+                    }
+                }
+            }
+        }
+    }
+]
