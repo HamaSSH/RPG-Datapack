@@ -11,6 +11,10 @@
     execute if entity @s[tag=HurtTime] run scoreboard players remove @s HurtTime 1
     execute if entity @s[tag=HurtTime,scores={HurtTime=0}] run tag @s remove HurtTime
 
+# 落下ダメージ
+    execute unless data entity @s {FallDistance:0.0f} store result score @s FallDistance run data get entity @s FallDistance
+    execute if data entity @s {OnGround:1b} if score @s FallDistance matches 3.. run function mob:on_hurt/fall
+
 # 死亡処理
     execute if entity @s[tag=Dead] run kill @s
 
