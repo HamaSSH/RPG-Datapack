@@ -3,7 +3,10 @@
 
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/dagger/rec
+
+# HIT処理
     scoreboard players set $MotionPower Temporary 85
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] rotated ~ 60 run function lib:motion/knockback
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] run function player:combat/main/hit
 
 # 演出
