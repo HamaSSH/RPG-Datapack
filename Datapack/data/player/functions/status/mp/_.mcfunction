@@ -9,7 +9,7 @@
 
 # MPの割合計算
     scoreboard players operation @s MPRatio = @s MP
-    scoreboard players operation @s MPRatio *= #1000 Constant
+    scoreboard players operation @s MPRatio *= #835 Constant
     scoreboard players operation @s MPRatio /= @s MPMax
 
 # MPバー操作
