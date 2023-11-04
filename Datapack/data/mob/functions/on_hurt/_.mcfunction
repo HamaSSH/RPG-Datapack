@@ -1,15 +1,15 @@
 #> mob:on_hurt/_
 # ダメージを受けた際の処理
 
-# 被ダメージ時のトリガー
-    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
-    execute at @s run function #asset:mob/hurt
-
 # ダメージ処理
     # 防御＋ダメージブレ補正
         function mob:status/def/dmg_reduction
         function lib:damage/blur
     execute at @s run function lib:damage/received
+
+# 被ダメージ時のトリガー
+    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
+    execute at @s run function #asset:mob/hurt
 
 # HP表示の更新
     function mob:status/hp/display/_
