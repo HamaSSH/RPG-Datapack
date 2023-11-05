@@ -1,4 +1,4 @@
-#> player:combat/player_attacked/DmgDealt
+#> player:combat/player_attacked/dmg_dealt
 # プレイヤーが与えるダメージを決定
 
 # 物理攻撃・魔法攻撃・器用攻撃に応じたステータス

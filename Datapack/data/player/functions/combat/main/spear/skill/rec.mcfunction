@@ -9,4 +9,4 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:every_mob,tag=Enemy,dx=0] run tag @s add Hit
 
 # リーチの限界まで再帰
-    execute positioned ^ ^ ^0.2 if entity @s[distance=..4.5] run function player:combat/main/spear/skill/rec
+    execute positioned ^ ^ ^0.2 if entity @s[distance=..7] run function player:combat/main/spear/skill/rec

@@ -1,5 +1,5 @@
 #> player:combat/main/spear/uncharged
-# 武器の攻撃クールダウンを待たず攻撃した場合
+# 攻撃クールダウンを待たず攻撃した場合
 
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/spear/rec

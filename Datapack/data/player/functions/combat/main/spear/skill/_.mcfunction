@@ -7,13 +7,15 @@ tag @s add Attacker
 
 # ダメージ
     function player:combat/player_attacked/dmg_dealt
+    scoreboard players operation @s DmgDealt /= #10 Constant
     scoreboard players add @s DmgDealt 5
     scoreboard players operation @s DmgDealt *= #5 Constant
+    function player:status/crt/chance
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 300
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] rotated ~ 75 run function lib:motion/knockback
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit] run function player:combat/main/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..10] rotated ~ 75 run function lib:motion/knockback
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..10] run function player:combat/main/hit
 
 # 演出
     particle crit ^ ^1.7 ^2 0.7 0.5 0.7 0.2 15 force

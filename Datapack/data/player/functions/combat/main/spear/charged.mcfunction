@@ -1,5 +1,5 @@
 #> player:combat/main/spear/charged
-# 槍の当たり判定呼び出し
+# 武器の当たり判定呼び出し
 
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/spear/rec
