@@ -1,8 +1,9 @@
-#> player:combat/main/sword/_
+#> player:combat/main/sword/charged
 # 刀剣の当たり判定呼び出し
 
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/sword/rec
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=SwordHit,distance=..6,sort=nearest,limit=1] at @s run function player:combat/main/sword/aoe
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 100

@@ -1,5 +1,5 @@
-#> player:combat/main/dagger/_
-# 短剣の当たり判定呼び出し
+#> player:combat/main/dagger/charged
+# 武器の当たり判定呼び出し
 
 # 当たり判定
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/dagger/rec
