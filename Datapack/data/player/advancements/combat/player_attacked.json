@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "melee_uncharged": {
+        "uncharged": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -11,7 +11,7 @@
                 }
             }
         },
-        "melee_charged": {
+        "charged": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -237,8 +237,8 @@
     },
     "requirements": [
         [
-            "melee_uncharged",
-            "melee_charged"
+            "uncharged",
+            "charged"
         ],
         [
             "melee_charge0",

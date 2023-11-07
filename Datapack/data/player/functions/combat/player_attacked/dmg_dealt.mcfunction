@@ -16,4 +16,4 @@
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge4=true}}] run scoreboard players operation @s DmgDealt /= #8 Constant
 
 # クリティカルダメージ
-    execute if entity @s[advancements={player:combat/player_attacked={melee_charged=true}}] run function player:status/crt/chance
+    execute if entity @s[advancements={player:combat/player_attacked={charged=true}}] run function player:status/crt/chance

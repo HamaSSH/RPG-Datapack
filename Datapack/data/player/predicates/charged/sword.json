@@ -11,7 +11,7 @@
                 "type": "player",
                 "advancements": {
                     "player:combat/player_attacked": {
-                        "melee_charged": true
+                        "charged": true
                     }
                 }
             }

@@ -1,7 +1,7 @@
 [
     {
         "condition": "minecraft:reference",
-        "name": "player:hold_weapon/hammer"
+        "name": "player:hold_weapon/wand"
     },
     {
         "condition": "entity_properties",
@@ -11,7 +11,7 @@
                 "type": "player",
                 "advancements": {
                     "player:combat/player_attacked": {
-                        "charged": true
+                        "uncharged": true
                     }
                 }
             }
