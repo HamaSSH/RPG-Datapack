@@ -6,6 +6,7 @@
 
 # プレイヤー関連のtick処理
     execute as @a at @s run function player:tick
+    execute as @e[type=area_effect_cloud,tag=WandAEC] at @s run function player:combat/main/wand/tick
 
 # モブ関連のtick処理
     execute as @e[type=#lib:every_mob,tag=Enemy] at @s run function mob:tick

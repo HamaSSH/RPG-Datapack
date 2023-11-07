@@ -1,4 +1,4 @@
-#> player:combat/main/charged
+#> player:combat/main/_
 # interactionを武器で攻撃した時の処理
 
 # 武器種によって異なる当たり判定呼び出し
