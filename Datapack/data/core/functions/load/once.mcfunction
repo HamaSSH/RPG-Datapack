@@ -50,6 +50,7 @@
     # ストレージ用途
         scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"
         scoreboard objectives add PreviousAGI dummy "AGIの値保存"
+        scoreboard objectives add PreviousLUK dummy "LUKの値保存"
         scoreboard objectives add PreviousMP dummy "MPの値保存"
         scoreboard objectives add HurtTime dummy "無敵時間"
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
