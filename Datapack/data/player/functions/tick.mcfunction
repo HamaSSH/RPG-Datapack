@@ -7,6 +7,7 @@
 # プレイヤーNBT→ストレージ
     data modify storage player: Inventory set from entity @s Inventory
     data modify storage player: SelectedItem set from entity @s SelectedItem
+    data modify storage player: Offhand set from storage player: Inventory[{Slot:-106b}]
 
 # プレイヤーUI
     execute as @a at @s run function player:ui/_
@@ -42,3 +43,4 @@
 # リセット
     data remove storage player: Inventory
     data remove storage player: SelectedItem
+    data remove storage player: Offhand
