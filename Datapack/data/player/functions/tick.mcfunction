@@ -28,6 +28,10 @@
     execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
+    execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
+
+# 獲得ゴールド表示用
+    execute if score @s GoldTimer matches 0 run function player:status/gold/display/summon
 
 # ステータスシステムの処理
     function player:status/hp/_
