@@ -1,11 +1,14 @@
 #> mob:on_death/drop/loot/_
 # 死亡時幸運値が乗るようにアイテムをドロップ
 
-# ルートテーブルの設定
-    data modify storage mob: LootTable set from entity @s DeathLootTable
-    function mob:on_death/drop/loot/loottable with storage mob:
+# ルートテーブルの保存
+    data modify storage mob: DeathLootTable set from entity @s DeathLootTable
 
 # アイテムをドロップ
     gamerule doMobLoot true
-    damage @e[type=tadpole,distance=..0.01,limit=1] 1.0 generic by @p from @p
+    summon tadpole ~ ~ ~ {Silent:1b,NoAI:1b,Health:1.0f}
+    execute as @e[type=tadpole,distance=..0.01,limit=1] run function mob:on_death/drop/loot/loottable
+
+# リセット
+    # data remove storage mob: DeathLootTable
     gamerule doMobLoot false

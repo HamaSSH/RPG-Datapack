@@ -1,4 +1,5 @@
 #> mob:on_death/drop/loot/loottable
 # ルートテーブルをルートドロップ用のオタマジャクシに適用
 
-$summon tadpole ~ ~ ~ {Silent:1b,NoAI:1b,Health:1.0f,DeathLootTable:"$(LootTable)"}
+data modify entity @s DeathLootTable set from storage mob: DeathLootTable
+damage @s 1.0 generic by @p from @p
