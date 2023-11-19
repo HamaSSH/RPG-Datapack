@@ -1,5 +1,35 @@
 {
     "criteria": {
+        "melee": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": false
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "projectile": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "uncharged": {
             "trigger": "player_hurt_entity",
             "conditions": {
@@ -16,8 +46,7 @@
             "conditions": {
                 "damage": {
                     "dealt": {
-                        "min": 1,
-                        "max": 1.999
+                        "min": 1
                     }
                 }
             }
@@ -73,6 +102,81 @@
                     "dealt": {
                         "min": 1.2,
                         "max": 1.999
+                    }
+                }
+            }
+        },
+        "projectile_charge0": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 0,
+                        "max": 1.999
+                    }
+                }
+            }
+        },
+        "projectile_charge1": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 2.0,
+                        "max": 3.999
+                    }
+                }
+            }
+        },
+        "projectile_charge2": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 4.0,
+                        "max": 5.999
+                    }
+                }
+            }
+        },
+        "projectile_charge3": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 6.0
                     }
                 }
             }
@@ -237,6 +341,10 @@
     },
     "requirements": [
         [
+            "melee",
+            "projectile"
+        ],
+        [
             "uncharged",
             "charged"
         ],
@@ -245,7 +353,11 @@
             "melee_charge1",
             "melee_charge2",
             "melee_charge3",
-            "melee_charge4"
+            "melee_charge4",
+            "projectile_charge0",
+            "projectile_charge1",
+            "projectile_charge2",
+            "projectile_charge3"
         ],
         [
             "MobID8.1",
