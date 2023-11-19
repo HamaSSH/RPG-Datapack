@@ -23,3 +23,4 @@
 # リセット
     scoreboard players reset $PlayerID Temporary
     scoreboard players reset $DmgDealt Temporary
+    tag @s remove Attacker
