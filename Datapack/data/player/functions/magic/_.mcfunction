@@ -15,3 +15,4 @@
 
 # リセット
     data remove storage player: UsedTick
+    tag @s remove TriggerMagic
