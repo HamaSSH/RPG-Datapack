@@ -33,6 +33,9 @@
 # 獲得ゴールド表示用
     execute if score @s GoldTimer matches 0 run function player:status/gold/display/summon
 
+# 経験値の加算
+    execute if score @s EXPGained matches 1.. run function player:status/lvl/exp/_
+
 # ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
