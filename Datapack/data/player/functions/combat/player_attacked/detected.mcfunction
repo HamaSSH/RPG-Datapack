@@ -21,4 +21,3 @@
 # リセット
     scoreboard players reset @s DmgReceived
     data remove storage lib: Damage.Type
-    data remove storage asset:mob ID

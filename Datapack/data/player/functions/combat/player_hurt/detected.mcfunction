@@ -7,6 +7,7 @@
 # 攻撃時のトリガー
     execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
     execute at @s run function #asset:mob/attack
+    data remove storage asset:mob ID
 
 # ダメージ処理
     # 防御＋ダメージブレ補正
@@ -16,4 +17,3 @@
 
 # リセット
     scoreboard players reset @p[tag=Victim] DmgReceived
-    data remove storage asset:mob ID

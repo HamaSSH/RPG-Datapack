@@ -10,6 +10,7 @@
 # 被ダメージ時のトリガー
     execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
     execute at @s run function #asset:mob/hurt
+    data remove storage asset:mob ID
 
 # HP表示の更新
     function mob:status/hp/display/_

@@ -4,6 +4,7 @@
 # アセットのtick処理呼び出し
     execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
     function #asset:mob/tick
+    data remove storage asset:mob ID
 
 # 戦闘中タイマー・無敵時間
     execute if entity @s[tag=InCombat] run scoreboard players remove @s InCombat 1
@@ -17,6 +18,3 @@
 
 # 死亡処理
     execute if entity @s[tag=Dead] run kill @s
-
-# リセット
-    data remove storage asset:mob ID
