@@ -28,6 +28,7 @@
     execute store result score @s HP run data get storage asset:mob Data.Status.HP
     execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
     execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
+    execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
     function mob:summon/set_speed
 
 # 重複のないようなMobUUIDの生成

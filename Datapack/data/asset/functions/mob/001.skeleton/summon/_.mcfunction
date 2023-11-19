@@ -21,6 +21,7 @@
         data modify storage asset:mob Data.Status.HP set value 100
         data modify storage asset:mob Data.Status.Dmg set value 5
         data modify storage asset:mob Data.Status.EXP set value 15
+        data modify storage asset:mob Data.Status.Gold set value 10
         data modify storage asset:mob Data.Status.AGI set value 110
 
 # データの適用

@@ -10,3 +10,4 @@ tag @s add Dead
 # ドロップ
     execute at @s run function mob:on_death/drop/loot/_
     execute at @s run function mob:on_death/drop/exp/_
+    execute at @s run function mob:on_death/drop/gold/_
