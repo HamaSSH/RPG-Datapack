@@ -19,6 +19,7 @@
     # ステータス
         data modify storage asset:mob Data.Status.LVL set value 3
         data modify storage asset:mob Data.Status.HP set value 150
+        data modify storage asset:mob Data.Status.DEF set value 40
         data modify storage asset:mob Data.Status.Dmg set value 20
         data modify storage asset:mob Data.Status.EXP set value 50
         data modify storage asset:mob Data.Status.Gold set value 30

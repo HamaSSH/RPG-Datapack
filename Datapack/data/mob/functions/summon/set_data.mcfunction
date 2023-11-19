@@ -26,6 +26,7 @@
     execute store result score @s LVL run data get storage asset:mob Data.Status.LVL
     execute store result score @s HPMax run data get storage asset:mob Data.Status.HP
     execute store result score @s HP run data get storage asset:mob Data.Status.HP
+    execute store result score @s DEF run data get storage asset:mob Data.Status.DEF
     execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
     execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
     execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
