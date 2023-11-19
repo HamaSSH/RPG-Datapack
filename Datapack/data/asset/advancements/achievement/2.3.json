@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "item": "enchanted_golden_apple"
+            "item": "iron_block"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "ダンジョンレベル３を制覇する"
         },
         "frame": "task",
         "show_toast": true,
