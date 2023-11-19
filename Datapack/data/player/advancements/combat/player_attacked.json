@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "melee": {
+        "str": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -15,7 +15,35 @@
                 }
             }
         },
-        "projectile": {
+        "int": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": false
+                            }
+                        ]
+                    }
+                },
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{Weapon:\"Wand\"}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "dex": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -139,7 +167,7 @@
                     },
                     "dealt": {
                         "min": 2.0,
-                        "max": 3.999
+                        "max": 2.999
                     }
                 }
             }
@@ -157,13 +185,51 @@
                         ]
                     },
                     "dealt": {
-                        "min": 4.0,
-                        "max": 5.999
+                        "min": 3.0,
+                        "max": 3.999
                     }
                 }
             }
         },
         "projectile_charge3": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 4.0,
+                        "max": 4.999
+                    }
+                }
+            }
+        },
+        "projectile_charge4": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "is_projectile",
+                                "expected": true
+                            }
+                        ]
+                    },
+                    "dealt": {
+                        "min": 5.0,
+                        "max": 5.999
+                    }
+                }
+            }
+        },
+        "projectile_charge5": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -341,8 +407,9 @@
     },
     "requirements": [
         [
-            "melee",
-            "projectile"
+            "str",
+            "int",
+            "dex"
         ],
         [
             "uncharged",
@@ -357,7 +424,9 @@
             "projectile_charge0",
             "projectile_charge1",
             "projectile_charge2",
-            "projectile_charge3"
+            "projectile_charge3",
+            "projectile_charge4",
+            "projectile_charge5"
         ],
         [
             "MobID8.1",

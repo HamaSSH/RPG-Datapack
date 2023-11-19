@@ -46,6 +46,7 @@
         scoreboard objectives add SneakTime custom:sneak_time "スキル溜め"
         scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
         scoreboard objectives add FallDistance custom:fall_one_cm "落下距離"
+        scoreboard objectives add UsedBow used:bow "弓使用検知"
 
     # ストレージ用途
         scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"
@@ -86,6 +87,7 @@
             scoreboard objectives add HPRTimer dummy "HP回復タイマー"
             scoreboard objectives add MPRTimer dummy "MP回復タイマー"
             scoreboard objectives add SkillTimer dummy "スキル用タイマー"
+            scoreboard objectives add BowCharge dummy "弓引き時間"
         # 基礎値
             scoreboard objectives add BaseHPMax dummy "基礎HP"
             scoreboard objectives add BaseMPMax dummy "基礎MP"

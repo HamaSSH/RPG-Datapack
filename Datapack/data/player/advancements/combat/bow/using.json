@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:bow"
+                    ],
+                    "nbt": "{Weapon:\"Bow\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:combat/main/bow/using"
+    }
+}

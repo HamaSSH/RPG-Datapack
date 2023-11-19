@@ -17,6 +17,7 @@
     execute if entity @s[scores={RightClick=1..}] run function player:trigger/right_click
     execute if entity @s[scores={SneakTime=1..}] run function player:trigger/sneak
     execute if score @s FallDistance matches 1..399 run scoreboard players reset @s FallDistance
+    execute if score @s UsedBow matches 1.. run function player:combat/main/bow/used
 
 # 魔法を発動したプレイヤーのtick処理
     function #asset:magic/player
