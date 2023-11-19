@@ -8,5 +8,5 @@ tag @s add Dead
     data remove storage asset:mob ID
 
 # ドロップ
-    execute at @s run loot spawn ~ ~ ~ kill @s
+    execute at @s run function mob:on_death/drop/loot/_
     execute at @s run function mob:on_death/drop/exp/_
