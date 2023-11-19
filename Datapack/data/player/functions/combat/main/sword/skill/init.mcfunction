@@ -6,7 +6,7 @@
     function player:status/mp/check/_
 
 # 十分なMPを持っていればため攻撃
-    execute if entity @s[tag=MPCheckPass] run function player:combat/main/sword/skill/_
+    execute if entity @s[tag=MPCheckPass] run function player:combat/main/sword/skill/start
 
 # リセット
     data remove storage player: MPCost
