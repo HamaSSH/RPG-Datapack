@@ -2,7 +2,7 @@
 # 経験値量ブレの設定
 
 # 経験値ブレ幅の決定
-    scoreboard players operation $BlurWidth Temporary = @s EXP
+    scoreboard players operation $BlurWidth Temporary = $EXPDrop Temporary
     scoreboard players add $BlurWidth Temporary 8
     scoreboard players operation $BlurWidth Temporary /= #10 Constant
     scoreboard players operation $BlurWidth Temporary *= #2 Constant
@@ -16,7 +16,7 @@
     scoreboard players remove $BlurWidth Temporary 1
     scoreboard players operation $BlurWidth Temporary /= #2 Constant
     scoreboard players operation $EXPBlur Temporary -= $BlurWidth Temporary
-    scoreboard players operation @s EXP += $EXPBlur Temporary
+    scoreboard players operation $EXPDrop Temporary += $EXPBlur Temporary
 
 # リセット
     scoreboard players reset $BlurWidth Temporary
