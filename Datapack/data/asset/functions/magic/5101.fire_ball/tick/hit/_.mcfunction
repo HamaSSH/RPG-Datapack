@@ -8,8 +8,11 @@
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
-# ダメージ処理
+# 炎上させる
     data modify entity @s Fire set value 100s
+
+# ダメージ処理 #TODO: ノックバックの向き facing entity @e[type=armor_stand,tag=Magic,tag=Attacker,sort=nearest,limit=1] feet
+    scoreboard players set $MotionPower Temporary 80
     execute rotated ~ 60 run function lib:motion/knockback
     function mob:on_hurt/_
     damage @s 0.0 generic

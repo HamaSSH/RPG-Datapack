@@ -1,4 +1,4 @@
-#> asset:magic/5101.fire_ball/tick/detected
+#> asset:magic/5301.thunder_ball/tick/detected
 # 魔法の攻撃範囲内にモブが検知されたら
 
 tag @s add Kill
