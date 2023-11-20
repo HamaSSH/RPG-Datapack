@@ -31,6 +31,9 @@
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
     execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
 
+# 消費アイテム使用中
+    execute unless entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=true}] run function player:trigger/using_item/consumables/init
+
 # 獲得ゴールド表示用
     execute if score @s GoldTimer matches 0 run function player:status/gold/display/_
 
@@ -52,3 +55,4 @@
     data remove storage player: Inventory
     data remove storage player: SelectedItem
     data remove storage player: Offhand
+    advancement revoke @s only player:trigger/using_item/consumables
