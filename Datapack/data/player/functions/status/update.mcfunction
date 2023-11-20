@@ -24,8 +24,8 @@
         data modify storage player: ItemData.Accessory1 set from storage player: Inventory[{Slot:9b,tag:{Equipment:"Accessory"}}]
         data modify storage player: ItemData.Accessory2 set from storage player: Inventory[{Slot:10b,tag:{Equipment:"Accessory"}}]
         data modify storage player: ItemData.Accessory3 set from storage player: Inventory[{Slot:11b,tag:{Equipment:"Accessory"}}]
-    # 装備ごとの補正ステータス #TODO: 武器とかじゃなくても補正しちゃう(腐肉)
-        execute if data storage player: SelectedItem.tag.Bonus run function player:item_data/mainhand
+    # 装備ごとの補正ステータス
+        execute if predicate player:hold_weapon/_ if data storage player: SelectedItem.tag.Bonus run function player:item_data/mainhand
         execute if data storage player: ItemData.Offhand.tag.Bonus run function player:item_data/offhand
         execute if data storage player: ItemData.Helmet.tag.Bonus run function player:item_data/helmet
         execute if data storage player: ItemData.Chestplate.tag.Bonus run function player:item_data/chestplate
