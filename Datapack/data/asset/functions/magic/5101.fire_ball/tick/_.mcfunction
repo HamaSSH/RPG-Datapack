@@ -7,10 +7,10 @@
 
 # 当たり判定
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0,limit=1] run function asset:magic/5101.fire_ball/tick/detected
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,dx=0,sort=nearest,limit=1] at @s run function asset:magic/5101.fire_ball/tick/hit/_
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:every_mob,tag=Enemy,tag=MagicHit,dx=0,sort=nearest,limit=1] at @s run function asset:magic/5101.fire_ball/tick/hit/aoe
 
 # HIT処理
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function asset:magic/5101.fire_ball/tick/hit/aoe
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function asset:magic/5101.fire_ball/tick/hit/_
 
 # 演出
     particle enchant ~ ~ ~ 0.3 0.3 0.3 0 15 force
