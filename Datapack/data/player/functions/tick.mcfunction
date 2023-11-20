@@ -33,6 +33,7 @@
 
 # 消費アイテム使用中
     execute unless entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=true}] run function player:trigger/using_item/consumables/init
+    execute if entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=false}] run function player:trigger/using_item/consumables/reset
 
 # 獲得ゴールド表示用
     execute if score @s GoldTimer matches 0 run function player:status/gold/display/_
@@ -50,6 +51,8 @@
 # バニラ要素から一切のダメージを受けない
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
+    effect clear @s absorption
+    effect clear @s regeneration
 
 # リセット
     data remove storage player: Inventory

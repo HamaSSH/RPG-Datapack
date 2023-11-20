@@ -8,7 +8,7 @@
     execute unless data entity @s SelectedItem run item replace entity @s weapon.mainhand with air
 
 # 消費予定のアイテムデータのリセット
-    execute if entity @s[tag=UsingConsumables] run function player:trigger/using_item/consumables/reset
+    execute unless entity @s[tag=ConsumeOffhand] if entity @s[tag=UsingConsumables] run function player:trigger/using_item/consumables/reset
 
 # リセット
     advancement revoke @s only player:trigger/inventory_changed

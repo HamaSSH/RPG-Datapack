@@ -11,4 +11,6 @@
 
 # リセット
     data remove storage player: MCID
+    data remove storage player: Consumables
+    function player:trigger/using_item/consumables/reset
     advancement revoke @s only player:trigger/consume_item
