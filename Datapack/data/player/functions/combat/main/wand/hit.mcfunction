@@ -3,8 +3,9 @@
 
 # ダメージ処理
     # 被ダメージ(補正無し)を設定
+    data modify storage lib: Damage.Type set value "Magic"
     scoreboard players operation @s DmgReceived = $DmgDealt Temporary
-    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=CriticalHit,sort=nearest,limit=1] run data modify storage lib: Damage.Type set value "Critical"
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=CriticalHit,distance=..6,limit=1] run data modify storage lib: Damage.Critical set value 1b
 
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = $PlayerID Temporary
@@ -15,6 +16,6 @@
     effect give @s slowness 1 0
 
 # リセット
-    tag @s remove Hit
+    data remove storage lib: Damage
     scoreboard players reset @s DmgReceived
-    data remove storage lib: Damage.Type
+    tag @s remove Hit

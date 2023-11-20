@@ -2,8 +2,9 @@
 # ダメージを受けた際の処理
 
 # ダメージ処理
-    # 防御＋ダメージブレ補正
-        function mob:status/def/dmg_reduction
+    # 防御＋ダメージブレ補正 #TODO: 物理防御・魔法防御で分ける
+        execute if data storage lib: Damage{Type:"Melee"} run function mob:status/def/dmg_reduction
+        execute if data storage lib: Damage{Type:"Magic"} run function mob:status/def/dmg_reduction
         function lib:damage/blur
     function lib:damage/received
 

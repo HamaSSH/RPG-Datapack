@@ -1,7 +1,8 @@
 #> asset:magic/5101.fire_ball/tick/hit/_
 # 攻撃がヒットした敵に対しての処理
 
-# 被ダメージを設定
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Magic"
     scoreboard players operation @s DmgReceived = $DmgDealt Temporary
 
 # 攻撃したプレイヤーを記録
@@ -14,5 +15,6 @@
     damage @s 0.0 generic
 
 # リセット
-    tag @s remove Hit
+    data remove storage lib: Damage.Type
     scoreboard players reset @s DmgReceived
+    tag @s remove Hit
