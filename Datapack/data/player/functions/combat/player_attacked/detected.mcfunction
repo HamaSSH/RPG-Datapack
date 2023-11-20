@@ -9,14 +9,7 @@
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
 
 # ダメージを受けた際の処理
-    function mob:on_hurt/_
-
-# #TODO: 属性攻撃
-    # execute if score @p[tag=Attacker] FireAttack matches 1.. run function mob:on_hurt/element/fire
-    # execute if score @p[tag=Attacker] WaterAttack matches 1.. run function mob:on_hurt/element/water
-    # execute if score @p[tag=Attacker] ThunderAttack matches 1.. run function mob:on_hurt/element/thunder
-    # execute if score @p[tag=Attacker] EarthAttack matches 1.. run function mob:on_hurt/element/earth
-    # execute if score @p[tag=Attacker] WindAttack matches 1.. run function mob:on_hurt/element/wind
+    execute at @s run function mob:on_hurt/_
 
 # リセット
     scoreboard players reset @s DmgReceived

@@ -9,7 +9,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0,limit=1] run function player:combat/main/wand/detected
 
 # HIT処理
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/wand/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function player:combat/main/wand/hit
 
 # 移動
     tp @s ^ ^ ^1
