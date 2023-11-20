@@ -1,4 +1,4 @@
-#> mob:on_hurt/fall
+#> mob:on_hurt/natural/fall
 # 落下ダメージ
 
 # ダメージ計算
