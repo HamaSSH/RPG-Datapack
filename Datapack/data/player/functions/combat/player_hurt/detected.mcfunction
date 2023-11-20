@@ -9,11 +9,8 @@
     execute at @s run function #asset:mob/attack
     data remove storage asset:mob ID
 
-# ダメージ処理
-    # 防御＋ダメージブレ補正
-        execute as @p[tag=Victim] run function player:status/def/dmg_reduction
-        execute as @p[tag=Victim] run function lib:damage/blur
-    execute as @p[tag=Victim] at @s run function lib:damage/received
+# ダメージを受けた際の処理
+    execute as @p[tag=Victim] at @s run function player:on_hurt/_
 
 # リセット
     scoreboard players reset @p[tag=Victim] DmgReceived

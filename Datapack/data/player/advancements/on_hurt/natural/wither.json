@@ -18,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "player:damage/wither"
+        "function": "player:on_hurt/natural/wither"
     }
 }

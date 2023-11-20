@@ -7,7 +7,7 @@
                     "type": {
                         "tags": [
                             {
-                                "id": "is_fire",
+                                "id": "is_fall",
                                 "expected": true
                             }
                         ]
@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "player:damage/fire"
+        "function": "player:on_hurt/natural/fall"
     }
 }

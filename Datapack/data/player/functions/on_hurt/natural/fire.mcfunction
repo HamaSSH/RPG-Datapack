@@ -1,13 +1,15 @@
-#> player:damage/fire
+#> player:on_hurt/natural/fire
 # 炎上ダメージ
 
-# ダメージ適用
+# ダメージ設定
     data modify storage lib: Damage.Type set value "Fire"
     execute if entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 10
     execute unless entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 5
-    function lib:damage/received
+
+# ダメージの適用
+    function player:on_hurt/_
 
 # リセット
     scoreboard players reset @s DmgReceived
     data remove storage lib: Damage.Type
-    advancement revoke @s only player:damage/fire
+    advancement revoke @s only player:on_hurt/natural/fire

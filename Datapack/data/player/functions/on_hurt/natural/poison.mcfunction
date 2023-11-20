@@ -1,14 +1,16 @@
-#> player:damage/poison
+#> player:on_hurt/natural/poison
 # 毒ダメージ
 
-# ダメージ適用
+# ダメージ設定
     data modify storage lib: Damage.Type set value "Poison"
     scoreboard players operation @s DmgReceived = @s HP
     scoreboard players add @s DmgReceived 40
     scoreboard players operation @s DmgReceived /= #40 Constant
-    function lib:damage/received
+
+# ダメージの適用
+    function player:on_hurt/_
 
 # リセット
     scoreboard players reset @s DmgReceived
     data remove storage lib: Damage.Type
-    advancement revoke @s only player:damage/poison
+    advancement revoke @s only player:on_hurt/natural/poison
