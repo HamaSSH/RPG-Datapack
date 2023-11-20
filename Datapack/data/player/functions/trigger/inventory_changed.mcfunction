@@ -7,5 +7,8 @@
 # SelectedItemが無ければ確実にメインハンドを空に(無いとバグる)
     execute unless data entity @s SelectedItem run item replace entity @s weapon.mainhand with air
 
+# 消費予定のアイテムデータのリセット
+    function player:trigger/using_item/consumables/reset
+
 # リセット
     advancement revoke @s only player:trigger/inventory_changed
