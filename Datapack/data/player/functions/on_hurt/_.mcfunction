@@ -3,7 +3,7 @@
 
 # ダメージ処理
     # 防御＋ダメージブレ補正
-        function player:status/def/dmg_reduction
+        execute if data storage lib: Damage{Type:"Melee"} run function player:status/def/dmg_reduction
         function lib:damage/blur
     function lib:damage/received
 

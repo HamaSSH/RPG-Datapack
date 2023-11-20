@@ -14,6 +14,7 @@ scoreboard players set #25 Constant 25
 scoreboard players set #27 Constant 27
 scoreboard players set #30 Constant 30
 scoreboard players set #40 Constant 40
+scoreboard players set #60 Constant 60
 scoreboard players set #80 Constant 80
 scoreboard players set #100 Constant 100
 scoreboard players set #200 Constant 200

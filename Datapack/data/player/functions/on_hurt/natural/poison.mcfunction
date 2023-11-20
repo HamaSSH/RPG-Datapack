@@ -11,6 +11,6 @@
     function player:on_hurt/_
 
 # リセット
-    scoreboard players reset @s DmgReceived
     data remove storage lib: Damage.Type
+    scoreboard players reset @s DmgReceived
     advancement revoke @s only player:on_hurt/natural/poison
