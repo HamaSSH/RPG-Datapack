@@ -8,7 +8,6 @@
 
 # バフをプレイヤーに付与
     function player:buff/_
-    tellraw @a {"nbt":"Consumables","storage":"player:"}
 
 # リセット
     data remove storage player: MCID

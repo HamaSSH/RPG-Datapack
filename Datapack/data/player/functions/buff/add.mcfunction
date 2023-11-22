@@ -1,8 +1,9 @@
 #> player:buff/add
-#
+# バフの追加
 
 # バフスコアの設定
 $scoreboard players set @s Buff$(Bonus) $(Value)
+tag @s add StatusUpdate
 
 # バフ管理用マーカーの召喚
     execute positioned 0 1 0 summon marker run function player:buff/manager/init
