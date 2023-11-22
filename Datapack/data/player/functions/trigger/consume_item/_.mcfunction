@@ -6,7 +6,8 @@
     data modify storage player: MCID set from block 0 0 0 Items[0].tag.SkullOwner.Name
     function player:trigger/consume_item/get_data with storage player:
 
-#
+# バフをプレイヤーに付与
+    function player:buff/_
     tellraw @a {"nbt":"Consumables","storage":"player:"}
 
 # リセット
