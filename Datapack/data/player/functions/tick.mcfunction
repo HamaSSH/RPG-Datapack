@@ -44,6 +44,8 @@
 # ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
+    execute if score @s Saturaion matches 1.. run function player:status/saturation
+    execute if score @s Healing matches 1.. run function player:status/hp/healing
 
 # ステータス更新
     execute if entity @s[tag=StatusUpdate] run function player:status/update

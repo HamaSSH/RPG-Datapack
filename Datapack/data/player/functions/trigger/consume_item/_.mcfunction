@@ -6,6 +6,10 @@
     data modify storage player: MCID set from block 0 0 0 Items[0].tag.SkullOwner.Name
     function player:trigger/consume_item/get_data with storage player:
 
+# HP・満腹度回復
+    execute store result score @s Healing run data get storage player: Consumables.Healing
+    execute store result score @s Saturaion run data get storage player: Consumables.Saturation 0.999
+
 # バフをプレイヤーに付与
     function player:buff/_
 
