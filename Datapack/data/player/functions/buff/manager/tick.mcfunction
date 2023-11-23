@@ -8,8 +8,7 @@
     execute store result entity @s data.Buff.Duration int 0.999 run data get storage player: Buff.Duration
 
 # Duration:0になったらバフを削除
-    execute if data storage player: Buff{Duration:0} as @p[tag=BuffOwner] run function player:buff/remove with storage player: Buff
-    execute if data storage player: Buff{Duration:0} run kill @s
+    execute if data storage player: Buff{Duration:0} run function player:buff/manager/remove
 
 # リセット
     data remove storage player: Buff
