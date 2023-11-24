@@ -10,5 +10,5 @@
     execute as @e[type=tadpole,distance=..0.01,limit=1] run function mob:on_death/drop/loot/loottable
 
 # リセット
-    # data remove storage mob: DeathLootTable
+    data remove storage mob: DeathLootTable
     gamerule doMobLoot false
