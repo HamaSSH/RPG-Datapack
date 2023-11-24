@@ -7,10 +7,10 @@
 
 # 左端と右端の実績を解除
     advancement grant @s only asset:achievement/_
-    advancement grant @s only asset:achievement/1.7
+    # advancement grant @s only asset:achievement/1.7
     advancement grant @s only asset:achievement/2.7
-    advancement grant @s only asset:achievement/3.7
-    advancement grant @s only asset:achievement2/_
-    advancement grant @s only asset:achievement2/1.7
-    advancement grant @s only asset:achievement2/2.7
-    advancement grant @s only asset:achievement2/3.7
+    # advancement grant @s only asset:achievement/3.7
+    # advancement grant @s only asset:achievement2/_
+    # advancement grant @s only asset:achievement2/1.7
+    # advancement grant @s only asset:achievement2/2.7
+    # advancement grant @s only asset:achievement2/3.7

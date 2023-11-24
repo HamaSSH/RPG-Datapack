@@ -4,18 +4,19 @@
             "item": "grass_block"
         },
         "title": {
-            "text": "感謝の気持ち\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
-            "text": "体験版をプレイする"
+            "text": "概要"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": false,
         "hidden": false
     },
-    "parent": "asset:achievement/_",
+    "#": "#TODO: achievement2→achievementに戻す",
+    "parent": "asset:achievement2/_",
     "criteria": {
         "requirements": {
             "trigger": "impossible"

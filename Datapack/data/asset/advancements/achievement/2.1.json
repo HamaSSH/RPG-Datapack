@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "item": "dirt"
+            "item": "grass_block"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "感謝の気持ち\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル１を制覇する"
+            "text": "体験版をプレイする"
         },
         "frame": "task",
         "show_toast": true,
