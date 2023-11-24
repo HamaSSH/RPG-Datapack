@@ -1,9 +1,6 @@
 #> player:ui/magic
 # 魔導書のクールダウン表示
 
-# 初期状態
-    data modify storage player:ui magic set value '"\\uF829\\uF821"'
-
 # クールダウンの計算
     execute store result score $Cooldown Temporary run data get storage player: Offhand.tag.Magic.Cooldown
     execute store result score $UsedTick Temporary run data get storage player: Offhand.tag.Magic.UsedTick
