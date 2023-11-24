@@ -2,4 +2,4 @@
 # ルートテーブルをルートドロップ用のオタマジャクシに適用
 
 data modify entity @s DeathLootTable set from storage mob: DeathLootTable
-damage @s 1.0 generic by @p from @p
+execute at @a if score @s PlayerID = @p PlayerID run damage @s 1.0 generic by @p
