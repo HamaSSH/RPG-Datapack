@@ -1,11 +1,13 @@
-#> player:ui/magic/fire
+#> player:ui/magic
 # 魔導書のクールダウン表示
+
+# 初期状態
+    data modify storage player:ui magic set value '"\\uF829\\uF821"'
 
 # クールダウンの計算
     execute store result score $Cooldown Temporary run data get storage player: Offhand.tag.Magic.Cooldown
     execute store result score $UsedTick Temporary run data get storage player: Offhand.tag.Magic.UsedTick
     execute store result score $Time Temporary run time query gametime
-
     execute if score @s CDR matches 1.. run function player:status/cd/reduction
     scoreboard players operation $Time Temporary -= $UsedTick Temporary
     scoreboard players operation $Time Temporary *= #15 Constant
@@ -27,7 +29,7 @@
     execute if score $Time Temporary matches 12 run data modify storage player:ui magic set value '{"text":"\\uE20C"}'
     execute if score $Time Temporary matches 13 run data modify storage player:ui magic set value '{"text":"\\uE20D"}'
     execute if score $Time Temporary matches 14 run data modify storage player:ui magic set value '{"text":"\\uE20E"}'
-    execute if score $Time Temporary matches 15.. run data modify storage player:ui magic set value '{"text":"\\uE20F"}'
+    execute if score $Time Temporary matches 15 run data modify storage player:ui magic set value '{"text":"\\uE20F"}'
 
 # リセット
     scoreboard players reset $Cooldown Temporary
