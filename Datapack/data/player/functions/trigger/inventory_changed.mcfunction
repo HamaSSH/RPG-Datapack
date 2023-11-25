@@ -9,6 +9,3 @@
 
 # 消費予定のアイテムデータのリセット
     execute unless entity @s[tag=ConsumeOffhand] if entity @s[tag=UsingConsumables] run function player:trigger/using_item/consumables/reset
-
-# リセット
-    advancement revoke @s only player:trigger/inventory_changed
