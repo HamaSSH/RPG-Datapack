@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "player:status/gold/_"
+        "function": "player:status/gold/pickup"
     }
 }
