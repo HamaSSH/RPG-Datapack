@@ -1,15 +1,15 @@
 {
-    "condition": "minecraft:all_of",
+    "condition": "all_of",
     "terms": [
         {
-            "condition": "minecraft:inverted",
+            "condition": "inverted",
             "term": {
-                "condition": "minecraft:reference",
+                "condition": "reference",
                 "name": "player:consumables/mainhand"
             }
         },
         {
-            "condition": "minecraft:entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "equipment": {

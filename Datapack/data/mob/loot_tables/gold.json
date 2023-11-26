@@ -4,22 +4,22 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:gold_nugget",
+                    "type": "item",
+                    "name": "gold_nugget",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$GoldNugget"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{ItemType:\"Gold\"}"
                         }
                     ]
@@ -30,22 +30,22 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:gold_ingot",
+                    "type": "item",
+                    "name": "gold_ingot",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$GoldIngot"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{ItemType:\"Gold\"}"
                         }
                     ]
@@ -56,22 +56,22 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:gold_block",
+                    "type": "item",
+                    "name": "gold_block",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$GoldBlock"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
+                            "function": "set_nbt",
                             "tag": "{ItemType:\"Gold\"}"
                         }
                     ]

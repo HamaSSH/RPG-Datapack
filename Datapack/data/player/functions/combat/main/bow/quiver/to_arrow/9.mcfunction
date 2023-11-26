@@ -11,7 +11,7 @@ tag @s add QuiverEquipped
     execute if entity @s[tag=UsedQuiver] if score $Arrow Temporary matches ..0 run tag @s remove UsedQuiver
 
 # 矢筒の中に弓矢があればにんじん棒→弓矢
-    execute if entity @s[tag=QuiverEquipped] run data modify storage lib: NewInventory[{Slot:9b}].id set value "minecraft:arrow"
+    execute if entity @s[tag=QuiverEquipped] run data modify storage lib: NewInventory[{Slot:9b}].id set value "arrow"
     execute if entity @s[tag=QuiverEquipped] run execute store result storage lib: NewInventory[{Slot:9b}].tag.UUID int 1 run scoreboard players add World ItemUUID 1
 
 # リセット

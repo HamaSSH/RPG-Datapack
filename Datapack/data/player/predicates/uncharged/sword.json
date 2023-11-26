@@ -1,6 +1,6 @@
 [
     {
-        "condition": "minecraft:reference",
+        "condition": "reference",
         "name": "player:hold_weapon/sword"
     },
     {

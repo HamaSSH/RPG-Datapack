@@ -22,12 +22,12 @@
             },
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2000,
                     "name": "asset:item/loot/1021.fragile_bone/_"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 20,
                     "quality": 1,
                     "name": "asset:item/loot/1022.golden_bone/_"

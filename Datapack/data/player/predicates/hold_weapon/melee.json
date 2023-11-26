@@ -1,20 +1,20 @@
 {
-    "condition": "minecraft:any_of",
+    "condition": "any_of",
     "terms": [
         {
-            "condition": "minecraft:reference",
+            "condition": "reference",
             "name": "player:hold_weapon/dagger"
         },
         {
-            "condition": "minecraft:reference",
+            "condition": "reference",
             "name": "player:hold_weapon/sword"
         },
         {
-            "condition": "minecraft:reference",
+            "condition": "reference",
             "name": "player:hold_weapon/spear"
         },
         {
-            "condition": "minecraft:reference",
+            "condition": "reference",
             "name": "player:hold_weapon/hammer"
         }
     ]
