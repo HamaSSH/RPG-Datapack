@@ -10,6 +10,13 @@
 # 弓矢消費後の残り弓矢が1以上であれば装備品内の矢筒→弓矢
     function player:combat/main/bow/quiver/to_arrow/_
 
+# 弓矢を矢筒に格納
+    function player:combat/main/bow/arrow/pickup
+
 # プレイヤーのインベントリ操作
     execute unless entity @s[tag=NewInventorySet] run function lib:inventory/set
     tag @s add NewInventorySet
+
+# 矢筒に入れた分の弓矢をclear
+    function player:combat/main/bow/arrow/clear with storage player: Arrow
+    data remove storage player: Arrow
