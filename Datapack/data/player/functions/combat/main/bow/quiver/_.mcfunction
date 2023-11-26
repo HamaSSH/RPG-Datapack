@@ -7,7 +7,7 @@
     data modify storage lib: NewInventory[{tag:{Quiver:{}}}].Count set value 1b
     tag @s remove QuiverEquipped
 
-# Arrowが1以上であれば装備品内の矢筒→弓矢
+# 弓矢が1以上であれば装備品内の矢筒→弓矢
     function player:combat/main/bow/quiver/to_arrow
 
 # プレイヤーのインベントリ操作
