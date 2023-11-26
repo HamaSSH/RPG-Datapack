@@ -35,8 +35,11 @@
     execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
 
 # advancementをtickタイミングで処理
-
     execute if entity @s[advancements={player:trigger/inventory_changed=true}] run function player:trigger/inventory_changed
+
+# 弓使用中
+    execute unless entity @s[tag=UsingBow] if entity @s[advancements={player:trigger/using_item/bow=true}] run function player:trigger/using_item/bow/init
+    execute if entity @s[tag=UsingBow] if entity @s[advancements={player:trigger/using_item/bow=false}] run function player:trigger/using_item/bow/reset
 
 # 消費アイテム使用中
     execute unless entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=true}] run function player:trigger/using_item/consumables/init

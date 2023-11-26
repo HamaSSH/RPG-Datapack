@@ -1,0 +1,12 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{Weapon:\"Bow\"}"
+                }
+            }
+        }
+    }
+}
