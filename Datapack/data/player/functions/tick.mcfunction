@@ -67,6 +67,7 @@
     effect clear @s regeneration
 
 # リセット
+    tag @s remove NewInventorySet
     data remove storage player: Inventory
     data remove storage player: SelectedItem
     data remove storage player: Accessories

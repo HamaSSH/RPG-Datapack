@@ -8,7 +8,8 @@
     tag @s remove QuiverEquipped
 
 # Arrowが1以上であれば装備品内の矢筒→弓矢
-    execute if score @s Arrow matches 1.. run function player:combat/main/bow/quiver/to_arrow
+    function player:combat/main/bow/quiver/to_arrow
 
 # プレイヤーのインベントリ操作
-    function lib:inventory/set
+    execute unless entity @s[tag=NewInventorySet] run function lib:inventory/set
+    tag @s add NewInventorySet
