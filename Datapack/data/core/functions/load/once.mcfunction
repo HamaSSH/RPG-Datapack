@@ -41,6 +41,7 @@
         scoreboard objectives add MagicID dummy "魔法ID"
         scoreboard objectives add MobID dummy "モブID"
         scoreboard objectives add MobUUID dummy "モブUUID"
+        scoreboard objectives add ItemUUID dummy "重複不可アイテムID"
 
     # トリガー
         scoreboard objectives add SneakTime custom:sneak_time "スキル溜め"
@@ -90,6 +91,7 @@
             scoreboard objectives add BowCharge dummy "弓引き時間"
             scoreboard objectives add Saturaion dummy "満腹度回復"
             scoreboard objectives add Healing dummy "♥固定値回復"
+            scoreboard objectives add Arrow dummy "矢筒内の弓矢数"
         # 基礎値
             scoreboard objectives add BaseHPMax dummy "基礎HP"
             scoreboard objectives add BaseMPMax dummy "基礎MP"
