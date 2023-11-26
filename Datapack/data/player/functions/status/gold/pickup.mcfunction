@@ -1,4 +1,4 @@
-#> player:status/gold/_
+#> player:status/gold/pickup
 # ゴールドを取得した時の処理
 
 # Gold換算
