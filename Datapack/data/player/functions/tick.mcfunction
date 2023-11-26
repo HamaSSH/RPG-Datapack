@@ -7,6 +7,9 @@
 # プレイヤーNBT→ストレージ
     data modify storage player: Inventory set from entity @s Inventory
     data modify storage player: SelectedItem set from entity @s SelectedItem
+    data modify storage player: Accessories append from storage player: Inventory[{Slot:9b}]
+    data modify storage player: Accessories append from storage player: Inventory[{Slot:10b}]
+    data modify storage player: Accessories append from storage player: Inventory[{Slot:11b}]
     data modify storage player: Offhand set from storage player: Inventory[{Slot:-106b}]
 
 # プレイヤーUI
@@ -31,7 +34,8 @@
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
     execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
 
-#
+# advancementをtickタイミングで処理
+
     execute if entity @s[advancements={player:trigger/inventory_changed=true}] run function player:trigger/inventory_changed
 
 # 消費アイテム使用中
@@ -62,6 +66,7 @@
 # リセット
     data remove storage player: Inventory
     data remove storage player: SelectedItem
+    data remove storage player: Accessories
     data remove storage player: Offhand
     advancement revoke @s only player:trigger/inventory_changed
     advancement revoke @s only player:trigger/using_item/bow
