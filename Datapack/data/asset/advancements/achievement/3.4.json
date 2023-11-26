@@ -4,11 +4,11 @@
             "item": "potion"
         },
         "title": {
-            "text": "はじめてのドーピング\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
-            "text": "クラフトポーションを飲む"
+            "text": "概要"
         },
         "frame": "task",
         "show_toast": true,

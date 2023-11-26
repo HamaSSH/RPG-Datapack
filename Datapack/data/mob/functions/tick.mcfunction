@@ -1,24 +1,25 @@
-##########
-#>
-#
+#> mob:tick
+# モブ関連のtick処理
 
-### モブ関連の#tick
+# アセットのtick処理呼び出し
+    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
+    function #asset:mob/tick
+    data remove storage asset:mob ID
 
-# tick時の処理
-    execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
-    execute at @s run function #asset:mob/tick
-    data remove storage asset:mob id
+# 戦闘中タイマー・無敵時間
+    execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
+    execute if score @s InCombat matches 0 run function mob:status/hp/display/reset
+    execute if score @s HurtTime matches 1.. run scoreboard players remove @s HurtTime 1
+    execute if score @s HurtTime matches 0 run tag @s remove HurtTime
+    execute if score @s HurtTime matches 0 run scoreboard players reset @s HurtTime
 
-# バフタイマー
-    function mob:on_tick/_
-# HP表示 → 名前
-    execute if entity @s[tag=InCombat] if data entity @s {PortalCooldown:0} run function mob:status/hp/display/reset
-    execute if entity @s[tag=HurtTime,scores={HurtTime=1..}] run function mob:hurt_time
-# 自然・エフェクトダメージ
-    execute unless data entity @s {FallDistance:0.0f} store result score @s fall_distance run data get entity @s FallDistance
-    execute if data entity @s {OnGround:1b} if score @s fall_distance matches 3.. run function mob:on_hurt/natural/fall
+# 落下ダメージ
+    execute unless data entity @s {FallDistance:0.0f} store result score @s FallDistance run data get entity @s FallDistance
+    execute if data entity @s {OnGround:1b} if score @s FallDistance matches 3.. run function mob:on_hurt/natural/fall
+
+# エフェクトダメージ
     execute if data entity @s {HurtTime:9s} if predicate lib:is_on_fire run function mob:on_hurt/natural/fire
-    execute if data entity @s {HurtTime:10s} if predicate mob:on_hurt/poison run function mob:on_hurt/natural/poison
+    execute if data entity @s {HurtTime:9s} if predicate lib:has_effect/poison run function mob:on_hurt/natural/poison
 
-    #execute if entity @s[type=spider] run function mob:asset/000.spider/ai/tick
-    execute if data entity @s {Tags:["MobDead"]} run kill @s
+# 死亡処理
+    execute if entity @s[tag=Dead] run kill @s

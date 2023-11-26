@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "lib:gold",
+                        "nbt": "{ItemType:\"Gold\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:status/gold/pickup"
+    }
+}

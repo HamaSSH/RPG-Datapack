@@ -1,15 +1,16 @@
-##########
-#>
-#
-
-# ダメージ表示色用
-    scoreboard players set $DamageColor Temporary 3
+#> player:on_hurt/natural/wither
 # ウィザーダメージ
-    scoreboard players operation @s dmg_received = @s hp_max
-    scoreboard players operation @s dmg_received /= #60 Constant
-    scoreboard players add @s dmg_received 5
-# ダメージ適用
-    function player:on_hurt/dmg_received
+
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Wither"
+    scoreboard players operation @s DmgReceived = @s HPMax
+    scoreboard players operation @s DmgReceived /= #60 Constant
+    scoreboard players add @s DmgReceived 5
+
+# ダメージの適用
+    function player:on_hurt/_
+
 # リセット
+    data remove storage lib: Damage.Type
+    scoreboard players reset @s DmgReceived
     advancement revoke @s only player:on_hurt/natural/wither
-    scoreboard players reset $DamageColor

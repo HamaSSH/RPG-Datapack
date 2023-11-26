@@ -1,6 +1,7 @@
 #> mob:manager/tick
-# モブAsset関連のtick処理
+# モブのつけられたタグによる処理
 
-# エンティティの処理
-    execute if entity @s[tag=AutoKillVehicle] unless predicate mob:is_vehicle run function mob:manager/kill
-    execute if entity @s[tag=AutoKillPassenger] unless predicate mob:is_passenger run function mob:manager/kill
+# 表示用など不必要になったモブを消す
+    execute if entity @s[tag=IsVehicle] unless predicate lib:is_vehicle run function mob:manager/vanish
+    execute if entity @s[tag=IsPassenger] unless predicate lib:is_passenger run function mob:manager/vanish
+    execute if entity @s[tag=Timer] run function mob:manager/autokill_timer

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{Consumables:{}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:trigger/using_item/consumables/_"
+    }
+}

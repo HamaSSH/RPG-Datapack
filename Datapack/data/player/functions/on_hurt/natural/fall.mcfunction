@@ -1,12 +1,18 @@
-##########
-#>
-#
+#> player:on_hurt/natural/fall
+# 落下ダメージ
 
-# 落下距離 → ダメージ
-    scoreboard players operation $FallDistance Temporary = @s fall_distance
-    scoreboard players operation $FallDistance Temporary /= #100 Constant
-    execute if score $FallDistance Temporary matches 3.. run scoreboard players operation @s dmg_received = $FallDistance Temporary
-    execute if score $FallDistance Temporary matches 3.. run function player:on_hurt/dmg_received
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Melee"
+    scoreboard players operation $FallDistance Temporary = @s FallDistance
+    scoreboard players operation $FallDistance Temporary /= #40 Constant
+    scoreboard players operation @s DmgReceived = $FallDistance Temporary
+
+# ダメージの適用
+    execute if score @s DmgReceived matches 3.. run function player:on_hurt/_
+
 # リセット
+    data remove storage lib: Damage.Type
     scoreboard players reset $FallDistance Temporary
-    scoreboard players reset @s fall_distance
+    scoreboard players reset @s FallDistance
+    scoreboard players reset @s DmgReceived
+    advancement revoke @s only player:on_hurt/natural/fall

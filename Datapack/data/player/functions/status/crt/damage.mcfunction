@@ -1,20 +1,18 @@
-##########
-#>
-#
+#> player:status/crt/damage
+# クリティカルダメージ補正
 
-# 会心攻撃力上昇率 dmg_dealt = dmg_dealt * (crt/7 + 110) / 100
-# = dmg_dealt * (crt + 800) / 700
-    scoreboard players operation $CritMultiplier Temporary = @s crt
-    scoreboard players add $CritMultiplier Temporary 800
-    scoreboard players operation @s dmg_dealt *= $CritMultiplier Temporary
-# 一の位四捨五入
-    scoreboard players add @s dmg_dealt 350
-    scoreboard players operation @s dmg_dealt /= #700 Constant
-# 会心攻撃成功！
-    tag @s add CriticalHit
-# アサシンであればバフ
-    execute if entity @s[team=Assassin] run function player:class/assassin/skill
-# 演出(会心音ゴｷｨ)
-    playsound resource:custom.weapon.crit master @s ~ ~ ~ 1.0 1.0
+tag @s add CriticalHit
+# 会心攻撃力上昇率 DmgDealt = DmgDealt * (CRT/10 + 130) / 100
+    # = DmgDealt * (CRT + 1300) / 1000
+        scoreboard players operation $CritMultiplier Temporary = @s CRT
+        scoreboard players add $CritMultiplier Temporary 1300
+        scoreboard players operation @s DmgDealt *= $CritMultiplier Temporary
+    # 一の位四捨五入
+        scoreboard players add @s DmgDealt 500
+        scoreboard players operation @s DmgDealt /= #1000 Constant
+
+# 演出(ｺﾞｷｨ)
+    playsound resource:custom.weapon.crit master @s
+
 # リセット
-    scoreboard players reset $CritMultiplier
+    scoreboard players reset $CritMultiplier Temporary

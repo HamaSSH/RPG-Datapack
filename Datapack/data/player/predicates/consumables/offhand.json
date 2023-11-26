@@ -1,0 +1,23 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "reference",
+                "name": "player:consumables/mainhand"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "offhand": {
+                        "nbt": "{Consumables:{}}"
+                    }
+                }
+            }
+        }
+    ]
+}

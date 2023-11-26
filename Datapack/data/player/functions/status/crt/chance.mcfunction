@@ -1,23 +1,23 @@
-##########
-#>
-#
+#> player:status/crt/chance
+# クリティカル攻撃になるか判定
 
-# 会心率計算式 → crt_chance = 2*crt - crt^2 / 1000 (crt<1000の時)
-# = (2000*crt - crt^2) / 1000
-    scoreboard players operation $CritChance Temporary = @s crt
-    scoreboard players operation $CritChance Temporary *= #2000 Constant
-    scoreboard players operation $CritChanceb Temporary = @s crt
-    scoreboard players operation $CritChanceb Temporary *= $CritChanceb Temporary
-    scoreboard players operation $CritChance Temporary -= $CritChanceb Temporary
-# 一の位四捨五入
-    scoreboard players add $CritChance Temporary 500
-    scoreboard players operation $CritChance Temporary /= #1000 Constant
-    execute if score @s crt matches 1000.. run scoreboard players set $CritChance Temporary 1000
-# 0~1000 $RNG <= $CritChance → ダメージ補正
-    scoreboard players set $RNGMax Temporary 1000
-    function core:rng
-    execute if score $RNG Temporary <= $CritChance Temporary run function player:status/crt/damage
+# 会心率計算式 → CriticalChance = CRT * 3 / 2 - CRT^2 / 2000
+    # = (3000 * CRT - CRT^2) / 2000 (CRT<1000の時)
+        scoreboard players operation $CriticalChance Temporary = @s CRT
+        scoreboard players operation $CriticalChance Temporary *= #3000 Constant
+        scoreboard players operation $CriticalChanceB Temporary = @s CRT
+        scoreboard players operation $CriticalChanceB Temporary *= $CriticalChanceB Temporary
+        scoreboard players operation $CriticalChance Temporary -= $CriticalChanceB Temporary
+    # 一の位四捨五入
+        scoreboard players add $CriticalChance Temporary 1000
+        scoreboard players operation $CriticalChance Temporary /= #2000 Constant
+
+# 0~1000 $CriticalChanceB <= $CriticalChance → ダメージ補正
+    execute if score @s CRT matches ..999 run execute store result score $CriticalChanceB Temporary run random value 0..65534
+    execute if score @s CRT matches ..999 run scoreboard players operation $CriticalChanceB Temporary %= #1000 Constant
+    execute if score @s CRT matches 1000.. run scoreboard players set $CriticalChanceB Temporary 1000
+    execute if score $CriticalChanceB Temporary <= $CriticalChance Temporary run function player:status/crt/damage
+
 # リセット
-    scoreboard players reset $CritChance
-    scoreboard players reset $CritChanceb
-    scoreboard players reset $RNG
+    scoreboard players reset $CriticalChance Temporary
+    scoreboard players reset $CriticalChanceB Temporary

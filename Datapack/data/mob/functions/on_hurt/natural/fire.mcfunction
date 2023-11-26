@@ -1,13 +1,14 @@
-##########
-#>
-#
+#> mob:on_hurt/natural/fire
+# 炎上ダメージの適用
 
-# ダメージ表示色用
-    scoreboard players set $DamageColor Temporary 1
-# 炎上ダメージ
-    scoreboard players set @s dmg_received 5
-    function mob:on_hurt/dmg_received
-# 死亡処理
-    execute if score @s hp matches ..0 run function mob:on_death/_
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Fire"
+    execute if entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 10
+    execute unless entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 5
+
+# ダメージを受けた際の処理
+    function mob:on_hurt/_
+
 # リセット
-    scoreboard players reset $DamageColor
+    data remove storage lib: Damage.Type
+    scoreboard players reset @s DmgReceived

@@ -1,18 +1,13 @@
-##########
-#>
-#
+#> mob:on_death/_
+# 敵モブが死亡したときの処理
 
-# 死亡時の処理
-    execute store result storage asset:mob id int 1 run scoreboard players get @s MobID
-    execute at @s run function #asset:mob/death
-    data remove storage asset:mob id
+tag @s add Dead
+# ドロップ
+    execute at @s run function mob:on_death/drop/loot/_
+    execute at @s run function mob:on_death/drop/exp/_
+    execute at @s run function mob:on_death/drop/gold/_
 
-# 死亡アニメーション時の見た目調整
-    #execute unless entity @s[tag=CustomModelHurt] run function mob:custom_model/hurt
-    execute if entity @s[type=slime] run data modify entity @s Size set value 0
-# ルートドロップ
-    execute at @s run loot spawn ~ ~ ~ kill @s
-# 経験値ドロップ
-    execute at @s run function mob:on_death/xp/_
-# とどめだ
-    tag @s add MobDead
+# アセットの死亡時処理呼び出し
+    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
+    function #asset:mob/death
+    data remove storage asset:mob ID

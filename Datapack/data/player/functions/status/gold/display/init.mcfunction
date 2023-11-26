@@ -1,9 +1,6 @@
-##########
-#>
-#
+#> player:status/gold/display/init
+# ゴールド表示用エンティティの設定
 
-# ゴールド
-    item modify entity @s armor.head player:gold_display
-    data modify entity @s CustomName set from entity @s ArmorItems[3].tag.display.Name
-# 消えるまでの時間
-    scoreboard players set @s gold_timer 30
+data merge entity @s {billboard:"center",Tags:["AutoKill","Timer"]}
+execute positioned ~ ~-1.62 ~ run data modify entity @s text set value '[{"text":"獲得G: ","color":"#FBFFA3"},{"score":{"name":"@p[tag=GoldDisplay]","objective":"GoldDisplay"},"color":"#EDFFFE"}]'
+scoreboard players set @s Timer 60

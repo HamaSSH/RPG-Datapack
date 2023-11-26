@@ -1,10 +1,10 @@
 #> lib:motion/apply
-# モブにモーションを代入する（$MotionPower の設定は必須）
+# モブにモーションを代入する($MotionPowerの設定は必須)
 
 # 初期化として視点を自分にあわせる & ^ ^ ^1を取得
     execute in overworld positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^ ^ ^1
 
-# ベクトル計算と補正
+# ベクトル計算と補正 #TODO: $MotionPowerをいつリセットするんだい
     data modify storage lib: Pos set from entity 83a-51-1-0-0 Pos
     execute store result score $VectorX Temporary run data get storage lib: Pos[0] 1000
     execute store result score $VectorY Temporary run data get storage lib: Pos[1] 1000

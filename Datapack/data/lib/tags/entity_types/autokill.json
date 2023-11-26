@@ -1,0 +1,12 @@
+{
+    "#": "表示用エンティティ",
+    "values": [
+        "armor_stand",
+        "interaction",
+        "item",
+        "magma_cube",
+        "silverfish",
+        "text_display",
+        "vex"
+    ]
+}

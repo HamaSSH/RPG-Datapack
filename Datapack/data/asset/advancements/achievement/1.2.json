@@ -4,11 +4,11 @@
             "item": "fishing_rod"
         },
         "title": {
-            "text": "\uF824釣りマスター\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
-            "text": "全種類の魚を釣り上げる"
+            "text": "概要"
         },
         "frame": "task",
         "show_toast": true,

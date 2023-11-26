@@ -1,12 +1,12 @@
-##########
-#>
-#
+#> player:status/luk/gold_boost
+# 獲得ゴールドUP
 
-# 獲得ゴールドUP計算式 → gold_gained = gold_gained * (100 + luk/3) / 100
-# = gold_gained * (luk + 300) / 300
-    scoreboard players operation $GoldBoost Temporary = @s luk
-    scoreboard players add $GoldBoost Temporary 400
-    scoreboard players operation @s gold_gained *= $GoldBoost Temporary
-    scoreboard players operation @s gold_gained /= #400 Constant
+# 獲得ゴールド計算式 → GoldDrop = GoldDrop * (100 + LUK/4) / 100
+    # = GoldDrop * (LUK + 400) / 400
+        scoreboard players operation $GoldBoost Temporary = @s LUK
+        scoreboard players add $GoldBoost Temporary 400
+        scoreboard players operation $GoldDrop Temporary *= $GoldBoost Temporary
+        scoreboard players operation $GoldDrop Temporary /= #400 Constant
+
 # リセット
-    scoreboard players reset $GoldBoost
+    scoreboard players reset $GoldBoost Temporary

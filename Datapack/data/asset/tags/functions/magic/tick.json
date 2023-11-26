@@ -1,6 +1,9 @@
 {
     "values": [
-        "asset:magic/5000.example/tick/id",
-        "asset:magic/5101.fire_ball/tick/id"
+        "asset:magic/5101.fire_ball/tick/id",
+        "asset:magic/5201.water_ball/tick/id",
+        "asset:magic/5301.thunder_ball/tick/id",
+        "asset:magic/5401.earth_ball/tick/id",
+        "asset:magic/5501.wind_ball/tick/id"
     ]
 }

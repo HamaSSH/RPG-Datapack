@@ -1,14 +1,15 @@
-##########
-#>
-#
-
-# ダメージ表示色用
-    scoreboard players set $DamageColor Temporary 1
+#> player:on_hurt/natural/fire
 # 炎上ダメージ
-    execute if entity @s[predicate=lib:is_in_lava] run scoreboard players set @s dmg_received 10
-    execute unless entity @s[predicate=lib:is_in_lava] run scoreboard players set @s dmg_received 5
-# ダメージ適用
-    function player:on_hurt/dmg_received
+
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Fire"
+    execute if entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 10
+    execute unless entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 5
+
+# ダメージの適用
+    function player:on_hurt/_
+
 # リセット
+    data remove storage lib: Damage.Type
+    scoreboard players reset @s DmgReceived
     advancement revoke @s only player:on_hurt/natural/fire
-    scoreboard players reset $DamageColor

@@ -4,11 +4,11 @@
             "item": "emerald_block"
         },
         "title": {
-            "text": "百万長者\uF829",
+            "text": "ここにタイトルを入力\uF829",
             "italic": false
         },
         "description": {
-            "text": "累計で1000000G取得する"
+            "text": "概要"
         },
         "frame": "task",
         "show_toast": true,

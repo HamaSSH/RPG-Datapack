@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "glass_bottle",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Tags:[\"DmgDisplay\"]}"
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "nbt": "Damage.Color",
+                                    "storage": "lib:",
+                                    "interpret": true
+                                },
+                                {
+                                    "text": "-"
+                                },
+                                {
+                                    "nbt": "Damage.Value",
+                                    "storage": "lib:"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

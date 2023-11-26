@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "item": "enchanted_book"
+            "item": "stone"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "ゲームクリア？\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "ダンジョンレベル１を制覇する"
         },
         "frame": "task",
         "show_toast": true,

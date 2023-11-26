@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon skeleton ~ ~ ~ {Team:Enemy,Tags:["MobInit"],DeathLootTable:"asset:mob/death/001.skeleton"}
+    summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/001.skeleton"}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 1
@@ -17,11 +17,13 @@
         data modify storage asset:mob Data.Mainhand set value {}
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
-        data modify storage asset:mob Data.Status.lv set value 1
-        data modify storage asset:mob Data.Status.hp set value 100
-        data modify storage asset:mob Data.Status.ad set value 5
-        data modify storage asset:mob Data.Status.xp set value 15
-        data modify storage asset:mob Data.Status.spd set value 80
+        data modify storage asset:mob Data.Status.LVL set value 5
+        data modify storage asset:mob Data.Status.HP set value 80
+        data modify storage asset:mob Data.Status.DEF set value 0
+        data modify storage asset:mob Data.Status.Dmg set value 5
+        data modify storage asset:mob Data.Status.EXP set value 15
+        data modify storage asset:mob Data.Status.Gold set value 10
+        data modify storage asset:mob Data.Status.AGI set value 110
 
 # データの適用
     execute as @e[type=skeleton,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data

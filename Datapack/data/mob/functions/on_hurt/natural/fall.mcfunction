@@ -1,12 +1,15 @@
-##########
-#>
-#
-
+#> mob:on_hurt/natural/fall
 # 落下ダメージ
-    scoreboard players operation @s dmg_received = @s fall_distance
-    scoreboard players operation @s dmg_received *= #6 Constant
-    function mob:on_hurt/dmg_received
-# 死亡処理
-    execute if score @s hp matches ..0 run function mob:on_death/_
+
+# ダメージ設定
+    data modify storage lib: Damage.Type set value "Melee"
+    scoreboard players operation @s DmgReceived = @s FallDistance
+    scoreboard players operation @s DmgReceived *= #8 Constant
+
+# ダメージを受けた際の処理
+    function mob:on_hurt/_
+
 # リセット
-    scoreboard players reset @s fall_distance
+    data remove storage lib: Damage.Type
+    scoreboard players reset @s DmgReceived
+    scoreboard players reset @s FallDistance

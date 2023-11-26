@@ -1,0 +1,20 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "player:class/is_knight"
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{Weapon:\"Spear\"}"
+                    }
+                }
+            }
+        }
+    ]
+}
