@@ -3,8 +3,5 @@
         "requirement": {
             "trigger": "minecraft:inventory_changed"
         }
-    },
-    "rewards": {
-        "function": "player:trigger/inventory_changed"
     }
 }
