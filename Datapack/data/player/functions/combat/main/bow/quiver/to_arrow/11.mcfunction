@@ -6,6 +6,7 @@ tag @s add QuiverEquipped
     execute if entity @s[tag=UsedQuiver] store result score $Capacity Temporary run data get storage player: Accessories[{Slot:11b}].tag.Quiver.Capacity
     execute if entity @s[tag=UsedQuiver] store result score $Arrow Temporary run data get storage player: Accessories[{Slot:11b}].tag.Quiver.Arrow
     execute if entity @s[tag=UsedQuiver] store result storage lib: NewInventory[{Slot:11b}].tag.Quiver.Arrow int 1 run scoreboard players remove $Arrow Temporary 1
+    execute if entity @s[tag=UsedQuiver] run function player:combat/main/bow/quiver/store_arrow/lore/11 with storage lib: NewInventory[{Slot:11b}].tag.Quiver
     execute if entity @s[tag=UsedQuiver] if score $Arrow Temporary matches ..0 run data remove storage lib: NewInventory[{Slot:11b}].tag.Quiver.Arrow
     execute if entity @s[tag=UsedQuiver] if score $Arrow Temporary matches ..0 run tag @s remove QuiverEquipped
     execute if entity @s[tag=UsedQuiver] if score $Arrow Temporary matches ..0 run tag @s remove UsedQuiver

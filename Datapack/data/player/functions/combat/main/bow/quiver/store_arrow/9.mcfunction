@@ -14,6 +14,9 @@ tag @s add ArrowStored
     execute if score $Overflow Temporary matches ..0 run scoreboard players set $Overflow Temporary 0
     execute store result storage lib: NewInventory[{Slot:9b}].tag.Quiver.Arrow int 1 run scoreboard players get $Arrow Temporary
 
+# Loreの設定
+    function player:combat/main/bow/quiver/store_arrow/lore/9 with storage lib: NewInventory[{Slot:9b}].tag.Quiver
+
 # clearする弓矢の本数
     scoreboard players operation $ArrowToClear Temporary += $ArrowToAdd Temporary
     scoreboard players operation $ArrowToClear Temporary -= $Overflow Temporary
