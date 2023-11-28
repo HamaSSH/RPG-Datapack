@@ -6,3 +6,6 @@
 
 # 矢筒の場合、idを必ずcarrot_on_a_stickにする
     execute if data storage player: DroppedItem.tag.Quiver run data modify entity @s Item.id set value "carrot_on_a_stick"
+
+# リセット
+    data remove storage player: DroppedItem
