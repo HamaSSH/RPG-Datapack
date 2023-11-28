@@ -11,22 +11,22 @@
     scoreboard players operation $Time Temporary /= $Cooldown Temporary
 
 # CD表示
-    execute if score $Time Temporary matches ..0 run data modify storage player:ui magic set value '{"text":"\\uE200"}'
-    execute if score $Time Temporary matches 1 run data modify storage player:ui magic set value '{"text":"\\uE201"}'
-    execute if score $Time Temporary matches 2 run data modify storage player:ui magic set value '{"text":"\\uE202"}'
-    execute if score $Time Temporary matches 3 run data modify storage player:ui magic set value '{"text":"\\uE203"}'
-    execute if score $Time Temporary matches 4 run data modify storage player:ui magic set value '{"text":"\\uE204"}'
-    execute if score $Time Temporary matches 5 run data modify storage player:ui magic set value '{"text":"\\uE205"}'
-    execute if score $Time Temporary matches 6 run data modify storage player:ui magic set value '{"text":"\\uE206"}'
-    execute if score $Time Temporary matches 7 run data modify storage player:ui magic set value '{"text":"\\uE207"}'
-    execute if score $Time Temporary matches 8 run data modify storage player:ui magic set value '{"text":"\\uE208"}'
-    execute if score $Time Temporary matches 9 run data modify storage player:ui magic set value '{"text":"\\uE209"}'
-    execute if score $Time Temporary matches 10 run data modify storage player:ui magic set value '{"text":"\\uE20A"}'
-    execute if score $Time Temporary matches 11 run data modify storage player:ui magic set value '{"text":"\\uE20B"}'
-    execute if score $Time Temporary matches 12 run data modify storage player:ui magic set value '{"text":"\\uE20C"}'
-    execute if score $Time Temporary matches 13 run data modify storage player:ui magic set value '{"text":"\\uE20D"}'
-    execute if score $Time Temporary matches 14 run data modify storage player:ui magic set value '{"text":"\\uE20E"}'
-    execute if score $Time Temporary matches 15 run data modify storage player:ui magic set value '{"text":"\\uE20F"}'
+    execute if score $Time Temporary matches ..0 run data modify storage player:ui magic set value '{"text":"\\uE1C0"}'
+    execute if score $Time Temporary matches 1 run data modify storage player:ui magic set value '{"text":"\\uE1C1"}'
+    execute if score $Time Temporary matches 2 run data modify storage player:ui magic set value '{"text":"\\uE1C2"}'
+    execute if score $Time Temporary matches 3 run data modify storage player:ui magic set value '{"text":"\\uE1C3"}'
+    execute if score $Time Temporary matches 4 run data modify storage player:ui magic set value '{"text":"\\uE1C4"}'
+    execute if score $Time Temporary matches 5 run data modify storage player:ui magic set value '{"text":"\\uE1C5"}'
+    execute if score $Time Temporary matches 6 run data modify storage player:ui magic set value '{"text":"\\uE1C6"}'
+    execute if score $Time Temporary matches 7 run data modify storage player:ui magic set value '{"text":"\\uE1C7"}'
+    execute if score $Time Temporary matches 8 run data modify storage player:ui magic set value '{"text":"\\uE1C8"}'
+    execute if score $Time Temporary matches 9 run data modify storage player:ui magic set value '{"text":"\\uE1C9"}'
+    execute if score $Time Temporary matches 10 run data modify storage player:ui magic set value '{"text":"\\uE1CA"}'
+    execute if score $Time Temporary matches 11 run data modify storage player:ui magic set value '{"text":"\\uE1CB"}'
+    execute if score $Time Temporary matches 12 run data modify storage player:ui magic set value '{"text":"\\uE1CC"}'
+    execute if score $Time Temporary matches 13 run data modify storage player:ui magic set value '{"text":"\\uE1CD"}'
+    execute if score $Time Temporary matches 14 run data modify storage player:ui magic set value '{"text":"\\uE1CE"}'
+    execute if score $Time Temporary matches 15 run data modify storage player:ui magic set value '{"text":"\\uE1CF"}'
 
 # リセット
     scoreboard players reset $Cooldown Temporary
