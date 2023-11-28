@@ -4,7 +4,7 @@
 # ダメージ設定
     data modify storage lib: Damage.Type set value "Melee"
     scoreboard players operation $FallDistance Temporary = @s FallDistance
-    scoreboard players operation $FallDistance Temporary /= #40 Constant
+    scoreboard players operation $FallDistance Temporary /= #20 Constant
     scoreboard players operation @s DmgReceived = $FallDistance Temporary
 
 # ダメージの適用
