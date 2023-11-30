@@ -4,23 +4,39 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "gold_nugget",
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
                     "functions": [
                         {
-                            "function": "set_count",
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "1",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "G",
+                                    "color": "#FFEE59",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
                             "count": {
-                                "type": "score",
+                                "type": "minecraft:score",
                                 "target": {
-                                    "type": "fixed",
-                                    "name": "$GoldNugget"
+                                    "type": "minecraft:fixed",
+                                    "name": "$1G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{ItemType:\"Gold\"}"
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1,ItemType:\"Gold\"}"
                         }
                     ]
                 }
@@ -30,23 +46,39 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "gold_ingot",
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
                     "functions": [
                         {
-                            "function": "set_count",
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "10",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "G",
+                                    "color": "#FFEE59",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
                             "count": {
-                                "type": "score",
+                                "type": "minecraft:score",
                                 "target": {
-                                    "type": "fixed",
-                                    "name": "$GoldIngot"
+                                    "type": "minecraft:fixed",
+                                    "name": "$10G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{ItemType:\"Gold\"}"
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:10,ItemType:\"Gold\"}"
                         }
                     ]
                 }
@@ -56,23 +88,39 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "gold_block",
+                    "type": "minecraft:item",
+                    "name": "minecraft:nautilus_shell",
                     "functions": [
                         {
-                            "function": "set_count",
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "100",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "G",
+                                    "color": "#FFEE59",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
                             "count": {
-                                "type": "score",
+                                "type": "minecraft:score",
                                 "target": {
-                                    "type": "fixed",
-                                    "name": "$GoldBlock"
+                                    "type": "minecraft:fixed",
+                                    "name": "$100G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "set_nbt",
-                            "tag": "{ItemType:\"Gold\"}"
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:100,ItemType:\"Gold\"}"
                         }
                     ]
                 }
