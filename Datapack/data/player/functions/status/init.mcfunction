@@ -14,6 +14,17 @@ scoreboard players set @s BaseDEF 0
 scoreboard players set @s BaseAGI 0
 scoreboard players set @s BaseCRT 0
 scoreboard players set @s BaseLUK 0
+scoreboard players set @s BuffHP 50
+scoreboard players set @s BuffMP 50
+scoreboard players set @s BuffHPR 25
+scoreboard players set @s BuffMPR 50
+scoreboard players set @s BuffSTR 1
+scoreboard players set @s BuffINT 0
+scoreboard players set @s BuffDEX 0
+scoreboard players set @s BuffDEF 0
+scoreboard players set @s BuffAGI 0
+scoreboard players set @s BuffCRT 0
+scoreboard players set @s BuffLUK 0
 scoreboard players set @s LVL 1
 scoreboard players set @s EXP 0
 scoreboard players set @s NextEXP 50
