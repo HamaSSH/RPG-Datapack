@@ -14,11 +14,11 @@ scoreboard players set @s BaseDEF 0
 scoreboard players set @s BaseAGI 0
 scoreboard players set @s BaseCRT 0
 scoreboard players set @s BaseLUK 0
-scoreboard players set @s BuffHP 50
-scoreboard players set @s BuffMP 50
-scoreboard players set @s BuffHPR 25
-scoreboard players set @s BuffMPR 50
-scoreboard players set @s BuffSTR 1
+scoreboard players set @s BuffHP 0
+scoreboard players set @s BuffMP 0
+scoreboard players set @s BuffHPR 0
+scoreboard players set @s BuffMPR 0
+scoreboard players set @s BuffSTR 0
 scoreboard players set @s BuffINT 0
 scoreboard players set @s BuffDEX 0
 scoreboard players set @s BuffDEF 0
