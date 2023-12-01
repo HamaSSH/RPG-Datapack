@@ -12,7 +12,8 @@
     scoreboard players operation $Phase Temporary *= #7 Constant
     scoreboard players operation $Phase Temporary /= $Duration Temporary
 
-# Phaseの値を管理マーカーのdataに保存
+# TimerとPhaseの値を管理マーカーのdataに保存
+    execute store result storage player: Buff.Timer int 1 run scoreboard players remove $Timer Temporary 1
     execute store result storage player: Buff.Phase int 1 run scoreboard players get $Phase Temporary
 
 # Phaseの値が変わる際Iconを更新

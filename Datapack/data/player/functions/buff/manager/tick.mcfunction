@@ -7,9 +7,6 @@
 # Phaseの値を設定
     function player:buff/manager/phase
 
-# Timerを1ずつ引いてゆく
-    execute store result storage player: Buff.Timer int 0.999 run data get storage player: Buff.Timer
-
 # ストレージ→マーカーのdata
     data modify entity @s data.Buff set from storage player: Buff
 
