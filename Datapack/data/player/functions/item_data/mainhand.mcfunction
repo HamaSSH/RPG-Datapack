@@ -5,7 +5,7 @@
     execute store result score $Bonus Temporary run data get storage player: SelectedItem.tag.Bonus.HP
     scoreboard players operation @s BonusHP += $Bonus Temporary
     execute store result score $Bonus Temporary run data get storage player: SelectedItem.tag.Bonus.MP
-    scoreboard players operation @s BonusMPMax += $Bonus Temporary
+    scoreboard players operation @s BonusMP += $Bonus Temporary
     execute store result score $Bonus Temporary run data get storage player: SelectedItem.tag.Bonus.HPR
     scoreboard players operation @s BonusHPR += $Bonus Temporary
     execute store result score $Bonus Temporary run data get storage player: SelectedItem.tag.Bonus.MPR
