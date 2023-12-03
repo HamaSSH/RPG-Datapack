@@ -1,7 +1,6 @@
 #> player:buff/init
 # バフの初期化
 
-say hi
 # バフ管理用マーカーの召喚
     execute summon marker run function player:buff/manager/init
 
