@@ -8,8 +8,8 @@
     execute as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary run tag @s add Target
     execute summon area_effect_cloud run function player:buff/manager/root/_
 
-# バフの種類が被っているかチェック(Buff.Bonus)
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=!BuffInit] data.Buff{Bonus:"$(Bonus)"} run function player:buff/manager/compare
+# バフの種類が被っているかチェック(Buff.Status)
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=!BuffInit] data.Buff{Bonus:"$(Status)"} run function player:buff/manager/compare
 
     # (効果が同じで弱い)→バフ付与なし
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffWeak] run kill @s
