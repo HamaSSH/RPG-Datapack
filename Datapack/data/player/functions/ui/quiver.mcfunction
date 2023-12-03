@@ -13,10 +13,14 @@
     scoreboard players operation @s Arrow += $Arrow11 Temporary
 
 # 弓矢の数に応じたスぺース
-    execute if score @s Arrow matches ..9 run data modify storage player:ui Quiver set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF807",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
-    execute if score @s Arrow matches 10..999 run data modify storage player:ui Quiver set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF808\\uF805",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
-    execute if score @s Arrow matches 100..999 run data modify storage player:ui Quiver set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF809\\uF803",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
-    execute if score @s Arrow matches 1000.. run data modify storage player:ui Quiver set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF809\\uF803",{"text":"999","font":"shift_31"},"\\uF821"]'
+    execute if score @s Arrow matches ..9 run data modify storage player:ui Quiver.RightHanded set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF807",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
+    execute if score @s Arrow matches 10..999 run data modify storage player:ui Quiver.RightHanded set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF808\\uF805",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
+    execute if score @s Arrow matches 100..999 run data modify storage player:ui Quiver.RightHanded set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF809\\uF803",{"score":{"name":"@s","objective":"Arrow"},"font":"shift_31"},"\\uF821"]'
+    execute if score @s Arrow matches 1000.. run data modify storage player:ui Quiver.RightHanded set value '[{"nbt":"ArrowLC","storage":"player:ui","interpret":true},"\\uF809\\uF808\\uF801\\uE1D3","\\uF809\\uF803",{"text":"999","font":"shift_31"},"\\uF821"]'
+
+# 左利き用
+    execute if entity @s[tag=LeftHanded] run data modify storage player:ui Quiver.LeftHanded set from storage player:ui Quiver.RightHanded
+    execute if entity @s[tag=LeftHanded] run data modify storage player:ui Quiver.RightHanded set value '"\\uF829\\uF828\\uF821"'
 
 # リセット
     scoreboard players reset $Arrow10 Temporary
