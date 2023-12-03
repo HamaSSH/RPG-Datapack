@@ -1,6 +1,7 @@
 #> player:buff/init
 # バフの初期化
 
+say hi
 # バフ管理用マーカーの召喚
     execute summon marker run function player:buff/manager/init
 
@@ -9,7 +10,7 @@
     execute summon area_effect_cloud run function player:buff/manager/root/_
 
 # バフの種類が被っているかチェック(Buff.Status)
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=!BuffInit] data.Buff{Bonus:"$(Status)"} run function player:buff/manager/compare
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=!BuffInit] data.Buff{Status:"$(Status)"} run function player:buff/manager/compare
 
     # (効果が同じで弱い)→バフ付与なし
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffWeak] run kill @s
