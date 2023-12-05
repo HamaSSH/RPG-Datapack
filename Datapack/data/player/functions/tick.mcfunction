@@ -10,7 +10,6 @@
     data modify storage player: Accessories append from storage player: Inventory[{Slot:9b}]
     data modify storage player: Accessories append from storage player: Inventory[{Slot:10b}]
     data modify storage player: Accessories append from storage player: Inventory[{Slot:11b}]
-    data modify storage player: Offhand set from storage player: Inventory[{Slot:-106b}]
 
 # プレイヤーUI
     execute as @a at @s run function player:ui/_
@@ -72,7 +71,6 @@
     data remove storage player: Inventory
     data remove storage player: SelectedItem
     data remove storage player: Accessories
-    data remove storage player: Offhand
     advancement revoke @s only player:trigger/inventory_changed
     advancement revoke @s only player:trigger/using_item/bow
     advancement revoke @s only player:trigger/using_item/consumables

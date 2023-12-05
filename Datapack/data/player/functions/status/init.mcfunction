@@ -3,8 +3,8 @@
 
 scoreboard players set @s HP 50
 scoreboard players set @s MP 50
-scoreboard players set @s BaseHPMax 50
-scoreboard players set @s BaseMPMax 50
+scoreboard players set @s BaseHP 50
+scoreboard players set @s BaseMP 50
 scoreboard players set @s BaseHPR 25
 scoreboard players set @s BaseMPR 50
 scoreboard players set @s BaseSTR 1
@@ -14,6 +14,17 @@ scoreboard players set @s BaseDEF 0
 scoreboard players set @s BaseAGI 0
 scoreboard players set @s BaseCRT 0
 scoreboard players set @s BaseLUK 0
+scoreboard players set @s BuffHP 0
+scoreboard players set @s BuffMP 0
+scoreboard players set @s BuffHPR 0
+scoreboard players set @s BuffMPR 0
+scoreboard players set @s BuffSTR 0
+scoreboard players set @s BuffINT 0
+scoreboard players set @s BuffDEX 0
+scoreboard players set @s BuffDEF 0
+scoreboard players set @s BuffAGI 0
+scoreboard players set @s BuffCRT 0
+scoreboard players set @s BuffLUK 0
 scoreboard players set @s LVL 1
 scoreboard players set @s EXP 0
 scoreboard players set @s NextEXP 50
@@ -34,7 +45,7 @@ function player:status/update
 
 ###################################
 # HP/HPMax ... 現在のHP/最大HP MAX-∞
-# MP/MPMax ... 現在のHP/最大MP MAX-16383
+# MP/MPMax ... 現在のHP/最大MP MAX-∞
 # HPRegen ... HP回復速度 MAX-∞
 # MPRegen ... MP回復速度 MAX-∞
 # STR ... 物理攻撃力 MAX-∞

@@ -9,6 +9,7 @@
 # アイテムにクールダウンのデータを格納
     execute store result storage player: UsedTick int 1 run time query gametime
     item modify entity @s weapon.offhand player:magic/store_usedtick
+    data modify storage player: Inventory set from entity @s Inventory
 
 # 属性を纏う
     function player:magic/element

@@ -1,11 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "inventory_changed",
+            "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "tag": "lib:gold",
+                        "items": [
+                            "minecraft:nautilus_shell"
+                        ],
                         "nbt": "{ItemType:\"Gold\"}"
                     }
                 ]

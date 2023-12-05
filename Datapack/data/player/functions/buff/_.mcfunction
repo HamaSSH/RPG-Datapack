@@ -2,6 +2,7 @@
 # バフをプレイヤーに付与
 
 # プレイヤー検索用のタグとPlayerID
+    tag @s add IsBuffed
     tag @s add BuffOwner
     scoreboard players operation $PlayerID Temporary = @s PlayerID
 

@@ -5,6 +5,9 @@
     scoreboard players add World PlayerID 1
     scoreboard players operation @s PlayerID = World PlayerID
 
+# 利き手の設定
+    tag @s add RightHanded
+
 # 初期ステータス
     function player:status/init
 

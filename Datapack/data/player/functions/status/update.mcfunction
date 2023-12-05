@@ -2,8 +2,8 @@
 # ステータスの更新
 
 # ⓵基礎ステータス
-    scoreboard players operation @s HPMax = @s BaseHPMax
-    scoreboard players operation @s MPMax = @s BaseMPMax
+    scoreboard players operation @s HPMax = @s BaseHP
+    scoreboard players operation @s MPMax = @s BaseMP
     scoreboard players operation @s HPRegen = @s BaseHPR
     scoreboard players operation @s MPRegen = @s BaseMPR
     scoreboard players operation @s STR = @s BaseSTR
@@ -34,8 +34,8 @@
         execute if data storage player: ItemData.Accessory1.tag.Bonus run function player:item_data/accessory1
         execute if data storage player: ItemData.Accessory2.tag.Bonus run function player:item_data/accessory2
         execute if data storage player: ItemData.Accessory3.tag.Bonus run function player:item_data/accessory3
-    scoreboard players operation @s HPMax += @s BonusHPMax
-    scoreboard players operation @s MPMax += @s BonusMPMax
+    scoreboard players operation @s HPMax += @s BonusHP
+    scoreboard players operation @s MPMax += @s BonusMP
     scoreboard players operation @s HPRegen += @s BonusHPR
     scoreboard players operation @s MPRegen += @s BonusMPR
     scoreboard players operation @s STR += @s BonusSTR
@@ -50,8 +50,8 @@
     execute if predicate player:class/weapon/any_of run function player:class/weapon
 
 # ⓸バフによる補正
-    scoreboard players operation @s HPMax += @s BuffHPMax
-    scoreboard players operation @s MPMax += @s BuffMPMax
+    scoreboard players operation @s HPMax += @s BuffHP
+    scoreboard players operation @s MPMax += @s BuffMP
     scoreboard players operation @s HPRegen += @s BuffHPR
     scoreboard players operation @s MPRegen += @s BuffMPR
     scoreboard players operation @s STR += @s BuffSTR
@@ -87,8 +87,8 @@
 
 # リセット
     data remove storage player: ItemData
-    scoreboard players reset @s BonusHPMax
-    scoreboard players reset @s BonusMPMax
+    scoreboard players reset @s BonusHP
+    scoreboard players reset @s BonusMP
     scoreboard players reset @s BonusHPR
     scoreboard players reset @s BonusMPR
     scoreboard players reset @s BonusSTR
