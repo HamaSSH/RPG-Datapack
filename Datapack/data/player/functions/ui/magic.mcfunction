@@ -2,8 +2,8 @@
 # 魔導書のクールダウン表示
 
 # クールダウンの計算
-    execute store result score $Cooldown Temporary run data get storage player: Offhand.tag.Magic.Cooldown
-    execute store result score $UsedTick Temporary run data get storage player: Offhand.tag.Magic.UsedTick
+    execute store result score $Cooldown Temporary run data get storage player: Inventory[{Slot:-106b}].tag.Magic.Cooldown
+    execute store result score $UsedTick Temporary run data get storage player: Inventory[{Slot:-106b}].tag.Magic.UsedTick
     execute store result score $Time Temporary run time query gametime
     execute if score @s CDR matches 1.. run function player:status/cd/reduction
     scoreboard players operation $Time Temporary -= $UsedTick Temporary
