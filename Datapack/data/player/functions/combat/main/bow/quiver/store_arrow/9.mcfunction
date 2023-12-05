@@ -3,8 +3,8 @@
 
 tag @s add ArrowStored
 # スロット9の矢筒のデータ
-    execute store result score $Capacity Temporary run data get storage player: Accessories[{Slot:9b}].tag.Quiver.Capacity
-    execute store result score $Arrow Temporary run data get storage player: Accessories[{Slot:9b}].tag.Quiver.Arrow
+    execute store result score $Capacity Temporary run data get storage lib: NewInventory[{Slot:9b}].tag.Quiver.Capacity
+    execute store result score $Arrow Temporary run data get storage lib: NewInventory[{Slot:9b}].tag.Quiver.Arrow
 
 # 矢筒のArrowタグに設定する弓矢の本数
     scoreboard players operation $Arrow Temporary += $ArrowToAdd Temporary
