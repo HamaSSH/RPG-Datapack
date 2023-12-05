@@ -3,8 +3,6 @@
 
 tag @s add UsingBow
 # スロット9~11にある矢筒(弓矢の姿)のCountを2に増やす
-    data modify storage lib: NewInventory set from storage player: Accessories
-    data modify storage lib: NewInventory[{id:"minecraft:arrow",tag:{Quiver:{}}}].Count set value 2b
-
-# プレイヤーのインベントリ操作
-    function lib:inventory/set/accessories
+    execute if data storage player: Accessories[{Slot:9b,id:"minecraft:arrow",tag:{Quiver:{}}}] run item modify entity @s inventory.0 lib:set_count/2
+    execute if data storage player: Accessories[{Slot:10b,id:"minecraft:arrow",tag:{Quiver:{}}}] run item modify entity @s inventory.1 lib:set_count/2
+    execute if data storage player: Accessories[{Slot:11b,id:"minecraft:arrow",tag:{Quiver:{}}}] run item modify entity @s inventory.2 lib:set_count/2

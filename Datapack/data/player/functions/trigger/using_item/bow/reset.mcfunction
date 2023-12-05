@@ -2,9 +2,7 @@
 # 弓の使用を終えた際のリセット処理
 
 tag @s remove UsingBow
-# スロット9~11にある矢筒(弓矢の姿)のCountを1に戻す
-    data modify storage lib: NewInventory set from storage player: Accessories
-    data modify storage lib: NewInventory[{tag:{Quiver:{}}}].Count set value 1b
-
-# プレイヤーのインベントリ操作
-    function lib:inventory/set/accessories
+# スロット9~11にある矢筒のCountを1に設定する
+    execute if data storage player: Accessories[{Slot:9b,tag:{Quiver:{}}}] run item modify entity @s inventory.0 lib:set_count/1
+    execute if data storage player: Accessories[{Slot:10b,tag:{Quiver:{}}}] run item modify entity @s inventory.1 lib:set_count/1
+    execute if data storage player: Accessories[{Slot:11b,tag:{Quiver:{}}}] run item modify entity @s inventory.2 lib:set_count/1
