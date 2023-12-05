@@ -45,7 +45,7 @@ function player:status/update
 
 ###################################
 # HP/HPMax ... 現在のHP/最大HP MAX-∞
-# MP/MPMax ... 現在のHP/最大MP MAX-16383
+# MP/MPMax ... 現在のHP/最大MP MAX-∞
 # HPRegen ... HP回復速度 MAX-∞
 # MPRegen ... MP回復速度 MAX-∞
 # STR ... 物理攻撃力 MAX-∞
