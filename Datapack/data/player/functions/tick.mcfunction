@@ -33,7 +33,7 @@
 
 # 魔法を発動したプレイヤーのtick処理
     function #asset:magic/player
-    execute if score @s ElementTimer matches 1.. positioned ~ ~0.8 ~ run function player:magic/element/_
+    execute if score @s ElementTimer matches 1.. run function player:magic/element/_
 
 # advancementをtickタイミングで処理
     execute if entity @s[advancements={player:trigger/inventory_changed=true}] run function player:trigger/inventory_changed
