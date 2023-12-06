@@ -5,7 +5,6 @@
     data modify storage lib: NewInventory set from storage player: Inventory
     data modify storage lib: NewInventory[{tag:{Quiver:{}}}].id set value "minecraft:carrot_on_a_stick"
     data modify storage lib: NewInventory[{tag:{Quiver:{}}}].Count set value 1b
-    tag @s remove QuiverEquipped
 
 # 弓矢消費後の残り弓矢が1以上であれば装備品内の矢筒→弓矢
     function player:combat/main/bow/quiver/to_arrow/_
