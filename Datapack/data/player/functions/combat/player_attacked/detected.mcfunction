@@ -10,6 +10,11 @@
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
 
+# 属性纏い攻撃 #TODO: 水のモブデバフと雷のチェーン攻撃
+    execute if entity @p[tag=Attacker,tag=ElementFire] run data modify entity @s Fire set value 100s
+    execute if entity @p[tag=Attacker,tag=ElementWater] run function mob:on_hurt/element/water
+    execute if entity @p[tag=Attacker,tag=ElementEarth] run effect give @s slowness 2 1
+
 # ダメージを受けた際の処理
     execute at @s run function mob:on_hurt/_
 
