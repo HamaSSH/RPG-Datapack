@@ -1,8 +1,8 @@
 {
     "values": [
-        "#asset:flower",
-        "#asset:grass",
-        "#asset:mushroom",
+        "#item:collect/flower",
+        "#item:collect/grass",
+        "#item:collect/mushroom",
         "dead_brain_coral",
         "dead_bubble_coral",
         "dead_fire_coral",

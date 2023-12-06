@@ -1,4 +1,4 @@
-#> asset:material/harvesting/001.sweet_berries/summon/_
+#> asset:material/001.sweet_berries/summon/_
 # 召喚処理
 
 # モデルの召喚
@@ -7,7 +7,7 @@
 
 # データの設定
     data modify storage asset:material Data.MaterialID set value 1
-    data modify storage asset:material Data.LootTable set value "asset:material/harvesting/001.sweet_berries"
+    data modify storage asset:material Data.LootTable set value "asset:material/001.sweet_berries"
     data modify storage asset:material Data.HP set value 5
 
 # データの適用

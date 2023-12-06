@@ -1,4 +1,4 @@
-#> asset:material/harvesting/001.sweet_berries/harvest/stage/1
+#> asset:material/001.sweet_berries/collect/stage/1
 # ブロックの表示を変更
 
 setblock ~ ~ ~ dead_bubble_coral[waterlogged=false]

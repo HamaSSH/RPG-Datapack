@@ -1,4 +1,4 @@
-#> asset:material/harvesting/001.sweet_berries/harvest/damage
+#> asset:material/001.sweet_berries/collect/damage
 # 採集ポイントを1段階破壊
 
 # HPバーの表示
@@ -11,10 +11,10 @@
     execute if score @s HP matches 0 run data modify entity @s CustomName set value '[{"text":"█████","color":"dark_gray"}]'
 
 # アイテムドロップ
-    loot spawn ~ ~ ~ loot asset:material/harvesting/001.sweet_berries
+    loot spawn ~ ~ ~ loot asset:material/001.sweet_berries
     playsound block.sweet_berry_bush.pick_berries master @a
 
 # 見た目の変更
-    execute if score @s HP matches 3 run function asset:material/harvesting/001.sweet_berries/harvest/stage/2
-    execute if score @s HP matches 0 run function asset:material/harvesting/001.sweet_berries/harvest/stage/1
-    execute if score @s HP matches 0 run function asset:material/harvesting/001.sweet_berries/harvest/death
+    execute if score @s HP matches 3 run function asset:material/001.sweet_berries/collect/stage/2
+    execute if score @s HP matches 0 run function asset:material/001.sweet_berries/collect/stage/1
+    execute if score @s HP matches 0 run function asset:material/001.sweet_berries/collect/death
