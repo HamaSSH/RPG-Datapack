@@ -54,8 +54,29 @@
         scoreboard objectives add PreviousAGI dummy "AGIの値保存"
         scoreboard objectives add PreviousLUK dummy "LUKの値保存"
         scoreboard objectives add PreviousMP dummy "MPの値保存"
+
+    # システム用
+        scoreboard objectives add EXPGained dummy "獲得経験値"
+        scoreboard objectives add GoldDisplay dummy "獲得G保存用"
+        scoreboard objectives add GoldTimer dummy "獲得G表示までの時間"
+        scoreboard objectives add DmgDealt dummy "与ダメージ"
+        scoreboard objectives add DmgReceived dummy "被ダメージ"
+        scoreboard objectives add NextEXP dummy "必要経験値"
+        scoreboard objectives add HPRatio dummy "HP割合"
+        scoreboard objectives setdisplay list HPRatio
+        scoreboard objectives modify HPRatio rendertype hearts
+        scoreboard objectives add MPRatio dummy "MP割合"
+        scoreboard objectives add HPRTimer dummy "HP回復タイマー"
+        scoreboard objectives add MPRTimer dummy "MP回復タイマー"
+        scoreboard objectives add SkillTimer dummy "スキル用タイマー"
+        scoreboard objectives add BowCharge dummy "弓引き時間"
+        scoreboard objectives add Saturaion dummy "満腹度回復"
+        scoreboard objectives add Healing dummy "♥固定値回復"
+        scoreboard objectives add Arrow dummy "矢筒内の弓矢"
+        scoreboard objectives add ArrowLC dummy "左クリック弓矢"
         scoreboard objectives add HurtTime dummy "無敵時間"
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
+        scoreboard objectives add ElementTimer dummy "属性纏い"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
@@ -74,25 +95,6 @@
         scoreboard objectives add LVL dummy "レベル"
         scoreboard objectives add EXP dummy "経験値"
         scoreboard objectives add Gold dummy "ゴールド"
-        # システム用
-            scoreboard objectives add EXPGained dummy "獲得経験値"
-            scoreboard objectives add GoldDisplay dummy "獲得G保存用"
-            scoreboard objectives add GoldTimer dummy "獲得G表示までの時間"
-            scoreboard objectives add DmgDealt dummy "与ダメージ"
-            scoreboard objectives add DmgReceived dummy "被ダメージ"
-            scoreboard objectives add NextEXP dummy "必要経験値"
-            scoreboard objectives add HPRatio dummy "HP割合"
-            scoreboard objectives setdisplay list HPRatio
-            scoreboard objectives modify HPRatio rendertype hearts
-            scoreboard objectives add MPRatio dummy "MP割合"
-            scoreboard objectives add HPRTimer dummy "HP回復タイマー"
-            scoreboard objectives add MPRTimer dummy "MP回復タイマー"
-            scoreboard objectives add SkillTimer dummy "スキル用タイマー"
-            scoreboard objectives add BowCharge dummy "弓引き時間"
-            scoreboard objectives add Saturaion dummy "満腹度回復"
-            scoreboard objectives add Healing dummy "♥固定値回復"
-            scoreboard objectives add Arrow dummy "矢筒内の弓矢"
-            scoreboard objectives add ArrowLC dummy "左クリック弓矢"
         # 基礎値
             scoreboard objectives add BaseHP dummy "基礎最大HP"
             scoreboard objectives add BaseMP dummy "基礎最大MP"

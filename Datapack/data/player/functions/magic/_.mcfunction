@@ -12,7 +12,13 @@
     data modify storage player: Inventory set from entity @s Inventory
 
 # 属性を纏う
-    function player:magic/element
+    function player:magic/element/reset
+    scoreboard players set @s ElementTimer 100
+    execute if data storage player: Magic{Element:"Fire"} run tag @s add ElementFire
+    execute if data storage player: Magic{Element:"Water"} run tag @s add ElementWater
+    execute if data storage player: Magic{Element:"Thunder"} run tag @s add ElementThunder
+    execute if data storage player: Magic{Element:"Earth"} run tag @s add ElementEarth
+    execute if data storage player: Magic{Element:"Wind"} run tag @s add ElementWind
 
 # リセット
     data remove storage player: UsedTick

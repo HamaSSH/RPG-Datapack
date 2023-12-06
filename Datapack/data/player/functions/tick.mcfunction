@@ -22,9 +22,6 @@
     execute if score @s UsedBow matches 1.. run function player:combat/main/bow/used
     execute positioned ~ ~1.32 ~ as @e[type=item,distance=..0.01] run function player:trigger/drop_item
 
-# 魔法を発動したプレイヤーのtick処理
-    function #asset:magic/player
-
 # ため攻撃をしているプレイヤーのtick処理
     function player:combat/main/tick
 
@@ -33,6 +30,10 @@
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
     execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
+
+# 魔法を発動したプレイヤーのtick処理
+    function #asset:magic/player
+    execute if score @s ElementTimer matches 1.. positioned ~ ~0.8 ~ run function player:magic/element/_
 
 # advancementをtickタイミングで処理
     execute if entity @s[advancements={player:trigger/inventory_changed=true}] run function player:trigger/inventory_changed
