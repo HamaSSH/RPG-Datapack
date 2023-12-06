@@ -1,6 +1,6 @@
 {
     "values": [
-        "asset:material/harvesting/flower/id",
-        "asset:material/harvesting/grass/id"
+        "asset:material/harvesting/flower/harvest/id",
+        "asset:material/harvesting/grass/harvest/id"
     ]
 }
