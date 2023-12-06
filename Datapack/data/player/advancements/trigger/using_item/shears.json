@@ -4,7 +4,7 @@
             "trigger": "using_item",
             "conditions": {
                 "item": {
-                    "nbt": "{Consumables:{}}"
+                    "nbt": "{Tool:\"Shears\"}"
                 }
             }
         }

@@ -46,6 +46,10 @@
     execute unless entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=true}] run function player:trigger/using_item/consumables/init
     execute if entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=false}] run function player:trigger/using_item/consumables/reset
 
+# ツール「ハサミ」の使用中
+    execute if entity @s[advancements={player:trigger/using_item/shears=true}] run function player:trigger/using_item/shears/_
+    execute if score @s UsingShears matches 1.. if entity @s[advancements={player:trigger/using_item/shears=false}] run function player:trigger/using_item/shears/reset
+
 # 獲得ゴールド表示用
     execute if score @s GoldTimer matches 0 run function player:status/gold/display/_
 
@@ -75,3 +79,4 @@
     advancement revoke @s only player:trigger/inventory_changed
     advancement revoke @s only player:trigger/using_item/bow
     advancement revoke @s only player:trigger/using_item/consumables
+    advancement revoke @s only player:trigger/using_item/shears
