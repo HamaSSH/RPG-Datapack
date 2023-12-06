@@ -17,7 +17,7 @@ gamerule doLimitedCrafting false
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
-gamerule doTileDrops false
+gamerule doTileDrops true
 gamerule doTraderSpawning false
 gamerule doWeatherCycle false
 gamerule doWardenSpawning false
