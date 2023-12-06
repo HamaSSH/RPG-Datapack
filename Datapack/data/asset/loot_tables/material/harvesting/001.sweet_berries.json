@@ -1,0 +1,13 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "asset:item/loot/1027.sweet_berries/_"
+                }
+            ]
+        }
+    ]
+}
