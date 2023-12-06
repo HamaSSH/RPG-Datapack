@@ -11,5 +11,5 @@
     execute if entity @s[tag=UsedQuiver] run function player:combat/main/bow/quiver/_
 
 # リセット
-    scoreboard players reset @s BowCharge
+    scoreboard players reset @s UsingBow
     scoreboard players reset @s UsedBow
