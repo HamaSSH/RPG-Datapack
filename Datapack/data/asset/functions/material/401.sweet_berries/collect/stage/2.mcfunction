@@ -1,4 +1,4 @@
-#> asset:material/001.sweet_berries/collect/stage/2
+#> asset:material/401.sweet_berries/collect/stage/2
 # ブロックの表示を変更
 
 setblock ~ ~ ~ dead_fire_coral[waterlogged=false]
