@@ -13,7 +13,7 @@
 # ダメージ処理
     function mob:on_hurt/_
     damage @s 0.0 generic
-    effect give @s slowness 1 0
+    effect give @s slowness 1 0 true
 
 # リセット
     data remove storage lib: Damage
