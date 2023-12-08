@@ -11,6 +11,7 @@
                 "type": "player",
                 "advancements": {
                     "player:combat/player_attacked": {
+                        "atk": true,
                         "uncharged": true
                     }
                 }
