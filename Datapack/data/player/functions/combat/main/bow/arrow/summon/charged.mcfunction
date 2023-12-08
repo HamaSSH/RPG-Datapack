@@ -13,3 +13,8 @@ scoreboard players remove @s ArrowLC 1
 # 演出
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge3=true}}] run playsound entity.arrow.shoot master @a ~ ~ ~ 1 1.1
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge4=true}}] run playsound entity.arrow.shoot master @a ~ ~ ~ 1 1.3
+
+# もし矢筒を持っていたら矢筒使用処理
+    execute if entity @s[tag=QuiverEquipped] run tag @s add UsedQuiver
+    execute if data storage player: Inventory[{id:"minecraft:arrow",tag:{Quiver:{}},Count:2b}] run tag @s remove UsedQuiver
+    execute if entity @s[tag=UsedQuiver] run function player:combat/main/bow/quiver/_
