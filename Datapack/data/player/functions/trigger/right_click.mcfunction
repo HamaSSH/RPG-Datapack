@@ -2,7 +2,7 @@
 # 右クリック時の処理
 
 # 魔法の発動を試みる
-    execute if data storage player: Inventory[{Slot:-106b}].tag.Magic run function player:magic/right_click
+    execute if predicate player:offhand_magic/_ unless predicate player:hold_weapon/bow/mainhand run function player:magic/trigger
 
 # リセット
     scoreboard players reset @s RightClick

@@ -1,8 +1,8 @@
-#> player:magic/right_click
+#> player:magic/trigger
 # オフハンドの魔法アイテムで右クリックしたときの処理
 
 # 魔法のIDを取得
-    data modify storage player: Magic set from storage player: Inventory[{Slot:-106b}].tag.Magic
+    data modify storage player: Magic set from entity @s Inventory[{Slot:-106b}].tag.Magic
     data modify storage player: MPCost set from storage player: Magic.MPCost
     data modify storage asset:magic ID set from storage player: Magic.ID
 
