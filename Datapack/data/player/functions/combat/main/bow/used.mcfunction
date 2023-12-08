@@ -5,6 +5,9 @@
     execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run data modify entity @s pickup set value 0b
     execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run data modify entity @s PierceLevel set value 5
 
+# ため具合に応じて左クリックで矢を打てるようになる
+    execute if score @s UsingBow matches 12.. run scoreboard players set @s ArrowLC 2
+
 # 矢筒の中の弓矢が0になったら矢筒をにんじん棒に戻す
     execute if entity @s[tag=QuiverEquipped] run tag @s add UsedQuiver
     execute if data storage player: Accessories[{id:"minecraft:arrow",tag:{Quiver:{}},Count:2b}] run tag @s remove UsedQuiver

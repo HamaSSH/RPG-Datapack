@@ -22,6 +22,9 @@
         execute if predicate player:charged/wand unless score @s SneakTime matches 30.. run function player:combat/main/wand/charged
         execute if predicate player:uncharged/wand unless score @s SneakTime matches 30.. run function player:combat/main/wand/uncharged
         execute if predicate player:hold_weapon/wand if score @s SneakTime matches 30.. run function player:combat/main/wand/skill/init
+    # 弓
+        execute if predicate player:charged/bow run function player:combat/main/bow/charged
+        execute if predicate player:uncharged/bow run function player:combat/main/bow/uncharged
 
 # リセット
     scoreboard players reset $DmgDealt Temporary
