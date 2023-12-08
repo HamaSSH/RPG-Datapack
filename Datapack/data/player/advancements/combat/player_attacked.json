@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "str": {
+        "atk": {
             "trigger": "player_hurt_entity",
             "conditions": {
                 "damage": {
@@ -13,34 +13,6 @@
                         ]
                     }
                 }
-            }
-        },
-        "int": {
-            "trigger": "player_hurt_entity",
-            "conditions": {
-                "damage": {
-                    "type": {
-                        "tags": [
-                            {
-                                "id": "is_projectile",
-                                "expected": false
-                            }
-                        ]
-                    }
-                },
-                "player": [
-                    {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "equipment": {
-                                "mainhand": {
-                                    "nbt": "{Weapon:\"Wand\"}"
-                                }
-                            }
-                        }
-                    }
-                ]
             }
         },
         "dex": {
@@ -55,7 +27,16 @@
                             }
                         ]
                     }
-                }
+                },
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "#lib:every_mob"
+                        }
+                    }
+                ]
             }
         },
         "uncharged": {
@@ -407,8 +388,7 @@
     },
     "requirements": [
         [
-            "str",
-            "int",
+            "atk",
             "dex"
         ],
         [

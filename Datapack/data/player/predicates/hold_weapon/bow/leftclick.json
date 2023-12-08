@@ -1,7 +1,14 @@
 [
     {
         "condition": "reference",
-        "name": "player:hold_weapon/bow/leftclick"
+        "name": "player:hold_weapon/bow/_"
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "player:hold_weapon/not_bow"
+        }
     },
     {
         "condition": "entity_properties",
@@ -11,7 +18,7 @@
                 "type": "player",
                 "advancements": {
                     "player:combat/player_attacked": {
-                        "charged": true
+                        "dex": false
                     }
                 }
             }

@@ -1,14 +1,7 @@
 [
     {
         "condition": "reference",
-        "name": "player:hold_weapon/bow/_"
-    },
-    {
-        "condition": "minecraft:inverted",
-        "term": {
-            "condition": "minecraft:reference",
-            "name": "player:hold_weapon/not_bow"
-        }
+        "name": "player:hold_weapon/bow/leftclick"
     },
     {
         "condition": "entity_properties",
