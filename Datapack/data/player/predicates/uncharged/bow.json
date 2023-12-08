@@ -1,0 +1,27 @@
+[
+    {
+        "condition": "reference",
+        "name": "player:hold_weapon/bow/_"
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:reference",
+            "name": "player:hold_weapon/not_bow"
+        }
+    },
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type_specific": {
+                "type": "player",
+                "advancements": {
+                    "player:combat/player_attacked": {
+                        "uncharged": true
+                    }
+                }
+            }
+        }
+    }
+]

@@ -16,6 +16,10 @@
         {
             "condition": "reference",
             "name": "player:hold_weapon/hammer"
+        },
+        {
+            "condition": "reference",
+            "name": "player:hold_weapon/wand"
         }
     ]
 }
