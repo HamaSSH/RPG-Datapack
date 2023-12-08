@@ -12,7 +12,7 @@
     data modify storage player: Accessories append from storage player: Inventory[{Slot:11b}]
 
 # プレイヤーUI
-    execute as @a at @s run function player:ui/_
+    execute as @a run function player:ui/_
 
 # トリガー
     function player:trigger/selected_slot/detect

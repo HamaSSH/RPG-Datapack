@@ -4,6 +4,7 @@
 # 左クリック弓矢表示
     execute if score @s ArrowLC matches ..0 run data modify storage player:ui ArrowLC set value '"\\uE1D0"'
     execute if score @s ArrowLC matches 1 run data modify storage player:ui ArrowLC set value '"\\uE1D1"'
+    execute if score @s ArrowLC matches 2 run data modify storage player:ui ArrowLC set value '"\\uE1D2"'
 
 # 矢筒の中の合計弓矢数を取得
     execute store result score @s Arrow run data get storage player: Accessories[{Slot:9b}].tag.Quiver.Arrow

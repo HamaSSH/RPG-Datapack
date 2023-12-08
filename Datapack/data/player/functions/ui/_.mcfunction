@@ -6,7 +6,7 @@
     data modify storage player:ui skill_bar set value '"\\uE1A0"'
     data modify storage player:ui Magic.RightHanded set value '"\\uF829\\uF821"'
     data modify storage player:ui Magic.LeftHanded set value '"\\uF829\\uF821"'
-    data modify storage player:ui ArrowLC set value '"\\uE212"'
+    data modify storage player:ui ArrowLC set value '"\\uE1D0"'
     data modify storage player:ui Quiver.RightHanded set value '"\\uF829\\uF828\\uF821"'
     data modify storage player:ui Quiver.LeftHanded set value '"\\uF829\\uF828\\uF821"'
 
@@ -15,6 +15,7 @@
     execute if entity @s[tag=IsBuffed] run function player:ui/buff
     function player:ui/skill_bar/_
     execute if predicate player:offhand_magic/_ run function player:ui/magic
+    execute if predicate player:hold_weapon/bow/_ unless data storage player: Accessories[].tag.Quiver run function player:ui/arrow
     execute if data storage player: Accessories[].tag.Quiver run function player:ui/quiver
 
 # 右揃え・左揃え用のスコア用
