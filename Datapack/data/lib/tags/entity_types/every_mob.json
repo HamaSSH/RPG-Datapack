@@ -1,4 +1,5 @@
 {
+    "#": "Vexを除く",
     "values": [
         "allay",
         "axolotl",
@@ -66,7 +67,6 @@
         "trader_llama",
         "tropical_fish",
         "turtle",
-        "vex",
         "villager",
         "vindicator",
         "wandering_trader",
