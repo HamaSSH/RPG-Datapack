@@ -1,8 +1,7 @@
-##########
-#>
-#
+#> lib:homing/target/20
+# ホーミングする敵の特定(Rotation誤差±20度)
 
-# ホーミングする敵の特定
+# 候補にタグ付け
     execute positioned ^ ^ ^10 as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,distance=..10] run tag @s add Target
 
 # Rotationの誤差±20度以上の敵はタグ剥奪

@@ -25,6 +25,10 @@
     execute unless block ^ ^ ^ #lib:no_collision run kill @s
     execute unless block ^ ^ ^0.5 #lib:no_collision run kill @s
 
+# ホーミング
+    data modify storage lib: HomingAngle set value 300
+    function lib:homing/_
+
 # 時間経過でkill
     scoreboard players add @s Timer 1
     execute if score @s Timer matches 20.. run tag @s add Kill
@@ -33,3 +37,4 @@
 # リセット
     scoreboard players reset $PlayerID Temporary
     scoreboard players reset $DmgDealt Temporary
+    data remove storage lib: HomingAngle

@@ -1,6 +1,5 @@
-##########
-#>
-#
+#> lib:homing/_
+# ホーミングライブラリ
 
 # 角度取得
     data modify storage lib: Rotation set from entity @s Rotation
