@@ -2,6 +2,7 @@
     "#": "表示用エンティティ",
     "values": [
         "armor_stand",
+        "arrow",
         "interaction",
         "item",
         "magma_cube",

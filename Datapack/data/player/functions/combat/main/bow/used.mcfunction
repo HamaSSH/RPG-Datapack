@@ -2,8 +2,7 @@
 # 弓の使用を検知した際の処理
 
 # 撃った弓矢に対する初期化 #TODO: 弓矢の初期化
-    execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run data modify entity @s pickup set value 0b
-    execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run data modify entity @s PierceLevel set value 1
+    execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run function player:combat/main/bow/arrow/init
 
 # ため具合に応じて左クリックで矢を打てるようになる
     execute if score @s UsingBow matches 12.. run scoreboard players set @s ArrowLC 2
