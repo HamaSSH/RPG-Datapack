@@ -9,3 +9,11 @@ tag @s add Flying
 # 自動的に消滅させる
     scoreboard players set @s Timer 20
     tag @s add AutoKill
+
+# 属性纏い中
+    execute if entity @p[tag=Shooter,tag=ElementFire] run data modify entity @s Fire set value 2000s
+    execute if entity @p[tag=Shooter,tag=ElementFire] run tag @s add ElementFire
+    execute if entity @p[tag=Shooter,tag=ElementWater] run tag @s add ElementWater
+    execute if entity @p[tag=Shooter,tag=ElementThunder] run tag @s add ElementThunder
+    execute if entity @p[tag=Shooter,tag=ElementEarth] run tag @s add ElementEarth
+    execute if entity @p[tag=Shooter,tag=ElementWind] run tag @s add ElementWind

@@ -13,7 +13,7 @@
 
 # 属性を纏う
     function player:magic/element/reset
-    scoreboard players set @s ElementTimer 100
+    scoreboard players set @s ElementTimer 200
     execute if data storage player: Magic{Element:"Fire"} run tag @s add ElementFire
     execute if data storage player: Magic{Element:"Water"} run tag @s add ElementWater
     execute if data storage player: Magic{Element:"Thunder"} run tag @s add ElementThunder

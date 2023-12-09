@@ -8,7 +8,7 @@ scoreboard players remove @s ArrowLC 1
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge0=true}}] run scoreboard players set $MotionPower Temporary 40
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge1=true}}] run scoreboard players set $MotionPower Temporary 80
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge2=true}}] run scoreboard players set $MotionPower Temporary 150
-    execute anchored eyes positioned ^ ^ ^ summon arrow run function player:combat/main/bow/arrow/summon/init
+    execute positioned ~ ~1.52 ~ summon arrow run function player:combat/main/bow/arrow/summon/init
     tag @s remove Shooter
 
 # 演出
