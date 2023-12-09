@@ -15,7 +15,7 @@
     scoreboard players operation @s LUK = @s BaseLUK
 
 # ⓶補正ステータス
-    # 装備をストレージに格納
+    # 装備をストレージに格納 #TODO: Offhand:1bをアイテムにつける(弓)
         data modify storage player: ItemData.Offhand set from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}]
         data modify storage player: ItemData.Helmet set from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}]
         data modify storage player: ItemData.Chestplate set from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}]
@@ -24,7 +24,7 @@
         data modify storage player: ItemData.Accessory1 set from storage player: Inventory[{Slot:9b,tag:{Equipment:"Accessory"}}]
         data modify storage player: ItemData.Accessory2 set from storage player: Inventory[{Slot:10b,tag:{Equipment:"Accessory"}}]
         data modify storage player: ItemData.Accessory3 set from storage player: Inventory[{Slot:11b,tag:{Equipment:"Accessory"}}]
-    # 装備ごとの補正ステータス
+    # 装備ごとの補正ステータス #TODO: ↓弓をoffhand、有象無象mainhandでもいけてしまうためMainhand:1bもアイテムにつける
         execute if predicate player:hold_weapon/_ if data storage player: SelectedItem.tag.Bonus run function player:item_data/mainhand
         execute if data storage player: ItemData.Offhand.tag.Bonus run function player:item_data/offhand
         execute if data storage player: ItemData.Helmet.tag.Bonus run function player:item_data/helmet
