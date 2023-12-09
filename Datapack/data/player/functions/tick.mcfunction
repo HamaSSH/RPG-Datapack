@@ -76,6 +76,7 @@
     data remove storage player: Inventory
     data remove storage player: SelectedItem
     data remove storage player: Accessories
+    advancement revoke @s only player:combat/player_attacked
     advancement revoke @s only player:trigger/inventory_changed
     advancement revoke @s only player:trigger/using_item/bow
     advancement revoke @s only player:trigger/using_item/consumables

@@ -6,7 +6,6 @@
     scoreboard players operation @s DmgDealt = @s STR
     execute if predicate player:hold_weapon/wand run scoreboard players operation @s DmgDealt = @s INT
     execute if entity @s[advancements={player:combat/player_attacked={dex=true}}] run scoreboard players operation @s DmgDealt = @s DEX
-    execute if predicate player:hold_weapon/bow/leftclick run scoreboard players operation @s DmgDealt = @s DEX
 
 # チャージ率に応じてダメージ補正(melee)
     scoreboard players operation @s DmgDealt *= #10 Constant
