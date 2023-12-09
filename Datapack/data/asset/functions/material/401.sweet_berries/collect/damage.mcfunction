@@ -16,4 +16,4 @@
 
 # 見た目の変更
     execute if score @s HP matches 3 run function asset:material/401.sweet_berries/collect/stage/2
-    execute if score @s HP matches 0 run function asset:material/401.sweet_berries/collect/death
+    execute if score @s HP matches ..0 run function asset:material/401.sweet_berries/collect/death
