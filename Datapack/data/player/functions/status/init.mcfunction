@@ -29,6 +29,7 @@ scoreboard players set @s LVL 1
 scoreboard players set @s EXP 0
 scoreboard players set @s NextEXP 50
 scoreboard players set @s Gold 0
+scoreboard players set @s ElementTimer 0
 scoreboard players set @s AssassinEXP 0
 scoreboard players set @s FighterEXP 0
 scoreboard players set @s KnightEXP 0

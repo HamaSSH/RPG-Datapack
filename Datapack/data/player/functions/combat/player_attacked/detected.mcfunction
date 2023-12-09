@@ -4,14 +4,13 @@
 # 被ダメージ(補正無し)を設定
     data modify storage lib: Damage.Type set value "Melee"
     scoreboard players operation @s DmgReceived = @p[tag=Attacker] DmgDealt
-    execute if entity @p[tag=Attacker,tag=CriticalHit] run data modify storage lib: Damage.Type set value "Critical"
     execute if entity @p[tag=Attacker,tag=CriticalHit] run data modify storage lib: Damage.Critical set value 1b
 
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
 
-# 属性纏い攻撃 #TODO: 水のモブデバフと雷のチェーン攻撃
-    execute if entity @p[tag=Attacker,tag=ElementFire] run data modify entity @s Fire set value 100s
+# 属性纏い攻撃 #TODO: 水のモブデバフと雷のチェーン攻撃 #TODO: 矢による属性攻撃でプレイヤーのElementFireタグが着弾直前で切れたら効果なしになる
+    execute if entity @p[tag=Attacker,tag=ElementFire] run data modify entity @s Fire set value 40s
     execute if entity @p[tag=Attacker,tag=ElementWater] run function mob:on_hurt/element/water
     execute if entity @p[tag=Attacker,tag=ElementEarth] run effect give @s slowness 2 1
 

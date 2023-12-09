@@ -2,7 +2,7 @@
 # ダメージを受けた際の処理
 
 # ダメージ処理
-    # 防御＋ダメージブレ補正 #TODO: 物理防御・魔法防御で分ける
+    # 防御＋ダメージブレ補正 #TODO: 物理防御・魔法防御で分ける #TODO: クリティカル攻撃は防御50%貫通とか
         execute if data storage lib: Damage{Type:"Melee"} run function mob:status/def/dmg_reduction
         execute if data storage lib: Damage{Type:"Magic"} run function mob:status/def/dmg_reduction
         function lib:damage/blur

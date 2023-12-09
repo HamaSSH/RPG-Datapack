@@ -17,8 +17,7 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision run kill @s
 
 # 演出
-    particle witch ~ ~ ~ 0.1 0.1 0.1 0 2 force
-    particle witch ^ ^ ^0.5 0.1 0.1 0.1 0 1 force
+    function player:combat/main/wand/particle
 
 # リセット
     scoreboard players reset $PlayerID Temporary
