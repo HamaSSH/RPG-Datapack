@@ -10,7 +10,8 @@
     execute if entity @s[tag=ElementThunder] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/thunder
     execute if entity @s[tag=ElementEarth] unless score @s UsingBow matches 1.. run function player:magic/element/earth
     execute if entity @s[tag=ElementEarth] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/earth
-    execute if entity @s[tag=ElementWind] run function player:magic/element/wind
+    execute if entity @s[tag=ElementWind] unless score @s UsingBow matches 1.. run function player:magic/element/wind
+    execute if entity @s[tag=ElementWind] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/wind
 
 # タイマー
     scoreboard players remove @s ElementTimer 1

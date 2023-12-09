@@ -19,6 +19,8 @@
     execute if data storage player: Magic{Element:"Thunder"} run tag @s add ElementThunder
     execute if data storage player: Magic{Element:"Earth"} run tag @s add ElementEarth
     execute if data storage player: Magic{Element:"Wind"} run tag @s add ElementWind
+    execute if data storage player: Magic{Element:"Wind"} run effect give @s speed infinite 0 true
+    execute if data storage player: Magic{Element:"Wind"} run effect give @s slow_falling infinite 0 true
 
 # リセット
     data remove storage player: UsedTick
