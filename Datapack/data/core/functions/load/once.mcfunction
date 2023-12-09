@@ -52,6 +52,7 @@
 
     # ストレージ用途
         scoreboard objectives add PreviousSlot dummy "選択スロットの値保存"
+        scoreboard objectives add PreviousItemUUID dummy "アイテムID保存"
         scoreboard objectives add PreviousAGI dummy "AGIの値保存"
         scoreboard objectives add PreviousLUK dummy "LUKの値保存"
         scoreboard objectives add PreviousMP dummy "MPの値保存"

@@ -18,7 +18,7 @@ tag @s add QuiverEquipped
 
 # 矢筒の中に弓矢があればにんじん棒→弓矢
     execute if entity @s[tag=QuiverEquipped] run data modify storage lib: NewInventory[{Slot:11b}].id set value "arrow"
-    execute if entity @s[tag=QuiverEquipped] run execute store result storage lib: NewInventory[{Slot:11b}].tag.UUID int 1 run scoreboard players add World ItemUUID 1
+    execute if entity @s[tag=QuiverEquipped] unless data storage lib: NewInventory[{Slot:11b}].tag.UUID run execute store result storage lib: NewInventory[{Slot:11b}].tag.UUID int 1 run scoreboard players add World ItemUUID 1
 
 # リセット
     scoreboard players reset $Capacity Temporary

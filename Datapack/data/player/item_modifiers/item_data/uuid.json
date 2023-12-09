@@ -1,0 +1,14 @@
+{
+    "function": "minecraft:copy_nbt",
+    "source": {
+        "type": "minecraft:storage",
+        "source": "player:"
+    },
+    "ops": [
+        {
+            "source": "ItemUUID",
+            "target": "UUID",
+            "op": "replace"
+        }
+    ]
+}
