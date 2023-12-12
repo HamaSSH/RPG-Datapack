@@ -67,6 +67,7 @@
         scoreboard objectives add MPRTimer dummy "MP回復タイマー"
         scoreboard objectives add SkillTimer dummy "スキル用タイマー"
         scoreboard objectives add UsingBow dummy "弓使用中"
+        scoreboard objectives add BowSkill dummy "弓ため攻撃"
         scoreboard objectives add UsingShears dummy "ブラシ使用中"
         scoreboard objectives add Saturaion dummy "満腹度回復"
         scoreboard objectives add Healing dummy "♥固定値回復"

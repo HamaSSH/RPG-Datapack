@@ -3,6 +3,7 @@
 
 tag @s remove UsingBow
 scoreboard players reset @s UsingBow
+scoreboard players reset @s BowSkill
 # スロット9~11にある矢筒のCountを1に設定する
     execute if data storage player: Accessories[{Slot:9b,tag:{Quiver:{}}}] run item modify entity @s inventory.0 lib:set_count/1
     execute if data storage player: Accessories[{Slot:10b,tag:{Quiver:{}}}] run item modify entity @s inventory.1 lib:set_count/1
