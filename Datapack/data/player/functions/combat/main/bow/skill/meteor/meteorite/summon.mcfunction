@@ -16,3 +16,11 @@ tag @s add MeteoriteArrow
     execute store result entity @s Motion[0] double 0.005 run random value -50..50
     execute store result entity @s Motion[1] double 0.01 run random value -50..0
     execute store result entity @s Motion[2] double 0.005 run random value -50..50
+
+# 属性纏い中
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementFire,limit=1] run data modify entity @s Fire set value 2000s
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementFire,limit=1] run tag @s add ElementFire
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementWater,limit=1] run tag @s add ElementWater
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementThunder,limit=1] run tag @s add ElementThunder
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementEarth,limit=1] run tag @s add ElementEarth
+    execute if entity @e[type=arrow,tag=MeteorArrow,tag=ElementWind,limit=1] run tag @s add ElementWind

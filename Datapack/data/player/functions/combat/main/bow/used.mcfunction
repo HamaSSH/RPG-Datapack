@@ -1,7 +1,7 @@
 #> player:combat/main/bow/used
 # 弓の使用を検知した際の処理
 
-# 撃った弓矢に対する初期化 #TODO: 弓矢の初期化
+# 撃った弓矢に対する初期化
     tag @s add Shooter
     execute positioned ~ ~1.52 ~ as @e[type=arrow,tag=!ArrowInit,distance=..5] run function player:combat/main/bow/arrow/player
 

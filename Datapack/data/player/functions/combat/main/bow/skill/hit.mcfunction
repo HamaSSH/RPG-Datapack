@@ -9,9 +9,9 @@
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
 # 属性纏い攻撃
-    # execute if entity @e[type=arrow,tag=WandAEC,tag=Attacker,tag=ElementFire,distance=..6,limit=1] run data modify entity @s Fire set value 40s
-    # execute if entity @e[type=arrow,tag=WandAEC,tag=Attacker,tag=ElementWater,distance=..6,limit=1] run function mob:on_hurt/element/water
-    # execute if entity @e[type=arrow,tag=WandAEC,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run effect give @s slowness 2 1
+    execute if entity @e[type=arrow,tag=Attacker,tag=ElementFire,distance=..6,limit=1] run data modify entity @s Fire set value 40s
+    # execute if entity @e[type=arrow,tag=Attacker,tag=ElementWater,distance=..6,limit=1] run function mob:on_hurt/element/water
+    # execute if entity @e[type=arrow,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run effect give @s slowness 2 1
 
 # ダメージ処理
     function mob:on_hurt/_
