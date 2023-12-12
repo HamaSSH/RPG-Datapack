@@ -4,7 +4,7 @@
 
 # ゴールドドロップ量の決定
     scoreboard players operation $GoldDrop Temporary = @s Gold
-    scoreboard players operation $LastAttacker Temporary = @s PlayerID
+    scoreboard players operation $LastAttacker Temporary = $PlayerID Temporary
     execute as @a if score @s PlayerID = $LastAttacker Temporary run function player:status/luk/gold_boost
 
 # ゴールドドロップ量ブレの設定

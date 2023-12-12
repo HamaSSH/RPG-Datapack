@@ -7,10 +7,8 @@
 # アイテムをドロップ
     gamerule doMobLoot true
     summon tadpole ~ ~ ~ {Silent:1b,NoAI:1b,Health:1.0f}
-    scoreboard players operation $PlayerID Temporary = @s PlayerID
-    execute as @e[type=tadpole,distance=..0.01,limit=1] run function mob:on_death/drop/loot/loottable
+    execute as @e[type=tadpole,distance=..0.01,limit=1] run function mob:on_death/drop/loot/init
 
 # リセット
     data remove storage mob: DeathLootTable
     gamerule doMobLoot false
-    scoreboard players reset $PlayerID Temporary

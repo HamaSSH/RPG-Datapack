@@ -3,6 +3,10 @@
 
 tag @s add BowSkillMeteor
 data modify entity @s NoGravity set value 1b
+data modify entity @s PierceLevel set value 30
+
+# プレイヤーID
+    scoreboard players operation @s PlayerID = @p[tag=Shooter] PlayerID
 
 # 寿命1秒(もしくは着弾したら消滅)
     scoreboard players set @s Timer 12

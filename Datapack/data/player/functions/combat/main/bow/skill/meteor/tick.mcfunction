@@ -14,5 +14,9 @@ data modify entity @s PierceLevel set value 5
     particle explosion ~ ~ ~ 1.2 1.2 1.2 1 2 force
     particle crit ~ ~ ~ 0.1 0.1 0.1 0 10 force
 
+# リセット
+    scoreboard players reset $PlayerID Temporary
+    scoreboard players reset $DmgDealt Temporary
+
 # 着弾したら一定時間後消滅
     execute if data entity @s {inGround:1b} run scoreboard players set @s Timer 0

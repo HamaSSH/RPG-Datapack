@@ -3,7 +3,7 @@
 
 # 経験値量の決定
     scoreboard players operation $EXPDrop Temporary = @s EXP
-    scoreboard players operation $LastAttacker Temporary = @s PlayerID
+    scoreboard players operation $LastAttacker Temporary = $PlayerID Temporary
     execute as @a if score @s PlayerID = $LastAttacker Temporary run function player:status/luk/exp_boost
 
 # 経験値量ブレの設定
