@@ -1,4 +1,4 @@
-#> player:combat/main/hammer/skill/init
+#> player:combat/main/dagger/skill/init
 # ため攻撃の初期処理
 
 # 十分なMPを持っているか検知
@@ -6,7 +6,7 @@
     function player:status/mp/check/_
 
 # 十分なMPを持っていればため攻撃
-    execute if entity @s[tag=MPCheckPass] run function player:combat/main/hammer/skill/_
+    execute if entity @s[tag=MPCheckPass] run function player:combat/main/dagger/skill/start
 
 # リセット
     data remove storage player: MPCost

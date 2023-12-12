@@ -5,7 +5,9 @@
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/dagger/rec
 
 # HIT処理
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,tag=!HurtTime,distance=..6] run tag @s add Hit
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] run tag @s remove DaggerHit
 
 # 演出
     particle enchanted_hit ^ ^1.4 ^2 0.5 0.1 0.5 0.5 2
