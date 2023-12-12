@@ -3,8 +3,7 @@
 
 # 撃った弓矢に対する初期化 #TODO: 弓矢の初期化
     tag @s add Shooter
-    execute positioned ~ ~1.52 ~ as @e[type=arrow,distance=..1] run function player:combat/main/bow/arrow/init
-    tag @s remove Shooter
+    execute positioned ~ ~1.52 ~ as @e[type=arrow,tag=!ArrowInit,distance=..5] run function player:combat/main/bow/arrow/player
 
 # ため具合に応じて左クリックで矢を打てるようになる
     execute if score @s UsingBow matches 12.. run scoreboard players set @s ArrowLC 2
@@ -20,3 +19,4 @@
 # リセット
     scoreboard players reset @s UsingBow
     scoreboard players reset @s UsedBow
+    tag @s remove Shooter

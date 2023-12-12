@@ -2,7 +2,6 @@
 # 左クリックで召喚する矢の初期化
 
 # 弓矢と放ったプレイヤーの紐づけ
-    scoreboard players operation @s PlayerID = @p[tag=Shooter] PlayerID
     data modify entity @s Owner set from entity @p[tag=Shooter] UUID
 
 # 初期化

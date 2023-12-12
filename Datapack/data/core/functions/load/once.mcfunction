@@ -38,6 +38,7 @@
 # その他スコア
     # ID
         scoreboard objectives add PlayerID dummy "プレイヤーID"
+        scoreboard objectives add UUID dummy "UUID[0]の保存"
         scoreboard objectives add MagicID dummy "魔法ID"
         scoreboard objectives add MaterialID dummy "採集ID"
         scoreboard objectives add MobID dummy "モブID"
