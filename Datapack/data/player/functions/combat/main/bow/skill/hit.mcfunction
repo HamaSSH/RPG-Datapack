@@ -1,4 +1,4 @@
-#> player:combat/main/bow/skill/shot/hit
+#> player:combat/main/bow/skill/hit
 # 攻撃がヒットした敵に対しての処理
 
 # 被ダメージ(補正無し)を設定
