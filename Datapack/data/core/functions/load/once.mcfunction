@@ -25,12 +25,6 @@
     scoreboard objectives add Constant dummy
     function core:load/constant
 
-# 乱数生成用スコアの設定
-    summon marker ~ ~ ~ {Tags:["RNG"]}
-    execute store result score $RNG.Base Global run data get entity @e[tag=RNG,limit=1] UUID[1]
-    execute store result score $RNG.Carry Global run data get entity @e[tag=RNG,limit=1] UUID[3]
-    kill @e[type=marker,tag=RNG,limit=1]
-
 # アセットの初期処理
     function #asset:magic/load
     function #asset:mob/load
