@@ -1,4 +1,4 @@
-#> player:magic/element/using_bow/wind
+#> player:magic/element/using_bow/sfx/wind
 # 弓を弾き絞っているときの風纏い
 
 execute positioned ~ ~1.2 ~ run particle dust_color_transition 0.733 1 0.722 1 0.184 1 0.141 ^ ^ ^0.5 0.15 0.1 0.15 1 2 force

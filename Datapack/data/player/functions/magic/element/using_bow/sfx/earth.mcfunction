@@ -1,4 +1,4 @@
-#> player:magic/element/using_bow/earth
+#> player:magic/element/using_bow/sfx/earth
 # 弓を弾き絞っているときの土纏い
 
 execute positioned ~ ~1.2 ~ run particle dust_color_transition 0.714 0.545 0.365 1 0.4 0.251 0.09 ^ ^ ^0.5 0.15 0.1 0.15 1 2 force

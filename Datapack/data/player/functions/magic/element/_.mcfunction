@@ -2,16 +2,12 @@
 # 属性纏い
 
 # 各属性の処理
-    execute if entity @s[tag=ElementFire] unless score @s UsingBow matches 1.. run function player:magic/element/fire
-    execute if entity @s[tag=ElementFire] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/fire
-    execute if entity @s[tag=ElementWater] unless score @s UsingBow matches 1.. run function player:magic/element/water
-    execute if entity @s[tag=ElementWater] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/water
-    execute if entity @s[tag=ElementThunder] unless score @s UsingBow matches 1.. run function player:magic/element/thunder
-    execute if entity @s[tag=ElementThunder] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/thunder
-    execute if entity @s[tag=ElementEarth] unless score @s UsingBow matches 1.. run function player:magic/element/earth
-    execute if entity @s[tag=ElementEarth] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/earth
-    execute if entity @s[tag=ElementWind] unless score @s UsingBow matches 1.. run function player:magic/element/wind
-    execute if entity @s[tag=ElementWind] if score @s UsingBow matches 1.. run function player:magic/element/using_bow/wind
+    execute unless score @s UsingBow matches 1.. if entity @s[tag=ElementFire] run function player:magic/element/sfx/fire
+    execute unless score @s UsingBow matches 1.. if entity @s[tag=ElementWater] run function player:magic/element/sfx/water
+    execute unless score @s UsingBow matches 1.. if entity @s[tag=ElementThunder] run function player:magic/element/sfx/thunder
+    execute unless score @s UsingBow matches 1.. if entity @s[tag=ElementEarth] run function player:magic/element/sfx/earth
+    execute unless score @s UsingBow matches 1.. if entity @s[tag=ElementWind] run function player:magic/element/sfx/wind
+    execute if score @s UsingBow matches 1.. run function player:magic/element/using_bow/sfx/_
 
 # タイマー
     scoreboard players remove @s ElementTimer 1
