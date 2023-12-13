@@ -2,7 +2,7 @@
 # 通常攻撃のparticle&playsound
 
 playsound resource:custom.weapon.spear master @a ~ ~ ~ 0.5 1.0
-execute if score @s SkillTimer matches 0 run playsound resource:custom.weapon.spear master @a ~ ~ ~ 0.5 1.0
+execute if score @s ElementTimer matches 0 run playsound resource:custom.weapon.spear master @a ~ ~ ~ 0.5 1.0
 particle crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 2 force
 particle crit ^ ^1.7 ^2 0.25 0.1 0.25 0.2 3 force
 particle crit ^ ^1.7 ^4 0.25 0.1 0.25 0.2 3 force
