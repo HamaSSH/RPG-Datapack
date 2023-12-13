@@ -11,6 +11,7 @@
     execute store result score @s Saturaion run data get storage player: Consumables.Saturation 0.999
 
 # バフをプレイヤーに付与
+    data modify storage player: NewBuff set from storage player: Consumables.Buff
     function player:buff/_
 
 # リセット

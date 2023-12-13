@@ -24,7 +24,8 @@ $execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers 
 # リセット
     tag @e[type=area_effect_cloud,tag=BuffRoot,tag=Target,distance=..0.01] remove Target
 
-# Consumables.Buffの中身が無くなるまで再帰
-    data remove storage player: Consumables.Buff[0]
-    data modify storage player: Buff set from storage player: Consumables.Buff[0]
-    execute if data storage player: Consumables.Buff[0] run function player:buff/init with storage player: Buff
+# NewBuffの中身が無くなるまで再帰
+    data remove storage player: NewBuff[0]
+    data modify storage player: Buff set from storage player: NewBuff[0]
+    execute if data storage player: NewBuff[0] run function player:buff/shaping
+    execute if data storage player: NewBuff[0] run function player:buff/init with storage player: Buff
