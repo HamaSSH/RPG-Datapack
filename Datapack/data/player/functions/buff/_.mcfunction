@@ -14,4 +14,5 @@
 # リセット
     tag @s remove BuffOwner
     scoreboard players reset $PlayerID Temporary
+    data remove storage player: NewBuff
     data remove storage player: Buff

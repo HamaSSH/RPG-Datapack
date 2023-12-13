@@ -12,4 +12,5 @@
 
 # モブ関連のtick処理
     execute as @e[type=#lib:every_mob,tag=Enemy] at @s run function mob:tick
+    execute positioned 0.0 2.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] run function mob:buff/tick
     execute as @e[type=#lib:autokill,tag=AutoKill] at @s run function mob:manager/tick
