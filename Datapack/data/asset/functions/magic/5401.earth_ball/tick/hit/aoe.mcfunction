@@ -8,5 +8,5 @@
 # 演出
     particle block dirt ~ ~ ~ 0.1 0.6 0.1 0.05 35 force
     particle explosion ~ ~ ~ 0 0 0 0 1 force
-    playsound item.firecharge.use master @a ~ ~ ~ 0.4 1.2
+    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.4 1.2
     playsound entity.firework_rocket.blast_far master @a ~ ~ ~ 0.7 0.8

@@ -5,4 +5,4 @@
     execute summon armor_stand run function asset:magic/5101.fire_ball/trigger/init
 
 # 演出
-    playsound item.firecharge.use master @a ~ ~ ~ 0.8 1.4
+    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.8 1.4
