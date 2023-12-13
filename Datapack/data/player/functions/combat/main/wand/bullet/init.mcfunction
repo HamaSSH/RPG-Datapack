@@ -1,4 +1,4 @@
-#> player:combat/main/wand/init
+#> player:combat/main/wand/bullet/init
 # 杖の弾の初期処理
 
 # 弾と攻撃したプレイヤーの紐づけ

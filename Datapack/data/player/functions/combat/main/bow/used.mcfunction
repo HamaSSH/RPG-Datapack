@@ -5,6 +5,9 @@
     tag @s add Shooter
     execute positioned ~ ~1.52 ~ as @e[type=arrow,tag=!ArrowInit,distance=..5] run function player:combat/main/bow/arrow/player
 
+# 矢を放つ際の音
+    function player:combat/main/bow/sfx/_
+
 # ため具合に応じて左クリックで矢を打てるようになる
     execute if score @s UsingBow matches 12.. run scoreboard players set @s ArrowLC 2
 

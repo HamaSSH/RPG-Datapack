@@ -1,4 +1,4 @@
-#> player:combat/main/wand/detected
+#> player:combat/main/wand/bullet/detected
 # 魔法の弾の攻撃範囲内にモブが検知されたら
 
 tag @s add Attacker

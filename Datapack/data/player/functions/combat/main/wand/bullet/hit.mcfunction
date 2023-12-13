@@ -1,4 +1,4 @@
-#> player:combat/main/wand/hit
+#> player:combat/main/wand/bullet/hit
 # 魔法攻撃がヒットした敵に対しての処理
 
 # 被ダメージ(補正無し)を設定

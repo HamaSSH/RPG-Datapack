@@ -12,6 +12,7 @@ scoreboard players remove @s ArrowLC 1
     tag @s remove Shooter
 
 # 演出
+    function player:combat/main/bow/sfx/_
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge0=true}}] run playsound entity.arrow.shoot master @a ~ ~ ~ 1 0.8
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge1=true}}] run playsound entity.arrow.shoot master @a ~ ~ ~ 1 0.9
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge2=true}}] run playsound entity.arrow.shoot master @a ~ ~ ~ 1 1.0
