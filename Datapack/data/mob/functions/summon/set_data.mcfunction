@@ -6,6 +6,10 @@
     attribute @s generic.max_health base set 1024
     data modify entity @s Health set value 1024f
 
+# Healthが0にならないよう
+    effect give @s regeneration infinite 255 true
+    execute if entity @s[type=#lib:undead] run effect give @s instant_damage infinite 0 true
+
 # 装備の設定
     data modify storage asset:mob ArmorItems set value []
     data modify storage asset:mob ArmorItems append from storage asset:mob Data.Feet
