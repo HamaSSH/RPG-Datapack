@@ -18,14 +18,16 @@ tag @s add Attacker
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..10] run function player:combat/main/hit
 
 # 演出
+    function player:combat/main/spear/sfx/_
+    execute positioned ^ ^ ^2 run function player:combat/main/spear/sfx/_
     particle crit ^ ^1.7 ^2 0.7 0.5 0.7 0.2 15 force
     particle crit ^ ^1.7 ^3.5 0.7 0.5 0.7 0.2 15 force
     particle crit ^ ^1.7 ^5 0.7 0.5 0.7 0.2 15 force
     particle sweep_attack ^ ^0.8 ^2 0.7 0.5 0.7 0 7 force
     particle sweep_attack ^ ^0.8 ^3.5 0.7 0.5 0.7 0 7 force
     particle sweep_attack ^ ^0.8 ^5 0.7 0.5 0.7 0 7 force
-    playsound item.trident.thunder master @a ~ ~ ~ 0.1 2.0
-    playsound item.trident.riptide_1 master @a ~ ~ ~ 1.0 1.1
+    playsound item.trident.thunder master @a ~ ~ ~ 0.05 2.0
+    playsound item.trident.riptide_1 master @a ~ ~ ~ 0.7 1.1
     playsound resource:custom.weapon.spear master @a ~ ~ ~ 1.0 1.0
 
 # リセット

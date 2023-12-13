@@ -11,12 +11,6 @@ data modify entity @s PierceLevel set value 30
     execute if score @s Timer matches 1..8 summon arrow run function player:combat/main/bow/skill/meteor/meteorite/summon
     execute if score @s Timer matches 1..8 summon arrow run function player:combat/main/bow/skill/meteor/meteorite/summon
 
-# 演出
-    particle crit ~ ~ ~ 0.1 0.1 0.1 0 10 force
-    particle dust_color_transition 1 0.804 0.169 2 1 0.125 0.023 ~ ~ ~ 0.2 0.2 0.2 0.01 2 force
-    particle dust_color_transition 1 0.859 0.392 2 1 0.494 0.153 ~ ~ ~ 0.2 0.2 0.2 0.01 2 force
-    particle flame ~ ~ ~ 0.2 0.2 0.2 0.02 3 force
-
 # リセット
     tag @s remove MeteorArrow
     scoreboard players reset $PlayerID Temporary

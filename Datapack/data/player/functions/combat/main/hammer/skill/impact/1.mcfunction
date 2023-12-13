@@ -15,10 +15,13 @@ tag @s add Attacker
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,distance=..3] run function player:combat/main/hit
 
 # 演出
+    data modify storage player: SFX set value {size:"0.7",count:"10"}
+    function player:combat/main/hammer/skill/impact/sfx/_
     particle explosion ~ ~ ~ 0.7 0.6 0.7 0 8 force
     playsound resource:custom.hammer player @a ~ ~ ~ 0.4 0.9
-    playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.7 0.6
+    playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.5 0.6
 
 # リセット
     tag @s remove Attacker
     tag @s remove CriticalHit
+    data remove storage player: SFX

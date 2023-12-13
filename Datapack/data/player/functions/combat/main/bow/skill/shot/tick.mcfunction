@@ -17,11 +17,7 @@ data modify entity @s PierceLevel set value 5
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/bow/skill/hit
 
 # 演出
-    particle explosion ~ ~ ~ 1.2 1.2 1.2 1 2 force
-    particle crit ~ ~ ~ 0.1 0.1 0.1 0 10 force
-    particle dust_color_transition 1 0.804 0.169 2 1 0.125 0.023 ~ ~ ~ 1 1 1 0.01 10 force
-    particle dust_color_transition 1 0.859 0.392 2 1 0.494 0.153 ~ ~ ~ 1 1 1 0.01 10 force
-    particle flame ~ ~ ~ 1 1 1 0.02 15 force
+    function player:combat/main/bow/skill/shot/sfx/_
 
 # リセット
     scoreboard players reset $PlayerID Temporary

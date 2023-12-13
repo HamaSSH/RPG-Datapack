@@ -18,6 +18,7 @@ tag @s add Attacker
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..10] run function player:combat/main/hit
 
 # 演出
+    function player:combat/main/sword/sfx/_
     particle sweep_attack ^ ^1.0 ^1.5 0.15 0.15 0.15 1 1 force
     playsound resource:custom.weapon.sword master @a ~ ~ ~ 0.4 1.0
 
