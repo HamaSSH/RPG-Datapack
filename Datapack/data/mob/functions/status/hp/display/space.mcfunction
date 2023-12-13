@@ -1,5 +1,5 @@
 #> mob:status/hp/display/space
-#
+# モブのHP表示の空白の調整
 
 # レベルの桁ごとの空白
     execute if score $Level Temporary matches 1..9 run data modify storage mob: Space.Level set value '"\\uF802\\uF808\\uF801\\uF803"'

@@ -25,5 +25,6 @@
 
 # リセット
     data remove storage mob: Data
+    data remove storage mob: Space
     scoreboard players reset $Level Temporary
     scoreboard players reset $NameChar Temporary
