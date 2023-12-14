@@ -23,3 +23,6 @@
     execute if data storage player: SelectedItem.tag.Weapon store result score @s ItemUUID run data get entity @s SelectedItem.tag.UUID
     execute unless score @s ItemUUID = @s PreviousItemUUID run function player:trigger/changed_mainhand
     scoreboard players reset @s ItemUUID
+
+# 使用した採集ツールの耐久値を減らす
+    execute if entity @s[advancements={player:trigger/used_tool=true}] run function item:tool/durability/_

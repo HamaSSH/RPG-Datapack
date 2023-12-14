@@ -1,0 +1,94 @@
+[
+    {
+        "function": "copy_nbt",
+        "source": {
+            "type": "storage",
+            "source": "item:"
+        },
+        "ops": [
+            {
+                "source": "Tool.Use",
+                "target": "Tool.Use",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "copy_nbt",
+        "source": {
+            "type": "storage",
+            "source": "item:"
+        },
+        "ops": [
+            {
+                "source": "Tool.Damage",
+                "target": "Damage",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "nbt": "Lore[0]",
+                "storage": "item:",
+                "interpret": true
+            },
+            {
+                "nbt": "Lore[1]",
+                "storage": "item:",
+                "interpret": true
+            },
+            {
+                "nbt": "Lore[2]",
+                "storage": "item:",
+                "interpret": true
+            },
+            [
+                {
+                    "text": "▸ ",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "耐久値: "
+                },
+                {
+                    "score": {
+                        "name": "$RemainingUse",
+                        "objective": "Temporary"
+                    },
+                    "color": "white"
+                },
+                {
+                    "text": "/",
+                    "color": "#D8D8D8"
+                },
+                {
+                    "score": {
+                        "name": "$MaxDurability",
+                        "objective": "Temporary"
+                    }
+                }
+            ],
+            {
+                "nbt": "Lore[4]",
+                "storage": "item:",
+                "interpret": true
+            },
+            {
+                "nbt": "Lore[5]",
+                "storage": "item:",
+                "interpret": true
+            },
+            {
+                "nbt": "Lore[6]",
+                "storage": "item:",
+                "interpret": true
+            }
+        ],
+        "replace": true
+    }
+]
