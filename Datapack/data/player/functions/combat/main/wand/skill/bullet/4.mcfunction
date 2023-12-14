@@ -2,7 +2,7 @@
 # ズドドドドのド(3)
 
 # ダメージ
-    data modify storage player: Magic.Damage set value 30
+    data modify storage player: Magic.Damage set value 50
 
 # 魔法呼び出し
     tag @s add TriggerMagic

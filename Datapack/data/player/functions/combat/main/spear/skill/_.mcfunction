@@ -6,8 +6,7 @@ tag @s add Attacker
     execute anchored eyes positioned ^ ^ ^ run function player:combat/main/spear/skill/rec
 
 # ダメージ
-    function player:combat/player_attacked/dmg_dealt
-    scoreboard players operation @s DmgDealt /= #10 Constant
+    scoreboard players operation @s DmgDealt = @s STR
     scoreboard players add @s DmgDealt 5
     scoreboard players operation @s DmgDealt *= #5 Constant
     function player:status/crt/chance
