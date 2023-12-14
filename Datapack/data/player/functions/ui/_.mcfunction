@@ -10,7 +10,7 @@
     data modify storage player:ui Quiver.RightHanded set value '"\\uF829\\uF828\\uF821"'
     data modify storage player:ui Quiver.LeftHanded set value '"\\uF829\\uF828\\uF821"'
 
-# それぞれのUIの設定
+# それぞれのUIの設定 #TODO: ゴールドの位置を改行して空腹度の横にする
     function player:ui/hp_bar
     execute if entity @s[tag=IsBuffed] run function player:ui/buff
     function player:ui/skill_bar/_

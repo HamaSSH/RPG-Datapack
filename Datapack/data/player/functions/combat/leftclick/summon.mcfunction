@@ -1,7 +1,7 @@
 #> player:combat/leftclick/summon
 # 左クリック用エンティティの召喚
 
-# 全方位を囲む
+# 全方位を囲む #TODO: チェスト/メニューGUIを開かせたい時は召喚しない
     summon vex ~ ~1.6201 ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],Attributes:[{Name:"generic.max_health",Base:1024}]}
     summon vex ~ ~0.8199 ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],Attributes:[{Name:"generic.max_health",Base:1024}]}
     summon vex ~0.2001 ~1 ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],Attributes:[{Name:"generic.max_health",Base:1024}]}

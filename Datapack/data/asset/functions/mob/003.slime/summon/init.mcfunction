@@ -6,7 +6,7 @@
         execute unless score $SlimeSize Temporary matches 0.. run tag @s add Original
         execute unless score $SlimeSize Temporary matches 0.. store result score $SlimeSize Temporary run random value 0..2
 
-# サイズによる可変のステータス
+# サイズによる可変のステータス #TODO: 分裂後5tickくらい無敵に
     execute if score $SlimeSize Temporary matches 0 store result storage asset:mob Data.Status.HP int 0.2 run data get storage asset:mob Data.Status.HP
     execute if score $SlimeSize Temporary matches 0 store result storage asset:mob Data.Status.Dmg int 0.2 run data get storage asset:mob Data.Status.Dmg
     execute if score $SlimeSize Temporary matches 1 store result storage asset:mob Data.Status.HP int 0.7 run data get storage asset:mob Data.Status.HP
