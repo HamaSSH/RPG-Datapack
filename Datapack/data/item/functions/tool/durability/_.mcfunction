@@ -36,4 +36,4 @@
     scoreboard players reset $MaxDurability Temporary
     scoreboard players reset $RemainingUse Temporary
     scoreboard players reset $ToolDurability Temporary
-    advancement revoke @s only player:trigger/used_tool
+    advancement revoke @s only player:trigger/used_item/tool
