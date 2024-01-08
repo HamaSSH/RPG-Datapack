@@ -76,6 +76,7 @@
         scoreboard objectives add HurtTime dummy "無敵時間"
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
         scoreboard objectives add ElementTimer dummy "属性纏い"
+        scoreboard objectives add SpawnTimer dummy "召喚タイマー"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
