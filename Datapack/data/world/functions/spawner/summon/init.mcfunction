@@ -11,6 +11,9 @@
 # 抽選された値に応じたモブ召喚
     function world:spawner/summon/_ with storage world: Spawner
 
+# 新しいSpawnTimerの抽選
+    function world:spawner/summon/set_timer with storage world: Spawner.Data
+
 # リセット
     data remove storage world: Spawner
     scoreboard players reset $Entry Temporary
