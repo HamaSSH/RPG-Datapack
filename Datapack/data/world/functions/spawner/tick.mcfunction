@@ -7,6 +7,7 @@ particle flame ~ ~ ~ 0 1 0 0 4 force
     execute store result score $RequiredPlayerRange Temporary run data get entity @s data.RequiredPlayerRange 10
     scoreboard players operation $RequiredPlayerRange Temporary *= $RequiredPlayerRange Temporary
     execute as @p[gamemode=adventure,distance=..32] run function world:spawner/player_near
+    scoreboard players reset $RequiredPlayerRange Temporary
 
 # プレイヤーが範囲内にいる場合はSpawnTimer減算
     execute if entity @s[tag=PlayerIsNear] run scoreboard players remove @s SpawnTimer 1
