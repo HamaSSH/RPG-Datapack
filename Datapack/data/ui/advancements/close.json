@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{UI:{ItemType:\"CloseDetector\"}}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ui:close"
+    }
+}
