@@ -16,4 +16,5 @@
     execute as @e[type=#lib:autokill,tag=AutoKill] at @s run function mob:manager/tick
 
 # ワールドとしてのtick処理
+    function ui:tick
     function world:tick

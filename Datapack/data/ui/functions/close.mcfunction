@@ -6,4 +6,5 @@
     execute if entity @s[tag=CloseDetector] run function ui:close_detector/remove
 
 # リセット
+    tag @s remove UIOpen
     advancement revoke @s only ui:close

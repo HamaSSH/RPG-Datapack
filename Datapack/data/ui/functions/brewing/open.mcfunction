@@ -1,5 +1,5 @@
 #> ui:brewing/open
-# 醸造UIを開いた際の処理
+# UIを開いた際の処理
 
 # 共通処理
     function ui:open
