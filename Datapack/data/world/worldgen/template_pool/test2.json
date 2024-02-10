@@ -1,0 +1,68 @@
+{
+    "fallback": "world:fallback",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:room",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:room2",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:room3",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:room4",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:path",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:path2",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "minecraft:stair",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}
