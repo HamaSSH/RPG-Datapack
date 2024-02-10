@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/loot/1027.sweet_berries/_"
+                    "name": "asset:item/loot/1027.sweet_berries"
                 }
             ]
         }
