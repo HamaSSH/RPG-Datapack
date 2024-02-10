@@ -77,6 +77,7 @@
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
         scoreboard objectives add ElementTimer dummy "属性纏い"
         scoreboard objectives add SpawnTimer dummy "召喚タイマー"
+        scoreboard objectives add ClickedIcon dummy "メニュー操作検知用"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
