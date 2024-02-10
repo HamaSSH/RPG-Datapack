@@ -4,6 +4,7 @@
 # データ取得
     data modify storage world: Spawner.Data set from entity @s data
     execute store result score $SpawnCount Temporary run data get storage world: Spawner.Data.SpawnCount
+    execute if score @s HP < $SpawnCount Temporary run scoreboard players operation $SpawnCount Temporary = @s HP
     execute store result score $MaxNearbyEntities Temporary run data get storage world: Spawner.Data.MaxNearbyEntities
 
 # モブのエントリーから1つを抽選
@@ -15,6 +16,11 @@
 
 # 新しいSpawnTimerの抽選
     function world:spawner/summon/set_timer with storage world: Spawner.Data
+
+# HPが0になったらkill
+    tellraw @a {"score":{"name": "@s","objective": "HP"}}
+    execute if score @s HP matches ..0 run playsound block.amethyst_block.break master @a ~ ~ ~
+    execute if score @s HP matches ..0 run kill @s
 
 # リセット
     data remove storage world: Spawner

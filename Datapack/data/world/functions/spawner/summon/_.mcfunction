@@ -13,6 +13,7 @@ $data modify storage asset:mob ID set from storage world: Spawner.Data.SpawnPote
     kill @e[type=marker,tag=SpawnMarker,distance=..32]
 
 # まだ召喚する必要があるなら再帰
+    scoreboard players remove @s HP 1
     scoreboard players remove $SpawnCount Temporary 1
     execute if score $SpawnCount Temporary matches 1.. run function world:spawner/summon/choose_mob
     execute if score $SpawnCount Temporary matches 1.. run function world:spawner/summon/nearby_entity with storage world: Spawner.Data
