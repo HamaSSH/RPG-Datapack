@@ -11,6 +11,7 @@
     function player:buff/reset
 
 # 演出
+    tp @s 621 134 -770 -90 0
     title @s title {"text":"You Died!","bold":true,"color":"dark_red"}
 
 # 蘇生
