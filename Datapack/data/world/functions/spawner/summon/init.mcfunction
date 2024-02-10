@@ -18,7 +18,6 @@
     function world:spawner/summon/set_timer with storage world: Spawner.Data
 
 # HPが0になったらkill
-    tellraw @a {"score":{"name": "@s","objective": "HP"}}
     execute if score @s HP matches ..0 run playsound block.amethyst_block.break master @a ~ ~ ~
     execute if score @s HP matches ..0 run kill @s
 
