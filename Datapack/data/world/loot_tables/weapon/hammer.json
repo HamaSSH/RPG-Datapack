@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 40,
+                    "name": "asset:item/weapon/2401.wooden_hammer"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "asset:item/weapon/2402.bone_hammer"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/weapon/2404.iron_hammer"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 12,
+                    "name": "asset:item/weapon/2405.golden_hammer"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 8,
+                    "name": "asset:item/weapon/2409.emerald_hammer"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/weapon/2406.crystal_hammer"
+                }
+            ]
+        }
+    ]
+}

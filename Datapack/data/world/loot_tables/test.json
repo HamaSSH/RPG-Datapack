@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 6,
+                "max": 10
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 9,
+                    "name": "world:food"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 12,
+                    "name": "world:loot"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "world:armor/_"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "world:magic/_"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "world:weapon/_"
+                }
+            ]
+        }
+    ]
+}

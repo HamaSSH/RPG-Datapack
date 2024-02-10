@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 60,
+                    "name": "asset:item/weapon/2601.wooden_bow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 25,
+                    "name": "asset:item/weapon/2602.bone_bow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/weapon/2605.crystal_bow"
+                }
+            ]
+        }
+    ]
+}

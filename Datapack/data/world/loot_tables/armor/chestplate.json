@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 45,
+                    "name": "asset:item/equipment/3201.leather_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 25,
+                    "name": "asset:item/equipment/3202.iron_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/equipment/3203.golden_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "asset:item/equipment/3204.diamond_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/equipment/3205.netherite_chestplate"
+                }
+            ]
+        }
+    ]
+}

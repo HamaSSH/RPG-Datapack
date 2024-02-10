@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:magic/fire"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:magic/water"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:magic/thunder"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:magic/earth"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:magic/wind"
+                }
+            ]
+        }
+    ]
+}

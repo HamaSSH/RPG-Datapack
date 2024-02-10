@@ -1,0 +1,25 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:armor/helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:armor/chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:armor/leggings"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "world:armor/boots"
+                }
+            ]
+        }
+    ]
+}

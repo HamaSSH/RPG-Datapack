@@ -1,0 +1,13 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/magic/5301.thunder_ball"
+                }
+            ]
+        }
+    ]
+}
