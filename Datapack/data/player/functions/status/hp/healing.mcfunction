@@ -1,4 +1,4 @@
-#> player:status/hp/heal
+#> player:status/hp/healing
 # アイテムによるHP回復
 
 # $Heal分の♥回復

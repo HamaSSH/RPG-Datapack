@@ -62,6 +62,7 @@
 # ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
+    execute if predicate lib:has_effect/regeneration run function player:status/hp/regen_effect
     execute if score @s Saturaion matches 1.. run function player:status/saturation
     execute if score @s Healing matches 1.. run function player:status/hp/healing
 
