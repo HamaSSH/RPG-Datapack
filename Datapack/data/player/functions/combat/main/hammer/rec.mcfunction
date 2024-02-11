@@ -9,4 +9,5 @@
     execute positioned ~-0.6 ~-0.6 ~-0.6 as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0.2,dz=0.2] run tag @s add Hit
 
 # リーチの限界まで再帰 4.0ブロック
-    execute positioned ^ ^ ^0.5 if entity @s[distance=..3.5] if block ~ ~ ~ #lib:no_collision run function player:combat/main/hammer/rec
+    # execute positioned ^ ^ ^0.5 if entity @s[distance=..3.5] if block ~ ~ ~ #lib:no_collision run function player:combat/main/hammer/rec
+    execute positioned ^ ^ ^0.5 if entity @s[distance=..3.5] run function player:combat/main/hammer/rec
