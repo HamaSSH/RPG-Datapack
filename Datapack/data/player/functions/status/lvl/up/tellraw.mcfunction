@@ -30,6 +30,7 @@
     tellraw @s ""
 
 # 演出
+    particle minecraft:totem_of_undying ~ ~ ~ 0.1 0.2 0.1 0.5 100 force
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1
 
 # リセット
