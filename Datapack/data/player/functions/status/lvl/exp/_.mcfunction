@@ -1,5 +1,5 @@
 #> player:status/lvl/exp/_
-#
+# EXP取得処理
 
 # 職業XP保存
     # execute if predicate player:class/is_assassin run scoreboard players operation @s AssassinXP += @s EXPGained
