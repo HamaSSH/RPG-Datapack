@@ -1,0 +1,68 @@
+{
+    "fallback": "world:fallback",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:room",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:room2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:room3",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:room4",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:path",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:path2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:stair",
+                "processors": "empty"
+            }
+        }
+    ]
+}

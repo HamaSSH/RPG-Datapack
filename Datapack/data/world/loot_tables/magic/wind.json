@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/magic/5501.wind_ball"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/magic/5502.swift"
+                }
+            ]
+        }
+    ]
+}

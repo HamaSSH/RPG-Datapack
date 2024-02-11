@@ -4,8 +4,7 @@
 
 # ゴールドドロップ量の決定
     scoreboard players operation $GoldDrop Temporary = @s Gold
-    scoreboard players operation $LastAttacker Temporary = $PlayerID Temporary
-    execute as @a if score @s PlayerID = $LastAttacker Temporary run function player:status/luk/gold_boost
+    execute as @a if score @s PlayerID = $LastAttackerID Temporary run function player:status/luk/gold_boost
 
 # ゴールドドロップ量ブレの設定
     function mob:on_death/drop/gold/blur
@@ -21,7 +20,6 @@
     loot spawn ~ ~ ~ loot mob:gold
 
 # リセット
-    scoreboard players reset $LastAttacker Temporary
     scoreboard players reset $GoldDrop Temporary
     scoreboard players reset $100G Temporary
     scoreboard players reset $10G Temporary

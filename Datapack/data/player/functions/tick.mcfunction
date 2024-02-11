@@ -56,9 +56,13 @@
 # 経験値の加算
     execute if score @s EXPGained matches 1.. run function player:status/lvl/exp/_
 
+# 職業関連のtick処理
+    function player:class/tick
+
 # ステータスシステムの処理
     function player:status/hp/_
     function player:status/mp/_
+    execute if predicate lib:has_effect/regeneration run function player:status/hp/regen_effect
     execute if score @s Saturaion matches 1.. run function player:status/saturation
     execute if score @s Healing matches 1.. run function player:status/hp/healing
 
@@ -69,7 +73,6 @@
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
     effect clear @s absorption
-    effect clear @s regeneration
 
 # リセット
     tag @s remove NewInventorySet

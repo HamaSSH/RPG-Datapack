@@ -12,6 +12,7 @@
     execute if data storage player:ui data.Buff{Effect:"jump_boost"} run data modify storage player:ui buff.main[4] set from storage player:ui data.Buff.Icon
     execute if data storage player:ui data.Buff{Effect:"blindness"} run data modify storage player:ui buff.main[5] set from storage player:ui data.Buff.Icon
     execute if data storage player:ui data.Buff{Effect:"water_breathing"} run data modify storage player:ui buff.main[6] set from storage player:ui data.Buff.Icon
+    execute if data storage player:ui data.Buff{Effect:"regeneration"} run data modify storage player:ui buff.main[7] set from storage player:ui data.Buff.Icon
 
 # リセット
     data remove storage player:ui data

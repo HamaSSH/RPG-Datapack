@@ -1,0 +1,14 @@
+{
+    "fallback": "world:fallback",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:root",
+                "processors": "empty"
+            }
+        }
+    ]
+}

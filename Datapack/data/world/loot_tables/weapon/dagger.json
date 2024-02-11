@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 40,
+                    "name": "asset:item/weapon/2101.wooden_dagger"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "asset:item/weapon/2102.bone_dagger"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/weapon/2104.iron_dagger"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 12,
+                    "name": "asset:item/weapon/2105.golden_dagger"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 8,
+                    "name": "asset:item/weapon/2109.emerald_dagger"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/weapon/2106.crystal_dagger"
+                }
+            ]
+        }
+    ]
+}

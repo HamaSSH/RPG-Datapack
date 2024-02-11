@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 40,
+                    "name": "asset:item/weapon/2201.wooden_sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "asset:item/weapon/2202.bone_sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/weapon/2204.iron_sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 12,
+                    "name": "asset:item/weapon/2205.golden_sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 8,
+                    "name": "asset:item/weapon/2209.emerald_sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/weapon/2206.crystal_sword"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 45,
+                    "name": "asset:item/equipment/3101.leather_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 25,
+                    "name": "asset:item/equipment/3102.iron_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/equipment/3103.golden_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 10,
+                    "name": "asset:item/equipment/3104.diamond_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/equipment/3105.netherite_helmet"
+                }
+            ]
+        }
+    ]
+}

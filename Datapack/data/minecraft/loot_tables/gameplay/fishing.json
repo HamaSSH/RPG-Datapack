@@ -1,0 +1,20 @@
+{
+    "type": "fishing",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "glass_bottle",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ItemType:\"Fish\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

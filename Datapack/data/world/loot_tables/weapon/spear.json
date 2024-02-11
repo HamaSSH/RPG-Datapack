@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 40,
+                    "name": "asset:item/weapon/2301.wooden_spear"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 20,
+                    "name": "asset:item/weapon/2302.bone_spear"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 15,
+                    "name": "asset:item/weapon/2304.iron_spear"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 12,
+                    "name": "asset:item/weapon/2305.golden_spear"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 8,
+                    "name": "asset:item/weapon/2309.emerald_spear"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 5,
+                    "name": "asset:item/weapon/2306.crystal_spear"
+                }
+            ]
+        }
+    ]
+}
