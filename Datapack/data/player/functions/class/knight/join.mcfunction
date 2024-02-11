@@ -2,9 +2,11 @@
 # teamに所属する
 
 team leave @s
+tag @s remove ClassLectern
+scoreboard players reset @s ChangeClass
 
 # 周知する
-    execute unless predicate player:class/is_knight run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ナイト】","color":"#81DDE1"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"KnightLVL"},"bold":true},{"text":" に転職しました ！"}]
+    execute unless predicate player:class/is_knight run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ナイト】","color":"#81DDE1"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"KnightLVL"},"bold":true},{"text":" に転職しました ！\n"}]
     execute unless predicate player:class/is_knight at @s run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # team join

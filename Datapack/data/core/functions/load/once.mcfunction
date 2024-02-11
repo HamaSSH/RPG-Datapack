@@ -78,6 +78,7 @@
         scoreboard objectives add ElementTimer dummy "属性纏い"
         scoreboard objectives add SpawnTimer dummy "召喚タイマー"
         scoreboard objectives add ClickedIcon dummy "メニュー操作検知用"
+        scoreboard objectives add ChangeClass trigger "転職用トリガー"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"

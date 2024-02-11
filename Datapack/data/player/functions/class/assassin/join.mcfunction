@@ -2,9 +2,11 @@
 # teamに所属する
 
 team leave @s
+tag @s remove ClassLectern
+scoreboard players reset @s ChangeClass
 
 # 周知する
-    execute unless predicate player:class/is_assassin run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【アサシン】","color":"#E07D80"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"AssassinLVL"},"bold":true},{"text":" に転職しました ！"}]
+    execute unless predicate player:class/is_assassin run tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【アサシン】","color":"#E07D80"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"AssassinLVL"},"bold":true},{"text":" に転職しました ！\n"}]
     execute unless predicate player:class/is_assassin at @s run playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # team join
