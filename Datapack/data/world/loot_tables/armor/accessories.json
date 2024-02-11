@@ -1,0 +1,21 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/equipment/3601.quiver"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/equipment/3602.ring_of_power"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "asset:item/equipment/3603.ring_of_wisdom"
+                }
+            ]
+        }
+    ]
+}
