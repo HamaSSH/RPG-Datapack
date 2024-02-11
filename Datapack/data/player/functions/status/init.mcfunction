@@ -1,10 +1,10 @@
 #> player:status/init
 # ステータス関連スコアの初期化
 
-scoreboard players set @s HP 50
-scoreboard players set @s MP 50
 scoreboard players set @s BaseHP 50
 scoreboard players set @s BaseMP 50
+scoreboard players set @s HP 50
+scoreboard players set @s MP 50
 scoreboard players set @s BaseHPR 25
 scoreboard players set @s BaseMPR 50
 scoreboard players set @s BaseSTR 1
