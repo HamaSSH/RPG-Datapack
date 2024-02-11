@@ -14,6 +14,7 @@
     execute if score @s EXP >= @s NextEXP run function player:status/lvl/up/_
 
 # 演出
+    particle minecraft:totem_of_undying ~ ~ ~ 0.1 0.2 0.1 0.5 100 force
     playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
 
 # リセット
