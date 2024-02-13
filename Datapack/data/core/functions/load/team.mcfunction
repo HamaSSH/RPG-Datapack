@@ -52,3 +52,8 @@
     team modify Hunter prefix "\uE17F"
     team modify Hunter1 prefix "\uE18F"
     team modify Hunter2 prefix "\uE19F"
+
+# 醸造UI
+    team add Brewing
+    team modify Brewing collisionRule never
+    team modify Brewing prefix ["\uF808",{"text":"\uE251","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"醸造","bold":true},"\uF80F"]
