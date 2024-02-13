@@ -15,6 +15,15 @@
         execute if data storage ui: BrewableItems[] run data modify storage ui: ReturnItems set from storage ui: BrewableItems
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
+# 関係ないアイテムを返却
+    data modify storage ui: ReturnItems set from storage ui: Items
+    data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
+    data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:14b}]
+    data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:15b}]
+    data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:16b}]
+    data remove storage ui: ReturnItems[{tag:{Menu:{Brewable:1b}}}]
+    execute if data storage ui: ReturnItems[] run function ui:return_item/_
+
 # 醸造する
     execute unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Brew"}}}] run function ui:brewing/brew/check
 
@@ -32,3 +41,4 @@
 # リセット
     data remove storage ui: NewItems
     data remove storage ui: BrewableItems
+    # data remove storage ui: Results
