@@ -1,4 +1,9 @@
 #> ui:brewing/summon
-# UIの設置
+# 醸造UIの召喚
 
-setblock ~ ~ ~ barrel[facing=up]{CustomName:'[{"text":"\\uF808\\uE251","color":"white"},{"text":"\\uF80C\\uF80A\\uF808\\uF801"},{"text":"醸造","color":"#3F3F3F","bold":true}]',Items:[{Count:1b,Slot:9b,id:"gray_stained_glass_pane",tag:{UI:{ItemType:"Blank"},display:{Name:'{"text":""}'}}},{Count:1b,Slot:13b,id:"brewing_stand",tag:{UI:{ItemType:"Brew"},display:{Name:'{"text":"醸造する","bold":true,"italic":false}',Lore:['{"text":"左スロットに入れたアイテムから","color":"gray","italic":false}','[{"text":"","color":"gray","italic":false},{"text":"カスタムポーション","color":"white","bold":true},{"text":"を生成する。"}]']}}},{Count:1b,Slot:17b,id:"gray_stained_glass_pane",tag:{UI:{ItemType:"Blank"},display:{Name:'{"text":""}'}}}]}
+# プレイヤーに結びついたUIの召喚
+    summon interaction ~ ~1.1 ~ {width:1f,height:0.7f,attack:{player:[I;2106,5308417,0,0],timestamp:0},Tags:["UIInit","HasVehicle","AutoKill","UIInteraction"],Passengers:[{id:"chest_minecart",CustomDisplayTile:1b,DisplayState:{Name:"air"},Tags:["HasVehicle","AutoKill","BrewingUI"]},{id:"minecraft:marker",Tags:["HasVehicle","AutoKill","BrewingMarker"]}]}
+    execute positioned ~ ~1.1 ~ as @e[type=interaction,tag=UIInit,distance=..0.01,limit=1] run function ui:brewing/init
+
+# リセット
+    advancement revoke @s only ui:looking_at/brewing

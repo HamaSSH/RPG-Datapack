@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "player",
+                                "looking_at": {
+                                    "type": "minecraft:polar_bear",
+                                    "nbt": "{Tags:[\"BrewingBear\"]}",
+                                    "distance": {
+                                        "absolute": {
+                                            "min": 0,
+                                            "max": 4.5
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ui:brewing/summon"
+    }
+}

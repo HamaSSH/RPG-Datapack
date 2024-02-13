@@ -1,23 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:item_used_on_block",
+            "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": [
-                                    "minecraft:barrel"
-                                ],
-                                "state": {
-                                    "facing": "up"
-                                }
-                            }
-                        }
-                    }
-                ]
+                "entity": {
+                    "type": "chest_minecart",
+                    "nbt": "{Tags:[\"BrewingUI\"]}"
+                }
             }
         }
     },
