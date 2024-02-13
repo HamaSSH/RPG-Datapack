@@ -31,7 +31,10 @@
     # 初期化
         execute on vehicle run function ui:brewing/page/init
     # アイテムを配置
-        # execute on vehicle run data modify storage ui: NewItems append from storage ui: Results[]
+        execute if data storage ui: Items[{id:"minecraft:potion",Slot:14b}] run data modify storage ui: NewItems append from storage ui: Items[{Slot:14b}]
+        execute if data storage ui: Items[{id:"minecraft:potion",Slot:15b}] run data modify storage ui: NewItems append from storage ui: Items[{Slot:15b}]
+        execute if data storage ui: Items[{id:"minecraft:potion",Slot:16b}] run data modify storage ui: NewItems append from storage ui: Items[{Slot:16b}]
+        execute on vehicle run data modify storage ui: NewItems append from storage ui: Results[]
         execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
 # 二重更新防止
@@ -41,4 +44,4 @@
 # リセット
     data remove storage ui: NewItems
     data remove storage ui: BrewableItems
-    # data remove storage ui: Results
+    data remove storage ui: Results
