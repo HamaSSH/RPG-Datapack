@@ -19,13 +19,11 @@ scoreboard players set #60 Constant 60
 scoreboard players set #80 Constant 80
 scoreboard players set #100 Constant 100
 scoreboard players set #200 Constant 200
+scoreboard players set #256 Constant 256
 scoreboard players set #400 Constant 400
 scoreboard players set #512 Constant 512
 scoreboard players set #835 Constant 835
 scoreboard players set #1000 Constant 1000
 scoreboard players set #2000 Constant 2000
 scoreboard players set #3000 Constant 3000
-
-# 乱数生成用
-    scoreboard players set #31743 Constant 31743
-    scoreboard players set #65536 Constant 65536
+scoreboard players set #65536 Constant 65536
