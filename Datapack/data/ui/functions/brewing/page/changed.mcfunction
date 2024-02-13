@@ -5,12 +5,15 @@
     clear @a[tag=UsingUI] glass_bottle
 
 # 醸造アイテムデータの整形
-    # 醸造可能なアイテム→BrewableItems
+    # 醸造可能なアイテム(既にスロット内のものを除く)→BrewableItems
         data modify storage ui: BrewableItems append from storage ui: Items[{tag:{Menu:{Brewable:1b}}}]
+        data remove storage ui: BrewableItems[{Slot:10b}]
+        data remove storage ui: BrewableItems[{Slot:11b}]
+        data remove storage ui: BrewableItems[{Slot:12b}]
     # アイテムをスロットに配置
-        execute if data storage ui: BrewableItems[] run function ui:brewing/page/set_item {Slot:"10b"}
-        execute if data storage ui: BrewableItems[] run function ui:brewing/page/set_item {Slot:"11b"}
-        execute if data storage ui: BrewableItems[] run function ui:brewing/page/set_item {Slot:"12b"}
+        execute if data storage ui: Items[{tag:{Menu:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"10b"}
+        execute if data storage ui: Items[{tag:{Menu:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"11b"}
+        execute if data storage ui: Items[{tag:{Menu:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"12b"}
     # スロットに空きが無ければ返却
         execute if data storage ui: BrewableItems[] run data modify storage ui: ReturnItems set from storage ui: BrewableItems
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
