@@ -2,22 +2,22 @@
 # カスタムポーションの色を決める
 
 # 醸造素材1つ
-    execute store result score $ItemR Temporary run data get storage ui: NewItems[{Slot:10b}].tag.Menu.Color.R
-    execute store result score $ItemG Temporary run data get storage ui: NewItems[{Slot:10b}].tag.Menu.Color.G
-    execute store result score $ItemB Temporary run data get storage ui: NewItems[{Slot:10b}].tag.Menu.Color.B
+    execute store result score $ItemR Temporary run data get storage ui: NewItems[{Slot:10b}].tag.UI.Color.R
+    execute store result score $ItemG Temporary run data get storage ui: NewItems[{Slot:10b}].tag.UI.Color.G
+    execute store result score $ItemB Temporary run data get storage ui: NewItems[{Slot:10b}].tag.UI.Color.B
 
 # 醸造素材2つ
-    execute store result score $Item2R Temporary run data get storage ui: NewItems[{Slot:11b}].tag.Menu.Color.R
-    execute store result score $Item2G Temporary run data get storage ui: NewItems[{Slot:11b}].tag.Menu.Color.G
-    execute store result score $Item2B Temporary run data get storage ui: NewItems[{Slot:11b}].tag.Menu.Color.B
+    execute store result score $Item2R Temporary run data get storage ui: NewItems[{Slot:11b}].tag.UI.Color.R
+    execute store result score $Item2G Temporary run data get storage ui: NewItems[{Slot:11b}].tag.UI.Color.G
+    execute store result score $Item2B Temporary run data get storage ui: NewItems[{Slot:11b}].tag.UI.Color.B
     scoreboard players operation $ItemR Temporary += $Item2R Temporary
     scoreboard players operation $ItemG Temporary += $Item2G Temporary
     scoreboard players operation $ItemB Temporary += $Item2B Temporary
 
 # 醸造素材3つ
-    execute store result score $Item3R Temporary run data get storage ui: NewItems[{Slot:12b}].tag.Menu.Color.R
-    execute store result score $Item3G Temporary run data get storage ui: NewItems[{Slot:12b}].tag.Menu.Color.G
-    execute store result score $Item3B Temporary run data get storage ui: NewItems[{Slot:12b}].tag.Menu.Color.B
+    execute store result score $Item3R Temporary run data get storage ui: NewItems[{Slot:12b}].tag.UI.Color.R
+    execute store result score $Item3G Temporary run data get storage ui: NewItems[{Slot:12b}].tag.UI.Color.G
+    execute store result score $Item3B Temporary run data get storage ui: NewItems[{Slot:12b}].tag.UI.Color.B
     scoreboard players operation $ItemR Temporary += $Item3R Temporary
     scoreboard players operation $ItemG Temporary += $Item3G Temporary
     scoreboard players operation $ItemB Temporary += $Item3B Temporary
