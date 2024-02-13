@@ -4,4 +4,3 @@
 item replace block 0 0 0 container.0 from entity @s armor.head
 data remove block 0 0 0 Items[{Slot:0b}].tag.UI
 loot replace entity @s armor.head mine 0 0 0 debug_stick
-tag @s remove CloseDetector
