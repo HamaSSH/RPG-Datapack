@@ -1,4 +1,4 @@
-#> player:magic/element/water
+#> player:magic/element/sfx/water
 # 水纏い
 
 execute positioned ~ ~0.8 ~ run particle dust_color_transition 0.663 0.714 1 1 0.141 0.271 1 ^-0.5 ^ ^ 0.15 0.1 0.15 1 2 force

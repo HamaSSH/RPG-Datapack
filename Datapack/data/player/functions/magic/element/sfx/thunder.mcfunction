@@ -1,4 +1,4 @@
-#> player:magic/element/thunder
+#> player:magic/element/sfx/thunder
 # 雷纏い
 
 execute positioned ~ ~0.8 ~ run particle dust_color_transition 0.992 1 0.62 1 1 0.941 0.133 ^-0.5 ^ ^ 0.15 0.1 0.15 1 2 force
