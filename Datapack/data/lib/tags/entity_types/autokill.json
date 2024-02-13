@@ -3,9 +3,11 @@
     "values": [
         "armor_stand",
         "arrow",
+        "chest_minecart",
         "interaction",
         "item",
         "magma_cube",
+        "marker",
         "silverfish",
         "text_display",
         "vex"
