@@ -18,6 +18,6 @@
     damage @s 0.0 generic
 
 # リセット
-    data remove storage lib: Damage
+    data remove storage lib: Damage.Type
     scoreboard players reset @s DmgReceived
     tag @s remove Hit
