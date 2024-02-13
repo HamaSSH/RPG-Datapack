@@ -1,9 +1,6 @@
 #> ui:brewing/page/changed
 # UI内で変更があった場合の処理
 
-# markerの中身→storage
-    data modify storage ui: Items set from entity @s data.Items
-
 # 不要アイテムのclear
     clear @a[tag=UIOpen] #lib:every_item{UI:{ItemType:"Blank"}}
     execute as @a[tag=UIOpen] store result score @s ClickedIcon run clear @s #lib:every_item{UI:{ItemType:"Brew"}}
@@ -13,7 +10,7 @@
 
 # メニュー内容更新
     # 初期化
-        function ui:brewing/page/init
+        execute on vehicle run function ui:brewing/page/init
     # 完成品の配置
 
 # リセット
