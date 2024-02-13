@@ -1,0 +1,21 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "player:armor/helmet"
+        },
+        {
+            "condition": "reference",
+            "name": "player:armor/chestplate"
+        },
+        {
+            "condition": "reference",
+            "name": "player:armor/leggings"
+        },
+        {
+            "condition": "reference",
+            "name": "player:armor/boots"
+        }
+    ]
+}

@@ -3,8 +3,8 @@
     "entity": "this",
     "predicate": {
         "equipment": {
-            "head": {
-                "nbt": "{}"
+            "chest": {
+                "nbt": "{Equipment:\"Chestplate\"}"
             }
         }
     }
