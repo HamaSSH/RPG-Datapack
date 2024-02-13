@@ -13,5 +13,5 @@
     execute if entity @s[tag=ClassLectern] run tag @s remove ClassLectern
 
 # リセット
-    tag @s remove UIOpen
+    tag @s remove UsingUI
     advancement revoke @s only ui:close
