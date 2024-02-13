@@ -2,8 +2,7 @@
 # UI内で変更があった場合の処理
 
 # 不要アイテムのclear
-    clear @a[tag=UsingUI] #lib:every_item{UI:{ItemType:"Blank"}}
-    execute as @a[tag=UsingUI] store result score @s ClickedIcon run clear @s #lib:every_item{UI:{ItemType:"Brew"}}
+    clear @a[tag=UsingUI] glass_bottle
 
 # 醸造アイテムデータの整形
     # 醸造可能なアイテム→BrewableItems
@@ -31,6 +30,5 @@
     data modify entity @s data.Items set from storage ui: Items
 
 # リセット
-    scoreboard players reset @a[tag=UsingUI] ClickedIcon
     data remove storage ui: NewItems
     data remove storage ui: BrewableItems
