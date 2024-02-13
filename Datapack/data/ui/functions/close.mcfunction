@@ -2,8 +2,8 @@
 # UIを閉じた際の処理
 
 # UI閉じ検知の後処理
-    execute unless predicate player:armor/head run item replace entity @s armor.head with air
-    execute if predicate player:armor/head run function ui:close_detector/remove
+    execute unless predicate player:armor/helmet run item replace entity @s armor.head with air
+    execute if predicate player:armor/helmet run function ui:close_detector/remove
 
 # UIをkillする
     execute as @e[type=interaction,tag=UIInteraction,distance=..0.01] if score @s PlayerID = @p PlayerID run tag @s add AutoKill
