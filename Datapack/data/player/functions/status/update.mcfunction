@@ -85,6 +85,10 @@
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed/_
     execute unless score @s PreviousLUK = @s LUK run function player:status/luk/generic_luck/_
 
+# ⓼ステータス更新時HPMPをMAXにするか
+    execute if entity @s[tag=HPFull] run scoreboard players operation @s HP = @s HPMax
+    execute if entity @s[tag=MPFull] run scoreboard players operation @s MP = @s MPMax
+
 # リセット
     data remove storage player: ItemData
     scoreboard players reset @s BonusHP
@@ -99,3 +103,5 @@
     scoreboard players reset @s BonusCRT
     scoreboard players reset @s BonusLUK
     tag @s remove StatusUpdate
+    tag @s remove HPFull
+    tag @s remove MPFull
