@@ -9,7 +9,7 @@
     scoreboard players add @s LVL 1
 
 # ステータスアップ
-    execute unless entity @s[tag=BeforeLevelup] run function player:status/before_levelup
+    execute unless entity @s[tag=BeforeLevelup] unless entity @s[tag=ChangedClass] run function player:status/before_levelup
     function player:class/status/up/_
 
 # 次の必要経験値の計算
