@@ -9,5 +9,5 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/hit
 
 # 演出
-    particle sweep_attack ^ ^1 ^1 0 0 0 0.01 1
+    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1 0 0 0 0.01 1
     playsound resource:custom.weapon.fail master @a ~ ~ ~ 1.0 1.0

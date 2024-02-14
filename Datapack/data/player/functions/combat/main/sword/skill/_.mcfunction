@@ -18,7 +18,7 @@ tag @s add Attacker
 
 # 演出
     function player:combat/main/sword/sfx/_
-    particle sweep_attack ^ ^1.0 ^1.5 0.15 0.15 0.15 1 1 force
+    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1.5 0.15 0.15 0.15 1 1 force
     playsound resource:custom.weapon.sword master @a ~ ~ ~ 0.4 1.0
 
 # 回転

@@ -10,5 +10,5 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] run tag @s remove DaggerHit
 
 # 演出
-    particle enchanted_hit ^ ^1.4 ^2 0.5 0.1 0.5 0.5 2
+    execute positioned ~ ~1.4 ~ run particle enchanted_hit ^ ^ ^2 0.5 0.1 0.5 0.5 2
     playsound resource:custom.weapon.fail master @a ~ ~ ~ 1.0 1.0

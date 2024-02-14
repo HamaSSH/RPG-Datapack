@@ -8,7 +8,7 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/hit
 
 # 演出
-    particle crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 1
-    particle crit ^ ^1.7 ^2 0.25 0.1 0.25 0.2 1
-    particle crit ^ ^1.7 ^4 0.25 0.1 0.25 0.2 1
+    execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^ 0.25 0.1 0.25 0.2 1
+    execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^2 0.25 0.1 0.25 0.2 1
+    execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^4 0.25 0.1 0.25 0.2 1
     playsound resource:custom.weapon.fail master @a ~ ~ ~ 1.0 1.0

@@ -3,7 +3,7 @@
 
 playsound resource:custom.weapon.hammer master @a ~ ~ ~ 0.5 1.0
 execute if score @s ElementTimer matches 0 run playsound resource:custom.weapon.hammer master @a ~ ~ ~ 0.5 1.0
-particle explosion ^ ^0.7 ^1.2 0 0 0 0.1 1 force
+execute positioned ~ ~0.7 ~ run particle explosion ^ ^ ^1.2 0 0 0 0.1 1 force
 
 execute if entity @s[tag=ElementFire] run function player:combat/main/hammer/sfx/fire
 execute if entity @s[tag=ElementWater] run function player:combat/main/hammer/sfx/water

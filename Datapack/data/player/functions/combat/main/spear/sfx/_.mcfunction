@@ -3,9 +3,9 @@
 
 playsound resource:custom.weapon.spear master @a ~ ~ ~ 0.5 1.0
 execute if score @s ElementTimer matches 0 run playsound resource:custom.weapon.spear master @a ~ ~ ~ 0.5 1.0
-particle crit ^ ^1.7 ^ 0.25 0.1 0.25 0.2 2 force
-particle crit ^ ^1.7 ^2 0.25 0.1 0.25 0.2 3 force
-particle crit ^ ^1.7 ^4 0.25 0.1 0.25 0.2 3 force
+execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^ 0.25 0.1 0.25 0.2 2 force
+execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^2 0.25 0.1 0.25 0.2 3 force
+execute positioned ~ ~1.7 ~ run particle crit ^ ^ ^4 0.25 0.1 0.25 0.2 3 force
 
 execute if entity @s[tag=ElementFire] run function player:combat/main/spear/sfx/fire
 execute if entity @s[tag=ElementWater] run function player:combat/main/spear/sfx/water
