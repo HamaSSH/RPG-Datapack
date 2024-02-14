@@ -15,6 +15,17 @@
     scoreboard players operation @s LUK = @s BaseLUK
 
 # ⓶補正ステータス
+    scoreboard players reset @s BonusHP
+    scoreboard players reset @s BonusMP
+    scoreboard players reset @s BonusHPR
+    scoreboard players reset @s BonusMPR
+    scoreboard players reset @s BonusSTR
+    scoreboard players reset @s BonusINT
+    scoreboard players reset @s BonusDEX
+    scoreboard players reset @s BonusDEF
+    scoreboard players reset @s BonusAGI
+    scoreboard players reset @s BonusCRT
+    scoreboard players reset @s BonusLUK
     # 装備をストレージに格納 #TODO: Offhand:1bをアイテムにつける(弓)
         data modify storage player: ItemData.Offhand set from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}]
         data modify storage player: ItemData.Helmet set from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}]
@@ -91,17 +102,6 @@
 
 # リセット
     data remove storage player: ItemData
-    scoreboard players reset @s BonusHP
-    scoreboard players reset @s BonusMP
-    scoreboard players reset @s BonusHPR
-    scoreboard players reset @s BonusMPR
-    scoreboard players reset @s BonusSTR
-    scoreboard players reset @s BonusINT
-    scoreboard players reset @s BonusDEX
-    scoreboard players reset @s BonusDEF
-    scoreboard players reset @s BonusAGI
-    scoreboard players reset @s BonusCRT
-    scoreboard players reset @s BonusLUK
     tag @s remove StatusUpdate
     tag @s remove HPFull
     tag @s remove MPFull
