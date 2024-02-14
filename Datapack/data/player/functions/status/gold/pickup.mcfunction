@@ -24,3 +24,4 @@
     scoreboard players reset $1G Temporary
     scoreboard players reset $10G Temporary
     scoreboard players reset $100G Temporary
+    advancement revoke @s only player:trigger/pickup_gold

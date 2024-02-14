@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{ItemType:\"Gold\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:status/gold/pickup"
+    }
+}

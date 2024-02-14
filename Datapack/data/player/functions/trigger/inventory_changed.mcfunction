@@ -10,9 +10,6 @@
 # 矢筒が装備されたか検知
     execute if data storage player: Inventory[].tag.Quiver unless entity @s[tag=NewInventorySet] run function player:combat/main/bow/quiver/_
 
-# ゴールドの取得処理
-    execute if data storage player: Inventory[].tag{ItemType:"Gold"} run function player:status/gold/pickup
-
 # 消費予定のアイテムデータのリセット
     execute unless entity @s[tag=ConsumeOffhand] if entity @s[tag=UsingConsumables] run function player:trigger/using_item/consumables/reset
 
