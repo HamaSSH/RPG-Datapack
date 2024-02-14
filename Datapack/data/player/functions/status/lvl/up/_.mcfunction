@@ -17,7 +17,7 @@
     function player:status/lvl/exp/calculate
 
 # レベルアップをお知らせ
-    execute if score @s EXP < @s NextEXP run function player:status/lvl/up/tellraw
+    execute if score @s EXP < @s NextEXP unless entity @s[tag=ChangedClass] run function player:status/lvl/up/tellraw
     execute if score @s EXP < @s NextEXP run tag @s remove BeforeLevelup
     tag @s remove LevelUp
 
