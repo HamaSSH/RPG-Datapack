@@ -2,7 +2,6 @@
 # ステータス確認UI
 
 tag @s add CheckingStatus
-scoreboard players add @s Temporary 1
 
 # 自然回復力
     scoreboard players operation $HPRegenInt Temporary = @s HPRegen
