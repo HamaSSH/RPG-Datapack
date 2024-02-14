@@ -20,4 +20,6 @@
 
 # 蘇生
     scoreboard players operation @s HP = @s HPMax
-    scoreboard players set @s MP 0
+    scoreboard players operation @s MP = @s MPMax
+    scoreboard players set @s SkillTimer 0
+    scoreboard players set @s ElementTimer 0
