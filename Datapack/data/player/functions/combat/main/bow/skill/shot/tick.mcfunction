@@ -13,7 +13,7 @@ data modify entity @s PierceLevel set value 5
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 200
-    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] facing entity @e[type=arrow,tag=Attacker] eyes rotated ~ 70 run function lib:motion/knockback
+    execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s facing entity @e[type=arrow,tag=Attacker,sort=nearest,limit=1] feet rotated ~180 70 run function lib:motion/knockback
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/bow/skill/hit
 
 # 演出
