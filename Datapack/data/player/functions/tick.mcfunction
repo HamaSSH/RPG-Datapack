@@ -69,6 +69,10 @@
 # ステータス更新
     execute if entity @s[tag=StatusUpdate] run function player:status/update
 
+# ステータス確認
+    execute if entity @s[tag=!CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run function player:status/ui
+    execute unless entity @s[tag=CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run tag @s remove CheckingStatus
+
 # バニラ要素から一切のダメージを受けない
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
