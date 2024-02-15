@@ -1,16 +1,13 @@
 #> player:status/lvl/up/_
 # レベルアップ処理
 
-# 元々のレベルの値を保存
-    execute unless score $PreviousLVL Temporary matches 1.. run scoreboard players operation $PreviousLVL Temporary = @s LVL
+# ステータスアップ
+    execute unless entity @s[tag=BeforeLevelup] unless entity @s[tag=ChangedClass] run function player:status/before_levelup
+    function player:class/status/up/_
 
 # レベルアップ
     tag @s add LevelUp
     scoreboard players add @s LVL 1
-
-# ステータスアップ
-    execute unless entity @s[tag=BeforeLevelup] unless entity @s[tag=ChangedClass] run function player:status/before_levelup
-    function player:class/status/up/_
 
 # 次の必要経験値の計算
     scoreboard players operation @s EXP -= @s NextEXP

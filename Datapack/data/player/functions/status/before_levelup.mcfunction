@@ -2,6 +2,7 @@
 # レベルアップ前のステータス情報を保存
 
 tag @s add BeforeLevelup
+scoreboard players operation $PreviousLVL Temporary = @s LVL
 scoreboard players operation $PreviousHP Temporary = @s BaseHP
 scoreboard players operation $PreviousMP Temporary = @s BaseMP
 scoreboard players operation $PreviousSTR Temporary = @s BaseSTR
