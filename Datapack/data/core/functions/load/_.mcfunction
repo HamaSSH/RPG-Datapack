@@ -8,3 +8,6 @@
 # 初期設定
     execute if data storage global: {IsProduction:1b} unless data storage global: Version run function core:load/once
     execute if data storage global: {IsProduction:0b} run function core:load/once
+
+# バージョンアップ処理
+    function core:migration/_
