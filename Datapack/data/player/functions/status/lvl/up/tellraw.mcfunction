@@ -41,7 +41,7 @@
     scoreboard players reset $PreviousINT Temporary
     scoreboard players reset $PreviousDEX Temporary
     scoreboard players reset $PreviousDEF Temporary
-    scoreboard players reset $PreviousSPD Temporary
+    scoreboard players reset $PreviousAGI Temporary
     scoreboard players reset $PreviousCRT Temporary
     scoreboard players reset $PreviousLUK Temporary
     scoreboard players reset $CurrentHP Temporary
@@ -50,6 +50,6 @@
     scoreboard players reset $CurrentINT Temporary
     scoreboard players reset $CurrentDEX Temporary
     scoreboard players reset $CurrentDEF Temporary
-    scoreboard players reset $CurrentSPD Temporary
+    scoreboard players reset $CurrentAGI Temporary
     scoreboard players reset $CurrentCRT Temporary
     scoreboard players reset $CurrentLUK Temporary
