@@ -18,9 +18,9 @@
     execute if data storage ui: Ingredient.SingleBuff{Amplifier:4} run data modify storage ui: Ingredient.Buff[0].Lore.Level set value "2V"
 
 # 素材アイテムからLoreを流用
-    data modify storage ui: Ingredient.Buff[0].Lore.L set string storage ui: Ingredient.display.Lore[3] 0 32
-    data modify storage ui: Ingredient.Buff[0].Lore.R set string storage ui: Ingredient.display.Lore[3] -54
-    data remove storage ui: Ingredient.display.Lore[3]
+    $data modify storage ui: Ingredient.Buff[0].Lore.L set string storage ui: Ingredient.display.Lore[$(Citation)] 0 32
+    $data modify storage ui: Ingredient.Buff[0].Lore.R set string storage ui: Ingredient.display.Lore[$(Citation)] -54
+    # $data remove storage ui: Ingredient.display.Lore[$(Citation)]
 
 # エフェクトの持続時間
     data modify storage ui: Ingredient.Buff[0].Lore.10Sec set value ""

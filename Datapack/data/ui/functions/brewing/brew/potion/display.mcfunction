@@ -7,8 +7,10 @@
     data modify storage ui: PotionData.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822消費時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
 
 # バフの情報
+tellraw @p [{"nbt":"PotionData.StatusLore","storage":"ui:"}]
     data modify storage ui: PotionData.Lore append from storage ui: PotionData.EffectLore[]
     data modify storage ui: PotionData.Lore append from storage ui: PotionData.StatusLore[]
+tellraw @p [{"nbt":"PotionData.Lore","storage":"ui:"}]
 
 # アイテムのレアリティの計算
     execute store result score $ItemRarity Temporary run data get storage ui: NewItems[{Slot:10b}].tag.Rarity

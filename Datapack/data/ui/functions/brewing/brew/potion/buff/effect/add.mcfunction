@@ -1,16 +1,10 @@
-#> ui:brewing/brew/potion/buff/effect/duplicate
-# エフェクトがダブったら効果を強化
+#> ui:brewing/brew/potion/buff/effect/add
+# ポーションのエフェクトを追加
 
 # ポーションのバフ
     $execute store result score $Duration Temporary run data get storage ui: PotionData.Buff[{Effect:"$(Effect)"}].Duration
-    execute store result score $AddDuration Temporary run data get storage ui: Ingredient.Buff[0].Duration 0.5
-    scoreboard players operation $Duration Temporary += $AddDuration Temporary
 
-# バフ情報の補正 (1.1倍)
-    scoreboard players operation $Duration Temporary *= #11 Constant
-    scoreboard players operation $Duration Temporary /= #10 Constant
-
-# バフ情報を更新
+# 持続時間情報
     scoreboard players operation $Duration Temporary /= #20 Constant
     scoreboard players operation $DurationSec Temporary = $Duration Temporary
     scoreboard players operation $DurationSec Temporary %= #60 Constant
@@ -20,19 +14,18 @@
     $execute store result storage ui: PotionData.Buff[{Effect:"$(Effect)"}].Duration int 1 run scoreboard players get $Duration Temporary
 
 # Loreの流用先を指定
-    execute if score $EffectCitation Temporary matches 2 run data modify storage ui: Ingredient.Buff[0].Lore.Citation set value 3
-    execute if score $EffectCitation Temporary matches 1 run data modify storage ui: Ingredient.Buff[0].Lore.Citation set value 4
+    execute store result storage ui: Ingredient.Buff[0].Lore.Citation int -1 run scoreboard players add $EffectCitation Temporary 2
 
 # Loreの設定
-    $data remove storage ui: PotionData.EffectLore[$(ID)]
     data modify storage ui: Ingredient.SingleBuff set from storage ui: Ingredient.Buff[0]
     function ui:brewing/brew/potion/buff/effect/shaping with storage ui: Ingredient.Buff[0].Lore
     function ui:brewing/brew/potion/buff/effect/lore with storage ui: Ingredient.Buff[0].Lore
     data remove storage ui: Ingredient.SingleBuff
     data remove storage ui: Ingredient.Buff.Lore
+    # tellraw @p ["lore＝＝ ",{"nbt":"PotionData.EffectLore","storage":"ui:"}]
+    # tellraw @p ["Buff＝＝ ",{"nbt":"PotionData.Buff","storage":"ui:"}]
 
 # リセット
     scoreboard players reset $Duration Temporary
-    scoreboard players reset $AddDuration Temporary
     scoreboard players reset $DurationSec Temporary
     scoreboard players reset $DurationMin Temporary
