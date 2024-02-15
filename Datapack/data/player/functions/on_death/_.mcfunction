@@ -19,6 +19,7 @@
     title @s title {"text":"You Died!","bold":true,"color":"dark_red"}
 
 # 蘇生
+    effect give @s saturation 1 20
     scoreboard players operation @s HP = @s HPMax
     scoreboard players operation @s MP = @s MPMax
     scoreboard players set @s SkillTimer 0
