@@ -15,6 +15,16 @@
     function ui:brewing/brew/potion/color
     data modify storage ui: Results[].tag.CustomPotionColor set from storage ui: PotionData.Color
 
+# ポーションのバフ情報を決定
+    function ui:brewing/brew/potion/buff/_
+    data remove storage ui: PotionData.Buff[].ID
+    data modify storage ui: Results[].tag.Consumables.Buff set from storage ui: PotionData.Buff
+
+# ポーションのdisplayの設定
+    function ui:brewing/brew/potion/display
+    data modify storage ui: Results[].tag.display.Name set from storage ui: PotionData.Name
+    data modify storage ui: Results[].tag.display.Lore set from storage ui: PotionData.Lore
+
 # 素材アイテムの消費
     execute store result storage ui: NewItems[{Slot:10b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:10b}].Count
     execute store result storage ui: NewItems[{Slot:11b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:11b}].Count
@@ -24,3 +34,7 @@
     playsound block.brewing_stand.brew master @a ~ ~ ~ 0.3 0.9
     playsound block.bubble_column.upwards_inside master @a ~ ~ ~ 0.35 2
     playsound item.firecharge.use master @a ~ ~ ~ 0.15 1.3
+
+# リセット
+    data remove storage ui: Ingredient
+    data remove storage ui: PotionData
