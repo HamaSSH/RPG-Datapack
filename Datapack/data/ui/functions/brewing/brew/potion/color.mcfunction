@@ -1,5 +1,5 @@
 #> ui:brewing/brew/potion/color
-# カスタムポーションの色を決める
+# クラフトポーションの色を決める
 
 # 醸造素材1つ
     execute store result score $ItemR Temporary run data get storage ui: NewItems[{Slot:10b}].tag.UI.Color.R
