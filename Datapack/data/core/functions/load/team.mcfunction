@@ -57,3 +57,8 @@
     team add Brewing
     team modify Brewing collisionRule never
     team modify Brewing prefix ["\uF808",{"text":"\uE251","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"醸造","bold":true},"\uF80F"]
+
+# 鍛冶UI
+    team add Smithing
+    team modify Smithing collisionRule never
+    team modify Smithing prefix ["\uF808",{"text":"\uE252","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"鍛冶","bold":true},"\uF80F"]
