@@ -5,6 +5,9 @@ team leave @s
 
 # ステータスの初期化
     function player:class/wizard/status/init
+    tag @s add StatusUpdate
+    tag @s add HPFull
+    tag @s add MPFull
 
 # team join
     team join Wizard
