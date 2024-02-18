@@ -26,25 +26,18 @@
     scoreboard players reset @s BonusAGI
     scoreboard players reset @s BonusCRT
     scoreboard players reset @s BonusLUK
-    # 装備をストレージに格納 #TODO: Offhand:1bをアイテムにつける(弓)
-        data modify storage player: ItemData.Offhand set from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}]
-        data modify storage player: ItemData.Helmet set from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}]
-        data modify storage player: ItemData.Chestplate set from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}]
-        data modify storage player: ItemData.Leggings set from storage player: Inventory[{Slot:101b,tag:{Equipment:"Leggings"}}]
-        data modify storage player: ItemData.Boots set from storage player: Inventory[{Slot:100b,tag:{Equipment:"Boots"}}]
-        data modify storage player: ItemData.Accessory1 set from storage player: Inventory[{Slot:9b,tag:{Equipment:"Accessory"}}]
-        data modify storage player: ItemData.Accessory2 set from storage player: Inventory[{Slot:10b,tag:{Equipment:"Accessory"}}]
-        data modify storage player: ItemData.Accessory3 set from storage player: Inventory[{Slot:11b,tag:{Equipment:"Accessory"}}]
-    # 装備ごとの補正ステータス #TODO: ↓弓をoffhand、有象無象mainhandでもいけてしまうためMainhand:1bもアイテムにつける
-        execute if predicate player:hold_weapon/_ if data storage player: SelectedItem.tag.Bonus run function player:item_data/mainhand
-        execute if data storage player: ItemData.Offhand.tag.Bonus run function player:item_data/offhand
-        execute if data storage player: ItemData.Helmet.tag.Bonus run function player:item_data/helmet
-        execute if data storage player: ItemData.Chestplate.tag.Bonus run function player:item_data/chestplate
-        execute if data storage player: ItemData.Leggings.tag.Bonus run function player:item_data/leggings
-        execute if data storage player: ItemData.Boots.tag.Bonus run function player:item_data/boots
-        execute if data storage player: ItemData.Accessory1.tag.Bonus run function player:item_data/accessory1
-        execute if data storage player: ItemData.Accessory2.tag.Bonus run function player:item_data/accessory2
-        execute if data storage player: ItemData.Accessory3.tag.Bonus run function player:item_data/accessory3
+    # 装備をストレージに格納
+        data modify storage player: BonusStatus append from storage player: SelectedItem.tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:101b,tag:{Equipment:"Leggings"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:100b,tag:{Equipment:"Boots"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:9b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:10b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:11b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
+    # 全ての装備分の補正ステータスをスコアに加算
+        execute if data storage player: BonusStatus[] run function player:item_data/bonus_status with storage player: BonusStatus[0]
     scoreboard players operation @s HPMax += @s BonusHP
     scoreboard players operation @s MPMax += @s BonusMP
     scoreboard players operation @s HPRegen += @s BonusHPR
@@ -102,6 +95,7 @@
 
 # リセット
     data remove storage player: ItemData
+    data remove storage player: BonusStatus
     tag @s remove StatusUpdate
     tag @s remove HPFull
     tag @s remove MPFull
