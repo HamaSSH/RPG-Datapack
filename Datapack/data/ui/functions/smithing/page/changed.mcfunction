@@ -19,6 +19,7 @@
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
+    data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
     data remove storage ui: ReturnItems[{tag:{UI:{Smithable:1b}}}]
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
