@@ -23,12 +23,17 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ページを移動する
-    # execute unless data storage ui: Items[{Slot:12b,tag:{UI:{ItemType:"Upgrade"}}}] run
-    # execute unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Combine"}}}] run
-    # execute unless data storage ui: Items[{Slot:14b,tag:{UI:{ItemType:"Repair"}}}] run
+    execute unless data storage ui: Items[{Slot:12b,tag:{UI:{ItemType:"Upgrade"}}}] run scoreboard players set @s UIPage 1
+    execute unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Combine"}}}] run scoreboard players set @s UIPage 2
+    execute unless data storage ui: Items[{Slot:14b,tag:{UI:{ItemType:"Repair"}}}] run scoreboard players set @s UIPage 3
+    # もし鍛冶可能アイテムが配置されていなければ移動しない
+        execute unless data storage ui: Items[{Slot:10b}] unless data storage ui: NewItems[{Slot:10b}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新
-    execute on vehicle run function ui:smithing/page/init
+    execute if score @s UIPage matches 0 on vehicle run function ui:smithing/page/init
+    execute if score @s UIPage matches 1 on vehicle run function ui:smithing/upgrade/page/init
+    execute if score @s UIPage matches 2 on vehicle run function ui:smithing/combine/page/init
+    execute if score @s UIPage matches 3 on vehicle run function ui:smithing/repair/page/init
     execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
 # 二重更新防止
@@ -36,6 +41,6 @@
     data modify entity @s data.Items set from storage ui: Items
 
 # リセット
+    tag @s remove TickOnce
     data remove storage ui: NewItems
     data remove storage ui: SmithableItems
-    data remove storage ui: Results
