@@ -1,5 +1,5 @@
 #> ui:smithing/upgrade/item/bonus_status/_
-# アイテムのステータスを強化
+# アイテムのステータスを強化 #TODO: 鍛冶のアイテム周りの操作をui:smithing/itemにまとめたい
 
 # 補正ステータス値の取得
     execute store result score $Amplifier Temporary run data get storage ui: ItemData.BaseBonus[0].Value 1.3
