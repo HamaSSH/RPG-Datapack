@@ -22,6 +22,7 @@
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
     data remove storage ui: ReturnItems[{tag:{UI:{Smithable:1b}}}]
+    execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 強化する

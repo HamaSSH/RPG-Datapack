@@ -25,6 +25,7 @@
     data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:15b}]
     data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:16b}]
     data remove storage ui: ReturnItems[{tag:{UI:{Brewable:1b}}}]
+    execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 醸造する
