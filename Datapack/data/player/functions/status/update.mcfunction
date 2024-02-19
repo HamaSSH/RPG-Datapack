@@ -27,7 +27,7 @@
     scoreboard players reset @s BonusCRT
     scoreboard players reset @s BonusLUK
     # 装備をストレージに格納
-        data modify storage player: BonusStatus append from storage player: SelectedItem.tag.Bonus[]
+        execute if predicate player:hold_weapon/_ run data modify storage player: BonusStatus append from storage player: SelectedItem.tag.Bonus[]
         data modify storage player: BonusStatus append from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}].tag.Bonus[]
         data modify storage player: BonusStatus append from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}].tag.Bonus[]
         data modify storage player: BonusStatus append from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}].tag.Bonus[]
