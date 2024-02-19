@@ -8,7 +8,7 @@ tag @s add Upgradable
     data remove storage ui: ItemData.AttributeModifiers
 
 # 強化用アイテムデータの整形
-    data modify storage ui: Material set from storage ui: ItemData.UI.Upgrade
+    data modify storage ui: Material set from storage ui: ItemData.UI.Upgrade[0]
     data remove storage ui: Material[].tag.display
     data remove storage ui: Material[].tag.UI
 

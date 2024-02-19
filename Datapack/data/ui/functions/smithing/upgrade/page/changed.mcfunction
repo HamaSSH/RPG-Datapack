@@ -31,6 +31,7 @@
 # ページを移動する
     execute unless data storage ui: Items[{Slot:9b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:10b,tag:{UI:{Smithable:1b}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:11b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新
     execute if score @s UIPage matches 0 on vehicle run function ui:smithing/page/init

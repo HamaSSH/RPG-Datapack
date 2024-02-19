@@ -32,6 +32,9 @@
     execute if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:13b}]
     execute if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:14b}]
 
+# Upgadeタグ(強化に必要なアイテム)を更新
+    data remove storage ui: NewItems[{Slot:10b}].tag.UI.Upgrade[0]
+
 # アイテムの残りのdisplay設定
     function ui:smithing/upgrade/item/display
 
