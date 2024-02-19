@@ -5,8 +5,17 @@
     function ui:smithing/upgrade/clear/_
     data remove storage ui: ItemData.UI
 
-# アイテムの強化
+# アイテムの説明文はそのまま
+    execute store result score $ItemLore Temporary if data storage ui: ItemData.display.Lore[]
     execute store result score $ItemBonus Temporary if data storage ui: ItemData.Bonus[]
+    scoreboard players operation $ItemLore Temporary -= $ItemBonus Temporary
+    scoreboard players remove $ItemLore Temporary 3
+    execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
+    execute if score $ItemLore Temporary matches 2 run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[1]
+    data modify storage ui: Result.display.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822装備時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
+    data remove storage ui: ItemData.display.Lore
+
+# アイテムの強化
     execute if data storage ui: ItemData.Bonus[] run function ui:smithing/upgrade/item/bonus_status/_
 
 # アイテムのGradeとRarity操作
@@ -18,7 +27,7 @@
     execute store result storage ui: NewItems[{Slot:10b}].tag.Grade int 1 run scoreboard players get $ItemGrade Temporary
     execute store result storage ui: NewItems[{Slot:10b}].tag.Rarity int 1 run scoreboard players get $ItemRarity Temporary
 
-# アイテムのdisplay設定
+# アイテムの残りのdisplay設定
     function ui:smithing/upgrade/item/display
 
 # 演出
@@ -27,6 +36,7 @@
     playsound block.anvil.use master @p ~ ~ ~ 0.6
 
 # リセット
+    scoreboard players reset $ItemLore Temporary
     scoreboard players reset $ItemBonus Temporary
     scoreboard players reset $ItemGrade Temporary
     scoreboard players reset $ItemRarity Temporary

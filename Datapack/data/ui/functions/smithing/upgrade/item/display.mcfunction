@@ -1,15 +1,6 @@
 #> ui:smithing/upgrade/item/display
 # 強化後のアイテムのdisplayを設定
 
-# アイテムの説明文はそのまま
-    execute store result score $ItemLore Temporary if data storage ui: ItemData.display.Lore[]
-    scoreboard players operation $ItemLore Temporary -= $ItemBonus Temporary
-    scoreboard players remove $ItemLore Temporary 3
-    execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
-    execute if score $ItemLore Temporary matches 2 run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[1]
-    data modify storage ui: Result.display.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822装備時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
-    data remove storage ui: ItemData.display.Lore
-
 # アイテム名に+強化数
     execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.Color set value "white"
     execute if score $ItemRarity Temporary matches 2 run data modify storage ui: ItemData.Color set value "#6FE58D"
@@ -32,5 +23,4 @@
     data modify storage ui: NewItems[{Slot:10b}].tag.display set from storage ui: Result.display
 
 # リセット
-    scoreboard players reset $ItemLore Temporary
     data remove storage ui: Result
