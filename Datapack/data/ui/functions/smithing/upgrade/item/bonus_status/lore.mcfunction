@@ -27,10 +27,6 @@
     execute if data storage ui: SingleBonus{Status:"CRT"} run data modify storage ui: ItemData.Bonus[0].Text set value "会心"
     execute if data storage ui: SingleBonus{Status:"LUK"} run data modify storage ui: ItemData.Bonus[0].Text set value "幸運"
 
-# ステータスバフの強さ
-    execute store result score $Amplifier Temporary run data get storage ui: SingleBonus.Value
-    execute store result storage ui: ItemData.Bonus[0].Amplifier int 1.3 run scoreboard players get $Amplifier Temporary
-
 # ステータスバフカラー
     execute if score $Amplifier Temporary matches 0.. run data modify storage ui: ItemData.Bonus[0].Color set value "#72FF5C"
     execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: ItemData.Bonus[0].Color set value "#FF4D4D"
@@ -38,6 +34,3 @@
 # ステータスバフの符号
     execute if score $Amplifier Temporary matches 0.. run data modify storage ui: ItemData.Bonus[0].Sign set value "+"
     execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: ItemData.Bonus[0].Sign set value ""
-
-# リセット
-    scoreboard players reset $Amplifier Temporary
