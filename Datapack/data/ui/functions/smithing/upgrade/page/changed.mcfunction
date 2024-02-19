@@ -28,6 +28,7 @@
     execute unless data storage ui: Items[{Slot:15b,tag:{UI:{ItemType:"Upgrade"}}}] run function ui:smithing/upgrade/check/_
 
 # ページを移動する
+    execute unless data storage ui: Items[{Slot:9b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:10b,tag:{UI:{Smithable:1b}}}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新
