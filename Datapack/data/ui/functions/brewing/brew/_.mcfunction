@@ -31,9 +31,9 @@
     execute store result storage ui: NewItems[{Slot:12b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:12b}].Count
 
 # 演出
-    playsound block.brewing_stand.brew master @a ~ ~ ~ 0.3 0.9
-    playsound block.bubble_column.upwards_inside master @a ~ ~ ~ 0.35 2
-    playsound item.firecharge.use master @a ~ ~ ~ 0.15 1.3
+    playsound block.brewing_stand.brew master @a ~ ~ ~ 0.5 0.9
+    playsound block.bubble_column.upwards_inside master @a ~ ~ ~ 0.75 2
+    playsound item.firecharge.use master @a ~ ~ ~ 0.35 1.3
 
 # リセット
     data remove storage ui: Ingredient
