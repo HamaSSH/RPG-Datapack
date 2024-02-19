@@ -9,10 +9,8 @@
     # 鍛冶可能なアイテム(既にスロット内のものを除く)→SmithableItems
         data modify storage ui: SmithableItems append from storage ui: Items[{tag:{UI:{Smithable:1b}}}]
         data remove storage ui: SmithableItems[{Slot:10b}]
-
     # アイテムをスロットに配置
         execute if data storage ui: Items[{tag:{UI:{Smithable:1b}}}] run function ui:smithing/page/set_item {Slot:"10b"}
-
     # スロットに空きが無ければ返却
         execute if data storage ui: SmithableItems[] run data modify storage ui: ReturnItems set from storage ui: SmithableItems
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
