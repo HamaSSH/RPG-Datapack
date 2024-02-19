@@ -35,8 +35,23 @@
 # Upgadeタグ(強化に必要なアイテム)を更新
     data remove storage ui: NewItems[{Slot:10b}].tag.UI.Upgrade[0]
 
-# アイテムの残りのdisplay設定
-    function ui:smithing/upgrade/item/display
+# アイテム名に+強化数
+    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.Color set value "white"
+    execute if score $ItemRarity Temporary matches 2 run data modify storage ui: ItemData.Color set value "#6FE58D"
+    execute if score $ItemRarity Temporary matches 3 run data modify storage ui: ItemData.Color set value "#7C7CE8"
+    execute if score $ItemRarity Temporary matches 4 run data modify storage ui: ItemData.Color set value "#F65A5A"
+    execute if score $ItemRarity Temporary matches 5 run data modify storage ui: ItemData.Color set value "#F7F76D"
+    execute store result storage ui: ItemData.Grade int 1 run scoreboard players get $ItemGrade Temporary
+    function ui:smithing/upgrade/item/name with storage ui: ItemData
+    data remove storage ui: ItemData.display
+
+# アイテムLoreの下2行
+    data modify storage ui: Result.display.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
+    execute store result storage ui: ItemData.Rarity int 0.999 run scoreboard players get $ItemRarity Temporary
+    function ui:smithing/upgrade/item/rarity with storage ui: ItemData
+
+# displayの適用
+    data modify storage ui: NewItems[{Slot:10b}].tag.display set from storage ui: Result.display
 
 # 演出
     playsound block.anvil.place master @p ~ ~ ~ 0.9 1.5
@@ -44,6 +59,7 @@
     playsound block.anvil.use master @p ~ ~ ~ 0.6
 
 # リセット
+    data remove storage ui: Result
     scoreboard players reset $ItemLore Temporary
     scoreboard players reset $ItemBonus Temporary
     scoreboard players reset $ItemGrade Temporary
