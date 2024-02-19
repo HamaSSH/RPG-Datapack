@@ -17,7 +17,7 @@
 
 # アイテムLoreの下2行
     data modify storage ui: Result.display.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
-    execute store result storage ui: ItemData.Rarity int 0.99 run scoreboard players get $ItemRarity Temporary
+    execute store result storage ui: ItemData.Rarity int 0.999 run scoreboard players get $ItemRarity Temporary
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用
