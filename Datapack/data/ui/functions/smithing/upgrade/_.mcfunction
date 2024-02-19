@@ -27,6 +27,11 @@
     execute store result storage ui: NewItems[{Slot:10b}].tag.Grade int 1 run scoreboard players get $ItemGrade Temporary
     execute store result storage ui: NewItems[{Slot:10b}].tag.Rarity int 1 run scoreboard players get $ItemRarity Temporary
 
+# 最大強化になったアイテムのCombineアイテム枠を一つ増やす
+    execute if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:12b}]
+    execute if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:13b}]
+    execute if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:14b}]
+
 # アイテムの残りのdisplay設定
     function ui:smithing/upgrade/item/display
 
