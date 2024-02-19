@@ -22,15 +22,15 @@
     execute store result score $ItemGrade Temporary run data get storage ui: ItemData.Grade
     execute store result score $ItemRarity Temporary run data get storage ui: ItemData.Rarity
     scoreboard players add $ItemGrade Temporary 1
-    execute if score $ItemGrade Temporary matches 3.. run scoreboard players add $ItemRarity Temporary 1
+    execute if score $ItemGrade Temporary matches 3 run scoreboard players add $ItemRarity Temporary 1
     execute if score $ItemRarity Temporary matches 5.. run scoreboard players set $ItemRarity Temporary 5
     execute store result storage ui: NewItems[{Slot:10b}].tag.Grade int 1 run scoreboard players get $ItemGrade Temporary
     execute store result storage ui: NewItems[{Slot:10b}].tag.Rarity int 1 run scoreboard players get $ItemRarity Temporary
 
 # 最大強化になったアイテムのCombineアイテム枠を一つ増やす
-    execute if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:12b}]
-    execute if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:13b}]
-    execute if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:14b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:12b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:13b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:14b}]
 
 # Upgadeタグ(強化に必要なアイテム)を更新
     data remove storage ui: NewItems[{Slot:10b}].tag.UI.Upgrade[0]
