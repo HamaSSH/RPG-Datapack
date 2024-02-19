@@ -62,3 +62,8 @@
     team add Smithing
     team modify Smithing collisionRule never
     team modify Smithing prefix ["\uF808",{"text":"\uE252","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"鍛冶","bold":true},"\uF80F"]
+
+# 店UI
+    team add Shop
+    team modify Shop collisionRule never
+    team modify Shop prefix ["\uF808",{"text":"\uE254","color":"white"},"\uF80F"]

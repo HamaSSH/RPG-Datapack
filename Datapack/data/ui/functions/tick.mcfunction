@@ -7,3 +7,4 @@
 # メニューごとのtick処理
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01,limit=1] on passengers on passengers if entity @s[tag=BrewingMarker] run function ui:brewing/tick
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01,limit=1] on passengers on passengers if entity @s[tag=SmithingMarker] run function ui:smithing/tick
+    execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01,limit=1] on passengers on passengers if entity @s[tag=ShopMarker] run function ui:shop/tick

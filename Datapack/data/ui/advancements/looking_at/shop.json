@@ -1,0 +1,43 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"UsingUI\"]}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "player",
+                                "looking_at": {
+                                    "type": "minecraft:villager",
+                                    "nbt": "{Tags:[\"ShopNPC\"]}",
+                                    "distance": {
+                                        "absolute": {
+                                            "min": 0,
+                                            "max": 4.5
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ui:shop/summon"
+    }
+}
