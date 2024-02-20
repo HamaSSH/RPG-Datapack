@@ -2,7 +2,7 @@
 # v0.1.2にアップデートする際の処理
 
 # バージョン設定
-    data modify storage global GameVersion set value "v0.1.2"
+    data modify storage global: Version set value "v0.1.2"
 
 # 醸造・鍛冶・店の設置
     execute positioned 630 134 -772 run function ui:brewing/place
