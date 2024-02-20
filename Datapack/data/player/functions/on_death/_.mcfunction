@@ -10,9 +10,6 @@
     scoreboard players reset $PlayerID Temporary
     function player:buff/reset
 
-# ダンジョンで死亡した場合
-    tag @s remove InDungeon
-
 # 演出
     tp @s 621 134 -770 -90 0
     # function player:on_death/lose_gold

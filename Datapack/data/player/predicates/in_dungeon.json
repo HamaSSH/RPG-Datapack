@@ -1,0 +1,15 @@
+{
+    "#": "#TODO: ダンジョンを別ディメンションに生成したい",
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "position": {
+            "x": {
+                "min": -500,
+                "max": 500
+            },
+            "z": {
+                "min": 0
+            }
+        }
+    }
+}
