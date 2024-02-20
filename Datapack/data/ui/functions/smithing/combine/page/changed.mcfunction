@@ -11,6 +11,7 @@
         data remove storage ui: SmithableItems[{Slot:10b}]
     # 合成可能なアイテム(既にスロット内のものを除く)→CombineItems
         data modify storage ui: CombinableItems append from storage ui: Items[{tag:{UI:{Combinable:1b}}}]
+        data remove storage ui: CombinableItems[{Slot:10b}]
         data remove storage ui: CombinableItems[{Slot:12b}]
         data remove storage ui: CombinableItems[{Slot:13b}]
         data remove storage ui: CombinableItems[{Slot:14b}]
@@ -30,6 +31,7 @@
     data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
     data remove storage ui: ReturnItems[{tag:{UI:{Smithable:1b}}}]
     data remove storage ui: ReturnItems[{tag:{UI:{Combinable:1b}}}]
+    data modify storage ui: ReturnItems append from storage ui: Items[{Slot:10b,tag:{UI:{Combinable:1b}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
