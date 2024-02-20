@@ -59,6 +59,7 @@
     playsound block.anvil.use master @p ~ ~ ~ 0.6
 
 # リセット
+    data remove storage ui: ItemData
     data remove storage ui: Result
     scoreboard players reset $ItemLore Temporary
     scoreboard players reset $ItemBonus Temporary
