@@ -3,7 +3,7 @@
 
 # UIに残されたアイテムを返却
     execute on passengers on passengers run data modify storage ui: ReturnItems set from entity @s data.Items
-    execute on passengers on passengers if score @s UIPage matches 2 run data remove storage ui: ReturnItems[{tag:{UI:{Combinable:1b}}}]
+    execute on passengers on passengers if entity @s[tag=SmithingMarker] run data remove storage ui: ReturnItems[{tag:{UI:{Combinable:1b}}}]
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
