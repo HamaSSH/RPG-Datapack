@@ -16,10 +16,11 @@
         data remove storage ui: CombinableItems[{Slot:13b}]
         data remove storage ui: CombinableItems[{Slot:14b}]
     # アイテムをスロットに配置
+        execute store result score $ItemRarity Temporary run data get storage ui: Items[{tag:{UI:{Smithable:1b}}}].tag.Rarity
         execute if data storage ui: Items[{tag:{UI:{Smithable:1b}}}] run function ui:smithing/page/set_item {Slot:"10b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] unless data storage ui: Items[{Slot:12b,tag:{UI:{ItemType:"Blank"}}}] run function ui:smithing/combine/page/set_item {Slot:"12b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Blank"}}}] run function ui:smithing/combine/page/set_item {Slot:"13b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] unless data storage ui: Items[{Slot:14b,tag:{UI:{ItemType:"Blank"}}}] run function ui:smithing/combine/page/set_item {Slot:"14b"}
+        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 2.. run function ui:smithing/combine/page/set_item {Slot:"12b"}
+        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 3.. run function ui:smithing/combine/page/set_item {Slot:"13b"}
+        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 4.. run function ui:smithing/combine/page/set_item {Slot:"14b"}
     # スロットに空きが無ければ返却
         execute if data storage ui: SmithableItems[] run data modify storage ui: ReturnItems set from storage ui: SmithableItems
         execute if data storage ui: CombinableItems[] run data modify storage ui: ReturnItems set from storage ui: CombinableItems
@@ -32,6 +33,9 @@
     data remove storage ui: ReturnItems[{tag:{UI:{Smithable:1b}}}]
     data remove storage ui: ReturnItems[{tag:{UI:{Combinable:1b}}}]
     data modify storage ui: ReturnItems append from storage ui: Items[{Slot:10b,tag:{UI:{Combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:12b,tag:{UI:{Combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches ..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,tag:{UI:{Combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches ..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,tag:{UI:{Combinable:1b}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
@@ -58,3 +62,4 @@
     data remove storage ui: NewItems
     data remove storage ui: SmithableItems
     data remove storage ui: CombinableItems
+    scoreboard players reset $ItemRarity Temporary
