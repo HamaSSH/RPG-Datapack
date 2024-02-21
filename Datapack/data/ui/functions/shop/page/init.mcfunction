@@ -7,15 +7,15 @@ data modify entity @s Items set value [{Count:1b,Slot:0b,id:"glass_bottle",tag:{
 # 商品アイテムを並べる
     $execute on passengers run data modify storage ui: Products set from entity @s data.ShopData[$(Page)]
     execute if data storage ui: Products[0] run function ui:shop/page/get_entry {Num:0}
-    execute if data storage ui: Products[0] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[0] run function ui:shop/page/set_entry with storage ui: EntryData
     execute if data storage ui: Products[1] run function ui:shop/page/get_entry {Num:1}
-    execute if data storage ui: Products[1] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[1] run function ui:shop/page/set_entry with storage ui: EntryData
     execute if data storage ui: Products[2] run function ui:shop/page/get_entry {Num:2}
-    execute if data storage ui: Products[2] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[2] run function ui:shop/page/set_entry with storage ui: EntryData
     execute if data storage ui: Products[3] run function ui:shop/page/get_entry {Num:3}
-    execute if data storage ui: Products[3] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[3] run function ui:shop/page/set_entry with storage ui: EntryData
     execute if data storage ui: Products[4] run function ui:shop/page/get_entry {Num:4}
-    execute if data storage ui: Products[4] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[4] run function ui:shop/page/set_entry with storage ui: EntryData
     execute if data storage ui: Products[5] run function ui:shop/page/get_entry {Num:5}
-    execute if data storage ui: Products[5] run function ui:shop/page/set_entry with storage ui: Entry
+    execute if data storage ui: Products[5] run function ui:shop/page/set_entry with storage ui: EntryData
     data remove storage ui: Products

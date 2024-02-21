@@ -1,0 +1,44 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{CustomModelData:3012,UI:{ItemType:\"Buy\"}}"
+    },
+    {
+        "function": "set_name",
+        "name": {
+            "text": "購入する",
+            "color": "#A2FF4B",
+            "bold": true,
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": " ( -"
+                },
+                {
+                    "score": {
+                        "name": "$Price",
+                        "objective": "Temporary"
+                    }
+                },
+                {
+                    "text": "G",
+                    "color": "#FFEE59"
+                },
+                {
+                    "text": " ) "
+                }
+            ]
+        ]
+    }
+]

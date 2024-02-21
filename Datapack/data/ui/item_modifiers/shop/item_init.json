@@ -1,0 +1,35 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{UI:{ItemType:\"Goods\"}}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "nbt": "EntryData.tag.BaseName",
+                "storage": "ui:"
+            },
+            {
+                "text": " ( "
+            },
+            {
+                "nbt": "EntryData.tag.Buy",
+                "storage": "ui:"
+            },
+            {
+                "text": "G",
+                "color": "#FFEE59"
+            },
+            {
+                "text": " )"
+            }
+        ]
+    }
+]
