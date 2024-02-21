@@ -9,6 +9,7 @@
     execute store result score $Price Temporary run data get storage ui: GiveItem.tag.Buy
     execute on vehicle on vehicle on attacker run scoreboard players operation $PlayerGold Temporary = @s Gold
     execute if score $Price Temporary <= $PlayerGold Temporary run function ui:shop/buy/_
+    execute unless score $Price Temporary <= $PlayerGold Temporary run data remove storage ui: GiveItem
 
 # ページの移動
     scoreboard players set @s UIPage 0
