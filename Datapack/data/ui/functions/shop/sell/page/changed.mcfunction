@@ -53,7 +53,7 @@
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
     execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init with storage ui: ShopPage
-    execute if score @s UIPage matches 2 on vehicle run function ui:shop/sell/page/init
+    execute if score @s UIPage matches 1 on vehicle run function ui:shop/sell/page/init
     execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
 # 二重更新防止

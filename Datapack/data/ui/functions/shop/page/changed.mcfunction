@@ -14,15 +14,21 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ページを移動する
-    # execute unless data storage ui: Items[{Slot:16b,tag:{UI:{ItemType:"Backward"}}}] run scoreboard players remove @s ShopPage 1
+    # execute unless data storage ui: Items[{Slot:9b,tag:{UI:{ItemType:"Backward"}}}] run scoreboard players remove @s ShopPage 1
+    execute unless data storage ui: Items[{Slot:10b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 2
+    execute unless data storage ui: Items[{Slot:11b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 3
+    execute unless data storage ui: Items[{Slot:12b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 4
+    execute unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 5
+    execute unless data storage ui: Items[{Slot:14b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 6
+    execute unless data storage ui: Items[{Slot:15b,tag:{UI:{ItemType:"Goods"}}}] run scoreboard players set @s UIPage 7
     # execute unless data storage ui: Items[{Slot:16b,tag:{UI:{ItemType:"Forward"}}}] run scoreboard players add @s ShopPage 1
-    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] run scoreboard players set @s UIPage 2
+    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] run scoreboard players set @s UIPage 1
 
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
     execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init with storage ui: ShopPage
-    execute if score @s UIPage matches 2 on vehicle run function ui:shop/sell/page/init
-    execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
+    execute if score @s UIPage matches 1 on vehicle run function ui:shop/sell/page/init
+    execute if score @s UIPage matches 2..7 on vehicle run function ui:shop/buy/page/init with storage ui: ShopPage
 
 # 二重更新防止
     execute on vehicle run data modify storage ui: Items set from entity @s Items
@@ -31,4 +37,3 @@
 # リセット
     tag @s remove TickOnce
     data remove storage ui: ShopPage
-    data remove storage ui: NewItems
