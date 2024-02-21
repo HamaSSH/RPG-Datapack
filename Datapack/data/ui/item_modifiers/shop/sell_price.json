@@ -1,0 +1,40 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "text": "売却を確定する",
+            "color": "#FFF6A8",
+            "bold": true,
+            "italic": false
+        }
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": " ( +"
+                },
+                {
+                    "score": {
+                        "name": "$TotalPrice",
+                        "objective": "Temporary"
+                    }
+                },
+                {
+                    "text": "G",
+                    "color": "#FFEE59"
+                },
+                {
+                    "text": " ) "
+                }
+            ]
+        ]
+    }
+]
