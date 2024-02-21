@@ -14,10 +14,13 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ページを移動する
+    # execute unless data storage ui: Items[{Slot:16b,tag:{UI:{ItemType:"Backward"}}}] run scoreboard players remove @s ShopPage 1
+    # execute unless data storage ui: Items[{Slot:16b,tag:{UI:{ItemType:"Forward"}}}] run scoreboard players add @s ShopPage 1
     execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] run scoreboard players set @s UIPage 2
 
 # メニュー内容更新
-    execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init
+    execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
+    execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init with storage ui: ShopPage
     execute if score @s UIPage matches 2 on vehicle run function ui:shop/sell/page/init
     execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
@@ -27,4 +30,5 @@
 
 # リセット
     tag @s remove TickOnce
+    data remove storage ui: ShopPage
     data remove storage ui: NewItems

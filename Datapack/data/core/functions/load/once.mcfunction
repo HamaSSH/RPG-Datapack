@@ -80,6 +80,7 @@
         scoreboard objectives add SpawnTimer dummy "召喚タイマー"
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
         scoreboard objectives add UIPage trigger "UIのページ"
+        scoreboard objectives add ShopPage trigger "店のページ"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"

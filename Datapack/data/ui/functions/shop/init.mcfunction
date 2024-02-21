@@ -8,6 +8,7 @@ tag @s remove UIInit
 
 # 店の商品のデータをmarkerに格納
     execute on passengers on passengers run data modify entity @s data.ShopData set from storage ui: ShopData
+    execute on passengers on passengers run scoreboard players set @s ShopPage 0
 
 # UIの初期化
-    execute on passengers run function ui:shop/page/init
+    execute on passengers run function ui:shop/page/init {Page:0}

@@ -51,7 +51,8 @@
     execute unless data storage ui: Items[{Slot:8b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新
-    execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init
+    execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
+    execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init with storage ui: ShopPage
     execute if score @s UIPage matches 2 on vehicle run function ui:shop/sell/page/init
     execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
@@ -61,5 +62,6 @@
 
 # リセット
     tag @s remove TickOnce
+    data remove storage ui: ShopPage
     data remove storage ui: NewItems
     data remove storage ui: SellItems
