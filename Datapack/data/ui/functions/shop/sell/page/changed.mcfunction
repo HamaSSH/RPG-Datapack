@@ -50,6 +50,13 @@
     execute unless data storage ui: Items[{Slot:7b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:8b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
 
+# ページ移動の際アイテムを返却
+    execute if score @s UIPage matches 0 run data modify storage ui: ReturnItems set from storage ui: Items
+    execute if score @s UIPage matches 0 run data remove storage ui: NewItems[{tag:{CanSell:1b}}]
+    execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
+    data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
+    execute if data storage ui: ReturnItems[] run function ui:return_item/_
+
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
     execute if score @s UIPage matches 0 on vehicle run function ui:shop/page/init with storage ui: ShopPage
