@@ -6,7 +6,7 @@
 
 # 売却アイテムデータの整形
     # 売却可能なアイテム(既にスロット内のものを除く)→SellItems
-        data modify storage ui: SellItems append from storage ui: Items[{tag:{UI:{CanSell:1b}}}]
+        data modify storage ui: SellItems append from storage ui: Items[{tag:{CanSell:1b}}]
         data remove storage ui: SellItems[{Slot:9b}]
         data remove storage ui: SellItems[{Slot:10b}]
         data remove storage ui: SellItems[{Slot:11b}]
@@ -16,14 +16,14 @@
         data remove storage ui: SellItems[{Slot:15b}]
         data remove storage ui: SellItems[{Slot:16b}]
     # アイテムをスロットに配置
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"9b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"10b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"11b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"12b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"13b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"14b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"15b"}
-        execute if data storage ui: Items[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/page/set_item {Slot:"16b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"9b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"10b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"11b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"12b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"13b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"14b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"15b"}
+        execute if data storage ui: Items[{tag:{CanSell:1b}}] run function ui:shop/sell/page/set_item {Slot:"16b"}
     # スロットに空きが無ければ返却
         execute if data storage ui: SellItems[] run data modify storage ui: ReturnItems set from storage ui: SellItems
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
@@ -32,12 +32,12 @@
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
-    data remove storage ui: ReturnItems[{tag:{UI:{CanSell:1b}}}]
+    data remove storage ui: ReturnItems[{tag:{CanSell:1b}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 売却する
-    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] if data storage ui: NewItems[{tag:{UI:{CanSell:1b}}}] run function ui:shop/sell/_
+    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] if data storage ui: NewItems[{tag:{CanSell:1b}}] run function ui:shop/sell/_
 
 # ページを移動する
     execute unless data storage ui: Items[{Slot:0b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
