@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{CustomModelData:3015,UI:{ItemType:\"Forward\"}}"
+    },
+    {
+        "function": "set_name",
+        "name": {
+            "text": "→",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        }
+    }
+]

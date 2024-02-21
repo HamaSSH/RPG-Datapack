@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_nbt",
+        "tag": "{CustomModelData:3014,UI:{ItemType:\"Backward\"}}"
+    },
+    {
+        "function": "set_name",
+        "name": {
+            "text": "←",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        }
+    }
+]
