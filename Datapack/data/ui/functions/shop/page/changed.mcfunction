@@ -3,11 +3,13 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
+    clear @a[tag=UsingUI] #lib:every_item{UI:{ItemType:"Goods"}}
 
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
+    data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Goods"}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
