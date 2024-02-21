@@ -36,9 +36,6 @@
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
-# 売却する
-    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] if data storage ui: NewItems[{tag:{CanSell:1b}}] run function ui:shop/sell/_
-
 # ページを移動する
     execute unless data storage ui: Items[{Slot:0b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:1b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
@@ -56,6 +53,9 @@
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
+
+# 売却する
+    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] if data storage ui: NewItems[{tag:{CanSell:1b}}] run function ui:shop/sell/_
 
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
