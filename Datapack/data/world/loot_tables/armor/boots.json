@@ -6,27 +6,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 30,
-                    "name": "asset:item/equipment/3401.leather_boots"
+                    "name": "asset:item/3401"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 25,
-                    "name": "asset:item/equipment/3402.iron_boots"
+                    "name": "asset:item/3402"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 15,
-                    "name": "asset:item/equipment/3403.golden_boots"
+                    "name": "asset:item/3403"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 10,
-                    "name": "asset:item/equipment/3404.diamond_boots"
+                    "name": "asset:item/3404"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 5,
-                    "name": "asset:item/equipment/3405.netherite_boots"
+                    "name": "asset:item/3405"
                 }
             ]
         }

@@ -6,27 +6,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 30,
-                    "name": "asset:item/equipment/3301.leather_leggings"
+                    "name": "asset:item/3301"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 25,
-                    "name": "asset:item/equipment/3302.iron_leggings"
+                    "name": "asset:item/3302"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 15,
-                    "name": "asset:item/equipment/3303.golden_leggings"
+                    "name": "asset:item/3303"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 10,
-                    "name": "asset:item/equipment/3304.diamond_leggings"
+                    "name": "asset:item/3304"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 5,
-                    "name": "asset:item/equipment/3305.netherite_leggings"
+                    "name": "asset:item/3305"
                 }
             ]
         }
