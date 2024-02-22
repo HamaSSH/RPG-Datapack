@@ -28,7 +28,7 @@ scoreboard players set @s BuffLUK 0
 scoreboard players set @s LVL 1
 scoreboard players set @s EXP 0
 scoreboard players set @s NextEXP 50
-scoreboard players set @s Gold 0
+scoreboard players set @s Gold 200
 scoreboard players set @s SkillTimer 0
 scoreboard players set @s ElementTimer 0
 scoreboard players set @s AssassinEXP 0
