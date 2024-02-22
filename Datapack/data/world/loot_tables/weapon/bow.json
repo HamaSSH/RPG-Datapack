@@ -6,17 +6,17 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 30,
-                    "name": "asset:item/weapon/2601.wooden_bow"
+                    "name": "asset:item/2601"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 20,
-                    "name": "asset:item/weapon/2602.bone_bow"
+                    "name": "asset:item/2602"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "asset:item/weapon/2605.crystal_bow"
+                    "weight": 3,
+                    "name": "asset:item/2606"
                 }
             ]
         }

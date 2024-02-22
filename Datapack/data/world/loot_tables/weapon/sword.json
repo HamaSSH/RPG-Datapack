@@ -5,33 +5,33 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 20,
-                    "name": "asset:item/weapon/2201.wooden_sword"
+                    "weight": 25,
+                    "name": "asset:item/2201"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 20,
-                    "name": "asset:item/weapon/2202.bone_sword"
+                    "name": "asset:item/2202"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 15,
-                    "name": "asset:item/weapon/2204.iron_sword"
+                    "name": "asset:item/2203"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 12,
-                    "name": "asset:item/weapon/2205.golden_sword"
+                    "weight": 10,
+                    "name": "asset:item/2204"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 8,
-                    "name": "asset:item/weapon/2209.emerald_sword"
+                    "weight": 6,
+                    "name": "asset:item/2205"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "asset:item/weapon/2206.crystal_sword"
+                    "weight": 4,
+                    "name": "asset:item/2206"
                 }
             ]
         }

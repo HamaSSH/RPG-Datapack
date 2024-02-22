@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "asset:item/magic/5201.water_ball"
+                    "name": "asset:item/5201"
                 }
             ]
         }

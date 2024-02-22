@@ -6,17 +6,17 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 30,
-                    "name": "asset:item/weapon/2501.wooden_wand"
+                    "name": "asset:item/2501"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 20,
-                    "name": "asset:item/weapon/2502.bone_wand"
+                    "name": "asset:item/2502"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "asset:item/weapon/2505.crystal_wand"
+                    "weight": 3,
+                    "name": "asset:item/2506"
                 }
             ]
         }

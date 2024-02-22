@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "asset:item/magic/5501.wind_ball"
+                    "name": "asset:item/5501"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "asset:item/magic/5502.swift"
+                    "name": "asset:item/5502"
                 }
             ]
         }

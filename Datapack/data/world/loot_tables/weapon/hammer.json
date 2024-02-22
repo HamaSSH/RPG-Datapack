@@ -5,33 +5,33 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 20,
-                    "name": "asset:item/weapon/2401.wooden_hammer"
+                    "weight": 25,
+                    "name": "asset:item/2401"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 20,
-                    "name": "asset:item/weapon/2402.bone_hammer"
+                    "name": "asset:item/2402"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 15,
-                    "name": "asset:item/weapon/2404.iron_hammer"
+                    "name": "asset:item/2403"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 12,
-                    "name": "asset:item/weapon/2405.golden_hammer"
+                    "weight": 10,
+                    "name": "asset:item/2404"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 8,
-                    "name": "asset:item/weapon/2409.emerald_hammer"
+                    "weight": 6,
+                    "name": "asset:item/2405"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
-                    "name": "asset:item/weapon/2406.crystal_hammer"
+                    "weight": 4,
+                    "name": "asset:item/2406"
                 }
             ]
         }

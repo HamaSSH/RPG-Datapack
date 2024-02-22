@@ -15,17 +15,17 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 15,
+                    "weight": 20,
                     "name": "asset:item/3303"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 10,
+                    "weight": 7,
                     "name": "asset:item/3304"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 5,
+                    "weight": 3,
                     "name": "asset:item/3305"
                 }
             ]
