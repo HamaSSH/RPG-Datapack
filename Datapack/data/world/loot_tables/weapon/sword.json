@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 40,
+                    "weight": 20,
                     "name": "asset:item/weapon/2201.wooden_sword"
                 },
                 {

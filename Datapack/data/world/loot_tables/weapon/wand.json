@@ -5,17 +5,17 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 60,
+                    "weight": 30,
                     "name": "asset:item/weapon/2501.wooden_wand"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 25,
+                    "weight": 20,
                     "name": "asset:item/weapon/2502.bone_wand"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 15,
+                    "weight": 5,
                     "name": "asset:item/weapon/2505.crystal_wand"
                 }
             ]

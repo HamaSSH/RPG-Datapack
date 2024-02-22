@@ -5,8 +5,8 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 4,
-                    "name": "asset:item/loot/1016.spark_salmon",
+                    "weight": 2,
+                    "name": "asset:item/1016",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -19,8 +19,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 3,
-                    "name": "asset:item/loot/1018.pufferfish",
+                    "weight": 4,
+                    "name": "asset:item/1017",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -34,7 +34,21 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/loot/1020.rotten_flesh",
+                    "name": "asset:item/1018",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "asset:item/1020",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -47,8 +61,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 4,
-                    "name": "asset:item/loot/1025.apple",
+                    "weight": 3,
+                    "name": "asset:item/1025",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -62,7 +76,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "asset:item/loot/1026.golden_apple",
+                    "name": "asset:item/1026",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -76,7 +90,49 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/loot/1027.sweet_berries",
+                    "name": "asset:item/1027",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "asset:item/1041",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 4,
+                    "name": "asset:item/1042",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 3,
+                    "name": "asset:item/1043",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -90,13 +146,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "asset:item/loot/1034.vegetable_soup",
+                    "name": "asset:item/1033",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
                             "count": {
                                 "min": 1,
-                                "max": 2
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "name": "asset:item/1034",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
                             }
                         }
                     ]

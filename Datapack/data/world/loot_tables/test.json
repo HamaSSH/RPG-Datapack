@@ -2,18 +2,18 @@
     "pools": [
         {
             "rolls": {
-                "min": 6,
-                "max": 10
+                "min": 4,
+                "max": 8
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 9,
+                    "weight": 7,
                     "name": "world:food"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 12,
+                    "weight": 17,
                     "name": "world:loot"
                 },
                 {

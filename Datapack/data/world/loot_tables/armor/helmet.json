@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 45,
+                    "weight": 30,
                     "name": "asset:item/equipment/3101.leather_helmet"
                 },
                 {
