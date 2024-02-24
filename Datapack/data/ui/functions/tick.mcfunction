@@ -1,6 +1,9 @@
 #> ui:tick
 # UI操作周りのtick処理
 
+# UI視点検知用のシロクマのteamを設定
+    execute as @e[type=polar_bear,tag=UIBear] if entity @s[team=!NoCollision] run team join NoCollision @s
+
 # プレイヤーに結びついた、操作中のUIをプレイヤーの座標に移動
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..4.5] if score @s PlayerID = @p PlayerID run tp @s @p
 
