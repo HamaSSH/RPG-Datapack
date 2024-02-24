@@ -2,7 +2,11 @@
 # アイテムのステータスを強化 #TODO: 鍛冶のアイテム周りの操作をui:smithing/itemにまとめたい
 
 # 補正ステータス値の取得
-    execute store result score $Amplifier Temporary run data get storage ui: ItemData.BaseBonus[0].Value 1.3
+    execute store result score $Amplifier Temporary run data get storage ui: ItemData.BaseBonus[0].Value
+    execute if score $Amplfier Temporary matches 1..3 run scoreboard players add $Amplifier Temporary 1
+    execute if score $Amplfier Temporary matches -3..-1 run scoreboard players remove $Amplifier Temporary 1
+    scoreboard players operation $Amplifier Temporary *= #13 Constant
+    scoreboard players operation $Amplifier Temporary /= #10 Constant
     execute store result storage ui: ItemData.Bonus[0].BaseAmplifier int 1 run scoreboard players get $Amplifier Temporary
     execute if data storage ui: ItemData.ExBonus[] run function ui:smithing/upgrade/item/bonus_status/extra with storage ui: ItemData.Bonus[0]
     execute store result storage ui: ItemData.Bonus[0].Amplifier int 1 run scoreboard players get $Amplifier Temporary
