@@ -1,6 +1,11 @@
 #> ui:close
 # UIを閉じた際の処理
 
+# 不要なアイテムをclear
+    clear @a glass_bottle
+    clear @a #lib:every_item{UI:{ItemType:"Blank"}}
+    clear @a #lib:every_item{UI:{ItemType:"Goods"}}
+
 # UI閉じ検知の後処理
     execute unless predicate player:armor/helmet run item replace entity @s armor.head with air
     execute if predicate player:armor/helmet run function ui:close_detector/remove
