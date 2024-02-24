@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/loot/1021.fragile_bone"
+                    "name": "asset:item/1021"
                 }
             ]
         }

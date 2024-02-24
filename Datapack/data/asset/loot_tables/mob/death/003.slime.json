@@ -8,7 +8,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/loot/1036.slime_ball"
+                    "name": "asset:item/1036"
                 }
             ]
         }

@@ -8,7 +8,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/loot/1020.rotten_flesh"
+                    "name": "asset:item/1020"
                 }
             ]
         }

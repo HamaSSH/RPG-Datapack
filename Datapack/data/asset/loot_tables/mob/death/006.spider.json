@@ -8,7 +8,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/loot/1040.smooth_string"
+                    "name": "asset:item/1040"
                 }
             ]
         }
