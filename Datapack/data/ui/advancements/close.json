@@ -5,7 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{UI:{ItemType:\"CloseDetector\"}}"
+                        "nbt": "{UI:{CloseDetector:1b}}"
                     }
                 ]
             }
