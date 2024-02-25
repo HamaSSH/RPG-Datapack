@@ -13,7 +13,9 @@
     scoreboard players reset $Amplifier Temporary
 
 # データの適用
-    execute unless data storage ui: SingleBonus{Amplifier:0} run function ui:smithing/combine/item/bonus_status/apply with storage ui: ItemData.Bonus[0]
+    execute if data storage ui: SingleBonus{Status:"HPR"} run function ui:smithing/combine/item/bonus_status/regen/_
+    execute if data storage ui: SingleBonus{Status:"MPR"} run function ui:smithing/combine/item/bonus_status/regen/_
+    execute unless data storage ui: SingleBonus{Status:"HPR"} unless data storage ui: SingleBonus{Status:"MPR"} unless data storage ui: SingleBonus{Amplifier:0} run function ui:smithing/combine/item/bonus_status/apply with storage ui: ItemData.Bonus[0]
 
 # 補正ステータスが尽きるまで再帰
     data remove storage ui: SingleBonus
