@@ -380,7 +380,12 @@
                 },
                 "damage": {
                     "type": {
-                        "is_projectile": false
+                        "tags": [
+                            {
+                                "id": "minecraft:is_projectile",
+                                "expected": false
+                            }
+                        ]
                     }
                 }
             }
