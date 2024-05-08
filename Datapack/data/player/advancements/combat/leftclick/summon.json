@@ -13,7 +13,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Dagger\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"dagger\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -24,7 +26,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Sword\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"sword\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -35,7 +39,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Spear\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"spear\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -46,7 +52,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Hammer\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"hammer\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -57,7 +65,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Wand\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"wand\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -68,7 +78,9 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "nbt": "{Weapon:\"Bow\"}"
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"bow\"}"
+                                            }
                                         }
                                     }
                                 }
@@ -78,8 +90,10 @@
                                 "entity": "this",
                                 "predicate": {
                                     "equipment": {
-                                        "offhand": {
-                                            "nbt": "{Weapon:\"Bow\"}"
+                                        "mainhand": {
+                                            "predicates": {
+                                                "custom_data": "{weapon:\"bow\"}"
+                                            }
                                         }
                                     }
                                 }
