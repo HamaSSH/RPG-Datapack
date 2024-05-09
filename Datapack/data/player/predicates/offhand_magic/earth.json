@@ -4,7 +4,9 @@
     "predicate": {
         "equipment": {
             "offhand": {
-                "nbt": "{Magic:{Element:\"Earth\"}}}"
+                "predicates": {
+                    "custom_data": "{magic:{element:\"earth\"}}}"
+                }
             }
         }
     }

@@ -4,7 +4,9 @@
     "predicate": {
         "equipment": {
             "chest": {
-                "nbt": "{Equipment:\"Chestplate\"}"
+                "predicates": {
+                    "custom_data": "{equipment:\"chestplate\"}"
+                }
             }
         }
     }

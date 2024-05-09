@@ -14,7 +14,9 @@
             "predicate": {
                 "equipment": {
                     "offhand": {
-                        "nbt": "{Consumables:{}}"
+                        "predicates": {
+                            "custom_data": "{consumables:{}}"
+                        }
                     }
                 }
             }
