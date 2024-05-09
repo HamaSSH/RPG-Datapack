@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "spyglass"
+            "id": "spyglass"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

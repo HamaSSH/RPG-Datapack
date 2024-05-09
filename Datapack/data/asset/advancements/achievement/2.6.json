@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "netherite_block"
+            "id": "netherite_block"
         },
         "title": {
             "text": "\uF829\uF829\"高み\"\uF828\uF829\uF829",

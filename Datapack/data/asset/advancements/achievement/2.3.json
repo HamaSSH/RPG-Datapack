@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "iron_block"
+            "id": "iron_block"
         },
         "title": {
             "text": "ダンジョンの探究者\uF829",

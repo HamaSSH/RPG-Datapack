@@ -1,8 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "nautilus_shell",
-            "nbt": "{CustomModelData:1011}"
+            "id": "nautilus_shell",
+            "components": {
+                "custom_model_data": 1011
+            }
         },
         "title": {
             "text": "\uF829ここにタイトルを入力\uF829",

@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "brewing_stand"
+            "id": "brewing_stand"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "emerald_block"
+            "id": "emerald_block"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

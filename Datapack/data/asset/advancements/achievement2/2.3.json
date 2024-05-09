@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "enchanted_golden_apple"
+            "id": "enchanted_golden_apple"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

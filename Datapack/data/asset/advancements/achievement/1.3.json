@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "carrot_on_a_stick",
+            "id": "carrot_on_a_stick",
             "nbt": "{CustomModelData:2102}"
         },
         "title": {

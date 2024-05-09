@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "potion"
+            "id": "potion"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

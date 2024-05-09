@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "music_disc_11"
+            "id": "music_disc_11"
         },
         "title": {
             "text": "\uF829ここにタイトルを入力\uF829",

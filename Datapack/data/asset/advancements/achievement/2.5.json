@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "diamond_block"
+            "id": "diamond_block"
         },
         "title": {
             "text": "ベテラン冒険者\uF829",

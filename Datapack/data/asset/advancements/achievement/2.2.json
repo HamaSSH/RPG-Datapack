@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "stone"
+            "id": "stone"
         },
         "title": {
             "text": "ゲームクリア？\uF829",

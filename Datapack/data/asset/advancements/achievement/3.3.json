@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "totem_of_undying"
+            "id": "totem_of_undying"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

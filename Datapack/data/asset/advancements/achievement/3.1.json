@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "gold_block"
+            "id": "gold_block"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

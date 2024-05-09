@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "fishing_rod"
+            "id": "fishing_rod"
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",

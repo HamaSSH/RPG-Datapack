@@ -1,8 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "bow",
-            "nbt": "{CustomModelData:2601}"
+            "id": "bow",,
+            "components": {
+                "custom_model_data": 2601
+            }
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",
