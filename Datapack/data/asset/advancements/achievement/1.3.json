@@ -2,7 +2,9 @@
     "display": {
         "icon": {
             "id": "carrot_on_a_stick",
-            "nbt": "{CustomModelData:2102}"
+            "components": {
+                "custom_model_data": 2102
+            }
         },
         "title": {
             "text": "ここにタイトルを入力\uF829",
