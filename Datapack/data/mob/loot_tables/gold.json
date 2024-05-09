@@ -4,11 +4,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -24,19 +24,23 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$1G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:1,ItemType:\"Gold\"}"
+                            "function": "set_custom_model_data",
+                            "value": 1
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_type:\"gold\"}"
                         }
                     ]
                 }
@@ -46,11 +50,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -66,19 +70,23 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$10G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:10,ItemType:\"Gold\"}"
+                            "function": "set_custom_model_data",
+                            "value": 10
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_type:\"gold\"}"
                         }
                     ]
                 }
@@ -88,11 +96,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "functions": [
                         {
-                            "function": "minecraft:set_name",
+                            "function": "set_name",
                             "entity": "this",
                             "name": [
                                 {
@@ -108,19 +116,23 @@
                             ]
                         },
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
-                                "type": "minecraft:score",
+                                "type": "score",
                                 "target": {
-                                    "type": "minecraft:fixed",
+                                    "type": "fixed",
                                     "name": "$100G"
                                 },
                                 "score": "Temporary"
                             }
                         },
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:100,ItemType:\"Gold\"}"
+                            "function": "set_custom_model_data",
+                            "value": 100
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_type:\"gold\"}"
                         }
                     ]
                 }

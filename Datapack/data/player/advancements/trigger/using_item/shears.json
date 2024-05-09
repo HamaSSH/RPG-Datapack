@@ -4,7 +4,9 @@
             "trigger": "using_item",
             "conditions": {
                 "item": {
-                    "nbt": "{Tool:{Type:\"Shears\"}}"
+                    "predicates": {
+                        "custom_data": "{tool:{type:\"shears\"}}"
+                    }
                 }
             }
         }

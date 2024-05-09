@@ -1,11 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{UI:{CloseDetector:1b}}"
+                        "predicates": {
+                            "custom_data": "{ui:{close_detector:1b}}"
+                        }
                     }
                 ]
             }

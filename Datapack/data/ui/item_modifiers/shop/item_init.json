@@ -1,7 +1,7 @@
 [
     {
-        "function": "minecraft:set_nbt",
-        "tag": "{UI:{ItemType:\"Goods\"}}"
+        "function": "set_custom_data",
+        "tag": "{ui:{item_type:\"Goods\"}}"
     },
     {
         "function": "minecraft:set_name",

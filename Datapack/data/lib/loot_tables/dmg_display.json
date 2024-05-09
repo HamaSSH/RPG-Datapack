@@ -8,7 +8,7 @@
                     "name": "glass_bottle",
                     "functions": [
                         {
-                            "function": "set_nbt",
+                            "function": "set_custom_data",
                             "tag": "{Tags:[\"DmgDisplay\"]}"
                         },
                         {

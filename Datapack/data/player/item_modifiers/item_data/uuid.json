@@ -1,7 +1,7 @@
 {
-    "function": "minecraft:copy_nbt",
+    "function": "copy_custom_data",
     "source": {
-        "type": "minecraft:storage",
+        "type": "storage",
         "source": "player:"
     },
     "ops": [

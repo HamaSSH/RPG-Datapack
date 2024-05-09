@@ -4,7 +4,9 @@
             "trigger": "using_item",
             "conditions": {
                 "item": {
-                    "nbt": "{Weapon:\"Bow\"}"
+                    "predicates": {
+                        "custom_data": "{weapon:\"bow\"}"
+                    }
                 }
             }
         }

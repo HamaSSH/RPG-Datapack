@@ -1,7 +1,11 @@
 [
     {
-        "function": "set_nbt",
-        "tag": "{CustomModelData:3014,UI:{ItemType:\"Backward\"}}"
+        "function": "minecraft:set_custom_model_data",
+        "value": 3014
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{ui:{item_type:\"backward\"}}"
     },
     {
         "function": "set_name",

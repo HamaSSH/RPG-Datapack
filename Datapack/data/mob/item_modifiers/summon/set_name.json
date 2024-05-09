@@ -22,7 +22,7 @@
         ]
     },
     {
-        "function": "copy_nbt",
+        "function": "copy_custom_data",
         "source": {
             "type": "storage",
             "source": "asset:mob"

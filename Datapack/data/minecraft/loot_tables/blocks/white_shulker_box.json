@@ -30,7 +30,7 @@
                                     "source": "block_entity"
                                 },
                                 {
-                                    "function": "copy_nbt",
+                                    "function": "copy_custom_data",
                                     "source": "block_entity",
                                     "ops": [
                                         {

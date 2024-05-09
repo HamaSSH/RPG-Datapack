@@ -9,8 +9,8 @@
                     "name": "glass_bottle",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{ItemType:\"Fish\"}"
+                            "function": "set_custom_data",
+                            "tag": "{item_type:\"fish\"}"
                         }
                     ]
                 }
