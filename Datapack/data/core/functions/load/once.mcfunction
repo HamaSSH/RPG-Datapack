@@ -69,7 +69,6 @@
         scoreboard objectives add UsingBow dummy "弓使用中"
         scoreboard objectives add BowSkill dummy "弓ため攻撃"
         scoreboard objectives add UsingShears dummy "ブラシ使用中"
-        scoreboard objectives add Saturaion dummy "満腹度回復"
         scoreboard objectives add Healing dummy "♥固定値回復"
         scoreboard objectives add Regeneration dummy "再生効果"
         scoreboard objectives add Arrow dummy "矢筒内の弓矢"
