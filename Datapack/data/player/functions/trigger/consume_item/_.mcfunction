@@ -3,7 +3,7 @@
 
 # プレイヤー名のストレージのアイテムデータを取得
     loot replace block 0 0 0 container.0 loot lib:get_mcid
-    data modify storage player: MCID set from block 0 0 0 Items[0].tag.SkullOwner.Name
+    data modify storage player: MCID set from block 0 0 0 Items[0].components.minecraft:profile.name
     function player:trigger/consume_item/get_data with storage player:
 
 # HP回復
