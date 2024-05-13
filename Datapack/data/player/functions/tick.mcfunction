@@ -4,12 +4,18 @@
 # プレイヤーの初期化
     execute unless score @s PlayerID matches 0.. run function player:init
 
-# プレイヤーNBT→ストレージ
+# プレイヤーデータ→ストレージ
     data modify storage player: Inventory set from entity @s Inventory
     data modify storage player: SelectedItem set from entity @s SelectedItem
-    data modify storage player: Accessories append from storage player: Inventory[{Slot:9b}]
-    data modify storage player: Accessories append from storage player: Inventory[{Slot:10b}]
-    data modify storage player: Accessories append from storage player: Inventory[{Slot:11b}]
+    execute if predicate player:hold_weapon/_ run data modify storage player: Weapon.Mainhand set from storage player: SelectedItem
+    data modify storage player: Weapon.Offhand set from storage player: Inventory[{Slot:-106b,components:{"minecraft:custom_data":{weapon:"helmet"}}}]
+    data modify storage player: Equipment.Helmet set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"helmet"}}}]
+    data modify storage player: Equipment.Chestplate set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"chestplate"}}}]
+    data modify storage player: Equipment.Leggings set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"leggings"}}}]
+    data modify storage player: Equipment.Boots set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"boots"}}}]
+    data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:9b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
+    data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:10b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
+    data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:11b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
 
 # プレイヤーUI
     function player:ui/_
@@ -82,7 +88,8 @@
     tag @s remove NewInventorySet
     data remove storage player: Inventory
     data remove storage player: SelectedItem
-    data remove storage player: Accessories
+    data remove storage player: Weapon
+    data remove storage player: Equipment
     advancement revoke @s only player:combat/player_attacked
     advancement revoke @s only player:trigger/inventory_changed
     advancement revoke @s only player:trigger/using_item/bow

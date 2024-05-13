@@ -23,7 +23,7 @@
         },
         {
             "condition": "reference",
-            "name": "player:hold_weapon/bow/_"
+            "name": "player:hold_weapon/bow/mainhand"
         }
     ]
 }

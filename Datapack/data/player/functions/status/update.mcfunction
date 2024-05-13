@@ -27,15 +27,15 @@
     scoreboard players reset @s BonusCRT
     scoreboard players reset @s BonusLUK
     # 装備をストレージに格納
-        execute if predicate player:hold_weapon/_ run data modify storage player: BonusStatus append from storage player: SelectedItem.tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:-106b,tag:{Offhand:1b}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:103b,tag:{Equipment:"Helmet"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:102b,tag:{Equipment:"Chestplate"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:101b,tag:{Equipment:"Leggings"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:100b,tag:{Equipment:"Boots"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:9b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:10b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
-        data modify storage player: BonusStatus append from storage player: Inventory[{Slot:11b,tag:{Equipment:"Accessory"}}].tag.Bonus[]
+        data modify storage player: BonusStatus append from storage player: Weapon.Mainhand.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Weapon.Offhand.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Helmet.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Chestplate.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Leggings.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Boots.components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Accessories[{Slot:9b}].components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Accessories[{Slot:10b}].components.minecraft:custom_data.bonus[]
+        data modify storage player: BonusStatus append from storage player: Equipment.Accessories[{Slot:11b}].components.minecraft:custom_data.bonus[]
     # 全ての装備分の補正ステータスをスコアに加算
         execute if data storage player: BonusStatus[] run function player:item_data/bonus_status with storage player: BonusStatus[0]
     scoreboard players operation @s HPMax += @s BonusHP

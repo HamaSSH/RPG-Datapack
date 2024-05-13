@@ -1,8 +1,8 @@
 #> player:item_data/bonus_status
 # 補正ステータスデータを補正ステータススコアに加算していく
 
-execute store result score $BonusStatus Temporary run data get storage player: BonusStatus[0].Value
-$scoreboard players operation @s Bonus$(Status) += $BonusStatus Temporary
+execute store result score $BonusStatus Temporary run data get storage player: BonusStatus[0].value
+$scoreboard players operation @s Bonus$(status) += $BonusStatus Temporary
 
 # 加算する補正ステータスデータが無くなるまで再帰
     data remove storage player: BonusStatus[0]
