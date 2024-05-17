@@ -1,4 +1,4 @@
 #> player:buff/effect/icon/set
 # バフのアイコンの設定
 
-$data modify storage player: Buff.Icon set value '"\\u$(Icon)$(Phase)"'
+$data modify storage player: Buff.icon set value '"\\u$(icon)$(phase)"'

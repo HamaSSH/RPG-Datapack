@@ -1,4 +1,4 @@
 #> player:buff/effect/add
 # エフェクトの追加
 
-$effect give @s $(Effect) infinite $(Amplifier)
+$effect give @s $(effect) infinite $(amplifier)

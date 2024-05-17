@@ -3,5 +3,5 @@
 
 tag @s add BuffInit
 data modify entity @s data.Buff set from storage mob: Buff
-execute unless data storage mob: Buff{Status:"-"} run tag @s add Status
-execute unless data storage mob: Buff{Effect:"-"} run tag @s add Effect
+execute unless data storage mob: Buff{status:"-"} run tag @s add Status
+execute unless data storage mob: Buff{effect:"-"} run tag @s add Effect

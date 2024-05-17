@@ -6,7 +6,8 @@
                 "item": {
                     "predicates": {
                         "custom_data": "{consumables:{}}"
-                }}
+                    }
+                }
             }
         }
     }

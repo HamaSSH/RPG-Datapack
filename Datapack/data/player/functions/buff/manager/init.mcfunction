@@ -3,6 +3,6 @@
 
 tag @s add BuffInit
 data modify entity @s data.Buff set from storage player: Buff
-execute unless data storage player: Buff{Status:"-"} run tag @s add Status
-execute unless data storage player: Buff{Effect:"-"} run tag @s add Effect
-execute unless data storage player: Buff{Element:"-"} run tag @s add Element
+execute unless data storage player: Buff{status:"-"} run tag @s add Status
+execute unless data storage player: Buff{effect:"-"} run tag @s add Effect
+execute unless data storage player: Buff{element:"-"} run tag @s add Element

@@ -9,8 +9,8 @@
     execute summon area_effect_cloud run function mob:buff/manager/root/_
 
 # バフの種類が被っているかチェック
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Status,tag=!BuffInit] data.Buff{Status:"$(Status)"} run function mob:buff/manager/compare
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Effect,tag=!BuffInit] data.Buff{Effect:"$(Effect)"} run function mob:buff/manager/compare
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Status,tag=!BuffInit] data.Buff{status:"$(status)"} run function mob:buff/manager/compare
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Effect,tag=!BuffInit] data.Buff{effect:"$(effect)"} run function mob:buff/manager/compare
 
     # (効果が同じで弱い)→バフ付与なし
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffWeak] run kill @s

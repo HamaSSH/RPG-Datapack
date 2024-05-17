@@ -10,8 +10,8 @@
 # ストレージ→マーカーのdata
     data modify entity @s data.Buff set from storage player: Buff
 
-# Timer:0になったらバフを削除
-    execute if data storage player: Buff{Timer:0} run function player:buff/manager/remove
+# timer:0になったらバフを削除
+    execute if data storage player: Buff{timer:0} run function player:buff/manager/remove
 
 # リセット
     data remove storage player: Buff

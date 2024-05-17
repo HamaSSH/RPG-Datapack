@@ -2,7 +2,7 @@
 # 素材アイテムのバフからポーションのバフを決定
 
 # エフェクトがダブっているか検知
-    $execute if data storage ui: PotionData.Buff[{Status:"$(Status)"}] run data modify storage ui: PotionData.Duplicate set value 1b
+    $execute if data storage ui: PotionData.Buff[{status:"$(status)"}] run data modify storage ui: PotionData.Duplicate set value 1b
 
 # 新しいステータスバフはそのままステータスバフを付与
     execute unless data storage ui: PotionData{Duplicate:1b} run data modify storage ui: PotionData.Buff append from storage ui: Ingredient.Buff[0]

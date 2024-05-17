@@ -7,10 +7,10 @@
     function player:trigger/consume_item/get_data with storage player:
 
 # HP回復
-    execute store result score @s Healing run data get storage player: Consumables.Healing
+    execute store result score @s Healing run data get storage player: Consumables.healing
 
 # バフをプレイヤーに付与
-    data modify storage player: NewBuff set from storage player: Consumables.Buff
+    data modify storage player: NewBuff set from storage player: Consumables.buff
     function player:buff/_
 
 # リセット

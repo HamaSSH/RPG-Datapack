@@ -66,7 +66,7 @@
     scoreboard players operation @s CRT += @s BuffCRT
     scoreboard players operation @s LUK += @s BuffLUK
 
-# ⓹最大値を超えないよう調整
+# ⓹最大値を超えないよう調整 #TODO: 最大値の検討(65535と999)
     execute if score @s MPMax matches 16383.. run scoreboard players set @s MPMax 16383
     execute if score @s DEF matches 1024.. run scoreboard players set @s DEF 1024
     execute if score @s AGI matches 1024.. run scoreboard players set @s AGI 1024

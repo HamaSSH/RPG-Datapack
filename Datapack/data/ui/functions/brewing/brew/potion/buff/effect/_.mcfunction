@@ -2,8 +2,8 @@
 # 素材アイテムのエフェクトからポーションのエフェクトを決定
 
 # エフェクトがダブっているか/最大値を超えているか検知
-    execute store result score $EffectCount Temporary if data storage ui: PotionData.Buff[].Effect
-    $execute if data storage ui: PotionData.Buff[{Effect:"$(Effect)"}] run data modify storage ui: PotionData.Duplicate set value 1b
+    execute store result score $EffectCount Temporary if data storage ui: PotionData.Buff[].effect
+    $execute if data storage ui: PotionData.Buff[{effect:"$(effect)"}] run data modify storage ui: PotionData.Duplicate set value 1b
 
 # 新しいエフェクトはそのままエフェクトを付与
     execute unless data storage ui: PotionData{Duplicate:1b} if score $EffectCount Temporary matches ..1 run data modify storage ui: PotionData.Buff append from storage ui: Ingredient.Buff[0]
