@@ -14,10 +14,10 @@
 
 # 演出
     particle enchant ~ ~ ~ 0.3 0.3 0.3 0 15 force
-    particle dust 0.478 0.784 0.275 2 ~ ~ ~ 0.2 0.1 0.2 0 4 force
-    particle dust 0.478 0.784 0.275 2 ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
-    particle dust 0.725 1 0.506 2 ~ ~ ~ 0.2 0.1 0.2 0 4 force
-    particle dust 0.725 1 0.506 2 ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.478,0.784,0.275],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.478,0.784,0.275],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.725,1.0,0.506],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.725,1.0,0.506],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
 
 # 移動
     tp ^ ^ ^1
