@@ -6,8 +6,8 @@
 
 # 弾と攻撃したプレイヤーの紐づけ
     scoreboard players operation @s PlayerID = @p[tag=TriggerMagic] PlayerID
-    execute store result score @s DmgDealt run data get storage player: Magic.Damage
-    execute store result score @s MagicID run data get storage asset:magic ID
+    execute store result score @s DmgDealt run data get storage player: magic.damage
+    execute store result score @s MagicID run data get storage asset:magic id
 
 # 向きを合わせる
     execute anchored eyes positioned ^ ^ ^ run tp @s ~ ~1 ~ ~ ~

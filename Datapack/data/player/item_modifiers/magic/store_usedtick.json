@@ -6,8 +6,8 @@
     },
     "ops": [
         {
-            "source": "UsedTick",
-            "target": "Magic.UsedTick",
+            "source": "used_tick",
+            "target": "magic.used_tick",
             "op": "replace"
         }
     ]
