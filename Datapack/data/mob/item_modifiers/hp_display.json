@@ -18,22 +18,12 @@
             "interpret": true
         },
         {
-            "nbt": "Space.Level",
-            "storage": "mob:",
-            "interpret": true
-        },
-        {
             "nbt": "Data.MobName",
             "storage": "mob:",
             "interpret": true
         },
         {
             "nbt": "Space.NameChar",
-            "storage": "mob:",
-            "interpret": true
-        },
-        {
-            "nbt": "Space.Level",
             "storage": "mob:",
             "interpret": true
         },

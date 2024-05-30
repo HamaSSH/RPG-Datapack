@@ -11,13 +11,6 @@
                 "nbt": "Data.CustomName",
                 "storage": "asset:mob",
                 "interpret": true
-            },
-            {
-                "text": " Lv. "
-            },
-            {
-                "nbt": "Data.Status.LVL",
-                "storage": "asset:mob"
             }
         ]
     },

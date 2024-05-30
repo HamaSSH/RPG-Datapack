@@ -1,11 +1,6 @@
 #> mob:status/hp/display/space
 # モブのHP表示の空白の調整
 
-# レベルの桁ごとの空白
-    execute if score $Level Temporary matches 1..9 run data modify storage mob: Space.Level set value '"\\uF802\\uF808\\uF801\\uF803"'
-    execute if score $Level Temporary matches 10..99 run data modify storage mob: Space.Level set value '"\\uF802\\uF808\\uF801\\uF803\\uF803"'
-    execute if score $Level Temporary matches 100..999 run data modify storage mob: Space.Level set value '"\\uF802\\uF808\\uF801\\uF803\\uF803\\uF803"'
-
 # 名前の文字数ごとの空白 (一文字=\\uF804、＋二文字ごとに\\uF801×n)
     execute if score $NameChar Temporary matches 1 run data modify storage mob: Space.NameChar set value '"\\uF804"'
     execute if score $NameChar Temporary matches 2 run data modify storage mob: Space.NameChar set value '"\\uF808\\uF801"'

@@ -2,7 +2,7 @@
 # モブのHP表示の設定
 
 # モブの名前データを取得
-    data modify storage mob: Data set from entity @s ArmorItems[3].tag
+    data modify storage mob: Data set from entity @s ArmorItems[3].components.minecraft:custom_data
 
 # HPの割合に応じてHPバーを設定
     scoreboard players operation @s HPRatio = @s HP
@@ -20,7 +20,7 @@
 # 名前を適用
     data modify entity 83a-51-1-0-1 ArmorItems[3] set value {id:"glass_bottle",Count:1b}
     item modify entity 83a-51-1-0-1 armor.head mob:hp_display
-    data modify entity @s CustomName set from entity 83a-51-1-0-1 ArmorItems[3].tag.display.Name
+    data modify entity @s CustomName set from entity 83a-51-1-0-1 ArmorItems[3].components.minecraft:custom_name
     item replace entity 83a-51-1-0-1 armor.head with air
 
 # リセット
