@@ -52,7 +52,7 @@
                                 },
                                 {
                                     "function": "set_contents",
-                                    "type": "shulker_box",
+                                    "component": "container",
                                     "entries": [
                                         {
                                             "type": "dynamic",

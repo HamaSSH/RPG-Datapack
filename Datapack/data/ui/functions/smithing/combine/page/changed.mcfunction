@@ -3,24 +3,24 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
-    clear @a[tag=UsingUI] #lib:every_item{ui:{item_type:"blank"}}
+    clear @a[tag=UsingUI] #lib:every_item[minecraft:custom_data={ui:{item_type:"blank"}}]
 
 # 鍛冶アイテムデータの整形
     # 鍛冶可能なアイテム(既にスロット内のものを除く)→SmithableItems
-        data modify storage ui: SmithableItems append from storage ui: Items[{tag:{UI:{Smithable:1b}}}]
+        data modify storage ui: SmithableItems append from storage ui: Items[{tag:{ui:{smithable:1b}}}]
         data remove storage ui: SmithableItems[{Slot:10b}]
     # 合成可能なアイテム(既にスロット内のものを除く)→CombineItems
-        data modify storage ui: CombinableItems append from storage ui: Items[{tag:{UI:{Combinable:1b}}}]
+        data modify storage ui: CombinableItems append from storage ui: Items[{tag:{ui:{combinable:1b}}}]
         data remove storage ui: CombinableItems[{Slot:10b}]
         data remove storage ui: CombinableItems[{Slot:12b}]
         data remove storage ui: CombinableItems[{Slot:13b}]
         data remove storage ui: CombinableItems[{Slot:14b}]
     # アイテムをスロットに配置
-        execute store result score $ItemRarity Temporary run data get storage ui: Items[{tag:{UI:{Smithable:1b}}}].components.minecraft:custom_data.rarity
-        execute if data storage ui: Items[{tag:{UI:{Smithable:1b}}}] run function ui:smithing/page/set_item {Slot:"10b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 2.. run function ui:smithing/combine/page/set_item {Slot:"12b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 3.. run function ui:smithing/combine/page/set_item {Slot:"13b"}
-        execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 4.. run function ui:smithing/combine/page/set_item {Slot:"14b"}
+        execute store result score $ItemRarity Temporary run data get storage ui: Items[{tag:{ui:{smithable:1b}}}].components.minecraft:custom_data.rarity
+        execute if data storage ui: Items[{tag:{ui:{smithable:1b}}}] run function ui:smithing/page/set_item {Slot:"10b"}
+        execute if data storage ui: Items[{tag:{ui:{combinable:1b}}}] if score $ItemRarity Temporary matches 2.. run function ui:smithing/combine/page/set_item {Slot:"12b"}
+        execute if data storage ui: Items[{tag:{ui:{combinable:1b}}}] if score $ItemRarity Temporary matches 3.. run function ui:smithing/combine/page/set_item {Slot:"13b"}
+        execute if data storage ui: Items[{tag:{ui:{combinable:1b}}}] if score $ItemRarity Temporary matches 4.. run function ui:smithing/combine/page/set_item {Slot:"14b"}
     # スロットに空きが無ければ返却
         execute if data storage ui: SmithableItems[] run data modify storage ui: ReturnItems set from storage ui: SmithableItems
         execute if data storage ui: CombinableItems[] run data modify storage ui: ReturnItems set from storage ui: CombinableItems
@@ -30,12 +30,12 @@
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{ui:{item_type:"blank"}}}]
-    data remove storage ui: ReturnItems[{tag:{UI:{Smithable:1b}}}]
-    data remove storage ui: ReturnItems[{tag:{UI:{Combinable:1b}}}]
-    data modify storage ui: ReturnItems append from storage ui: Items[{Slot:10b,tag:{UI:{Combinable:1b}}}]
-    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:12b,tag:{UI:{Combinable:1b}}}]
-    execute if score $ItemRarity Temporary matches ..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,tag:{UI:{Combinable:1b}}}]
-    execute if score $ItemRarity Temporary matches ..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,tag:{UI:{Combinable:1b}}}]
+    data remove storage ui: ReturnItems[{tag:{ui:{smithable:1b}}}]
+    data remove storage ui: ReturnItems[{tag:{ui:{combinable:1b}}}]
+    data modify storage ui: ReturnItems append from storage ui: Items[{Slot:10b,tag:{ui:{combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:12b,tag:{ui:{combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches ..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,tag:{ui:{combinable:1b}}}]
+    execute if score $ItemRarity Temporary matches ..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,tag:{ui:{combinable:1b}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
@@ -44,7 +44,7 @@
 
 # ページを移動する
     execute unless data storage ui: Items[{Slot:9b,tag:{ui:{item_type:"blank"}}}] run function ui:smithing/combine/page/reset
-    execute unless data storage ui: Items[{Slot:10b,tag:{UI:{Smithable:1b}}}] run function ui:smithing/combine/page/reset
+    execute unless data storage ui: Items[{Slot:10b,tag:{ui:{smithable:1b}}}] run function ui:smithing/combine/page/reset
     execute unless data storage ui: Items[{Slot:11b,tag:{ui:{item_type:"blank"}}}] run function ui:smithing/combine/page/reset
     execute unless data storage ui: Items[{Slot:15b,tag:{ui:{item_type:"blank"}}}] run function ui:smithing/combine/page/reset
 

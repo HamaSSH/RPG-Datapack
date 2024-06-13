@@ -35,6 +35,7 @@
                     "text": " ) "
                 }
             ]
-        ]
+        ],
+        "mode": "replace_all"
     }
 ]

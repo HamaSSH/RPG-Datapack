@@ -3,19 +3,19 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
-    clear @a[tag=UsingUI] #lib:every_item{ui:{item_type:"Goods"}}
+    clear @a[tag=UsingUI] #lib:every_item[minecraft:custom_data={ui:{item_type:"blank"}}]
 
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
     data remove storage ui: ReturnItems[{tag:{ui:{item_type:"blank"}}}]
-    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"Goods"}}}]
+    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"goods"}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 購入する
     data modify storage ui: BuyItem set from entity @s data.BuyItem
-    execute unless data storage ui: Items[{Slot:16b,tag:{ui:{item_type:"Buy"}}}] run function ui:shop/buy/check with storage ui: BuyItem
+    execute unless data storage ui: Items[{Slot:16b,tag:{ui:{item_type:"buy"}}}] run function ui:shop/buy/check with storage ui: BuyItem
 
 # ページを移動する
     execute unless data storage ui: Items[{Slot:0b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
