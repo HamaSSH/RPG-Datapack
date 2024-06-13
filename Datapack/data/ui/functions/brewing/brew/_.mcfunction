@@ -7,9 +7,9 @@
     data remove storage ui: Items[{id:"minecraft:potion"}]
 
 # クラフトポーションの生成
-    data modify storage ui: Results append value {id:"potion",Count:1b,Slot:14b,tag:{HideFlags:127}}
-    data modify storage ui: Results append value {id:"potion",Count:1b,Slot:15b,tag:{HideFlags:127}}
-    data modify storage ui: Results append value {id:"potion",Count:1b,Slot:16b,tag:{HideFlags:127}}
+    data modify storage ui: Results append value {id:"potion",Slot:14b,tag:{HideFlags:127}}
+    data modify storage ui: Results append value {id:"potion",Slot:15b,tag:{HideFlags:127}}
+    data modify storage ui: Results append value {id:"potion",Slot:16b,tag:{HideFlags:127}}
 
 # ポーションの色を決定
     function ui:brewing/brew/potion/color
@@ -26,9 +26,9 @@
     data modify storage ui: Results[].tag.display.Lore set from storage ui: PotionData.Lore
 
 # 素材アイテムの消費
-    execute store result storage ui: NewItems[{Slot:10b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:10b}].Count
-    execute store result storage ui: NewItems[{Slot:11b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:11b}].Count
-    execute store result storage ui: NewItems[{Slot:12b}].Count byte 0.999 run data get storage ui: NewItems[{Slot:12b}].Count
+    execute store result storage ui: NewItems[{Slot:10b}].count byte 0.999 run data get storage ui: NewItems[{Slot:10b}].count
+    execute store result storage ui: NewItems[{Slot:11b}].count byte 0.999 run data get storage ui: NewItems[{Slot:11b}].count
+    execute store result storage ui: NewItems[{Slot:12b}].count byte 0.999 run data get storage ui: NewItems[{Slot:12b}].count
 
 # 演出
     playsound block.brewing_stand.brew master @a ~ ~ ~ 0.5 0.9

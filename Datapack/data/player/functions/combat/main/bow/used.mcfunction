@@ -16,7 +16,7 @@
 
 # 矢筒の中の弓矢が0になったら矢筒をにんじん棒に戻す
     execute if entity @s[tag=QuiverEquipped] run tag @s add UsedQuiver
-    execute if data storage player: Inventory[{id:"minecraft:arrow",tag:{Quiver:{}},Count:2b}] run tag @s remove UsedQuiver
+    execute if data storage player: Inventory[{id:"minecraft:arrow",tag:{Quiver:{}},count:2}] run tag @s remove UsedQuiver
     execute if entity @s[tag=UsedQuiver] run function player:combat/main/bow/quiver/_
 
 # リセット

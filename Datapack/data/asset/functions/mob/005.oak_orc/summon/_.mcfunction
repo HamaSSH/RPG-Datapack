@@ -10,7 +10,7 @@
         data modify storage asset:mob Data.CustomName set value '{"text":"オークオーク"}'
         data modify storage asset:mob Data.NameChar set value 6
     # 装備
-        data modify storage asset:mob Data.Head set value {id:"oak_log",Count:1b}
+        data modify storage asset:mob Data.Head set value {id:"oak_log"}
         data modify storage asset:mob Data.Chest set value {}
         data modify storage asset:mob Data.Legs set value {}
         data modify storage asset:mob Data.Feet set value {}

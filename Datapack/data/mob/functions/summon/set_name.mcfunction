@@ -2,10 +2,10 @@
 # モブの表示名の設定
 
 # もし頭装備がなければ適当なアイテムを入れる
-    execute unless data storage asset:mob ArmorItems[3].id run data modify storage asset:mob ArmorItems[3] set value {id:"glass_bottle",Count:1b}
+    execute unless data storage asset:mob ArmorItems[3].id run data modify storage asset:mob ArmorItems[3] set value {id:"glass_bottle"}
 
 # 汎用アマスタでNBT処理
-    data modify entity 83a-51-1-0-1 ArmorItems[3] set value {id:"glass_bottle",Count:1b}
+    data modify entity 83a-51-1-0-1 ArmorItems[3] set value {id:"glass_bottle"}
     item modify entity 83a-51-1-0-1 armor.head mob:summon/set_name
     data modify storage asset:mob ArmorItems[3].components set from entity 83a-51-1-0-1 ArmorItems[3].components
     item replace entity 83a-51-1-0-1 armor.head with air

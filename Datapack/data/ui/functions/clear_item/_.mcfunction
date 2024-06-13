@@ -1,4 +1,4 @@
 #> ui:clear_item/_
 # アイテムを指定数clear
 
-$clear @s $(id)$(tag) $(Count)
+$clear @s $(id)$(tag) $(count)

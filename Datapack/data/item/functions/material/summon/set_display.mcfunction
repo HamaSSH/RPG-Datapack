@@ -2,7 +2,7 @@
 # 採集ポイントアマスタの初期化
 
 # モデルの設定
-$data modify entity @s item set value {id:"minecraft:dead_horn_coral",Count:1b,tag:{CustomModelData:$(MaterialID)}}
+$data modify entity @s item set value {id:"minecraft:dead_horn_coral",tag:{CustomModelData:$(MaterialID)}}
 
 # 共通データの設定
     tag @s add Material

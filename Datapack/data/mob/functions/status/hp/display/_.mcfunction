@@ -18,7 +18,7 @@
     function mob:status/hp/display/space
 
 # 名前を適用
-    data modify entity 83a-51-1-0-1 ArmorItems[3] set value {id:"glass_bottle",Count:1b}
+    data modify entity 83a-51-1-0-1 ArmorItems[3] set value {id:"glass_bottle"}
     item modify entity 83a-51-1-0-1 armor.head mob:hp_display
     data modify entity @s CustomName set from entity 83a-51-1-0-1 ArmorItems[3].components.minecraft:custom_name
     item replace entity 83a-51-1-0-1 armor.head with air

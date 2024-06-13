@@ -19,5 +19,5 @@ scoreboard players remove @s ArrowLC 1
 
 # もし矢筒を持っていたら矢筒使用処理
     execute if entity @s[tag=QuiverEquipped] run tag @s add UsedQuiver
-    execute if data storage player: Inventory[{id:"minecraft:arrow",tag:{Quiver:{}},Count:2b}] run tag @s remove UsedQuiver
+    execute if data storage player: Inventory[{id:"minecraft:arrow",tag:{Quiver:{}},count:2}] run tag @s remove UsedQuiver
     execute if entity @s[tag=UsedQuiver] run function player:combat/main/bow/quiver/_

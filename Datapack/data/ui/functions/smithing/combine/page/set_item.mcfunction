@@ -9,12 +9,12 @@ $execute unless data storage ui: Items[{Slot:$(Slot),tag:{UI:{Combinable:1b}}}] 
 $execute unless data storage ui: Items[{Slot:$(Slot),tag:{UI:{Combinable:1b}}}] run data modify storage ui: CombineItem set from storage ui: CombinableItems[0]
 $execute unless data storage ui: Items[{Slot:$(Slot),tag:{UI:{Combinable:1b}}}] run data remove storage ui: CombinableItems[0]
 
-# 配置したいアイテムのCountが1より多いとき過剰分を返却
-    execute store result storage ui: CombineItem.Count byte 0.999 run data get storage ui: CombineItem.Count
-    execute unless data storage ui: CombineItem{Count:0b} run data modify storage ui: ReturnItems append from storage ui: CombineItem
+# 配置したいアイテムのcountが1より多いとき過剰分を返却
+    execute store result storage ui: CombineItem.count byte 0.999 run data get storage ui: CombineItem.count
+    execute unless data storage ui: CombineItem{count:0} run data modify storage ui: ReturnItems append from storage ui: CombineItem
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
-    data modify storage ui: CombineItem.Count set value 1b
+    data modify storage ui: CombineItem.count set value 1b
 
-# Count処理後のアイテムをスロットに配置
+# count処理後のアイテムをスロットに配置
     data modify storage ui: NewItems append from storage ui: CombineItem
     data remove storage ui: CombineItem
