@@ -6,32 +6,32 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 25,
-                    "name": "asset:item/2201"
+                    "value": "asset:item/2201"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 20,
-                    "name": "asset:item/2202"
+                    "value": "asset:item/2202"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 15,
-                    "name": "asset:item/2203"
+                    "value": "asset:item/2203"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 10,
-                    "name": "asset:item/2204"
+                    "value": "asset:item/2204"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 6,
-                    "name": "asset:item/2205"
+                    "value": "asset:item/2205"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/2206"
+                    "value": "asset:item/2206"
                 }
             ]
         }

@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/1037"
+                    "value": "asset:item/1037"
                 }
             ],
             "conditions": [
@@ -24,13 +24,13 @@
                 {
                     "type": "loot_table",
                     "weight": 2000,
-                    "name": "asset:item/1021"
+                    "value": "asset:item/1021"
                 },
                 {
                     "type": "loot_table",
                     "weight": 20,
                     "quality": 1,
-                    "name": "asset:item/1022"
+                    "value": "asset:item/1022"
                 }
             ]
         }

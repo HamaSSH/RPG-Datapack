@@ -9,27 +9,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 7,
-                    "name": "world:food"
+                    "value": "world:food"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 17,
-                    "name": "world:loot"
+                    "value": "world:loot"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "world:armor/_"
+                    "value": "world:armor/_"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "world:magic/_"
+                    "value": "world:magic/_"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "world:weapon/_"
+                    "value": "world:weapon/_"
                 }
             ]
         }

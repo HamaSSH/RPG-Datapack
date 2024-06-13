@@ -6,7 +6,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 5,
-                    "name": "asset:item/1001",
+                    "value": "asset:item/1001",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -20,7 +20,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1002",
+                    "value": "asset:item/1002",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -34,7 +34,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1003",
+                    "value": "asset:item/1003",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -48,7 +48,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/1004",
+                    "value": "asset:item/1004",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -62,7 +62,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1006",
+                    "value": "asset:item/1006",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -76,7 +76,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/1007",
+                    "value": "asset:item/1007",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -90,7 +90,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/1009",
+                    "value": "asset:item/1009",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -104,7 +104,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "asset:item/1010",
+                    "value": "asset:item/1010",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -118,7 +118,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1021",
+                    "value": "asset:item/1021",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -132,7 +132,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "asset:item/1022",
+                    "value": "asset:item/1022",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -146,7 +146,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 3,
-                    "name": "asset:item/1036",
+                    "value": "asset:item/1036",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -160,7 +160,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 5,
-                    "name": "asset:item/1037",
+                    "value": "asset:item/1037",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -174,7 +174,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 7,
-                    "name": "asset:item/1038",
+                    "value": "asset:item/1038",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -188,7 +188,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1039",
+                    "value": "asset:item/1039",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -202,7 +202,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1040",
+                    "value": "asset:item/1040",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -216,7 +216,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 4,
-                    "name": "asset:item/1044",
+                    "value": "asset:item/1044",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -230,7 +230,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "asset:item/1045",
+                    "value": "asset:item/1045",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -244,7 +244,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "asset:item/1046",
+                    "value": "asset:item/1046",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -258,7 +258,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "asset:item/1047",
+                    "value": "asset:item/1047",
                     "functions": [
                         {
                             "function": "minecraft:set_count",

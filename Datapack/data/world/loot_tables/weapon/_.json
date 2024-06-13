@@ -5,27 +5,27 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/dagger"
+                    "value": "world:weapon/dagger"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/sword"
+                    "value": "world:weapon/sword"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/spear"
+                    "value": "world:weapon/spear"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/hammer"
+                    "value": "world:weapon/hammer"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/wand"
+                    "value": "world:weapon/wand"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:weapon/bow"
+                    "value": "world:weapon/bow"
                 }
             ]
         }

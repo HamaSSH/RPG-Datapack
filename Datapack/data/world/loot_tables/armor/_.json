@@ -6,27 +6,27 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "world:armor/helmet"
+                    "value": "world:armor/helmet"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "world:armor/chestplate"
+                    "value": "world:armor/chestplate"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "world:armor/leggings"
+                    "value": "world:armor/leggings"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 2,
-                    "name": "world:armor/boots"
+                    "value": "world:armor/boots"
                 },
                 {
                     "type": "minecraft:loot_table",
                     "weight": 1,
-                    "name": "world:armor/accessories"
+                    "value": "world:armor/accessories"
                 }
             ]
         }

@@ -5,23 +5,23 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:magic/fire"
+                    "value": "world:magic/fire"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:magic/water"
+                    "value": "world:magic/water"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:magic/thunder"
+                    "value": "world:magic/thunder"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:magic/earth"
+                    "value": "world:magic/earth"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "world:magic/wind"
+                    "value": "world:magic/wind"
                 }
             ]
         }

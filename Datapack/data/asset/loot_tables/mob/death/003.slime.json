@@ -8,7 +8,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "asset:item/1036"
+                    "value": "asset:item/1036"
                 }
             ]
         }

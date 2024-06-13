@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "asset:item/3602"
+                    "value": "asset:item/3602"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "asset:item/3603"
+                    "value": "asset:item/3603"
                 }
             ]
         }
