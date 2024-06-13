@@ -13,17 +13,17 @@
 
 # ポーションの色を決定
     function ui:brewing/brew/potion/color
-    data modify storage ui: Results[].tag.CustomPotionColor set from storage ui: PotionData.Color
+    data modify storage ui: Results[].components.minecraft:potion_contents.custom_color set from storage ui: PotionData.Color
 
 # ポーションのバフ情報を決定
     function ui:brewing/brew/potion/buff/_
     data remove storage ui: PotionData.Buff[].ID
-    data modify storage ui: Results[].tag.Consumables.Buff set from storage ui: PotionData.Buff
+    data modify storage ui: Results[].components.minecraft:custom_data.consumables.buff set from storage ui: PotionData.Buff
 
 # ポーションのdisplayの設定
     function ui:brewing/brew/potion/display
-    data modify storage ui: Results[].tag.display.Name set from storage ui: PotionData.Name
-    data modify storage ui: Results[].tag.display.Lore set from storage ui: PotionData.Lore
+    data modify storage ui: Results[].components.minecraft:item_name set from storage ui: PotionData.Name
+    data modify storage ui: Results[].components.minecraft:lore set from storage ui: PotionData.Lore
 
 # 素材アイテムの消費
     execute store result storage ui: NewItems[{Slot:10b}].count byte 0.999 run data get storage ui: NewItems[{Slot:10b}].count

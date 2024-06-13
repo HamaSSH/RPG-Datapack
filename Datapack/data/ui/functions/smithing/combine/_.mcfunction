@@ -2,14 +2,14 @@
 # 合成処理
 
 # 強化するアイテムのデータ→storage
-    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].tag
+    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
     data remove storage ui: ItemData.AttributeModifiers
 
 # 合成スロットの保存
-    data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{tag:{UI:{Combinable:1b}}}]
-    data modify storage ui: NewItems[{Slot:10b}].tag.UI.Combine append from storage ui: NewItems[{Slot:12b}]
-    data modify storage ui: NewItems[{Slot:10b}].tag.UI.Combine append from storage ui: NewItems[{Slot:13b}]
-    data modify storage ui: NewItems[{Slot:10b}].tag.UI.Combine append from storage ui: NewItems[{Slot:14b}]
+    data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine[{tag:{UI:{Combinable:1b}}}]
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:12b}]
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:13b}]
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:14b}]
 
 # アイテムの説明文はそのまま
     execute store result score $ItemLore Temporary if data storage ui: ItemData.display.Lore[]
@@ -23,11 +23,11 @@
 
 # アイテムの合成
     data remove storage ui: ItemData.ExBonus
-    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:12b}].tag.Bonus[]
-    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:13b}].tag.Bonus[]
-    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:14b}].tag.Bonus[]
+    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:12b}].components.minecraft:custom_data.bonus[]
+    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:13b}].components.minecraft:custom_data.bonus[]
+    data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:14b}].components.minecraft:custom_data.bonus[]
     execute if data storage ui: ItemData.Queue[] run function ui:smithing/combine/item/bonus_status/extra/add with storage ui: ItemData.Queue[0]
-    data modify storage ui: NewItems[{Slot:10b}].tag.ExBonus set from storage ui: ItemData.ExBonus
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ExBonus set from storage ui: ItemData.ExBonus
     execute unless data storage ui: ItemData.Bonus[] run function ui:smithing/upgrade/item/bonus_status/new
     execute if data storage ui: ItemData.Bonus[] run function ui:smithing/combine/item/bonus_status/_
 
@@ -40,7 +40,7 @@
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用
-    data modify storage ui: NewItems[{Slot:10b}].tag.display set from storage ui: Result.display
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.display set from storage ui: Result.display
 
 # 演出
     playsound entity.villager.work_weaponsmith master @p ~ ~ ~ 0.8 1.2

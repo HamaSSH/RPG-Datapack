@@ -9,8 +9,9 @@ tag @s add Upgradable
 
 # 強化用アイテムデータの整形
     data modify storage ui: Material set from storage ui: ItemData.UI.Upgrade[0]
-    data remove storage ui: Material[].tag.display
-    data remove storage ui: Material[].tag.UI
+    data remove storage ui: Material[].components.minecraft:item_name
+    data remove storage ui: Material[].components.minecraft:lore
+    data remove storage ui: Material[].components.minecraft:custom_data.ui
 
 # 最大で3回まで強化可能
     execute if data storage ui: ItemData{Grade:3} run tag @s remove Upgradable

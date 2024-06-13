@@ -24,16 +24,16 @@
     scoreboard players add $ItemGrade Temporary 1
     execute if score $ItemGrade Temporary matches 3 run scoreboard players add $ItemRarity Temporary 1
     execute if score $ItemRarity Temporary matches 5.. run scoreboard players set $ItemRarity Temporary 5
-    execute store result storage ui: NewItems[{Slot:10b}].tag.Grade int 1 run scoreboard players get $ItemGrade Temporary
-    execute store result storage ui: NewItems[{Slot:10b}].tag.Rarity int 1 run scoreboard players get $ItemRarity Temporary
+    execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.grade int 1 run scoreboard players get $ItemGrade Temporary
+    execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity int 1 run scoreboard players get $ItemRarity Temporary
 
 # 最大強化になったアイテムのCombineアイテム枠を一つ増やす
-    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:12b}]
-    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:13b}]
-    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].tag.UI.Combine[{Slot:14b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.combine[{Slot:12b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.combine[{Slot:13b}]
+    execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 4 run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.combine[{Slot:14b}]
 
 # Upgadeタグ(強化に必要なアイテム)を更新
-    data remove storage ui: NewItems[{Slot:10b}].tag.UI.Upgrade[0]
+    data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.upgrade[0]
 
 # アイテム名に+強化数
     execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.Color set value "white"
@@ -51,7 +51,7 @@
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用
-    data modify storage ui: NewItems[{Slot:10b}].tag.display set from storage ui: Result.display
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.display set from storage ui: Result.display
 
 # 演出
     playsound block.anvil.place master @p ~ ~ ~ 0.9 1.5

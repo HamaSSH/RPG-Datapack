@@ -12,9 +12,9 @@
     data modify storage ui: PotionData.Lore append from storage ui: PotionData.StatusLore[]
 
 # アイテムのレアリティの計算
-    execute store result score $ItemRarity Temporary run data get storage ui: NewItems[{Slot:10b}].tag.Rarity
-    execute store result score $ItemRarity2 Temporary run data get storage ui: NewItems[{Slot:11b}].tag.Rarity
-    execute store result score $ItemRarity3 Temporary run data get storage ui: NewItems[{Slot:12b}].tag.Rarity
+    execute store result score $ItemRarity Temporary run data get storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity
+    execute store result score $ItemRarity2 Temporary run data get storage ui: NewItems[{Slot:11b}].components.minecraft:custom_data.rarity
+    execute store result score $ItemRarity3 Temporary run data get storage ui: NewItems[{Slot:12b}].components.minecraft:custom_data.rarity
     scoreboard players operation $ItemRarity Temporary += $ItemRarity2 Temporary
     scoreboard players operation $ItemRarity Temporary += $ItemRarity3 Temporary
     scoreboard players operation $ItemRarity Temporary /= #3 Constant

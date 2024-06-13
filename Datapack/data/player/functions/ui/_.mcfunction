@@ -15,8 +15,8 @@
     execute if entity @s[tag=IsBuffed] run function player:ui/buff
     function player:ui/skill_bar/_
     execute if predicate player:offhand_magic/_ run function player:ui/magic
-    execute if predicate player:hold_weapon/bow/_ unless data storage player: Accessories[].tag.Quiver run function player:ui/arrow
-    execute if data storage player: Accessories[].tag.Quiver run function player:ui/quiver
+    execute if predicate player:hold_weapon/bow/_ unless data storage player: Accessories[].components.minecraft:custom_data.quiver run function player:ui/arrow
+    execute if data storage player: Accessories[].components.minecraft:custom_data.quiver run function player:ui/quiver
 
 # 右揃え・左揃え用のスコア用
     data modify storage player:ui alignR set value '["\\uF82F",{"score":{"name":"@s","objective":"HP"}},{"score":{"name":"@s","objective":"HPMax"}}]'

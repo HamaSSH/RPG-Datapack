@@ -16,7 +16,7 @@
         data remove storage ui: CombinableItems[{Slot:13b}]
         data remove storage ui: CombinableItems[{Slot:14b}]
     # アイテムをスロットに配置
-        execute store result score $ItemRarity Temporary run data get storage ui: Items[{tag:{UI:{Smithable:1b}}}].tag.Rarity
+        execute store result score $ItemRarity Temporary run data get storage ui: Items[{tag:{UI:{Smithable:1b}}}].components.minecraft:custom_data.rarity
         execute if data storage ui: Items[{tag:{UI:{Smithable:1b}}}] run function ui:smithing/page/set_item {Slot:"10b"}
         execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 2.. run function ui:smithing/combine/page/set_item {Slot:"12b"}
         execute if data storage ui: Items[{tag:{UI:{Combinable:1b}}}] if score $ItemRarity Temporary matches 3.. run function ui:smithing/combine/page/set_item {Slot:"13b"}

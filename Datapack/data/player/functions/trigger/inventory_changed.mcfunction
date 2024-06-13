@@ -8,16 +8,16 @@
     execute unless data entity @s SelectedItem run item replace entity @s weapon.mainhand with air
 
 # 矢筒が装備されたか検知
-    execute if data storage player: Inventory[].tag.Quiver unless entity @s[tag=NewInventorySet] run function player:combat/main/bow/quiver/_
+    execute if data storage player: Inventory[].components.custom_data.quiver unless entity @s[tag=NewInventorySet] run function player:combat/main/bow/quiver/_
 
 # 消費予定のアイテムデータのリセット
     execute unless entity @s[tag=ConsumeOffhand] if entity @s[tag=UsingConsumables] run function player:trigger/using_item/consumables/reset
 
 # 武器にアイテムUUIDを設定
-    execute if data storage player: SelectedItem.tag.Weapon unless data storage player: SelectedItem.tag.UUID run function player:item_data/set_uuid
+    execute if data storage player: SelectedItem.components.custom_data.weapon unless data storage player: SelectedItem.components.custom_data.UUID run function player:item_data/set_uuid
 
 # mainhandにあるアイテムのUUIDが変わった場合
-    execute if data storage player: SelectedItem.tag.Weapon store result score @s ItemUUID run data get entity @s SelectedItem.tag.UUID
+    execute if data storage player: SelectedItem.components.custom_data.weapon store result score @s ItemUUID run data get entity @s SelectedItem.components.custom_data.UUID
     execute unless score @s ItemUUID = @s PreviousItemUUID run function player:trigger/changed_mainhand
     scoreboard players reset @s ItemUUID
 
