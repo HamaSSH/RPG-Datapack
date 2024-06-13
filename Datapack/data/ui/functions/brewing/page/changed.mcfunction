@@ -29,7 +29,7 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 醸造する
-    execute unless data storage ui: Items[{Slot:13b,tag:{UI:{ItemType:"Brew"}}}] run function ui:brewing/brew/check
+    execute unless data storage ui: Items[{Slot:13b,tag:{ui:{item_type:"Brew"}}}] run function ui:brewing/brew/check
 
 # メニュー内容更新
     # 初期化

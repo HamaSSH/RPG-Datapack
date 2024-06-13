@@ -3,8 +3,8 @@
 
 # 不要なアイテムをclear
     clear @a glass_bottle
-    clear @a #lib:every_item{UI:{ItemType:"Blank"}}
-    clear @a #lib:every_item{UI:{ItemType:"Goods"}}
+    clear @a #lib:every_item{ui:{item_type:"blank"}}
+    clear @a #lib:every_item{ui:{item_type:"Goods"}}
 
 # UI閉じ検知の後処理
     execute unless predicate player:armor/helmet run item replace entity @s armor.head with air

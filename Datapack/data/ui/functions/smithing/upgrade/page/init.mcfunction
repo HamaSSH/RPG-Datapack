@@ -1,5 +1,5 @@
 #> ui:smithing/upgrade/page/init
 # UIの初期化
 
-data modify entity @s Items set value [{Slot:9b,id:"glass_bottle",tag:{CustomModelData:3001,UI:{ItemType:"Blank"},display:{Name:'{"text":""}'}}},{Slot:11b,id:"glass_bottle",tag:{CustomModelData:3001,UI:{ItemType:"Blank"},display:{Name:'{"text":""}'}}},{Slot:11b,id:"glass_bottle",tag:{CustomModelData:3001,UI:{ItemType:"Blank"},display:{Name:'{"text":""}'}}},{Slot:15b,id:"glass_bottle",tag:{CustomModelData:3005,UI:{ItemType:"Upgrade"},display:{Name:'{"text":"強化","bold":true,"italic":false}'}}}]
+data modify entity @s Items set value [{Slot:9b,id:"glass_bottle",components:{"minecraft:custom_model_data":3001,"minecraft:custom_data":{ui:{item_type:"blank"}},"minecraft:hide_tooltip":{}}},{Slot:11b,id:"glass_bottle",components:{"minecraft:custom_model_data":3001,"minecraft:custom_data":{ui:{item_type:"blank"}},"minecraft:hide_tooltip":{}}},{Slot:11b,id:"glass_bottle",components:{"minecraft:custom_model_data":3001,"minecraft:custom_data":{ui:{item_type:"blank"}},"minecraft:hide_tooltip":{}}},{Slot:15b,id:"glass_bottle",components:{"minecraft:custom_model_data":3005,"minecraft:custom_data":{ui:{item_type:"upgrade"}},display:{Name:'{"text":"強化","bold":true,"italic":false}'}}}]
 data modify entity @s Items append from storage ui: NewItems[{Slot:10b}].tag.UI.Upgrade[0][]

@@ -31,21 +31,21 @@
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
-    data remove storage ui: ReturnItems[{tag:{UI:{ItemType:"Blank"}}}]
+    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"blank"}}}]
     data remove storage ui: ReturnItems[{tag:{CanSell:1b}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ページを移動する
-    execute unless data storage ui: Items[{Slot:0b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:1b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:2b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:3b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:4b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:5b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:6b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:7b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:8b,tag:{UI:{ItemType:"Blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:0b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:1b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:2b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:3b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:4b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:5b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:6b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:7b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:8b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
 
 # ページ移動の際アイテムを返却
     execute if score @s UIPage matches 0 run data modify storage ui: ReturnItems set from storage ui: Items
@@ -55,7 +55,7 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 売却する
-    execute unless data storage ui: Items[{Slot:17b,tag:{UI:{ItemType:"Sell"}}}] if data storage ui: NewItems[{tag:{CanSell:1b}}] run function ui:shop/sell/_
+    execute unless data storage ui: Items[{Slot:17b,tag:{ui:{item_type:"Sell"}}}] if data storage ui: NewItems[{tag:{CanSell:1b}}] run function ui:shop/sell/_
 
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage
