@@ -6,7 +6,7 @@
 
 # データの設定
     data modify entity @s DeathLootTable set from storage asset:material LootTable
-    data modify entity @s CustomNameVisible set value 1b
+    # data modify entity @s CustomNameVisible set value 1b
     execute store result score @s HP run data get storage asset:material Data.HP
     execute store result score @s HPMax run data get storage asset:material Data.HP
     execute store result score @s MaterialID run data get storage asset:material Data.MaterialID
@@ -15,10 +15,10 @@
     execute summon item_display run function item:material/summon/set_display with storage asset:material Data
 
 # HPバーの設定
-    execute if data storage asset:material Data{HP:2} run data modify entity @s CustomName set value '[{"text":"██","color":"green"}]'
-    execute if data storage asset:material Data{HP:3} run data modify entity @s CustomName set value '[{"text":"███","color":"green"}]'
-    execute if data storage asset:material Data{HP:4} run data modify entity @s CustomName set value '[{"text":"████","color":"green"}]'
-    execute if data storage asset:material Data{HP:5} run data modify entity @s CustomName set value '[{"text":"█████","color":"green"}]'
+    execute if data storage asset:material Data{HP:2} run data modify entity @s CustomName set value '[{"text":"■■","color":"green"},"\\uF801"]'
+    execute if data storage asset:material Data{HP:3} run data modify entity @s CustomName set value '[{"text":"■■■","color":"green"},"\\uF801"]'
+    execute if data storage asset:material Data{HP:4} run data modify entity @s CustomName set value '[{"text":"■■■■","color":"green"},"\\uF801"]'
+    execute if data storage asset:material Data{HP:5} run data modify entity @s CustomName set value '[{"text":"■■■■■","color":"green"},"\\uF801"]'
 
 # リセット
     data remove storage asset:material Data

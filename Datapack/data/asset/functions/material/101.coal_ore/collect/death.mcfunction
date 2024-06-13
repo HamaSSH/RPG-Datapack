@@ -4,8 +4,9 @@
 # ばらまく
     loot spawn ~ ~ ~ loot blocks/coal_ore
 
-# Passengerをkill
+# 後処理
     execute on passengers run kill @s
+    kill @s
 
 # 演出
     playsound block.nether_ore.step master @a ~ ~ ~ 0.8 0.8
