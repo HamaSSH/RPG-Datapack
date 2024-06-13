@@ -1,51 +1,8 @@
 [
     {
-        "function": "copy_custom_data",
-        "source": {
-            "type": "storage",
-            "source": "item:"
-        },
-        "ops": [
-            {
-                "source": "Tool.Use",
-                "target": "Tool.Use",
-                "op": "replace"
-            }
-        ]
-    },
-    {
-        "function": "copy_custom_data",
-        "source": {
-            "type": "storage",
-            "source": "item:"
-        },
-        "ops": [
-            {
-                "source": "Tool.Damage",
-                "target": "Damage",
-                "op": "replace"
-            }
-        ]
-    },
-    {
-        "function": "set_lore",
+        "function": "minecraft:set_lore",
         "entity": "this",
         "lore": [
-            {
-                "nbt": "Lore[0]",
-                "storage": "item:",
-                "interpret": true
-            },
-            {
-                "nbt": "Lore[1]",
-                "storage": "item:",
-                "interpret": true
-            },
-            {
-                "nbt": "Lore[2]",
-                "storage": "item:",
-                "interpret": true
-            },
             [
                 {
                     "text": "▸ ",
@@ -72,23 +29,9 @@
                         "objective": "Temporary"
                     }
                 }
-            ],
-            {
-                "nbt": "Lore[4]",
-                "storage": "item:",
-                "interpret": true
-            },
-            {
-                "nbt": "Lore[5]",
-                "storage": "item:",
-                "interpret": true
-            },
-            {
-                "nbt": "Lore[6]",
-                "storage": "item:",
-                "interpret": true
-            }
+            ]
         ],
-        "replace": true
+        "mode": "replace_section",
+        "offset": 2
     }
 ]

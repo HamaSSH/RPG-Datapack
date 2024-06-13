@@ -6,10 +6,11 @@
                 "item": {
                     "tag": "lib:tools"
                 },
-                "durability": {
-                    "min": 1
-                }
+                "durability": 0
             }
         }
+    },
+    "rewards": {
+        "function": "item:tool/durability/zero"
     }
 }
