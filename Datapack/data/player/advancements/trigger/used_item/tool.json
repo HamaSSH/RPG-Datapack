@@ -4,12 +4,14 @@
             "trigger": "minecraft:item_durability_changed",
             "conditions": {
                 "item": {
-                    "tag": "lib:tools"
-                },
-                "durability": {
-                    "min": 1
+                    "items": [
+                        "minecraft:wooden_pickaxe"
+                    ]
                 }
             }
         }
+    },
+    "rewards": {
+        "function": "item:tool/durability/_"
     }
 }

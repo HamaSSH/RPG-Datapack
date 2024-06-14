@@ -10,5 +10,8 @@
                 }
             }
         }
+    },
+    "rewards": {
+        "function": "item:fishing/rod/used"
     }
 }

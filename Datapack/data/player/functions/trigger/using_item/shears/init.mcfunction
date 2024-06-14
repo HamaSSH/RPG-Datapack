@@ -3,4 +3,4 @@
 
 execute if items entity @s weapon.mainhand brush[damage~{durability:{min:1}}] run tag @s add MainhandShears
 execute unless entity @s[tag=MainhandShears] if items entity @s weapon.offhand brush[damage~{durability:{min:1}}] run tag @s add OffhandShears
-tag @s add UsingShears
+execute unless entity @s[tag=!MainhandShears,tag=!OffhandShears] run tag @s add UsingShears

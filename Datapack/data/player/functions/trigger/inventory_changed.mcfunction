@@ -20,7 +20,3 @@
     execute if data storage player: SelectedItem.components.custom_data.weapon store result score @s ItemUUID run data get entity @s SelectedItem.components.custom_data.UUID
     execute unless score @s ItemUUID = @s PreviousItemUUID run function player:trigger/changed_mainhand
     scoreboard players reset @s ItemUUID
-
-# 採集ツールの使用検知
-    execute if entity @s[advancements={player:trigger/used_item/tool=true}] run function item:tool/durability/_
-    execute if entity @s[advancements={player:trigger/used_item/fishing_rod=true}] run function item:fishing/rod/used

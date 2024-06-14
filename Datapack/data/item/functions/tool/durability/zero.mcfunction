@@ -3,15 +3,15 @@
 
 # ツールを使えないようにする
     data modify block 0 0 0 Items append from entity @s SelectedItem
-    item modify block 0 0 0 container.0 [{"function":"set_damage","damage":0},{"function":"set_components","components":{"!minecraft:can_break":{}}}]
-    item replace entity @s weapon.mainhand from block 0 0 0 container.0
+    execute if items block 0 0 0 container.0 wooden_pickaxe run item modify block 0 0 0 container.0 {"function":"set_components","components":{"!minecraft:can_break":{}}}
+    execute if items block 0 0 0 container.0 brush run item modify block 0 0 0 container.0 {"function":"set_components","components":{"!minecraft:can_place_on":{}}}
+    execute if items block 0 0 0 container.0 fishing_rod run data modify block 0 0 0 Items[0].id set value "minecraft:carrot_on_a_stick"
 
-# 耐久値計算
-    function item:tool/durability/_
+# Main/Offhandに置き換え
+    execute unless entity @s[tag=OffhandShears] unless entity @s[tag=OffhandRod] run item replace entity @s weapon.mainhand from block 0 0 0 container.0
+    execute if entity @s[tag=OffhandShears] run item replace entity @s weapon.offhand from block 0 0 0 container.0
+    execute if entity @s[tag=OffhandRod] run item replace entity @s weapon.offhand from block 0 0 0 container.0
 
 # 演出
-    playsound item.shield.break master @s ~ ~ ~ 0.5 1.0
-
-# リセット
     function player:trigger/using_item/shears/reset
-    advancement revoke @s only player:trigger/used_item/durability_zero
+    playsound item.shield.break master @s ~ ~ ~ 0.5 1.0
