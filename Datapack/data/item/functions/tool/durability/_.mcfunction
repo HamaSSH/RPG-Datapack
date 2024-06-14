@@ -21,7 +21,6 @@
     execute if score $RemainingUse Temporary matches 0 run function item:tool/durability/zero
 
 # アイテムデータ編集
-    data modify storage item: Lore set from storage item: Data.minecraft:lore
     execute unless entity @s[tag=OffhandShears] unless entity @s[tag=OffhandRod] run item modify entity @s weapon.mainhand item:tool/durability/_
     execute if entity @s[tag=OffhandShears] run item modify entity @s weapon.offhand item:tool/durability/_
     execute if entity @s[tag=OffhandRod] run item modify entity @s weapon.offhand item:tool/durability/_
