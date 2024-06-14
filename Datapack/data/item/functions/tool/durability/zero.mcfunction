@@ -4,8 +4,7 @@
 # ツールを使えないようにする
     data modify block 0 0 0 Items append from entity @s SelectedItem
     item modify block 0 0 0 container.0 [{"function":"set_damage","damage":0},{"function":"set_components","components":{"!minecraft:can_break":{}}}]
-    execute if entity @s[tag=MainhandShears] run item replace entity @s weapon.mainhand from block 0 0 0 container.0
-    execute if entity @s[tag=OffhandShears] run item replace entity @s weapon.offhand from block 0 0 0 container.0
+    item replace entity @s weapon.mainhand from block 0 0 0 container.0
 
 # 耐久値計算
     function item:tool/durability/_

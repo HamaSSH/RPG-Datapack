@@ -2,7 +2,7 @@
 # ツールのカスタム耐久値操作
 
 # プレイヤー SelectedItem → storage
-    execute if entity @s[tag=MainhandShears] run data modify storage item: Data set from entity @s SelectedItem.components
+    data modify storage item: Data set from entity @s SelectedItem.components
     execute if entity @s[tag=OffhandShears] run data modify storage item: Data set from entity @s Inventory[{Slot:-106b}].components
 
 # ツールの耐久値/バー計算
@@ -18,7 +18,7 @@
 
 # 新しいツールデータ設定＆Lore編集
     data modify storage item: Lore set from storage item: Data.minecraft:lore
-    execute if entity @s[tag=MainhandShears] run item modify entity @s weapon.mainhand item:tool/durability/_
+    execute unless entity @s[tag=OffhandShears] run item modify entity @s weapon.mainhand item:tool/durability/_
     execute if entity @s[tag=OffhandShears] run item modify entity @s weapon.offhand item:tool/durability/_
 
 # もし耐久値が0なら破壊
