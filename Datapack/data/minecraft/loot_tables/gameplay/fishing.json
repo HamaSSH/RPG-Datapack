@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_custom_data",
-                            "tag": "{item_type:\"fish\"}"
+                            "tag": "{item_type:\"fishing_loot\"}"
                         }
                     ]
                 }
