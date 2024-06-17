@@ -15,8 +15,8 @@
         },
         "ops": [
             {
-                "source": "Data.minecraft:custom_data.tool.damage",
-                "target": "tool.damage",
+                "source": "Data.minecraft:custom_data.tool.remaining_use",
+                "target": "tool.remaining_use",
                 "op": "replace"
             }
         ]
@@ -54,6 +54,63 @@
             ]
         ],
         "mode": "replace_section",
-        "offset": 3
+        "offset": 2,
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "item:",
+                    "path": "Data.minecraft:custom_data.lore_length"
+                },
+                "range": 1
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "▸ ",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "耐久値: "
+                },
+                {
+                    "score": {
+                        "name": "$RemainingUse",
+                        "objective": "Temporary"
+                    },
+                    "color": "white"
+                },
+                {
+                    "text": "/",
+                    "color": "#D8D8D8"
+                },
+                {
+                    "score": {
+                        "name": "$MaxDurability",
+                        "objective": "Temporary"
+                    }
+                }
+            ]
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "conditions": [
+            {
+                "condition": "minecraft:value_check",
+                "value": {
+                    "type": "minecraft:storage",
+                    "storage": "item:",
+                    "path": "Data.minecraft:custom_data.lore_length"
+                },
+                "range": 2
+            }
+        ]
     }
 ]
