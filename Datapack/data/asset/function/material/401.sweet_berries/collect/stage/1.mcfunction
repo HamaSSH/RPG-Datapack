@@ -2,4 +2,4 @@
 # ブロックの表示を変更
 
 setblock ~ ~ ~ dead_bubble_coral[waterlogged=false]
-execute on passengers run data modify entity @s item.id set value "minecraft:dead_bubble_coral"
+execute on passengers run data modify entity @s item.id set value "dead_bubble_coral"

@@ -1,6 +1,6 @@
 #> asset:npc/003.food/summon
 
-summon villager ~ ~ ~ {CustomName:'"タベモノ"',CustomNameVisible:1b,Team:"NoCollision",PersistenceRequired:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["InterruptLeftClick","ShopNPC"],ArmorItems:[{},{},{},{id:"minecraft:glass_bottle",components:{"minecraft:custom_data":{shop_data:[[1042,1027,1025,1041,1033,1034]]}}}]}
+summon villager ~ ~ ~ {CustomName:'"タベモノ"',CustomNameVisible:1b,Team:"NoCollision",PersistenceRequired:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["InterruptLeftClick","ShopNPC"],ArmorItems:[{},{},{},{id:"glass_bottle",components:{"custom_data":{shop_data:[[1042,1027,1025,1041,1033,1034]]}}}]}
 
 # 店の商品の情報
 
