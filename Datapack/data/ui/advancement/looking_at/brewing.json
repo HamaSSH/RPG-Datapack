@@ -21,8 +21,8 @@
                             "type_specific": {
                                 "type": "player",
                                 "looking_at": {
-                                    "type": "minecraft:polar_bear",
-                                    "nbt": "{Tags:[\"BrewingBear\"]}",
+                                    "type": "minecraft:mule",
+                                    "nbt": "{Tags:[\"BrewingMule\"]}",
                                     "distance": {
                                         "absolute": {
                                             "min": 0,
