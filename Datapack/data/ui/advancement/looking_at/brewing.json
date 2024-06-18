@@ -1,13 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:inverted",
+                        "condition": "inverted",
                         "term": {
-                            "condition": "minecraft:entity_properties",
+                            "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "nbt": "{Tags:[\"UsingUI\"]}"
@@ -15,13 +15,13 @@
                         }
                     },
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type_specific": {
                                 "type": "player",
                                 "looking_at": {
-                                    "type": "minecraft:mule",
+                                    "type": "mule",
                                     "nbt": "{Tags:[\"BrewingMule\"]}",
                                     "distance": {
                                         "absolute": {

@@ -4,11 +4,11 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "asset:item/3602"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "asset:item/3603"
                 }
             ]

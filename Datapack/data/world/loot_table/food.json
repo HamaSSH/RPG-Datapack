@@ -4,12 +4,12 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "value": "asset:item/1016",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 1,
                                 "max": 3
@@ -18,12 +18,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 4,
                     "value": "asset:item/1017",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 3
@@ -32,12 +32,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1018",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 3
@@ -46,12 +46,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1020",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 5
@@ -60,12 +60,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1025",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 4
@@ -74,12 +74,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 1,
                     "value": "asset:item/1026",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 0,
                                 "max": 2
@@ -88,12 +88,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1027",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 4
@@ -102,12 +102,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1041",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 4
@@ -116,12 +116,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 4,
                     "value": "asset:item/1042",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 6
@@ -130,12 +130,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/1043",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 2,
                                 "max": 4
@@ -144,12 +144,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 1,
                     "value": "asset:item/1033",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 1,
                                 "max": 3
@@ -158,12 +158,12 @@
                     ]
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 1,
                     "value": "asset:item/1034",
                     "functions": [
                         {
-                            "function": "minecraft:set_count",
+                            "function": "set_count",
                             "count": {
                                 "min": 1,
                                 "max": 3

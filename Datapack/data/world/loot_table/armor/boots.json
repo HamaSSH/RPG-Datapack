@@ -4,27 +4,27 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 30,
                     "value": "asset:item/3401"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 25,
                     "value": "asset:item/3402"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 20,
                     "value": "asset:item/3403"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 7,
                     "value": "asset:item/3404"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 3,
                     "value": "asset:item/3405"
                 }

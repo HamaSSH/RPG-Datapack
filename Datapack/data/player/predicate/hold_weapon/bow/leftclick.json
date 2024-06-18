@@ -4,9 +4,9 @@
         "name": "player:hold_weapon/bow/_"
     },
     {
-        "condition": "minecraft:inverted",
+        "condition": "inverted",
         "term": {
-            "condition": "minecraft:reference",
+            "condition": "reference",
             "name": "player:hold_weapon/not_bow"
         }
     },

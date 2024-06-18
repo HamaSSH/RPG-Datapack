@@ -1,12 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
                         "items": [
-                            "minecraft:glass_bottle"
+                            "glass_bottle"
                         ]
                     }
                 ]

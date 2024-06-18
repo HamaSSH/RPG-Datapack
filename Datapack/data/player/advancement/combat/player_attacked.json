@@ -30,7 +30,7 @@
                 },
                 "entity": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "type": "#lib:every_mob"
@@ -382,7 +382,7 @@
                     "type": {
                         "tags": [
                             {
-                                "id": "minecraft:is_projectile",
+                                "id": "is_projectile",
                                 "expected": false
                             }
                         ]

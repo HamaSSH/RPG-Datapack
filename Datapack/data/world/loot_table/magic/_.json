@@ -4,23 +4,23 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:magic/fire"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:magic/water"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:magic/thunder"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:magic/earth"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:magic/wind"
                 }
             ]

@@ -4,7 +4,7 @@
         "tag": "{ui:{item_type:\"goods\"}}"
     },
     {
-        "function": "minecraft:set_name",
+        "function": "set_name",
         "entity": "this",
         "name": [
             {

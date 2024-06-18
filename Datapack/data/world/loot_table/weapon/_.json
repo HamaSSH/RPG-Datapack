@@ -4,27 +4,27 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/dagger"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/sword"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/spear"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/hammer"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/wand"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "world:weapon/bow"
                 }
             ]

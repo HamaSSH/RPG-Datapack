@@ -4,38 +4,38 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "asset:item/1016",
                     "weight": 1
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "asset:item/1017",
                     "weight": 1
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "value": "asset:item/1018",
                     "weight": 1
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "weight": 0,
                     "functions": [
                         {
-                            "function": "minecraft:set_custom_data",
+                            "function": "set_custom_data",
                             "tag": "{item_type:\"gold_chest\"}"
                         }
                     ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:nautilus_shell",
+                    "type": "item",
+                    "name": "nautilus_shell",
                     "weight": 0,
                     "functions": [
                         {
-                            "function": "minecraft:set_custom_data",
+                            "function": "set_custom_data",
                             "tag": "{item_type:\"loot_chest\"}"
                         }
                     ]

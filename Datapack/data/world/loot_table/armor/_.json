@@ -4,27 +4,27 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "value": "world:armor/helmet"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "value": "world:armor/chestplate"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "value": "world:armor/leggings"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 2,
                     "value": "world:armor/boots"
                 },
                 {
-                    "type": "minecraft:loot_table",
+                    "type": "loot_table",
                     "weight": 1,
                     "value": "world:armor/accessories"
                 }

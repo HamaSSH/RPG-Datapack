@@ -1,16 +1,16 @@
 [
     {
-        "function": "minecraft:set_damage",
+        "function": "set_damage",
         "damage": {
-            "type": "minecraft:storage",
+            "type": "storage",
             "storage": "item:",
             "path": "Data.minecraft:custom_data.tool.durability_bar"
         }
     },
     {
-        "function": "minecraft:copy_custom_data",
+        "function": "copy_custom_data",
         "source": {
-            "type": "minecraft:storage",
+            "type": "storage",
             "source": "item:"
         },
         "ops": [
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -57,9 +57,9 @@
         "offset": 2,
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:storage",
+                    "type": "storage",
                     "storage": "item:",
                     "path": "Data.minecraft:custom_data.lore_length"
                 },
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "entity": "this",
         "lore": [
             [
@@ -103,9 +103,9 @@
         "offset": 3,
         "conditions": [
             {
-                "condition": "minecraft:value_check",
+                "condition": "value_check",
                 "value": {
-                    "type": "minecraft:storage",
+                    "type": "storage",
                     "storage": "item:",
                     "path": "Data.minecraft:custom_data.lore_length"
                 },

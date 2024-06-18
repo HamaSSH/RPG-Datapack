@@ -1,6 +1,6 @@
 [
     {
-        "function": "minecraft:set_custom_model_data",
+        "function": "set_custom_model_data",
         "value": 3015
     },
     {
