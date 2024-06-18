@@ -4,8 +4,8 @@
 tag @s add Upgradable
 
 # 強化するアイテムのデータ→storage
-    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].tag
-    data remove storage ui: ItemData.AttributeModifiers
+    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components
+    data remove storage ui: ItemData.components.minecraft:attribute_modifiers
 
 # 強化用アイテムデータの整形
     data modify storage ui: Material set from storage ui: ItemData.UI.Upgrade[0]
