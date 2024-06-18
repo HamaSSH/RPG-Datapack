@@ -1,7 +1,7 @@
 [
     {
         "function": "set_custom_data",
-        "tag": "{ui:{item_type:\"Goods\"}}"
+        "tag": "{ui:{item_type:\"goods\"}}"
     },
     {
         "function": "minecraft:set_name",
@@ -13,14 +13,15 @@
                 "italic": false
             },
             {
-                "nbt": "EntryData.tag.BaseName",
-                "storage": "ui:"
+                "nbt": "EntryData.components.minecraft:item_name",
+                "storage": "ui:",
+                "interpret": true
             },
             {
                 "text": " ( "
             },
             {
-                "nbt": "EntryData.tag.Buy",
+                "nbt": "EntryData.components.minecraft:custom_data.price",
                 "storage": "ui:"
             },
             {
