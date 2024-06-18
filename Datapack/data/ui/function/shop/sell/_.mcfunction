@@ -2,7 +2,7 @@
 # アイテム売却処理
 
 # スロット内のアイテムの売価を取得
-    data modify storage ui: ItemData append from storage ui: NewItems[{tag:{CanSell:1b}}]
+    data modify storage ui: ItemData append from storage ui: NewItems[{components:{"minecraft:custom_data":{can_sell:1b}}}]
     function ui:shop/sell/price
 
 # プレイヤーのGoldに売価を追加
@@ -19,6 +19,6 @@
     scoreboard players set @s UIPage 0
 
 # リセット
-    data remove storage ui: NewItems[{tag:{CanSell:1b}}]
+    data remove storage ui: NewItems[{components:{"minecraft:custom_data":{can_sell:1b}}}]
     scoreboard players reset $TotalPrice Temporary
     scoreboard players reset $TotalCount Temporary

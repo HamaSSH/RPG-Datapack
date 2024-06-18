@@ -6,7 +6,7 @@
     data remove storage ui: ItemData.AttributeModifiers
 
 # 合成スロットの保存
-    data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine[{tag:{UI:{Combinable:1b}}}]
+    data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:12b}]
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:13b}]
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.UI.Combine append from storage ui: NewItems[{Slot:14b}]

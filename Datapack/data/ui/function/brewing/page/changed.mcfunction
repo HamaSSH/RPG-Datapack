@@ -6,14 +6,14 @@
 
 # 醸造アイテムデータの整形
     # 醸造可能なアイテム(既にスロット内のものを除く)→BrewableItems
-        data modify storage ui: BrewableItems append from storage ui: Items[{tag:{UI:{Brewable:1b}}}]
+        data modify storage ui: BrewableItems append from storage ui: Items[{components:{"minecraft:custom_data":{ui:{brewable:1b}}}}]
         data remove storage ui: BrewableItems[{Slot:10b}]
         data remove storage ui: BrewableItems[{Slot:11b}]
         data remove storage ui: BrewableItems[{Slot:12b}]
     # アイテムをスロットに配置
-        execute if data storage ui: Items[{tag:{UI:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"10b"}
-        execute if data storage ui: Items[{tag:{UI:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"11b"}
-        execute if data storage ui: Items[{tag:{UI:{Brewable:1b}}}] run function ui:brewing/page/set_item {Slot:"12b"}
+        execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run function ui:brewing/page/set_item {Slot:"10b"}
+        execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run function ui:brewing/page/set_item {Slot:"11b"}
+        execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run function ui:brewing/page/set_item {Slot:"12b"}
     # スロットに空きが無ければ返却
         execute if data storage ui: BrewableItems[] run data modify storage ui: ReturnItems set from storage ui: BrewableItems
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
@@ -24,12 +24,12 @@
     data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:14b}]
     data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:15b}]
     data remove storage ui: ReturnItems[{id:"minecraft:potion",Slot:16b}]
-    data remove storage ui: ReturnItems[{tag:{UI:{Brewable:1b}}}]
+    data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{brewable:1b}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 醸造する
-    execute unless data storage ui: Items[{Slot:13b,tag:{ui:{item_type:"Brew"}}}] run function ui:brewing/brew/check
+    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"brew"}}}}] run function ui:brewing/brew/check
 
 # メニュー内容更新
     # 初期化

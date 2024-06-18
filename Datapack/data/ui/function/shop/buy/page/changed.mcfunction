@@ -8,25 +8,25 @@
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
-    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"blank"}}}]
-    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"goods"}}}]
+    data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}]
+    data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # 購入する
     data modify storage ui: BuyItem set from entity @s data.BuyItem
-    execute unless data storage ui: Items[{Slot:16b,tag:{ui:{item_type:"buy"}}}] run function ui:shop/buy/check with storage ui: BuyItem
+    execute unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{item_type:"buy"}}}}] run function ui:shop/buy/check with storage ui: BuyItem
 
 # ページを移動する
-    execute unless data storage ui: Items[{Slot:0b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:1b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:2b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:3b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:4b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:5b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:6b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:7b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
-    execute unless data storage ui: Items[{Slot:8b,tag:{ui:{item_type:"blank"}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:0b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:1b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:2b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:3b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:4b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:5b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:6b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:7b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
+    execute unless data storage ui: Items[{Slot:8b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage

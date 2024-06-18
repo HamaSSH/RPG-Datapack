@@ -8,8 +8,8 @@
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
-    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"blank"}}}]
-    data remove storage ui: ReturnItems[{tag:{ui:{item_type:"goods"}}}]
+    data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}]
+    data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
@@ -17,17 +17,17 @@
     # 商品ページ移動
         execute store result score $TotalPage Temporary if data entity @s data.ShopData[]
         scoreboard players remove $TotalPage Temporary 1
-        execute if score @s ShopPage < $TotalPage Temporary unless data storage ui: Items[{Slot:16b,tag:{ui:{item_type:"forward"}}}] run tag @s add Forward
-        execute if score @s ShopPage matches 1.. unless data storage ui: Items[{Slot:9b,tag:{ui:{item_type:"backward"}}}] run tag @s add Backward
+        execute if score @s ShopPage < $TotalPage Temporary unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{item_type:"forward"}}}}] run tag @s add Forward
+        execute if score @s ShopPage matches 1.. unless data storage ui: Items[{Slot:9b,components:{"minecraft:custom_data":{ui:{item_type:"backward"}}}}] run tag @s add Backward
         execute if entity @s[tag=Backward] run scoreboard players remove @s ShopPage 1
         execute if entity @s[tag=Forward] run scoreboard players add @s ShopPage 1
-    execute unless data storage ui: Items[{Slot:10b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 2
-    execute unless data storage ui: Items[{Slot:11b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 3
-    execute unless data storage ui: Items[{Slot:12b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 4
-    execute unless data storage ui: Items[{Slot:13b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 5
-    execute unless data storage ui: Items[{Slot:14b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 6
-    execute unless data storage ui: Items[{Slot:15b,tag:{ui:{item_type:"goods"}}}] run scoreboard players set @s UIPage 7
-    execute unless data storage ui: Items[{Slot:17b,tag:{ui:{item_type:"Sell"}}}] run scoreboard players set @s UIPage 1
+    execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 2
+    execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 3
+    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 4
+    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 5
+    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 6
+    execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players set @s UIPage 7
+    execute unless data storage ui: Items[{Slot:17b,components:{"minecraft:custom_data":{ui:{item_type:"sell"}}}}] run scoreboard players set @s UIPage 1
 
 # メニュー内容更新
     execute store result storage ui: ShopPage.Page int 1 run scoreboard players get @s ShopPage

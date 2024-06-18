@@ -2,4 +2,4 @@
 # ページ移動の際のページリセット処理
 
 scoreboard players set @s UIPage 0
-data remove storage ui: NewItems[{tag:{UI:{Combinable:1b}}}]
+data remove storage ui: NewItems[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
