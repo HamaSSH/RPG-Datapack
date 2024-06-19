@@ -21,7 +21,7 @@
     execute if score @s HPMax matches 201.. run scoreboard players operation $HPRatio Temporary /= @s HPMax
 
 # HPハートの適用
-    execute store result storage player: HPRatio.Value int 1 run scoreboard players get $HPRatio Temporary
+    execute store result storage player: HPRatio.value int 1 run scoreboard players get $HPRatio Temporary
     function player:status/hp/bar with storage player: HPRatio
     effect give @s health_boost infinite 0 true
     effect clear @s health_boost

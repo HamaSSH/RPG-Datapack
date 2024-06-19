@@ -16,7 +16,7 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "nbt": "Damage.Color",
+                                    "nbt": "Damage.color",
                                     "storage": "lib:",
                                     "interpret": true
                                 },
@@ -24,7 +24,7 @@
                                     "text": "-"
                                 },
                                 {
-                                    "nbt": "Damage.Value",
+                                    "nbt": "Damage.value",
                                     "storage": "lib:"
                                 }
                             ]

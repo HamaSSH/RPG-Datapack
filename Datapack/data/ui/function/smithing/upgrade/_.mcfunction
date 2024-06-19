@@ -3,11 +3,11 @@
 
 # 強化用アイテムのclear
     function ui:smithing/upgrade/clear/_
-    data remove storage ui: ItemData.UI
+    data remove storage ui: ItemData.ui
 
 # アイテムの説明文はそのまま
     execute store result score $ItemLore Temporary if data storage ui: ItemData.display.Lore[]
-    execute store result score $ItemBonus Temporary if data storage ui: ItemData.Bonus[]
+    execute store result score $ItemBonus Temporary if data storage ui: ItemData.bonus[]
     scoreboard players operation $ItemLore Temporary -= $ItemBonus Temporary
     scoreboard players remove $ItemLore Temporary 3
     execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
@@ -16,11 +16,11 @@
     data remove storage ui: ItemData.display.Lore
 
 # アイテムの強化
-    execute if data storage ui: ItemData.Bonus[] run function ui:smithing/upgrade/item/bonus_status/_
+    execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/bonus_status/_
 
 # アイテムのGradeとRarity操作
-    execute store result score $ItemGrade Temporary run data get storage ui: ItemData.Grade
-    execute store result score $ItemRarity Temporary run data get storage ui: ItemData.Rarity
+    execute store result score $ItemGrade Temporary run data get storage ui: ItemData.grade
+    execute store result score $ItemRarity Temporary run data get storage ui: ItemData.rarity
     scoreboard players add $ItemGrade Temporary 1
     execute if score $ItemGrade Temporary matches 3 run scoreboard players add $ItemRarity Temporary 1
     execute if score $ItemRarity Temporary matches 5.. run scoreboard players set $ItemRarity Temporary 5
@@ -36,18 +36,18 @@
     data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.upgrade[0]
 
 # アイテム名に+強化数
-    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.Color set value "white"
-    execute if score $ItemRarity Temporary matches 2 run data modify storage ui: ItemData.Color set value "#6FE58D"
-    execute if score $ItemRarity Temporary matches 3 run data modify storage ui: ItemData.Color set value "#7C7CE8"
-    execute if score $ItemRarity Temporary matches 4 run data modify storage ui: ItemData.Color set value "#F65A5A"
-    execute if score $ItemRarity Temporary matches 5 run data modify storage ui: ItemData.Color set value "#F7F76D"
-    execute store result storage ui: ItemData.Grade int 1 run scoreboard players get $ItemGrade Temporary
+    execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.color set value "white"
+    execute if score $ItemRarity Temporary matches 2 run data modify storage ui: ItemData.color set value "#6FE58D"
+    execute if score $ItemRarity Temporary matches 3 run data modify storage ui: ItemData.color set value "#7C7CE8"
+    execute if score $ItemRarity Temporary matches 4 run data modify storage ui: ItemData.color set value "#F65A5A"
+    execute if score $ItemRarity Temporary matches 5 run data modify storage ui: ItemData.color set value "#F7F76D"
+    execute store result storage ui: ItemData.grade int 1 run scoreboard players get $ItemGrade Temporary
     function ui:smithing/upgrade/item/name with storage ui: ItemData
     data remove storage ui: ItemData.display
 
 # アイテムLoreの下2行
     data modify storage ui: Result.display.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
-    execute store result storage ui: ItemData.Rarity int 0.999 run scoreboard players get $ItemRarity Temporary
+    execute store result storage ui: ItemData.rarity int 0.999 run scoreboard players get $ItemRarity Temporary
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用

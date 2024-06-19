@@ -29,11 +29,11 @@
 
 # ステータスバフの強さ
     execute store result score $Amplifier Temporary run data get storage ui: SingleBuff.amplifier
-    execute store result storage ui: SingleBuff.Lore.Amplifier int 1 run scoreboard players get $Amplifier Temporary
+    execute store result storage ui: SingleBuff.Lore.amplifier int 1 run scoreboard players get $Amplifier Temporary
 
 # ステータスバフカラー
-    execute if score $Amplifier Temporary matches 0.. run data modify storage ui: SingleBuff.Lore.Color set value "#72FF5C"
-    execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: SingleBuff.Lore.Color set value "#FF4D4D"
+    execute if score $Amplifier Temporary matches 0.. run data modify storage ui: SingleBuff.Lore.color set value "#72FF5C"
+    execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: SingleBuff.Lore.color set value "#FF4D4D"
 
 # ステータスバフの符号
     execute if score $Amplifier Temporary matches 0.. run data modify storage ui: SingleBuff.Lore.Sign set value "+"

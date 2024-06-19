@@ -13,7 +13,7 @@
 
 # ポーションの色を決定
     function ui:brewing/brew/potion/color
-    data modify storage ui: Results[].components.minecraft:potion_contents.custom_color set from storage ui: PotionData.Color
+    data modify storage ui: Results[].components.minecraft:potion_contents.custom_color set from storage ui: PotionData.color
 
 # ポーションのバフ情報を決定
     function ui:brewing/brew/potion/buff/_

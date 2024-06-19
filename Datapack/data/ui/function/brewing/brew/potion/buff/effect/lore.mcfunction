@@ -20,13 +20,13 @@
     execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.Lore.Text set value "再生能力"
 
 # エフェクトカラー
-    execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.Lore.Color set value "#FF4D4D"
-    execute if data storage ui: SingleBuff{effect:"haste"} run data modify storage ui: SingleBuff.Lore.Color set value "blue"
-    execute if data storage ui: SingleBuff{effect:"hunger"} run data modify storage ui: SingleBuff.Lore.Color set value "#FF4D4D"
-    execute if data storage ui: SingleBuff{effect:"jump_boost"} run data modify storage ui: SingleBuff.Lore.Color set value "blue"
-    execute if data storage ui: SingleBuff{effect:"blindness"} run data modify storage ui: SingleBuff.Lore.Color set value "#FF4D4D"
-    execute if data storage ui: SingleBuff{effect:"water_breathing"} run data modify storage ui: SingleBuff.Lore.Color set value "blue"
-    execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.Lore.Color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.Lore.color set value "#FF4D4D"
+    execute if data storage ui: SingleBuff{effect:"haste"} run data modify storage ui: SingleBuff.Lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"hunger"} run data modify storage ui: SingleBuff.Lore.color set value "#FF4D4D"
+    execute if data storage ui: SingleBuff{effect:"jump_boost"} run data modify storage ui: SingleBuff.Lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"blindness"} run data modify storage ui: SingleBuff.Lore.color set value "#FF4D4D"
+    execute if data storage ui: SingleBuff{effect:"water_breathing"} run data modify storage ui: SingleBuff.Lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.Lore.color set value "blue"
 
 # エフェクトレベル
     execute if data storage ui: SingleBuff{amplifier:0} run data modify storage ui: SingleBuff.Lore.Level set value "0"

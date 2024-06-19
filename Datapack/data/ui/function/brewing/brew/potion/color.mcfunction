@@ -31,7 +31,7 @@
     scoreboard players operation $ItemRGB Temporary += $ItemR Temporary
     scoreboard players operation $ItemRGB Temporary += $ItemG Temporary
     scoreboard players operation $ItemRGB Temporary += $ItemB Temporary
-    execute store result storage ui: PotionData.Color int 1 run scoreboard players get $ItemRGB Temporary
+    execute store result storage ui: PotionData.color int 1 run scoreboard players get $ItemRGB Temporary
 
 # リセット
     scoreboard players reset $ItemR Temporary

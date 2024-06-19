@@ -2,7 +2,7 @@
 # 強化用アイテムを順次clear
 
 # 強化用アイテムデータの整形
-    data modify storage ui: Material set from storage ui: ItemData.UI.Upgrade[0]
+    data modify storage ui: Material set from storage ui: ItemData.ui.upgrade[0]
     data remove storage ui: Material[].components.minecraft:custom_data.display
     data remove storage ui: Material[].components.minecraft:custom_data.ui
 

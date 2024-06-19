@@ -28,8 +28,8 @@
 
 # 下2行は固定
     data modify storage ui: PotionData.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
-    execute store result storage ui: PotionData.Rarity.Value int 0.999 run scoreboard players get $ItemRarity Temporary
-    function ui:brewing/brew/potion/rarity with storage ui: PotionData.Rarity
+    execute store result storage ui: PotionData.rarity.value int 0.999 run scoreboard players get $ItemRarity Temporary
+    function ui:brewing/brew/potion/rarity with storage ui: PotionData.rarity
 
 # リセット
     scoreboard players reset $ItemRarity Temporary
