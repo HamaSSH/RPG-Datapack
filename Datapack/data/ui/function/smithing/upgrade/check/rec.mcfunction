@@ -2,7 +2,7 @@
 # 強化用アイテムの所持数と必要数のCountの比較
 
 execute store result score $RequiredItemCount Temporary run data get storage ui: Material[0].count
-execute on vehicle on vehicle on attacker run function ui:clear_item/0 with storage ui: Material[0]
+execute on vehicle on vehicle on attacker run function ui:clear_item/0 with storage ui: Material[0].components
 execute if score $ItemCount Temporary < $RequiredItemCount Temporary run tag @s remove Upgradable
 scoreboard players reset $RequiredItemCount Temporary
 scoreboard players reset $ItemCount Temporary

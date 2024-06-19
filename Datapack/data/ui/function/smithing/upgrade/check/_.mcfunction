@@ -4,17 +4,19 @@
 tag @s add Upgradable
 
 # 強化するアイテムのデータ→storage
-    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components
-    data remove storage ui: ItemData.components.minecraft:attribute_modifiers
+    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
+    data modify storage ui: ItemData.count set from storage ui: NewItems[{Slot:10b}].count
+    data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
+    data remove storage ui: ItemData.components.minecraft:attribute_modifierst
 
 # 強化用アイテムデータの整形
-    data modify storage ui: Material set from storage ui: ItemData.minecraft:custom_data.ui.upgrade[0]
-    data remove storage ui: Material[].components.minecraft:item_name
-    data remove storage ui: Material[].components.minecraft:lore
-    data remove storage ui: Material[].components.minecraft:custom_data.ui
+    data modify storage ui: Material set from storage ui: ItemData.ui.upgrade[0]
+    data remove storage ui: Material[].components.item_name
+    data remove storage ui: Material[].components.lore
+    data remove storage ui: Material[].components.custom_data
 
 # 最大で3回まで強化可能
-    execute if data storage ui: ItemData.minecraft:custom_data{grade:3} run tag @s remove Upgradable
+    execute if data storage ui: ItemData{grade:3} run tag @s remove Upgradable
 
 # 強化アイテムを持っているか1つずつ確認
     execute if data storage ui: Material[0] run function ui:smithing/upgrade/check/rec

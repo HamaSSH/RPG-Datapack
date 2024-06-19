@@ -3,6 +3,8 @@
 
 # 強化するアイテムのデータ→storage
     data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
+    data modify storage ui: ItemData.display.Name set from storage ui: NewItems[{Slot:10b}].components.minecraft:item_name
+    data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
     data remove storage ui: ItemData.AttributeModifiers
 
 # 合成スロットの保存
@@ -40,7 +42,8 @@
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用
-    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.display set from storage ui: Result.display
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:item_name set from storage ui: Result.display.Name
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
 # 演出
     playsound entity.villager.work_weaponsmith master @p ~ ~ ~ 0.8 1.2

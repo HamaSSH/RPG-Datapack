@@ -51,7 +51,8 @@
     function ui:smithing/upgrade/item/rarity with storage ui: ItemData
 
 # displayの適用
-    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.display set from storage ui: Result.display
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:item_name set from storage ui: Result.display.Name
+    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
 # 演出
     playsound block.anvil.place master @p ~ ~ ~ 0.9 1.5
