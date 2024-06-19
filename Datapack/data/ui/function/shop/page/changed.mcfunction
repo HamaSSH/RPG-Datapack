@@ -3,7 +3,7 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
-    clear @a[tag=UsingUI] #lib:every_item[minecraft:custom_data={ui:{item_type:"goods"}}]
+    clear @a[tag=UsingUI] *[custom_data={ui:{item_type:"goods"}}]
 
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
