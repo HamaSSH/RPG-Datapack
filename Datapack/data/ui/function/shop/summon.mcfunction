@@ -9,5 +9,5 @@
     execute positioned ~ ~1.1 ~ as @e[type=interaction,tag=UIInit,distance=..0.01,limit=1] run function ui:shop/init
 
 # リセット
-    data remove storage ui: ShopData
+    data remove storage ui: shop_data
     advancement revoke @s only ui:looking_at/shop

@@ -15,7 +15,7 @@
 
 # ページを移動する
     # 商品ページ移動
-        execute store result score $TotalPage Temporary if data entity @s data.ShopData[]
+        execute store result score $TotalPage Temporary if data entity @s data.shop_data[]
         scoreboard players remove $TotalPage Temporary 1
         execute if score @s ShopPage < $TotalPage Temporary unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{item_type:"forward"}}}}] run tag @s add Forward
         execute if score @s ShopPage matches 1.. unless data storage ui: Items[{Slot:9b,components:{"minecraft:custom_data":{ui:{item_type:"backward"}}}}] run tag @s add Backward
