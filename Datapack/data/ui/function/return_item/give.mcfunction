@@ -7,8 +7,8 @@
     loot spawn ~ ~ ~ mine 0 0 0 debug_stick
 
 # 瞬時にアイテムの主が拾う
-    data modify entity @n[type=item,distance=..0] Owner set from entity @p UUID
-    data modify entity @n[type=item,distance=..0] PickupDelay set value 0
+    execute as @e[type=item,distance=..0] run data modify entity @s Owner set from entity @p UUID
+    execute as @e[type=item,distance=..0] run data modify entity @s PickupDelay set value 0
 
 # リセット
     data remove storage ui: GiveItem
