@@ -3,7 +3,7 @@
 
 # スロット内のアイテムの売価を取得
     data modify storage ui: ItemData append from storage ui: NewItems[{components:{"minecraft:custom_data":{can_sell:1b}}}]
-    function ui:shop/sell/price
+    function ui:shop/sell/value
 
 # プレイヤーのGoldに売価を追加
     execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold += $TotalPrice Temporary
