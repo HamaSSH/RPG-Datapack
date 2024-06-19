@@ -22,5 +22,7 @@
     $execute store result storage ui: PotionData.buff[{effect:"$(effect)"}].duration int 1 run scoreboard players get $Duration Temporary
 
 # リセット
+    scoreboard players reset $Amplifier Temporary
     scoreboard players reset $Duration Temporary
+    scoreboard players reset $AddAmplifier Temporary
     scoreboard players reset $AddDuration Temporary
