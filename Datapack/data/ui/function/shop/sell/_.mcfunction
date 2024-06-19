@@ -6,19 +6,19 @@
     function ui:shop/sell/value
 
 # プレイヤーのGoldに売価を追加
-    execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold += $TotalPrice Temporary
+    execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold += $TotalValue Temporary
 
 # 売却情報の表示
-    tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalPrice","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]
+    tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalValue","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]
 
 # 演出
-    execute if score $TotalPrice Temporary matches 1.. run playsound entity.villager.yes master @p ~ ~ ~ 1 1.1
-    execute if score $TotalPrice Temporary matches 1.. run playsound entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5
+    execute if score $TotalValue Temporary matches 1.. run playsound entity.villager.yes master @p ~ ~ ~ 1 1.1
+    execute if score $TotalValue Temporary matches 1.. run playsound entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5
 
 # ページを移動する
     scoreboard players set @s UIPage 0
 
 # リセット
     data remove storage ui: NewItems[{components:{"minecraft:custom_data":{can_sell:1b}}}]
-    scoreboard players reset $TotalPrice Temporary
+    scoreboard players reset $TotalValue Temporary
     scoreboard players reset $TotalCount Temporary

@@ -6,8 +6,8 @@ data modify entity @s Items set value [{Slot:0b,id:"glass_bottle",components:{"m
 # スロット内のアイテムの売価を取得
     data modify storage ui: ItemData append from storage ui: NewItems[{components:{"minecraft:custom_data":{can_sell:1b}}}]
     execute if data storage ui: ItemData[] run function ui:shop/sell/value
-    execute if score $TotalPrice Temporary matches 1.. run item modify entity @s container.17 ui:shop/sell_price
+    execute if score $TotalValue Temporary matches 1.. run item modify entity @s container.17 ui:shop/sell_value
 
 # リセット
-    scoreboard players reset $TotalPrice Temporary
+    scoreboard players reset $TotalValue Temporary
     scoreboard players reset $TotalCount Temporary

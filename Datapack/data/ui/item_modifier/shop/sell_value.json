@@ -23,7 +23,7 @@
                 },
                 {
                     "score": {
-                        "name": "$TotalPrice",
+                        "name": "$TotalValue",
                         "objective": "Temporary"
                     }
                 },
