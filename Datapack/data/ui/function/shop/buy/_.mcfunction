@@ -2,6 +2,7 @@
 # アイテム購入処理
 
 # アイテムを与える
+    execute store result storage ui: GiveItem.count byte 1 run scoreboard players get $Count Temporary
     function ui:return_item/give
 
 # 金を払う

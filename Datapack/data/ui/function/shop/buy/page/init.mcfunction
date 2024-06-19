@@ -20,7 +20,12 @@ data modify entity @s Items set value [{Slot:0b,id:"glass_bottle",components:{"m
     execute if score $Price Temporary <= $PlayerGold Temporary run item modify entity @s container.16 ui:shop/can_buy
     execute unless score $Price Temporary <= $PlayerGold Temporary run item modify entity @s container.16 ui:shop/cannot_buy
 
+# 複数購入が可能か調べる
+    execute store result score $Stack Temporary run data get entity @s Items[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}].components.minecraft:custom_data.max_stack_size
+    execute if score $Stack Temporary matches 2.. run function ui:shop/buy/multiple/page/init
+
 # リセット
     scoreboard players reset $Price Temporary
     scoreboard players reset $PlayerGold Temporary
+    scoreboard players reset $Stack Temporary
     data remove storage ui: Products

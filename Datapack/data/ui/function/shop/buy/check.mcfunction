@@ -7,6 +7,7 @@
 
 # 再度買えるかどうか判定して購入
     execute store result score $Price Temporary run data get storage ui: GiveItem.components.minecraft:custom_data.price
+    scoreboard players operation $Price Temporary *= $Count Temporary
     execute on vehicle on vehicle on attacker run scoreboard players operation $PlayerGold Temporary = @s Gold
     execute if score $Price Temporary <= $PlayerGold Temporary run function ui:shop/buy/_
     execute unless score $Price Temporary <= $PlayerGold Temporary run data remove storage ui: GiveItem
@@ -17,4 +18,5 @@
 # リセット
     data remove storage ui: BuyItem
     scoreboard players reset $Price Temporary
+    scoreboard players reset $Count Temporary
     scoreboard players reset $PlayerGold Temporary
