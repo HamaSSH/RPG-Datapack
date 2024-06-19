@@ -6,7 +6,7 @@
     data modify storage ui: GiveItem set from block 0 0 0 Items[{Slot:0b}]
 
 # 再度買えるかどうか判定して購入
-    execute store result score $Price Temporary run data get storage ui: GiveItem.components.minecraft:custom_data.buy
+    execute store result score $Price Temporary run data get storage ui: GiveItem.components.minecraft:custom_data.price
     execute on vehicle on vehicle on attacker run scoreboard players operation $PlayerGold Temporary = @s Gold
     execute if score $Price Temporary <= $PlayerGold Temporary run function ui:shop/buy/_
     execute unless score $Price Temporary <= $PlayerGold Temporary run data remove storage ui: GiveItem

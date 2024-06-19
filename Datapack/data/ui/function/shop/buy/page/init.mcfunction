@@ -15,7 +15,7 @@ data modify entity @s Items set value [{Slot:0b,id:"glass_bottle",components:{"m
     function ui:shop/page/set_entry with storage ui: EntryData
 
 # アイテムが買えるかどうか判定して購入ボタンの配置
-    execute store result score $Price Temporary run data get entity @s Items[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}].components.minecraft:custom_data.buy
+    execute store result score $Price Temporary run data get entity @s Items[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}].components.minecraft:custom_data.price
     execute on vehicle on attacker run scoreboard players operation $PlayerGold Temporary = @s Gold
     execute if score $Price Temporary <= $PlayerGold Temporary run item modify entity @s container.16 ui:shop/can_buy
     execute unless score $Price Temporary <= $PlayerGold Temporary run item modify entity @s container.16 ui:shop/cannot_buy
