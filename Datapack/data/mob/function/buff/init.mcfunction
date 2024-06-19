@@ -9,8 +9,8 @@
     execute summon area_effect_cloud run function mob:buff/manager/root/_
 
 # バフの種類が被っているかチェック
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Status,tag=!BuffInit] data.Buff{status:"$(status)"} run function mob:buff/manager/compare
-$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Effect,tag=!BuffInit] data.Buff{effect:"$(effect)"} run function mob:buff/manager/compare
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Status,tag=!BuffInit] data.buff{status:"$(status)"} run function mob:buff/manager/compare
+$execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Effect,tag=!BuffInit] data.buff{effect:"$(effect)"} run function mob:buff/manager/compare
 
     # (効果が同じで弱い)→バフ付与なし
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffWeak] run kill @s
@@ -26,6 +26,6 @@ $execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers 
 
 # NewBuffの中身が無くなるまで再帰
     data remove storage mob: NewBuff[0]
-    data modify storage mob: Buff set from storage mob: NewBuff[0]
+    data modify storage mob: buff set from storage mob: NewBuff[0]
     execute if data storage mob: NewBuff[0] run function mob:buff/shaping
-    execute if data storage mob: NewBuff[0] run function mob:buff/init with storage mob: Buff
+    execute if data storage mob: NewBuff[0] run function mob:buff/init with storage mob: buff

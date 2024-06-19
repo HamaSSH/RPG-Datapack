@@ -2,8 +2,8 @@
 # 既存バフと新規バフを比較する
 
 # バフスコアの値→スコア
-    execute store result score $ExBuffAmp Temporary run data get entity @s data.Buff.amplifier
-    execute store result score $NewBuffAmp Temporary run data get storage player: Buff.amplifier
+    execute store result score $ExBuffAmp Temporary run data get entity @s data.buff.amplifier
+    execute store result score $NewBuffAmp Temporary run data get storage player: buff.amplifier
 
 # 新規バフの値が大きければ既存バフを上書き
     execute if score $ExBuffAmp Temporary matches 1.. if score $NewBuffAmp Temporary matches 1.. if score $ExBuffAmp Temporary > $NewBuffAmp Temporary run tag @e[type=marker,tag=BuffInit,distance=..0.01] add BuffWeak

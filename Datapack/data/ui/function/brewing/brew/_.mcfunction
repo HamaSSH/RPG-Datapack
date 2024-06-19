@@ -17,8 +17,8 @@
 
 # ポーションのバフ情報を決定
     function ui:brewing/brew/potion/buff/_
-    data remove storage ui: PotionData.Buff[].ID
-    data modify storage ui: Results[].components.minecraft:custom_data.consumables.buff set from storage ui: PotionData.Buff
+    data remove storage ui: PotionData.buff[].ID
+    data modify storage ui: Results[].components.minecraft:custom_data.consumables.buff set from storage ui: PotionData.buff
 
 # ポーションのdisplayの設定
     function ui:brewing/brew/potion/display
@@ -29,6 +29,7 @@
     execute store result storage ui: NewItems[{Slot:10b}].count byte 0.999 run data get storage ui: NewItems[{Slot:10b}].count
     execute store result storage ui: NewItems[{Slot:11b}].count byte 0.999 run data get storage ui: NewItems[{Slot:11b}].count
     execute store result storage ui: NewItems[{Slot:12b}].count byte 0.999 run data get storage ui: NewItems[{Slot:12b}].count
+    data remove storage ui: NewItems[{count:0b}]
 
 # 演出
     playsound block.brewing_stand.brew master @a ~ ~ ~ 0.5 0.9

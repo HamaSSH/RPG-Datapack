@@ -2,10 +2,10 @@
 # エフェクトがダブったら効果を強化
 
 # ポーションのバフ
-    $execute store result score $Amplifier Temporary run data get storage ui: PotionData.Buff[{effect:"$(effect)"}].amplifier
-    $execute store result score $Duration Temporary run data get storage ui: PotionData.Buff[{effect:"$(effect)"}].duration
-    execute store result score $AddAmplifier Temporary run data get storage ui: Ingredient.Buff[0].amplifier 0.5
-    execute store result score $AddDuration Temporary run data get storage ui: Ingredient.Buff[0].duration 0.5
+    $execute store result score $Amplifier Temporary run data get storage ui: PotionData.buff[{effect:"$(effect)"}].amplifier
+    $execute store result score $Duration Temporary run data get storage ui: PotionData.buff[{effect:"$(effect)"}].duration
+    execute store result score $AddAmplifier Temporary run data get storage ui: Ingredient.buff[0].amplifier 0.5
+    execute store result score $AddDuration Temporary run data get storage ui: Ingredient.buff[0].duration 0.5
     scoreboard players operation $Amplifier Temporary += $AddAmplifier Temporary
     scoreboard players operation $Duration Temporary += $AddDuration Temporary
 
@@ -18,8 +18,8 @@
 # バフ情報を更新
     scoreboard players operation $Duration Temporary /= #20 Constant
     scoreboard players operation $Duration Temporary *= #20 Constant
-    $execute store result storage ui: PotionData.Buff[{effect:"$(effect)"}].amplifier int 1 run scoreboard players get $Amplifier Temporary
-    $execute store result storage ui: PotionData.Buff[{effect:"$(effect)"}].duration int 1 run scoreboard players get $Duration Temporary
+    $execute store result storage ui: PotionData.buff[{effect:"$(effect)"}].amplifier int 1 run scoreboard players get $Amplifier Temporary
+    $execute store result storage ui: PotionData.buff[{effect:"$(effect)"}].duration int 1 run scoreboard players get $Duration Temporary
 
 # リセット
     scoreboard players reset $Duration Temporary

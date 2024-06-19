@@ -7,7 +7,7 @@
     data modify storage ui: PotionData.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822消費時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
 
 # バフの情報をもとにLoreを設定
-    execute if data storage ui: PotionData.Buff[] run function ui:brewing/brew/potion/buff/lore
+    execute if data storage ui: PotionData.buff[] run function ui:brewing/brew/potion/buff/lore
     data modify storage ui: PotionData.Lore append from storage ui: PotionData.EffectLore[]
     data modify storage ui: PotionData.Lore append from storage ui: PotionData.StatusLore[]
 
