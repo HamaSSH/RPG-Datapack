@@ -3,7 +3,7 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
-    clear @a[tag=UsingUI] *[custom_data={ui:{item_type:"blank"}}]
+    clear @a[tag=UsingUI] *[custom_data~{ui:{item_type:"blank"}}]
 
 # 鍛冶アイテムデータの整形
     # 鍛冶可能なアイテム(既にスロット内のものを除く)→SmithableItems

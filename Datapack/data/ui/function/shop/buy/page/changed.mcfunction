@@ -3,7 +3,7 @@
 
 # 不要アイテムのclear
     clear @a[tag=UsingUI] glass_bottle
-    clear @a[tag=UsingUI] *[custom_data={ui:{item_type:"blank"}}]
+    clear @a[tag=UsingUI] *[custom_data~{ui:{item_type:"blank"}}]
 
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items
