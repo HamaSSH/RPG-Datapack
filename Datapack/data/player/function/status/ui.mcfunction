@@ -2,6 +2,7 @@
 # ステータス確認UI
 
 tag @s add CheckingStatus
+playsound resource:custom.levelup master @s ~ ~ ~ 0.2 1.7
 
 # 自然回復力
     scoreboard players operation $HPRegenInt Temporary = @s HPRegen
@@ -22,6 +23,7 @@ tellraw @s [{"text": "\uE105▸ ","color": "white","italic": false},{"text": "�
 tellraw @s [{"text": "\uE106▸ ","color": "white","italic": false},{"text": "器用: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"DEX"},"bold":true},"\uF826",{"text": "\uE109▸ ","color": "white","italic": false},{"text": "素早さ: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"AGI"},"bold":true},"\n"]
 
 # リセット
+    tag @s remove PlaysoundOnce
     scoreboard players reset $HPRegenInt Temporary
     scoreboard players reset $HPRegenDec Temporary
     scoreboard players reset $MPRegenInt Temporary

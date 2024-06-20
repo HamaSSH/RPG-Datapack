@@ -14,19 +14,21 @@
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ボタン選択
-    execute unless data storage ui: Items[{Slot:9b,components:{"minecraft:profile":{}}}] on vehicle on vehicle on attacker run function player:status/ui
-    execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{class:"assassin"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_assassin run function player:class/assassin/join
-    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"fighter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_fighter run function player:class/fighter/join
-    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{class:"knight"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_knight run function player:class/knight/join
-    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{class:"warrior"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_warrior run function player:class/warrior/join
-    execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{class:"wizard"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_wizard run function player:class/wizard/join
-    execute unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_hunter run function player:class/hunter/join
+    execute unless data storage ui: Items[{Slot:9b,id:"minecraft:player_head"}] run data modify storage ui: Class.path set value "status/ui"
+    execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{class:"assassin"}}}}] unless predicate player:class/is_assassin run data modify storage ui: Class.path set value "class/assassin/join"
+    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"fighter"}}}}] unless predicate player:class/is_fighter run data modify storage ui: Class.path set value "class/fighter/join"
+    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{class:"knight"}}}}] unless predicate player:class/is_knight run data modify storage ui: Class.path set value "class/knight/join"
+    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{class:"warrior"}}}}] unless predicate player:class/is_warrior run data modify storage ui: Class.path set value "class/warrior/join"
+    execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{class:"wizard"}}}}] unless predicate player:class/is_wizard run data modify storage ui: Class.path set value "class/wizard/join"
+    execute unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] unless predicate player:class/is_hunter run data modify storage ui: Class.path set value "class/hunter/join"
+    execute if data storage ui: Class.path run function ui:class_change/page/_ with storage ui: Class
 
 # メニュー内容更新
-    execute on vehicle on vehicle on attacker run loot replace block 0 0 0 container.0 loot lib:get_mcid
-    data modify storage player: MCID set from block 0 0 0 Items[0].components.minecraft:profile.name
-    execute on vehicle run function ui:class_change/page/init with storage player:
-    data remove storage player: MCID
+    execute on vehicle run function ui:class_change/page/init
+
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # 二重更新防止
     execute on vehicle run data modify storage ui: Items set from entity @s Items
@@ -36,3 +38,4 @@
     tag @s remove TickOnce
     data remove storage ui: NewItems
     data remove storage ui: SmithableItems
+    data remove storage ui: Class

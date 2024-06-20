@@ -26,5 +26,6 @@ team leave @s
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # リセット
+    tag @s remove PlaysoundOnce
     tag @s remove ClassLectern
     scoreboard players reset @s ChangeClass
