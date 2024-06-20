@@ -12,7 +12,7 @@
     tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalValue","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]
 
 # 演出
-    execute if score $TotalValue Temporary matches 1.. run playsound entity.villager.yes master @p ~ ~ ~ 1 1.1
+    execute if score $TotalValue Temporary matches 1.. run playsound resource:entity.villager.yes3 master @p ~ ~ ~ 1 1.1
     execute if score $TotalValue Temporary matches 1.. run playsound entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5
 
 # ページを移動する

@@ -35,6 +35,10 @@
     execute if score @s UIPage matches 1 on vehicle run function ui:shop/sell/page/init
     execute if score @s UIPage matches 2..7 on vehicle run function ui:shop/buy/page/init with storage ui: ShopPage
 
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # 二重更新防止
     execute on vehicle run data modify storage ui: Items set from entity @s Items
     data modify entity @s data.Items set from storage ui: Items

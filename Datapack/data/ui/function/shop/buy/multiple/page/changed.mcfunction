@@ -50,6 +50,12 @@
     execute if score @s UIPage matches 2..7 on vehicle run function ui:shop/buy/page/init with storage ui: ShopPage
     execute if score @s UIPage matches 12..17 on vehicle run function ui:shop/buy/multiple/page/init
 
+# 効果音
+    execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.7
+    execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.9
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # 二重更新防止
     execute on vehicle run data modify storage ui: Items set from entity @s Items
     data modify entity @s data.Items set from storage ui: Items

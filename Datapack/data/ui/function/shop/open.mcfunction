@@ -5,7 +5,7 @@
     function ui:open
 
 # 音演出
-    playsound entity.villager.celebrate master @s ~ ~ ~ 1 1.2
+    playsound resource:entity.villager.yes1 master @s ~ ~ ~ 1 1.1
 
 # リセット
     advancement revoke @s only ui:open/shop

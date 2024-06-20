@@ -12,6 +12,10 @@
     execute if score $Price Temporary <= $PlayerGold Temporary run function ui:shop/buy/_
     execute unless score $Price Temporary <= $PlayerGold Temporary run data remove storage ui: GiveItem
 
+# 効果音
+    execute unless score $Price Temporary <= $PlayerGold Temporary run playsound resource:entity.villager.no3 master @a ~ ~ ~ 1 1.1
+    execute unless score $Price Temporary <= $PlayerGold Temporary run tag @s remove PlaysoundOnce
+
 # ページの移動
     scoreboard players set @s UIPage 0
 

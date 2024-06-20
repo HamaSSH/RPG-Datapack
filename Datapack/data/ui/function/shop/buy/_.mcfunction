@@ -7,3 +7,8 @@
 
 # 金を払う
     execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold -= $Price Temporary
+
+# 効果音
+    playsound resource:entity.villager.yes2 master @a ~ ~ ~ 1
+    execute on vehicle on vehicle on attacker run playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.25 1.5
+    tag @s remove PlaysoundOnce
