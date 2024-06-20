@@ -1,7 +1,7 @@
 #> ui:close
 # UIを閉じた際の処理
 
-# 不要なアイテムをclear
+# 不要なアイテムをclear #TODO: ホバーオフハンドのゴーストアイテム対策
     clear @a glass_bottle
     clear @a *[custom_data~{ui:{item_type:"blank"}}]
     clear @a *[custom_data~{ui:{item_type:"goods"}}]
