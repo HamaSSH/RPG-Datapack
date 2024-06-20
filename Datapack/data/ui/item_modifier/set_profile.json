@@ -1,0 +1,64 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name":
+            {
+                "selector": "@p",
+                "color": "white",
+                "italic": false
+            }
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "italic": false
+                },
+                {
+                    "text": "レベル: ",
+                    "color": "#FAFF75"
+                },
+                {
+                    "score": {
+                        "name": "@p",
+                        "objective": "LVL"
+                    },
+                    "color": "white",
+                    "bold": true
+                },
+                {
+                    "text": " (",
+                    "color": "gray"
+                },
+                {
+                    "score": {
+                        "name": "@p",
+                        "objective": "EXP"
+                    },
+                    "color": "#ABFF8C"
+                },
+                {
+                    "text": "/",
+                    "color": "gray",
+                    "font": "shift"
+                },
+                {
+                    "score": {
+                        "name": "@p",
+                        "objective": "NextEXP"
+                    },
+                    "color": "gray"
+                },
+                {
+                    "text": ")",
+                    "color": "gray"
+                }
+            ]
+        ],
+        "mode": "replace_all"
+    }
+]

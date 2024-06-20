@@ -1,0 +1,25 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+        [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "レベル: ",
+                "color": "#FAFF75"
+            },
+            {
+                "score": {
+                    "name": "@p",
+                    "objective": "AssassinLVL"
+                },
+                "bold": true
+            }
+        ]
+    ],
+    "mode": "replace_all"
+}

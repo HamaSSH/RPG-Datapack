@@ -6,6 +6,7 @@
     execute on passengers on passengers if entity @s[tag=SmithingMarker] run data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     execute on passengers on passengers if entity @s[tag=ShopMarker] run data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}]
     data remove storage ui: ReturnItems[{id:"minecraft:glass_bottle"}]
+    data remove storage ui: ReturnItems[{id:"minecraft:player_head"}]
     data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] on passengers on passengers run function ui:return_item/_

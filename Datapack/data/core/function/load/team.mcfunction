@@ -67,3 +67,8 @@
     team add Shop
     team modify Shop collisionRule never
     team modify Shop prefix ["\uF808",{"text":"\uE254","color":"white"},"\uF80F"]
+
+# 転職UI
+    team add ClassChange
+    team modify ClassChange collisionRule never
+    team modify ClassChange prefix ["\uF808",{"text":"\uE256","color":"white"},"\uF80F"]

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "chest_minecart",
+                    "nbt": "{Tags:[\"ClassUI\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "ui:class_change/open"
+    }
+}
