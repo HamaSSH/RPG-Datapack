@@ -11,7 +11,7 @@ $execute unless data storage ui: Items[{Slot:$(Slot),components:{"minecraft:cust
 
 # 配置したいアイテムのcountが1より多いとき過剰分を返却
     execute store result storage ui: CombineItem.count byte 0.999 run data get storage ui: CombineItem.count
-    execute unless data storage ui: CombineItem{count:0} run data modify storage ui: ReturnItems append from storage ui: CombineItem
+    execute unless data storage ui: CombineItem{count:0b} run data modify storage ui: ReturnItems append from storage ui: CombineItem
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
     data modify storage ui: CombineItem.count set value 1b
 
