@@ -46,10 +46,11 @@
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
 # 演出
-    playsound entity.villager.work_weaponsmith master @p ~ ~ ~ 0.8 1.2
-    playsound block.anvil.place master @p ~ ~ ~ 0.7 1.8
+    execute if entity @s[tag=PlaysoundOnce] run playsound entity.villager.work_weaponsmith master @a ~ ~ ~ 0.4 1.1
+    execute if entity @s[tag=PlaysoundOnce] run playsound block.anvil.place master @a ~ ~ ~ 0.3 1.4
 
 # リセット
+    tag @s remove PlaysoundOnce
     data remove storage ui: ItemData
     data remove storage ui: Result
     scoreboard players reset $ItemLore Temporary

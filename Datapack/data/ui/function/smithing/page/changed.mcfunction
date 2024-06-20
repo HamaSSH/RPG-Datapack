@@ -29,6 +29,10 @@
     # もし鍛冶可能アイテムが配置されていなければ移動しない
         execute unless data storage ui: Items[{Slot:10b}] unless data storage ui: NewItems[{Slot:10b}] run scoreboard players set @s UIPage 0
 
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # メニュー内容更新
     execute if score @s UIPage matches 0 on vehicle run function ui:smithing/page/init
     execute if score @s UIPage matches 1 on vehicle run function ui:smithing/upgrade/page/init
