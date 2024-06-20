@@ -16,6 +16,7 @@ team leave @s
 
 # レベルを戻す
     tag @s add ChangedClass
+    scoreboard players set @s WizardLVL 1
     scoreboard players operation @s EXP = @s WizardEXP
     execute if score @s EXP >= @s NextEXP run function player:status/lvl/up/_
     tag @s remove ChangedClass

@@ -15,12 +15,12 @@
 
 # ボタン選択
     execute unless data storage ui: Items[{Slot:9b,components:{"minecraft:profile":{}}}] on vehicle on vehicle on attacker run function player:status/ui
-    execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{class:"assassin"}}}}] on vehicle on vehicle on attacker run function player:class/assassin/join
-    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"fighter"}}}}] on vehicle on vehicle on attacker run function player:class/fighter/join
-    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{class:"knight"}}}}] on vehicle on vehicle on attacker run function player:class/knight/join
-    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{class:"warrior"}}}}] on vehicle on vehicle on attacker run function player:class/warrior/join
-    execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{class:"wizard"}}}}] on vehicle on vehicle on attacker run function player:class/wizard/join
-    execute unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] on vehicle on vehicle on attacker run function player:class/hunter/join
+    execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{class:"assassin"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_assassin run function player:class/assassin/join
+    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"fighter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_fighter run function player:class/fighter/join
+    execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{class:"knight"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_knight run function player:class/knight/join
+    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{class:"warrior"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_warrior run function player:class/warrior/join
+    execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{class:"wizard"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_wizard run function player:class/wizard/join
+    execute unless data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_hunter run function player:class/hunter/join
 
 # メニュー内容更新
     execute on vehicle on vehicle on attacker run loot replace block 0 0 0 container.0 loot lib:get_mcid

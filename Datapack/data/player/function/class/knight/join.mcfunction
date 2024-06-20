@@ -16,6 +16,7 @@ team leave @s
 
 # レベルを戻す
     tag @s add ChangedClass
+    scoreboard players set @s KnightLVL 1
     scoreboard players operation @s EXP = @s KnightEXP
     execute if score @s EXP >= @s NextEXP run function player:status/lvl/up/_
     tag @s remove ChangedClass
