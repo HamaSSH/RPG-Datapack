@@ -10,9 +10,9 @@
     execute if predicate player:hold_weapon/_ run data modify storage player: Weapon.Mainhand set from storage player: SelectedItem
     data modify storage player: Weapon.Offhand set from storage player: Inventory[{Slot:-106b,components:{"minecraft:custom_data":{weapon:"helmet"}}}]
     data modify storage player: Equipment.Helmet set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"helmet"}}}]
-    data modify storage player: Equipment.Chestplate set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"chestplate"}}}]
-    data modify storage player: Equipment.Leggings set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"leggings"}}}]
-    data modify storage player: Equipment.Boots set from storage player: Inventory[{Slot:103b,components:{"minecraft:custom_data":{equipment:"boots"}}}]
+    data modify storage player: Equipment.Chestplate set from storage player: Inventory[{Slot:102b,components:{"minecraft:custom_data":{equipment:"chestplate"}}}]
+    data modify storage player: Equipment.Leggings set from storage player: Inventory[{Slot:101b,components:{"minecraft:custom_data":{equipment:"leggings"}}}]
+    data modify storage player: Equipment.Boots set from storage player: Inventory[{Slot:100b,components:{"minecraft:custom_data":{equipment:"boots"}}}]
     data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:9b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
     data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:10b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
     data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:11b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
