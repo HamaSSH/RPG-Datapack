@@ -53,9 +53,14 @@
         execute if score $EffectCount Temporary matches 6 run data modify storage player:ui buff.effect.suffix set value '"\\uF804\\uF806\\uF807\\uF805\\uF806\\uF806"'
         execute if score $EffectCount Temporary matches 7 run data modify storage player:ui buff.effect.prefix set value '"\\uF805\\uF806\\uF806\\uF806\\uF806\\uF807\\uF806"'
         execute if score $EffectCount Temporary matches 7 run data modify storage player:ui buff.effect.suffix set value '"\\uF804\\uF806\\uF807\\uF805\\uF806\\uF806\\uF806"'
+        execute if score $EffectCount Temporary matches 8 run data modify storage player:ui buff.effect.prefix set value '"\\uF805\\uF806\\uF806\\uF806\\uF806\\uF807\\uF806\\uF806"'
+        execute if score $EffectCount Temporary matches 8 run data modify storage player:ui buff.effect.suffix set value '"\\uF804\\uF806\\uF807\\uF805\\uF806\\uF806\\uF806\\uF806"'
     # 調整用
         execute unless score $BuffCount Temporary matches 1.. run data modify storage player:ui buff.separator set value '"\\uF802"'
         execute if score $BuffCount Temporary matches 1.. if score $EffectCount Temporary matches 1.. run data modify storage player:ui buff.extra set value '"\\uF801"'
+
+# text_displayでバフloreを一度まとめる
+    execute positioned ~ ~1000 ~ summon text_display run function player:ui/buff/lore
 
 # リセット
     scoreboard players reset $PlayerID Temporary
