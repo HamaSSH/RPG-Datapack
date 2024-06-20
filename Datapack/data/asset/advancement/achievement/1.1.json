@@ -15,8 +15,7 @@
         "announce_to_chat": false,
         "hidden": false
     },
-    "#": "#TODO: achievement2→achievementに戻す",
-    "parent": "asset:achievement2/_",
+    "parent": "asset:achievement/_",
     "criteria": {
         "requirements": {
             "trigger": "impossible"
