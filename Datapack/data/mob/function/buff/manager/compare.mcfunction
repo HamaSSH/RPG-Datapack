@@ -6,9 +6,9 @@
     execute store result score $NewBuffAmp Temporary run data get storage mob: buff.amplifier
 
 # 新規バフの値が大きければ既存バフを上書き
-    execute if score $ExBuffAmp Temporary matches 1.. if score $NewBuffAmp Temporary matches 1.. if score $ExBuffAmp Temporary > $NewBuffAmp Temporary run tag @e[type=marker,tag=BuffInit,distance=..0.01] add BuffWeak
+    execute if score $ExBuffAmp Temporary matches 0.. if score $NewBuffAmp Temporary matches 1.. if score $ExBuffAmp Temporary > $NewBuffAmp Temporary run tag @e[type=marker,tag=BuffInit,distance=..0.01] add BuffWeak
     execute if score $ExBuffAmp Temporary matches ..-1 if score $NewBuffAmp Temporary matches ..-1 if score $ExBuffAmp Temporary < $NewBuffAmp Temporary run tag @e[type=marker,tag=BuffInit,distance=..0.01] add BuffWeak
-    execute if score $ExBuffAmp Temporary matches 1.. if score $NewBuffAmp Temporary matches 1.. if score $ExBuffAmp Temporary <= $NewBuffAmp Temporary run tag @s add BuffOverwrite
+    execute if score $ExBuffAmp Temporary matches 0.. if score $NewBuffAmp Temporary matches 1.. if score $ExBuffAmp Temporary <= $NewBuffAmp Temporary run tag @s add BuffOverwrite
     execute if score $ExBuffAmp Temporary matches ..-1 if score $NewBuffAmp Temporary matches ..-1 if score $ExBuffAmp Temporary >= $NewBuffAmp Temporary run tag @s add BuffOverwrite
 
 # 正負が逆でも上書き
