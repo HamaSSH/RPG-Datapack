@@ -1,9 +1,6 @@
 #> player:ui/buff
 # 現状受けているバフ表示
 
-# 初期化
-    data modify storage player:ui buff.main set value ["","","","","","","","","","","","","","","","","","","","",""]
-
 # 左右に括弧
     data modify storage player:ui buff.bracketL set value '"\\uE302\\uF822"'
     data modify storage player:ui buff.bracketR set value '"\\uF824\\uE303"'
@@ -60,7 +57,8 @@
         execute if score $BuffCount Temporary matches 1.. if score $EffectCount Temporary matches 1.. run data modify storage player:ui buff.extra set value '"\\uF801"'
 
 # text_displayでバフloreを一度まとめる
-    execute positioned ~ ~1000 ~ summon text_display run function player:ui/buff/lore
+    execute unless data storage player:ui buff.main[20] run function player:ui/buff/fill
+    execute positioned ~ ~1000 ~ run function player:ui/buff/lore
 
 # リセット
     scoreboard players reset $PlayerID Temporary
