@@ -27,7 +27,7 @@
     execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{item_type:"upgrade"}}}}] run function ui:smithing/upgrade/check/_
 
 # 効果音
-    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
     execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # ページを移動する

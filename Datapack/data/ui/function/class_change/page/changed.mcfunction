@@ -27,7 +27,7 @@
     execute on vehicle run function ui:class_change/page/init
 
 # 効果音
-    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
     execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # 二重更新防止
