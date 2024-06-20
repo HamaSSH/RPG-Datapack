@@ -4,7 +4,7 @@
 tag @s remove UIInit
 
 # プレイヤーUUIDの保存
-    data modify entity @s attack.player set from entity @p UUID
+    data modify entity @s attack.player set from entity @p[advancements={ui:looking_at/shop=true}] UUID
 
 # 店の商品のデータをmarkerに格納
     execute on passengers on passengers run data modify entity @s data.shop_data set from storage ui: shop_data
