@@ -26,6 +26,10 @@
 # 強化する
     execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{item_type:"upgrade"}}}}] run function ui:smithing/upgrade/check/_
 
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # ページを移動する
     execute unless data storage ui: Items[{Slot:9b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{smithable:1b}}}}] run scoreboard players set @s UIPage 0

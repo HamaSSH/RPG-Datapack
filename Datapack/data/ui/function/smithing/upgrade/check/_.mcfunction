@@ -22,5 +22,9 @@ tag @s add Upgradable
     execute if data storage ui: Material[0] run function ui:smithing/upgrade/check/rec
     execute if entity @s[tag=Upgradable] run function ui:smithing/upgrade/_
 
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # リセット
     data remove storage ui: ItemData

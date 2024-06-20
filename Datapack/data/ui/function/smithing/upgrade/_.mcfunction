@@ -55,11 +55,12 @@
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
 # 演出
-    playsound block.anvil.place master @p ~ ~ ~ 0.9 1.5
-    playsound block.anvil.destroy master @p ~ ~ ~ 0.7 0.7
-    playsound block.anvil.use master @p ~ ~ ~ 0.6
+    playsound block.anvil.place master @a ~ ~ ~ 0.9 1.5
+    playsound block.anvil.destroy master @a ~ ~ ~ 0.7 0.7
+    playsound block.anvil.use master @a ~ ~ ~ 0.6
 
 # リセット
+    tag @s remove PlaysoundOnce
     data remove storage ui: ItemData
     data remove storage ui: Result
     scoreboard players reset $ItemLore Temporary
