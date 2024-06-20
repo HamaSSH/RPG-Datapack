@@ -31,6 +31,10 @@
 # 醸造する
     execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"brew"}}}}] run function ui:brewing/brew/check
 
+# 効果音
+    execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.2 1.8
+    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+
 # メニュー内容更新
     # 初期化
         execute on vehicle run function ui:brewing/page/init

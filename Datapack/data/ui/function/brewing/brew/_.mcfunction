@@ -37,5 +37,6 @@
     playsound item.firecharge.use master @a ~ ~ ~ 0.35 1.3
 
 # リセット
+    tag @s remove PlaysoundOnce
     data remove storage ui: Ingredient
     data remove storage ui: PotionData
