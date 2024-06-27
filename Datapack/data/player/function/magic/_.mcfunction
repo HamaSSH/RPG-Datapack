@@ -4,7 +4,6 @@
 # INTによる魔法威力変更
     execute store result score $MagicDmg Temporary run data get storage player: magic.damage
     execute store result score $DmgMultiplier Temporary run data get storage player: magic.multiplier
-    scoreboard players add $DmgMultiplier Temporary 100
     scoreboard players operation $PlayerINT Temporary = @s INT
     scoreboard players operation $PlayerINT Temporary *= $DmgMultiplier Temporary
     scoreboard players operation $PlayerINT Temporary /= #100 Constant
