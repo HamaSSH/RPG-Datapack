@@ -1,6 +1,15 @@
 #> player:magic/_
 # プレイヤーの魔法発動
 
+# INTによる魔法威力変更
+    execute store result score $MagicDmg Temporary run data get storage player: magic.damage
+    execute store result score $DmgMultiplier Temporary run data get storage player: magic.multiplier
+    scoreboard players add $DmgMultiplier Temporary 100
+    scoreboard players operation $PlayerINT Temporary = @s INT
+    scoreboard players operation $PlayerINT Temporary *= $DmgMultiplier Temporary
+    scoreboard players operation $PlayerINT Temporary /= #100 Constant
+    scoreboard players operation $MagicDmg Temporary += $PlayerINT Temporary
+    execute store result storage player: magic.damage int 1 run scoreboard players get $MagicDmg Temporary
 
 # 各魔法発動時の処理
     tag @s add TriggerMagic
@@ -18,5 +27,8 @@
     execute if data storage player: magic{element:"wind"} run effect give @s slow_falling infinite 0 true
 
 # リセット
+    scoreboard players reset $MagicDmg Temporary
+    scoreboard players reset $DmgMultiplier Temporary
+    scoreboard players reset $PlayerINT Temporary
     data remove storage player: used_tick
     tag @s remove TriggerMagic
