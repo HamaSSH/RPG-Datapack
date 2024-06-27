@@ -71,4 +71,4 @@
 # 転職UI
     team add ClassChange
     team modify ClassChange collisionRule never
-    team modify ClassChange prefix ["\uF808",{"text":"\uE256","color":"white"},"\uF80F"]
+    team modify ClassChange prefix ["\uF808",{"text":"\uE256","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"転職","bold":true},"\uF80F"]
