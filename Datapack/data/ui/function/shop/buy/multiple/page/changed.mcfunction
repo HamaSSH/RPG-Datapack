@@ -16,6 +16,7 @@
 
 # countを変更する
     execute store result score $Count Temporary run data get storage ui: Items[{Slot:11b}].count
+    execute store result score $MaxCount Temporary run data get storage ui: Items[{Slot:11b}].components.minecraft:max_stack_size
     execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set $AddCount Temporary -1
     execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players remove @s UIPage 10
     execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set $AddCount Temporary 1
@@ -26,7 +27,7 @@
     execute if score $Count Temporary matches 1 run scoreboard players operation $Count Temporary = $AddCount Temporary
     execute if score $Count Temporary matches 1 run scoreboard players set $Count Temporary 2
     execute if score $Count Temporary matches ..0 run scoreboard players set $Count Temporary 1
-    execute if score $Count Temporary matches 65.. run scoreboard players set $Count Temporary 64
+    execute if score $Count Temporary > $MaxCount Temporary run scoreboard players operation $Count Temporary = $MaxCount Temporary
     execute on vehicle store result entity @s Items[{Slot:11b}].count byte 1 run scoreboard players get $Count Temporary
 
 # 購入する
@@ -63,6 +64,7 @@
 # リセット
     tag @s remove TickOnce
     scoreboard players reset $Count Temporary
+    scoreboard players reset $MaxCount Temporary
     scoreboard players reset $AddCount Temporary
     data remove storage ui: BuyItem
     data remove storage ui: ShopPage
