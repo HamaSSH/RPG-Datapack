@@ -16,7 +16,7 @@
 
 # countを変更する
     execute store result score $Count Temporary run data get storage ui: Items[{Slot:11b}].count
-    execute store result score $MaxCount Temporary run data get storage ui: Items[{Slot:11b}].components.minecraft:max_stack_size
+    execute store result score $MaxCount Temporary run data get storage ui: Items[{Slot:11b}].components.minecraft:custom_data.max_stack_size
     execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set $AddCount Temporary -1
     execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{item_type:"goods"}}}}] run scoreboard players remove @s UIPage 10
     execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set $AddCount Temporary 1
