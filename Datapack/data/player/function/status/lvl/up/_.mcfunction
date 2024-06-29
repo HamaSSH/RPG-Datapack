@@ -5,6 +5,10 @@
     execute unless entity @s[tag=BeforeLevelup] unless entity @s[tag=ChangedClass] run function player:status/before_levelup
     function player:class/status/up/_
 
+# リジェネレーション
+    data modify storage player: NewBuff set value [{effect:"regeneration",duration:60,amplifier:8}]
+    function player:buff/_
+
 # レベルアップ
     tag @s add LevelUp
     scoreboard players add @s LVL 1

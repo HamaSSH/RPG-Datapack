@@ -21,7 +21,6 @@
     execute if predicate player:class/is_wizard run function player:class/status/up/wizard
     execute if predicate player:class/is_hunter run function player:class/status/up/hunter
     tag @s add StatusUpdate
-    tag @s add HPFull
     tag @s add MPFull
 
 # リセット
