@@ -4,8 +4,9 @@
 # プレイヤー用tickの始動
     scoreboard players add @s 5502.Tick 0
 
-# TODO: 素早さバフ
-    effect give @s speed 10 1 true
+# 素早さバフ
+    data modify storage player: NewBuff set value [{status:"AGI",duration:200,amplifier:100}]
+    function player:buff/_
 
 # 演出
     playsound item.trident.riptide_3 master @a ~ ~ ~ 0.4 1.4
