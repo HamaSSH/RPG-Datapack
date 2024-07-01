@@ -5,13 +5,13 @@
     data modify entity @s Invulnerable set value 1b
 
 # 図鑑用count+1
-    $execute store result score $Count Temporary run data get storage book:fish Data[{id:$(id)}].count
+    $execute store result score $Count Temporary run data get storage zukan:fish Data[{id:$(id)}].count
     execute store result storage item: Fish.count int 1 run scoreboard players add $Count Temporary 1
 
 # 魚のサイズの抽選
     $execute store result score $Size Temporary run random value $(min)..$(max)
     execute store result storage item: Fish.size int 1 run scoreboard players get $Size Temporary
-    $execute store result score $RecordSize Temporary run data get storage book:fish Data[{id:$(id)}].size
+    $execute store result score $RecordSize Temporary run data get storage zukan:fish Data[{id:$(id)}].size
     execute if score $Size Temporary > $RecordSize Temporary run tag @s add NewRecord
 
 # サイズの判定
@@ -42,9 +42,9 @@
     tellraw @p [{"nbt":"Data.text.fish_print","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:","interpret":true},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
 
 # 図鑑にデータ格納
-    $execute unless entity @s[tag=NewRecord] run data modify storage item: Fish.size set from storage book:fish Data[{id:$(id)}].size
-    execute if score $Count Temporary matches 1 run data modify storage book:fish Data append from storage item: Fish
-    $execute if score $Count Temporary matches 2.. run data modify storage book:fish Data[{id:$(id)}] set from storage item: Fish
+    $execute unless entity @s[tag=NewRecord] run data modify storage item: Fish.size set from storage zukan:fish Data[{id:$(id)}].size
+    execute if score $Count Temporary matches 1 run data modify storage zukan:fish Data append from storage item: Fish
+    $execute if score $Count Temporary matches 2.. run data modify storage zukan:fish Data[{id:$(id)}] set from storage item: Fish
 
 # Motion
     data modify entity @s Motion set from storage item: Motion
