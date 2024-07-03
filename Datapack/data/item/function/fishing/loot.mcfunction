@@ -47,7 +47,7 @@
     tellraw @p [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Data.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
 
 # 魚の長さ(テキスト)生成
-    summon text_display ~ ~1000 ~ {billboard:"center",Tags:["FishLength","AutoKill","Timer"],text:'[{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"}]'}
+    summon text_display ~ ~1000 ~ {alignment:"left",Tags:["FishLength","AutoKill","Timer"],text:'[{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"}]'}
     execute positioned ~ ~1000 ~ run data modify storage item: Fish.length set from entity @n[type=text_display,tag=FishLength,distance=..0.01] text
     execute positioned ~ ~1000 ~ run kill @n[type=text_display,tag=FishLength,distance=..0.01]
 
