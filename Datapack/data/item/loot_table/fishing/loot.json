@@ -5,17 +5,22 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1016",
+                    "value": "asset:item/1600",
                     "weight": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1017",
+                    "value": "asset:item/1601",
                     "weight": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1018",
+                    "value": "asset:item/1602",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1603",
                     "weight": 1
                 },
                 {
