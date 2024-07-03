@@ -26,7 +26,7 @@
         $scoreboard players remove $SilverSize Temporary $(min)
         scoreboard players operation $SilverSize Temporary /= #-5 Constant
         $scoreboard players add $SilverSize Temporary $(max)
-        execute if score $Size Temporary >= $SilverSize Temporary run data modify storage item: Data.crown set value "🥈"
+        execute if score $Size Temporary >= $SilverSize Temporary run data modify storage item: Fish.crown set value "🥈"
         execute if score $Size Temporary >= $SilverSize Temporary run playsound resource:custom.levelup master @a ~ ~ ~ 0.2 0.9
         execute if score $Size Temporary >= $SilverSize Temporary run particle totem_of_undying ~ ~ ~ 0.3 0.3 0.3 0.5 50 force
     # 金サイズ（約5%）
@@ -34,7 +34,7 @@
         $scoreboard players remove $GoldSize Temporary $(min)
         scoreboard players operation $GoldSize Temporary /= #-20 Constant
         $scoreboard players add $GoldSize Temporary $(max)
-        execute if score $Size Temporary >= $GoldSize Temporary run data modify storage item: Data.crown set value "🥇"
+        execute if score $Size Temporary >= $GoldSize Temporary run data modify storage item: Fish.crown set value "🥇"
         execute if score $Size Temporary >= $GoldSize Temporary run playsound resource:custom.levelup master @a ~ ~ ~ 0.25 1.2
         execute if score $Size Temporary >= $GoldSize Temporary run particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.8 100 force
 
@@ -44,7 +44,7 @@
     data modify storage item: Data.text.dec set string storage item: Fish.size -2
     execute if score $Count Temporary matches 1 run data modify storage item: Data.text.new set value '{"text":" NEW!","bold":true,"color":"#F3E478"}'
     execute if entity @s[tag=NewRecord] run data modify storage item: Data.text.new_record set value '{"text":" ‐最大サイズ更新‐","color":"gray"}'
-    tellraw @p [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Data.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
+    tellraw @p [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
 
 # 魚の長さ(テキスト)生成
     summon text_display ~ ~1000 ~ {alignment:"left",Tags:["FishLength","AutoKill","Timer"],text:'[{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"}]'}
@@ -54,8 +54,9 @@
 # 魚のデータ保存
     data remove storage item: Fish.max
     data remove storage item: Fish.min
-    execute if entity @s[tag=NewRecord] run data modify storage item: Fish.crown set from storage item: Data.crown
-    execute unless data storage item: Data.crown run data modify storage item: Fish.crown set value "🥉"
+    execute unless data storage item: Fish.crown run data modify storage item: Fish.crown set value "🥉"
+    $execute unless entity @s[tag=NewRecord] run data modify storage item: Fish.crown set from storage zukan:fish Data[{id:$(id)}].crown
+    $execute unless entity @s[tag=NewRecord] run data modify storage item: Fish.length set from storage zukan:fish Data[{id:$(id)}].length
     $execute unless entity @s[tag=NewRecord] run data modify storage item: Fish.size set from storage zukan:fish Data[{id:$(id)}].size
     $data modify storage zukan:fish Data[{id:$(id)}] set from storage item: Fish
 
