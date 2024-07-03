@@ -16,6 +16,9 @@
 # 武器にアイテムUUIDを設定
     execute if data storage player: SelectedItem.components.minecraft:custom_data.weapon unless data storage player: SelectedItem.components.minecraft:custom_data.UUID run function player:item_data/set_uuid
 
+# 図鑑更新
+    execute if items entity @s weapon.* written_book[custom_data~{type:"fish_zukan"}] run function item:zukan/fish/update with storage global: fish
+
 # mainhandにあるアイテムのUUIDが変わった場合
     execute if data storage player: SelectedItem.components.minecraft:custom_data.weapon store result score @s ItemUUID run data get entity @s SelectedItem.components.minecraft:custom_data.UUID
     execute unless score @s ItemUUID = @s PreviousItemUUID run function player:trigger/changed_mainhand
