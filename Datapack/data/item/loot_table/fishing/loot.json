@@ -6,21 +6,41 @@
                 {
                     "type": "loot_table",
                     "value": "asset:item/1600",
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1601",
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1602",
-                    "weight": 1
+                    "weight": 3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1603",
+                    "weight": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1604",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1605",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1606",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1607",
                     "weight": 1
                 },
                 {
