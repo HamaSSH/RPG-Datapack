@@ -1,0 +1,14 @@
+{
+    "function": "copy_custom_data",
+    "source": {
+        "type": "storage",
+        "source": "global:"
+    },
+    "ops": [
+        {
+            "source": "fish.zukan_ver",
+            "target": "ver",
+            "op": "replace"
+        }
+    ]
+}

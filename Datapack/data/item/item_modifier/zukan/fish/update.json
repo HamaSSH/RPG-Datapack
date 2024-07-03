@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/set_ver"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/0"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/1"
+    }
+]
