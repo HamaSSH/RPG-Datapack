@@ -14,6 +14,6 @@
     loot spawn ~ ~ ~ loot asset:material/401.sweet_berries
     playsound block.sweet_berry_bush.pick_berries master @a
 
-# 見た目の変更 #TODO: deathの際採集できなくする＋リスポーンのタイマー
+# 見た目の変更 #TODO: リスポーン管理
     execute if score @s HP matches 3 run function asset:material/401.sweet_berries/collect/stage/2
     execute if score @s HP matches ..0 run function asset:material/401.sweet_berries/collect/death

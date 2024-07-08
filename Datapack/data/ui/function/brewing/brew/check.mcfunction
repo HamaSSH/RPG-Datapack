@@ -1,7 +1,7 @@
 #> ui:brewing/brew/check
 # 醸造できるか確認
 
-# 素材スロット内にアイテムがあるか確認 #TODO: 入れるアイテム数によって効果時間とエフェクト効果のバフの比率が違ってくる
+# 素材スロット内にアイテムがあるか確認
     execute if data storage ui: NewItems[{Slot:10b,components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run scoreboard players add $BrewIngredients Temporary 1
     execute if data storage ui: NewItems[{Slot:11b,components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run scoreboard players add $BrewIngredients Temporary 1
     execute if data storage ui: NewItems[{Slot:12b,components:{"minecraft:custom_data":{ui:{brewable:1b}}}}] run scoreboard players add $BrewIngredients Temporary 1
