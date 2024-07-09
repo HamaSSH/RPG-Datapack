@@ -1,5 +1,6 @@
 {
     "values": [
-        "asset:mob/000.example/tick/id"
+        "asset:mob/000.example/tick/id",
+        "asset:mob/002.skull/tick/id"
     ]
 }

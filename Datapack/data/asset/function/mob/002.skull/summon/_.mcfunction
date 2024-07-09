@@ -1,7 +1,7 @@
 #> asset:mob/002.skull/summon/_
 # 召喚処理
 
-# 元のモブの召喚 #TODO: カスタム当たり判定
+# 元のモブの召喚
     summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/002.skull",Passengers:[{id:"magma_cube",Silent:1b,Tags:["AutoKill","HasVehicle","Hitbox"]},{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AutoKill","HasVehicle"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10021}}]}]}
 
 # データの設定
