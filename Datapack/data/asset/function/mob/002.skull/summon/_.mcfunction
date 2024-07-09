@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/002.skull",Passengers:[{id:"magma_cube",Silent:1b,Tags:["AutoKill","HasVehicle","Hitbox"]},{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AutoKill","HasVehicle"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10021}}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/002.skull",attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",NoAI:1b,Silent:1b,Tags:["AutoKill","HasVehicle","Hitbox"]},{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AutoKill","HasVehicle"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10021}}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 2

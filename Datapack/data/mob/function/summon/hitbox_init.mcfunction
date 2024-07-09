@@ -10,6 +10,9 @@
     effect give @s regeneration infinite 255 true
     execute if entity @s[type=#lib:undead] run effect give @s instant_damage infinite 0 true
 
+# 名前の適用
+    function mob:summon/set_name
+
 # 重複のないようなMobUUIDの生成
     scoreboard players add World MobUUID 1
     scoreboard players operation World MobUUID %= #512 Constant
