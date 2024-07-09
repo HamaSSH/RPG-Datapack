@@ -2,6 +2,9 @@
     "values": [
         "asset:mob/000.example/hurt/id",
         "asset:mob/002.skull/hurt/id",
-        "asset:mob/005.oak_orc/hurt/id"
+        "asset:mob/005.oak_orc/hurt/id",
+        "asset:mob/008.stray_skull/hurt/id",
+        "asset:mob/010.wither_skull/hurt/id",
+        "asset:mob/012.bogged_skull/hurt/id"
     ]
 }

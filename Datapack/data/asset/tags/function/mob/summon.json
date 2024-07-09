@@ -6,6 +6,12 @@
         "asset:mob/003.slime/summon/id",
         "asset:mob/004.zombie/summon/id",
         "asset:mob/005.oak_orc/summon/id",
-        "asset:mob/006.spider/summon/id"
+        "asset:mob/006.spider/summon/id",
+        "asset:mob/007.stray/summon/id",
+        "asset:mob/008.stray_skull/summon/id",
+        "asset:mob/009.wither_skeleton/summon/id",
+        "asset:mob/010.wither_skull/summon/id",
+        "asset:mob/011.bogged/summon/id",
+        "asset:mob/012.bogged_skull/summon/id"
     ]
 }

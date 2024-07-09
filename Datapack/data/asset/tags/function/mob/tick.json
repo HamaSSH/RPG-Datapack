@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:mob/000.example/tick/id",
-        "asset:mob/002.skull/tick/id"
+        "asset:mob/002.skull/tick/id",
+        "asset:mob/008.stray_skull/tick/id",
+        "asset:mob/010.wither_skull/tick/id",
+        "asset:mob/012.bogged_skull/tick/id"
     ]
 }
