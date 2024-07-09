@@ -1,5 +1,5 @@
 #> mob:on_hurt/element/water
-# 水纏いのプレイヤーに攻撃された時のデバフ
+# 水デバフ
 
 # ダメージと防御力30%カット
     data modify storage mob: NewBuff set value [{status:"DmgDealt",duration:40},{status:"DEF",duration:40}]
