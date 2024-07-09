@@ -10,32 +10,6 @@
     effect give @s regeneration infinite 255 true
     execute if entity @s[type=#lib:undead] run effect give @s instant_damage infinite 0 true
 
-# 装備の設定
-    data modify storage asset:mob ArmorItems set value []
-    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Feet
-    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Legs
-    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Chest
-    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Head
-    data modify storage asset:mob HandItems set value []
-    data modify storage asset:mob HandItems append from storage asset:mob Data.Mainhand
-    data modify storage asset:mob HandItems append from storage asset:mob Data.Offhand
-
-# 名前と装備の適用
-    function mob:summon/set_name
-    data modify entity @s ArmorItems set from storage asset:mob ArmorItems
-    data modify entity @s HandItems set from storage asset:mob HandItems
-
-# ステータススコア
-    execute store result score @s MobID run data get storage asset:mob Data.MobID
-    execute store result score @s LVL run data get storage asset:mob Data.Status.LVL
-    execute store result score @s HPMax run data get storage asset:mob Data.Status.HP
-    execute store result score @s HP run data get storage asset:mob Data.Status.HP
-    execute store result score @s DEF run data get storage asset:mob Data.Status.DEF
-    execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
-    execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
-    execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
-    function mob:summon/set_speed
-
 # 重複のないようなMobUUIDの生成
     scoreboard players add World MobUUID 1
     scoreboard players operation World MobUUID %= #512 Constant
@@ -69,13 +43,3 @@
         execute if score $IDtoTag Temporary matches 1.. run tag @s add MobID0.1
         execute unless score $IDtoTag Temporary matches 1.. run tag @s add MobID0.0
         execute if score $IDtoTag Temporary matches 1.. run scoreboard players remove $IDtoTag Temporary 1
-
-# カスタム当たり判定のモブを乗せる場合の初期化
-    execute on passengers if entity @s[tag=Hitbox] run function mob:summon/hitbox_init
-
-# リセット
-    data remove storage asset:mob Data
-    data remove storage asset:mob ArmorItems
-    data remove storage asset:mob HandItems
-    scoreboard players reset $IDtoTag Temporary
-    tag @s remove MobInit
