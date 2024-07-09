@@ -5,10 +5,10 @@
     summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/009.wither_skeleton"}
 
 # データの設定
-    data modify storage asset:mob Data.MobID set value 1
+    data modify storage asset:mob Data.MobID set value 9
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ウィザースケルトン"}'
-        data modify storage asset:mob Data.NameChar set value 8
+        data modify storage asset:mob Data.NameChar set value 9
     # 装備
         data modify storage asset:mob Data.Head set value {}
         data modify storage asset:mob Data.Chest set value {}

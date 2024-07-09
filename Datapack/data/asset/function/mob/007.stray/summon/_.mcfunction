@@ -5,7 +5,7 @@
     summon stray ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/007.stray"}
 
 # データの設定
-    data modify storage asset:mob Data.MobID set value 1
+    data modify storage asset:mob Data.MobID set value 7
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ストレイ"}'
         data modify storage asset:mob Data.NameChar set value 4

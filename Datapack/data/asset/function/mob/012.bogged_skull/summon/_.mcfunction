@@ -5,7 +5,7 @@
     summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/012.bogged_skull",attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",NoAI:1b,Silent:1b,Tags:["AutoKill","HasVehicle","Hitbox"]},{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AutoKill","HasVehicle"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10121}}]}]}
 
 # データの設定
-    data modify storage asset:mob Data.MobID set value 2
+    data modify storage asset:mob Data.MobID set value 12
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"スカル"}'
         data modify storage asset:mob Data.NameChar set value 3

@@ -5,7 +5,7 @@
     summon bogged ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/011.bogged"}
 
 # データの設定
-    data modify storage asset:mob Data.MobID set value 1
+    data modify storage asset:mob Data.MobID set value 11
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ボグド"}'
         data modify storage asset:mob Data.NameChar set value 3
