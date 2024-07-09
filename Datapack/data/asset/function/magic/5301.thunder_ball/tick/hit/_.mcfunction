@@ -8,8 +8,10 @@
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
-# TODO: 近くの敵にチェインダメージ
-
+# 一瞬ひるませる
+    data modify storage mob: NewBuff set value [{status:"AGI",duration:10}]
+    execute store result storage mob: NewBuff[0].amplifier int -1 run scoreboard players get @s AGI
+    function mob:buff/_
 
 # ダメージ処理
     scoreboard players set $MotionPower Temporary 80
