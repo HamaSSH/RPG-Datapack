@@ -3,4 +3,4 @@
 
 tag @s add Attacker
 data modify entity @s Age set value 18
-execute as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0] run tag @s add Hit
+execute as @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0] run function mob:hitbox

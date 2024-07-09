@@ -6,8 +6,8 @@
     execute if entity @s[tag=DaggerSkill] anchored eyes positioned ^ ^ ^ run function player:combat/main/dagger/skill/rec
 
 # ため攻撃中(当たり判定無視するか)
-    execute if entity @p[tag=Attacker,tag=!DaggerSkill] as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,tag=!HurtTime,distance=..6] run tag @s add Hit
-    execute if entity @p[tag=Attacker,tag=DaggerSkill] as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] unless score @s HurtTime matches 8.. run tag @s add Hit
+    execute if entity @p[tag=Attacker,tag=!DaggerSkill] as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,tag=!HurtTime,distance=..6] run function mob:hitbox
+    execute if entity @p[tag=Attacker,tag=DaggerSkill] as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] unless score @s HurtTime matches 8.. run function mob:hitbox
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] run tag @s remove DaggerHit
 
 # HIT処理

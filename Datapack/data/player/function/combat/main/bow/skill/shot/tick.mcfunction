@@ -9,7 +9,7 @@ data modify entity @s PierceLevel set value 5
 
 # 当たり判定
     execute positioned ~-1.5 ~-1.5 ~-1.5 if entity @e[type=#lib:every_mob,tag=Enemy,dx=2,dy=2,dz=2] run tag @s add Attacker
-    execute positioned ~-1.5 ~-1.5 ~-1.5 as @e[type=#lib:every_mob,tag=Enemy,dx=2,dy=2,dz=2] run tag @s add Hit
+    execute positioned ~-1.5 ~-1.5 ~-1.5 as @e[type=#lib:every_mob,tag=Enemy,dx=2,dy=2,dz=2] run function mob:hitbox
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 200

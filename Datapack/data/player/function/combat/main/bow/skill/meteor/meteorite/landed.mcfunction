@@ -7,7 +7,7 @@
 
 # 当たり判定
     execute if entity @e[type=#lib:every_mob,tag=Enemy,distance=..2] run tag @s add Attacker
-    execute as @e[type=#lib:every_mob,tag=Enemy,distance=..2] run tag @s add Hit
+    execute as @e[type=#lib:every_mob,tag=Enemy,distance=..2] run function mob:hitbox
 
 # HIT処理
     scoreboard players set $MotionPower Temporary 100
