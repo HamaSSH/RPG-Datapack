@@ -1,6 +1,9 @@
 #> lib:motion/apply
 # モブにモーションを代入する($MotionPowerの設定は必須)
 
+# $MotionPowerの設定が無ければ初期化
+    execute unless score $MotionPower Temporary matches -2147483648..2147483647 run scoreboard players set $MotionPower Temporary 100
+
 # 初期化として視点を自分にあわせる & ^ ^ ^1を取得
     execute in overworld positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^ ^ ^1
 
