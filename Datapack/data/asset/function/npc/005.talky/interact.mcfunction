@@ -15,4 +15,8 @@
     execute as @n[type=villager,tag=005.talky] run function asset:npc/dialogue/set_id with storage player:
 
 # リセット
+    data remove storage player: MCID
+    data remove storage npc: dialogue
+    scoreboard players reset $NPCTalked Temporary
+    scoreboard players reset $DialogueID Temporary
     advancement revoke @s only asset:npc/005.talky
