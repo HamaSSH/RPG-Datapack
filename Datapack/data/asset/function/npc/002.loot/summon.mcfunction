@@ -1,8 +1,17 @@
 #> asset:npc/002.loot/summon
 
-summon villager ~ ~ ~ {CustomName:'"ソザイ"',CustomNameVisible:1b,Team:"NoCollision",PersistenceRequired:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["InterruptLeftClick","ShopNPC"],ArmorItems:[{},{},{},{id:"glass_bottle",components:{"custom_data":{shop_data:[[1023,1024,1021,1037,1038,1040],[1001,1002,1003,1004,1006,1007]]}}}]}
+summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
-# 店の商品の情報
+# データの設定
+    # ID
+        data modify storage asset:npc Data.namespace set value "002.loot"
+        data modify storage asset:npc Data.npc_type set value "ShopNPC"
+    # 名前
+        data modify storage asset:npc Data.CustomName set value '"ソザイ"'
 
+# 店のデータ
+    data modify storage asset:npc Data.shop_data append value [1023,1024,1021,1037,1038,1040]
+    data modify storage asset:npc Data.shop_data append value [1001,1002,1003,1004,1006,1007]
 
-# 会話文の情報
+# データの適用
+    execute as @e[type=villager,tag=NPCInit,distance=..0.01,limit=1] run function asset:npc/set_data with storage asset:npc Data

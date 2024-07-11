@@ -1,9 +1,14 @@
 #> asset:npc/004.rinne/summon
 # 村人NPCの召喚
 
-summon villager ~ ~ ~ {CustomName:'"リンネ"',CustomNameVisible:1b,Team:"NoCollision",PersistenceRequired:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["InterruptLeftClick","ClassNPC"]}
+summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
-# 店の商品の情報
+# データの設定
+    # ID
+        data modify storage asset:npc Data.namespace set value "004.rinne"
+        data modify storage asset:npc Data.npc_type set value "ClassNPC"
+    # 名前
+        data modify storage asset:npc Data.CustomName set value '"リンネ"'
 
-
-# 会話文の情報
+# データの適用
+    execute as @e[type=villager,tag=NPCInit,distance=..0.01,limit=1] run function asset:npc/set_data with storage asset:npc Data

@@ -16,6 +16,9 @@
     $tag @s add $(namespace)
     $tag @s add $(npc_type)
 
+# 店のデータ
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.shop_data set from storage asset:npc Data.shop_data
+
 # 名前の適用
     data modify entity @s CustomName set from storage asset:npc Data.CustomName
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.namespace set from storage asset:npc Data.namespace
