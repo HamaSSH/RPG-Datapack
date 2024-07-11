@@ -1,4 +1,5 @@
 {
+    "name": "world:room",
     "fallback": "world:fallback",
     "elements": [
         {
@@ -6,7 +7,7 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:room",
+                "location": "world:room1",
                 "processors": "empty"
             }
         },
@@ -42,7 +43,7 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:path",
+                "location": "world:path1",
                 "processors": "empty"
             }
         },
@@ -60,7 +61,7 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:stair",
+                "location": "world:stairs1",
                 "processors": "empty"
             }
         }

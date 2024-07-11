@@ -1,4 +1,5 @@
 {
+    "name": "world:root",
     "fallback": "world:fallback",
     "elements": [
         {

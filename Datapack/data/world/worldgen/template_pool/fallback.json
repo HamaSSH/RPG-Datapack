@@ -6,7 +6,7 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:fallback",
+                "location": "world:fallback1",
                 "processors": "empty"
             }
         },
