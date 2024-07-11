@@ -14,12 +14,10 @@
     scoreboard players operation $LVL/10 Temporary /= #10 Constant
 
 # クラスごとのステータスアップ
-    execute if predicate player:class/is_assassin run function player:class/status/up/assassin
+    execute if predicate player:class/is_rogue run function player:class/status/up/rogue
     execute if predicate player:class/is_fighter run function player:class/status/up/fighter
-    execute if predicate player:class/is_knight run function player:class/status/up/knight
-    execute if predicate player:class/is_warrior run function player:class/status/up/warrior
+    execute if predicate player:class/is_paladin run function player:class/status/up/paladin
     execute if predicate player:class/is_wizard run function player:class/status/up/wizard
-    execute if predicate player:class/is_hunter run function player:class/status/up/hunter
     tag @s add StatusUpdate
     tag @s add MPFull
 

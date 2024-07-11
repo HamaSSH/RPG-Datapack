@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "player:class/is_knight"
+            "name": "player:class/is_rogue"
         },
         {
             "condition": "entity_properties",
@@ -12,7 +12,7 @@
                 "equipment": {
                     "mainhand": {
                         "predicates": {
-                            "custom_data": "{weapon:\"spear\"}"
+                            "custom_data": "{weapon:\"dagger\"}"
                         }
                     }
                 }

@@ -15,7 +15,7 @@
             {
                 "score": {
                     "name": "@p",
-                    "objective": "HunterLVL"
+                    "objective": "PaladinLVL"
                 },
                 "bold": true
             }

@@ -12,12 +12,10 @@
 # レベルアップ
     tag @s add LevelUp
     scoreboard players add @s LVL 1
-    execute if predicate player:class/is_assassin run scoreboard players add @s AssassinLVL 1
+    execute if predicate player:class/is_rogue run scoreboard players add @s RogueLVL 1
     execute if predicate player:class/is_fighter run scoreboard players add @s FighterLVL 1
-    execute if predicate player:class/is_knight run scoreboard players add @s KnightLVL 1
-    execute if predicate player:class/is_warrior run scoreboard players add @s WarriorLVL 1
+    execute if predicate player:class/is_paladin run scoreboard players add @s PaladinLVL 1
     execute if predicate player:class/is_wizard run scoreboard players add @s WizardLVL 1
-    execute if predicate player:class/is_hunter run scoreboard players add @s HunterLVL 1
 
 # 次の必要経験値の計算
     scoreboard players operation @s EXP -= @s NextEXP

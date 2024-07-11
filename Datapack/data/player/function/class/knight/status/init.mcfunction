@@ -1,4 +1,4 @@
-#> player:class/knight/status/init
+#> player:class/paladin/status/init
 # 初期ステータス
 
 scoreboard players set @s BaseHP 50

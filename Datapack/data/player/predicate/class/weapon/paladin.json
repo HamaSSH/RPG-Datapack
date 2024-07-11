@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "player:class/is_hunter"
+            "name": "player:class/is_paladin"
         },
         {
             "condition": "entity_properties",
@@ -12,7 +12,7 @@
                 "equipment": {
                     "mainhand": {
                         "predicates": {
-                            "custom_data": "{weapon:\"bow\"}"
+                            "custom_data": "{weapon:\"spear\"}"
                         }
                     }
                 }

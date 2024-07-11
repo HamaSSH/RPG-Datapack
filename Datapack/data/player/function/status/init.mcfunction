@@ -31,18 +31,14 @@ scoreboard players set @s NextEXP 50
 scoreboard players set @s Gold 200
 scoreboard players set @s SkillTimer 0
 scoreboard players set @s ElementTimer 0
-scoreboard players set @s AssassinEXP 0
+scoreboard players set @s RogueEXP 0
 scoreboard players set @s FighterEXP 0
-scoreboard players set @s KnightEXP 0
-scoreboard players set @s WarriorEXP 0
+scoreboard players set @s PaladinEXP 0
 scoreboard players set @s WizardEXP 0
-scoreboard players set @s HunterEXP 0
-scoreboard players set @s AssassinLVL 1
+scoreboard players set @s RogueLVL 1
 scoreboard players set @s FighterLVL 1
-scoreboard players set @s KnightLVL 1
-scoreboard players set @s WarriorLVL 1
+scoreboard players set @s PaladinLVL 1
 scoreboard players set @s WizardLVL 1
-scoreboard players set @s HunterLVL 1
 function player:status/update
 
 ###################################

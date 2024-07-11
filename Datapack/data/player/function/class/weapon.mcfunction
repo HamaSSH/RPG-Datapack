@@ -2,13 +2,10 @@
 # 適正武器による補正ステータス #TODO: 職業ごとにやったほうがいいかも
 
 # 転生回数の取得
-    execute if predicate player:class/is_assassin run scoreboard players operation $StatusMultiplier Temporary = @s AssassinRank
+    execute if predicate player:class/is_rogue run scoreboard players operation $StatusMultiplier Temporary = @s RogueRank
     execute if predicate player:class/is_fighter run scoreboard players operation $StatusMultiplier Temporary = @s FighterRank
-    execute if predicate player:class/is_knight run scoreboard players operation $StatusMultiplier Temporary = @s KnightRank
-    execute if predicate player:class/is_warrior run scoreboard players operation $StatusMultiplier Temporary = @s WarriorRank
+    execute if predicate player:class/is_paladin run scoreboard players operation $StatusMultiplier Temporary = @s PaladinRank
     execute if predicate player:class/is_wizard run scoreboard players operation $StatusMultiplier Temporary = @s WizardRank
-    execute if predicate player:class/is_hunter run scoreboard players operation $StatusMultiplier Temporary = @s HunterRank
-
 # 単純なステータス補正
     scoreboard players add @s DEF 10
     scoreboard players add @s AGI 10

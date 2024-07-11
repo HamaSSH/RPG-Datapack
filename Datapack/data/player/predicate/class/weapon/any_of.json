@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "player:class/weapon/assassin"
+            "name": "player:class/weapon/rogue"
         },
         {
             "condition": "reference",
@@ -11,19 +11,11 @@
         },
         {
             "condition": "reference",
-            "name": "player:class/weapon/knight"
-        },
-        {
-            "condition": "reference",
-            "name": "player:class/weapon/warrior"
+            "name": "player:class/weapon/paladin"
         },
         {
             "condition": "reference",
             "name": "player:class/weapon/wizard"
-        },
-        {
-            "condition": "reference",
-            "name": "player:class/weapon/hunter"
         }
     ]
 }
