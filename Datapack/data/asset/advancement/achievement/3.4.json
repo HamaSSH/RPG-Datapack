@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "potion"
+            "id": "spawner"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "いのちだいじに\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "ノーダメージで\nダンジョンを攻略する"
         },
         "frame": "task",
         "show_toast": true,

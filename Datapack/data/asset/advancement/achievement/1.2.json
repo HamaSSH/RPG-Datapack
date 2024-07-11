@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "fishing_rod"
+            "id": "oak_boat"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "手練れ冒険者\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "レベル30に到達する"
         },
         "frame": "task",
         "show_toast": true,

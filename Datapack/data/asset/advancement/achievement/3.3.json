@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "totem_of_undying"
+            "id": "chest"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "トレジャーハンター\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "チェストを100個開ける"
         },
         "frame": "task",
         "show_toast": true,

@@ -1,14 +1,17 @@
 {
     "display": {
         "icon": {
-            "id": "netherite_block"
+            "id": "tropical_fish",
+            "components": {
+                "custom_model_data": 1034
+            }
         },
         "title": {
-            "text": "\uF829\uF829\"高み\"\uF828\uF829\uF829",
+            "text": "美食家\uF829\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル５を制覇する"
+            "text": "食べ物を全種類食べてみる"
         },
         "frame": "task",
         "show_toast": true,

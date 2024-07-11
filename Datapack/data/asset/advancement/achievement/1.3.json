@@ -3,15 +3,15 @@
         "icon": {
             "id": "carrot_on_a_stick",
             "components": {
-                "custom_model_data": 2102
+                "custom_model_data": 2410
             }
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "相乗効果\uF828\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "属性を纏ったため攻撃を放つ"
         },
         "frame": "task",
         "show_toast": true,

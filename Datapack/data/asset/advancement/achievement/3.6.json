@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "music_disc_11"
+            "id": "barrier"
         },
         "title": {
-            "text": "\uF829ここにタイトルを入力\uF829",
+            "text": "身体一つ\uF828\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "アイテムを持たない状態から\nダンジョンを攻略する"
         },
         "frame": "task",
         "show_toast": true,

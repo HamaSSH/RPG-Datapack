@@ -1,14 +1,19 @@
 {
     "display": {
         "icon": {
-            "id": "grass_block"
+            "id": "potion",
+            "components": {
+                "minecraft:potion_contents": {
+                    "custom_color": 12806583
+                }
+            }
         },
         "title": {
-            "text": "感謝の気持ち\uF829",
+            "text": "初めてのドーピング\uF829",
             "italic": false
         },
         "description": {
-            "text": "体験版をプレイする"
+            "text": "クラフトポーションを飲む"
         },
         "frame": "task",
         "show_toast": true,

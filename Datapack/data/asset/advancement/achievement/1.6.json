@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "experience_bottle"
+            "id": "diamond_block"
         },
         "title": {
-            "text": "\uF829ここにタイトルを入力\uF829",
+            "text": "巨万の富\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "総計100000G取得する"
         },
         "frame": "task",
         "show_toast": true,

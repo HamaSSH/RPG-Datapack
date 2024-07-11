@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "iron_block"
+            "id": "shears"
         },
         "title": {
-            "text": "ダンジョンの探究者\uF829",
+            "text": "チョキチョキ\uF829\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル２を制覇する"
+            "text": "ハサミでベリィを収穫する"
         },
         "frame": "task",
         "show_toast": true,

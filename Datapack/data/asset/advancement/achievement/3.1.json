@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "gold_block"
+            "id": "bread"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "太っ腹！\uF828\uF829\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "一度に64個のアイテムを\n村人から購入する"
         },
         "frame": "task",
         "show_toast": true,

@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "spyglass"
+            "id": "trial_spawner"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "スピードランナー\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "入ってから2:00以内に\nダンジョンを攻略する"
         },
         "frame": "task",
         "show_toast": true,

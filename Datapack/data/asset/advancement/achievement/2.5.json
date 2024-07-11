@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "diamond_block"
+            "id": "fishing_rod"
         },
         "title": {
-            "text": "ベテラン冒険者\uF829",
+            "text": "釣り職人\uF828\uF829\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル４を制覇する"
+            "text": "全種類の魚を釣り上げる"
         },
         "frame": "task",
         "show_toast": true,

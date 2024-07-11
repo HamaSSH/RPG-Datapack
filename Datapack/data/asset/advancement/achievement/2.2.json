@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "stone"
+            "id": "smithing_table"
         },
         "title": {
-            "text": "ゲームクリア？\uF829",
+            "text": "鍛治職人\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル１を制覇する"
+            "text": "アイテムを+3まで強化する"
         },
         "frame": "task",
         "show_toast": true,

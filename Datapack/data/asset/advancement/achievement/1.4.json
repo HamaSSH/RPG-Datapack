@@ -1,17 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "bow",
-            "components": {
-                "custom_model_data": 2601
-            }
+            "id": "zombie_head"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "ワンパンチ！\uF828\uF829\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "モブをHP最大から一撃で倒す"
         },
         "frame": "task",
         "show_toast": true,

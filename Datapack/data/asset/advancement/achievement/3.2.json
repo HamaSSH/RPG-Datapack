@@ -4,12 +4,19 @@
             "id": "emerald_block"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "\uF829ご贔屓に！\uF828\uF829",
             "italic": false
         },
-        "description": {
-            "text": "概要"
-        },
+        "description": [
+            {
+                "text": "\uE153",
+                "color": "white"
+            },
+            {
+                "text": "以上のアイテムを村人に売却する",
+                "color": "green"
+            }
+        ],
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": false,

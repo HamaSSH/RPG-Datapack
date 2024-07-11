@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "gold_block"
+            "id": "anvil"
         },
         "title": {
-            "text": "いのちだいじに\uF829",
+            "text": "オキニのツール\uF829",
             "italic": false
         },
         "description": {
-            "text": "ダンジョンレベル３を制覇する"
+            "text": "破損したツールを修復する"
         },
         "frame": "task",
         "show_toast": true,

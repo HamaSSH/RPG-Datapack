@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "zombie_head"
+            "id": "gold_block"
         },
         "title": {
-            "text": "ここにタイトルを入力\uF829",
+            "text": "一万長者\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "概要"
+            "text": "手持ちが10000Gを超える"
         },
         "frame": "task",
         "show_toast": true,
