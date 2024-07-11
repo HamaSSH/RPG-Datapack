@@ -14,4 +14,3 @@
 
 # 実績の初期化
     function asset:achievement/init
-    advancement grant @s only asset:achievement/2.1
