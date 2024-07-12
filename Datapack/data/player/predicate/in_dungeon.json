@@ -1,6 +1,10 @@
 {
     "condition": "minecraft:location_check",
     "predicate": {
-        "dimension": "world:dungeon"
+        "position": {
+            "x": {
+                "min": 8000
+            }
+        }
     }
 }
