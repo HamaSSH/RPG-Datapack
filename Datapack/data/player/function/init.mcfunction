@@ -10,6 +10,7 @@
     tag @s add RightHanded
 
 # 初期ステータス
+    attribute @s minecraft:generic.attack_speed base set 3.0
     function player:status/init
 
 # 実績の初期化
