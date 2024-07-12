@@ -7,8 +7,8 @@ $data modify storage asset:mob ID set from storage world: Spawner.Data.SpawnPote
     execute summon marker run function world:spawner/summon/location/_
 
 # IDに応じたモブの召喚 #TODO:[いつか] 召喚アニメーション
-    execute at @e[type=marker,tag=SpawnMarker,distance=..32] positioned ~0.5 ~ ~0.5 run function #asset:mob/summon
-    execute at @e[type=marker,tag=SpawnMarker,distance=..32] run particle poof ~0.5 ~ ~0.5 0.2 0.3 0.2 0 20 force
+    execute at @e[type=marker,tag=SpawnMarker,distance=..32] align xz positioned ~0.5 ~-0.3 ~0.5 if block ~ ~ ~ #lib:no_collision if block ~ ~0.9 ~ #lib:no_collision if block ~ ~1.8 ~ #lib:no_collision run function #asset:mob/summon
+    execute at @e[type=marker,tag=SpawnMarker,distance=..32] align xz positioned ~0.5 ~-0.3 ~0.5 if block ~ ~ ~ #lib:no_collision if block ~ ~0.9 ~ #lib:no_collision if block ~ ~1.8 ~ #lib:no_collision run particle poof ~ ~ ~ 0.2 0.3 0.2 0 20 force
     data remove storage asset:mob ID
     kill @e[type=marker,tag=SpawnMarker,distance=..32]
 
