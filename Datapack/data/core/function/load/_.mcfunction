@@ -10,4 +10,4 @@
     execute if data storage global: {IsProduction:0b} run function core:load/once
 
 # バージョンアップ処理
-    function core:migration/_
+    schedule function core:migration/_ 1t
