@@ -11,7 +11,6 @@
 # バフの種類が被っているかチェック
 $execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Status,tag=!BuffInit] data.buff{status:"$(status)"} run function player:buff/manager/compare
 $execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s[tag=Effect,tag=!BuffInit] data.buff{effect:"$(effect)"} run function player:buff/manager/compare
-execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=Element,tag=!BuffInit] unless data storage player: buff{element:"-"} run kill @s
 
     # (効果が同じで弱い)→バフ付与なし
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffWeak] run kill @s

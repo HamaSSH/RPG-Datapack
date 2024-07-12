@@ -5,4 +5,3 @@ tag @s add BuffInit
 data modify entity @s data.buff set from storage player: buff
 execute unless data storage player: buff{status:"-"} run tag @s add Status
 execute unless data storage player: buff{effect:"-"} run tag @s add Effect
-execute unless data storage player: buff{element:"-"} run tag @s add Element

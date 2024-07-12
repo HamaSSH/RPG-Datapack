@@ -7,7 +7,6 @@
 
 # 現在受けているバフのアイコンを取得
     scoreboard players operation $PlayerID Temporary = @s PlayerID
-    execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Element] run function player:ui/buff/element
     execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Effect] run function player:ui/buff/effect
     execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Status] run function player:ui/buff/status
 

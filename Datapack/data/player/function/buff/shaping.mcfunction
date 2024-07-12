@@ -10,10 +10,6 @@
     execute unless data storage player: buff.status run data modify storage player: buff.status set value "-"
     execute unless data storage player: buff.sign run data modify storage player: buff.sign set value "-"
 
-# 属性纏い
-    execute if data storage player: buff.element run function player:magic/element/icon/init
-    execute unless data storage player: buff.element run data modify storage player: buff.element set value "-"
-
 # エフェクトバフ
     execute if data storage player: buff.effect run function player:buff/effect/icon/init
     execute unless data storage player: buff.effect run data modify storage player: buff.effect set value "-"
