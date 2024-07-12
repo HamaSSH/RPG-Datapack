@@ -6,11 +6,17 @@
 
 # forceload範囲の設定
     execute in overworld run forceload add -1 -1 0 0
+    # execute in world:dungeon run forceload add -1 -1 0 0
+
+# #TODO: スポーン位置の設定
+    summon marker 621 134 -770 {UUID:[I; 2106,5308417,0,2],Tags:["WorldSpawn"]}
+    execute at 83a-51-1-0-2 run forceload add ~ ~ ~ ~
 
 # 汎用エンティティ・ストレージ 83a-51-1-X-X
     summon marker 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,0]}
     summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,1],Marker:1b,Invisible:1b}
-    setblock 0 0 0 white_shulker_box{Lock:"汎用シュルカーボックス"}
+    execute in overworld run setblock 0 0 0 white_shulker_box{Lock:"汎用シュルカーボックス"}
+    # execute in world:dungeon run setblock 0 0 0 white_shulker_box{Lock:"汎用シュルカーボックス"}
 
 # ゲームルールの設定
     function core:load/gamerule

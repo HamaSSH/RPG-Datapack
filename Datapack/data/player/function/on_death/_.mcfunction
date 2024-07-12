@@ -11,7 +11,7 @@
     function player:buff/reset
 
 # 演出
-    tp @s 621 134 -770 -90 0
+    execute in overworld positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0
     # function player:on_death/lose_gold
     title @s title {"text":"You Died!","bold":true,"color":"dark_red"}
 

@@ -1,5 +1,5 @@
 #> world:dungeon/exit/_
-# ダンジョン脱出処理
+# ダンジョン脱出処理 #TODO: 脱出先の座標
 
-execute in overworld run tp @s 621 134 -770
-execute in overworld positioned 621 134 -770 run playsound block.beacon.power_select master @s ~ ~ ~ 0.2 1.1
+execute in overworld positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0
+execute in overworld positioned as 83a-51-1-0-2 run playsound block.beacon.power_select master @s ~ ~ ~ 0.2 1.1
