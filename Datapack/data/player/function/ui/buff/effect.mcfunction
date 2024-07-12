@@ -13,6 +13,9 @@
     execute if data storage player:ui data.buff{effect:"blindness"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
     execute if data storage player:ui data.buff{effect:"water_breathing"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
     execute if data storage player:ui data.buff{effect:"regeneration"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
+    execute if data storage player:ui data.buff{effect:"fire_resistance"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
+    execute if data storage player:ui data.buff{effect:"slow_falling"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
+    execute if data storage player:ui data.buff{effect:"invisibility"} run data modify storage player:ui buff.main append from storage player:ui data.buff.icon
 
 # リセット
     data remove storage player:ui data

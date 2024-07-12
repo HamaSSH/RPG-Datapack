@@ -9,6 +9,9 @@
     execute if data storage ui: SingleBuff{effect:"blindness"} run data modify storage ui: SingleBuff.lore.icon set value "11C"
     execute if data storage ui: SingleBuff{effect:"water_breathing"} run data modify storage ui: SingleBuff.lore.icon set value "11D"
     execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.lore.icon set value "11E"
+    execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.icon set value "120"
+    execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.icon set value "121"
+    execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.icon set value "122"
 
 # テキスト
     execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.lore.text set value "毒"
@@ -18,6 +21,9 @@
     execute if data storage ui: SingleBuff{effect:"blindness"} run data modify storage ui: SingleBuff.lore.text set value "盲目"
     execute if data storage ui: SingleBuff{effect:"water_breathing"} run data modify storage ui: SingleBuff.lore.text set value "水中呼吸"
     execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.lore.text set value "再生能力"
+    execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.text set value "火炎耐性"
+    execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.text set value "落下速度低下"
+    execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.text set value "透明化"
 
 # エフェクトカラー
     execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.lore.color set value "#FF4D4D"
@@ -27,6 +33,9 @@
     execute if data storage ui: SingleBuff{effect:"blindness"} run data modify storage ui: SingleBuff.lore.color set value "#FF4D4D"
     execute if data storage ui: SingleBuff{effect:"water_breathing"} run data modify storage ui: SingleBuff.lore.color set value "blue"
     execute if data storage ui: SingleBuff{effect:"regeneration"} run data modify storage ui: SingleBuff.lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.color set value "blue"
 
 # エフェクトレベル
     execute if data storage ui: SingleBuff{amplifier:0} run data modify storage ui: SingleBuff.lore.Level set value "0"
