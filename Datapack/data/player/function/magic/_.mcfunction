@@ -22,8 +22,6 @@
 # 属性を纏う
     function player:magic/element/reset
     function player:magic/element/init
-    execute if data storage player: magic{element:"wind"} run effect give @s speed infinite 0 true
-    execute if data storage player: magic{element:"wind"} run effect give @s slow_falling infinite 0 true
 
 # リセット
     scoreboard players reset $MagicDmg Temporary
