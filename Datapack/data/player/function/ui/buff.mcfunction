@@ -7,6 +7,7 @@
 
 # 現在受けているバフのアイコンを取得
     scoreboard players operation $PlayerID Temporary = @s PlayerID
+    execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Element] run function player:ui/buff/effect
     execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Effect] run function player:ui/buff/effect
     execute positioned 0.0 1.0 0.0 as @e[type=area_effect_cloud,tag=BuffRoot,distance=..0.01] if score @s PlayerID = $PlayerID Temporary on passengers if entity @s[tag=Status] run function player:ui/buff/status
 
@@ -55,12 +56,14 @@
         execute if score $EffectCount Temporary matches 9 run data modify storage player:ui buff.effect.suffix set value '"\\uF80A\\uF809\\uF805"'
         execute if score $EffectCount Temporary matches 10 run data modify storage player:ui buff.effect.prefix set value '"\\uF80A\\uF809\\uF808\\uF803"'
         execute if score $EffectCount Temporary matches 10 run data modify storage player:ui buff.effect.suffix set value '"\\uF80A\\uF809\\uF808\\uF803"'
+        execute if score $EffectCount Temporary matches 11 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF801"'
+        execute if score $EffectCount Temporary matches 11 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF801"'
     # 調整用
         execute unless score $BuffCount Temporary matches 1.. run data modify storage player:ui buff.separator set value '"\\uF802"'
         execute if score $BuffCount Temporary matches 1.. if score $EffectCount Temporary matches 1.. run data modify storage player:ui buff.extra set value '"\\uF801"'
 
 # text_displayでバフloreを一度まとめる
-    execute unless data storage player:ui buff.main[20] run function player:ui/buff/fill
+    execute unless data storage player:ui buff.main[21] run function player:ui/buff/fill
     execute positioned ~ ~1000 ~ run function player:ui/buff/lore
 
 # リセット
