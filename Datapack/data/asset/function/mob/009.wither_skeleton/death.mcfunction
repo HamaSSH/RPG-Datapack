@@ -1,4 +1,4 @@
-#> asset:mob/009.wither_skeleton/death/_
+#> asset:mob/009.wither_skeleton/death
 # 死亡時の動作
 
 # 確率で010.wither_skullの召喚

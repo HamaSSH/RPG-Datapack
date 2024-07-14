@@ -1,4 +1,4 @@
-#> asset:mob/000.example/tick/_
+#> asset:mob/000.example/tick
 # tick時の動作
 
 scoreboard players add @s 000.Tick 1

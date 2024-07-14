@@ -1,4 +1,4 @@
-#> asset:mob/001.skeleton/death/_
+#> asset:mob/001.skeleton/death
 # 死亡時の動作
 
 # 確率で002.skullの召喚

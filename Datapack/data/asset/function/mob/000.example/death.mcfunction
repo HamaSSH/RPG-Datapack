@@ -1,4 +1,4 @@
-#> asset:mob/000.example/death/_
+#> asset:mob/000.example/death
 # 死亡時の動作
 
 playsound entity.skeleton.death hostile @a

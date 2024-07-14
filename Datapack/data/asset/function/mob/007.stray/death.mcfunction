@@ -1,4 +1,4 @@
-#> asset:mob/007.stray/death/_
+#> asset:mob/007.stray/death
 # 死亡時の動作
 
 # 確率で008.stray_skullの召喚

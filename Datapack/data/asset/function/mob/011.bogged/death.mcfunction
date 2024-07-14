@@ -1,4 +1,4 @@
-#> asset:mob/011.bogged/death/_
+#> asset:mob/011.bogged/death
 # 死亡時の動作
 
 # 確率で012.bogged_skullの召喚

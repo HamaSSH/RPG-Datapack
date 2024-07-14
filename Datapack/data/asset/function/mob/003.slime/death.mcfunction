@@ -1,4 +1,4 @@
-#> asset:mob/003.slime/death/_
+#> asset:mob/003.slime/death
 # 死亡時の動作
 
 # スライムのSizeを取得

@@ -1,4 +1,4 @@
-#> asset:mob/005.oak_orc/hurt/_
+#> asset:mob/005.oak_orc/hurt
 # 被ダメージ時の動作
 
 # 周囲のプレイヤーを毒にする
