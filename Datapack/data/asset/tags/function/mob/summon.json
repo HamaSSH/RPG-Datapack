@@ -12,6 +12,7 @@
         "asset:mob/009.wither_skeleton/summon/id",
         "asset:mob/010.wither_skull/summon/id",
         "asset:mob/011.bogged/summon/id",
-        "asset:mob/012.bogged_skull/summon/id"
+        "asset:mob/012.bogged_skull/summon/id",
+        "asset:mob/013.gmoo/summon/id"
     ]
 }

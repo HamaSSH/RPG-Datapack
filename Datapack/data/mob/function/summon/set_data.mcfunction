@@ -73,6 +73,9 @@
 # カスタム当たり判定のモブを乗せる場合の初期化
     execute on passengers if entity @s[tag=Hitbox] run function mob:summon/hitbox_init
 
+# AI乗っ取り用のモブを乗せる場合の初期化
+    execute on passengers if entity @s[tag=Controller] run function mob:summon/controller_init
+
 # リセット
     data remove storage asset:mob Data
     data remove storage asset:mob ArmorItems

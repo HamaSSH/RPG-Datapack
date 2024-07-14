@@ -1,8 +1,7 @@
-#> mob:summon/set_data/hitbox_init
+#> mob:summon/set_data/controller_init
 # モブデータの適用
 
 # 共通データの設定
-    tag @s add Enemy
     tag @s add NameDisplay
     attribute @s generic.max_health base set 1024
     data modify entity @s Health set value 1024f
@@ -13,6 +12,9 @@
 
 # 名前の適用
     function mob:summon/set_name
+
+# ステータスの適用
+    execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
 
 # 重複のないようなMobUUIDの生成
     scoreboard players add World MobUUID 1
