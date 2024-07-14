@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon skeleton ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/000.example"}
+    summon skeleton ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 0
+    data modify storage asset:mob Data.namespace set value "000.example"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"サンドバッグ"}'
         data modify storage asset:mob Data.NameChar set value 6

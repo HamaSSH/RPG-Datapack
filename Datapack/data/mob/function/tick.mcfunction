@@ -2,9 +2,9 @@
 # モブ関連のtick処理
 
 # アセットのtick処理呼び出し
-    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
-    function #asset:mob/tick
-    data remove storage asset:mob ID
+    data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
+    function asset:mob/manager/tick with storage asset:mob
+    data remove storage asset:mob namespace
 
 # 戦闘中タイマー・無敵時間
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1

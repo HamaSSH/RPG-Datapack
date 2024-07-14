@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/008.stray_skull",attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10081}}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10081}}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 8
+    data modify storage asset:mob Data.namespace set value "008.stray_skull"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"スカル"}'
         data modify storage asset:mob Data.NameChar set value 3

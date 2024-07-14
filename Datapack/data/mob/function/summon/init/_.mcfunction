@@ -18,6 +18,10 @@ tag @s add Enemy
 # 基本的なデータの設定
     function mob:summon/set_data/_
 
+# namespace関連の設定
+    data modify storage asset:mob ArmorItems[3].components.minecraft:custom_data.namespace set from storage asset:mob Data.namespace
+    function mob:summon/set_data/loot_table with storage asset:mob ArmorItems[3].components.minecraft:custom_data
+
 # 装備の適用
     data modify entity @s ArmorItems set from storage asset:mob ArmorItems
     data modify entity @s HandItems set from storage asset:mob HandItems
@@ -31,9 +35,6 @@ tag @s add Enemy
     execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
     execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
     function mob:summon/set_data/speed
-
-# Scaleの設定
-    data modify entity @s attributes:[{id:"generic.scale"}].base set value 1.3
 
 # カスタム当たり判定のモブを乗せる場合の初期化
     execute on passengers if entity @s[tag=Hitbox] run function mob:summon/init/hitbox

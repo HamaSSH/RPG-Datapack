@@ -5,10 +5,10 @@
     data modify storage lib: Damage.Type set value "Melee"
     scoreboard players operation @p[tag=Victim] DmgReceived = @s DmgDealt
 
-# 攻撃時のトリガー
-    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
-    execute at @s run function #asset:mob/attack
-    data remove storage asset:mob ID
+# 攻撃時のトリガー(アセットのattack処理呼び出し)
+    data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
+    function asset:mob/manager/attack with storage asset:mob
+    data remove storage asset:mob namespace
 
 # ダメージを受けた際の処理
     execute as @p[tag=Victim] at @s run function player:on_hurt/_

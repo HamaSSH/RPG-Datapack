@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon zombie ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/004.zombie"}
+    summon zombie ~ ~ ~ {Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 4
+    data modify storage asset:mob Data.namespace set value "004.zombie"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ゾンビ"}'
         data modify storage asset:mob Data.NameChar set value 3

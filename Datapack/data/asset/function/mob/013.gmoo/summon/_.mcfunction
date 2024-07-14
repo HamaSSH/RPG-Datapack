@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon cow ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/013.gmoo",Passengers:[{id:"silverfish",Tags:["Controller"]}]}
+    summon cow ~ ~ ~ {Tags:["MobInit"],Passengers:[{id:"silverfish",Tags:["Controller"]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 13
+    data modify storage asset:mob Data.namespace set value "013.gmoo"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"グモー"}'
         data modify storage asset:mob Data.NameChar set value 3

@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/009.wither_skeleton"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 9
+    data modify storage asset:mob Data.namespace set value "009.wither_skeleton"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ウィザースケルトン"}'
         data modify storage asset:mob Data.NameChar set value 9

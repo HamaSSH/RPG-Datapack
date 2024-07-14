@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon piglin ~ ~ ~ {IsImmuneToZombification:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/005.oak_orc"}
+    summon piglin ~ ~ ~ {IsImmuneToZombification:1b,Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 5
+    data modify storage asset:mob Data.namespace set value "005.oak_orc"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"オークオーク"}'
         data modify storage asset:mob Data.NameChar set value 6

@@ -1,0 +1,16 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1040"
+                }
+            ]
+        }
+    ]
+}

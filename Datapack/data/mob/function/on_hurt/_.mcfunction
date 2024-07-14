@@ -8,10 +8,10 @@
         function lib:damage/blur
     function lib:damage/received
 
-# 被ダメージ時のトリガー
-    execute store result storage asset:mob ID int 1 run scoreboard players get @s MobID
-    function #asset:mob/hurt
-    data remove storage asset:mob ID
+# 被ダメージ時のトリガー(アセットのhurt処理呼び出し)
+    data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
+    function asset:mob/manager/hurt with storage asset:mob
+    data remove storage asset:mob namespace
 
 # HP表示の更新
     function mob:status/hp/display/_

@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon stray ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/007.stray"}
+    summon stray ~ ~ ~ {Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 7
+    data modify storage asset:mob Data.namespace set value "007.stray"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"ストレイ"}'
         data modify storage asset:mob Data.NameChar set value 4

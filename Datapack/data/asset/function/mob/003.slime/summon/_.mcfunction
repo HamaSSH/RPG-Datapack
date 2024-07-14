@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon slime ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/003.slime"}
+    summon slime ~ ~ ~ {Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 3
+    data modify storage asset:mob Data.namespace set value "003.slime"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"スライム"}'
         data modify storage asset:mob Data.NameChar set value 4

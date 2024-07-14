@@ -2,10 +2,11 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon spider ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/006.spider"}
+    summon spider ~ ~ ~ {Tags:["MobInit"]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 6
+    data modify storage asset:mob Data.namespace set value "006.spider"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"スパイダー"}'
         data modify storage asset:mob Data.NameChar set value 5
