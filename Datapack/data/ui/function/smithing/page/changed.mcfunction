@@ -25,9 +25,14 @@
 # ページを移動する
     execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"upgrade"}}}}] run scoreboard players set @s UIPage 1
     execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"combine"}}}}] run scoreboard players set @s UIPage 2
-    # execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"repair"}}}}] run scoreboard players set @s UIPage 3
     # もし鍛冶可能アイテムが配置されていなければ移動しない
         execute unless data storage ui: Items[{Slot:10b}] unless data storage ui: NewItems[{Slot:10b}] run scoreboard players set @s UIPage 0
+    # もしツール系アイテムであれば移動しない
+        execute if data storage ui: Items[{Slot:10b}].components.minecraft:custom_data.tool run scoreboard players set @s UIPage 0
+        execute if data storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool run scoreboard players set @s UIPage 0
+
+# ツールの修理
+    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"repair"}}}}] if data storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool run function ui:smithing/repair/_
 
 # 効果音
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
@@ -37,7 +42,6 @@
     execute if score @s UIPage matches 0 on vehicle run function ui:smithing/page/init
     execute if score @s UIPage matches 1 on vehicle run function ui:smithing/upgrade/page/init
     execute if score @s UIPage matches 2 on vehicle run function ui:smithing/combine/page/init
-    execute if score @s UIPage matches 3 on vehicle run function ui:smithing/repair/page/init
     execute on vehicle run data modify entity @s Items append from storage ui: NewItems[]
 
 # 二重更新防止

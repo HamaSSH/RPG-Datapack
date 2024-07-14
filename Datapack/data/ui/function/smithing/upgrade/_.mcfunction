@@ -6,10 +6,7 @@
     data remove storage ui: ItemData.ui
 
 # アイテムの説明文はそのまま
-    execute store result score $ItemLore Temporary if data storage ui: ItemData.display.Lore[]
-    execute store result score $ItemBonus Temporary if data storage ui: ItemData.bonus[]
-    scoreboard players operation $ItemLore Temporary -= $ItemBonus Temporary
-    scoreboard players remove $ItemLore Temporary 3
+    execute store result score $ItemLore Temporary run data get storage ui: ItemData.lore_length
     execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
     execute if score $ItemLore Temporary matches 2 run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[1]
     data modify storage ui: Result.display.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822装備時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
