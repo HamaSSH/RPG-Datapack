@@ -26,4 +26,4 @@
         data modify storage asset:mob Data.Status.AGI set value 100
 
 # データの適用
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data
+    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

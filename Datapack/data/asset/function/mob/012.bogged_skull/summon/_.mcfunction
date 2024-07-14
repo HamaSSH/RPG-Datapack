@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/012.bogged_skull",attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",NoAI:1b,Silent:1b,Tags:["AutoKill","HasVehicle","Hitbox"]},{id:"armor_stand",Marker:1b,Invisible:1b,Tags:["AutoKill","HasVehicle"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10121}}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/012.bogged_skull",attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10121}}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 12
@@ -26,4 +26,4 @@
         data modify storage asset:mob Data.Status.AGI set value 150
 
 # データの適用
-    execute as @e[type=silverfish,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data
+    execute as @e[type=silverfish,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

@@ -1,0 +1,49 @@
+#> mob:summon/init/_
+# モブデータの適用
+
+tag @s add Enemy
+
+# 装備の設定
+    data modify storage asset:mob ArmorItems set value []
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Feet
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Legs
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Chest
+    data modify storage asset:mob ArmorItems append from storage asset:mob Data.Head
+    data modify storage asset:mob HandItems set value []
+    data modify storage asset:mob HandItems append from storage asset:mob Data.Mainhand
+    data modify storage asset:mob HandItems append from storage asset:mob Data.Offhand
+    data remove storage asset:mob ArmorItems
+    data remove storage asset:mob HandItems
+
+# 基本的なデータの設定
+    function mob:summon/set_data/_
+
+# 装備の適用
+    data modify entity @s ArmorItems set from storage asset:mob ArmorItems
+    data modify entity @s HandItems set from storage asset:mob HandItems
+
+# ステータススコア
+    execute store result score @s MobID run data get storage asset:mob Data.MobID
+    execute store result score @s LVL run data get storage asset:mob Data.Status.LVL
+    execute store result score @s HPMax run data get storage asset:mob Data.Status.HP
+    execute store result score @s HP run data get storage asset:mob Data.Status.HP
+    execute store result score @s DEF run data get storage asset:mob Data.Status.DEF
+    execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
+    execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
+    function mob:summon/set_data/speed
+
+# Scaleの設定
+    data modify entity @s attributes:[{id:"generic.scale"}].base set value 1.3
+
+# カスタム当たり判定のモブを乗せる場合の初期化
+    execute on passengers if entity @s[tag=Hitbox] run function mob:summon/init/hitbox
+
+# AI乗っ取り用のモブを乗せる場合の初期化
+    execute on passengers if entity @s[tag=Controller] run function mob:summon/init/controller
+
+# モデル表示用のモブを乗せる場合の初期化
+    execute on passengers if entity @s[tag=CustomModel] run function mob:summon/init/custom_model
+
+# リセット
+    data remove storage asset:mob Data
+    tag @s remove MobInit

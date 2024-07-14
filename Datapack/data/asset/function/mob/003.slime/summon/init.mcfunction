@@ -18,7 +18,7 @@
     execute unless entity @s[tag=Original] run scoreboard players set @s HurtTime 5
 
 # データの初期化
-    function mob:summon/set_data
+    function mob:summon/init/_
 
 # 分裂由来ではない召喚の場合リセット
     execute if entity @s[tag=Original] run scoreboard players reset $SlimeSize Temporary

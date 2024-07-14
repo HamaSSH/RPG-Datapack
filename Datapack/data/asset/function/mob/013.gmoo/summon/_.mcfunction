@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon cow ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/013.gmoo",Passengers:[{id:"silverfish",Silent:1b,Tags:["AutoKill","HasVehicle","Controller"]}]}
+    summon cow ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/013.gmoo",Passengers:[{id:"silverfish",Tags:["Controller"]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 13
@@ -26,4 +26,4 @@
         data modify storage asset:mob Data.Status.AGI set value 150
 
 # データの適用
-    execute as @e[type=cow,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/set_data
+    execute as @e[type=cow,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

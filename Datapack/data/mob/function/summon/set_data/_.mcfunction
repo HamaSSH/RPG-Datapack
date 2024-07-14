@@ -1,9 +1,7 @@
-#> mob:summon/set_data/hitbox_init
+#> mob:summon/set_data/_
 # モブデータの適用
 
 # 共通データの設定
-    tag @s add Enemy
-    tag @s add NameDisplay
     attribute @s generic.max_health base set 1024
     data modify entity @s Health set value 1024f
 
@@ -12,7 +10,10 @@
     execute if entity @s[type=#lib:undead] run effect give @s instant_damage infinite 0 true
 
 # 名前の適用
-    function mob:summon/set_name
+    function mob:summon/set_data/name
+
+# 与ダメージの適用
+    execute store result score @s DmgDealt run data get storage asset:mob Data.Status.Dmg
 
 # 重複のないようなMobUUIDの生成
     scoreboard players add World MobUUID 1
@@ -47,3 +48,6 @@
         execute if score $IDtoTag Temporary matches 1.. run tag @s add MobID0.1
         execute unless score $IDtoTag Temporary matches 1.. run tag @s add MobID0.0
         execute if score $IDtoTag Temporary matches 1.. run scoreboard players remove $IDtoTag Temporary 1
+
+# リセット
+    scoreboard players reset $IDtoTag Temporary

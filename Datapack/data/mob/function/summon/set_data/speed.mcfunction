@@ -1,4 +1,4 @@
-#> mob:summon/set_speed
+#> mob:summon/set_data/speed
 # モブの移動速度(generic.movement_speed)を設定
 
 # 元のgeneric.movement_speedと補正値を取得
