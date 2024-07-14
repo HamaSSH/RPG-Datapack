@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],attributes:[{id:"generic.scale",base:1.3}],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10101}}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10101}}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 10
@@ -25,6 +25,7 @@
         data modify storage asset:mob Data.Status.EXP set value 30
         data modify storage asset:mob Data.Status.Gold set value 8
         data modify storage asset:mob Data.Status.AGI set value 150
+        data modify storage asset:mob Data.scale set value 130
 
 # データの適用
     execute as @e[type=silverfish,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

@@ -35,6 +35,7 @@ tag @s add Enemy
     execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
     execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
     function mob:summon/set_data/speed
+    function mob:summon/set_data/scale
 
 # カスタム当たり判定のモブを乗せる場合の初期化
     execute on passengers if entity @s[tag=Hitbox] run function mob:summon/init/hitbox

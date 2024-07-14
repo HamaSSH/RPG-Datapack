@@ -25,6 +25,7 @@
         data modify storage asset:mob Data.Status.EXP set value 12
         data modify storage asset:mob Data.Status.Gold set value 5
         data modify storage asset:mob Data.Status.AGI set value 100
+        data modify storage asset:mob Data.scale set value 100
 
 # データの適用
     execute as @e[type=slime,tag=MobInit,distance=..0.01,limit=1] run function asset:mob/003.slime/summon/init
