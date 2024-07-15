@@ -46,6 +46,7 @@
     tag @s remove PlaysoundOnce
     data remove storage ui: ItemData
     data remove storage ui: Result
+    scoreboard players reset $ItemLore Temporary
     scoreboard players reset $ToolGrade Temporary
     scoreboard players reset $ItemRarity Temporary
     scoreboard players reset $RemainingUse Temporary
