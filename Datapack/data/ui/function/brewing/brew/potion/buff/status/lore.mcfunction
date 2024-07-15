@@ -54,7 +54,9 @@
         execute store result storage ui: SingleBuff.lore.min int 1 run scoreboard players get $DurationMin Temporary
 
 # 適用
-    function ui:brewing/brew/potion/buff/status/apply with storage ui: SingleBuff.lore
+    execute if data storage ui: SingleBuff{status:"HPR"} run function ui:brewing/brew/potion/buff/status/regen/_
+    execute if data storage ui: SingleBuff{status:"MPR"} run function ui:brewing/brew/potion/buff/status/regen/_
+    execute unless data storage ui: SingleBuff{status:"MPR"} unless data storage ui: SingleBuff{status:"MPR"} run function ui:brewing/brew/potion/buff/status/apply with storage ui: SingleBuff.lore
 
 # リセット
     scoreboard players reset $Amplifier Temporary
