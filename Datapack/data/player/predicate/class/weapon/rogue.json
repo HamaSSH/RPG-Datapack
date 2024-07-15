@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "player:class/is_rogue"
+            "name": "player:class/is_hunter"
         },
         {
             "condition": "entity_properties",

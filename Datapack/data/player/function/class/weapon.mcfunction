@@ -2,7 +2,7 @@
 # 適正武器による補正ステータス #TODO: 職業ごとにやったほうがいいかも
 
 # 転生回数の取得
-    execute if predicate player:class/is_rogue run scoreboard players operation $StatusMultiplier Temporary = @s HunterRank
+    execute if predicate player:class/is_hunter run scoreboard players operation $StatusMultiplier Temporary = @s HunterRank
     execute if predicate player:class/is_fighter run scoreboard players operation $StatusMultiplier Temporary = @s FighterRank
     execute if predicate player:class/is_paladin run scoreboard players operation $StatusMultiplier Temporary = @s PaladinRank
     execute if predicate player:class/is_wizard run scoreboard players operation $StatusMultiplier Temporary = @s WizardRank

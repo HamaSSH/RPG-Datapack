@@ -15,7 +15,7 @@
 
 # ボタン選択
     execute unless data storage ui: Items[{Slot:11b,id:"minecraft:player_head"}] run data modify storage ui: Class.path set value "status/ui"
-    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_rogue run data modify storage ui: Class.path set value "class/hunter/join"
+    execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{class:"hunter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_hunter run data modify storage ui: Class.path set value "class/hunter/join"
     execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{class:"fighter"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_fighter run data modify storage ui: Class.path set value "class/fighter/join"
     execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{class:"paladin"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_paladin run data modify storage ui: Class.path set value "class/paladin/join"
     execute unless data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{class:"wizard"}}}}] on vehicle on vehicle on attacker unless predicate player:class/is_wizard run data modify storage ui: Class.path set value "class/wizard/join"

@@ -12,7 +12,7 @@
 # レベルアップ
     tag @s add LevelUp
     scoreboard players add @s LVL 1
-    execute if predicate player:class/is_rogue run scoreboard players add @s HunterLVL 1
+    execute if predicate player:class/is_hunter run scoreboard players add @s HunterLVL 1
     execute if predicate player:class/is_fighter run scoreboard players add @s FighterLVL 1
     execute if predicate player:class/is_paladin run scoreboard players add @s PaladinLVL 1
     execute if predicate player:class/is_wizard run scoreboard players add @s WizardLVL 1
