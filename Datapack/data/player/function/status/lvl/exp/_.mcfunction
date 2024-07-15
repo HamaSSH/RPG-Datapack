@@ -2,7 +2,7 @@
 # EXP取得処理
 
 # 職業XP保存
-    execute if predicate player:class/is_rogue run scoreboard players operation @s RogueEXP += @s EXPGained
+    execute if predicate player:class/is_rogue run scoreboard players operation @s HunterEXP += @s EXPGained
     execute if predicate player:class/is_fighter run scoreboard players operation @s FighterEXP += @s EXPGained
     execute if predicate player:class/is_paladin run scoreboard players operation @s PaladinEXP += @s EXPGained
     execute if predicate player:class/is_wizard run scoreboard players operation @s WizardEXP += @s EXPGained

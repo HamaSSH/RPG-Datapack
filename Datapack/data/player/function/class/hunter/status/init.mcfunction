@@ -1,4 +1,4 @@
-#> player:class/rogue/status/init
+#> player:class/hunter/status/init
 # 初期ステータス
 
 scoreboard players set @s BaseHP 40

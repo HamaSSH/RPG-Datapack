@@ -1,4 +1,4 @@
-#> player:class/status/up/rogue
+#> player:class/status/up/hunter
 # レベルアップごとのステータスアップ処理
 
 scoreboard players set $AddHP Temporary 5

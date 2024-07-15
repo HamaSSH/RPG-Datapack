@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "player:class/weapon/rogue"
+            "name": "player:class/weapon/hunter"
         },
         {
             "condition": "reference",

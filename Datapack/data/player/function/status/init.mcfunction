@@ -31,11 +31,11 @@ scoreboard players set @s NextEXP 50
 scoreboard players set @s Gold 200
 scoreboard players set @s SkillTimer 0
 scoreboard players set @s ElementTimer 0
-scoreboard players set @s RogueEXP 0
+scoreboard players set @s HunterEXP 0
 scoreboard players set @s FighterEXP 0
 scoreboard players set @s PaladinEXP 0
 scoreboard players set @s WizardEXP 0
-scoreboard players set @s RogueLVL 1
+scoreboard players set @s HunterLVL 1
 scoreboard players set @s FighterLVL 1
 scoreboard players set @s PaladinLVL 1
 scoreboard players set @s WizardLVL 1

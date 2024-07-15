@@ -5,13 +5,13 @@
     team add NoCollision
     team modify NoCollision collisionRule never
 
-# ローグ
-    team add Rogue "ローグ"
-    team add Rogue1 "ローグ+1"
-    team add Rogue2 "ローグ+2"
-    team modify Rogue prefix "\uE176"
-    team modify Rogue1 prefix "\uE186"
-    team modify Rogue2 prefix "\uE196"
+# ハンター
+    team add Hunter "ハンター"
+    team add Hunter1 "ハンター+1"
+    team add Hunter2 "ハンター+2"
+    team modify Hunter prefix "\uE176"
+    team modify Hunter1 prefix "\uE186"
+    team modify Hunter2 prefix "\uE196"
 
 # ファイター
     team add Fighter "ファイター"

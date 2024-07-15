@@ -15,7 +15,7 @@
             {
                 "score": {
                     "name": "@p",
-                    "objective": "RogueLVL"
+                    "objective": "HunterLVL"
                 },
                 "bold": true
             }

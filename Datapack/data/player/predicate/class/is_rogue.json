@@ -5,21 +5,21 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "team": "Rogue"
+                "team": "Hunter"
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "team": "Rogue1"
+                "team": "Hunter1"
             }
         },
         {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "team": "Rogue2"
+                "team": "Hunter2"
             }
         }
     ]

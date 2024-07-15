@@ -140,9 +140,9 @@
             scoreboard objectives add BuffLUK dummy "バフLUK"
         # 職業関連
             scoreboard objectives add CDR dummy "クールダウン軽減"
-            scoreboard objectives add RogueRank dummy "ローグ転生回数"
-            scoreboard objectives add RogueLVL dummy "ローグLVL"
-            scoreboard objectives add RogueEXP dummy "ローグEXP"
+            scoreboard objectives add HunterRank dummy "ハンター転生回数"
+            scoreboard objectives add HunterLVL dummy "ハンターLVL"
+            scoreboard objectives add HunterEXP dummy "ハンターEXP"
             scoreboard objectives add FighterRank dummy "ファイター転生回数"
             scoreboard objectives add FighterLVL dummy "ファイターLVL"
             scoreboard objectives add FighterEXP dummy "ファイターEXP"
