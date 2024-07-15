@@ -14,6 +14,7 @@
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementWater] run function mob:on_hurt/element/water
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementThunder] at @s run function mob:on_hurt/element/thunder/_
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementEarth] run effect give @s slowness 2 1
+    execute if entity @p[tag=Attacker,tag=Charged,tag=ElementWind] at @s run function mob:on_hurt/element/wind
 
 # ダメージを受けた際の処理
     execute at @s run function mob:on_hurt/_

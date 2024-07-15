@@ -14,6 +14,7 @@
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWater,distance=..6,limit=1] run function mob:on_hurt/element/water
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementThunder,distance=..6,limit=1] at @s run function mob:on_hurt/element/thunder/_
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run effect give @s slowness 2 1
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWind,distance=..6,limit=1] at @s run function mob:on_hurt/element/wind
 
 # ダメージ処理
     function mob:on_hurt/_
