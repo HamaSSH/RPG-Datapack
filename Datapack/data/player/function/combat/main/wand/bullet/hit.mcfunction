@@ -12,6 +12,7 @@
 # 属性纏い攻撃
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementFire,distance=..6,limit=1] run function mob:on_hurt/element/fire
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWater,distance=..6,limit=1] run function mob:on_hurt/element/water
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementThunder,distance=..6,limit=1] at @s run function mob:on_hurt/element/thunder/_
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run effect give @s slowness 2 1
 
 # ダメージ処理

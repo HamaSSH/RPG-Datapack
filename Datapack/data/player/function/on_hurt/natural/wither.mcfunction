@@ -2,7 +2,7 @@
 # ウィザーダメージ
 
 # ダメージ設定
-    data modify storage lib: Damage.Type.Natural set value "Wither"
+    data modify storage lib: Damage.Natural set value "Wither"
     scoreboard players operation @s DmgReceived = @s HPMax
     scoreboard players operation @s DmgReceived /= #60 Constant
     scoreboard players add @s DmgReceived 5

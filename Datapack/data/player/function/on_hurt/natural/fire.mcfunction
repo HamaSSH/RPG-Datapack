@@ -2,7 +2,7 @@
 # 炎上ダメージ
 
 # ダメージ設定
-    data modify storage lib: Damage.Type.Natural set value "Fire"
+    data modify storage lib: Damage.Natural set value "Fire"
     execute if entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 10
     execute unless entity @s[predicate=lib:is_in_lava] run scoreboard players set @s DmgReceived 5
 

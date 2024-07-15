@@ -2,7 +2,7 @@
 # 毒ダメージの適用
 
 # ダメージ設定
-    data modify storage lib: Damage.Type.Natural set value "Poison"
+    data modify storage lib: Damage.Natural set value "Poison"
     scoreboard players operation @s DmgReceived = @s HP
     scoreboard players add @s DmgReceived 40
     scoreboard players operation @s DmgReceived /= #40 Constant

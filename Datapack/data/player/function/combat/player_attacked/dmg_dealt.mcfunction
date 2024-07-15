@@ -14,6 +14,7 @@
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge2=true}}] run scoreboard players operation @s DmgDealt /= #25 Constant
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge3=true}}] run scoreboard players operation @s DmgDealt /= #10 Constant
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge4=true}}] run scoreboard players operation @s DmgDealt /= #8 Constant
+    execute if entity @s[advancements={player:combat/player_attacked={charged=true}}] run tag @s add Charged
 
 # チャージ率に応じてダメージ補正(projectile)
     execute if entity @s[advancements={player:combat/player_attacked={projectile_charge0=true}}] run scoreboard players operation @s DmgDealt /= #40 Constant
