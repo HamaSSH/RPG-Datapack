@@ -32,7 +32,7 @@
         execute if data storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool run scoreboard players set @s UIPage 0
 
 # ツールの修理
-    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"repair"}}}}] if data storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool run function ui:smithing/repair/_
+    execute unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"repair"}}}}] if data storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool run function ui:smithing/repair/check
 
 # 効果音
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
