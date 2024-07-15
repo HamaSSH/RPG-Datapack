@@ -38,11 +38,11 @@
     execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.color set value "blue"
 
 # エフェクトレベル
-    execute if data storage ui: SingleBuff{amplifier:0} run data modify storage ui: SingleBuff.lore.Level set value "0"
-    execute if data storage ui: SingleBuff{amplifier:1} run data modify storage ui: SingleBuff.lore.Level set value "2II"
-    execute if data storage ui: SingleBuff{amplifier:2} run data modify storage ui: SingleBuff.lore.Level set value "2III"
-    execute if data storage ui: SingleBuff{amplifier:3} run data modify storage ui: SingleBuff.lore.Level set value "2IV"
-    execute if data storage ui: SingleBuff{amplifier:4} run data modify storage ui: SingleBuff.lore.Level set value "2V"
+    execute if data storage ui: SingleBuff{amplifier:0} run data modify storage ui: SingleBuff.lore.level set value "0"
+    execute if data storage ui: SingleBuff{amplifier:1} run data modify storage ui: SingleBuff.lore.level set value "2II"
+    execute if data storage ui: SingleBuff{amplifier:2} run data modify storage ui: SingleBuff.lore.level set value "2III"
+    execute if data storage ui: SingleBuff{amplifier:3} run data modify storage ui: SingleBuff.lore.level set value "2IV"
+    execute if data storage ui: SingleBuff{amplifier:4} run data modify storage ui: SingleBuff.lore.level set value "2V"
 
 # 効果時間
     execute store result score $Duration Temporary run data get storage ui: SingleBuff.duration

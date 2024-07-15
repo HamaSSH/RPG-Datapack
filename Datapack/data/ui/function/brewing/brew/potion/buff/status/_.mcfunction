@@ -2,10 +2,10 @@
 # 素材アイテムのバフからポーションのバフを決定
 
 # エフェクトがダブっているか検知
-    $execute if data storage ui: PotionData.buff[{status:"$(status)"}] run data modify storage ui: PotionData.Duplicate set value 1b
+    $execute unless data storage ui: PotionData.buff[{status:"$(status)",duration:0}] run data modify storage ui: PotionData.Duplicate set value 1b
 
 # 新しいステータスバフはそのままステータスバフを付与
-    execute unless data storage ui: PotionData{Duplicate:1b} run data modify storage ui: PotionData.buff append from storage ui: Ingredient.buff[0]
+    $execute unless data storage ui: PotionData{Duplicate:1b} run data modify storage ui: PotionData.buff[{status:"$(status)"}] set from storage ui: Ingredient.buff[0]
 
 # ステータスバフがダブってたら既存ステータスバフを強化
     execute if data storage ui: PotionData{Duplicate:1b} run function ui:brewing/brew/potion/buff/status/duplicate with storage ui: Ingredient.buff[0]
