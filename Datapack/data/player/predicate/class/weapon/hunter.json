@@ -1,0 +1,22 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "player:class/is_hunter"
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "predicates": {
+                            "custom_data": "{weapon:\"dagger\"}"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
