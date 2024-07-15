@@ -6,14 +6,14 @@
 
 # 素材1つ1つのバフを精査
     data modify storage ui: Ingredient.buff set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.consumables.buff
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/_ with storage ui: Ingredient.buff[0]
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/_ with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/1 with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/1 with storage ui: Ingredient.buff[0]
     data modify storage ui: Ingredient.buff set from storage ui: NewItems[{Slot:11b}].components.minecraft:custom_data.consumables.buff
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/_ with storage ui: Ingredient.buff[0]
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/_ with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/2 with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/2 with storage ui: Ingredient.buff[0]
     data modify storage ui: Ingredient.buff set from storage ui: NewItems[{Slot:12b}].components.minecraft:custom_data.consumables.buff
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/_ with storage ui: Ingredient.buff[0]
-    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/_ with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/3 with storage ui: Ingredient.buff[0]
+    execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/3 with storage ui: Ingredient.buff[0]
 
 # duration:0のバフをストレージから削除
     data remove storage ui: PotionData.buff[{duration:0}]
