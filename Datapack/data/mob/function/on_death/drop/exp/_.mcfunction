@@ -10,7 +10,7 @@
 
 # 経験値量表示
     execute anchored eyes positioned ^ ^ ^ run summon text_display ~ ~ ~ {alignment:"left",billboard:"center"}
-    execute anchored eyes positioned ^ ^ ^ as @n[type=text_display,distance=..0.01] run function mob:on_death/drop/exp/display
+    execute anchored eyes positioned ^ ^ ^ as @n[type=text_display] run function mob:on_death/drop/exp/display
 
 # EXPの分配
     scoreboard players operation $EXPDrop50 Temporary = $EXPDrop Temporary

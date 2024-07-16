@@ -4,7 +4,7 @@
 # ゴールド表示
     tag @s add GoldDisplay
     execute anchored eyes positioned ^ ^ ^ run summon text_display ~ ~ ~ {alignment:"left",billboard:"center"}
-    execute anchored eyes positioned ^ ^ ^ as @n[type=text_display,distance=..0.01] run function player:status/gold/display/init
+    execute anchored eyes positioned ^ ^ ^ as @n[type=text_display] run function player:status/gold/display/init
 
 # リセット
     scoreboard players reset @s GoldDisplay
