@@ -12,8 +12,6 @@ tag @s add Enemy
     data modify storage asset:mob HandItems set value []
     data modify storage asset:mob HandItems append from storage asset:mob Data.Mainhand
     data modify storage asset:mob HandItems append from storage asset:mob Data.Offhand
-    data remove storage asset:mob ArmorItems
-    data remove storage asset:mob HandItems
 
 # 基本的なデータの設定
     function mob:summon/set_data/_
@@ -49,4 +47,6 @@ tag @s add Enemy
 
 # リセット
     data remove storage asset:mob Data
+    data remove storage asset:mob ArmorItems
+    data remove storage asset:mob HandItems
     tag @s remove MobInit
