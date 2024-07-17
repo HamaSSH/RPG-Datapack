@@ -6,7 +6,9 @@
     tag @s remove MagicHit
 
 # 演出
-    particle sweep_attack ~ ~ ~ 0.1 0.6 0.1 0.05 8 force
+    particle cloud ~ ~ ~ 0.3 0.5 0.3 0.1 50 force
+    particle gust ~ ~0.3 ~ 0.7 0.4 0.7 0 3 force
+    particle sweep_attack ~ ~0.4 ~ 0.3 0.5 0.3 0.2 8 force
     particle explosion ~ ~ ~ 0 0 0 0 1 force
     playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.4 1.2
     playsound entity.firework_rocket.blast_far master @a ~ ~ ~ 0.7 0.8

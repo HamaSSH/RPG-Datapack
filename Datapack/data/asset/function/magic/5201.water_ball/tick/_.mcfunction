@@ -13,12 +13,12 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function asset:magic/5201.water_ball/tick/hit/_
 
 # 演出
-    particle enchant ~ ~ ~ 0.2 0.2 0.2 0 10 force
+    execute if predicate lib:percentage/50 run particle enchant ~ ~ ~ 0.3 0.3 0.3 0.2 10 force
     particle dust{color:[0.231,0.384,0.894],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
     particle dust{color:[0.231,0.384,0.894],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
     particle dust{color:[0.518,0.71,1.0],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
     particle dust{color:[0.518,0.71,1.0],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
-    particle bubble_pop ~ ~ ~ 0.2 0.2 0.2 0.03 15 force
+    particle bubble_pop ~ ~ ~ 0.2 0.2 0.2 0.1 10 force
 
 # 移動
     tp ^ ^ ^1

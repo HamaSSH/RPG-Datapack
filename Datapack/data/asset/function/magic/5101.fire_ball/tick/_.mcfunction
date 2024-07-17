@@ -13,7 +13,7 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function asset:magic/5101.fire_ball/tick/hit/_
 
 # 演出
-    particle enchant ~ ~ ~ 0.3 0.3 0.3 0 15 force
+    execute if predicate lib:percentage/50 run particle enchant ~ ~ ~ 0.3 0.3 0.3 0.2 10 force
     particle dust_color_transition{from_color:[1.0,0.804,0.169],to_color:[1.0,0.125,0.023],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
     particle dust_color_transition{from_color:[1.0,0.804,0.169],to_color:[1.0,0.125,0.023],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
     particle dust_color_transition{from_color:[1.0,0.859,0.392],to_color:[1.0,0.494,0.153],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force

@@ -6,7 +6,7 @@
     tag @s remove MagicHit
 
 # 演出
-    particle splash ~ ~ ~ 0.2 0.4 0.2 0.05 100 force
+    particle splash ~ ~0.4 ~ 0.3 0.5 0.3 0.5 200 force
     particle explosion ~ ~ ~ 0 0 0 0 1 force
     playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.4 1.2
     playsound entity.firework_rocket.blast_far master @a ~ ~ ~ 0.7 0.8
