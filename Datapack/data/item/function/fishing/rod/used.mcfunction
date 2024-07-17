@@ -9,6 +9,9 @@
 # 釣った魚に対しての処理
     execute as @e[type=item] if data entity @s Item.components.minecraft:custom_data{item_type:"fishing_loot"} at @s run function item:fishing/_
 
+# 全種類釣っているか検知
+    execute unless data storage zukan:fish Data[{count:0}] run advancement grant @a only asset:achievement/2.5
+
 # レベルが上がらないように
     playsound resource:fishing.done player @a ~ ~ ~ 0.3 1
     kill @e[type=experience_orb,distance=..1]

@@ -16,6 +16,7 @@
     execute if predicate player:class/is_fighter run scoreboard players add @s FighterLVL 1
     execute if predicate player:class/is_paladin run scoreboard players add @s PaladinLVL 1
     execute if predicate player:class/is_wizard run scoreboard players add @s WizardLVL 1
+    execute if score @s LVL matches 30 run advancement grant @s only asset:achievement/1.2
 
 # 次の必要経験値の計算
     scoreboard players operation @s EXP -= @s NextEXP

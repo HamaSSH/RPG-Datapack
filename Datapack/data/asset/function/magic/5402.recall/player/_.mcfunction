@@ -10,4 +10,7 @@ particle reverse_portal ~ ~0.1 ~ 0.8 0 0.8 0.03 25 force
 
 # テレポート完了
     execute if score @s 5402.Tick matches 100 positioned as 83a-51-1-0-2 run tp @a[distance=..4] ~ ~ ~ -90 0
+    execute if score @s 5402.Tick matches 100 run tag @s remove 3.4.NoDamage
+    execute if score @s 5402.Tick matches 100 run scoreboard players reset @s 3.5.DungeonTimer
+    execute if score @s 5402.Tick matches 100 run tag @s remove 3.6.NoItems
     execute if score @s 5402.Tick matches 100 run scoreboard players reset @s 5402.Tick

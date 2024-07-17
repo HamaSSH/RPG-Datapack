@@ -19,6 +19,7 @@
     function ui:brewing/brew/potion/buff/_
     data remove storage ui: PotionData.buff[].ID
     data modify storage ui: Results[].components.minecraft:custom_data.consumables.buff set from storage ui: PotionData.buff
+    data modify storage ui: Results[].components.minecraft:custom_data.consumables.custom_potion set value 1b
 
 # ポーションのdisplayの設定
     function ui:brewing/brew/potion/display

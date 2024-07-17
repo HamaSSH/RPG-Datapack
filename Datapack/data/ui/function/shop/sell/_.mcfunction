@@ -7,6 +7,9 @@
 
 # プレイヤーのGoldに売価を追加
     execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold += $TotalValue Temporary
+    execute on vehicle on vehicle on attacker run scoreboard players operation @s LifetimeGold += $TotalValue Temporary
+    execute on vehicle on vehicle on attacker if score @s Gold matches 10000.. run advancement grant @s only asset:achievement/1.5
+    execute on vehicle on vehicle on attacker if score @s LifetimeGold matches 100000.. run advancement grant @s only asset:achievement/1.6
 
 # 売却情報の表示
     tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalValue","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]

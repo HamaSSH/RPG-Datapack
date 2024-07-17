@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "world:test"
+            }
+        }
+    },
+    "rewards": {
+        "function": "world:open_chest"
+    }
+}

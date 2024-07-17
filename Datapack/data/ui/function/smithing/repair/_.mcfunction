@@ -34,6 +34,9 @@
     execute store result score $ToolGrade Temporary run data get storage ui: ItemData.tool.grade
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool.grade int 1 run scoreboard players add $ToolGrade Temporary 1
 
+# 実績達成
+    execute on vehicle on vehicle on attacker run advancement grant @s only asset:achievement/2.4
+
 # # displayの適用
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:item_name set from storage ui: Result.display.Name
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore

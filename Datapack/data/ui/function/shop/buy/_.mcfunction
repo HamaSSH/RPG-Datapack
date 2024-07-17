@@ -7,6 +7,7 @@
 
 # 金を払う
     execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold -= $Price Temporary
+    execute if score $Count Temporary matches 64 on vehicle on vehicle on attacker run advancement grant @s only asset:achievement/3.1
 
 # 効果音
     playsound resource:entity.villager.yes2 master @a ~ ~ ~ 1

@@ -7,5 +7,8 @@
         function lib:damage/blur
     function lib:damage/received
 
+# ダンジョンノーダメチャレンジ失敗
+    tag @s remove 3.4.NoDamage
+
 # 死亡処理
     execute if score @s HP matches ..0 run function player:on_death/_

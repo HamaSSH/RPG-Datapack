@@ -9,5 +9,10 @@
     execute unless entity @a[predicate=player:in_dungeon] run function world:dungeon/generate with storage global: Dungeon
     execute unless entity @a[predicate=player:in_dungeon] run function world:dungeon/enter/_ with storage global: Dungeon
 
+# 実績チャレンジスタート
+    tag @s add 3.4.NoDamage
+    scoreboard players set @s 3.5.DungeonTimer 0
+    execute unless data entity @s Inventory[0] run tag @s add 3.6.NoItems
+
 # リセット
     advancement revoke @s only world:dungeon/enter

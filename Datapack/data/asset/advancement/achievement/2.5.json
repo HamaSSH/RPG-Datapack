@@ -4,11 +4,11 @@
             "id": "fishing_rod"
         },
         "title": {
-            "text": "釣り職人\uF828\uF829\uF829",
+            "text": "釣り職人\uF828\uF829",
             "italic": false
         },
         "description": {
-            "text": "全種類の魚を釣り上げる"
+            "text": "魚図鑑を埋める"
         },
         "frame": "task",
         "show_toast": true,

@@ -8,7 +8,7 @@
             "italic": false
         },
         "description": {
-            "text": "チェストを100個開ける"
+            "text": "チェストを30個開ける"
         },
         "frame": "task",
         "show_toast": true,

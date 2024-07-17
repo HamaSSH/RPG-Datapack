@@ -24,6 +24,9 @@
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.grade int 1 run scoreboard players get $ItemGrade Temporary
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity int 1 run scoreboard players get $ItemRarity Temporary
 
+# 実績達成検知
+    execute if score $ItemGrade Temporary matches 3 on vehicle on vehicle on attacker run advancement grant @s only asset:achievement/2.2
+
 # 最大強化になったアイテムのCombineアイテム枠を一つ増やす
     execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 2 run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.combine[{Slot:12b}]
     execute if score $ItemGrade Temporary matches 3 if score $ItemRarity Temporary matches 3 run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.ui.combine[{Slot:13b}]

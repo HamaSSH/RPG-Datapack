@@ -4,6 +4,7 @@
 scoreboard players set @s SkillTimer 400
 tag @s add HammerSkill
 tag @s remove MPCheckPass
+execute if predicate player:is_element run advancement grant @s only asset:achievement/1.3
 
 # 最初の一撃＋演出
     function player:combat/main/hammer/charged

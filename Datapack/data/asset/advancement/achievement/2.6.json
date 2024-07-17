@@ -7,11 +7,11 @@
             }
         },
         "title": {
-            "text": "美食家\uF829\uF82A\uF829",
+            "text": "美食家\uF829\uF829",
             "italic": false
         },
         "description": {
-            "text": "食べ物を全種類食べてみる"
+            "text": "食べ物を全種類食べてみる。全23種類！"
         },
         "frame": "task",
         "show_toast": true,

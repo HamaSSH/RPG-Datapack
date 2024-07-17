@@ -30,6 +30,7 @@
     function core:load/constant
 
 # アセットの初期処理
+    function asset:achievement/load
     function #asset:magic/load
     function #asset:mob/load
 
@@ -84,6 +85,7 @@
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
         scoreboard objectives add UIPage trigger "UIのページ"
         scoreboard objectives add ShopPage trigger "店のページ"
+        scoreboard objectives add LifetimeGold dummy "生涯獲得ゴールド"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"

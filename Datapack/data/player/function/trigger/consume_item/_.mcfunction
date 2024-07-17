@@ -9,6 +9,9 @@
 # HP回復
     execute store result score @s Healing run data get storage player: Consumables.healing
 
+# 初めてのドーピング
+    execute if data storage player: Consumables{custom_potion:1b} run advancement grant @s only asset:achievement/2.1
+
 # バフをプレイヤーに付与
     data modify storage player: NewBuff set from storage player: Consumables.buff
     function player:buff/_

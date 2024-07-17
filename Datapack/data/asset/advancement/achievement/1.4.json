@@ -4,11 +4,11 @@
             "id": "zombie_head"
         },
         "title": {
-            "text": "ワンパンチ！\uF828\uF829\uF829",
+            "text": "１ショット５キル\uF828\uF829",
             "italic": false
         },
         "description": {
-            "text": "モブをHP最大から一撃で倒す"
+            "text": "5体のモブを同時に倒す"
         },
         "frame": "task",
         "show_toast": true,
