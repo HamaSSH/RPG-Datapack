@@ -1,0 +1,34 @@
+{
+    "description": {
+        "translate": "enchantment.lure"
+    },
+    "supported_items": "fishing_rod",
+    "weight": 2,
+    "max_level": 5,
+    "min_cost": {
+        "base": 15,
+        "per_level_above_first": 9
+    },
+    "max_cost": {
+        "base": 65,
+        "per_level_above_first": 9
+    },
+    "anvil_cost": 4,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "fishing_time_reduction": [
+            {
+                "effect": {
+                    "type": "add",
+                    "value": {
+                        "type": "linear",
+                        "base": 5,
+                        "per_level_above_first": 5
+                    }
+                }
+            }
+        ]
+    }
+}
