@@ -26,6 +26,8 @@
     execute if score $Distance Temporary <= $RequiredPlayerRange Temporary run tag @e[type=marker,tag=Spawner,distance=..0.01] add PlayerIsNear
 
 # リセット
+    data remove storage world: PlayerPos
+    data remove storage world: SpawnerPos
     scoreboard players reset $SpawnerX Temporary
     scoreboard players reset $SpawnerY Temporary
     scoreboard players reset $SpawnerZ Temporary

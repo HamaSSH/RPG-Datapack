@@ -21,6 +21,7 @@
     data modify entity @s Pos set from storage world: SpawnPos
 
 # リセット
+    data remove storage world: SpawnPos
     scoreboard players reset $SpreadX
     scoreboard players reset $SpreadY
     scoreboard players reset $SpreadZ
