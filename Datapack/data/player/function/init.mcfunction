@@ -10,6 +10,7 @@
     tag @s add RightHanded
 
 # 初期ステータス
+    team leave @s
     attribute @s minecraft:generic.attack_speed base set 3.0
     function player:status/init
 

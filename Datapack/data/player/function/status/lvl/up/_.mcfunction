@@ -1,9 +1,8 @@
 #> player:status/lvl/up/_
 # レベルアップ処理
 
-# ステータスアップ
+# ステータス情報保存
     execute unless entity @s[tag=BeforeLevelup] unless entity @s[tag=ChangedClass] run function player:status/before_levelup
-    function player:class/status/up/_
 
 # リジェネレーション
     data modify storage player: NewBuff set value [{effect:"regeneration",duration:60,amplifier:8}]
@@ -12,6 +11,7 @@
 # レベルアップ
     tag @s add LevelUp
     scoreboard players add @s LVL 1
+    function player:class/status_up
     execute if predicate player:class/is_hunter run scoreboard players add @s HunterLVL 1
     execute if predicate player:class/is_fighter run scoreboard players add @s FighterLVL 1
     execute if predicate player:class/is_paladin run scoreboard players add @s PaladinLVL 1
