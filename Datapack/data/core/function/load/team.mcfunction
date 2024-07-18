@@ -9,33 +9,33 @@
     team add Hunter "ハンター"
     team add Hunter1 "ハンター+1"
     team add Hunter2 "ハンター+2"
-    team modify Hunter prefix "\uE176"
-    team modify Hunter1 prefix "\uE186"
-    team modify Hunter2 prefix "\uE196"
+    team modify Hunter prefix "\uE175\uF821"
+    team modify Hunter1 prefix "\uE185\uF821"
+    team modify Hunter2 prefix "\uE195\uF821"
 
 # ファイター
     team add Fighter "ファイター"
     team add Fighter1 "ファイター+1"
     team add Fighter2 "ファイター+2"
-    team modify Fighter prefix "\uE177"
-    team modify Fighter1 prefix "\uE187"
-    team modify Fighter2 prefix "\uE197"
+    team modify Fighter prefix "\uE177\uF821"
+    team modify Fighter1 prefix "\uE187\uF821"
+    team modify Fighter2 prefix "\uE197\uF821"
 
 # パラディン
     team add Paladin "パラディン"
     team add Paladin1 "パラディン+1"
     team add Paladin2 "パラディン+2"
-    team modify Paladin prefix "\uE178"
-    team modify Paladin1 prefix "\uE188"
-    team modify Paladin2 prefix "\uE198"
+    team modify Paladin prefix "\uE178\uF821"
+    team modify Paladin1 prefix "\uE188\uF821"
+    team modify Paladin2 prefix "\uE198\uF821"
 
 # ウィザード
     team add Wizard "ウィザード"
     team add Wizard1 "ウィザード+1"
     team add Wizard2 "ウィザード+2"
-    team modify Wizard prefix "\uE179"
-    team modify Wizard1 prefix "\uE189"
-    team modify Wizard2 prefix "\uE199"
+    team modify Wizard prefix "\uE179\uF821"
+    team modify Wizard1 prefix "\uE189\uF821"
+    team modify Wizard2 prefix "\uE199\uF821"
 
 # 醸造UI
     team add Brewing
