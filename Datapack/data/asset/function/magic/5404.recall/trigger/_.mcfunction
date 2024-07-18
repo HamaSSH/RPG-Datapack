@@ -1,8 +1,8 @@
-#> asset:magic/5402.recall/trigger/_
+#> asset:magic/5404.recall/trigger/_
 # 魔法発動時の処理
 
 # プレイヤー用tickの始動
-    scoreboard players add @s 5402.Tick 0
+    scoreboard players add @s 5404.Tick 0
 
 # 動かないで！
     tellraw @s "─ 5秒後にテレポートします... (移動でキャンセル)\n"
