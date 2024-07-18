@@ -8,7 +8,7 @@
             "italic": false
         },
         "description": {
-            "text": "入ってから5:00以内に\nダンジョンを攻略する"
+            "text": "入ってから3:00以内に\nダンジョンを攻略する"
         },
         "frame": "task",
         "show_toast": true,

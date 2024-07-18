@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "advancements": {
+                            "asset:achievement/1.1": true,
+                            "asset:achievement/1.2": true,
+                            "asset:achievement/1.3": true,
+                            "asset:achievement/1.4": true,
+                            "asset:achievement/1.5": true,
+                            "asset:achievement/2.1": true,
+                            "asset:achievement/2.2": true,
+                            "asset:achievement/2.3": true,
+                            "asset:achievement/2.4": true,
+                            "asset:achievement/2.5": true,
+                            "asset:achievement/2.6": true,
+                            "asset:achievement/3.1": true,
+                            "asset:achievement/3.2": true,
+                            "asset:achievement/3.3": true,
+                            "asset:achievement/3.4": true,
+                            "asset:achievement/3.5": true,
+                            "asset:achievement/3.6": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:achievement/1.6"
+    }
+}

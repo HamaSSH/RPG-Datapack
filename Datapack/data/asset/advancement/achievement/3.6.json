@@ -4,11 +4,11 @@
             "id": "barrier"
         },
         "title": {
-            "text": "身体一つ\uF828\uF82A\uF829",
+            "text": "ぺちっ\uF82A\uF829",
             "italic": false
         },
         "description": {
-            "text": "アイテムを持たない状態から\nダンジョンを攻略する"
+            "text": "素手でボスに止めを刺す"
         },
         "frame": "task",
         "show_toast": true,

@@ -13,7 +13,6 @@
 # 実績チャレンジ失敗
     tag @s remove 3.4.NoDamage
     scoreboard players reset @s 3.5.DungeonTimer
-    tag @s remove 3.6.NoItems
 
 # 演出
     execute in overworld positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0

@@ -6,7 +6,5 @@ execute in overworld positioned as 83a-51-1-0-2 run playsound block.beacon.power
 
 # 実績達成チェック
     execute if entity @s[tag=3.4.NoDamage] run advancement grant @s only asset:achievement/3.4
-    execute if entity @s[tag=3.6.NoItems] run advancement grant @s only asset:achievement/3.6
     function world:dungeon/exit/timer
     tag @s remove 3.4.NoDamage
-    tag @s remove 3.6.NoItems

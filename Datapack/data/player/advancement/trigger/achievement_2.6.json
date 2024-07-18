@@ -232,6 +232,6 @@
         }
     },
     "rewards": {
-        "function": "asset:achievement/2.5"
+        "function": "asset:achievement/2.6"
     }
 }

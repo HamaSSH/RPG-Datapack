@@ -4,11 +4,11 @@
             "id": "diamond_block"
         },
         "title": {
-            "text": "巨万の富\uF82A\uF829",
+            "text": "全実績達成\uF829",
             "italic": false
         },
         "description": {
-            "text": "総計100000G取得する"
+            "text": "おめでとう、\nそしてありがとう"
         },
         "frame": "task",
         "show_toast": true,

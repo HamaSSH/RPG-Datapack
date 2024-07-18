@@ -16,12 +16,10 @@
 
 # ゴールドスコアに加算
     playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.1 1.5
-    scoreboard players operation $100G Temporary += $1G Temporary
-    scoreboard players operation $100G Temporary += $10G Temporary
+    scoreboard players operation @s Gold += $1G Temporary
+    scoreboard players operation @s Gold += $10G Temporary
     scoreboard players operation @s Gold += $100G Temporary
-    scoreboard players operation @s LifetimeGold += $100G Temporary
     execute if score @s Gold matches 10000.. run advancement grant @s only asset:achievement/1.5
-    execute if score @s LifetimeGold matches 100000.. run advancement grant @s only asset:achievement/1.6
 
 # リセット
     scoreboard players reset $1G Temporary
