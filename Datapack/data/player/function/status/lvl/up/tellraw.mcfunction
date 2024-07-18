@@ -19,9 +19,9 @@
     scoreboard players operation $CurrentCRT Temporary -= $PreviousCRT Temporary
     scoreboard players operation $CurrentLUK Temporary -= $PreviousLUK Temporary
     execute if score $CurrentHP Temporary matches 1.. run tellraw @s [{"text":"\uE100 最大ＨＰ:  "},[{"score":{"name":"$PreviousHP","objective":"Temporary"},"color":"#AAAAAA"}," → "],[{"score":{"name":"@s","objective":"BaseHP"},"bold":true}],[{"text":" (+","color":"green"},{"score":{"name":"$CurrentHP","objective":"Temporary"}},")"]]
-    execute if score $CurrentHPR Temporary matches 1.. run tellraw @s [{"text":"\uE101 自然回復:  "},[{"score":{"name":"$PrevHPRInt","objective":"Temporary"},"color":"#AAAAAA"},".",{"score":{"name":"$PrevHPRDec","objective":"Temporary"}},"/s → "],[{"score":{"name":"$BaseHPRInt","objective":"Temporary"},"bold":true},".",{"score":{"name":"$BaseHPRDec","objective":"Temporary"}},"/s"],[{"text":" (+","color":"green"},{"score":{"name":"$CurrHPRInt","objective":"Temporary"}},".",{"score":{"name":"$CurrHPRDec","objective":"Temporary"}},"/s)"]]
+    execute if score $CurrentHPR Temporary matches 1.. run tellraw @s [{"text":"\uE101 自然回復:  "},[{"score":{"name":"$PrevHPRInt","objective":"Temporary"},"color":"#AAAAAA"},".",{"score":{"name":"$PrevHPRDec10","objective":"Temporary"}},{"score":{"name":"$PrevHPRDec","objective":"Temporary"}},"/s → "],[{"score":{"name":"$BaseHPRInt","objective":"Temporary"},"bold":true},".",{"score":{"name":"$BaseHPRDec10","objective":"Temporary"}},{"score":{"name":"$BaseHPRDec","objective":"Temporary"}},"/s"],[{"text":" (+","color":"green"},{"score":{"name":"$CurrHPRInt","objective":"Temporary"}},".",{"score":{"name":"$CurrHPRDec10","objective":"Temporary"}},{"score":{"name":"$CurrHPRDec","objective":"Temporary"}},"/s)"]]
     execute if score $CurrentMP Temporary matches 1.. run tellraw @s [{"text":"\uE102 最大ＭＰ:  "},[{"score":{"name":"$PreviousMP","objective":"Temporary"},"color":"#AAAAAA"}," → "],[{"score":{"name":"@s","objective":"BaseMP"},"bold":true}],[{"text":" (+","color":"green"},{"score":{"name":"$CurrentMP","objective":"Temporary"}},")"]]
-    execute if score $CurrentMPR Temporary matches 1.. run tellraw @s [{"text":"\uE103 自然回復:  "},[{"score":{"name":"$PrevMPRInt","objective":"Temporary"},"color":"#AAAAAA"},".",{"score":{"name":"$PrevMPRDec","objective":"Temporary"}},"/s → "],[{"score":{"name":"$BaseMPRInt","objective":"Temporary"},"bold":true},".",{"score":{"name":"$BaseMPRDec","objective":"Temporary"}},"/s"],[{"text":" (+","color":"green"},{"score":{"name":"$CurrMPRInt","objective":"Temporary"}},".",{"score":{"name":"$CurrMPRDec","objective":"Temporary"}},"/s)"]]
+    execute if score $CurrentMPR Temporary matches 1.. run tellraw @s [{"text":"\uE103 自然回復:  "},[{"score":{"name":"$PrevMPRInt","objective":"Temporary"},"color":"#AAAAAA"},".",{"score":{"name":"$PrevMPRDec10","objective":"Temporary"}},{"score":{"name":"$PrevMPRDec","objective":"Temporary"}},"/s → "],[{"score":{"name":"$BaseMPRInt","objective":"Temporary"},"bold":true},".",{"score":{"name":"$BaseMPRDec10","objective":"Temporary"}},{"score":{"name":"$BaseMPRDec","objective":"Temporary"}},"/s"],[{"text":" (+","color":"green"},{"score":{"name":"$CurrMPRInt","objective":"Temporary"}},".",{"score":{"name":"$CurrMPRDec10","objective":"Temporary"}},{"score":{"name":"$CurrMPRDec","objective":"Temporary"}},"/s)"]]
     execute if score $CurrentSTR Temporary matches 1.. run tellraw @s [{"text":"\uE104 物理攻撃:  "},[{"score":{"name":"$PreviousSTR","objective":"Temporary"},"color":"#AAAAAA"}," → "],[{"score":{"name":"@s","objective":"BaseSTR"},"bold":true}],[{"text":" (+","color":"green"},{"score":{"name":"$CurrentSTR","objective":"Temporary"}},")"]]
     execute if score $CurrentINT Temporary matches 1.. run tellraw @s [{"text":"\uE105 魔法攻撃:  "},[{"score":{"name":"$PreviousINT","objective":"Temporary"},"color":"#AAAAAA"}," → "],[{"score":{"name":"@s","objective":"BaseINT"},"bold":true}],[{"text":" (+","color":"green"},{"score":{"name":"$CurrentINT","objective":"Temporary"}},")"]]
     execute if score $CurrentDEX Temporary matches 1.. run tellraw @s [{"text":"\uE106 器用さ:     \uF803"},[{"score":{"name":"$PreviousDEX","objective":"Temporary"},"color":"#AAAAAA"}," → "],[{"score":{"name":"@s","objective":"BaseDEX"},"bold":true}],[{"text":" (+","color":"green"},{"score":{"name":"$CurrentDEX","objective":"Temporary"}},")"]]
@@ -61,13 +61,19 @@
     scoreboard players reset $CurrentLUK Temporary
     scoreboard players reset $PrevHPRInt Temporary
     scoreboard players reset $PrevHPRDec Temporary
+    scoreboard players reset $PrevHPRDec10 Temporary
     scoreboard players reset $PrevMPRInt Temporary
     scoreboard players reset $PrevMPRDec Temporary
+    scoreboard players reset $PrevMPRDec10 Temporary
     scoreboard players reset $CurrHPRInt Temporary
     scoreboard players reset $CurrHPRDec Temporary
+    scoreboard players reset $CurrHPRDec10 Temporary
     scoreboard players reset $CurrMPRInt Temporary
     scoreboard players reset $CurrMPRDec Temporary
+    scoreboard players reset $CurrMPRDec10 Temporary
     scoreboard players reset $BaseHPRInt Temporary
     scoreboard players reset $BaseHPRDec Temporary
+    scoreboard players reset $BaseHPRDec10 Temporary
     scoreboard players reset $BaseMPRInt Temporary
     scoreboard players reset $BaseMPRDec Temporary
+    scoreboard players reset $BaseMPRDec10 Temporary

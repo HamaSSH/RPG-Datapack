@@ -24,3 +24,5 @@ scoreboard players operation $PreviousLUK Temporary = @s BaseLUK
     scoreboard players operation $PrevMPRInt Temporary /= #100 Constant
     scoreboard players operation $PrevMPRDec Temporary = @s BaseMPR
     scoreboard players operation $PrevMPRDec Temporary %= #100 Constant
+    execute if score $PrevHPRInt Temporary matches 1.. if score $PrevHPRDec Temporary matches 1..9 run scoreboard players set $PrevHPRDec10 Temporary 0
+    execute if score $PrevMPRInt Temporary matches 1.. if score $PrevMPRDec Temporary matches 1..9 run scoreboard players set $PrevMPRDec10 Temporary 0
