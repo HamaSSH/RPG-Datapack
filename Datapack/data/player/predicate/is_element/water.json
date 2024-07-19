@@ -1,0 +1,16 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"ElementWater\"]}"
+            }
+        },
+        {
+            "condition": "reference",
+            "name": "player:hold_weapon/element/water"
+        }
+    ]
+}

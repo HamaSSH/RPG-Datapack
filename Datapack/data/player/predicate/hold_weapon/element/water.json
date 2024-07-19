@@ -1,0 +1,13 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "predicates": {
+                    "custom_data": "{custom_enchant:\"water_element\"}"
+                }
+            }
+        }
+    }
+}

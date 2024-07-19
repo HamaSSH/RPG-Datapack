@@ -11,7 +11,7 @@
 
 # 属性纏い攻撃 #TODO: 矢による属性攻撃でプレイヤーのElementFireタグが着弾直前で切れたら効果なしになる
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementFire] run function mob:on_hurt/element/fire
-    execute if entity @p[tag=Attacker,tag=Charged,tag=ElementWater] run function mob:on_hurt/element/water
+    execute if entity @p[tag=Attacker,tag=Charged,predicate=player:is_element/water] run function mob:on_hurt/element/water
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementThunder] at @s run function mob:on_hurt/element/thunder/_
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementEarth] run effect give @s slowness 2 1
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementWind] at @s run function mob:on_hurt/element/wind
