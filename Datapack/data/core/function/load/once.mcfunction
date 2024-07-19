@@ -22,6 +22,9 @@
 # チームの設定
     function core:load/team
 
+# 魚図鑑の初期化
+    execute unless data storage global: fish.zukan_ver run function item:zukan/fish/init
+
 # 汎用スコアの定義
     scoreboard objectives add Global dummy
     scoreboard objectives add Temporary dummy
