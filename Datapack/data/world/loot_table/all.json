@@ -3,17 +3,17 @@
         {
             "rolls": {
                 "min": 2,
-                "max": 4
+                "max": 3
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 8,
+                    "weight": 12,
                     "value": "world:food/all"
                 },
                 {
                     "type": "loot_table",
-                    "weight": 20,
+                    "weight": 24,
                     "value": "world:loot/all"
                 },
                 {
@@ -30,6 +30,18 @@
                     "type": "loot_table",
                     "weight": 1,
                     "value": "world:weapon/all"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "world:gold"
                 }
             ]
         }
