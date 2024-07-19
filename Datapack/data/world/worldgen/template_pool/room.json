@@ -3,7 +3,7 @@
     "fallback": "world:fallback",
     "elements": [
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -12,7 +12,7 @@
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -21,7 +21,7 @@
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -39,7 +39,16 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:room6",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -48,7 +57,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -57,7 +66,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 1,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
