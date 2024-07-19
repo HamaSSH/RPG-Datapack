@@ -2,13 +2,32 @@
     "pools": [
         {
             "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1049"
+                }
+            ]
+        },
+        {
+            "rolls": {
                 "min": 1,
                 "max": 2
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1040"
+                    "value": "asset:item/1021",
+                    "weight": 2000
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1022",
+                    "weight": 20,
+                    "quality": 1
                 }
             ]
         }
