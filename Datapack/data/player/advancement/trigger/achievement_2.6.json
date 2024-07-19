@@ -219,16 +219,6 @@
                     }
                 }
             }
-        },
-        "1608": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1608
-                    }
-                }
-            }
         }
     },
     "rewards": {
