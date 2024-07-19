@@ -11,6 +11,10 @@
 
 # 全種類釣っているか検知
     execute unless data storage zukan:fish Data[{count:0}] run advancement grant @a only asset:achievement/2.5
+    execute store result score $FishKind Temporary if data storage zukan:fish Data[]
+    execute store result score $KingKind Temporary if data storage zukan:fish Data[{crown:"🥇"}]
+    execute if score $KingKind Temporary = $FishKind Temporary run advancement grant @a only asset:achievement/0.1
+    execute unless data storage zukan:fish Data[{count:0}] run advancement grant @a only asset:achievement/2.5
 
 # レベルが上がらないように
     playsound resource:fishing.done player @a ~ ~ ~ 0.3 1
@@ -19,4 +23,6 @@
 # リセット
     tag @s remove MainhandRod
     tag @s remove OffhandRod
+    scoreboard players reset $FishKind Temporary
+    scoreboard players reset $KingKind Temporary
     advancement revoke @s only player:trigger/used_item/fishing_rod

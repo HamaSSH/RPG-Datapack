@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "id": "fishing_rod",
+            "components": {
+                "custom_model_data": 4502
+            }
+        },
+        "title": {
+            "text": "キングサイズ",
+            "italic": false
+        },
+        "description": {
+            "text": "魚図鑑を埋める"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "requirements": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "asset:achievement/0.1"
+    }
+}
