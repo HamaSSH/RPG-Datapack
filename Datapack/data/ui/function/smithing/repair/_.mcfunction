@@ -6,6 +6,11 @@
     data modify storage ui: ItemData.display.Name set from storage ui: NewItems[{Slot:10b}].components.minecraft:item_name
     data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
 
+# 再びツールを使えるようにする
+    execute if data storage ui: ItemData.tool{type:"pickaxe"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_break set from storage ui: NewItems[{Slot:10b}].components.minecraft:can_place_on
+    execute if data storage ui: ItemData.tool{type:"shears"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_place_on set from storage ui: NewItems[{Slot:10b}].components.minecraft:can_break
+    execute if data storage ui: ItemData.tool{type:"fishing_rod"} run data modify storage ui: NewItems[{Slot:10b}].id set value "fishing_rod"
+
 # アイテムの説明文はそのまま
     execute store result score $ItemLore Temporary run data get storage ui: ItemData.lore_length
     execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
