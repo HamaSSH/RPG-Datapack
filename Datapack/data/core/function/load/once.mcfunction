@@ -8,7 +8,7 @@
     execute in overworld run forceload add -1 -1 0 0
 
 # #TODO: スポーン位置の設定
-    execute in overworld run summon marker 621 134 -770 {UUID:[I; 2106,5308417,0,2],Tags:["WorldSpawn"]}
+    execute in overworld run summon marker 296 -50 -345 {UUID:[I; 2106,5308417,0,2],Tags:["WorldSpawn"]}
     execute at 83a-51-1-0-2 run forceload add ~ ~ ~ ~
 
 # 汎用エンティティ・ストレージ 83a-51-1-X-X
