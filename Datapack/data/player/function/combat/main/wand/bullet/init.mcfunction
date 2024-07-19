@@ -7,7 +7,7 @@
     execute if entity @p[tag=Attacker,tag=CriticalHit] run tag @s add CriticalHit
 
 # 属性纏い中
-    execute if score @p[tag=Attacker] ElementTimer matches 0 run tag @s add Normal
+    execute if score @p[tag=Attacker] ElementTimer matches ..0 run tag @s add Normal
     execute if entity @p[tag=Attacker,tag=ElementFire] run tag @s add ElementFire
     execute if entity @p[tag=Attacker,predicate=player:is_element/water] run tag @s add ElementWater
     execute if entity @p[tag=Attacker,tag=ElementThunder] run tag @s add ElementThunder
