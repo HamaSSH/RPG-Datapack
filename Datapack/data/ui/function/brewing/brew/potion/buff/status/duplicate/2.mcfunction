@@ -12,7 +12,7 @@
 # バフ情報の補正 (効果1.2倍、時間1.2倍)
     scoreboard players operation $Amplifier Temporary *= #12 Constant
     scoreboard players operation $Amplifier Temporary /= #10 Constant
-    scoreboard players operation $Duration Temporary *= #12 Constant
+    scoreboard players operation $Duration Temporary *= #14 Constant
     scoreboard players operation $Duration Temporary /= #10 Constant
 
 # バフ情報を更新

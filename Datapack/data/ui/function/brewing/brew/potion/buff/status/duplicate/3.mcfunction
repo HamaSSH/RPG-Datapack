@@ -13,7 +13,7 @@
     scoreboard players operation $Amplifier Temporary *= #13 Constant
     scoreboard players add $Amplifier Temporary 10
     scoreboard players operation $Amplifier Temporary /= #20 Constant
-    scoreboard players operation $Duration Temporary *= #13 Constant
+    scoreboard players operation $Duration Temporary *= #14 Constant
     scoreboard players operation $Duration Temporary /= #10 Constant
 
 # バフ情報を更新
