@@ -18,11 +18,6 @@
                     ]
                 },
                 {
-                    "#": "オサカナ",
-                    "type": "loot_table",
-                    "value": "asset:item/1600"
-                },
-                {
                     "#": "クリスタルの短剣",
                     "type": "loot_table",
                     "value": "asset:item/2106"
