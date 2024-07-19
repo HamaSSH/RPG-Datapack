@@ -17,7 +17,6 @@
     execute unless data storage zukan:fish Data[{count:0}] run advancement grant @a only asset:achievement/2.5
 
 # レベルが上がらないように
-    playsound resource:fishing.done player @a ~ ~ ~ 0.3 1
     kill @e[type=experience_orb,distance=..1]
 
 # リセット
