@@ -4,12 +4,16 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "ウィンドボール",
                     "type": "loot_table",
-                    "value": "asset:item/5501"
+                    "value": "asset:item/5501",
+                    "weight": 1000
                 },
                 {
+                    "#": "スウィフトステップ",
                     "type": "loot_table",
-                    "value": "asset:item/5502"
+                    "value": "asset:item/5502",
+                    "weight": 1000
                 }
             ]
         }

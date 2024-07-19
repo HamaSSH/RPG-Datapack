@@ -4,34 +4,74 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "木の刀剣",
                     "type": "loot_table",
-                    "weight": 25,
-                    "value": "asset:item/2201"
+                    "value": "asset:item/2201",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "骨の刀剣",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/2202"
+                    "value": "asset:item/2202",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "石の刀剣",
                     "type": "loot_table",
-                    "weight": 15,
-                    "value": "asset:item/2203"
+                    "value": "asset:item/2203",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "鉄の刀剣",
                     "type": "loot_table",
-                    "weight": 10,
-                    "value": "asset:item/2204"
+                    "value": "asset:item/2204",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "金の刀剣",
                     "type": "loot_table",
-                    "weight": 6,
-                    "value": "asset:item/2205"
+                    "value": "asset:item/2205",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "クリスタルの刀剣",
                     "type": "loot_table",
-                    "weight": 4,
-                    "value": "asset:item/2206"
+                    "value": "asset:item/2206",
+                    "weight": 1000,
+                    "quality": 1
+                },
+                {
+                    "#": "銅の刀剣",
+                    "type": "loot_table",
+                    "value": "asset:item/2207",
+                    "weight": 2500,
+                    "quality": -1
+                },
+                {
+                    "#": "ダイヤモンドの刀剣",
+                    "type": "loot_table",
+                    "value": "asset:item/2208",
+                    "weight": 1000,
+                    "quality": 1
+                },
+                {
+                    "#": "エメラルドの刀剣",
+                    "type": "loot_table",
+                    "value": "asset:item/2209",
+                    "weight": 1000,
+                    "quality": 1
+                },
+                {
+                    "#": "ネザライトソード",
+                    "type": "loot_table",
+                    "value": "asset:item/2210",
+                    "weight": 500,
+                    "quality": 1
                 }
             ]
         }

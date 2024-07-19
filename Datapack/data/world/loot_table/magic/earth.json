@@ -4,8 +4,17 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "アースボール",
                     "type": "loot_table",
-                    "value": "asset:item/5401"
+                    "value": "asset:item/5401",
+                    "weight": 3000,
+                    "quality": -2
+                },
+                {
+                    "#": "リコール",
+                    "type": "loot_table",
+                    "value": "asset:item/5404",
+                    "weight": 2000
                 }
             ]
         }

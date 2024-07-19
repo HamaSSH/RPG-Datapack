@@ -4,29 +4,39 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "革の上着",
                     "type": "loot_table",
-                    "weight": 30,
-                    "value": "asset:item/3201"
+                    "value": "asset:item/3201",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "鉄のチェストプレート",
                     "type": "loot_table",
-                    "weight": 25,
-                    "value": "asset:item/3202"
+                    "value": "asset:item/3202",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "金のチェストプレート",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/3203"
+                    "value": "asset:item/3203",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "ダイヤのチェストプレート",
                     "type": "loot_table",
-                    "weight": 7,
-                    "value": "asset:item/3204"
+                    "value": "asset:item/3204",
+                    "weight": 1000,
+                    "quality": 1
                 },
                 {
+                    "#": "ネザライトのチェストプレート",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/3205"
+                    "value": "asset:item/3205",
+                    "weight": 500,
+                    "quality": 1
                 }
             ]
         }

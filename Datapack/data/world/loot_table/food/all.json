@@ -4,51 +4,107 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "腐肉",
                     "type": "loot_table",
-                    "weight": 2,
-                    "value": "asset:item/1016",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 3
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 4,
-                    "value": "asset:item/1017",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 3
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/1018",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 3
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 3,
                     "value": "asset:item/1020",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "リンゴ",
+                    "type": "loot_table",
+                    "value": "asset:item/1025",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "黄金のリンゴ",
+                    "type": "loot_table",
+                    "value": "asset:item/1026",
+                    "weight": 1000,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "スウィートベリー",
+                    "type": "loot_table",
+                    "value": "asset:item/1027",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "じゃがいも",
+                    "type": "loot_table",
+                    "value": "asset:item/1029",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "にんじん",
+                    "type": "loot_table",
+                    "value": "asset:item/1030",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "焼きサカナ",
+                    "type": "loot_table",
+                    "value": "asset:item/1033",
+                    "weight": 2000,
+                    "quality": 1,
                     "functions": [
                         {
                             "function": "set_count",
@@ -60,112 +116,112 @@
                     ]
                 },
                 {
+                    "#": "野菜スープ",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/1025",
+                    "value": "asset:item/1034",
+                    "weight": 1000,
+                    "quality": 2,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
                                 "min": 2,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 1,
-                    "value": "asset:item/1026",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 2
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/1027",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/1041",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 4,
-                    "value": "asset:item/1042",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 6
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/1043",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 2,
-                                "max": 4
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 1,
-                    "value": "asset:item/1033",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 1,
                                 "max": 3
                             }
                         }
                     ]
                 },
                 {
+                    "#": "ふっくらパン",
                     "type": "loot_table",
-                    "weight": 1,
-                    "value": "asset:item/1034",
+                    "value": "asset:item/1041",
+                    "weight": 3000,
+                    "quality": -1,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 1,
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "クッキー",
+                    "type": "loot_table",
+                    "value": "asset:item/1042",
+                    "weight": 3000,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "ラッキィベリー",
+                    "type": "loot_table",
+                    "value": "asset:item/1043",
+                    "weight": 2000,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "はちみつりんご",
+                    "type": "loot_table",
+                    "value": "asset:item/1048",
+                    "weight": 1000,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "カエンダケ",
+                    "type": "loot_table",
+                    "value": "asset:item/1049",
+                    "weight": 2000,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "#": "極上のハニー",
+                    "type": "loot_table",
+                    "value": "asset:item/1052",
+                    "weight": 1000,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
                                 "max": 3
                             }
                         }

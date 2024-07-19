@@ -4,6 +4,7 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "サンダーボール",
                     "type": "loot_table",
                     "value": "asset:item/5301"
                 }

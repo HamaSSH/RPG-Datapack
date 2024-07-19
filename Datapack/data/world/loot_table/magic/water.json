@@ -4,6 +4,7 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "ウォーターボール",
                     "type": "loot_table",
                     "value": "asset:item/5201"
                 }

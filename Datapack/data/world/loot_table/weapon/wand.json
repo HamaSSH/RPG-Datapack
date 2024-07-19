@@ -4,19 +4,32 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "木の杖",
                     "type": "loot_table",
-                    "weight": 30,
-                    "value": "asset:item/2501"
+                    "value": "asset:item/2501",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "骨の刀剣",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/2502"
+                    "value": "asset:item/2502",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "クリスタルの刀剣",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/2506"
+                    "value": "asset:item/2506",
+                    "weight": 1000,
+                    "quality": 1
+                },
+                {
+                    "#": "ネザライトワンド",
+                    "type": "loot_table",
+                    "value": "asset:item/2510",
+                    "weight": 500,
+                    "quality": 1
                 }
             ]
         }

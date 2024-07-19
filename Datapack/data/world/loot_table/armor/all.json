@@ -5,28 +5,28 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 2,
-                    "value": "world:armor/helmet"
+                    "value": "world:armor/helmet",
+                    "weight": 2
                 },
                 {
                     "type": "loot_table",
-                    "weight": 2,
-                    "value": "world:armor/chestplate"
+                    "value": "world:armor/chestplate",
+                    "weight": 2
                 },
                 {
                     "type": "loot_table",
-                    "weight": 2,
-                    "value": "world:armor/leggings"
+                    "value": "world:armor/leggings",
+                    "weight": 2
                 },
                 {
                     "type": "loot_table",
-                    "weight": 2,
-                    "value": "world:armor/boots"
+                    "value": "world:armor/boots",
+                    "weight": 2
                 },
                 {
                     "type": "loot_table",
-                    "weight": 1,
-                    "value": "world:armor/accessories"
+                    "value": "world:armor/accessories",
+                    "weight": 1
                 }
             ]
         }

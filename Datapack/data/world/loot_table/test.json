@@ -8,28 +8,28 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 7,
-                    "value": "world:food"
+                    "weight": 8,
+                    "value": "world:food/all"
                 },
                 {
                     "type": "loot_table",
-                    "weight": 17,
-                    "value": "world:loot"
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 1,
-                    "value": "world:armor/_"
+                    "weight": 20,
+                    "value": "world:loot/all"
                 },
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "value": "world:magic/_"
+                    "value": "world:armor/all"
                 },
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "value": "world:weapon/_"
+                    "value": "world:magic/all"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "value": "world:weapon/all"
                 }
             ]
         }

@@ -4,29 +4,39 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "革のズボン",
                     "type": "loot_table",
-                    "weight": 30,
-                    "value": "asset:item/3301"
+                    "value": "asset:item/3301",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "鉄のレギンス",
                     "type": "loot_table",
-                    "weight": 25,
-                    "value": "asset:item/3302"
+                    "value": "asset:item/3302",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "金のレギンス",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/3303"
+                    "value": "asset:item/3303",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "ダイヤのレギンス",
                     "type": "loot_table",
-                    "weight": 7,
-                    "value": "asset:item/3304"
+                    "value": "asset:item/3304",
+                    "weight": 1000,
+                    "quality": 1
                 },
                 {
+                    "#": "ネザライトのレギンス",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/3305"
+                    "value": "asset:item/3305",
+                    "weight": 500,
+                    "quality": 1
                 }
             ]
         }

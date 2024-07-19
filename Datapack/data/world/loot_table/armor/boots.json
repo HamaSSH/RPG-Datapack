@@ -4,29 +4,39 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "革の靴",
                     "type": "loot_table",
-                    "weight": 30,
-                    "value": "asset:item/3401"
+                    "value": "asset:item/3401",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "鉄のブーツ",
                     "type": "loot_table",
-                    "weight": 25,
-                    "value": "asset:item/3402"
+                    "value": "asset:item/3402",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "金のブーツ",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/3403"
+                    "value": "asset:item/3403",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "ダイヤのブーツ",
                     "type": "loot_table",
-                    "weight": 7,
-                    "value": "asset:item/3404"
+                    "value": "asset:item/3404",
+                    "weight": 1000,
+                    "quality": 1
                 },
                 {
+                    "#": "ネザライトのブーツ",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/3405"
+                    "value": "asset:item/3405",
+                    "weight": 500,
+                    "quality": 1
                 }
             ]
         }

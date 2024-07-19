@@ -4,19 +4,25 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "木の杖",
                     "type": "loot_table",
-                    "weight": 30,
-                    "value": "asset:item/2601"
+                    "value": "asset:item/2601",
+                    "weight": 3000,
+                    "quality": -2
                 },
                 {
+                    "#": "骨の弓",
                     "type": "loot_table",
-                    "weight": 20,
-                    "value": "asset:item/2602"
+                    "value": "asset:item/2602",
+                    "weight": 2500,
+                    "quality": -1
                 },
                 {
+                    "#": "クリスタルの弓",
                     "type": "loot_table",
-                    "weight": 3,
-                    "value": "asset:item/2606"
+                    "value": "asset:item/2606",
+                    "weight": 1000,
+                    "quality": 1
                 }
             ]
         }

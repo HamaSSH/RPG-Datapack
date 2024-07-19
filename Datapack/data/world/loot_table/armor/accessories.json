@@ -4,12 +4,18 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "力の指輪",
                     "type": "loot_table",
-                    "value": "asset:item/3602"
+                    "value": "asset:item/3602",
+                    "weight": 1000,
+                    "quality": 1
                 },
                 {
+                    "#": "知恵の指輪",
                     "type": "loot_table",
-                    "value": "asset:item/3603"
+                    "value": "asset:item/3603",
+                    "weight": 1000,
+                    "quality": 1
                 }
             ]
         }
