@@ -21,11 +21,11 @@
         data modify storage asset:mob Data.Status.LVL set value 3
         data modify storage asset:mob Data.Status.HP set value 150
         data modify storage asset:mob Data.Status.DEF set value 40
-        data modify storage asset:mob Data.Status.Dmg set value 20
+        data modify storage asset:mob Data.Status.Dmg set value 18
         data modify storage asset:mob Data.Status.EXP set value 50
         data modify storage asset:mob Data.Status.Gold set value 30
         data modify storage asset:mob Data.Status.AGI set value 50
-        data modify storage asset:mob Data.scale set value 100
+        data modify storage asset:mob Data.scale set value 110
 
 # データの適用
     execute as @e[type=piglin,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

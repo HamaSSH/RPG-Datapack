@@ -19,9 +19,9 @@
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
         data modify storage asset:mob Data.Status.LVL set value 1
-        data modify storage asset:mob Data.Status.HP set value 50
+        data modify storage asset:mob Data.Status.HP set value 60
         data modify storage asset:mob Data.Status.DEF set value 0
-        data modify storage asset:mob Data.Status.Dmg set value 4
+        data modify storage asset:mob Data.Status.Dmg set value 8
         data modify storage asset:mob Data.Status.EXP set value 30
         data modify storage asset:mob Data.Status.Gold set value 8
         data modify storage asset:mob Data.Status.AGI set value 150
