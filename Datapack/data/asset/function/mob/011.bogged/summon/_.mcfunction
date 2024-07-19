@@ -24,7 +24,7 @@
         data modify storage asset:mob Data.Status.Dmg set value 15
         data modify storage asset:mob Data.Status.EXP set value 17
         data modify storage asset:mob Data.Status.Gold set value 22
-        data modify storage asset:mob Data.Status.AGI set value 110
+        data modify storage asset:mob Data.Status.AGI set value 80
         data modify storage asset:mob Data.scale set value 100
 
 # データの適用

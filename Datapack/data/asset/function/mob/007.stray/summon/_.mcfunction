@@ -15,7 +15,7 @@
         data modify storage asset:mob Data.Chest set value {}
         data modify storage asset:mob Data.Legs set value {}
         data modify storage asset:mob Data.Feet set value {}
-        data modify storage asset:mob Data.Mainhand set value {id:"bow"}
+        data modify storage asset:mob Data.Mainhand set value {}
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
         data modify storage asset:mob Data.Status.LVL set value 5
@@ -24,7 +24,7 @@
         data modify storage asset:mob Data.Status.Dmg set value 13
         data modify storage asset:mob Data.Status.EXP set value 15
         data modify storage asset:mob Data.Status.Gold set value 15
-        data modify storage asset:mob Data.Status.AGI set value 110
+        data modify storage asset:mob Data.Status.AGI set value 100
         data modify storage asset:mob Data.scale set value 100
 
 # データの適用

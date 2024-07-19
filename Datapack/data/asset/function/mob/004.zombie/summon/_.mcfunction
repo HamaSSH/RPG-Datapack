@@ -21,7 +21,7 @@
         data modify storage asset:mob Data.Status.LVL set value 8
         data modify storage asset:mob Data.Status.HP set value 100
         data modify storage asset:mob Data.Status.DEF set value 0
-        data modify storage asset:mob Data.Status.Dmg set value 15
+        data modify storage asset:mob Data.Status.Dmg set value 12
         data modify storage asset:mob Data.Status.EXP set value 20
         data modify storage asset:mob Data.Status.Gold set value 15
         data modify storage asset:mob Data.Status.AGI set value 80
