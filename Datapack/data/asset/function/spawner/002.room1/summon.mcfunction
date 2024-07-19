@@ -2,7 +2,7 @@
 # スポナーの召喚
 
 # スポナーの情報
-    data modify storage asset:spawner Data.SpawnPotentials set value [1,4]
+    data modify storage asset:spawner Data.SpawnPotentials set value [1,4,5,11]
     data modify storage asset:spawner Data.SpawnCount set value 2
     data modify storage asset:spawner Data.SpawnRange set value 4
     data modify storage asset:spawner Data.Delay set value 60
