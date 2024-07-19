@@ -1,4 +1,4 @@
 #> world:dungeon/enter/_
 # プレイヤーをダンジョンに入れる #TODO:[いつか] ダンジョンを別ディメンションに
 
-$execute positioned 10000 101 $(ID)000 positioned as @n[type=marker,tag=DungeonEntrance] run tp @s ~ ~1 ~
+$execute positioned 20000 101 $(ID)000 positioned as @n[type=marker,tag=DungeonEntrance] run tp @s ~ ~1 ~
