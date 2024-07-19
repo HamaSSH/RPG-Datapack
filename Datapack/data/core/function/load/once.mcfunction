@@ -34,9 +34,6 @@
     function #asset:magic/load
     function #asset:mob/load
 
-# 図鑑の初期処理
-    function item:zukan/fish/init
-
 # その他スコア
     # ID
         scoreboard objectives add PlayerID dummy "プレイヤーID"
