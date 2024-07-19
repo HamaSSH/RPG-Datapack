@@ -1,4 +1,4 @@
-#> asset:spawner/002.root/summon
+#> asset:spawner/002.room1/summon
 # スポナーの召喚
 
 # スポナーの情報
