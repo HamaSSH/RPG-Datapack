@@ -4,70 +4,70 @@
             "rolls": 1,
             "entries": [
                 {
-                    "#": "木のハンマー",
+                    "#": "木の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2101",
                     "weight": 3000,
                     "quality": -2
                 },
                 {
-                    "#": "骨のハンマー",
+                    "#": "骨の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2102",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
-                    "#": "石のハンマー",
+                    "#": "石の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2103",
                     "weight": 3000,
                     "quality": -2
                 },
                 {
-                    "#": "鉄のハンマー",
+                    "#": "鉄の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2104",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
-                    "#": "金のハンマー",
+                    "#": "金の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2105",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
-                    "#": "クリスタルのハンマー",
+                    "#": "クリスタルの短剣",
                     "type": "loot_table",
                     "value": "asset:item/2106",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
-                    "#": "銅のハンマー",
+                    "#": "銅の短剣",
                     "type": "loot_table",
                     "value": "asset:item/2107",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
-                    "#": "ダイヤモンドのハンマー",
+                    "#": "ダイヤモンドの短剣",
                     "type": "loot_table",
                     "value": "asset:item/2108",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
-                    "#": "エメラルドのハンマー",
+                    "#": "エメラルドの短剣",
                     "type": "loot_table",
                     "value": "asset:item/2109",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
-                    "#": "ネザライトハンマー",
+                    "#": "ネザライトダガー",
                     "type": "loot_table",
                     "value": "asset:item/2110",
                     "weight": 500,

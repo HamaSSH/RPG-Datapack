@@ -4,66 +4,58 @@
             "rolls": 1,
             "entries": [
                 {
+                    "#": "ネザライト",
                     "type": "loot_table",
-                    "value": "asset:item/1600",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1601",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1602",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1603",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1604",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1605",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1606",
-                    "weight": 1
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1607",
-                    "weight": 1
-                },
-                {
-                    "type": "item",
-                    "name": "nautilus_shell",
-                    "weight": 0,
+                    "value": "asset:item/1047",
                     "functions": [
                         {
-                            "function": "set_custom_data",
-                            "tag": "{item_type:\"gold_chest\"}"
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 6
+                            }
                         }
                     ]
                 },
                 {
-                    "type": "item",
-                    "name": "nautilus_shell",
-                    "weight": 0,
-                    "functions": [
-                        {
-                            "function": "set_custom_data",
-                            "tag": "{item_type:\"loot_chest\"}"
-                        }
-                    ]
+                    "#": "オサカナ",
+                    "type": "loot_table",
+                    "value": "asset:item/1600"
+                },
+                {
+                    "#": "クリスタルの短剣",
+                    "type": "loot_table",
+                    "value": "asset:item/2106"
+                },
+                {
+                    "#": "ダイヤモンドの刀剣",
+                    "type": "loot_table",
+                    "value": "asset:item/2208"
+                },
+                {
+                    "#": "エメラルドの槍",
+                    "type": "loot_table",
+                    "value": "asset:item/2309"
+                },
+                {
+                    "#": "トライデント",
+                    "type": "loot_table",
+                    "value": "asset:item/2311"
+                },
+                {
+                    "#": "クリスタルのハンマー",
+                    "type": "loot_table",
+                    "value": "asset:item/2406"
+                },
+                {
+                    "#": "クリスタルの杖",
+                    "type": "loot_table",
+                    "value": "asset:item/2506"
+                },
+                {
+                    "#": "クリスタルの弓",
+                    "type": "loot_table",
+                    "value": "asset:item/2606"
                 }
             ]
         }
