@@ -10,7 +10,7 @@ summon villager ~ ~ ~ {Tags:["NPCInit"]}
         data modify storage asset:npc Data.CustomName set value '"ソザイ"'
 
 # 店のデータ
-    data modify storage asset:npc Data.shop_data append value [1023,1024,1021,1037,1038,1040]
+    data modify storage asset:npc Data.shop_data append value [1023,1024,1021,1037,1040,6000]
     data modify storage asset:npc Data.shop_data append value [1001,1002,1003,1004,1006,1007]
 
 # データの適用
