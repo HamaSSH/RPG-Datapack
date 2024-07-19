@@ -2,7 +2,7 @@
 # 一度きり実行されるコマンド(初期設定)
 
 # ワールドのバージョン
-    data modify storage global: Version set value "v0.2.0"
+    data modify storage global: Version set value "v0.2.2"
 
 # forceload範囲の設定
     execute in overworld run forceload add -1 -1 0 0
