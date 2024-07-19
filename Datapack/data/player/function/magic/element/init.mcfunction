@@ -1,6 +1,8 @@
 #> player:magic/element/init
 # 属性纏いスコア設定(+UI)とタグ付け
 
+advancement grant @s only asset:tips/element
+
 # 消費MPに応じたElementTimerの設定
     execute store result score @s ElementTimer run data get storage player: mp_cost 15
     data modify storage player: NewBuff set value [{amplifier:0}]

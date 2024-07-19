@@ -1,0 +1,76 @@
+{
+    "criteria": {
+        "dagger": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicate": {
+                            "custom_data": "{weapon:\"dagger\"}"
+                        }
+                    }
+                ]
+            }
+        },
+        "sword": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicate": {
+                            "custom_data": "{weapon:\"sword\"}"
+                        }
+                    }
+                ]
+            }
+        },
+        "spear": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicate": {
+                            "custom_data": "{weapon:\"spear\"}"
+                        }
+                    }
+                ]
+            }
+        },
+        "hammer": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicate": {
+                            "custom_data": "{weapon:\"hammer\"}"
+                        }
+                    }
+                ]
+            }
+        },
+        "wand": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicate": {
+                            "custom_data": "{weapon:\"wand\"}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "dagger",
+            "sword",
+            "spear",
+            "hammer",
+            "wand"
+        ]
+    ],
+    "rewards": {
+        "function": "asset:tips/charge_attack"
+    }
+}
