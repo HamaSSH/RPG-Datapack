@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "minecraft:player",
+                        "looking_at": {
+                            "type": "villager",
+                            "nbt": "{Tags:[\"ClassNPC\"]}",
+                            "distance": {
+                                "absolute": {
+                                    "min": 0,
+                                    "max": 6
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:tips/class"
+    }
+}
