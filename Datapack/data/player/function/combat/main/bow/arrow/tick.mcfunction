@@ -1,6 +1,9 @@
 #> player:combat/main/bow/arrow/tick
 # 矢の常時実行処理
 
+# 拾わせないよ！！
+    data modify entity @s pickup set value 0b
+
 # パーティクル
     function player:combat/main/bow/arrow/particle
 
