@@ -16,6 +16,7 @@
     execute if score @s Timer matches 35..60 if entity @s[tag=Top] run function item:fishing/chest/open
     execute if score @s Timer matches 45..90 if entity @s[tag=Top] run loot spawn ~ ~1.1 ~ loot item:fishing/gold
     execute if score @s Timer matches 45..90 run playsound entity.item.pickup master @a ~ ~ ~ 0.1 1.2
+    execute if score @s Timer matches 80 if entity @s[tag=Top] run loot spawn ~ ~1.3 ~ loot item:fishing/loot
     execute if score @s Timer matches 95 run playsound block.amethyst_block.chime master @a ~ ~ ~ 1.0 1.0
     execute if score @s Timer matches 98 run playsound block.amethyst_block.chime master @a ~ ~ ~ 1.0 1.0
     execute if score @s Timer matches 100 run playsound block.amethyst_block.chime master @a ~ ~ ~ 1.0 1.0
