@@ -10,7 +10,7 @@
     execute on vehicle on vehicle on attacker if score @s Gold matches 10000.. run advancement grant @s only asset:achievement/1.5
 
 # 売却情報の表示
-    tellraw @p [{"text":"> 計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalValue","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]
+    tellraw @p [{"text":"▸計"},{"score":{"name":"$TotalCount","objective":"Temporary"}},{"text":"個のアイテムを売却した。"},{"text":" (+"},{"score":{"name":"$TotalValue","objective":"Temporary"}},{"text":"G","color":"#FFEE59"},{"text":")"}]
 
 # 演出
     execute if score $TotalValue Temporary matches 1.. run playsound resource:entity.villager.yes3 master @p ~ ~ ~ 1 1.1

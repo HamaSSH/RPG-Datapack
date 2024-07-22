@@ -22,7 +22,7 @@ team leave @s
     tag @s remove ChangedClass
 
 # 周知する
-    tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【パラディン】","color":"#81DDE1"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"LVL"},"bold":true},{"text":" に転職しました ！\n"}]
+    tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【パラディン】","color":"#81DDE1"},{"text":"Lv.","color":"gray"},{"score":{"name":"@s","objective":"LVL"},"bold":true},{"text":" に転職しました ！"}]
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # リセット
