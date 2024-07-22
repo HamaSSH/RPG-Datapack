@@ -18,6 +18,9 @@ tag @s add Upgradable
 # 最大で3回まで強化可能
     execute if data storage ui: ItemData{grade:3} run tag @s remove Upgradable
 
+# 最大レアリティは強化不可
+    execute if data storage ui: ItemData{rarity:5} run tag @s remove Upgradable
+
 # 強化アイテムを持っているか1つずつ確認
     execute if data storage ui: Material[0] run function ui:smithing/upgrade/check/rec
     execute if entity @s[tag=Upgradable] run function ui:smithing/upgrade/_
