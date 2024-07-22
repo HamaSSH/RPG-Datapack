@@ -3,7 +3,7 @@
 
 # 失うゴールドを決定
     scoreboard players operation $GoldLoss Temporary = @s Gold
-    execute store result score $Multiplier Temporary run random value 30..50
+    execute store result score $Multiplier Temporary run random value 20..40
     scoreboard players operation $GoldLoss Temporary *= $Multiplier Temporary
     scoreboard players operation $GoldLoss Temporary /= #100 Constant
 

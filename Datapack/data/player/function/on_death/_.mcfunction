@@ -13,7 +13,7 @@
 
 # 演出
     execute in overworld positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0
-    # function player:on_death/lose_gold
+    function player:on_death/lose_gold
     title @s title {"text":"You Died!","bold":true,"color":"dark_red"}
 
 # 蘇生
