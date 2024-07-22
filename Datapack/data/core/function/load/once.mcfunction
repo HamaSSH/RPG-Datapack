@@ -48,6 +48,7 @@
         scoreboard objectives add ItemUUID dummy "重複不可アイテムID"
 
     # トリガー
+        scoreboard objectives add Rejoin custom:leave_game "ワールドRejoin処理"
         scoreboard objectives add SneakTime custom:sneak_time "スキル溜め"
         scoreboard objectives add RightClick used:carrot_on_a_stick "右クリック検知"
         scoreboard objectives add FallDistance custom:fall_one_cm "落下距離"

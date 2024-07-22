@@ -4,6 +4,9 @@
 # プレイヤーの初期化
     execute unless score @s PlayerID matches 0.. run function player:init
 
+# プレイヤーがワールドに再入場した時の処理
+    execute if score @s Rejoin matches 1.. run function player:rejoin
+
 # プレイヤーデータ→ストレージ
     data modify storage player: Inventory set from entity @s Inventory
     data modify storage player: SelectedItem set from entity @s SelectedItem
