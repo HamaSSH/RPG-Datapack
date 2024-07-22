@@ -12,6 +12,7 @@
     execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.icon set value "120"
     execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.icon set value "121"
     execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.icon set value "122"
+    execute if data storage ui: SingleBuff{effect:"wither"} run data modify storage ui: SingleBuff.lore.icon set value "123"
 
 # テキスト
     execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.lore.text set value "毒"
@@ -24,6 +25,7 @@
     execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.text set value "火炎耐性"
     execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.text set value "落下速度低下"
     execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.text set value "透明化"
+    execute if data storage ui: SingleBuff{effect:"wither"} run data modify storage ui: SingleBuff.lore.text set value "衰弱"
 
 # エフェクトカラー
     execute if data storage ui: SingleBuff{effect:"poison"} run data modify storage ui: SingleBuff.lore.color set value "#FF4D4D"
@@ -36,6 +38,7 @@
     execute if data storage ui: SingleBuff{effect:"fire_resistance"} run data modify storage ui: SingleBuff.lore.color set value "blue"
     execute if data storage ui: SingleBuff{effect:"slow_falling"} run data modify storage ui: SingleBuff.lore.color set value "blue"
     execute if data storage ui: SingleBuff{effect:"invisibility"} run data modify storage ui: SingleBuff.lore.color set value "blue"
+    execute if data storage ui: SingleBuff{effect:"wither"} run data modify storage ui: SingleBuff.lore.color set value "#FF4D4D"
 
 # エフェクトレベル
     execute if data storage ui: SingleBuff{amplifier:0} run data modify storage ui: SingleBuff.lore.level set value "0"

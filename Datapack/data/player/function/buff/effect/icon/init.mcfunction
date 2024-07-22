@@ -11,3 +11,4 @@ execute if data storage player: buff{effect:"regeneration"} run data modify stor
 execute if data storage player: buff{effect:"fire_resistance"} run data modify storage player: buff.icon set value '"\\uE480"'
 execute if data storage player: buff{effect:"slow_falling"} run data modify storage player: buff.icon set value '"\\uE490"'
 execute if data storage player: buff{effect:"invisibility"} run data modify storage player: buff.icon set value '"\\uE4A0"'
+execute if data storage player: buff{effect:"wither"} run data modify storage player: buff.icon set value '"\\uE4B0"'

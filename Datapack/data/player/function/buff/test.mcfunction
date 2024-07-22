@@ -29,5 +29,6 @@
 #     data modify storage player: NewBuff append value {effect:"fire_resistance",duration:10000,amplifier:0}
 #     data modify storage player: NewBuff append value {effect:"slow_falling",duration:10000,amplifier:0}
 #     data modify storage player: NewBuff append value {effect:"invisibility",duration:10000,amplifier:0}
+#     data modify storage player: NewBuff append value {effect:"wither",duration:10000,amplifier:0}
 
 # function player:buff/_
