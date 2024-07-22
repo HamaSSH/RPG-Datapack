@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "enter_block",
+            "conditions": {
+                "block": "wither_rose"
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:trigger/location/wither_rose"
+    }
+}
