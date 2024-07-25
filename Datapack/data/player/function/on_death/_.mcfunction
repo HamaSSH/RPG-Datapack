@@ -21,4 +21,4 @@
     scoreboard players operation @s HP = @s HPMax
     scoreboard players operation @s MP = @s MPMax
     scoreboard players set @s SkillTimer 0
-    scoreboard players set @s ElementTimer 0
+    function player:magic/element/reset

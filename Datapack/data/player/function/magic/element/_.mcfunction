@@ -11,4 +11,4 @@
 
 # タイマー
     scoreboard players remove @s ElementTimer 1
-    execute if score @s ElementTimer matches 0 run function player:magic/element/reset
+    execute if score @s ElementTimer matches ..0 run function player:magic/element/reset
