@@ -2,7 +2,9 @@
 # 耐久値ゼロ
 
 # ツールを使えないようにする
-    data modify block 0 0 0 Items append from entity @s SelectedItem
+    item replace block 0 0 0 container.0 from entity @s weapon.mainhand
+    execute if entity @s[tag=OffhandShears] run item replace block 0 0 0 container.0 from entity @s weapon.offhand
+    execute if entity @s[tag=OffhandRod] run item replace block 0 0 0 container.0 from entity @s weapon.offhand
     execute if items block 0 0 0 container.0 carrot_on_a_stick run item modify block 0 0 0 container.0 {"function":"set_components","components":{"!can_break":{}}}
     execute if items block 0 0 0 container.0 brush run item modify block 0 0 0 container.0 {"function":"set_components","components":{"!can_place_on":{}}}
     execute if items block 0 0 0 container.0 fishing_rod run data modify block 0 0 0 Items[0].id set value "carrot_on_a_stick"
