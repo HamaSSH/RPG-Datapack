@@ -10,6 +10,7 @@ particle flame ~ ~ ~ 0 1 0 0 4 force
     scoreboard players reset $RequiredPlayerRange Temporary
 
 # プレイヤーが範囲内にいる場合はSpawnTimer減算
-    execute if entity @s[tag=PlayerIsNear] run scoreboard players remove @s SpawnTimer 1
+    execute if entity @s[tag=PlayerIsNear,tag=!Ready] run function world:spawner/init
+    execute if entity @s[tag=PlayerIsNear,tag=Ready] run scoreboard players remove @s SpawnTimer 1
     execute if score @s SpawnTimer matches ..0 run function world:spawner/summon/init
     tag @s remove PlayerIsNear
