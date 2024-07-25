@@ -6,10 +6,10 @@
 
 # データの設定
     data modify entity @s DeathLootTable set from storage asset:material LootTable
-    # data modify entity @s CustomNameVisible set value 1b
-    execute store result score @s HP run data get storage asset:material Data.HP
-    execute store result score @s HPMax run data get storage asset:material Data.HP
-    execute store result score @s MaterialID run data get storage asset:material Data.MaterialID
+    data modify entity @s ArmorItems set value [{},{},{},{id:"glass_bottle"}]
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.HP set from storage asset:material Data.HP
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.MaxHP set from storage asset:material Data.HP
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.ID set from storage asset:material Data.ID
 
 # 見た目の設定
     execute summon item_display run function item:material/summon/set_display with storage asset:material Data

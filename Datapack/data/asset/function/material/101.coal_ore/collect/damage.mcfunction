@@ -1,6 +1,8 @@
 #> asset:material/101.coal_ore/collect/damage
 # 採集ポイントを1段階破壊
 
+execute unless entity @s[tag=HasHPScore] run function asset:material/manager/init
+
 # HPバーの表示
     scoreboard players remove @s HP 1
     data modify entity @s CustomNameVisible set value 1b

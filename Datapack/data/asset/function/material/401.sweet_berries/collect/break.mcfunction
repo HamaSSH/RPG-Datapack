@@ -2,7 +2,7 @@
 # 破壊処理
 
 # ばらまく
-    loot spawn ~ ~ ~ loot asset:material/401.sweet_berries_2
+    # loot spawn ~ ~ ~ loot asset:material/401.sweet_berries_2
 
 # 後処理
     execute on passengers run kill @s

@@ -2,7 +2,7 @@
 # 採集ポイントアマスタの初期化
 
 # モデルの設定
-$data modify entity @s item set value {id:"dead_horn_coral",components:{"custom_model_data":$(MaterialID)}}
+$data modify entity @s item set value {id:"dead_horn_coral",components:{"custom_model_data":$(ID)}}
 
 # 共通データの設定
     tag @s add Material

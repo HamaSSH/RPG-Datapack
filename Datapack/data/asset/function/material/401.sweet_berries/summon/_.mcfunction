@@ -6,7 +6,7 @@
     execute align xyz positioned ~0.5 ~0.8 ~0.5 run summon armor_stand ~ ~ ~ {Tags:["MaterialInit"],Invisible:1b,Invulnerable:1b,Marker:1b}
 
 # データの設定
-    data modify storage asset:material Data.MaterialID set value 401
+    data modify storage asset:material Data.ID set value 401
     data modify storage asset:material Data.LootTable set value "asset:material/401.sweet_berries"
     data modify storage asset:material Data.HP set value 5
 
