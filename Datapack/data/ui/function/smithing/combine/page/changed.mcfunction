@@ -21,8 +21,8 @@
             tag @s add DoCombine
             execute store result score $ItemRarity Temporary run data get storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity
             execute if score $ItemRarity Temporary matches 1 unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run tag @s remove DoCombine
-            execute if score $ItemRarity Temporary matches ..2 unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run tag @s remove DoCombine
-            execute if score $ItemRarity Temporary matches ..3 unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run tag @s remove DoCombine
+            execute if score $ItemRarity Temporary matches 1..2 unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run tag @s remove DoCombine
+            execute if score $ItemRarity Temporary matches 1..3 unless data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run tag @s remove DoCombine
         execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}] if score $ItemRarity Temporary matches 2.. run function ui:smithing/combine/page/set_item {Slot:"12b"}
         execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}] if score $ItemRarity Temporary matches 3.. run function ui:smithing/combine/page/set_item {Slot:"13b"}
         execute if data storage ui: Items[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}] if score $ItemRarity Temporary matches 4.. run function ui:smithing/combine/page/set_item {Slot:"14b"}
@@ -40,8 +40,8 @@
     data remove storage ui: ReturnItems[{components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     data modify storage ui: ReturnItems append from storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
-    execute if score $ItemRarity Temporary matches ..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
-    execute if score $ItemRarity Temporary matches ..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
+    execute if score $ItemRarity Temporary matches 1..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
+    execute if score $ItemRarity Temporary matches 1..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run tag @s remove DoCombine
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
