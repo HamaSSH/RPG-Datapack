@@ -15,7 +15,7 @@
         data modify storage asset:mob Data.Chest set value {}
         data modify storage asset:mob Data.Legs set value {}
         data modify storage asset:mob Data.Feet set value {}
-        data modify storage asset:mob Data.Mainhand set value {}
+        data modify storage asset:mob Data.Mainhand set value {id:"bow"}
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
         data modify storage asset:mob Data.Status.LVL set value 5

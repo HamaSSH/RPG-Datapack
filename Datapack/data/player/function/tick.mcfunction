@@ -85,6 +85,7 @@
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
     effect clear @s absorption
+    effect clear @s slowness
 
 # リセット
     tag @s remove NewInventorySet
