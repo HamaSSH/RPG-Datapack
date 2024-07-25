@@ -7,8 +7,8 @@
     data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
 
 # 再びツールを使えるようにする
-    execute if data storage ui: ItemData.tool{type:"pickaxe"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_break set from storage ui: NewItems[{Slot:10b}].components.minecraft:can_place_on
-    execute if data storage ui: ItemData.tool{type:"shears"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_place_on set from storage ui: NewItems[{Slot:10b}].components.minecraft:can_break
+    execute if data storage ui: ItemData.tool{type:"pickaxe"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_break.predicates[0].blocks set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool.can_break
+    execute if data storage ui: ItemData.tool{type:"shears"} run data modify storage ui: NewItems[{Slot:10b}].components.minecraft:can_place_on.predicates[0].blocks set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.tool.can_place_on
     execute if data storage ui: ItemData.tool{type:"fishing_rod"} run data modify storage ui: NewItems[{Slot:10b}].id set value "fishing_rod"
 
 # アイテムの説明文はそのまま
