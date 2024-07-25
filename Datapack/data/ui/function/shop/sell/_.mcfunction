@@ -15,6 +15,7 @@
 # 演出
     execute if score $TotalValue Temporary matches 1.. run playsound resource:entity.villager.yes3 master @p ~ ~ ~ 1 1.1
     execute if score $TotalValue Temporary matches 1.. run playsound entity.experience_orb.pickup master @p ~ ~ ~ 0.25 1.5
+    execute if score $TotalValue Temporary matches 1.. run tag @s remove PlaysoundOnce
 
 # ページを移動する
     scoreboard players set @s UIPage 0

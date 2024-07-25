@@ -40,6 +40,8 @@
     execute if entity @s[tag=Backward,tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
     execute if entity @s[tag=Forward,tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound resource:item.book.open_flip2 master @s ~ ~ ~ 1 1.2
     execute if entity @s[tag=Forward,tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
+    execute if entity @s[tag=PlaysoundOnce] if score @s UIPage matches 1 on vehicle on vehicle on attacker run playsound minecraft:item.bundle.insert master @s ~ ~ ~ 1 0.8
+    execute if entity @s[tag=PlaysoundOnce] if score @s UIPage matches 1 run tag @s remove PlaysoundOnce
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
     execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
