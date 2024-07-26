@@ -6,7 +6,7 @@
 
 # リジェネレーション
     data modify storage player: NewBuff set value [{effect:"regeneration",duration:60,amplifier:8}]
-    function player:buff/_
+    execute unless entity @s[tag=ChangedClass] run function player:buff/_
 
 # レベルアップ
     tag @s add LevelUp
