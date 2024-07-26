@@ -1,17 +1,18 @@
-{
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-        [
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
             {
                 "text": "",
                 "color": "white",
                 "italic": false
             },
             {
-                "text": "レベル: ",
-                "color": "#FAFF75"
+                "text": "【パラディン】"
             },
+            "Lv.\uF821",
             {
                 "score": {
                     "name": "@p",
@@ -20,6 +21,120 @@
                 "bold": true
             }
         ]
-    ],
-    "mode": "replace_all"
-}
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "【パラディン】",
+                "color": "#81DDE1"
+            },
+            "Lv.\uF821",
+            {
+                "score": {
+                    "name": "@p",
+                    "objective": "PaladinLVL"
+                },
+                "bold": true
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$ClassID"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 30
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "魔法と槍術を操る万能な職業。",
+                    "color": "#D8D8D8",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "",
+                    "color": "#D8D8D8",
+                    "italic": false
+                },
+                {
+                    "text": "槍",
+                    "color": "#FAFF75"
+                },
+                "を使いこなし中距離で戦う。"
+            ]
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            [
+                "\uF822",
+                {
+                    "text": "           　　　           ",
+                    "color": "dark_gray",
+                    "strikethrough": true
+                }
+            ]
+        ],
+        "mode": "append"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            [
+                {
+                    "text": "\uF822",
+                    "color": "#81DDE1",
+                    "italic": false
+                },
+                {
+                    "text": "          ",
+                    "strikethrough": true
+                },
+                " 選択中 ",
+                {
+                    "text": "          ",
+                    "strikethrough": true
+                }
+            ]
+        ],
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$ClassID"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 30
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2
+    }
+]

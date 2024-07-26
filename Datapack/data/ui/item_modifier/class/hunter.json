@@ -1,17 +1,18 @@
-{
-    "function": "set_lore",
-    "entity": "this",
-    "lore": [
-        [
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
             {
                 "text": "",
                 "color": "white",
                 "italic": false
             },
             {
-                "text": "レベル: ",
-                "color": "#FAFF75"
+                "text": "【ハンター】"
             },
+            "Lv.\uF821",
             {
                 "score": {
                     "name": "@p",
@@ -20,6 +21,125 @@
                 "bold": true
             }
         ]
-    ],
-    "mode": "replace_all"
-}
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "name": [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "【ハンター】",
+                "color": "#A9E07D"
+            },
+            "Lv.\uF821",
+            {
+                "score": {
+                    "name": "@p",
+                    "objective": "HunterLVL"
+                },
+                "bold": true
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$ClassID"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 10
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "素早い戦闘を得意とする職業。",
+                    "color": "#D8D8D8",
+                    "italic": false
+                }
+            ],
+            [
+                {
+                    "text": "",
+                    "color": "#D8D8D8",
+                    "italic": false
+                },
+                {
+                    "text": "短剣",
+                    "color": "#FAFF75"
+                },
+                "と",
+                {
+                    "text": "弓",
+                    "color": "#FAFF75"
+                },
+                "の扱いに長けている。"
+            ]
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            [
+                "\uF822",
+                {
+                    "text": "           　　　           ",
+                    "color": "dark_gray",
+                    "strikethrough": true
+                }
+            ]
+        ],
+        "mode": "append"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            [
+                {
+                    "text": "\uF822",
+                    "color": "#A9E07D",
+                    "italic": false
+                },
+                {
+                    "text": "          ",
+                    "strikethrough": true
+                },
+                " 選択中 ",
+                {
+                    "text": "          ",
+                    "strikethrough": true
+                }
+            ]
+        ],
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$ClassID"
+                    },
+                    "score": "Temporary"
+                },
+                "range": 10
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2
+    }
+]
