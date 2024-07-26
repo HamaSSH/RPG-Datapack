@@ -13,6 +13,11 @@
     function asset:mob/manager/hurt with storage asset:mob
     data remove storage asset:mob namespace
 
+# クリティカルヒットの場合のパーティクル
+    execute if data storage lib: Damage{Critical:1b} run particle electric_spark ~ ~0.1 ~ 0.3 0.3 0.3 0.9 20 force
+    execute if data storage lib: Damage{Critical:1b} run particle enchanted_hit ~ ~0.1 ~ 0 0 0 0.8 20 force
+    execute if data storage lib: Damage{Critical:1b} run particle crit ~ ~0.1 ~ 0 0 0 0.7 20 force
+
 # HP表示の更新
     function mob:status/hp/display/_
 
