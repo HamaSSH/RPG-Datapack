@@ -12,11 +12,10 @@ tag @s add CriticalHit
         scoreboard players operation @s DmgDealt /= #1000 Constant
 
 # 演出(ｺﾞｷｨ)
-    playsound resource:custom.weapon.crit master @s
-    playsound resource:custom.weapon.crit master @s ~ ~ ~ 0.6 0.8
-    playsound resource:custom.weapon.crit master @s ~ ~ ~ 0.3 1.5
-    playsound minecraft:entity.shulker.hurt_closed master @s ~ ~ ~ 1 0.9
-    playsound minecraft:entity.generic.small_fall master @s ~ ~ ~ 1 1.5
+    tag @s add CrtSFX
+    execute if predicate player:hold_weapon/bow/leftclick run tag @s remove CrtSFX
+    execute if entity @s[tag=CrtSFX] run function player:status/crt/sfx
 
 # リセット
     scoreboard players reset $CritMultiplier Temporary
+    tag @s remove CrtSFX
