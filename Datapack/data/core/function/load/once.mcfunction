@@ -85,9 +85,10 @@
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
         scoreboard objectives add ElementTimer dummy "属性纏い"
         scoreboard objectives add SpawnTimer dummy "召喚タイマー"
+        scoreboard objectives add CantCastMagic dummy "魔法誤射防止"
+        scoreboard objectives add UIPage dummy "UIのページ"
+        scoreboard objectives add ShopPage dummy "店のページ"
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
-        scoreboard objectives add UIPage trigger "UIのページ"
-        scoreboard objectives add ShopPage trigger "店のページ"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"

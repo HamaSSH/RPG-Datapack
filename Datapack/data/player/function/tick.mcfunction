@@ -39,6 +39,7 @@
     execute if score @s InCombat matches 1.. run scoreboard players remove @s InCombat 1
     execute if score @s SkillTimer matches 1.. run scoreboard players remove @s SkillTimer 1
     execute if score @s GoldTimer matches 1.. run scoreboard players remove @s GoldTimer 1
+    execute if score @s CantCastMagic matches 1.. run scoreboard players remove @s CantCastMagic 1
 
 # 魔法を発動したプレイヤーのtick処理
     function #asset:magic/player

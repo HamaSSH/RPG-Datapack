@@ -9,6 +9,9 @@
 # HP回復
     execute store result score @s Healing run data get storage player: Consumables.healing
 
+# 魔法誤射防止タイマー
+    scoreboard players set @s CantCastMagic 10
+
 # 初めてのドーピング
     execute if data storage player: Consumables{custom_potion:1b} run advancement grant @s only asset:achievement/2.1
 
