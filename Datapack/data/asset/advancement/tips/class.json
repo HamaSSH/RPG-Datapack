@@ -1,11 +1,11 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:tick",
+            "trigger": "tick",
             "conditions": {
                 "player": {
                     "type_specific": {
-                        "type": "minecraft:player",
+                        "type": "player",
                         "looking_at": {
                             "type": "villager",
                             "nbt": "{Tags:[\"ClassNPC\"]}",

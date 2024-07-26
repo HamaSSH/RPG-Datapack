@@ -1,16 +1,16 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:inventory_changed",
+            "trigger": "inventory_changed",
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "condition": "entity_properties",
                         "entity": "this",
                         "predicate": {
                             "slots": {
                                 "armor.*": {
-                                    "items": "#minecraft:enchantable/armor"
+                                    "items": "#enchantable/armor"
                                 }
                             }
                         }
