@@ -5,9 +5,9 @@ tag @s remove ChainTarget
 tag @s add ChainedTarget
 
 # 演出
-    playsound entity.shulker.shoot master @a ~ ~ ~ 0.1 1.8
-    playsound block.pumpkin.carve master @a ~ ~ ~ 0.3 1.6
-    playsound entity.firework_rocket.twinkle_far master @a ~ ~ ~ 0.1 1.9
+    playsound entity.shulker.shoot master @a ~ ~ ~ 0.2 1.8
+    playsound block.pumpkin.carve master @a ~ ~ ~ 0.5 1.6
+    playsound entity.firework_rocket.twinkle_far master @a ~ ~ ~ 0.3 1.9
 
 # ダメージ設定
     data modify storage lib: Damage.Natural set value "Thunder"
