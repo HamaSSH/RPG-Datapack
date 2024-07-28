@@ -1,6 +1,8 @@
 #> item:fishing/rod/used
 # 釣り竿を使用したことの検知
 
+tag @s add UsedRod
+
 # 耐久値を減らす
     execute if items entity @s weapon.mainhand fishing_rod run tag @s add MainhandRod
     execute unless entity @s[tag=MainhandRod] if items entity @s weapon.offhand fishing_rod run tag @s add OffhandRod
@@ -20,6 +22,7 @@
     kill @e[type=experience_orb,distance=..1]
 
 # リセット
+    tag @s remove UsedRod
     tag @s remove MainhandRod
     tag @s remove OffhandRod
     scoreboard players reset $FishKind Temporary

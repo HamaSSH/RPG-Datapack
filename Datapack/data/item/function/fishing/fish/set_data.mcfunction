@@ -42,7 +42,7 @@
 # 経験値を与える
     scoreboard players operation $SizeToEXP Temporary = $Size Temporary
     scoreboard players operation $SizeToEXP Temporary /= #100 Constant
-    scoreboard players operation @p[advancements={player:trigger/used_item/fishing_rod=true}] EXPGained += $SizeToEXP Temporary
+    scoreboard players operation @p[tag=UsedRod] EXPGained += $SizeToEXP Temporary
 
 # 釣った魚のデータをチャットに表示
     data modify storage item: Data set from entity @s Item.components
@@ -50,7 +50,7 @@
     data modify storage item: Data.text.dec set string storage item: Fish.size -2
     execute if score $Count Temporary matches 1 run data modify storage item: Data.text.new set value '{"text":" NEW!","bold":true,"color":"#F3E478"}'
     execute if entity @s[tag=NewRecord] run data modify storage item: Data.text.new_record set value '{"text":" ‐図鑑更新‐","color":"gray"}'
-    execute unless entity @s[tag=NewRecord] run tellraw @p[advancements={player:trigger/used_item/fishing_rod=true}] [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
+    execute unless entity @s[tag=NewRecord] run tellraw @p[tag=UsedRod] [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
     execute if entity @s[tag=NewRecord] run tellraw @a [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
 
 # 魚の長さ(テキスト)生成
