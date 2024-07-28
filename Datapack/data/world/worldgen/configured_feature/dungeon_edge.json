@@ -1,0 +1,93 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "radius": 2,
+        "half_height": 4,
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                        "minecraft:air"
+                    ]
+                },
+                {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "blocks": [
+                                "minecraft:cave_air"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                -1,
+                                0,
+                                0
+                            ],
+                            "blocks": [
+                                "minecraft:cave_air"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                0,
+                                0,
+                                1
+                            ],
+                            "blocks": [
+                                "minecraft:cave_air"
+                            ]
+                        },
+                        {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                                0,
+                                0,
+                                -1
+                            ],
+                            "blocks": [
+                                "minecraft:cave_air"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:stone_bricks"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:stone"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:andesite"
+                        }
+                    }
+                ]
+            },
+            "rules": []
+        }
+    }
+}
