@@ -15,10 +15,11 @@
     data modify storage item: Fish.count set from storage item: Fish.count
 
 # 魚のサイズの抽選
-    $execute store result score $Size Temporary run random value $(min)..$(max)
+    $execute store result score $Size Temporary run random value $(min_luk)..$(max)
     execute store result storage item: Fish.size int 1 run scoreboard players get $Size Temporary
     $execute store result score $RecordSize Temporary run data get storage zukan:fish Data[{id:$(id)}].size
     execute if score $Size Temporary > $RecordSize Temporary run tag @s add NewRecord
+    data remove storage item: Fish.min_luk
 
 # サイズの判定
     # 銀サイズ（約20%）
@@ -48,7 +49,7 @@
     data modify storage item: Data.text.int set string storage item: Fish.size 0 -2
     data modify storage item: Data.text.dec set string storage item: Fish.size -2
     execute if score $Count Temporary matches 1 run data modify storage item: Data.text.new set value '{"text":" NEW!","bold":true,"color":"#F3E478"}'
-    execute if entity @s[tag=NewRecord] run data modify storage item: Data.text.new_record set value '{"text":" ‐最大サイズ更新‐","color":"gray"}'
+    execute if entity @s[tag=NewRecord] run data modify storage item: Data.text.new_record set value '{"text":" ‐図鑑更新‐","color":"gray"}'
     execute unless entity @s[tag=NewRecord] run tellraw @p[advancements={player:trigger/used_item/fishing_rod=true}] [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
     execute if entity @s[tag=NewRecord] run tellraw @a [{"nbt":"Fish.icon","storage":"item:","interpret":true},[{"text":" ","bold":true},{"nbt":"Data.minecraft:item_name","storage":"item:","interpret":true}," ×1"],{"nbt":"Data.text.new","storage":"item:","interpret":true},{"text":"\n\uF82A\uF804サイズ: "},{"nbt":"Fish.crown","storage":"item:"},"\uF822",{"nbt":"Data.text.int","storage":"item:"},".",{"nbt":"Data.text.dec","storage":"item:"},"\uF822cm",{"nbt":"Data.text.new_record","storage":"item:","interpret":true}]
 
