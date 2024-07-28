@@ -5,54 +5,32 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1600",
-                    "weight": 6
-                },
+                    "value": "item:fishing/plains"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "biomes": "plains"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1601",
-                    "weight": 6
-                },
+                    "value": "item:fishing/cold_ocean"
+                }
+            ],
+            "conditions": [
                 {
-                    "type": "loot_table",
-                    "value": "asset:item/1602",
-                    "weight": 6
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1603",
-                    "weight": 6
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1604",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1605",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1606",
-                    "weight": 3
-                },
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1607",
-                    "weight": 3
-                },
-                {
-                    "type": "item",
-                    "name": "nautilus_shell",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "set_custom_data",
-                            "tag": "{item_type:\"fishing_chest\",chest_type:\"gold\"}"
-                        }
-                    ]
+                    "condition": "location_check",
+                    "predicate": {
+                        "biomes": "cold_ocean"
+                    }
                 }
             ]
         }

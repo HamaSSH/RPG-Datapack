@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1600",
+                    "weight": 6000,
+                    "quality": -2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1601",
+                    "weight": 6000,
+                    "quality": -2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1602",
+                    "weight": 6000,
+                    "quality": -2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1603",
+                    "weight": 6000,
+                    "quality": -2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1604",
+                    "weight": 3000,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1605",
+                    "weight": 3000,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1606",
+                    "weight": 3000,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1607",
+                    "weight": 3000,
+                    "quality": 2
+                },
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "weight": 1000,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{item_type:\"fishing_chest\",chest_type:\"gold\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

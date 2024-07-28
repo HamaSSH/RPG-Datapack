@@ -1,4 +1,4 @@
-#> item:fishing/loot
+#> item:fishing/fish/set_data
 # 釣った魚のデータの生成
 
 # 溶岩で燃えないように
