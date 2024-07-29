@@ -2,6 +2,7 @@
 # モブデータの適用
 
 tag @s add Enemy
+team join Enemy
 
 # 装備の設定
     data modify storage asset:mob ArmorItems set value []

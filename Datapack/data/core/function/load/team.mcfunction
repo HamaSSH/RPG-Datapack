@@ -1,6 +1,10 @@
 #> core:load/team
 # チームの設定
 
+# 敵モブTeam
+    team add Enemy
+    team modify Enemy friendlyFire false
+
 # 当たり判定
     team add NoCollision
     team modify NoCollision collisionRule never
