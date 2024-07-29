@@ -42,7 +42,7 @@
 			{
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "lib:p_motion/horizontal/kill"
+					"function": "lib:p_motion/enchant/horizontal/kill"
 				}
 			}
 		]
