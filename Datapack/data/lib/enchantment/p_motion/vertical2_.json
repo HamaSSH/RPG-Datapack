@@ -1,0 +1,44 @@
+{
+	"description": "",
+	"supported_items": [],
+	"weight": 1,
+	"max_level": 100,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:explode",
+					"radius": 0.0001,
+					"block_interaction": "none",
+					"small_particle": {
+						"type": "minecraft:block",
+						"block_state": "minecraft:air"
+					},
+					"large_particle": {
+						"type": "minecraft:block",
+						"block_state": "minecraft:air"
+					},
+					"sound": "minecraft:entity.cod.ambient",
+					"immune_blocks": "#lib:every_block",
+					"knockback_multiplier": {
+						"type": "minecraft:linear",
+						"base": -0.01,
+						"per_level_above_first": -0.01
+					}
+				}
+			}
+		]
+	}
+}
