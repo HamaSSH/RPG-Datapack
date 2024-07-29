@@ -20,6 +20,6 @@
     execute at @s run function mob:on_hurt/_
 
 # リセット
-    data remove storage lib: Damage
+    data remove storage lib: Damage.Type
     scoreboard players reset @s DmgReceived
     tag @p[tag=Charged] remove Charged

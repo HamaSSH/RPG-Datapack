@@ -11,5 +11,5 @@
     function mob:on_hurt/_
 
 # リセット
-    data remove storage lib: Damage.Type
+    data remove storage lib: Damage.Natural
     scoreboard players reset @s DmgReceived

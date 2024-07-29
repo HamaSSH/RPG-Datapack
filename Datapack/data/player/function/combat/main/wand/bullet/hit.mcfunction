@@ -22,6 +22,6 @@
     effect give @s slowness 1 0 true
 
 # リセット
-    data remove storage lib: Damage
+    data remove storage lib: Damage.Type
     scoreboard players reset @s DmgReceived
     tag @s remove Hit
