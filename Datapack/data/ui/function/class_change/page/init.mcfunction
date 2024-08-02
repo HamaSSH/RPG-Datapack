@@ -12,3 +12,7 @@ data modify entity @s Items set value [{Slot:0b,id:"glass_bottle",components:{"m
     item modify entity @s container.14 ui:class/paladin
     item modify entity @s container.15 ui:class/wizard
     scoreboard players reset $ClassID Temporary
+    scoreboard players reset $HunterCMD Temporary
+    scoreboard players reset $FghterCMD Temporary
+    scoreboard players reset $PaladinCMD Temporary
+    scoreboard players reset $WizardCMD Temporary

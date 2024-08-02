@@ -29,3 +29,8 @@ execute if score %10 Temporary matches 5 run scoreboard players add @s BaseAGI 6
 execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 20
 execute if score %10 Temporary matches 0 run scoreboard players add @s BaseDEX 2
 execute if score %10 Temporary matches 0 run scoreboard players add @s BaseCRT 8
+
+execute if score @s LVL matches 20..49 run scoreboard players set @s HunterRank 1
+execute if score @s LVL matches 20..49 run team join Hunter1
+execute if score @s LVL matches 50.. run scoreboard players set @s HunterRank 2
+execute if score @s LVL matches 50.. run team join Hunter2

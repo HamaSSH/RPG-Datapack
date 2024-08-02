@@ -1,5 +1,16 @@
 [
     {
+        "function": "set_custom_model_data",
+        "value": {
+            "type": "score",
+            "target": {
+                "type": "fixed",
+                "name": "$HunterCMD"
+            },
+            "score": "Temporary"
+        }
+    },
+    {
         "function": "set_name",
         "entity": "this",
         "target": "item_name",
@@ -92,7 +103,7 @@
         "mode": "replace_all"
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "lore": [
             [
                 "\uF822",
@@ -106,7 +117,7 @@
         "mode": "append"
     },
     {
-        "function": "minecraft:set_lore",
+        "function": "set_lore",
         "lore": [
             [
                 {
