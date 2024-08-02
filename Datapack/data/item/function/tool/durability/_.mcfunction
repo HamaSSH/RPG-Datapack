@@ -9,6 +9,7 @@
 # 使用可能回数を1減らす
     execute store result score $RemainingUse Temporary run data get storage item: Data.minecraft:custom_data.tool.remaining_use
     execute store result storage item: Data.minecraft:custom_data.tool.remaining_use int 1 run scoreboard players remove $RemainingUse Temporary 1
+    advancement grant @s only asset:tips/repair
 
 # 耐久値計算＋耐久値バー設定
     execute store result score $MaxDurability Temporary run data get storage item: Data.minecraft:custom_data.tool.durability
