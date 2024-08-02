@@ -10,11 +10,9 @@ tag @s remove MPCheckPass
     function player:buff/_
 
 # 上に飛ぶ
-    scoreboard players set $strength hb.Motion -12000
-    tp @s 0.0 0.0 0.0
-    tp @s ~ ~ ~
-    function #p_motion:looking
-    scoreboard players reset $strength hb.Motion
+    scoreboard players set $MotionPower Temporary -12000
+    function lib:p_motion/apply
+    scoreboard players reset $MotionPower Temporary
 
 # 演出
     playsound entity.phantom.flap master @a ~ ~ ~ 1.0 1.5

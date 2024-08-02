@@ -9,8 +9,9 @@
     function player:status/mp/check/_
 
 # 十分なMPを持っていればため攻撃
-    execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches 80.. run function player:combat/main/bow/skill/rain/start
-    execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches -49..79 run function player:combat/main/bow/skill/shot/start
+    # execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches 80.. run function player:combat/main/bow/skill/rain/start
+    # execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches -49..79 run function player:combat/main/bow/skill/shot/start
+    execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches -49.. run function player:combat/main/bow/skill/shot/start
     execute if entity @s[tag=MPCheckPass] if score $Angle Temporary matches ..-50 run function player:combat/main/bow/skill/meteor/start
 
 # リセット
