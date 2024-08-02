@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "looking_at": {
+                            "type": "mule",
+                            "nbt": "{Tags:[\"SmithingMule\"]}",
+                            "distance": {
+                                "absolute": {
+                                    "min": 0,
+                                    "max": 6
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:tips/smithing"
+    }
+}

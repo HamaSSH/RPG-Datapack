@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "wand": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{weapon:\"bow\"}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:tips/bow_charge"
+    }
+}

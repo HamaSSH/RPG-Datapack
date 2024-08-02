@@ -1,5 +1,5 @@
-#> asset:tips/magic
-# 魔導書
+#> asset:tips/element
+# 属性纏い
 
 # トリガー：魔法を放つ
     playsound resource:custom.levelup master @s ~ ~ ~ 0.5 1.3

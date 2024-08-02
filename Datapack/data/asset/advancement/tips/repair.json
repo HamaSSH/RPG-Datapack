@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "asset:tips/repair"
+    }
+}
