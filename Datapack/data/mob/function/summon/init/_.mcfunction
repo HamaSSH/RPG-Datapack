@@ -2,7 +2,6 @@
 # モブデータの適用
 
 tag @s add Enemy
-team join Enemy
 
 # 装備の設定
     data modify storage asset:mob ArmorItems set value []
@@ -41,6 +40,7 @@ team join Enemy
 
 # AI乗っ取り用のモブの判定
     execute unless predicate lib:has_passenger run tag @s add Controller
+    execute unless predicate lib:has_passenger run team join Enemy
     execute on passengers if entity @s[tag=Controller] run function mob:summon/init/controller
 
 # モデル表示用のモブを乗せる場合の初期化

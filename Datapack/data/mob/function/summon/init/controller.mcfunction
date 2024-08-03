@@ -1,6 +1,7 @@
 #> mob:summon/init/controller
 # モブデータの適用
 
+team join Enemy
 tag @s add NameDisplay
 tag @s add AutoKill
 tag @s add HasVehicle
