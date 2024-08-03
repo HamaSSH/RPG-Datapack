@@ -23,5 +23,6 @@
 
 # リセット
     data remove storage lib: Damage.Type
+    data remove storage lib: Damage.Critical
     scoreboard players reset @s DmgReceived
     tag @s remove Hit
