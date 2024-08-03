@@ -11,6 +11,40 @@
                     "value": "asset:item/1020"
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1029"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1030"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.1
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1004"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.1
+                }
+            ]
         }
     ]
 }

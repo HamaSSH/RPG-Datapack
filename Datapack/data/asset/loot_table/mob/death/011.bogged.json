@@ -2,32 +2,40 @@
     "pools": [
         {
             "rolls": {
-                "min": 0,
-                "max": 2
-            },
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1049"
-                }
-            ]
-        },
-        {
-            "rolls": {
                 "min": 1,
                 "max": 2
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1021",
-                    "weight": 2000
-                },
+                    "value": "asset:item/1037"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1022",
-                    "weight": 20,
-                    "quality": 1
+                    "value": "asset:item/1021"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1064"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
                 }
             ]
         }
