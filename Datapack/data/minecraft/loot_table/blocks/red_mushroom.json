@@ -1,0 +1,13 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1058"
+                }
+            ]
+        }
+    ]
+}
