@@ -6,3 +6,7 @@ $execute positioned 30000 101 $(ID)000 positioned as @n[type=marker,tag=DungeonE
 $execute positioned 30000 101 $(ID)000 positioned as @n[type=marker,tag=DungeonEntrance] run playsound minecraft:entity.illusioner.prepare_mirror master @s ~ ~ ~ 1 1.05
 title @s times 40 40 20
 title @s title ["\uE302",{"text":"始まりの遺跡","bold":true},"\uE303"]
+
+# 盲目エフェクト
+    data modify storage player: NewBuff set value [{effect:"blindness",duration:40,amplifier:10}]
+    function player:buff/_

@@ -2,4 +2,4 @@
 # ダンジョン関連の初期化
 
 tag @s remove DungeonSpawnerInit
-execute if entity @s[tag=DungeonEntrance] run tag @s remove Spawner
+tag @s remove Spawner
