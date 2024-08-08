@@ -10,5 +10,21 @@
     {
         "function": "minecraft:reference",
         "name": "item:zukan/fish/page/1"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/2"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/3"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/4"
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "item:zukan/fish/page/5"
     }
 ]

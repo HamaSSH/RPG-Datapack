@@ -1,0 +1,197 @@
+{
+    "function": "minecraft:set_written_book_pages",
+    "mode": "replace_section",
+    "offset": 3,
+    "pages": [
+        {
+            "raw": [
+                {
+                    "text": "",
+                    "color": "white"
+                },
+                "\uE000\uF826\uE5A0\uF80C\uF828\uF826",
+                [
+                    {
+                        "nbt": "Data[{id:1612}].icon",
+                        "storage": "zukan:fish",
+                        "interpret": true
+                    },
+                    {
+                        "nbt": "Data[{id:1612}].name",
+                        "storage": "zukan:fish",
+                        "color": "#998655",
+                        "bold": true,
+                        "interpret": true
+                    },
+                    "\n\uE5B0\uF80C\uF803",
+                    "\uF82A\uF828\uF826",
+                    {
+                        "nbt": "Data[{id:1612}].crown",
+                        "storage": "zukan:fish",
+                        "font": "resource:zukan_size"
+                    },
+                    "\uF822",
+                    {
+                        "nbt": "Data[{id:1612}].length",
+                        "storage": "zukan:fish",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size",
+                        "interpret": true
+                    },
+                    {
+                        "text": "\uF821cm\n",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size"
+                    },
+                    {
+                        "text": "🐟x",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    {
+                        "nbt": "Data[{id:1612}].count",
+                        "storage": "zukan:fish",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    "\n"
+                ],
+                [
+                    {
+                        "nbt": "Data[{id:1613}].icon",
+                        "storage": "zukan:fish",
+                        "interpret": true
+                    },
+                    {
+                        "nbt": "Data[{id:1613}].name",
+                        "storage": "zukan:fish",
+                        "color": "#998655",
+                        "bold": true,
+                        "interpret": true
+                    },
+                    "\n\uF82A\uF828\uF826",
+                    {
+                        "nbt": "Data[{id:1613}].crown",
+                        "storage": "zukan:fish",
+                        "font": "resource:zukan_size"
+                    },
+                    "\uF822",
+                    {
+                        "nbt": "Data[{id:1613}].length",
+                        "storage": "zukan:fish",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size",
+                        "interpret": true
+                    },
+                    {
+                        "text": "\uF821cm\n",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size"
+                    },
+                    {
+                        "text": "🐟x",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    {
+                        "nbt": "Data[{id:1613}].count",
+                        "storage": "zukan:fish",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    "\n"
+                ],
+                [
+                    {
+                        "nbt": "Data[{id:1614}].icon",
+                        "storage": "zukan:fish",
+                        "interpret": true
+                    },
+                    {
+                        "nbt": "Data[{id:1614}].name",
+                        "storage": "zukan:fish",
+                        "color": "#998655",
+                        "bold": true,
+                        "interpret": true
+                    },
+                    "\n\uF82A\uF828\uF826",
+                    {
+                        "nbt": "Data[{id:1614}].crown",
+                        "storage": "zukan:fish",
+                        "font": "resource:zukan_size"
+                    },
+                    "\uF822",
+                    {
+                        "nbt": "Data[{id:1614}].length",
+                        "storage": "zukan:fish",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size",
+                        "interpret": true
+                    },
+                    {
+                        "text": "\uF821cm\n",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size"
+                    },
+                    {
+                        "text": "🐟x",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    {
+                        "nbt": "Data[{id:1614}].count",
+                        "storage": "zukan:fish",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    "\n"
+                ],
+                [
+                    {
+                        "nbt": "Data[{id:1615}].icon",
+                        "storage": "zukan:fish",
+                        "interpret": true
+                    },
+                    {
+                        "nbt": "Data[{id:1615}].name",
+                        "storage": "zukan:fish",
+                        "color": "#998655",
+                        "bold": true,
+                        "interpret": true
+                    },
+                    "\n\uF82A\uF828\uF826",
+                    {
+                        "nbt": "Data[{id:1615}].crown",
+                        "storage": "zukan:fish",
+                        "font": "resource:zukan_size"
+                    },
+                    "\uF822",
+                    {
+                        "nbt": "Data[{id:1615}].length",
+                        "storage": "zukan:fish",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size",
+                        "interpret": true
+                    },
+                    {
+                        "text": "\uF821cm\n",
+                        "color": "#8B7845",
+                        "font": "resource:zukan_size"
+                    },
+                    {
+                        "text": "🐟x",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    {
+                        "nbt": "Data[{id:1615}].count",
+                        "storage": "zukan:fish",
+                        "color": "#A9996D",
+                        "font": "resource:zukan_count"
+                    },
+                    "\n"
+                ]
+            ]
+        }
+    ]
+}
