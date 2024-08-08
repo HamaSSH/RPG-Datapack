@@ -1,62 +1,62 @@
 {
-    "type": "minecraft:disk",
+    "type": "disk",
     "config": {
         "radius": 2,
         "half_height": 4,
         "target": {
-            "type": "minecraft:all_of",
+            "type": "all_of",
             "predicates": [
                 {
-                    "type": "minecraft:matching_blocks",
+                    "type": "matching_blocks",
                     "blocks": [
-                        "minecraft:air"
+                        "void_air"
                     ]
                 },
                 {
-                    "type": "minecraft:any_of",
+                    "type": "any_of",
                     "predicates": [
                         {
-                            "type": "minecraft:matching_blocks",
+                            "type": "matching_blocks",
                             "offset": [
                                 1,
                                 0,
                                 0
                             ],
                             "blocks": [
-                                "minecraft:cave_air"
+                                "air"
                             ]
                         },
                         {
-                            "type": "minecraft:matching_blocks",
+                            "type": "matching_blocks",
                             "offset": [
                                 -1,
                                 0,
                                 0
                             ],
                             "blocks": [
-                                "minecraft:cave_air"
+                                "air"
                             ]
                         },
                         {
-                            "type": "minecraft:matching_blocks",
+                            "type": "matching_blocks",
                             "offset": [
                                 0,
                                 0,
                                 1
                             ],
                             "blocks": [
-                                "minecraft:cave_air"
+                                "air"
                             ]
                         },
                         {
-                            "type": "minecraft:matching_blocks",
+                            "type": "matching_blocks",
                             "offset": [
                                 0,
                                 0,
                                 -1
                             ],
                             "blocks": [
-                                "minecraft:cave_air"
+                                "air"
                             ]
                         }
                     ]
@@ -65,24 +65,24 @@
         },
         "state_provider": {
             "fallback": {
-                "type": "minecraft:weighted_state_provider",
+                "type": "weighted_state_provider",
                 "entries": [
                     {
                         "weight": 1,
                         "data": {
-                            "Name": "minecraft:stone_bricks"
+                            "Name": "stone_bricks"
                         }
                     },
                     {
                         "weight": 1,
                         "data": {
-                            "Name": "minecraft:stone"
+                            "Name": "stone"
                         }
                     },
                     {
                         "weight": 1,
                         "data": {
-                            "Name": "minecraft:andesite"
+                            "Name": "andesite"
                         }
                     }
                 ]

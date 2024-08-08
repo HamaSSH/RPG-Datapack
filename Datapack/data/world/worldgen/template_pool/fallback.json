@@ -20,7 +20,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -29,7 +29,7 @@
             }
         },
         {
-            "weight": 3,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -38,7 +38,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -47,14 +47,15 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
                 "location": "world:fallback6",
                 "processors": "empty"
             }
-        },{
+        },
+        {
             "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
@@ -69,42 +70,6 @@
                 "element_type": "single_pool_element",
                 "projection": "rigid",
                 "location": "world:fallback8",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:fallback9",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 3,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:fallback10",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 2,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:fallback11",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:fallback12",
                 "processors": "empty"
             }
         }
