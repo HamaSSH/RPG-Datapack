@@ -16,6 +16,7 @@
 # 初期ステータス
     team leave @s
     attribute @s minecraft:generic.attack_speed base set 3.0
+    attribute @s minecraft:generic.scale base set 0.92448
     function player:status/init
 
 # TIPSの初期化
