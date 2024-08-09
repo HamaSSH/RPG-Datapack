@@ -14,7 +14,10 @@
 # アイテムの説明文はそのまま
     execute store result score $ItemLore Temporary run data get storage ui: ItemData.lore_length
     execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
-    execute if score $ItemLore Temporary matches 2 run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[1]
+    execute if score $ItemLore Temporary matches 2.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[1]
+    execute if score $ItemLore Temporary matches 3.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[2]
+    execute if score $ItemLore Temporary matches 4.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[3]
+    execute if score $ItemLore Temporary matches 5 run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[4]
     data modify storage ui: Result.display.Lore append value '[{"text":"","color":"dark_gray","italic":false,"strikethrough":true},{"text":"                          "}]'
 
 # 耐久値UP
