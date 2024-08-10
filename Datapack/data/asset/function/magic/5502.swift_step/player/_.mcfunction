@@ -1,4 +1,4 @@
-#> asset:magic/5502.swift/player/_
+#> asset:magic/5502.swift_step/player/_
 # 魔法を発動した後のプレイヤーのtick処理
 
 scoreboard players add @s 5502.Tick 1

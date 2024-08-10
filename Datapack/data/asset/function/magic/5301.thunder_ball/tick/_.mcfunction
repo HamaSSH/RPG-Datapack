@@ -14,15 +14,15 @@
 
 # 演出
     execute if predicate lib:percentage/50 run particle enchant ~ ~ ~ 0.3 0.3 0.3 0.2 10 force
-    particle dust_color_transition{from_color:[0.992,1.0,0.62],to_color:[1.0,0.941,0.133],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
+    particle dust_color_transition{from_color:[0.992,1.0,0.62],to_color:[1.0,0.941,0.133],scale:2} ~ ~ ~ 0.2 0.2 0.2 0 3 force
     particle dust_color_transition{from_color:[0.992,1.0,0.62],to_color:[1.0,0.941,0.133],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
-    particle dust_color_transition{from_color:[0.918,1.0,0.639],to_color:[0.914,1.0,0.153],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
-    particle dust_color_transition{from_color:[0.918,1.0,0.639],to_color:[0.914,1.0,0.153],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+    particle dust_color_transition{from_color:[0.918,1.0,0.639],to_color:[0.914,1.0,0.153],scale:1.5} ~ ~ ~ 0.4 0.4 0.4 0 5 force
+    particle dust_color_transition{from_color:[0.918,1.0,0.639],to_color:[0.914,1.0,0.153],scale:1.5} ^ ^ ^0.5 0.4 0.4 0.4 0 4 force
 
 # 移動
     tp ^ ^ ^1
-    execute unless block ^ ^ ^ #lib:no_collision run kill @s
-    execute unless block ^ ^ ^0.5 #lib:no_collision run kill @s
+    execute if entity @s[tag=!PassThrough] unless block ^ ^ ^ #lib:no_collision run kill @s
+    execute if entity @s[tag=!PassThrough] unless block ^ ^ ^0.5 #lib:no_collision run kill @s
 
 # ホーミング
     data modify storage lib: HomingAngle set value 300

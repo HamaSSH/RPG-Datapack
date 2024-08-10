@@ -14,15 +14,15 @@
 
 # 演出
     execute if predicate lib:percentage/50 run particle enchant ~ ~ ~ 0.3 0.3 0.3 0.2 10 force
-    particle dust{color:[0.478,0.784,0.275],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.478,0.784,0.275],scale:2} ~ ~ ~ 0.2 0.2 0.2 0 3 force
     particle dust{color:[0.478,0.784,0.275],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
-    particle dust{color:[0.725,1.0,0.506],scale:2} ~ ~ ~ 0.2 0.1 0.2 0 4 force
-    particle dust{color:[0.725,1.0,0.506],scale:2} ^ ^ ^0.5 0.2 0.1 0.2 0 4 force
+    particle dust{color:[0.725,1.0,0.506],scale:1.5} ~ ~ ~ 0.4 0.4 0.4 0 5 force
+    particle dust{color:[0.725,1.0,0.506],scale:1.5} ^ ^ ^0.5 0.4 0.4 0.4 0 4 force
 
 # 移動
     tp ^ ^ ^1
-    execute unless block ^ ^ ^ #lib:no_collision run kill @s
-    execute unless block ^ ^ ^0.5 #lib:no_collision run kill @s
+    execute if entity @s[tag=!PassThrough] unless block ^ ^ ^ #lib:no_collision run kill @s
+    execute if entity @s[tag=!PassThrough] unless block ^ ^ ^0.5 #lib:no_collision run kill @s
 
 # ホーミング
     data modify storage lib: HomingAngle set value 300

@@ -3,6 +3,7 @@
 
 # NBTデータ
     data merge entity @s {Marker:1b,Invisible:1b,Small:1b}
+    execute if entity @p[tag=SkillBullet] run tag @s add PassThrough
 
 # 弾と攻撃したプレイヤーの紐づけ
     scoreboard players operation @s PlayerID = @p[tag=TriggerMagic] PlayerID

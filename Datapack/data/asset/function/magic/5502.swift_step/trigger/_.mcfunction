@@ -1,4 +1,4 @@
-#> asset:magic/5502.swift/trigger/_
+#> asset:magic/5502.swift_step/trigger/_
 # 魔法発動時の処理
 
 # プレイヤー用tickの始動
