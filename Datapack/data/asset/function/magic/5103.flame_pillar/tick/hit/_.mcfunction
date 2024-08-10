@@ -1,5 +1,5 @@
-#> asset:magic/5101.fire_ball/tick/hit/_
-# 攻撃がヒットした敵に対しての処理
+#> asset:magic/5103.flame_pillar/tick/hit/_
+# 魔法がヒットした時の処理
 
 # ダメージ設定
     data modify storage lib: Damage.Type set value "Magic"
@@ -9,11 +9,11 @@
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
 # 炎上させる
-    data modify entity @s Fire set value 40s
+    data modify entity @s Fire set value 60s
 
 # ダメージ処理
-    scoreboard players set $MotionPower Temporary 80
-    execute facing entity @e[type=armor_stand,tag=Magic,tag=Attacker,sort=nearest,limit=1] feet rotated ~180 60 run function lib:motion/knockback
+    scoreboard players set $MotionPower Temporary 180
+    execute facing entity @e[type=armor_stand,tag=Magic,tag=Attacker,sort=nearest,limit=1] feet rotated ~180 80 run function lib:motion/knockback
     function mob:on_hurt/_
     damage @s 0.0 generic
 
