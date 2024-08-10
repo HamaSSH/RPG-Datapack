@@ -1,0 +1,97 @@
+{
+	"env": {
+		"dataSource": "GitHub",
+		"dependencies": [
+			"@vanilla-mcdoc"
+		],
+		"feature": {
+			"codeActions": true,
+			"colors": true,
+			"completions": true,
+			"documentHighlighting": true,
+			"documentLinks": true,
+			"foldingRanges": true,
+			"formatting": true,
+			"hover": true,
+			"inlayHint": {
+				"enabledNodes": [
+					"mcfunction:command_child/unknown"
+				]
+			},
+			"semanticColoring": true,
+			"selectionRanges": true,
+			"signatures": true
+		},
+		"gameVersion": "1.21",
+		"language": "Default",
+		"permissionLevel": 2,
+		"plugins": [],
+		"mcmetaSummaryOverrides": {},
+		"useFilePolling": false
+	},
+	"format": {
+		"blockStateBracketSpacing": { "inside": 0 },
+		"blockStateCommaSpacing": { "before": 0, "after": 0 },
+		"blockStateEqualSpacing": { "before": 0, "after": 0 },
+		"blockStateTrailingComma": false,
+		"eol": "auto",
+		"nbtArrayBracketSpacing": { "inside": 0 },
+		"nbtArrayCommaSpacing": { "before": 0, "after": 0 },
+		"nbtArraySemicolonSpacing": { "after": 0 },
+		"nbtArrayTrailingComma": false,
+		"nbtByteSuffix": "b",
+		"nbtCompoundBracketSpacing": { "inside": 0 },
+		"nbtCompoundColonSpacing": { "before": 0, "after": 0 },
+		"nbtCompoundCommaSpacing": { "before": 0, "after": 0 },
+		"nbtCompoundTrailingComma": false,
+		"nbtDoubleOmitSuffix": false,
+		"nbtDoubleSuffix": "d",
+		"nbtFloatSuffix": "f",
+		"nbtListBracketSpacing": { "inside": 0 },
+		"nbtListCommaSpacing": { "before": 0, "after": 0 },
+		"nbtListTrailingComma": false,
+		"nbtLongSuffix": "L",
+		"nbtShortSuffix": "s",
+		"selectorBracketSpacing": { "inside": 0 },
+		"selectorCommaSpacing": { "before": 0, "after": 0 },
+		"selectorEqualSpacing": { "before": 0, "after": 0 },
+		"selectorTrailingComma": false,
+		"timeOmitTickUnit": false
+	},
+	"lint": {
+		"blockStateSortKeys": null,
+		"nbtCompoundSortKeys": null,
+		"selectorSortKeys": [
+            "warning",
+            ["type","gamemode","gamemodeNeg","team","teamNeg","typeNeg","tag","tagNeg","name","nameNeg","scores","advancements","nbt","nbtNeg","predicate","predicateNeg","level","x_rotation","y_rotation","distance","x","y","z","dx","dy","dz","sort","limit"]
+        ],
+		"commandStringQuote": null,
+		"nbtKeyQuote": null,
+		"nbtPathQuote": null,
+		"nbtStringQuote": null,
+		"selectorKeyQuote": null,
+
+		"idOmitDefaultNamespace": null,
+
+		"nameOfNbtKey": null,
+		"nameOfObjective": null,
+		"nameOfScoreHolder": null,
+		"nameOfTag": null,
+		"nameOfTeam": null,
+
+		"nbtArrayLengthCheck": true,
+		"nbtBoolean": null,
+		"nbtListLengthCheck": null,
+		"nbtTypeCheck": "loosely",
+
+		"undeclaredSymbol": [
+			{
+				"then": { "declare": "block" }
+			}
+		]
+	},
+	"snippet": {
+		"executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",
+		"summonAec": "summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [\"${1:tag}\"]}"
+	}
+}
