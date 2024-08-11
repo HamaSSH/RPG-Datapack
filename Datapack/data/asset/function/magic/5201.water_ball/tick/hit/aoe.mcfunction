@@ -2,7 +2,7 @@
 # 範囲攻撃
 
 # MagicHitタグが付けられたモブの周りのにもHitタグをつける
-    execute positioned ~-0.8 ~-0.8 ~-0.8 as @e[type=#lib:every_mob,tag=Enemy,dx=0.6,dy=0.6,dz=0.6,sort=nearest,limit=5] run function mob:hitbox
+    execute positioned ~-1 ~-0.2 ~-1 as @e[type=#lib:every_mob,tag=Enemy,dx=1,dy=1,dz=1,sort=nearest,limit=5] run function mob:hitbox
     tag @s remove MagicHit
 
 # 演出
