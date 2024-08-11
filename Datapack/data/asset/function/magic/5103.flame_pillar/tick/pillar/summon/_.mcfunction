@@ -9,3 +9,8 @@
 
 # 演出
     playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.8 1.4
+
+# リセット
+    scoreboard players reset $PlayerID Temporary
+    scoreboard players reset $DmgDealt Temporary
+    scoreboard players reset $MagicID Temporary
