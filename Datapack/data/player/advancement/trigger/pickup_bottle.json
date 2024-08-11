@@ -1,18 +1,35 @@
 {
     "criteria": {
-        "requirement": {
+        "glass_bottle": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": [
-                            "glass_bottle"
-                        ]
+                        "items": "glass_bottle"
+                    }
+                ]
+            }
+        },
+        "water_bottle": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "potion",
+                        "components": {
+                            "potion_contents": "water"
+                        }
                     }
                 ]
             }
         }
     },
+    "requirements": [
+        [
+            "glass_bottle",
+            "water_bottle"
+        ]
+    ],
     "rewards": {
         "function": "player:trigger/pickup_bottle"
     }
