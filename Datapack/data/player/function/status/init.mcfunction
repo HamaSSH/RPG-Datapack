@@ -43,6 +43,12 @@ scoreboard players set @s HunterRank 0
 scoreboard players set @s FighterRank 0
 scoreboard players set @s PaladinRank 0
 scoreboard players set @s WizardRank 0
+scoreboard players set @s ChargeSkill 0
+scoreboard players set @s PassiveWeapon 0
+scoreboard players set @s PassiveSkill1 0
+scoreboard players set @s PassiveSkill2 0
+scoreboard players set @s PassiveSkill3 0
+scoreboard players set @s PassiveSkill4 0
 scoreboard players set @s 3.3.GenerateLoot 0
 function player:status/update
 

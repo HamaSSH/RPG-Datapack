@@ -6,17 +6,35 @@
             "name": "player:class/is_fighter"
         },
         {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "predicates": {
-                            "custom_data": "{weapon:\"sword\"}"
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"sword\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"hammer\"}"
+                                }
+                            }
                         }
                     }
                 }
-            }
+            ]
         }
     ]
 }

@@ -17,3 +17,5 @@ scoreboard players set @s BaseLUK 50
 scoreboard players set @s LVL 1
 scoreboard players set @s EXP 0
 scoreboard players set @s NextEXP 50
+scoreboard players set @s PassiveWeapon 1
+scoreboard players set @s ChargeSkill 1

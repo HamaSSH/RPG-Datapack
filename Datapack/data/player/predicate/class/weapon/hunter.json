@@ -6,17 +6,48 @@
             "name": "player:class/is_hunter"
         },
         {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "predicates": {
-                            "custom_data": "{weapon:\"dagger\"}"
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"dagger\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"bow\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "offhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"bow\"}"
+                                }
+                            }
                         }
                     }
                 }
-            }
+            ]
         }
     ]
 }

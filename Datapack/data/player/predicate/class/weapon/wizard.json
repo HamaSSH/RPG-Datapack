@@ -6,17 +6,35 @@
             "name": "player:class/is_wizard"
         },
         {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "predicates": {
-                            "custom_data": "{weapon:\"wand\"}"
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{weapon:\"wand\"}"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "custom_data": "{item_group_name:\"魔法\"}"
+                                }
+                            }
                         }
                     }
                 }
-            }
+            ]
         }
     ]
 }
