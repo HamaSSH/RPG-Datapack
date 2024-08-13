@@ -19,9 +19,6 @@
     attribute @s minecraft:generic.scale base set 0.92448
     function player:status/init
 
-# TIPSの初期化
-    function asset:tips/reset
-
 # 実績の初期化
     function asset:achievement/init
     advancement grant @s only asset:achievement/1.1
