@@ -1,10 +1,9 @@
 #> player:status/lvl/up/tellraw
 # レベルアップ時のチャット欄へのtellraw
 
-# 自分以外へのtellraw
+# 自分以外｜自分へのtellraw
+    tag @s add LevelUp
     tellraw @a[tag=!LevelUp] ["⭐ ",{"selector":"@s","bold":true},{"text":"のレベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLVL","objective":"Temporary"}},{"text":"\uF822→\uF822"},{"score":{"name":"@s","objective":"LVL"},"color":"yellow","bold":true},{"text":" )"}]
-
-# 自分へのtellraw
     tellraw @s ["\n\uF822⭐ ",{"text":"レベルが上がった！"},{"text":" ( "},{"score":{"name":"$PreviousLVL","objective":"Temporary"}},{"text":"\uF822→\uF822"},{"score":{"name":"@s","objective":"LVL"},"color":"yellow","bold":true},{"text":" )"}]
 
 # ステータス上昇分のtellraw
@@ -41,6 +40,7 @@
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1
 
 # リセット
+    tag @s remove LevelUp
     data remove storage player: status_ui
     scoreboard players reset $PreviousLVL Temporary
     scoreboard players reset $PreviousHP Temporary

@@ -26,7 +26,7 @@ team leave @s
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # パッシブスキル(1度きり)
-    execute if entity @s[tag=!FirstTimeHunter] run tellraw @s ["",[{"text":"","color":"#BCE19F"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\uF822《 ",{"text":"適正武器","bold":true},"\uF822I 》"],"\n「弓・短剣の装備時ステータスＵＰ\n　弓・短剣の溜め攻撃を撃てるようになる」\n"]
+    execute if entity @s[tag=!FirstTimeHunter] run tellraw @s ["",[{"text":"","color":"#BCE19F"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\uF822《 ",{"text":"適正武器","bold":true},"\uF822I 》"],"\n「弓・短剣の装備時 ステータスが上昇する\n　弓・短剣の溜め攻撃を放つことができるようになる」\n"]
     tag @s add FirstTimeHunter
 
 # リセット

@@ -26,7 +26,7 @@ team leave @s
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # パッシブスキル(1度きり)
-    execute if entity @s[tag=!FirstTimeFighter] run tellraw @s ["",[{"text":"","color":"#E7BE96"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\uF822《 ",{"text":"適正武器","bold":true},"\uF822I 》"],"\n「刀剣・ﾊﾝﾏｰの装備時ステータスＵＰ\n　刀剣・ﾊﾝﾏｰの溜め攻撃を撃てるようになる」\n"]
+    execute if entity @s[tag=!FirstTimeFighter] run tellraw @s ["",[{"text":"","color":"#E7BE96"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\uF822《 ",{"text":"適正武器","bold":true},"\uF822I 》"],"\n「刀剣・ﾊﾝﾏｰの装備時 ステータスが上昇する\n　刀剣・ﾊﾝﾏｰの溜め攻撃を放つことができるようになる」\n"]
     tag @s add FirstTimeFighter
 
 # リセット

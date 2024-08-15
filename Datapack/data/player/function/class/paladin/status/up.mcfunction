@@ -4,7 +4,6 @@
 # 上昇するステータス
     # 毎レベル
         scoreboard players add @s BaseHP 3
-        scoreboard players operation @s BaseHP += $LVL/10 Temporary
         scoreboard players add @s BaseMP 1
     # 2レベルごと
         execute if score %2 Temporary matches 0 run scoreboard players add @s BaseSTR 1
@@ -35,6 +34,23 @@
     execute if score @s LVL matches 50.. run team join Paladin2
 
 # パッシブスキル
+    # レベルアップ時のtellraw用
+        execute if score @s LVL matches 5 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\\uF822《 ",{"text":"リファイン","bold":true},"\\uF822I 》"],{"text":"\\n「バフの効果と継続時間が上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 10 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\\uF822《 ",{"text":"スペルスラスト","bold":true},"\\uF822I 》"],{"text":"\\n「物理攻撃時に追加で魔法ダメージを与えるようになる」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 15 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\\uF822《 ",{"text":"フローレス","bold":true},"\\uF822I 》"],{"text":"\\n「体力が８０％以上の時 物理・魔法攻撃力が上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 15 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"適正武器","bold":true},"\\uF822II 》"],{"text":"\\n「槍の装備時 ステータスが更に上昇する\\n　槍の溜め攻撃の威力が上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 20 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\\uF822《 ",{"text":"エンハンスメント","bold":true},"\\uF822I 》"],{"text":"\\n「バフを受けている間 ステータスが上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 20 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"リファイン","bold":true},"\\uF822II 》"],{"text":"\\n「デバフ効果を無効化するようになる」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 25 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"スペルスラスト","bold":true},"\\uF822II 》"],{"text":"\\n「物理攻撃時の追加魔法ダメージが上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 30 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"フローレス","bold":true},"\\uF822II 》"],{"text":"\\n「体力が満タンの時 物理・魔法攻撃力が大きく上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 30 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"適正武器","bold":true},"\\uF822III 》"],{"text":"\\n「槍の装備時 ステータスが更に上昇する\\n　槍の溜め攻撃の威力が更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 35 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"エンハンスメント","bold":true},"\\uF822II 》"],{"text":"\\n「バフを受けている間 ステータスが更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 35 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"リファイン","bold":true},"\\uF822III 》"],{"text":"\\n「バフの効果と継続時間が更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 40 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"スペルスラスト","bold":true},"\\uF822III 》"],{"text":"\\n「物理攻撃時の追加魔法ダメージが更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 40 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"フローレス","bold":true},"\\uF822III 》"],{"text":"\\n「残り体力が多いほどステータスが大きく上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 45 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"エンハンスメント","bold":true},"\\uF822III 》"],{"text":"\\n「バフを受けている間 ステータスが更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 45 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸ｽｷﾙﾚﾍﾞﾙｱｯﾌﾟ!\\uF822《 ",{"text":"適正武器","bold":true},"\\uF822IV 》"],{"text":"\\n「槍の装備時 ステータスが更に上昇する\\n　槍の溜め攻撃の威力が更に上昇する」","color":"#E0E0E0"}]'
+        execute if score @s LVL matches 50 run data modify storage player: passive_ui append value '["",[{"text":"","color":"#81DDE1"}," ▸新ﾊﾟｯｼﾌﾞｽｷﾙ!\\uF822《 ",{"text":"クラスマスタリー","bold":true}," 》"],{"text":"\\n「全てのパッシブスキルを強化する」","color":"#E0E0E0"}]'
     # 適正武器「槍の装備時ステータスUP」
         execute if score @s LVL matches 15 run scoreboard players set @s PassiveWeapon 2
         execute if score @s LVL matches 30 run scoreboard players set @s PassiveWeapon 3
@@ -55,7 +71,7 @@
         execute if score @s LVL matches 25 run scoreboard players set @s PassiveSkill2 2
         execute if score @s LVL matches 40 run scoreboard players set @s PassiveSkill2 3
         execute if score @s LVL matches 50 run scoreboard players set @s PassiveSkill2 4
-    # フローレス「HPが80%以上の時ステータスUP」
+    # フローレス「体力が８０％以上の時ステータスUP」
         execute if score @s LVL matches 15 run scoreboard players set @s PassiveSkill3 1
         execute if score @s LVL matches 30 run scoreboard players set @s PassiveSkill3 2
         execute if score @s LVL matches 40 run scoreboard players set @s PassiveSkill3 3
