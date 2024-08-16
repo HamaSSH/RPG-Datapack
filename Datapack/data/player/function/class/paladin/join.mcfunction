@@ -1,9 +1,8 @@
 #> player:class/paladin/join
 # teamに所属する
 
-team leave @s
-
 # ステータスの初期化
+    function player:class/leave
     function player:class/paladin/status/init
     tag @s add StatusUpdate
     tag @s add HPFull

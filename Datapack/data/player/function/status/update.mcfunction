@@ -51,10 +51,10 @@
     scoreboard players operation @s LUK += @s BonusLUK
 
 # ⓷適正武器による補正ステータス
-    execute if predicate player:class/weapon/hunter run function player:class/hunter/weapon
-    execute if predicate player:class/weapon/fighter run function player:class/fighter/weapon
-    execute if predicate player:class/weapon/paladin run function player:class/paladin/weapon
-    execute if predicate player:class/weapon/wizard run function player:class/wizard/weapon
+    execute if predicate player:class/weapon/hunter run function player:class/hunter/passive/update
+    execute if predicate player:class/weapon/fighter run function player:class/fighter/passive/update
+    execute if predicate player:class/weapon/paladin run function player:class/paladin/passive/update
+    execute if predicate player:class/weapon/wizard run function player:class/wizard/passive/update
 
 # ⓸バフによる補正
     scoreboard players operation @s HPMax += @s BuffHP

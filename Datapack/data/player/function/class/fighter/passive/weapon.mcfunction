@@ -1,4 +1,4 @@
-#> player:class/fighter/weapon
+#> player:class/fighter/passive/weapon
 # 適正武器による補正ステータス
 
 # 職業ランクの取得

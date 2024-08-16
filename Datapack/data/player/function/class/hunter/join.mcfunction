@@ -1,9 +1,8 @@
 #> player:class/hunter/join
 # teamに所属する
 
-team leave @s
-
 # ステータスの初期化
+    function player:class/leave
     function player:class/hunter/status/init
     tag @s add StatusUpdate
     tag @s add HPFull

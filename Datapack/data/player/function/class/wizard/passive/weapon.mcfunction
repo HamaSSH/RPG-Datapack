@@ -1,4 +1,4 @@
-#> player:class/hunter/weapon
+#> player:class/wizard/passive/weapon
 # 適正武器による補正ステータス
 
 # 職業ランクの取得
@@ -11,14 +11,12 @@
 # 転生回数に応じた補正倍率
     scoreboard players operation $StatusMultiplier Temporary *= #5 Constant
     scoreboard players add $StatusMultiplier Temporary 100
-    scoreboard players operation @s STR *= $StatusMultiplier Temporary
-    scoreboard players operation @s DEX *= $StatusMultiplier Temporary
+    scoreboard players operation @s INT *= $StatusMultiplier Temporary
     scoreboard players operation @s AGI *= $StatusMultiplier Temporary
     scoreboard players operation @s LUK *= $StatusMultiplier Temporary
 
 # 適正武器I=1.05倍｜II=1.1倍｜III=1.15倍｜IV=1.2倍｜V=1.25倍
-    scoreboard players operation @s STR /= #100 Constant
-    scoreboard players operation @s DEX /= #100 Constant
+    scoreboard players operation @s INT /= #100 Constant
     scoreboard players operation @s AGI /= #100 Constant
     scoreboard players operation @s LUK /= #100 Constant
 

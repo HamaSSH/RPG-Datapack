@@ -1,9 +1,8 @@
 #> player:class/fighter/join
 # teamに所属する
 
-team leave @s
-
 # ステータスの初期化
+    function player:class/leave
     function player:class/fighter/status/init
     tag @s add StatusUpdate
     tag @s add HPFull
