@@ -21,7 +21,7 @@
     tag @s remove ChangedClass
 
 # 周知する
-    tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ウィザード】","color":"#A486DA"},{"text":"Lv.\uF821","color":"#E0E0E0"},{"score":{"name":"@s","objective":"LVL"},"bold":true},{"text":" に転職しました ！"}]
+    tellraw @a [{"selector":"@s"},{"text":"が"},{"text":"【ウィザード】","color":"#A486DA"},{"text":"Lv.\uF821","color":"#E0E0E0"},{"score":{"name":"@s","objective":"LVL"},"bold":true},{"text":" に転職しました！"}]
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.0
 
 # パッシブスキル(1度きり)
