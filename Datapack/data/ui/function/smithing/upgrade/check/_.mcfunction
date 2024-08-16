@@ -7,7 +7,7 @@ tag @s add Upgradable
     data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
     data modify storage ui: ItemData.count set from storage ui: NewItems[{Slot:10b}].count
     data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
-    data remove storage ui: ItemData.components.minecraft:attribute_modifierst
+    data remove storage ui: ItemData.components.minecraft:attribute_modifiers
 
 # 強化用アイテムデータの整形
     data modify storage ui: Material set from storage ui: ItemData.ui.upgrade[0]
@@ -27,7 +27,7 @@ tag @s add Upgradable
 
 # 効果音
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
-    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # リセット
+    tag @s remove PlaysoundOnce
     data remove storage ui: ItemData

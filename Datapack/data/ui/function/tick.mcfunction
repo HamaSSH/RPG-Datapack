@@ -17,3 +17,4 @@
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01] on passengers on passengers if entity @s[tag=SmithingMarker] run function ui:smithing/tick
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01] on passengers on passengers if entity @s[tag=ShopMarker] run function ui:shop/tick
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01] on passengers on passengers if entity @s[tag=ClassMarker] run function ui:class_change/tick
+    execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01] on passengers on passengers if entity @s[tag=EnchantingMarker] run function ui:enchanting/tick

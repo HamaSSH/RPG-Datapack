@@ -8,6 +8,7 @@ advancement revoke @s only asset:tips/brewing
 advancement revoke @s only asset:tips/charge_attack
 advancement revoke @s only asset:tips/class
 advancement revoke @s only asset:tips/element
+advancement revoke @s only asset:tips/enchanting
 advancement revoke @s only asset:tips/fishing_rod
 advancement revoke @s only asset:tips/magic
 advancement revoke @s only asset:tips/pickaxe

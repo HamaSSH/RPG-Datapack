@@ -51,6 +51,11 @@
     team modify Smithing collisionRule never
     team modify Smithing prefix ["\uF808",{"text":"\uE252","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"鍛冶","bold":true},"\uF80F"]
 
+# エンチャントUI
+    team add Enchanting
+    team modify Enchanting collisionRule never
+    team modify Enchanting prefix ["\uF808",{"text":"\uE255","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"エンチャント","bold":true},"\uF80F"]
+
 # 店UI
     team add Shop
     team modify Shop collisionRule never
