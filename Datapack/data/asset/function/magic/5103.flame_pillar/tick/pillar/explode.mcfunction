@@ -7,6 +7,7 @@
 
 # 当たり判定
     execute positioned ~-1.2 ~-0.5 ~-1.2 if entity @e[type=#lib:every_mob,tag=Enemy,dx=1.4,dy=3,dz=1.4,limit=1] run function asset:magic/5103.flame_pillar/tick/detected
+    execute positioned ~-1 ~-1 ~-1 as @e[type=mule,tag=UnLit,dx=1,dy=1,dz=1] at @s run function ui:cooking/lit/true
 
 # HIT処理
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function asset:magic/5103.flame_pillar/tick/hit/_
