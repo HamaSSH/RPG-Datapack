@@ -41,6 +41,11 @@
     team modify Wizard1 prefix "\uE189\uF821"
     team modify Wizard2 prefix "\uE199\uF821"
 
+# 料理UI
+    team add Cooking
+    team modify Cooking collisionRule never
+    team modify Cooking prefix ["\uF808",{"text":"\uE250","color":"white"},"\uF80C\uF80A\uF808\uF801",{"text":"料理","bold":true},"\uF80F"]
+
 # 醸造UI
     team add Brewing
     team modify Brewing collisionRule never

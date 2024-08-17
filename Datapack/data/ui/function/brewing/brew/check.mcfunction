@@ -12,7 +12,7 @@
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound block.candle.extinguish master @s ~ ~ ~ 1 1.2
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound block.candle.extinguish master @s ~ ~ ~ 1 1.5
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound block.candle.extinguish master @s ~ ~ ~ 1 1.8
-    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # リセット
+    tag @s remove PlaysoundOnce
     scoreboard players reset $BrewIngredients Temporary

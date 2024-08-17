@@ -22,8 +22,9 @@
 # チームの設定
     function core:load/team
 
-# 魚図鑑の初期化
+# 図鑑/レシピの初期化
     execute unless data storage global: fish.zukan_ver run function item:zukan/fish/init
+    function ui:cooking/recipe/init
 
 # 汎用スコアの定義
     scoreboard objectives add Global dummy

@@ -12,7 +12,7 @@
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound item.firecharge.use master @s ~ ~ ~ 0.05 0.9
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound block.candle.extinguish master @s ~ ~ ~ 0.5 0.75
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound block.candle.extinguish master @s ~ ~ ~ 0.5 1.2
-    execute if entity @s[tag=PlaysoundOnce] run tag @s remove PlaysoundOnce
 
 # リセット
+    tag @s remove PlaysoundOnce
     scoreboard players reset $CanEnchant Temporary

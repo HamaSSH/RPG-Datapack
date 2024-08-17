@@ -29,5 +29,6 @@ tag @s add Upgradable
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
 
 # リセット
+    tag @s remove Upgradable
     tag @s remove PlaysoundOnce
     data remove storage ui: ItemData

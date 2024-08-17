@@ -44,6 +44,7 @@
 
 # リセット
     tag @s remove PlaysoundOnce
+    scoreboard players reset $LoreLength Temporary
     data remove storage ui: ItemData
     data remove storage ui: Material
     data remove storage ui: NewLore
