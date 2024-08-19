@@ -11,6 +11,11 @@
     data modify entity @s Silent set value 1b
     data modify entity @s NoAI set value 1b
     data modify entity @s ArmorItems set value [{},{},{},{id:"glass_bottle"}]
+    attribute @s generic.max_health base set 1024
+    data modify entity @s Health set value 1024f
+
+# Healthが0にならないよう
+    effect give @s regeneration infinite 255 true
 
 # データに応じたタグ
     $tag @s add $(namespace)
