@@ -31,6 +31,9 @@
         execute if data storage ui: CombinableItems[] run data modify storage ui: ReturnItems set from storage ui: CombinableItems
         execute if data storage ui: ReturnItems[] run tag @s remove DoCombine
         execute if data storage ui: ReturnItems[] run function ui:return_item/_
+    # アイテムのUUIDが変わっていれば合成しない
+        execute if data storage ui: {UUIDChanged:1} run function ui:smithing/combine/page/reset
+        execute if data storage ui: {UUIDChanged:1} run tag @s remove DoCombine
 
 # 関係ないアイテムを返却
     data modify storage ui: ReturnItems set from storage ui: Items

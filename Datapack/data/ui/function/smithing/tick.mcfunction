@@ -19,11 +19,13 @@
 # UIの中身→storage→markerのdata
     execute on vehicle run data modify storage ui: Items set from entity @s Items
     execute store success storage ui: Changed int 1 run data modify entity @s data.Items set from storage ui: Items
+    execute store success storage ui: UUIDChanged int 1 run data modify entity @s data.UUID set from storage ui: Items[{Slot:10b}].components.minecraft:custom_data.UUID
     execute if data storage ui: {Changed:1} run function ui:smithing/page/number
 
 # リセット
     tag @s remove InitialSound
     data remove storage ui: SmithingItems
     data remove storage ui: SmithingChanged
+    data remove storage ui: UUIDChanged
     data remove storage ui: Items
     data remove storage ui: Changed
