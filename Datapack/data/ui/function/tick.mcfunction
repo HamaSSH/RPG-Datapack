@@ -2,7 +2,7 @@
 # UI操作周りのtick処理
 
 # UI視点検知用のロバのteamを設定
-    execute as @e[type=mule,tag=UIMule] if entity @s[team=!NoCollision] run team join NoCollision @s
+    execute as @e[type=mule,tag=UIMule] at @s run function ui:particle
 
 # プレイヤーに結びついた、操作中のUIをプレイヤーの座標に移動
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..4.5] if score @s PlayerID = @p PlayerID run tp @s @p
