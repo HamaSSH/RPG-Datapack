@@ -25,13 +25,25 @@
     data remove storage ui: ItemData.display.Lore
 
 # アイテムの合成
-    data remove storage ui: ItemData.combine_bonus
     data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:12b}].components.minecraft:custom_data.bonus[]
     data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:13b}].components.minecraft:custom_data.bonus[]
     data modify storage ui: ItemData.Queue append from storage ui: NewItems[{Slot:14b}].components.minecraft:custom_data.bonus[]
-    execute if data storage ui: ItemData.Queue[] run function ui:smithing/combine/item/bonus_status/extra/add with storage ui: ItemData.Queue[0]
-    data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.combine_bonus set from storage ui: ItemData.combine_bonus
-    execute unless data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/bonus_status/new
+    # 素材アイテムの補正値combine_bonusの取得
+        data modify storage ui: ItemData.combine_bonus set value [{status:"HP",value:0},{status:"HPR",value:0},{status:"MP",value:0},{status:"MPR",value:0},{status:"STR",value:0},{status:"INT",value:0},{status:"DEX",value:0},{status:"DEF",value:0},{status:"AGI",value:0},{status:"CRT",value:0},{status:"LUK",value:0}]
+        execute if data storage ui: ItemData.Queue[] run function ui:smithing/combine/item/bonus_status/extra/add with storage ui: ItemData.Queue[0]
+        data remove storage ui: ItemData.combine_bonus[{value:0}]
+    # combine_bonusを確定
+        data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.combine_bonus set from storage ui: ItemData.combine_bonus
+    # 基本値base_bonusとcombine_bonusを足し合わせる
+        data modify storage ui: ItemData.new_bonus set value [{status:"HP",value:0},{status:"HPR",value:0},{status:"MP",value:0},{status:"MPR",value:0},{status:"STR",value:0},{status:"INT",value:0},{status:"DEX",value:0},{status:"DEF",value:0},{status:"AGI",value:0},{status:"CRT",value:0},{status:"LUK",value:0}]
+        execute if data storage ui: ItemData.base_bonus[] run function ui:smithing/combine/item/bonus_status/new/base_value with storage ui: ItemData.base_bonus[0]
+        execute if data storage ui: ItemData.combine_bonus[] run function ui:smithing/combine/item/bonus_status/new/combine_bonus with storage ui: ItemData.combine_bonus[0]
+        data remove storage ui: ItemData.new_bonus[{value:0}]
+    # bonusに代入/確定
+        data modify storage ui: ItemData.bonus set from storage ui: ItemData.new_bonus
+        data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.bonus set from storage ui: ItemData.bonus
+
+# bonusをもとにlore作成
     execute if data storage ui: ItemData.bonus[] run function ui:smithing/combine/item/bonus_status/_
 
 # アイテム名
