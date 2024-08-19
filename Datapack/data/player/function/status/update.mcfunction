@@ -17,6 +17,7 @@
         scoreboard players set @s CDR 0
         scoreboard players set @s KBR 0
         scoreboard players set @s FDR 0
+        scoreboard players set @s AS 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
@@ -84,6 +85,7 @@
         execute if score @s CDR matches 1000.. run scoreboard players set @s CDR 1000
         execute if score @s KBR matches 1000.. run scoreboard players set @s KBR 1000
         execute if score @s FDR matches 1000.. run scoreboard players set @s FDR 1000
+        execute if score @s AS matches 1000.. run scoreboard players set @s AS 1000
 
 # ⓺最小値を下回らないよう調整
     execute if score @s HPMax matches ..5 run scoreboard players set @s HPMax 5
@@ -101,6 +103,7 @@
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed/_
     execute unless score @s PreviousLUK = @s LUK run function player:status/luk/generic_luck/_
     execute unless score @s PreviousKBR = @s KBR run function player:status/passive/knockback_resistance/_
+    execute unless score @s PreviousAS = @s AS run function player:status/passive/attack_speed/_
 
 # ⓼ステータス更新時HPMPをMAXにするか
     execute if entity @s[tag=HPFull] run scoreboard players operation @s HP = @s HPMax

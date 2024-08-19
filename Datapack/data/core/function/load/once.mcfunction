@@ -61,6 +61,7 @@
         scoreboard objectives add PreviousLUK dummy "LUKの値保存"
         scoreboard objectives add PreviousMP dummy "MPの値保存"
         scoreboard objectives add PreviousKBR dummy "KBRの値保存"
+        scoreboard objectives add PreviousAS dummy "ASの値保存"
 
     # システム用
         scoreboard objectives add EXPGained dummy "獲得経験値"
@@ -168,3 +169,4 @@
             scoreboard objectives add CDR dummy "クールダウン軽減"
             scoreboard objectives add KBR dummy "ノックバック耐性"
             scoreboard objectives add FDR dummy "落下ダメージ耐性"
+            scoreboard objectives add AS dummy "攻撃速度"

@@ -2,7 +2,7 @@
 # ステータス更新時に実行するパッシブスキル関連
 
 # 適正武器「槍の装備時ステータスＵＰ」
-    function player:class/paladin/passive/weapon
+    execute if predicate player:class/weapon/paladin run function player:class/paladin/passive/weapon
 
 # リファイン「受けるバフの強化＋デバフ弱化」
     execute if score @s PassiveSkill1 matches 1.. run function player:class/paladin/passive/skill1/_

@@ -10,3 +10,7 @@
     scoreboard players operation $FallDamageRes Temporary = @s PassiveSkill1
     scoreboard players operation $FallDamageRes Temporary *= #250 Constant
     scoreboard players operation @s FDR += $FallDamageRes Temporary
+
+# リセット
+    scoreboard players reset $KnockbackRes Temporary
+    scoreboard players reset $FallDamageRes Temporary

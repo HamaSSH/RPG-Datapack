@@ -2,7 +2,7 @@
 # ステータス更新時に実行するパッシブスキル関連
 
 # 適正武器「弓・短剣の装備時ステータスＵＰ」
-    function player:class/hunter/passive/weapon
+    execute if predicate player:class/weapon/hunter run function player:class/hunter/passive/weapon
 
 # 熟練の弓使い「左クリック矢・矢の貫通・発射本数ＵＰ」
     execute if score @s PassiveSkill1 matches 1.. run function player:class/hunter/passive/skill1/_
