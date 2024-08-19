@@ -43,7 +43,6 @@
     execute if score $ItemRarity Temporary matches 1..2 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     execute if score $ItemRarity Temporary matches 1..3 run data modify storage ui: ReturnItems append from storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{combinable:1b}}}}]
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
-    execute if data storage ui: ReturnItems[] run tag @s remove DoCombine
     execute if data storage ui: ReturnItems[] run function ui:return_item/_
 
 # ページを移動する
