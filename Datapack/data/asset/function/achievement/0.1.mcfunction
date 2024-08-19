@@ -6,7 +6,7 @@ execute positioned 295 -51 -350 align xz run summon item_display ~ ~ ~ {Tags:["0
 execute positioned 295 -51 -350 align xz run summon block_display ~ ~ ~ {Tags:["0.1.king_size"],block_state:{Name:"smooth_stone_slab"},transformation:{translation:[0.1f,0f,0.1f],left_rotation:[0f,0f,0f,1f],scale:[0.8f,0.8f,0.8f],right_rotation:[0f,0f,0f,1f]}}
 
 # クリアメッセージ
-    playsound resource:custom.levelup master @s ~ ~ ~ 0.5 1.3
+    playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.3
     tellraw @s ""
     tellraw @s ["\uF828\uF824隠し実績達成おめでとう。スポーン地点に"]
     tellraw @s ["\uF828\uF824トロフィーを置いたよ。ゲームクリアみたいなもんです。"]
