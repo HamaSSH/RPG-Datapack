@@ -60,6 +60,7 @@
         scoreboard objectives add PreviousAGI dummy "AGIの値保存"
         scoreboard objectives add PreviousLUK dummy "LUKの値保存"
         scoreboard objectives add PreviousMP dummy "MPの値保存"
+        scoreboard objectives add PreviousKBR dummy "KBRの値保存"
 
     # システム用
         scoreboard objectives add EXPGained dummy "獲得経験値"
@@ -145,7 +146,6 @@
             scoreboard objectives add BuffCRT dummy "バフCRT"
             scoreboard objectives add BuffLUK dummy "バフLUK"
         # 職業関連
-            scoreboard objectives add CDR dummy "クールダウン軽減"
             scoreboard objectives add HunterRank dummy "ハンターRANK"
             scoreboard objectives add HunterLVL dummy "ハンターLVL"
             scoreboard objectives add HunterEXP dummy "ハンターEXP"
@@ -164,3 +164,7 @@
             scoreboard objectives add PassiveSkill2 dummy "スキル２レベル"
             scoreboard objectives add PassiveSkill3 dummy "スキル３レベル"
             scoreboard objectives add PassiveSkill4 dummy "スキル４レベル"
+        # 特殊
+            scoreboard objectives add CDR dummy "クールダウン軽減"
+            scoreboard objectives add KBR dummy "ノックバック耐性"
+            scoreboard objectives add FDR dummy "落下ダメージ耐性"

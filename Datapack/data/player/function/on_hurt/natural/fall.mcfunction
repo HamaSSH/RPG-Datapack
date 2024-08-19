@@ -3,16 +3,18 @@
 
 # ダメージ設定
     data modify storage lib: Damage.Type set value "Melee"
-    scoreboard players operation $FallDistance Temporary = @s FallDistance
-    scoreboard players operation $FallDistance Temporary /= #40 Constant
-    scoreboard players operation @s DmgReceived = $FallDistance Temporary
+    scoreboard players operation $FallDamage Temporary = @s FallDistance
+    scoreboard players operation $FallDamage Temporary /= #40 Constant
+    # 落下ダメージ耐性
+        execute if score @s FDR matches 1.. run function player:status/passive/fall_resistance/_
+    scoreboard players operation @s DmgReceived = $FallDamage Temporary
 
 # ダメージの適用
-    execute if score @s DmgReceived matches 3.. run function player:on_hurt/_
+    function player:on_hurt/_
 
 # リセット
     data remove storage lib: Damage.Type
-    scoreboard players reset $FallDistance Temporary
+    scoreboard players reset $FallDamage Temporary
     scoreboard players reset @s FallDistance
     scoreboard players reset @s DmgReceived
     advancement revoke @s only player:on_hurt/natural/fall

@@ -13,6 +13,10 @@
     scoreboard players operation @s AGI = @s BaseAGI
     scoreboard players operation @s CRT = @s BaseCRT
     scoreboard players operation @s LUK = @s BaseLUK
+    # 特殊ステータス
+        scoreboard players set @s CDR 0
+        scoreboard players set @s KBR 0
+        scoreboard players set @s FDR 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
@@ -51,10 +55,10 @@
     scoreboard players operation @s LUK += @s BonusLUK
 
 # ⓷適正武器による補正ステータス
-    execute if predicate player:class/weapon/hunter run function player:class/hunter/passive/update
-    execute if predicate player:class/weapon/fighter run function player:class/fighter/passive/update
-    execute if predicate player:class/weapon/paladin run function player:class/paladin/passive/update
-    execute if predicate player:class/weapon/wizard run function player:class/wizard/passive/update
+    function player:class/hunter/passive/update
+    function player:class/fighter/passive/update
+    function player:class/paladin/passive/update
+    function player:class/wizard/passive/update
 
 # ⓸バフによる補正
     scoreboard players operation @s HPMax += @s BuffHP
@@ -76,6 +80,10 @@
     execute if score @s AGI matches 999.. run scoreboard players set @s AGI 999
     execute if score @s CRT matches 999.. run scoreboard players set @s CRT 999
     execute if score @s LUK matches 999.. run scoreboard players set @s LUK 999
+    # 特殊ステータス
+        execute if score @s CDR matches 1000.. run scoreboard players set @s CDR 1000
+        execute if score @s KBR matches 1000.. run scoreboard players set @s KBR 1000
+        execute if score @s FDR matches 1000.. run scoreboard players set @s FDR 1000
 
 # ⓺最小値を下回らないよう調整
     execute if score @s HPMax matches ..5 run scoreboard players set @s HPMax 5
@@ -92,6 +100,7 @@
 # ⓻attributeの設定
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed/_
     execute unless score @s PreviousLUK = @s LUK run function player:status/luk/generic_luck/_
+    execute unless score @s PreviousKBR = @s KBR run function player:status/passive/knockback_resistance/_
 
 # ⓼ステータス更新時HPMPをMAXにするか
     execute if entity @s[tag=HPFull] run scoreboard players operation @s HP = @s HPMax

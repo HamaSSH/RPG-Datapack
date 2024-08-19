@@ -2,7 +2,7 @@
 # ステータス更新時に実行するパッシブスキル関連
 
 # 適正武器「刀剣・ﾊﾝﾏｰの装備時ステータスＵＰ」
-    function player:class/fighter/passive/weapon
+    execute if predicate player:class/weapon/fighter run function player:class/fighter/passive/weapon
 
 # 強靭「ノックバックや落下ダメージの低減」
     execute if score @s PassiveSkill1 matches 1.. run function player:class/fighter/passive/skill1/_

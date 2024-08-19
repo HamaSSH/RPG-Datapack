@@ -26,6 +26,7 @@ scoreboard players set #60 Constant 60
 scoreboard players set #80 Constant 80
 scoreboard players set #100 Constant 100
 scoreboard players set #200 Constant 200
+scoreboard players set #250 Constant 250
 scoreboard players set #256 Constant 256
 scoreboard players set #400 Constant 400
 scoreboard players set #512 Constant 512
