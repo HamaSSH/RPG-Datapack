@@ -29,7 +29,7 @@
     data modify storage player: Inventory set from entity @s Inventory
 
 # 属性を纏う
-    function player:magic/element/reset
+    execute if entity @s[tag=!MultipleElement] run function player:magic/element/reset
     function player:magic/element/init
 
 # リセット

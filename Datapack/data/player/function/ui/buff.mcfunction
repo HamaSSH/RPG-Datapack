@@ -60,12 +60,20 @@
         execute if score $EffectCount Temporary matches 11 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF801"'
         execute if score $EffectCount Temporary matches 12 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF807"'
         execute if score $EffectCount Temporary matches 12 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF807"'
+        execute if score $EffectCount Temporary matches 13 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF808\\uF805"'
+        execute if score $EffectCount Temporary matches 13 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF808\\uF805"'
+        execute if score $EffectCount Temporary matches 14 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF809\\uF803"'
+        execute if score $EffectCount Temporary matches 14 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF809\\uF803"'
+        execute if score $EffectCount Temporary matches 15 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF809\\uF808\\uF801"'
+        execute if score $EffectCount Temporary matches 15 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF809\\uF808\\uF801"'
+        execute if score $EffectCount Temporary matches 16 run data modify storage player:ui buff.effect.prefix set value '"\\uF80B\\uF809\\uF808\\uF807"'
+        execute if score $EffectCount Temporary matches 16 run data modify storage player:ui buff.effect.suffix set value '"\\uF80B\\uF809\\uF808\\uF807"'
     # 調整用
         execute unless score $BuffCount Temporary matches 1.. run data modify storage player:ui buff.separator set value '"\\uF802"'
         execute if score $BuffCount Temporary matches 1.. if score $EffectCount Temporary matches 1.. run data modify storage player:ui buff.extra set value '"\\uF801"'
 
 # text_displayでバフloreを一度まとめる
-    execute unless data storage player:ui buff.main[22] run function player:ui/buff/fill
+    execute unless data storage player:ui buff.main[26] run function player:ui/buff/fill
     execute positioned ~ ~1000 ~ run function player:ui/buff/lore
 
 # リセット

@@ -2,7 +2,7 @@
 # プレイヤーを初期化
 
 # 職業関連リセット
-    team leave @s
+    function player:class/leave
     scoreboard players reset @s HunterRank
     scoreboard players reset @s FighterRank
     scoreboard players reset @s PaladinRank

@@ -171,3 +171,4 @@
             scoreboard objectives add FDR dummy "落下ダメージ耐性"
             scoreboard objectives add AS dummy "攻撃速度"
             scoreboard objectives add GrimReset dummy "魔導書即リセ率"
+            scoreboard objectives add ElementFocus dummy "属性纏い延長"

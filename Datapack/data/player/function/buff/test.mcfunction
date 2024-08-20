@@ -31,4 +31,5 @@
 #     data modify storage player: NewBuff append value {effect:"invisibility",duration:10000,amplifier:0}
 #     data modify storage player: NewBuff append value {effect:"wither",duration:10000,amplifier:0}
 
+# # バフの適用
 # function player:buff/_

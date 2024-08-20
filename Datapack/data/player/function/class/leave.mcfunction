@@ -8,3 +8,4 @@ scoreboard players set @s PassiveSkill1 0
 scoreboard players set @s PassiveSkill2 0
 scoreboard players set @s PassiveSkill3 0
 scoreboard players set @s PassiveSkill4 0
+tag @s remove MultipleElement

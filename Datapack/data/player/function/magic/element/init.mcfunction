@@ -7,7 +7,10 @@ advancement grant @s only asset:tips/element
     execute store result score @s ElementTimer run data get storage player: mp_cost 15
     data modify storage player: NewBuff set value [{amplifier:0}]
     data modify storage player: NewBuff[0].element set from storage player: magic.element
-    execute store result storage player: NewBuff[0].duration int 1 run data get storage player: mp_cost 15
+    execute store result score $ElementDuration Temporary run data get storage player: mp_cost 15
+    execute if score @s ElementFocus matches 1.. run scoreboard players operation $ElementDuration Temporary *= @s ElementFocus
+    execute if score @s ElementFocus matches 1.. run scoreboard players operation $ElementDuration Temporary /= #100 Constant
+    execute store result storage player: NewBuff[0].duration int 1 run scoreboard players get $ElementDuration Temporary
     function player:buff/_
 
 # タグ付け
@@ -16,3 +19,6 @@ advancement grant @s only asset:tips/element
     execute if data storage player: magic{element:"thunder"} run tag @s add ElementThunder
     execute if data storage player: magic{element:"earth"} run tag @s add ElementEarth
     execute if data storage player: magic{element:"wind"} run tag @s add ElementWind
+
+# リセット
+    scoreboard players reset $ElementDuration Temporary

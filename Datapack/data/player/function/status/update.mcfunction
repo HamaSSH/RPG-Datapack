@@ -19,6 +19,7 @@
         scoreboard players set @s FDR 0
         scoreboard players set @s AS 0
         scoreboard players set @s GrimReset 0
+        scoreboard players set @s ElementFocus 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
