@@ -1,0 +1,33 @@
+{
+    "function": "set_name",
+    "entity": "this",
+    "name": [
+        [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "修理",
+                "bold": true
+            },
+            {
+                "text": " ( -"
+            },
+            {
+                "score": {
+                    "name": "$RepairGold",
+                    "objective": "Temporary"
+                }
+            },
+            {
+                "text": "G",
+                "color": "#FFEE59"
+            },
+            {
+                "text": " ) "
+            }
+        ]
+    ]
+}

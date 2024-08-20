@@ -7,7 +7,7 @@ data modify entity @s Items append from storage ui: NewItems[{Slot:10b}].compone
 # 強化に必要な金を取得
     data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
     execute if data storage ui: ItemData run function ui:smithing/upgrade/item/gold
-    execute if score $UpgradeGold Temporary matches 1.. run item modify entity @s container.15 ui:smithing/gold
+    execute if score $UpgradeGold Temporary matches 1.. run item modify entity @s container.15 ui:smithing/upgrade_gold
 
 # リセット
     scoreboard players reset $ItemRarity Temporary

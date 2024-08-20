@@ -1,8 +1,10 @@
 #> ui:smithing/repair/_
 # ツール修理処理
 
+# ゴールド消費
+    execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold -= $RepairGold Temporary
+
 # 修理するアイテムのデータ→storage
-    data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
     data modify storage ui: ItemData.display.Name set from storage ui: NewItems[{Slot:10b}].components.minecraft:item_name
     data modify storage ui: ItemData.display.Lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore
 
@@ -54,8 +56,8 @@
     playsound resource:block.smithing_table.smithing_table3 master @a ~ ~ ~ 0.7 1.8
 
 # リセット
+    tag @s remove Repairable
     tag @s remove PlaysoundOnce
-    data remove storage ui: ItemData
     data remove storage ui: Result
     scoreboard players reset $ItemLore Temporary
     scoreboard players reset $ToolGrade Temporary
