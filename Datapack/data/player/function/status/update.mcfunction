@@ -57,11 +57,11 @@
     scoreboard players operation @s CRT += @s BonusCRT
     scoreboard players operation @s LUK += @s BonusLUK
 
-# ⓷適正武器による補正ステータス
-    function player:class/hunter/passive/update
-    function player:class/fighter/passive/update
-    function player:class/paladin/passive/update
-    function player:class/wizard/passive/update
+# ⓷職業のパッシブスキルによる補正ステータス
+    execute if predicate player:class/is_hunter run function player:class/hunter/passive/update
+    execute if predicate player:class/is_fighter run function player:class/fighter/passive/update
+    execute if predicate player:class/is_paladin run function player:class/paladin/passive/update
+    execute if predicate player:class/is_wizard run function player:class/wizard/passive/update
 
 # ⓸バフによる補正
     scoreboard players operation @s HPMax += @s BuffHP
