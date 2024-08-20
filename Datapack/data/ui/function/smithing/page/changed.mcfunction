@@ -24,6 +24,7 @@
 
 # ページを移動する
     execute unless data storage ui: Items[{Slot:12b,components:{"minecraft:custom_data":{ui:{item_type:"upgrade"}}}}] run scoreboard players set @s UIPage 1
+    execute if data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{smithable:1b},grade:3}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"combine"}}}}] run scoreboard players set @s UIPage 2
     # もし鍛冶可能アイテムが配置されていなければ移動しない
         execute unless data storage ui: Items[{Slot:10b}] unless data storage ui: NewItems[{Slot:10b}] run scoreboard players set @s UIPage 0

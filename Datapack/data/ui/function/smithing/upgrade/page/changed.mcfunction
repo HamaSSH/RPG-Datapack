@@ -33,6 +33,7 @@
 # ページを移動する
     execute unless data storage ui: Items[{Slot:9b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{smithable:1b}}}}] run scoreboard players set @s UIPage 0
+    execute if data storage ui: Items[{Slot:10b,components:{"minecraft:custom_data":{ui:{smithable:1b},grade:3}}}] run scoreboard players set @s UIPage 0
     execute unless data storage ui: Items[{Slot:11b,components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}] run scoreboard players set @s UIPage 0
 
 # メニュー内容更新

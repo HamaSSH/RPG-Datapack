@@ -4,6 +4,9 @@
 # 補正ステータス値の取得
     execute store result score $Amplifier Temporary run data get storage ui: ItemData.base_bonus[0].value
     execute if score $Amplifier Temporary matches 1..3 run scoreboard players add $Amplifier Temporary 1
+    execute if score $Amplifier Temporary matches 1..4 run scoreboard players add $Amplifier Temporary 1
+    execute if score $Amplifier Temporary matches 2..5 run scoreboard players add $Amplifier Temporary 1
+    execute if score $Amplifier Temporary matches 3..6 run scoreboard players add $Amplifier Temporary 1
     execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 1 run scoreboard players operation $Amplifier Temporary *= #13 Constant
     execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 2 run scoreboard players operation $Amplifier Temporary *= #14 Constant
     execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 3 run scoreboard players operation $Amplifier Temporary *= #15 Constant
