@@ -4,7 +4,6 @@
 # ダメージのデータを取得
     execute store result storage lib: Damage.value int 1 run scoreboard players get @s DmgReceived
     scoreboard players operation $DmgReceived Temporary = @s DmgReceived
-    tellraw @s {"nbt":"Damage","storage":"lib:"}
 
 # ダメージの色
     data modify storage lib: Damage.color set value '{"text":"","color":"white"}'
