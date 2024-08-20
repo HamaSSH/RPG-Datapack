@@ -11,11 +11,11 @@
 
 # 素早さに応じて会心値補正 I=0.1倍｜II=0.15倍｜III=0.2倍｜IV=0.25倍
     scoreboard players operation $ClassCRT Temporary = @s AGI
-    execute if score @s PassiveSkill3 matches 1 run scoreboard players operation $ClassCRT Temporary /= #10 Constant
+    execute if score @s PassiveSkill3 matches 1 run scoreboard players operation $ClassCRT Temporary *= #2 Constant
     execute if score @s PassiveSkill3 matches 2 run scoreboard players operation $ClassCRT Temporary *= #3 Constant
-    execute if score @s PassiveSkill3 matches 2 run scoreboard players operation $ClassCRT Temporary /= #20 Constant
-    execute if score @s PassiveSkill3 matches 3 run scoreboard players operation $ClassCRT Temporary /= #5 Constant
-    execute if score @s PassiveSkill3 matches 4 run scoreboard players operation $ClassCRT Temporary /= #4 Constant
+    execute if score @s PassiveSkill3 matches 3 run scoreboard players operation $ClassCRT Temporary *= #4 Constant
+    execute if score @s PassiveSkill3 matches 4 run scoreboard players operation $ClassCRT Temporary *= #5 Constant
+    scoreboard players operation $ClassCRT Temporary /= #20 Constant
     scoreboard players operation @s CRT += $ClassCRT Temporary
 
 # リセット
