@@ -170,3 +170,4 @@
             scoreboard objectives add KBR dummy "ノックバック耐性"
             scoreboard objectives add FDR dummy "落下ダメージ耐性"
             scoreboard objectives add AS dummy "攻撃速度"
+            scoreboard objectives add GrimReset dummy "魔導書即リセ率"
