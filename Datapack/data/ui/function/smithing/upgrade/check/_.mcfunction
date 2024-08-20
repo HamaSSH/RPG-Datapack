@@ -21,6 +21,11 @@ tag @s add Upgradable
 # 最大レアリティは強化不可
     execute if data storage ui: ItemData{rarity:5} run tag @s remove Upgradable
 
+# 強化ゴールド
+    function ui:smithing/upgrade/item/gold
+    execute on vehicle on vehicle on attacker run scoreboard players operation $PlayerGold Temporary = @s Gold
+    execute unless score $UpgradeGold Temporary <= $PlayerGold Temporary run tag @s remove Upgradable
+
 # 強化アイテムを持っているか1つずつ確認
     execute if data storage ui: Material[0] run function ui:smithing/upgrade/check/rec
     execute if entity @s[tag=Upgradable] run function ui:smithing/upgrade/_
@@ -32,3 +37,7 @@ tag @s add Upgradable
     tag @s remove Upgradable
     tag @s remove PlaysoundOnce
     data remove storage ui: ItemData
+    scoreboard players reset $ItemRarity Temporary
+    scoreboard players reset $ItemGrade Temporary
+    scoreboard players reset $UpgradeGold Temporary
+    scoreboard players reset $PlayerGold Temporary

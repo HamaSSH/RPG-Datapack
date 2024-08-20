@@ -5,6 +5,9 @@
     function ui:smithing/upgrade/clear/_
     data remove storage ui: ItemData.ui
 
+# ゴールド消費
+    execute on vehicle on vehicle on attacker run scoreboard players operation @s Gold -= $UpgradeGold Temporary
+
 # アイテムの説明文はそのまま
     execute store result score $ItemLore Temporary run data get storage ui: ItemData.lore_length
     execute if score $ItemLore Temporary matches 1.. run data modify storage ui: Result.display.Lore append from storage ui: ItemData.display.Lore[0]
