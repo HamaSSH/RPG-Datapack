@@ -12,9 +12,6 @@
     data modify storage ui: Result.display.Lore append value '[{"text":"","color":"dark_gray","italic": false,"strikethrough":true},{"text":"         "},{"text":"\\uF822装備時\\uF822","color":"#777777","strikethrough":false},{"text":"         "}]'
     data remove storage ui: ItemData.display.Lore
 
-# アイテムの強化
-    execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/bonus_status/_
-
 # アイテムのGradeとRarity操作
     execute store result score $ItemGrade Temporary run data get storage ui: ItemData.grade
     execute store result score $ItemRarity Temporary run data get storage ui: ItemData.rarity
@@ -23,6 +20,9 @@
     execute if score $ItemRarity Temporary matches 5.. run scoreboard players set $ItemRarity Temporary 5
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.grade int 1 run scoreboard players get $ItemGrade Temporary
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity int 1 run scoreboard players get $ItemRarity Temporary
+
+# アイテムの強化
+    execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/bonus_status/_
 
 # 実績達成検知
     execute if score $ItemGrade Temporary matches 3 on vehicle on vehicle on attacker run advancement grant @s only asset:achievement/2.2
@@ -55,9 +55,9 @@
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
 # 演出
-    playsound block.anvil.place master @a ~ ~ ~ 0.9 1.5
-    playsound block.anvil.destroy master @a ~ ~ ~ 0.7 0.7
-    playsound block.anvil.use master @a ~ ~ ~ 0.6
+    playsound block.anvil.place master @a ~ ~ ~ 0.3 1.5
+    playsound block.anvil.destroy master @a ~ ~ ~ 0.3 0.7
+    playsound block.anvil.use master @a ~ ~ ~ 0.3
 
 # リセット
     tag @s remove PlaysoundOnce

@@ -3,9 +3,13 @@
 
 # 補正ステータス値の取得
     execute store result score $Amplifier Temporary run data get storage ui: ItemData.base_bonus[0].value
-    execute if score $Amplfier Temporary matches 1..3 run scoreboard players add $Amplifier Temporary 1
-    execute if score $Amplfier Temporary matches -3..-1 run scoreboard players remove $Amplifier Temporary 1
-    scoreboard players operation $Amplifier Temporary *= #13 Constant
+    execute if score $Amplifier Temporary matches 1..3 run scoreboard players add $Amplifier Temporary 1
+    execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 1 run scoreboard players operation $Amplifier Temporary *= #13 Constant
+    execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 2 run scoreboard players operation $Amplifier Temporary *= #14 Constant
+    execute if score $Amplifier Temporary matches 1.. if score $ItemGrade Temporary matches 3 run scoreboard players operation $Amplifier Temporary *= #15 Constant
+    execute if score $Amplifier Temporary matches ..0 if score $ItemGrade Temporary matches 1 run scoreboard players operation $Amplifier Temporary *= #7 Constant
+    execute if score $Amplifier Temporary matches ..0 if score $ItemGrade Temporary matches 2 run scoreboard players operation $Amplifier Temporary *= #5 Constant
+    execute if score $Amplifier Temporary matches ..0 if score $ItemGrade Temporary matches 3 run scoreboard players operation $Amplifier Temporary *= #0 Constant
     scoreboard players operation $Amplifier Temporary /= #10 Constant
     execute store result storage ui: ItemData.bonus[0].base_amplifier int 1 run scoreboard players get $Amplifier Temporary
     execute if data storage ui: ItemData.combine_bonus[] run function ui:smithing/upgrade/item/bonus_status/extra with storage ui: ItemData.bonus[0]
