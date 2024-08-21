@@ -7,55 +7,151 @@
                     "type": "loot_table",
                     "value": "asset:item/1600",
                     "weight": 6000,
-                    "quality": -2
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1601",
                     "weight": 6000,
-                    "quality": -2
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1602",
                     "weight": 6000,
-                    "quality": -2
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1603",
                     "weight": 6000,
-                    "quality": -2
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1604",
-                    "weight": 3000,
-                    "quality": 2
+                    "weight": 6000,
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1605",
-                    "weight": 3000,
-                    "quality": 2
+                    "weight": 6000,
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1606",
-                    "weight": 3000,
-                    "quality": 2
+                    "weight": 6000,
+                    "quality": -3
                 },
                 {
                     "type": "loot_table",
                     "value": "asset:item/1607",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1608",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1609",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1610",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1611",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1612",
                     "weight": 3000,
-                    "quality": 2
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1613",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1614",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1615",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1616",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1617",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1618",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1619",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1620",
+                    "weight": 2000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1621",
+                    "weight": 2000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1622",
+                    "weight": 2000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1623",
+                    "weight": 2000,
+                    "quality": 1
                 },
                 {
                     "type": "item",
                     "name": "nautilus_shell",
                     "weight": 1000,
-                    "quality": 2,
+                    "quality": 3,
                     "functions": [
                         {
                             "function": "set_custom_data",

@@ -5,7 +5,27 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1605"
+                    "value": "asset:item/1605",
+                    "weight": 6000,
+                    "quality": -3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1615",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1619",
+                    "weight": 3000,
+                    "quality": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1065",
+                    "weight": 2000,
+                    "quality": 1
                 }
             ]
         }
