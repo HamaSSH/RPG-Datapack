@@ -12,4 +12,4 @@
     execute if data storage ui: ReturnItems[] on passengers on passengers run function ui:return_item/_
 
 # UI用エンティティのkill
-    execute if score @s PlayerID = @p PlayerID run tag @s add AutoKill
+    execute if score @s PlayerID = @p[tag=UsingUI] PlayerID run kill @s
