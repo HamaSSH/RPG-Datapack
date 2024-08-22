@@ -175,3 +175,5 @@
             scoreboard objectives add MaxArrowLC dummy "LC弓矢最大値"
             scoreboard objectives add PierceLevel dummy "矢の貫通力"
             scoreboard objectives add Multishot dummy "マルチショット"
+            scoreboard objectives add HPDrain dummy "HP吸収"
+            scoreboard objectives add MPDrain dummy "MP吸収"

@@ -21,5 +21,11 @@
 # HP表示の更新
     function mob:status/hp/display/_
 
+# HP吸収処理
+    execute if data storage lib: Damage{Type:"Melee"} as @a if score @s PlayerID = $PlayerID Temporary if score @s HPDrain matches 1.. run function player:status/hp/drain
+
+# MP吸収処理(ウィザードのマナサージ用)
+    execute if data storage lib: Damage{Type:"Magic"} as @a if score @s PlayerID = $PlayerID Temporary if score @s MPDrain matches 1.. run function player:status/mp/drain
+
 # 死亡処理
     execute if score @s HP matches ..0 run function mob:on_death/_

@@ -8,7 +8,7 @@
     execute if score @s PassiveSkill1 matches 1.. run function player:class/wizard/passive/skill1/_
 
 # マナサージ「魔法ダメージをＭＰとして回復」
-# 敵モブにダメージ与えた際の処理
+    execute if score @s PassiveSkill2 matches 1.. run function player:class/wizard/passive/skill2/_
 
 # エレメントフォーカス「属性纏い概念の強化」
     execute if score @s PassiveSkill3 matches 1.. run function player:class/wizard/passive/skill3/_

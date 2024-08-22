@@ -23,6 +23,8 @@
         scoreboard players set @s MaxArrowLC 0
         scoreboard players set @s PierceLevel 1
         scoreboard players set @s Multishot 0
+        scoreboard players set @s HPDrain 0
+        scoreboard players set @s MPDrain 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
