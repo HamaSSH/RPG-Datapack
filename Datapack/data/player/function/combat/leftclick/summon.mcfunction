@@ -7,6 +7,7 @@ tag @s add CanLeftClick
     execute anchored eyes positioned ^ ^ ^ run function player:combat/leftclick/interupt/container
     execute anchored eyes positioned ^ ^ ^ run function player:combat/leftclick/interupt/entity
     execute if entity @s[tag=UsingUI] run tag @s remove CanLeftClick
+    execute if score @s UsingBow matches 1.. run tag @s remove CanLeftClick
 
 # 全方位を囲む
     execute anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #lib:air if entity @s[tag=CanLeftClick] run function player:combat/leftclick/outside_block

@@ -1,7 +1,7 @@
 #> player:combat/main/bow/skill/shot/tick
 # ため攻撃矢の常時実行
 
-data modify entity @s PierceLevel set value 5
+data modify entity @s PierceLevel set value 30
 
 # データをスコアに格納
     scoreboard players operation $PlayerID Temporary = @s PlayerID

@@ -173,3 +173,5 @@
             scoreboard objectives add ElementFocus dummy "属性纏い延長"
             scoreboard objectives add ArrowLC dummy "左クリック弓矢"
             scoreboard objectives add MaxArrowLC dummy "LC弓矢最大値"
+            scoreboard objectives add PierceLevel dummy "矢の貫通力"
+            scoreboard objectives add Multishot dummy "マルチショット"

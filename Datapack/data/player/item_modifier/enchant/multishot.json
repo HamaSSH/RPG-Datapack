@@ -1,0 +1,10 @@
+{
+    "function": "set_enchantments",
+    "enchantments": {
+        "multishot": {
+            "type": "score",
+            "target": "this",
+            "score": "Multishot"
+        }
+    }
+}

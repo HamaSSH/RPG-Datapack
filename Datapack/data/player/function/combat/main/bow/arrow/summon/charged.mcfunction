@@ -7,7 +7,11 @@ scoreboard players remove @s ArrowLC 1
     tag @s add Shooter
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge3=true}}] run scoreboard players set $MotionPower Temporary 300
     execute if entity @s[advancements={player:combat/player_attacked={melee_charge4=true}}] run scoreboard players set $MotionPower Temporary 350
-    execute positioned ~ ~1.52 ~ summon arrow run function player:combat/main/bow/arrow/summon/init
+    execute positioned ~ ~1.42 ~ positioned ^ ^ ^0.1 summon arrow run function player:combat/main/bow/arrow/summon/init {yaw:0}
+    execute if score @s Multishot matches 1 positioned ~ ~1.42 ~ positioned ^ ^ ^0.1 summon arrow run function player:combat/main/bow/arrow/summon/init {yaw:10}
+    execute if score @s Multishot matches 1 positioned ~ ~1.42 ~ positioned ^ ^ ^0.1 summon arrow run function player:combat/main/bow/arrow/summon/init {yaw:-10}
+    execute if score @s Multishot matches 2 positioned ~ ~1.42 ~ positioned ^ ^ ^0.1 summon arrow run function player:combat/main/bow/arrow/summon/init {yaw:20}
+    execute if score @s Multishot matches 2 positioned ~ ~1.42 ~ positioned ^ ^ ^0.1 summon arrow run function player:combat/main/bow/arrow/summon/init {yaw:-20}
     tag @s remove Shooter
 
 # 演出

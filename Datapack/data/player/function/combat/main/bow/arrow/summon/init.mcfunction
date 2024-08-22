@@ -9,5 +9,5 @@
     execute if score $MotionPower Temporary matches 250.. run tag @s add Charged
 
 # 矢を飛ばす
-    execute rotated as @p[tag=Shooter] run function lib:motion/apply
+    $execute rotated as @p[tag=Shooter] rotated ~$(yaw) ~ run function lib:motion/apply
     damage @s 0.0 generic
