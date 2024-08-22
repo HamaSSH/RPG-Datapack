@@ -5,8 +5,8 @@ scoreboard players set @s BaseHP 60
 scoreboard players set @s BaseMP 30
 scoreboard players set @s HP 60
 scoreboard players set @s MP 30
-scoreboard players set @s BaseHPR 25
-scoreboard players set @s BaseMPR 25
+scoreboard players set @s BaseHPR 20
+scoreboard players set @s BaseMPR 20
 scoreboard players set @s BaseSTR 5
 scoreboard players set @s BaseINT 0
 scoreboard players set @s BaseDEX 0

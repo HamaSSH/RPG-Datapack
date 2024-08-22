@@ -21,7 +21,7 @@
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseINT 1
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseAGI 2
     # 10レベルごと
-        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 20
+        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 15
         execute if score %10 Temporary matches 5 run scoreboard players add @s BaseDEF 4
         execute if score %10 Temporary matches 5 run scoreboard players add @s BaseAGI 3
         execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 25

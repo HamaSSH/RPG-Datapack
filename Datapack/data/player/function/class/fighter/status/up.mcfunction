@@ -21,8 +21,8 @@
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseCRT 2
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseDEF 2
     # 10レベルごと
-        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 25
-        execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 15
+        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 10
+        execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 20
 
 # 職業ランク(普通|銀|金アイコン用)
     execute if score @s LVL matches 20..49 run scoreboard players set @s FighterRank 1

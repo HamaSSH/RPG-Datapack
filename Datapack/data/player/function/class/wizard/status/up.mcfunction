@@ -20,8 +20,8 @@
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseINT 1
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseAGI 3
     # 10レベルごと
-        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 15
-        execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 40
+        execute if score %10 Temporary matches 5 run scoreboard players add @s BaseHPR 10
+        execute if score %10 Temporary matches 0 run scoreboard players add @s BaseMPR 30
         execute if score %5 Temporary matches 0 run scoreboard players add @s BaseLUK 4
 
 # 職業ランク(普通|銀|金アイコン用)
