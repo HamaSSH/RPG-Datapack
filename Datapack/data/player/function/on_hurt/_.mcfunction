@@ -7,6 +7,9 @@
         function lib:damage/blur
     function lib:damage/received
 
+# 被ダメージ時ステータス更新(ファイターの闘志用)
+    execute if predicate player:class/is_fighter run tag @s add StatusUpdate
+
 # ダンジョンノーダメチャレンジ失敗
     tag @s remove 3.4.NoDamage
 

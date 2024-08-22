@@ -10,5 +10,8 @@
     scoreboard players operation $HPRegen Temporary *= #2000 Constant
     scoreboard players operation @s HPRTimer -= $HPRegen Temporary
 
+# HP回復時ステータス更新(ファイターの闘志用)
+    execute if predicate player:class/is_fighter run tag @s add StatusUpdate
+
 # リセット
     scoreboard players reset $HPRegen Temporary

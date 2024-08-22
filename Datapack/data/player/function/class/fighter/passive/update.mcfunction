@@ -8,7 +8,7 @@
     execute if score @s PassiveSkill1 matches 1.. run function player:class/fighter/passive/skill1/_
 
 # 闘志「体力が下がるほどステータスが上昇する」
-# tick処理
+    execute if score @s PassiveSkill2 matches 1.. run function player:class/fighter/passive/skill2/_
 
 # 反撃「被ダメージ時 反撃ダメージを与える」
 # 被ダメージ時の処理

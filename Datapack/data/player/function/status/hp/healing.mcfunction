@@ -8,6 +8,9 @@
     execute if score @s HP < @s HPMax run scoreboard players operation @s HP += $Healing Temporary
     execute if score @s HP >= @s HPMax run scoreboard players operation @s HP = @s HPMax
 
+# HP回復時ステータス更新(ファイターの闘志用)
+    execute if predicate player:class/is_fighter run tag @s add StatusUpdate
+
 # 後処理
     scoreboard players remove @s Healing 1
     scoreboard players reset $Healing Temporary
