@@ -14,4 +14,4 @@
     execute if score @s PassiveSkill3 matches 1.. run function player:class/hunter/passive/skill3/_
 
 # 会心の極意「会心時にステータス大幅ＵＰ」
-# クリティカル時の処理
+    execute if score @s PassiveSkill4 matches 1.. if score @s HunterCrtTimer matches 1.. run function player:class/hunter/passive/skill4/_

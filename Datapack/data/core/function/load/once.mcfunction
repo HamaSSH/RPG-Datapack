@@ -91,6 +91,7 @@
         scoreboard objectives add UIPage dummy "UIのページ"
         scoreboard objectives add ShopPage dummy "店のページ"
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
+        scoreboard objectives add HunterCrtTimer trigger "会心の極意用タイマー"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
