@@ -1,6 +1,7 @@
 #> player:combat/main/dagger/skill/start
 # ため攻撃開始
 
+scoreboard players remove @s MP 20
 scoreboard players set @s SkillTimer 400
 tag @s add DaggerSkill
 tag @s remove MPCheckPass
