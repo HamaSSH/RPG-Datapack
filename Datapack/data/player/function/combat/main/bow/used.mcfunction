@@ -9,7 +9,7 @@
     function player:combat/main/bow/sfx/_
 
 # ため具合に応じて左クリックで矢を打てるようになる
-    execute if score @s UsingBow matches 12.. run scoreboard players set @s ArrowLC 2
+    execute if score @s UsingBow matches 12.. run scoreboard players operation @s ArrowLC = @s MaxArrowLC
 
 # ため攻撃を放つ
     execute if score @s BowSkill matches 30.. run function player:combat/main/bow/skill/init

@@ -20,6 +20,7 @@
         scoreboard players set @s AS 0
         scoreboard players set @s GrimReset 0
         scoreboard players set @s ElementFocus 0
+        scoreboard players set @s MaxArrowLC 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
@@ -89,6 +90,7 @@
         execute if score @s FDR matches 1000.. run scoreboard players set @s FDR 1000
         execute if score @s AS matches 1000.. run scoreboard players set @s AS 1000
         execute if score @s GrimReset matches 100.. run scoreboard players set @s GrimReset 100
+        execute if score @s MaxArrowLC matches 3.. run scoreboard players set @s GrimReset 3
 
 # ⓺最小値を下回らないよう調整
     execute if score @s HPMax matches ..5 run scoreboard players set @s HPMax 5

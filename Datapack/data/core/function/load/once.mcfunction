@@ -83,7 +83,6 @@
         scoreboard objectives add Healing dummy "♥固定値回復"
         scoreboard objectives add Regeneration dummy "再生効果"
         scoreboard objectives add Arrow dummy "矢筒内の弓矢"
-        scoreboard objectives add ArrowLC dummy "左クリック弓矢"
         scoreboard objectives add HurtTime dummy "無敵時間"
         scoreboard objectives add InCombat dummy "戦闘中タイマー"
         scoreboard objectives add ElementTimer dummy "属性纏い"
@@ -172,3 +171,5 @@
             scoreboard objectives add AS dummy "攻撃速度"
             scoreboard objectives add GrimReset dummy "魔導書即リセ率"
             scoreboard objectives add ElementFocus dummy "属性纏い延長"
+            scoreboard objectives add ArrowLC dummy "左クリック弓矢"
+            scoreboard objectives add MaxArrowLC dummy "LC弓矢最大値"
