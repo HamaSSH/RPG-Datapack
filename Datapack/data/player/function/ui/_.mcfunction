@@ -30,6 +30,7 @@
 # リセット
     data remove storage player:ui buff
     data remove storage player:ui Magic
+    data remove storage player:ui arrow
     data remove storage player:ui ArrowLC
     data remove storage player:ui Quiver
     data remove storage player:ui skill_bar

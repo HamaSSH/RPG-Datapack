@@ -8,9 +8,9 @@
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..4.5] if score @s PlayerID = @p PlayerID run tp @s @p
 
 # ホバードロップ(Q)キー対策
-    execute at @a[tag=UsingUI] positioned ~ ~1.32 ~ as @e[type=item,distance=..0.01] if data entity @s Item{id:"minecraft:glass_bottle"} run kill @s
-    execute at @a[tag=UsingUI] positioned ~ ~1.32 ~ as @e[type=item,distance=..0.01] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"blank"} run kill @s
-    execute at @a[tag=UsingUI] positioned ~ ~1.32 ~ as @e[type=item,distance=..0.01] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"goods"} run kill @s
+    execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item{id:"minecraft:glass_bottle"} run kill @s
+    execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"blank"} run kill @s
+    execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"goods"} run kill @s
 
 # メニューごとのtick処理
     execute at @a[tag=UsingUI] as @e[type=interaction,tag=UIInteraction,distance=..0.01] on passengers on passengers if entity @s[tag=CookingMarker] run function ui:cooking/tick
