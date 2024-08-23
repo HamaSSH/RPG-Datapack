@@ -25,4 +25,3 @@
     data remove storage lib: Damage.Type
     data remove storage lib: Damage.Critical
     scoreboard players reset @s DmgReceived
-    tag @p[tag=Charged] remove Charged

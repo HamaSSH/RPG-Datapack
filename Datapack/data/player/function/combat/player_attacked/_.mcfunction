@@ -13,4 +13,5 @@
 # リセット
     advancement revoke @s only player:combat/player_attacked
     tag @s remove Attacker
+    tag @s remove Charged
     tag @s remove CriticalHit

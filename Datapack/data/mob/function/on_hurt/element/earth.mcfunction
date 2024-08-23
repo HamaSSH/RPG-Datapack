@@ -6,8 +6,6 @@
     scoreboard players operation $SlownessDuration Temporary = $ElementRank Temporary
     scoreboard players operation $SlownessDuration Temporary *= #20 Constant
     scoreboard players add $SlownessDuration Temporary 20
-    tellraw @a {"score":{"name": "$SlownessAmplifier","objective": "Temporary"}}
-    tellraw @a {"score":{"name": "$SlownessDuration","objective": "Temporary"}}
 
 # バフの付与
     data modify storage mob: NewBuff set value [{effect:"slowness"}]
