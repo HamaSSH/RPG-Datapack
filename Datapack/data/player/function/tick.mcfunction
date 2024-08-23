@@ -54,6 +54,7 @@
 # 弓使用中
     execute unless entity @s[tag=UsingBow] if entity @s[advancements={player:trigger/using_item/bow=true}] run function player:trigger/using_item/bow/init
     execute if entity @s[tag=UsingBow] run function player:trigger/using_item/bow/_
+    function player:combat/main/bow/magic
 
 # 消費アイテム使用中
     execute unless entity @s[tag=UsingConsumables] if entity @s[advancements={player:trigger/using_item/consumables=true}] run function player:trigger/using_item/consumables/init
