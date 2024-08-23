@@ -29,6 +29,10 @@ data remove storage player:magic hotbar[{Slot:-1}]
 # 武器を戻す
     item replace entity @s weapon.mainhand from block 0 0 0 container.0
 
+# 効果音
+    playsound minecraft:block.chiseled_bookshelf.pickup master @s ~ ~ ~ 0.5 1.2
+    playsound resource:item.book.open_flip2 master @s ~ ~ ~ 0.5 1.3
+
 # リセット
     data remove storage player:magic hotbar
     data remove storage player:magic selected
