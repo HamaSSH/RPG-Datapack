@@ -9,7 +9,7 @@
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
 # 炎上させる
-    data modify entity @s Fire set value 40s
+    data modify entity @s Fire set value 60s
 
 # ダメージ処理
     scoreboard players set $MotionPower Temporary 80
