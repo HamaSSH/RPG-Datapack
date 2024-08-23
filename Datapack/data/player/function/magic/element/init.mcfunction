@@ -4,13 +4,13 @@
 advancement grant @s only asset:tips/element
 
 # 消費MPに応じたElementTimerの設定
-    execute store result score @s ElementTimer run data get storage player: mp_cost 15
     data modify storage player: NewBuff set value [{amplifier:0}]
     data modify storage player: NewBuff[0].element set from storage player: magic.element
     execute store result score $ElementDuration Temporary run data get storage player: mp_cost 15
     execute if score @s ElementFocus matches 1.. run scoreboard players operation $ElementDuration Temporary *= @s ElementFocus
     execute if score @s ElementFocus matches 1.. run scoreboard players operation $ElementDuration Temporary /= #100 Constant
     execute store result storage player: NewBuff[0].duration int 1 run scoreboard players get $ElementDuration Temporary
+    scoreboard players operation @s ElementTimer = $ElementDuration Temporary
     function player:buff/_
 
 # タグ付け
