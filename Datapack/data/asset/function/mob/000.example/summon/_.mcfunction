@@ -19,7 +19,7 @@
         data modify storage asset:mob Data.Offhand set value {}
     # ステータス
         data modify storage asset:mob Data.Status.LVL set value 1
-        data modify storage asset:mob Data.Status.HP set value 1000
+        data modify storage asset:mob Data.Status.HP set value 10000
         data modify storage asset:mob Data.Status.DEF set value 0
         data modify storage asset:mob Data.Status.Dmg set value 0
         data modify storage asset:mob Data.Status.EXP set value 0
