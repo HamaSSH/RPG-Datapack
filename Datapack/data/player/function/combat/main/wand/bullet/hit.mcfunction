@@ -10,16 +10,15 @@
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
 # 属性纏い攻撃
-    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementFire,distance=..6,limit=1] run function mob:on_hurt/element/fire
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementFire,distance=..6,limit=1] run function mob:on_hurt/element/fire/_
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWater,distance=..6,limit=1] run function mob:on_hurt/element/water
     execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementThunder,distance=..6,limit=1] at @s run function mob:on_hurt/element/thunder/_
-    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run effect give @s slowness 2 1
-    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWind,distance=..6,limit=1] at @s run function mob:on_hurt/element/wind
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementEarth,distance=..6,limit=1] run function mob:on_hurt/element/earth
+    execute if entity @e[type=area_effect_cloud,tag=WandAEC,tag=Attacker,tag=ElementWind,distance=..6,limit=1] at @s run function mob:on_hurt/element/wind/_
 
 # ダメージ処理
     function mob:on_hurt/_
     damage @s 0.0 generic
-    effect give @s slowness 1 0 true
 
 # リセット
     data remove storage lib: Damage.Type

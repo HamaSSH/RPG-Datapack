@@ -3,6 +3,7 @@
 
 # 最大チェイン数の設定
     scoreboard players set $ThunderChainMax Temporary 2
+    scoreboard players operation $ThunderChainMax Temporary += $ElementRank Temporary
 
 # チェイン処理
     tag @s add ChainedTarget

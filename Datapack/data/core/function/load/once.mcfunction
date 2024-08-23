@@ -179,3 +179,4 @@
             scoreboard objectives add Multishot dummy "マルチショット"
             scoreboard objectives add HPDrain dummy "HP吸収"
             scoreboard objectives add MPDrain dummy "MP吸収"
+            scoreboard objectives add ElementRank dummy "属性纏いレベル"

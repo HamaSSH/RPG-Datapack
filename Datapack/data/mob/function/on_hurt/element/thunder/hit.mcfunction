@@ -5,9 +5,9 @@ tag @s remove ChainTarget
 tag @s add ChainedTarget
 
 # 演出
-    playsound entity.shulker.shoot master @a ~ ~ ~ 0.2 1.8
-    playsound block.pumpkin.carve master @a ~ ~ ~ 0.5 1.6
-    playsound entity.firework_rocket.twinkle_far master @a ~ ~ ~ 0.3 1.9
+    playsound entity.shulker.shoot master @a ~ ~ ~ 0.1 1.8
+    playsound block.pumpkin.carve master @a ~ ~ ~ 0.2 1.6
+    playsound entity.firework_rocket.twinkle_far master @a ~ ~ ~ 0.15 1.9
 
 # ダメージ設定
     data modify storage lib: Damage.Natural set value "Thunder"
@@ -15,6 +15,16 @@ tag @s add ChainedTarget
     execute if entity @p[tag=Attacker] run scoreboard players operation @s DmgReceived = @p[tag=Attacker] DmgDealt
     scoreboard players operation @s DmgReceived /= #8 Constant
     scoreboard players add @s DmgReceived 4
+
+# 属性纏いレベル分ダメージ強化
+    scoreboard players operation $ChainDmgBuff Temporary = $ElementRank Temporary
+    scoreboard players operation $ChainDmgBuff Temporary *= #4 Constant
+    scoreboard players operation @s DmgReceived += $ChainDmgBuff Temporary
+    scoreboard players operation $ChainDmgBuff Temporary *= #10 Constant
+    scoreboard players add $ChainDmgBuff Temporary 100
+    scoreboard players operation @s DmgReceived *= $ChainDmgBuff Temporary
+    scoreboard players operation @s DmgReceived /= #100 Constant
+    scoreboard players reset $ChainDmgBuff Temporary
 
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = $PlayerID Temporary

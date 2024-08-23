@@ -4,6 +4,7 @@
 # データをスコアに格納
     scoreboard players operation $PlayerID Temporary = @s PlayerID
     scoreboard players operation $DmgDealt Temporary = @s DmgDealt
+    scoreboard players operation $ElementRank Temporary = @s ElementRank
 
 # 当たり判定
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:every_mob,tag=Enemy,tag=!HurtTime,dx=0,limit=1] run function player:combat/main/wand/bullet/detected
@@ -22,4 +23,5 @@
 # リセット
     scoreboard players reset $PlayerID Temporary
     scoreboard players reset $DmgDealt Temporary
+    scoreboard players reset $ElementRank Temporary
     tag @s remove Attacker

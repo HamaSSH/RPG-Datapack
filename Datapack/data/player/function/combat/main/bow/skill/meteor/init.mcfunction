@@ -16,3 +16,4 @@ data modify entity @s PierceLevel set value 30
     scoreboard players operation @s DmgDealt = @p DEX
     scoreboard players add @s DmgDealt 5
     scoreboard players operation @s DmgDealt *= #2 Constant
+    scoreboard players operation @s ElementRank = @p[tag=Shooter] ElementRank

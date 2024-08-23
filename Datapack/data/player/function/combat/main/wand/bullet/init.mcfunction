@@ -4,6 +4,7 @@
 # 弾と攻撃したプレイヤーの紐づけ
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
     scoreboard players operation @s DmgDealt = @p[tag=Attacker] DmgDealt
+    scoreboard players operation @s ElementRank = @p[tag=Attacker] ElementRank
     execute if entity @p[tag=Attacker,tag=CriticalHit] run tag @s add CriticalHit
 
 # 属性纏い中

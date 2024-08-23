@@ -4,6 +4,7 @@
 # データをスコアに格納
     scoreboard players operation $PlayerID Temporary = @s PlayerID
     scoreboard players operation $DmgDealt Temporary = @s DmgDealt
+    scoreboard players operation $ElementRank Temporary = @s ElementRank
 
 # 当たり判定
     execute if entity @e[type=#lib:every_mob,tag=Enemy,distance=..2] run tag @s add Attacker
@@ -20,6 +21,7 @@
 # リセット
     scoreboard players reset $PlayerID Temporary
     scoreboard players reset $DmgDealt Temporary
+    scoreboard players reset $ElementRank Temporary
     tag @s remove Attacker
 
 # 消滅
