@@ -1,0 +1,22 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "offhand": {
+                        "predicates": {
+                            "custom_data": "{magic:{}}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "reference",
+            "name": "player:hold_weapon/_"
+        }
+    ]
+}
