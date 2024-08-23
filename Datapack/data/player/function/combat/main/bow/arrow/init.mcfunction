@@ -2,8 +2,10 @@
 # 矢の初期データ設定
 
 execute store result entity @s PierceLevel int 1 run scoreboard players get @p[tag=Shooter] PierceLevel
+data modify entity @s SoundEvent set value "minecraft:entity.player.attack.crit"
 data modify entity @s pickup set value 0b
-data modify entity @s SoundEvent set value "entity.player.attack.crit"
+data remove entity @s weapon
+data remove entity @s item
 tag @s add Flying
 tag @s add ArrowInit
 
