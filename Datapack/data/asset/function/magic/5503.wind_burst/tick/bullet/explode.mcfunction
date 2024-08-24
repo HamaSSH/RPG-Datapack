@@ -15,10 +15,10 @@
     particle dust_color_transition{from_color:[0.478,0.784,0.275],to_color:[0.91,1.0,0.88],scale:3} ~ ~ ~ 0.7 0.7 0.7 0 70 force
     particle dust_color_transition{from_color:[0.725,1.0,0.506],to_color:[0.91,1.0,0.88],scale:2} ~ ~ ~ 0.7 0.7 0.7 0 50 force
     particle gust ~ ~ ~ 1 1 1 0 20
-    playsound entity.generic.explode master @a ~ ~ ~ 0.4 1.1
-    playsound entity.generic.explode master @a ~ ~ ~ 0.7 0.6
-    playsound entity.wind_charge.wind_burst master @a ~ ~ ~ 0.8 0.8
-    playsound entity.breeze.wind_burst master @a ~ ~ ~ 0.8 1.2
+    playsound entity.generic.explode master @a ~ ~ ~ 0.3 1.1
+    playsound entity.generic.explode master @a ~ ~ ~ 0.4 0.6
+    playsound entity.wind_charge.wind_burst master @a ~ ~ ~ 0.6 0.8
+    playsound entity.breeze.wind_burst master @a ~ ~ ~ 0.4 1.2
 
 # 後処理
     kill @s

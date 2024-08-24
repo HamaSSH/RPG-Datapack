@@ -8,7 +8,7 @@
     execute summon armor_stand run function asset:magic/5103.flame_pillar/tick/pillar/init
 
 # 演出
-    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.8 1.4
+    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.2 1.4
 
 # リセット
     scoreboard players reset $PlayerID Temporary

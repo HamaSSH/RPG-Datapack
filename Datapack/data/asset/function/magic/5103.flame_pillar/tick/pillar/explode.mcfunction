@@ -17,8 +17,8 @@
     particle dust_color_transition{from_color:[1.0,0.859,0.392],to_color:[1.0,0.494,0.153],scale:1.5} ~ ~1 ~ 0.2 0.7 0.2 0 24 force
     particle flame ~ ~1 ~ 0.1 1 0.1 0.01 30 force
     particle explosion ~ ~0.2 ~ 0.1 0.5 0.1 0 5 force
-    playsound entity.generic.explode master @a ~ ~ ~ 0.2 0.8
-    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.4 1.2
+    playsound entity.generic.explode master @a ~ ~ ~ 0.1 0.8
+    playsound resource:custom.firecharge.use master @a ~ ~ ~ 0.2 1.2
 
 # 後処理
     kill @s
