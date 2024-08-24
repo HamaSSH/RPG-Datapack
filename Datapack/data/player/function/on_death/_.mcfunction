@@ -5,6 +5,7 @@
     tag @s add StatusUpdate
 
 # バフの削除
+    tag @s add ResetEffect
     function player:buff/reset
 
 # 実績チャレンジ失敗

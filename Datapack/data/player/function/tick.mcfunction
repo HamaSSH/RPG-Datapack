@@ -91,6 +91,8 @@
     effect give @s instant_health infinite 252 true
     effect clear @s absorption
     effect clear @s slowness
+    execute if entity @s[tag=ResetEffect] run effect clear @a
+    execute if entity @s[tag=ResetEffect] run tag @s remove ResetEffect
 
 # リセット
     tag @s remove NewInventorySet
