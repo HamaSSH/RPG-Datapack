@@ -7,5 +7,5 @@ execute positioned ~ ~1.52 ~ as @e[type=arrow,tag=Flying,distance=..5] if score 
 tag @s remove MPCheckPass
 
 # 演出
-    playsound entity.zombie.attack_iron_door master @a ~ ~ ~ 0.6 1.3
-    playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.4 0.8
+    playsound entity.zombie.attack_iron_door master @a ~ ~ ~ 0.5 1.3
+    playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.25 0.8

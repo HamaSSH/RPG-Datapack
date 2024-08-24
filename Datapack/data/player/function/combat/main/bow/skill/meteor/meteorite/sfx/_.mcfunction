@@ -1,9 +1,8 @@
 #> player:combat/main/bow/skill/meteor/meteorite/sfx/_
 # 通常攻撃のparticle&playsound
 
-
 particle explosion ~ ~ ~ 0.5 0.5 0.5 1 2 force
-playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.2 0.8
+playsound entity.lightning_bolt.impact master @a ~ ~ ~ 0.05 0.9
 
 execute if entity @s[tag=ElementFire] run function player:combat/main/bow/skill/meteor/meteorite/sfx/fire
 execute if predicate player:is_element/water run function player:combat/main/bow/skill/meteor/meteorite/sfx/water
