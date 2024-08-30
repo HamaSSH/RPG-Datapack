@@ -1,11 +1,12 @@
 #> player:on_death/_
 # プレイヤー死亡時の処理
 
+tag @s add Respawn
+
 # ステータスの更新
     tag @s add StatusUpdate
 
 # バフの削除
-    tag @s add ResetEffect
     function player:buff/reset
 
 # 実績チャレンジ失敗
@@ -13,8 +14,9 @@
     scoreboard players reset @s 3.5.DungeonTimer
 
 # 演出
+    title @s times 10 30 10
+    title @s title {"text":"\uF809\uF804\uE241\uF80B\uF802You\uF822Died!\uF805","bold":true,"color":"dark_red"}
     execute in overworld positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0
-    title @s title {"text":"You Died!","bold":true,"color":"dark_red"}
     function player:on_death/lose_gold
 
 # 蘇生

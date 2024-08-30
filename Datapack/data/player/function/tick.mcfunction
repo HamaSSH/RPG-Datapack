@@ -86,13 +86,14 @@
     execute if entity @s[tag=!CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run function player:status/ui
     execute unless entity @s[tag=CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run tag @s remove CheckingStatus
 
+# リスポーン処理
+    execute if entity @s[tag=Respawn] run function player:on_death/respawn
+
 # バニラ要素から一切のダメージを受けない
     effect give @s resistance infinite 10 true
     effect give @s instant_health infinite 252 true
     effect clear @s absorption
     effect clear @s slowness
-    execute if entity @s[tag=ResetEffect] run effect clear @a
-    execute if entity @s[tag=ResetEffect] run tag @s remove ResetEffect
 
 # リセット
     tag @s remove NewInventorySet
