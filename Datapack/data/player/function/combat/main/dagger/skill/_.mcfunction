@@ -1,5 +1,17 @@
 #> player:combat/main/dagger/skill/_
-# 攻撃速度を早くする
+# 高速で前方の敵を攻撃する
 
-execute if predicate player:hold_weapon/dagger run attribute @s generic.attack_speed modifier add dagger_skill 100 add_value
-execute unless predicate player:hold_weapon/dagger run attribute @s generic.attack_speed modifier remove dagger_skill
+# モブに攻撃したプレイヤーをタグ付け
+    tag @s add Attacker
+
+# 与ダメージ計算
+    function player:combat/player_attacked/dmg_dealt
+    scoreboard players operation @s DmgDealt /= #10 Constant
+
+# モブの絞り込み
+    function player:combat/main/dagger/charged
+
+# リセット
+    tag @s remove Attacker
+    tag @s remove Charged
+    tag @s remove CriticalHit

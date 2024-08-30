@@ -11,7 +11,8 @@
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=DaggerHit,distance=..6] run tag @s remove DaggerHit
 
 # HIT処理
-    scoreboard players set $MotionPower Temporary 60
+    execute if entity @p[tag=Attacker,tag=!DaggerSkill] run scoreboard players set $MotionPower Temporary 60
+    execute if entity @p[tag=Attacker,tag=DaggerSkill] run scoreboard players set $MotionPower Temporary 20
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] rotated ~ 60 run function lib:motion/knockback
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] run function player:combat/main/hit
 
