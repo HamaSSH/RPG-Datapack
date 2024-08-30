@@ -6,8 +6,8 @@ execute if score @s SkillTimer matches 390..396 if block ~ ~-0.5 ~ #lib:no_colli
 execute if score @s SkillTimer matches ..394 unless entity @s[tag=HammerLanded] if block ~ ~-0.5 ~ #lib:no_collision run scoreboard players add @s SkillTimer 1
 execute if score @s SkillTimer matches ..394 unless entity @s[tag=HammerLanded] if block ~ ~-0.5 ~ #lib:no_collision if score @s ElementTimer matches 1.. run scoreboard players add @s ElementTimer 1
 execute if score @s SkillTimer matches 394 unless block ~ ~-0.5 ~ #lib:no_collision run tag @s add HammerLanded
-execute if score @s SkillTimer matches 394 run function player:combat/main/hammer/skill/impact/1
-execute if score @s SkillTimer matches 387 run function player:combat/main/hammer/skill/impact/2
-execute if score @s SkillTimer matches 380 run function player:combat/main/hammer/skill/impact/3
+execute if score @s SkillTimer matches 394 if predicate player:hold_weapon/hammer run function player:combat/main/hammer/skill/impact/1
+execute if score @s SkillTimer matches 387 if predicate player:hold_weapon/hammer run function player:combat/main/hammer/skill/impact/2
+execute if score @s SkillTimer matches 380 if predicate player:hold_weapon/hammer run function player:combat/main/hammer/skill/impact/3
 execute if score @s SkillTimer matches 380 run tag @s remove HammerLanded
 execute if score @s SkillTimer matches 380 run tag @s remove HammerSkill
