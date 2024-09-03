@@ -13,6 +13,9 @@ tp ^ ^ ^1
     # 壁に当たった場合
         execute if entity @s[tag=!PassThrough] unless block ^ ^ ^ #lib:no_collision run function asset:magic/5101.fire_ball/tick/hit/block
         execute if entity @s[tag=!PassThrough] unless block ^ ^ ^0.5 #lib:no_collision run function asset:magic/5101.fire_ball/tick/hit/block
+    # 水に当たった場合
+        execute if block ^ ^ ^ #lib:underwater run function asset:magic/5101.fire_ball/tick/hit/water
+        execute if block ^ ^ ^0.5 #lib:underwater run function asset:magic/5101.fire_ball/tick/hit/water
 
 # HIT処理
     execute as @e[type=#lib:every_mob,tag=Enemy,tag=Hit,distance=..6] at @s run function asset:magic/5101.fire_ball/tick/hit/_
