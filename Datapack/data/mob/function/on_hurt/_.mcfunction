@@ -28,4 +28,4 @@
     execute if data storage lib: Damage{Type:"Magic"} as @a if score @s PlayerID = $PlayerID Temporary if score @s MPDrain matches 1.. run function player:status/mp/drain
 
 # 死亡処理
-    execute if score @s HP matches ..0 run function mob:on_death/_
+    execute if score @s HP matches ..0 if entity @s[tag=!Dead] run function mob:on_death/_
