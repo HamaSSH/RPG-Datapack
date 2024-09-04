@@ -19,3 +19,4 @@
 # リセット
     scoreboard players reset $GoldLoss Temporary
     scoreboard players reset $Multiplier Temporary
+    scoreboard players reset $PlayerLevel Temporary
