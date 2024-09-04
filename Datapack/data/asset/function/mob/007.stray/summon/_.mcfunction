@@ -26,6 +26,7 @@
         data modify storage asset:mob Data.Status.Gold set value 15
         data modify storage asset:mob Data.Status.AGI set value 100
         data modify storage asset:mob Data.scale set value 100
+        data modify storage asset:mob Data.Status.KBR set value 0
 
 # データの適用
     execute as @e[type=stray,tag=MobInit,distance=..0.01,limit=1] run function mob:summon/init/_

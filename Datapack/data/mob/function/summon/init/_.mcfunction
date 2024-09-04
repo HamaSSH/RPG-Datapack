@@ -32,6 +32,7 @@ tag @s add Enemy
     execute store result score @s DEF run data get storage asset:mob Data.Status.DEF
     execute store result score @s EXP run data get storage asset:mob Data.Status.EXP
     execute store result score @s Gold run data get storage asset:mob Data.Status.Gold
+    function mob:summon/set_data/knockback_resistance
     function mob:summon/set_data/speed
     function mob:summon/set_data/scale
 
