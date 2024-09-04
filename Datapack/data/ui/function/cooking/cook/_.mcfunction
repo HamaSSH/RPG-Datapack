@@ -11,9 +11,9 @@ tag @s add SetResult
         $execute if entity @s[tag=SetResult] if data storage ui: Items[{Slot:15b,components:{"minecraft:custom_model_data":$(id)}}] run function ui:cooking/cook/set_result/add_count {Slot:"15b"}
         $execute if entity @s[tag=SetResult] if data storage ui: Items[{Slot:16b,components:{"minecraft:custom_model_data":$(id)}}] run function ui:cooking/cook/set_result/add_count {Slot:"16b"}
     # スタックが増やせなければ新規配置
-        execute if entity @s[tag=SetResult] unless data storage ui: Items[{Slot:14b}] run function ui:cooking/cook/set_result/new_slot {Slot:"14b"}
-        execute if entity @s[tag=SetResult] unless data storage ui: Items[{Slot:15b}] run function ui:cooking/cook/set_result/new_slot {Slot:"15b"}
-        execute if entity @s[tag=SetResult] unless data storage ui: Items[{Slot:16b}] run function ui:cooking/cook/set_result/new_slot {Slot:"16b"}
+        execute if entity @s[tag=SetResult] if data storage ui: Items[{Slot:14b,components:{"minecraft:custom_data":{ui:{item_type:"none"}}}}] run function ui:cooking/cook/set_result/new_slot {Slot:"14b"}
+        execute if entity @s[tag=SetResult] if data storage ui: Items[{Slot:15b,components:{"minecraft:custom_data":{ui:{item_type:"none"}}}}] run function ui:cooking/cook/set_result/new_slot {Slot:"15b"}
+        execute if entity @s[tag=SetResult] if data storage ui: Items[{Slot:16b,components:{"minecraft:custom_data":{ui:{item_type:"none"}}}}] run function ui:cooking/cook/set_result/new_slot {Slot:"16b"}
     # 全て埋まってたらreturn
         execute if entity @s[tag=SetResult] run data modify storage ui: ReturnItems append from storage ui: NewItems[{Slot:0b}]
         execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
