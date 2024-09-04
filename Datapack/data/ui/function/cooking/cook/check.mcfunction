@@ -18,6 +18,12 @@ tag @s add Cookable
         function ui:cooking/recipe/get with storage ui: CookIngredients
         execute if data storage ui: Result{id:0} run tag @s remove Cookable
 
+# 一括クラフト検知
+    data modify storage ui: craft_type set value "multiple"
+    execute positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item{id:"minecraft:glass_bottle",components:{"minecraft:custom_data":{ui:{item_type:"cook"}}}} run data modify storage ui: craft_type set value "single"
+    execute on vehicle on vehicle on attacker if items entity @s player.cursor glass_bottle[custom_data={ui:{item_type:"cook"}}] run data modify storage ui: craft_type set value "single"
+    execute on vehicle on vehicle on attacker if items entity @s weapon.offhand glass_bottle[custom_data={ui:{item_type:"cook"}}] run data modify storage ui: craft_type set value "single"
+
 # レシピが存在すれば料理
     execute if entity @s[tag=Cookable] run function ui:cooking/cook/_ with storage ui: Result
 
@@ -27,5 +33,9 @@ tag @s add Cookable
 # リセット
     tag @s remove Cookable
     tag @s remove PlaysoundOnce
+    scoreboard players reset $Ingredient1 Temporary
+    scoreboard players reset $Ingredient2 Temporary
+    scoreboard players reset $Ingredient3 Temporary
     data remove storage ui: CookIngredients
     data remove storage ui: Result
+    data remove storage ui: craft_type

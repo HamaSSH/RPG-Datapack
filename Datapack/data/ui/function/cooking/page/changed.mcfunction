@@ -1,8 +1,6 @@
 #> ui:cooking/page/changed
 # UI内で変更があった場合の処理
 
-# 不要アイテムのclear
-    clear @a[tag=UsingUI] glass_bottle
 
 # 料理アイテムデータの整形
     # 料理可能なアイテム(既にスロット内のものを除く)→CookableItems
@@ -30,6 +28,9 @@
 
 # 料理する
     execute unless data storage ui: Items[{Slot:13b,components:{"minecraft:custom_data":{ui:{item_type:"cook"}}}}] run function ui:cooking/cook/check
+
+# 不要アイテムのclear
+    clear @a[tag=UsingUI] glass_bottle
 
 # 効果音
     execute if entity @s[tag=PlaysoundOnce] on vehicle on vehicle on attacker run playsound ui.button.click master @s ~ ~ ~ 0.1 1.8
