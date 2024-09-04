@@ -15,5 +15,6 @@
     execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/status/3 with storage ui: Ingredient.buff[0]
     execute if data storage ui: Ingredient.buff[] run function ui:brewing/brew/potion/buff/effect/3 with storage ui: Ingredient.buff[0]
 
-# duration:0のバフをストレージから削除
+# 効果0のバフをストレージから削除
     data remove storage ui: PotionData.buff[{duration:0}]
+    data remove storage ui: PotionData.buff[{amplifier:0}]
