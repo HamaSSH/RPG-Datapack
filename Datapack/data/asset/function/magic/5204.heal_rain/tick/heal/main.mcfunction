@@ -8,6 +8,7 @@
 
 # 範囲内のプレイヤーのHPRTimerに加算
     execute as @a[distance=..5.5] at @s run particle end_rod ~ ~0.1 ~ 0.3 0.1 0.3 0.05 10 force
+    execute as @a[distance=..5.5] at @s run particle scrape ~ ~0.3 ~ 0.2 0.2 0.2 0.2 20 force
     execute as @a[distance=..5.5] if score @s HP < @s HPMax run scoreboard players operation @s HPRTimer += $HealRain Temporary
 
 # 演出
