@@ -13,4 +13,4 @@
     scoreboard players operation @s MPRatio /= @s MPMax
 
 # MPバー操作
-    execute unless score @s PreviousMP = @s MP run function player:status/mp/bar/_
+    execute unless score @s PreviousMPRatio = @s MPRatio run function player:status/mp/bar/_

@@ -25,8 +25,8 @@
     function player:status/mp/bar/set_level with storage player: XPBar
 
 # MPに変化がある時だけfunctionを常時実行
-    scoreboard players set @s PreviousMP -1
-    execute if score $XPBarDif Temporary matches 0 store result score @s PreviousMP run xp query @s levels
+    scoreboard players set @s PreviousMPRatio -1
+    execute if score $XPBarDif Temporary matches 0 run scoreboard players operation @s PreviousMPRatio = @s MPRatio
 
 # リセット
     data remove storage player: XPBar

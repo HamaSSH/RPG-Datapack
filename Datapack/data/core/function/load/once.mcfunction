@@ -59,7 +59,7 @@
         scoreboard objectives add PreviousItemUUID dummy "アイテムID保存"
         scoreboard objectives add PreviousAGI dummy "AGIの値保存"
         scoreboard objectives add PreviousLUK dummy "LUKの値保存"
-        scoreboard objectives add PreviousMP dummy "MPの値保存"
+        scoreboard objectives add PreviousMPRatio dummy "MPRatioの値保存"
         scoreboard objectives add PreviousKBR dummy "KBRの値保存"
         scoreboard objectives add PreviousAS dummy "ASの値保存"
 
