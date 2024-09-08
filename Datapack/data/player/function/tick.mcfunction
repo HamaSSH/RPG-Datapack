@@ -31,6 +31,9 @@
     execute if score @s UsedBow matches 1.. run function player:combat/main/bow/used
     # execute positioned ~ ~1.2 ~ as @e[type=item,distance=..0.01] run function player:trigger/drop_item
 
+# プレイヤーメニュー
+    function player:menu/_
+
 # 魔導書スワップ処理
     function player:magic/swap/check
 
