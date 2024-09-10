@@ -8,9 +8,14 @@
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
+# 速度低下デバフ
+    data modify storage mob: NewBuff set value [{status:"AGI",duration:50}]
+    execute store result storage mob: NewBuff[0].amplifier int -0.5 run scoreboard players get @s AGI
+    function mob:buff/_
+
 # ダメージ処理
-    scoreboard players set $MotionPower Temporary 120
-    execute facing entity @e[type=armor_stand,tag=Magic,tag=Attacker,sort=nearest,limit=1] feet rotated ~180 80 run function lib:motion/knockback
+    scoreboard players set $MotionPower Temporary 100
+    execute facing entity @e[type=armor_stand,tag=Magic,tag=Attacker,sort=nearest,limit=1] feet rotated ~ 80 run function lib:motion/knockback
     function mob:on_hurt/_
     damage @s 0.0 generic
 

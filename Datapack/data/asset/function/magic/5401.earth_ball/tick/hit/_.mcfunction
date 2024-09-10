@@ -9,8 +9,8 @@
     scoreboard players operation @s PlayerID = $PlayerID Temporary
 
 # 速度低下デバフ
-    data modify storage mob: NewBuff set value [{status:"AGI",duration:50}]
-    execute store result storage mob: NewBuff[0].amplifier int -0.5 run scoreboard players get @s AGI
+    data modify storage mob: NewBuff set value [{status:"AGI",duration:40}]
+    execute store result storage mob: NewBuff[0].amplifier int -0.3 run scoreboard players get @s AGI
     function mob:buff/_
 
 # ダメージ処理
