@@ -17,6 +17,10 @@
     function player:status/init
 
 # 実績の初期化
+    # 実績達成検知用の進捗
+        advancement revoke @s only player:trigger/achievement_0.1
+        advancement revoke @s only player:trigger/achievement_1.6
+        advancement revoke @s only player:trigger/achievement_2.6
     function asset:achievement/init
 
 # TIPSの初期化

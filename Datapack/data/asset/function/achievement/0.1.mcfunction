@@ -1,6 +1,7 @@
 #> asset:achievement/0.1
 # advancement asset:achievement/0.1の達成
 
+advancement grant @s only asset:achievement/0.1
 execute positioned 295 -51 -350 run summon item_display ~ ~0.5 ~ {item:{components:{"custom_model_data":5001},id:"glass_bottle"}}
 
 # クリアメッセージ

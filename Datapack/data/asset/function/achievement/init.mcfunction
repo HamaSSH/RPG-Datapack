@@ -9,7 +9,3 @@
     advancement grant @s only asset:achievement/1.7
     advancement grant @s only asset:achievement/2.7
     advancement grant @s only asset:achievement/3.7
-
-# 実績達成検知用の進捗
-    advancement revoke @s only player:trigger/achievement_1.6
-    advancement revoke @s only player:trigger/achievement_2.6

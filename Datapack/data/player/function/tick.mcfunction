@@ -34,6 +34,9 @@
 # プレイヤーメニュー
     function player:menu/_
 
+# achievementのtick処理
+    function asset:achievement/tick
+
 # 魔導書スワップ処理
     function player:magic/swap/check
 

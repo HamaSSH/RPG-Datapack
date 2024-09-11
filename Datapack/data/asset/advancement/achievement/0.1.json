@@ -11,7 +11,8 @@
             "italic": false
         },
         "description": {
-            "text": "魚図鑑を埋める"
+            "text": "魚図鑑を埋める",
+            "color": "white"
         },
         "frame": "challenge",
         "show_toast": true,
@@ -22,8 +23,5 @@
         "requirements": {
             "trigger": "impossible"
         }
-    },
-    "rewards": {
-        "function": "asset:achievement/0.1"
     }
 }

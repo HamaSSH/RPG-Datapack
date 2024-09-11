@@ -1,0 +1,11 @@
+{
+
+    "criteria": {
+        "requirements": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "asset:achievement/0.1"
+    }
+}

@@ -16,7 +16,7 @@ tag @s add UsedRod
     execute unless data storage zukan:fish Data[{count:0}] run data modify storage global: fish.CMD set value 6001
     execute store result score $FishKind Temporary if data storage zukan:fish Data[]
     execute store result score $KingKind Temporary if data storage zukan:fish Data[{crown:"🥇"}]
-    execute if score $KingKind Temporary = $FishKind Temporary run advancement grant @a only asset:achievement/0.1
+    execute if score $KingKind Temporary = $FishKind Temporary run advancement grant @a only player:trigger/achievement_0.1
     execute if score $KingKind Temporary = $FishKind Temporary run data modify storage global: fish.CMD set value 6002
 
 # レベルが上がらないように
