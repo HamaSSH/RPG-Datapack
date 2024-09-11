@@ -39,11 +39,6 @@
         execute if score $Size Temporary >= $GoldSize Temporary run playsound resource:custom.levelup master @a ~ ~ ~ 0.25 1.2
         execute if score $Size Temporary >= $GoldSize Temporary run particle totem_of_undying ~ ~ ~ 0.5 0.5 0.5 0.8 100 force
 
-# 経験値を与える
-    scoreboard players operation $SizeToEXP Temporary = $Size Temporary
-    scoreboard players operation $SizeToEXP Temporary /= #100 Constant
-    scoreboard players operation @p[tag=UsedRod] EXPGained += $SizeToEXP Temporary
-
 # 釣った魚のデータをチャットに表示
     data modify storage item: Data set from entity @s Item.components
     data modify storage item: Data.text.int set string storage item: Fish.size 0 -2
