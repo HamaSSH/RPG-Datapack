@@ -112,7 +112,7 @@
     execute if score @s LUK matches ..0 run scoreboard players set @s LUK 0
 
 # ⓻attributeの設定
-    execute unless score @s PreviousAGI = @s AGI run function player:status/agi/movement_speed/_
+    execute unless score @s PreviousAGI = @s AGI run function player:status/agi/_
     execute unless score @s PreviousLUK = @s LUK run function player:status/luk/generic_luck/_
     execute unless score @s PreviousKBR = @s KBR run function player:status/passive/knockback_resistance/_
     execute unless score @s PreviousAS = @s AS run function player:status/passive/attack_speed/_
