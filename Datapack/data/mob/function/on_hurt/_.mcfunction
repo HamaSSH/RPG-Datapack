@@ -22,7 +22,9 @@
     function mob:status/hp/display/_
 
 # HP吸収処理
-    execute if data storage lib: Damage{Type:"Melee"} as @a if score @s PlayerID = $PlayerID Temporary if score @s HPDrain matches 1.. run function player:status/hp/drain
+    scoreboard players operation $MeleeDrain Temporary = @s DmgReceived
+    execute if data storage lib: Damage{Type:"Melee"} as @p[tag=Attacker] if score @s HPDrain matches 1.. run function player:status/hp/drain
+    scoreboard players reset $MeleeDrain Temporary
 
 # MP吸収処理(ウィザードのマナサージ用)
     execute if data storage lib: Damage{Type:"Magic"} as @a if score @s PlayerID = $PlayerID Temporary if score @s MPDrain matches 1.. run function player:status/mp/drain

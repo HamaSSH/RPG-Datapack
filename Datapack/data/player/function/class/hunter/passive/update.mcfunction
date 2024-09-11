@@ -7,7 +7,7 @@
 # 熟練の弓使い「左クリック矢・矢の貫通・発射本数ＵＰ」
     execute if score @s PassiveSkill1 matches 1.. run function player:class/hunter/passive/skill1/_
 
-# 迅速な身のこなし「地上や水中での移動能力ＵＰ」
+# 吸命の秘技「物理/器用ダメージをＨＰとして回復」
     execute if score @s PassiveSkill2 matches 1.. run function player:class/hunter/passive/skill2/_
 
 # 疾風の舞「素早さに応じて攻撃速度ＵＰ」

@@ -3,7 +3,7 @@
 
 # 回復値の計算 HPDrain * DmgDealt → HPRTimer
     scoreboard players operation $HPDrain Temporary = @s HPDrain
-    scoreboard players operation $HPDrain Temporary *= $DmgDealt Temporary
+    scoreboard players operation $HPDrain Temporary *= $MeleeDrain Temporary
     # tellraw @a {"score": {"name": "$HPDrain","objective": "Temporary"}}
 
 # HPRTimerに加算
