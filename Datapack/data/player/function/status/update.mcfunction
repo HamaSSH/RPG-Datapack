@@ -83,12 +83,12 @@
     scoreboard players operation @s LUK += @s BuffLUK
 
 # ⓹最大値を超えないよう調整
-    execute if score @s HPMax matches 100000.. run scoreboard players set @s HPMax 100000
-    execute if score @s MPMax matches 100000.. run scoreboard players set @s MPMax 100000
-    execute if score @s DEF matches 999.. run scoreboard players set @s DEF 999
-    execute if score @s AGI matches 999.. run scoreboard players set @s AGI 999
-    execute if score @s CRT matches 999.. run scoreboard players set @s CRT 999
-    execute if score @s LUK matches 999.. run scoreboard players set @s LUK 999
+    execute if score @s HPMax matches 100000.. run function player:status/hp/max
+    execute if score @s MPMax matches 100000.. run function player:status/mp/max
+    execute if score @s DEF matches 999.. run function player:status/def/max
+    execute if score @s AGI matches 999.. run function player:status/agi/max
+    execute if score @s CRT matches 999.. run function player:status/crt/max
+    execute if score @s LUK matches 999.. run function player:status/luk/max
     # 特殊ステータス
         execute if score @s CDR matches 1000.. run scoreboard players set @s CDR 1000
         execute if score @s KBR matches 1000.. run scoreboard players set @s KBR 1000
