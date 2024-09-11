@@ -2,7 +2,7 @@
 # スキルレベルごとの効果
 
 # 素早さ
-    execute if score @s PassiveSkill4 matches 1.. run scoreboard players add $ClassAGI Temporary 150
+    execute if score @s PassiveSkill4 matches 1.. run scoreboard players add $ClassAGI Temporary 100
     execute if score @s PassiveSkill4 matches 4 run scoreboard players add $ClassAGI Temporary 50
     execute if score @s PassiveSkill4 matches 1.. run scoreboard players operation $ClassAGI Temporary *= #105 Constant
     execute if score @s PassiveSkill4 matches 1.. run scoreboard players operation $ClassAGI Temporary /= #100 Constant
