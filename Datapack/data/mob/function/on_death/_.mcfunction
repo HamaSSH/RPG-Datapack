@@ -3,6 +3,10 @@
 
 tag @s add Dead
 
+# controllerの紙魚も実質上死亡させる
+    execute on passengers if entity @s[type=silverfish] run data modify entity @s NoAI set value 1b
+    execute on passengers if entity @s[type=silverfish] run team join NoCollision
+
 # 最後に攻撃したプレイヤーを取得
     scoreboard players operation $LastAttackerID Temporary = @s PlayerID
 
