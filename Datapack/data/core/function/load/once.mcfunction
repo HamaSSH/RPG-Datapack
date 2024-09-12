@@ -93,6 +93,7 @@
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
         scoreboard objectives add HunterCrtTimer trigger "会心の極意用タイマー"
         scoreboard objectives add BowMagic trigger "弓の魔導書用"
+        scoreboard objectives add Oxygen dummy "酸素ゲージ"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
@@ -180,3 +181,4 @@
             scoreboard objectives add HPDrain dummy "HP吸収"
             scoreboard objectives add MPDrain dummy "MP吸収"
             scoreboard objectives add ElementRank dummy "属性纏いレベル"
+            scoreboard objectives add MaxOxygen dummy "最大酸素ゲージ"

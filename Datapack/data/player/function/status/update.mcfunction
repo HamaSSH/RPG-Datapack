@@ -26,6 +26,7 @@
         scoreboard players set @s HPDrain 0
         scoreboard players set @s MPDrain 0
         scoreboard players set @s ElementRank 0
+        scoreboard players set @s MaxOxygen 100
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP

@@ -20,6 +20,11 @@
     data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:10b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
     data modify storage player: Equipment.Accessories append from storage player: Inventory[{Slot:11b,components:{"minecraft:custom_data":{equipment:"accessory"}}}]
 
+# 水中でのカスタム酸素ゲージ
+    function player:trigger/underwater/tick
+    execute if entity @s[tag=!Underwater] if data entity @s {Air:299s} run function player:trigger/underwater/enter
+    execute if entity @s[tag=Underwater] if data entity @s {Air:300s} run function player:trigger/underwater/exit
+
 # プレイヤーUI
     function player:ui/_
 
