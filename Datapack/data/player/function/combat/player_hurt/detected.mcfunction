@@ -16,3 +16,6 @@
 # リセット
     data remove storage lib: Damage.Type
     scoreboard players reset @p[tag=Victim] DmgReceived
+
+# 反撃される場合
+    execute if entity @p[tag=Victim,predicate=player:class/is_fighter,scores={PassiveSkill3=1..}] run function player:class/fighter/passive/skill3/_
