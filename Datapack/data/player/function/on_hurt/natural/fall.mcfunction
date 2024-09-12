@@ -3,6 +3,7 @@
 
 # ダメージ設定
     data modify storage lib: Damage.Type set value "Melee"
+    data modify storage lib: Damage.Natural set value "Fall"
     scoreboard players operation $FallDamage Temporary = @s FallDistance
     scoreboard players operation $FallDamage Temporary /= #40 Constant
     # 落下ダメージ耐性
@@ -14,6 +15,7 @@
 
 # リセット
     data remove storage lib: Damage.Type
+    data remove storage lib: Damage.Natural
     scoreboard players reset $FallDamage Temporary
     scoreboard players reset @s FallDistance
     scoreboard players reset @s DmgReceived

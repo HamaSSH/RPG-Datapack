@@ -13,6 +13,11 @@ tag @s add Respawn
     tag @s remove 3.4.NoDamage
     scoreboard players reset @s 3.5.DungeonTimer
 
+# 死亡メッセージ
+    data modify storage player: DeathMessage.Damage set from storage lib: Damage
+    function player:on_death/message/_
+    data remove storage player: DeathMessage
+
 # 演出
     title @s times 10 30 10
     title @s title {"text":"\uF809\uF804\uE241\uF80B\uF802You\uF822Died!\uF805","bold":true,"color":"dark_red"}

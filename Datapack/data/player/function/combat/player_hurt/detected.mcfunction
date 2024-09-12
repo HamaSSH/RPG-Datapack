@@ -11,10 +11,12 @@
     data remove storage asset:mob namespace
 
 # ダメージを受けた際の処理
+    data modify storage player: DeathMessage.Attacker set from entity @s ArmorItems[3].components.minecraft:custom_name
     execute as @p[tag=Victim] at @s run function player:on_hurt/_
 
 # リセット
     data remove storage lib: Damage.Type
+    data remove storage player: DeathMessage
     scoreboard players reset @p[tag=Victim] DmgReceived
 
 # 反撃される場合

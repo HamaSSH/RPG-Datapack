@@ -14,7 +14,7 @@
 
 # ゴールドを失う
     scoreboard players operation @s Gold -= $GoldLoss Temporary
-    execute if score $GoldLoss Temporary matches 1.. run tellraw @s [{"text":"","color":"red"},"☠ 手持ちのゴールドを失ってしまった...！ -",{"score":{"name":"$GoldLoss","objective":"Temporary"},"bold":true},"G"]
+    execute if score $GoldLoss Temporary matches 1.. run tellraw @s [{"text":"\uF822","color":"red"},"☠ 手持ちのゴールドを失ってしまった...。 -",{"score":{"name":"$GoldLoss","objective":"Temporary"},"bold":true},"G\n"]
 
 # リセット
     scoreboard players reset $GoldLoss Temporary
