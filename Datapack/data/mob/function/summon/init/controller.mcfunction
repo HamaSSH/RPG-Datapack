@@ -9,3 +9,6 @@ data modify entity @s Silent set value 1b
 
 # 基本的なデータの設定
     function mob:summon/set_data/_
+
+# scaleの設定
+    function mob:summon/set_data/scale

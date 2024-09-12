@@ -39,9 +39,10 @@ tag @s add Enemy
 # カスタム当たり判定のモブを乗せる場合の初期化
     execute on passengers if entity @s[tag=Hitbox] run function mob:summon/init/hitbox
 
-# AI乗っ取り用のモブの判定
-    execute unless predicate lib:has_passenger run tag @s add Controller
-    execute unless predicate lib:has_passenger run team join Enemy
+# AI乗っ取り用のモブの設定
+    execute unless predicate lib:has_controller run tag @s add Controller
+    execute unless predicate lib:has_controller unless entity @s[type=silverfish] run team join Enemy
+    execute unless predicate lib:has_controller run data modify entity @s Silent set value 1b
     execute on passengers if entity @s[tag=Controller] run function mob:summon/init/controller
 
 # モデル表示用のモブを乗せる場合の初期化
