@@ -19,4 +19,5 @@
 
 # リセット
     tag @s remove UsingUI
+    tag @s remove UsingEnderchest
     advancement revoke @s only ui:close

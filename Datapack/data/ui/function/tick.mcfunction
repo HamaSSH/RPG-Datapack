@@ -19,3 +19,7 @@
     execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item{id:"minecraft:glass_bottle"} run kill @s
     execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"blank"} run kill @s
     execute at @a[tag=UsingUI] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.components.minecraft:custom_data.ui{item_type:"goods"} run kill @s
+
+# エンダーチェストを開いたことの検知
+    execute as @a if score @s OpenEnderchest matches 1.. run function ui:enderchest/open
+    execute as @a if entity @s[tag=UsingUI,tag=UsingEnderchest] run function ui:enderchest/tick

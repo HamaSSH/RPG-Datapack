@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_count",
+        "count": {
+            "type": "score",
+            "target": "this",
+            "score": "UIPage"
+        }
+    },
+    {
+        "function": "set_count",
+        "count": 1,
+        "add": true
+    }
+]
