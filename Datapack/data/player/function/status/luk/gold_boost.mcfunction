@@ -8,5 +8,9 @@
         scoreboard players operation $GoldDrop Temporary *= $GoldBoost Temporary
         scoreboard players operation $GoldDrop Temporary /= #400 Constant
 
+# GoldMultiplierの適用
+    scoreboard players operation $GoldDrop Temporary *= @s GoldMultiplier
+    scoreboard players operation $GoldDrop Temporary /= #100 Constant
+
 # リセット
     scoreboard players reset $GoldBoost Temporary

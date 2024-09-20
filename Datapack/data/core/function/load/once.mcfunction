@@ -183,3 +183,4 @@
             scoreboard objectives add MPDrain dummy "MP吸収"
             scoreboard objectives add ElementRank dummy "属性纏いレベル"
             scoreboard objectives add MaxOxygen dummy "最大酸素ゲージ"
+            scoreboard objectives add GoldMultiplier dummy "ゴールドドロップ量増加"
