@@ -30,6 +30,10 @@
             function ui:enchanting/enchant/lore/remove
             function ui:enchanting/enchant/lore/add
         data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: NewLore
+    # lore_length
+        execute store result score $NewLoreLength Temporary run data get storage ui: ItemData.lore_length
+        execute if score $NewLoreLength Temporary matches 1..2 run scoreboard players add $NewLoreLength Temporary 3
+        execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.lore_length int 1 run scoreboard players get $NewLoreLength Temporary
 
 # 素材アイテムの消費
     execute store result storage ui: NewItems[{Slot:12b}].count byte 0.999 run data get storage ui: NewItems[{Slot:12b}].count
