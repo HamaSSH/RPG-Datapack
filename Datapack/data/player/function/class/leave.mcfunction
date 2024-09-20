@@ -3,6 +3,7 @@
 
 team leave @s
 scoreboard players set @s ArrowLC 0
+scoreboard players set @s Shield 0
 scoreboard players set @s ChargeSkill 0
 scoreboard players set @s PassiveWeapon 0
 scoreboard players set @s PassiveSkill1 0

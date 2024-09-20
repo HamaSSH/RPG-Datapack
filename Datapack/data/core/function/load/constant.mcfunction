@@ -1,6 +1,7 @@
 #> core:load/constant
 # 定数スコアの定義(適宜追加)
 
+scoreboard players set #-60 Constant -60
 scoreboard players set #-20 Constant -20
 scoreboard players set #-5 Constant -5
 scoreboard players set #-1 Constant -1

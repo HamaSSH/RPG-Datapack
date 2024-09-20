@@ -1,8 +1,8 @@
 #> player:ui/arrow
 # 矢のUI表示
 
-execute if score @s MaxArrowLC matches 1 if score @s ArrowLC matches ..0 run data modify storage player:ui arrow set value '"\\uF825\\uE092\\uF808\\uF806"'
-execute if score @s MaxArrowLC matches 1 if score @s ArrowLC matches 1.. run data modify storage player:ui arrow set value '"\\uF825\\uE093\\uF808\\uF806"'
+execute if score @s MaxArrowLC matches 1 if score @s ArrowLC matches ..0 run data modify storage player:ui arrow set value '"\\uF824\\uE092\\uF808\\uF806"'
+execute if score @s MaxArrowLC matches 1 if score @s ArrowLC matches 1.. run data modify storage player:ui arrow set value '"\\uF824\\uE093\\uF808\\uF806"'
 execute if score @s MaxArrowLC matches 2 if score @s ArrowLC matches ..0 run data modify storage player:ui arrow set value '"\\uF822\\uE092\\uF806\\uE092\\uF809"'
 execute if score @s MaxArrowLC matches 2 if score @s ArrowLC matches 1 run data modify storage player:ui arrow set value '"\\uF822\\uE093\\uF806\\uE092\\uF809"'
 execute if score @s MaxArrowLC matches 2 if score @s ArrowLC matches 2.. run data modify storage player:ui arrow set value '"\\uF822\\uE093\\uF806\\uE093\\uF809"'

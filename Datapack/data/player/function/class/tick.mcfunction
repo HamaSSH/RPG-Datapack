@@ -9,3 +9,6 @@
 
 # ハンター「会心の極意」用のタイマー
     execute if score @s HunterCrtTimer matches 1.. run function player:class/hunter/passive/skill4/timer
+
+# パラディン「グレイスシールド」用のタイマー
+    execute if score @s MaxShield matches 1.. run function player:class/paladin/passive/skill3/timer

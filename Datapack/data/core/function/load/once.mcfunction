@@ -92,9 +92,10 @@
         scoreboard objectives add UIPage dummy "UIのページ"
         scoreboard objectives add ShopPage dummy "店のページ"
         scoreboard objectives add ChangeClass trigger "転職用トリガー"
-        scoreboard objectives add HunterCrtTimer trigger "会心の極意用タイマー"
+        scoreboard objectives add HunterCrtTimer trigger "会心の極意タイマー"
         scoreboard objectives add BowMagic trigger "弓の魔導書用"
         scoreboard objectives add Oxygen dummy "酸素ゲージ"
+        scoreboard objectives add ShieldTimer dummy "シールドタイマー"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
@@ -184,3 +185,5 @@
             scoreboard objectives add ElementRank dummy "属性纏いレベル"
             scoreboard objectives add MaxOxygen dummy "最大酸素ゲージ"
             scoreboard objectives add GoldMultiplier dummy "ゴールドドロップ量増加"
+            scoreboard objectives add Shield dummy "シールド"
+            scoreboard objectives add MaxShield dummy "シールド最大値"

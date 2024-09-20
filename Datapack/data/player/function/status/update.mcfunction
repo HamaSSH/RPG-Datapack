@@ -28,6 +28,7 @@
         scoreboard players set @s ElementRank 0
         scoreboard players set @s MaxOxygen 100
         scoreboard players set @s GoldMultiplier 100
+        scoreboard players set @s MaxShield 0
 
 # ⓶補正ステータス
     scoreboard players reset @s BonusHP
@@ -113,6 +114,7 @@
         execute if score @s MaxArrowLC matches 3.. run scoreboard players set @s MaxArrowLC 3
         execute if score @s Multishot matches 2.. run scoreboard players set @s Multishot 2
         execute if score @s ElementRank matches 3.. run scoreboard players set @s ElementRank 3
+        execute if score @s MaxShield matches 3.. run scoreboard players set @s MaxShield 3
 
 # ⓻最小値を下回らないよう調整
     execute if score @s HPMax matches ..5 run scoreboard players set @s HPMax 5
