@@ -1,5 +1,5 @@
 #> item:zukan/fish/init
-# 魚図鑑の初期化
+# 釣り図鑑の初期化
 
 data modify storage global: fish.CMD set value 6000
 data modify storage global: fish.zukan_ver set value 0
