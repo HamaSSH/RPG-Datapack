@@ -57,6 +57,9 @@
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:item_name set from storage ui: Result.display.Name
     data modify storage ui: NewItems[{Slot:10b}].components.minecraft:lore set from storage ui: Result.display.Lore
 
+# 最大強化時ページを戻す
+    execute if score $ItemGrade Temporary matches 3 run scoreboard players set @s UIPage 0
+
 # 演出
     playsound block.anvil.place master @a ~ ~ ~ 0.3 1.5
     playsound block.anvil.destroy master @a ~ ~ ~ 0.3 0.7
