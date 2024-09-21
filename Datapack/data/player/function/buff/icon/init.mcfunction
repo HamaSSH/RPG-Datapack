@@ -18,7 +18,13 @@
     execute store result score $StatusAmplifier Temporary run data get storage player: buff.amplifier
     execute if score $StatusAmplifier Temporary matches 0.. run data modify storage player: buff.sign set value "E300"
     execute if score $StatusAmplifier Temporary matches ..-1 run data modify storage player: buff.sign set value "E301"
-    scoreboard players reset $StatusAmplifier Temporary
+
+# バフかデバフかの決定
+    execute if score $StatusAmplifier Temporary matches 0.. run data modify storage player: buff.type set value "positive"
+    execute if score $StatusAmplifier Temporary matches ..-1 run data modify storage player: buff.type set value "negative"
 
 # バフアイコンの初期化
     function player:buff/icon/set with storage player: buff
+
+# リセット
+    scoreboard players reset $StatusAmplifier Temporary
