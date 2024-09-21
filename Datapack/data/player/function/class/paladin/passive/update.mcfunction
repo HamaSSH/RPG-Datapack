@@ -5,7 +5,7 @@
     execute if predicate player:class/weapon/paladin run function player:class/paladin/passive/weapon
 
 # リファイン「受けるバフの強化＋デバフ弱化」
-    execute if score @s PassiveSkill1 matches 1.. run function player:class/paladin/passive/skill1/_
+    # バフを受ける際の処理
 
 # スペルスラスト「物理攻撃に追加魔法ダメージ」
     execute if score @s PassiveSkill2 matches 1.. run function player:class/paladin/passive/skill2/_
