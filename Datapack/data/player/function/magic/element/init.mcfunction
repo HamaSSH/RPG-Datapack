@@ -9,6 +9,7 @@ advancement grant @s only asset:tips/element
     scoreboard players operation @s ElementTimer = $ElementDuration Temporary
 
 # バフの付与
+    tag @s add IsBuffed
     data modify storage player: NewBuff set value [{amplifier:0}]
     data modify storage player: NewBuff[0].element set from storage player: magic.element
     execute store result storage player: NewBuff[0].duration int 1 run scoreboard players get $ElementDuration Temporary

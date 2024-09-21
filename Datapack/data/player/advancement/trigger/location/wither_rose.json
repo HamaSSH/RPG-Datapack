@@ -3,7 +3,7 @@
         "requirement": {
             "trigger": "enter_block",
             "conditions": {
-                "block": "wither_rose"
+                "block": "cornflower"
             }
         }
     },

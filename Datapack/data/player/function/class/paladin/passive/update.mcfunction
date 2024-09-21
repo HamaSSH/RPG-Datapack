@@ -14,4 +14,4 @@
     execute if score @s PassiveSkill3 matches 1.. run function player:class/paladin/passive/skill3/_
 
 # エンハンスメント「バフを受けている間ステータスＵＰ」
-    execute if score @s PassiveSkill4 matches 1.. run function player:class/paladin/passive/skill4/_
+    execute if entity @s[tag=IsBuffed] if score @s PassiveSkill4 matches 1.. run function player:class/paladin/passive/skill4/_
