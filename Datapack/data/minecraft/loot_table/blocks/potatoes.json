@@ -1,0 +1,67 @@
+{
+    "type": "block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1029"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1029",
+                    "functions": [
+                        {
+                            "enchantment": "fortune",
+                            "formula": "binomial_with_bonus_count",
+                            "function": "apply_bonus",
+                            "parameters": {
+                                "extra": 3,
+                                "probability": 0.5714286
+                            }
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "block_state_property",
+                    "block": "potatoes",
+                    "properties": {
+                        "age": "7"
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/1080",
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.06
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "block_state_property",
+                    "block": "potatoes",
+                    "properties": {
+                        "age": "7"
+                    }
+                }
+            ]
+        }
+    ]
+}
