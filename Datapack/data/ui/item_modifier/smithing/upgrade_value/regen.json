@@ -1,0 +1,124 @@
+[
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "nbt": "SingleBonus.icon",
+                    "storage": "ui:",
+                    "color": "white",
+                    "italic": false,
+                    "interpret": true
+                },
+                [
+                    {
+                        "nbt": "SingleBonus.text",
+                        "storage": "ui:",
+                        "color": "#E0E0E0"
+                    },
+                    ": "
+                ],
+                [
+                    {
+                        "nbt": "SingleBonus.sign",
+                        "storage": "ui:",
+                        "color": "#72FF5C"
+                    },
+                    {
+                        "nbt": "SingleBonus.int",
+                        "storage": "ui:"
+                    },
+                    ".",
+                    {
+                        "nbt": "SingleBonus.1d",
+                        "storage": "ui:"
+                    },
+                    {
+                        "nbt": "SingleBonus.2d",
+                        "storage": "ui:"
+                    },
+                    "/s"
+                ]
+            ]
+        ],
+        "mode": "append",
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$Amplifier"
+                    },
+                    "score": "Temporary"
+                },
+                "range": {
+                    "min": 0
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "nbt": "SingleBonus.icon",
+                    "storage": "ui:",
+                    "color": "white",
+                    "italic": false,
+                    "interpret": true
+                },
+                [
+                    {
+                        "nbt": "SingleBonus.text",
+                        "storage": "ui:",
+                        "color": "#E0E0E0"
+                    },
+                    ": "
+                ],
+                [
+                    {
+                        "nbt": "SingleBonus.sign",
+                        "storage": "ui:",
+                        "color": "#FF4D4D"
+                    },
+                    {
+                        "nbt": "SingleBonus.int",
+                        "storage": "ui:"
+                    },
+                    ".",
+                    {
+                        "nbt": "SingleBonus.1d",
+                        "storage": "ui:"
+                    },
+                    {
+                        "nbt": "SingleBonus.2d",
+                        "storage": "ui:"
+                    },
+                    "/s"
+                ]
+            ]
+        ],
+        "mode": "append",
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "$Amplifier"
+                    },
+                    "score": "Temporary"
+                },
+                "range": {
+                    "max": -1
+                }
+            }
+        ]
+    }
+]

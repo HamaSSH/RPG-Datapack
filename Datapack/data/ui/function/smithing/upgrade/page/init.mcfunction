@@ -9,6 +9,11 @@ data modify entity @s Items append from storage ui: NewItems[{Slot:10b}].compone
     execute if data storage ui: ItemData run function ui:smithing/upgrade/item/gold
     execute if score $UpgradeGold Temporary matches 1.. run item modify entity @s container.15 ui:smithing/upgrade_gold
 
+# 強化値の表示
+    item modify entity @s container.15 ui:smithing/upgrade_value/line
+    function ui:smithing/upgrade/item/value/_
+    item modify entity @s container.15 ui:smithing/upgrade_value/line
+
 # リセット
     scoreboard players reset $ItemRarity Temporary
     scoreboard players reset $ItemGrade Temporary
