@@ -1,4 +1,4 @@
-#> ui:smithing/upgrade/item/bonus_status/regen/_
+#> ui:smithing/upgrade/item/value/regen
 # リジェネレーション用のデータ生成
 
 # 整数部分
@@ -14,5 +14,5 @@
     data modify storage ui: SingleBonus.2d set string storage ui: SingleBonus.value -1
     execute if data storage ui: SingleBonus{2d:"0"} run data modify storage ui: SingleBonus.2d set value ""
 
-# データの適用
-    execute unless data storage ui: Singlebonus{value:0} run function ui:smithing/upgrade/item/bonus_status/regen/apply with storage ui: SingleBonus
+# loreの適用
+    item modify entity @s container.15 ui:smithing/upgrade_value/regen

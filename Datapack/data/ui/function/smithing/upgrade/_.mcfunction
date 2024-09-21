@@ -25,6 +25,19 @@
     execute store result storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity int 1 run scoreboard players get $ItemRarity Temporary
 
 # アイテムの強化
+    # base_bonusの強化
+        execute if data storage ui: ItemData.base_bonus[] run function ui:smithing/upgrade/item/bonus_status/base with storage ui: ItemData.base_bonus[0]
+        data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.base_bonus set from storage ui: ItemData.new_base_bonus
+    # base_bonusとcombine_bonusを足し合わせる
+        data modify storage ui: ItemData.new_bonus set value [{status:"HP",value:0},{status:"HPR",value:0},{status:"MP",value:0},{status:"MPR",value:0},{status:"STR",value:0},{status:"INT",value:0},{status:"DEX",value:0},{status:"DEF",value:0},{status:"AGI",value:0},{status:"CRT",value:0},{status:"LUK",value:0}]
+        execute if data storage ui: ItemData.new_base_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_base with storage ui: ItemData.new_base_bonus[0]
+        execute if data storage ui: ItemData.combine_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_combine with storage ui: ItemData.combine_bonus[0]
+        data remove storage ui: ItemData.new_bonus[{value:0}]
+    # bonusに代入/確定
+        data modify storage ui: ItemData.bonus set from storage ui: ItemData.new_bonus
+        data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.bonus set from storage ui: ItemData.bonus
+
+# bonusをもとにlore作成
     execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/bonus_status/_
 
 # 実績達成検知

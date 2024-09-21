@@ -28,9 +28,9 @@
     execute if data storage ui: SingleBonus{status:"LUK"} run data modify storage ui: SingleBonus.text set value "幸運"
 
 # ステータスバフカラー
-    execute if score $Amplifier Temporary matches 0.. run data modify storage ui: SingleBonus.color set value "#72FF5C"
-    execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: SingleBonus.color set value "#FF4D4D"
+    execute if score $Value Temporary matches 0.. run data modify storage ui: SingleBonus.color set value "#72FF5C"
+    execute if score $Value Temporary matches ..-1 run data modify storage ui: SingleBonus.color set value "#FF4D4D"
 
 # ステータスバフの符号
-    execute if score $Amplifier Temporary matches 0.. run data modify storage ui: SingleBonus.sign set value "+"
-    execute if score $Amplifier Temporary matches ..-1 run data modify storage ui: SingleBonus.sign set value ""
+    execute if score $Value Temporary matches 0.. run data modify storage ui: SingleBonus.sign set value "+"
+    execute if score $Value Temporary matches ..-1 run data modify storage ui: SingleBonus.sign set value ""
