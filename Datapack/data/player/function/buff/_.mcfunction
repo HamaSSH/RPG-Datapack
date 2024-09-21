@@ -9,7 +9,7 @@
 # バフごとに管理用のMarkerを召喚＋プレイヤーのスコアを設定
     data modify storage player: buff set from storage player: NewBuff[0]
     execute if data storage player: NewBuff[0] run function player:buff/shaping
-    execute positioned 0.0 1.0 0.0 run function player:buff/init with storage player: buff
+    execute if data storage player: NewBuff[0] positioned 0.0 1.0 0.0 run function player:buff/init with storage player: buff
 
 # リセット
     tag @s remove BuffOwner

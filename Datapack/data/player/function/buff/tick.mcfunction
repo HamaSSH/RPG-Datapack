@@ -7,5 +7,6 @@
 
 # リセット
     execute on origin run tag @s remove BuffOwner
+    execute unless predicate lib:has_passenger on origin run tag @s add StatusUpdate
     execute unless predicate lib:has_passenger on origin run tag @s remove IsBuffed
     execute unless predicate lib:has_passenger run kill @s

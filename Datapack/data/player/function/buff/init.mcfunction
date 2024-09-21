@@ -20,6 +20,9 @@
     # (効果が強い|効果が逆)→既存のバフを上書き
         execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffOverwrite] run function player:buff/manager/remove
 
+    # duration:0→バフ付与なし
+        execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if data entity @s data.buff{duration:0} run kill @s
+
 # 新規バフの追加
     execute as @e[type=area_effect_cloud,tag=Target,distance=..0.01] on passengers if entity @s[tag=BuffInit] run function player:buff/manager/add
 
