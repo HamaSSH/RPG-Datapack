@@ -3,7 +3,7 @@
         "icon": {
             "id": "tropical_fish",
             "components": {
-                "custom_model_data": 1034
+                "custom_model_data": 1074
             }
         },
         "title": {
@@ -11,7 +11,7 @@
             "italic": false
         },
         "description": {
-            "text": "食べ物を全22種類\n食べてみる"
+            "text": "料理を全10種類\n食べてみる"
         },
         "frame": "task",
         "show_toast": true,

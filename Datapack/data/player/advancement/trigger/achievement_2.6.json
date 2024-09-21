@@ -1,75 +1,5 @@
 {
     "criteria": {
-        "1020": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1020
-                    }
-                }
-            }
-        },
-        "1025": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1025
-                    }
-                }
-            }
-        },
-        "1026": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1026
-                    }
-                }
-            }
-        },
-        "1027": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1027
-                    }
-                }
-            }
-        },
-        "1029": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1029
-                    }
-                }
-            }
-        },
-        "1030": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1030
-                    }
-                }
-            }
-        },
-        "1033": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1033
-                    }
-                }
-            }
-        },
         "1034": {
             "trigger": "minecraft:consume_item",
             "conditions": {
@@ -100,16 +30,6 @@
                 }
             }
         },
-        "1043": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1043
-                    }
-                }
-            }
-        },
         "1048": {
             "trigger": "minecraft:consume_item",
             "conditions": {
@@ -120,102 +40,62 @@
                 }
             }
         },
-        "1049": {
+        "1067": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1049
+                        "minecraft:custom_model_data": 1067
                     }
                 }
             }
         },
-        "1052": {
+        "1068": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1052
+                        "minecraft:custom_model_data": 1068
                     }
                 }
             }
         },
-        "1600": {
+        "1071": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1600
+                        "minecraft:custom_model_data": 1071
                     }
                 }
             }
         },
-        "1601": {
+        "1072": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1601
+                        "minecraft:custom_model_data": 1072
                     }
                 }
             }
         },
-        "1602": {
+        "1073": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1602
+                        "minecraft:custom_model_data": 1073
                     }
                 }
             }
         },
-        "1603": {
+        "1074": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1603
-                    }
-                }
-            }
-        },
-        "1604": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1604
-                    }
-                }
-            }
-        },
-        "1605": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1605
-                    }
-                }
-            }
-        },
-        "1606": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1606
-                    }
-                }
-            }
-        },
-        "1607": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "components": {
-                        "minecraft:custom_model_data": 1607
+                        "minecraft:custom_model_data": 1074
                     }
                 }
             }

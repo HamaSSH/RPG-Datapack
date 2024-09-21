@@ -1,14 +1,17 @@
 {
     "display": {
         "icon": {
-            "id": "spawner"
+            "id": "carrot_on_a_stick",
+            "components": {
+                "custom_model_data": 2410
+            }
         },
         "title": {
-            "text": "いのちだいじに\uF829",
+            "text": "圧倒的火力\uF82A\uF828",
             "italic": false
         },
         "description": {
-            "text": "ノーダメージで\nダンジョンを攻略する"
+            "text": "一撃500ダメージを与える"
         },
         "frame": "task",
         "show_toast": true,

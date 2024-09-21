@@ -8,6 +8,10 @@
         function lib:damage/blur
     function lib:damage/received
 
+# 実績達成チェック
+    execute if score @s DmgReceived matches 500.. as @p[tag=Attacker] run advancement grant @s only asset:achievement/3.4
+    execute if score @s DmgReceived matches 500.. as @a if score @s PlayerID = $PlayerID Temporary run advancement grant @s only asset:achievement/3.4
+
 # 被ダメージ時のトリガー(アセットのhurt処理呼び出し)
     data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
     function asset:mob/manager/hurt with storage asset:mob

@@ -11,8 +11,5 @@
 # 被ダメージ時ステータス更新(ファイターの闘志用)
     execute if predicate player:class/is_fighter run tag @s add StatusUpdate
 
-# ダンジョンノーダメチャレンジ失敗
-    tag @s remove 3.4.NoDamage
-
 # 死亡処理
     execute if score @s HP matches ..0 run function player:on_death/_

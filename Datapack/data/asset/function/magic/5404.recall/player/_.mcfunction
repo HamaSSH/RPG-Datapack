@@ -11,6 +11,4 @@ particle reverse_portal ~ ~0.1 ~ 0.8 0 0.8 0.03 25 force
 # テレポート完了
     execute if score @s 5404.Tick matches 120 as @a[distance=..4] positioned as 83a-51-1-0-2 run tp @s ~ ~ ~ -90 0
     execute if score @s 5404.Tick matches 120 positioned as 83a-51-1-0-2 run playsound block.beacon.power_select master @a ~ ~ ~ 0.2 1.1
-    execute if score @s 5404.Tick matches 120 run tag @s remove 3.4.NoDamage
-    execute if score @s 5404.Tick matches 120 run scoreboard players reset @s 3.5.DungeonTimer
     execute if score @s 5404.Tick matches 120 run scoreboard players reset @s 5404.Tick

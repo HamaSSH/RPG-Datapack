@@ -9,10 +9,6 @@ tag @s add Respawn
 # バフの削除
     function player:buff/reset
 
-# 実績チャレンジ失敗
-    tag @s remove 3.4.NoDamage
-    scoreboard players reset @s 3.5.DungeonTimer
-
 # 死亡メッセージ
     data modify storage player: DeathMessage.Damage set from storage lib: Damage
     function player:on_death/message/_

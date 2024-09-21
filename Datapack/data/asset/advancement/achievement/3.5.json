@@ -4,11 +4,11 @@
             "id": "trial_spawner"
         },
         "title": {
-            "text": "スピードランナー\uF829",
+            "text": "塔の覇者\uF829",
             "italic": false
         },
         "description": {
-            "text": "入ってから3:00以内に\nダンジョンを攻略する"
+            "text": "試練の塔を踏破する"
         },
         "frame": "task",
         "show_toast": true,
