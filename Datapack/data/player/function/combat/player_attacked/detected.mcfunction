@@ -9,6 +9,9 @@
 # 攻撃したプレイヤーを記録
     scoreboard players operation @s PlayerID = @p[tag=Attacker] PlayerID
 
+# パラディンのグレイスシールドチャージ
+    execute as @p[tag=Attacker] if score @s MaxShield matches 1.. unless score @s Shield = @s MaxShield run scoreboard players remove @s ShieldTimer 10
+
 # 属性纏い攻撃 #TODO: 矢による属性攻撃でプレイヤーのElementFireタグが着弾直前で切れたら効果なしになる
     scoreboard players operation $ElementRank Temporary = @p[tag=Attacker] ElementRank
     execute if entity @p[tag=Attacker,tag=Charged,tag=ElementFire] run function mob:on_hurt/element/fire/_

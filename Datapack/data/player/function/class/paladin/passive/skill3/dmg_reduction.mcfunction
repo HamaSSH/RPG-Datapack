@@ -6,3 +6,7 @@
 
 # Shieldスコアを減らす
     scoreboard players remove @s Shield 1
+
+# 演出
+    playsound minecraft:item.shield.block master @s ~ ~ ~ 0.15 1.2
+    playsound minecraft:entity.zombie.attack_wooden_door master @s ~ ~ ~ 0.15 1.6

@@ -3,6 +3,7 @@
 
 # モブに攻撃したプレイヤーをタグ付け
     tag @s add Attacker
+
 # 与ダメージ計算
     function player:combat/player_attacked/dmg_dealt
 
