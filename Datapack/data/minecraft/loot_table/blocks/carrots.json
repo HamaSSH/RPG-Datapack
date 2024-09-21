@@ -48,7 +48,7 @@
                     "conditions": [
                         {
                             "condition": "random_chance",
-                            "chance": 0.03
+                            "chance": 0.05
                         }
                     ]
                 }
@@ -56,7 +56,7 @@
             "conditions": [
                 {
                     "condition": "block_state_property",
-                    "block": "potatoes",
+                    "block": "carrots",
                     "properties": {
                         "age": "7"
                     }
