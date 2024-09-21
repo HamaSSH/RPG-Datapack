@@ -20,6 +20,7 @@
     execute if predicate player:class/is_fighter run function player:class/fighter/status/up
     execute if predicate player:class/is_paladin run function player:class/paladin/status/up
     execute if predicate player:class/is_wizard run function player:class/wizard/status/up
+    scoreboard players set @s PreviousMPRatio -1
     tag @s add StatusUpdate
     tag @s add MPFull
 
