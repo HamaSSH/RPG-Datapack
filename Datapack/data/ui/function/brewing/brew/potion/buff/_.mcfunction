@@ -18,3 +18,22 @@
 # 効果0のバフをストレージから削除
     data remove storage ui: PotionData.buff[{duration:0}]
     data remove storage ui: PotionData.buff[{amplifier:0}]
+
+# 総合レアリティに応じて効果UP
+    execute store result score $ItemRarity Temporary run data get storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.rarity
+    execute store result score $ItemRarity2 Temporary run data get storage ui: NewItems[{Slot:11b}].components.minecraft:custom_data.rarity
+    execute store result score $ItemRarity3 Temporary run data get storage ui: NewItems[{Slot:12b}].components.minecraft:custom_data.rarity
+    scoreboard players set $RarityBonus Temporary 7
+    scoreboard players operation $RarityBonus Temporary += $ItemRarity Temporary
+    scoreboard players operation $RarityBonus Temporary += $ItemRarity2 Temporary
+    scoreboard players operation $RarityBonus Temporary += $ItemRarity3 Temporary
+
+    function ui:brewing/brew/potion/buff/rarity_bonus
+    data modify storage ui: PotionData.buff set from storage ui: NewPotionData.buff
+
+# リセット
+    scoreboard players reset $ItemRarity Temporary
+    scoreboard players reset $ItemRarity2 Temporary
+    scoreboard players reset $ItemRarity3 Temporary
+    scoreboard players reset $RarityBonus Temporary
+    data remove storage ui: NewPotionData
