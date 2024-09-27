@@ -2,7 +2,7 @@
 # メニュー用アイテムの後処理
 
 # インベントリからあぶれたアイテムのkill
-    execute positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item{id:"minecraft:structure_void"} run kill @s
+    execute positioned ~ ~1.2 ~ as @e[type=item,distance=..2] if data entity @s Item{id:"minecraft:structure_void"} run kill @s
 
 # アイテムの再配置
     item replace entity @s player.crafting.0 with structure_void[custom_data={menu:"test0"},item_name='{"text":"現在の目的","color":"white","italic":false}']
