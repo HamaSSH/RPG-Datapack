@@ -7,9 +7,9 @@
     execute if score $NewValue Temporary matches 1..4 run scoreboard players add $NewValue Temporary 1
     execute if score $NewValue Temporary matches 2..5 run scoreboard players add $NewValue Temporary 1
     execute if score $NewValue Temporary matches 3..6 run scoreboard players add $NewValue Temporary 1
-    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 1 run scoreboard players operation $NewValue Temporary *= #13 Constant
-    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 2 run scoreboard players operation $NewValue Temporary *= #14 Constant
-    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 3 run scoreboard players operation $NewValue Temporary *= #15 Constant
+    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 1 run scoreboard players operation $NewValue Temporary *= #12 Constant
+    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 2 run scoreboard players operation $NewValue Temporary *= #13 Constant
+    execute if score $NewValue Temporary matches 1.. if score $ItemGrade Temporary matches 3 run scoreboard players operation $NewValue Temporary *= #14 Constant
     execute if score $NewValue Temporary matches ..0 if score $ItemGrade Temporary matches 1 run scoreboard players operation $NewValue Temporary *= #7 Constant
     execute if score $NewValue Temporary matches ..0 if score $ItemGrade Temporary matches 2 run scoreboard players operation $NewValue Temporary *= #5 Constant
     execute if score $NewValue Temporary matches ..0 if score $ItemGrade Temporary matches 3 run scoreboard players operation $NewValue Temporary *= #0 Constant
