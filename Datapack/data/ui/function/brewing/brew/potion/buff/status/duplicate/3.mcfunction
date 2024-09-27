@@ -21,6 +21,7 @@
     scoreboard players operation $Duration Temporary *= #20 Constant
     $execute store result storage ui: PotionData.buff[{status:"$(status)"}].amplifier int 1 run scoreboard players get $Amplifier Temporary
     $execute store result storage ui: PotionData.buff[{status:"$(status)"}].duration int 1 run scoreboard players get $Duration Temporary
+    $execute if score $Amplifier Temporary matches 0 run data remove storage ui: PotionData.buff[{status:"$(status)"}]
 
 # リセット
     scoreboard players reset $Amplifier Temporary
