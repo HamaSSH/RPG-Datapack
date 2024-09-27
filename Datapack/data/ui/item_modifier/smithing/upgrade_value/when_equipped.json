@@ -1,0 +1,26 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        [
+            {
+                "text": "",
+                "color": "dark_gray",
+                "italic": false,
+                "strikethrough": true
+            },
+            {
+                "text": "         "
+            },
+            {
+                "text": "\uF822装備時\uF822",
+                "color": "#777777",
+                "strikethrough": false
+            },
+            {
+                "text": "         "
+            }
+        ]
+    ],
+    "mode": "append"
+}

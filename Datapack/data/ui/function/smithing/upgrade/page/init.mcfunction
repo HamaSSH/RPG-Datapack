@@ -10,20 +10,32 @@ data modify entity @s Items append from storage ui: NewItems[{Slot:10b}].compone
     execute if score $UpgradeGold Temporary matches 1.. run item modify entity @s container.15 ui:smithing/upgrade_gold
 
 # 強化値の表示
-    item modify entity @s container.15 ui:smithing/upgrade_value/line
-    # アイテムの強化
-    # base_bonusの強化
-        execute if data storage ui: ItemData.base_bonus[] run function ui:smithing/upgrade/item/bonus_status/base with storage ui: ItemData.base_bonus[0]
-    # base_bonusとcombine_bonusを足し合わせる
-        data modify storage ui: ItemData.new_bonus set value [{status:"HP",value:0},{status:"HPR",value:0},{status:"MP",value:0},{status:"MPR",value:0},{status:"STR",value:0},{status:"INT",value:0},{status:"DEX",value:0},{status:"DEF",value:0},{status:"AGI",value:0},{status:"CRT",value:0},{status:"LUK",value:0}]
-        execute if data storage ui: ItemData.new_base_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_base with storage ui: ItemData.new_base_bonus[0]
-        execute if data storage ui: ItemData.combine_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_combine with storage ui: ItemData.combine_bonus[0]
-        data remove storage ui: ItemData.new_bonus[{value:0}]
-    # bonusに代入/確定
-        data modify storage ui: ItemData.bonus set from storage ui: ItemData.new_bonus
-    # bonusをもとにlore作成
-        execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/value/_
-    item modify entity @s container.15 ui:smithing/upgrade_value/line
+    # --装備時--のLore表示
+        item modify entity @s container.15 ui:smithing/upgrade_value/when_equipped
+    # 強化後のbonus値の表示
+        # base_bonusの強化
+            execute if data storage ui: ItemData.base_bonus[] run function ui:smithing/upgrade/item/bonus_status/base with storage ui: ItemData.base_bonus[0]
+        # base_bonusとcombine_bonusを足し合わせる
+            data modify storage ui: ItemData.new_bonus set value [{status:"HP",value:0},{status:"HPR",value:0},{status:"MP",value:0},{status:"MPR",value:0},{status:"STR",  value:0},{status:"INT",value:0},{status:"DEX",value:0},{status:"DEF",value:0},{status:"AGI",value:0},{status:"CRT",value:0},{status:"LUK",value:0}]
+            execute if data storage ui: ItemData.new_base_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_base with storage ui: ItemData.new_base_bonus[0]
+            execute if data storage ui: ItemData.combine_bonus[] run function ui:smithing/upgrade/item/bonus_status/add_combine with storage ui: ItemData.combine_bonus[0]
+            data remove storage ui: ItemData.new_bonus[{value:0}]
+        # bonusに代入/確定
+            data modify storage ui: ItemData.bonus set from storage ui: ItemData.new_bonus
+        # bonusをもとにlore作成
+            execute if data storage ui: ItemData.bonus[] run function ui:smithing/upgrade/item/value/_
+    # 区切りLore
+        item modify entity @s container.15 ui:smithing/upgrade_value/line
+    # レアリティ表示
+        execute store result score $ItemRarity Temporary run data get storage ui: ItemData.rarity
+        execute store result score $ItemGrade Temporary run data get storage ui: ItemData.grade
+        execute if score $ItemGrade Temporary matches 2 run scoreboard players add $ItemRarity Temporary 1
+        execute if score $ItemRarity Temporary matches 1 run data modify storage ui: ItemData.rarity_star set value '"\\uE150"'
+        execute if score $ItemRarity Temporary matches 2 run data modify storage ui: ItemData.rarity_star set value '"\\uE151"'
+        execute if score $ItemRarity Temporary matches 3 run data modify storage ui: ItemData.rarity_star set value '"\\uE152"'
+        execute if score $ItemRarity Temporary matches 4 run data modify storage ui: ItemData.rarity_star set value '"\\uE153"'
+        execute if score $ItemRarity Temporary matches 5.. run data modify storage ui: ItemData.rarity_star set value '"\\uE154"'
+        item modify entity @s container.15 ui:smithing/upgrade_value/rarity
 
 # リセット
     scoreboard players reset $ItemRarity Temporary

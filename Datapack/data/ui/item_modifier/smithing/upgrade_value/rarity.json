@@ -1,0 +1,27 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            "▸",
+            {
+                "nbt": "ItemData.item_group_name",
+                "storage": "ui:",
+                "interpret": true
+            },
+            "【",
+            {
+                "nbt": "ItemData.rarity_star",
+                "storage": "ui:",
+                "interpret": true
+            },
+            "】"
+        ]
+    ],
+    "mode": "append"
+}
