@@ -2,7 +2,7 @@
     {
     "function": "set_name",
     "entity": "this",
-    "name": [[{"text": "▾ステータスの表示","color": "#777777","italic": false}]]
+    "name": [[{"text": "▾ステータス確認","color": "#777777","italic": false}]]
     },
     {
         "function": "set_lore",

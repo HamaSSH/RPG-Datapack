@@ -5,10 +5,12 @@
     execute positioned ~ ~1.2 ~ as @e[type=item,distance=..2] if data entity @s Item{id:"minecraft:structure_void"} run kill @s
 
 # アイテムの再配置
-    item replace entity @s player.crafting.0 with structure_void[custom_data={menu:"test0"},item_name='{"text":"現在の目的","color":"white","italic":false}']
-    item replace entity @s player.crafting.1 with structure_void[custom_data={menu:"test1"},item_name='{"text":"メニュー２","color":"white","italic":false}']
-    item replace entity @s player.crafting.2 with structure_void[custom_data={menu:"test2"},item_name='{"text":"▸ステータスの表示","color":"white","italic":false}']
-    item replace entity @s player.crafting.3 with structure_void[custom_data={menu:"test3"},item_name='{"text":"▸パッシブスキルの表示","color":"white","italic":false}']
+    item replace entity @s player.crafting.0 with structure_void[custom_data={menu:"test0"},item_name='{"text":"▸ステータス確認","color":"white","italic":false}']
+    item replace entity @s player.crafting.1 with structure_void[custom_data={menu:"test1"},item_name='{"text":"▸パッシブスキル","color":"white","italic":false}']
+    item replace entity @s player.crafting.2 with structure_void[custom_data={menu:"test2"},item_name='{"text":"現在の目的","color":"white","italic":false}']
+    item replace entity @s player.crafting.3 with structure_void[custom_data={menu:"test3"},item_name='{"text":"リコール","color":"#6FE58D","italic":false}']
+    execute if entity @s[tag=MenuStatus] run function player:menu/clicked/0/update_status
+    execute if entity @s[tag=MenuPassive] run function player:menu/clicked/1/update_passive
 
 # オフハンド・カーソルの検知用アイテムをclear
     execute if items entity @s weapon.offhand structure_void run item replace entity @s weapon.offhand with air

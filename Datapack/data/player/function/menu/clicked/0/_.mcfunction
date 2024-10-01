@@ -1,8 +1,6 @@
 #> player:menu/clicked/0/_
 # スロットplayer.crafting.0
 
-say メニュー１！
-playsound ui.button.click master @s ~ ~ ~ 0.1 0.9
-
-# 検知用アイテムの更新処理
-    function player:menu/update
+# ステータス表示
+    execute if entity @s[tag=MenuStatus] run return run function player:menu/clicked/0/close_status
+    execute if entity @s[tag=!MenuStatus] run function player:menu/clicked/0/show_status

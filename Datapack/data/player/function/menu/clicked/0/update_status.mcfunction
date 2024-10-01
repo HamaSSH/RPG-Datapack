@@ -1,4 +1,4 @@
-#> player:menu/clicked/2/update_status
+#> player:menu/clicked/0/update_status
 # プレイヤーステータスLoreの更新
 
 tag @s remove MenuStatusUpdate
@@ -16,7 +16,7 @@ tag @s remove MenuStatusUpdate
     execute if score $MPRegenInt Temporary matches 1.. if score $MPRegenDec Temporary matches 1..9 run scoreboard players set $MPRegenDec10 Temporary 0
 
 # プレイヤーメニューのLore編集
-    item modify entity @s player.crafting.2 player:menu/status
+    item modify entity @s player.crafting.0 player:menu/status
 
 # リセット
     scoreboard players reset $HPRegenInt Temporary

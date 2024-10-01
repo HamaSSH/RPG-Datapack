@@ -6,4 +6,4 @@
 
 # リセット
     tag @s remove MenuStatus
-    # tag @s remove MenuPassive
+    tag @s remove MenuPassive
