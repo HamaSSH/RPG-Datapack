@@ -1,7 +1,7 @@
 [
     {
-    "function": "set_name",
-    "entity": "this",
-    "name": [[{"text": "▾パッシブスキル","color": "#777777","italic": false}]]
+        "function": "set_name",
+        "entity": "this",
+        "name": [[{"text": "▾パッシブスキル","color": "#777777","italic": false}]]
     }
 ]

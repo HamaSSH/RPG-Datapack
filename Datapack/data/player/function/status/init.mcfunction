@@ -45,6 +45,8 @@ scoreboard players set @s PassiveSkill1 0
 scoreboard players set @s PassiveSkill2 0
 scoreboard players set @s PassiveSkill3 0
 scoreboard players set @s PassiveSkill4 0
+scoreboard players set @s TaskID 0
+scoreboard players set @s TaskProgress 0
 function player:status/update
 
 ###################################

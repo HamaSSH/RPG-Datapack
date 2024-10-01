@@ -1,8 +1,8 @@
 [
     {
-    "function": "set_name",
-    "entity": "this",
-    "name": [[{"text": "▾ステータス確認","color": "#777777","italic": false}]]
+        "function": "set_name",
+        "entity": "this",
+        "name": [[{"text": "▾ステータス確認","color": "#777777","italic": false}]]
     },
     {
         "function": "set_lore",

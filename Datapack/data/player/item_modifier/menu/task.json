@@ -1,0 +1,34 @@
+[
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "nbt": "task.name",
+                    "storage": "player:",
+                    "interpret": true,
+                    "color": "white",
+                    "italic": false
+                },
+                " (",
+                {
+                    "score": {
+                        "name": "@s",
+                        "objective": "TaskProgress"
+                    },
+                    "color": "#FFEE59",
+                    "bold": true
+                },
+                "/",
+                {
+                    "nbt": "task.goal",
+                    "storage": "player:",
+                    "interpret": true
+                },
+                ")"
+            ]
+        ],
+        "mode": "replace_all"
+    }
+]

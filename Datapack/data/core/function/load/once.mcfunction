@@ -46,6 +46,7 @@
         scoreboard objectives add MobID dummy "モブID"
         scoreboard objectives add MobUUID dummy "モブUUID"
         scoreboard objectives add ItemUUID dummy "重複不可アイテムID"
+        scoreboard objectives add TaskID dummy "タスクID"
 
     # トリガー
         scoreboard objectives add Rejoin custom:leave_game "ワールドRejoin処理"
@@ -96,6 +97,7 @@
         scoreboard objectives add BowMagic trigger "弓の魔導書用"
         scoreboard objectives add Oxygen dummy "酸素ゲージ"
         scoreboard objectives add ShieldTimer dummy "シールドタイマー"
+        scoreboard objectives add TaskProgress dummy "タスク進捗度"
 
     # 基本ステータス
         scoreboard objectives add HP dummy "現在のHP"
