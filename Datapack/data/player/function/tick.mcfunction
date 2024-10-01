@@ -91,8 +91,8 @@
     execute if entity @s[tag=StatusUpdate] run function player:status/update
 
 # ステータス確認
-    execute if entity @s[tag=!CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run function player:status/ui
-    execute unless entity @s[tag=CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run tag @s remove CheckingStatus
+    # execute if entity @s[tag=!CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run function player:status/ui
+    # execute unless entity @s[tag=CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run tag @s remove CheckingStatus
 
 # プレイヤーメニュー
     function player:menu/_
