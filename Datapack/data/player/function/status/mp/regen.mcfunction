@@ -10,5 +10,8 @@
     scoreboard players operation $MPRegen Temporary *= #2000 Constant
     scoreboard players operation @s MPRTimer -= $MPRegen Temporary
 
+# プレイヤーメニューの更新
+    execute if entity @s[tag=MenuStatus] run tag @s add MenuStatusUpdate
+
 # リセット
     scoreboard players reset $MPRegen Temporary

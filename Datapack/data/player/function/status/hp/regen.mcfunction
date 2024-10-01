@@ -13,5 +13,8 @@
 # HP回復時ステータス更新(ファイターの闘志用)
     execute if predicate player:class/is_fighter run tag @s add StatusUpdate
 
+# プレイヤーメニューの更新
+    execute if entity @s[tag=MenuStatus] run tag @s add MenuStatusUpdate
+
 # リセット
     scoreboard players reset $HPRegen Temporary

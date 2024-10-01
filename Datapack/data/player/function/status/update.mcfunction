@@ -99,6 +99,8 @@
     scoreboard players operation @s LUK += @s BuffLUK
 
 # ⓺最大値を超えないよう調整
+    execute if score @s HP >= @s HPMax run scoreboard players operation @s HP = @s HPMax
+    execute if score @s MP >= @s MPMax run scoreboard players operation @s MP = @s MPMax
     execute if score @s HPMax matches 100000.. run function player:status/hp/max
     execute if score @s MPMax matches 100000.. run function player:status/mp/max
     execute if score @s DEF matches 999.. run function player:status/def/max
@@ -137,6 +139,10 @@
 # ⓽ステータス更新時HPMPをMAXにするか
     execute if entity @s[tag=HPFull] run scoreboard players operation @s HP = @s HPMax
     execute if entity @s[tag=MPFull] run scoreboard players operation @s MP = @s MPMax
+
+# ⓾プレイヤーメニューの更新
+    execute if entity @s[tag=MenuStatus] run tag @s add MenuStatusUpdate
+    # execute if entity @s[tag=MenuPassive] run function player:menu/clicked/3/update_passive
 
 # リセット
     data remove storage player: ItemData

@@ -36,9 +36,6 @@
     execute if score @s UsedBow matches 1.. run function player:combat/main/bow/used
     # execute positioned ~ ~1.2 ~ as @e[type=item,distance=..0.01] run function player:trigger/drop_item
 
-# プレイヤーメニュー
-    function player:menu/_
-
 # achievementのtick処理
     function asset:achievement/tick
 
@@ -96,6 +93,11 @@
 # ステータス確認
     execute if entity @s[tag=!CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run function player:status/ui
     execute unless entity @s[tag=CheckingStatus,predicate=lib:is_sneaking,x_rotation=-90] run tag @s remove CheckingStatus
+
+# プレイヤーメニュー
+    function player:menu/_
+    execute if entity @s[tag=MenuStatusUpdate] run function player:menu/clicked/2/update_status
+    # execute if entity @s[tag=MenuStatusPassive] run function player:menu/clicked/3/update_passive
 
 # リスポーン処理
     execute if entity @s[tag=Respawn] run function player:on_death/respawn
