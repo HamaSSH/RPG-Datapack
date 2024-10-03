@@ -14,6 +14,7 @@
     tag @s remove FirstTimeWizard
 
 # ステータス初期化
+    scoreboard players set @s PreviousMPRatio -1
     function player:status/init
 
 # 実績の初期化
