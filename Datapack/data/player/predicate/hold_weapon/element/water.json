@@ -5,7 +5,7 @@
         "equipment": {
             "mainhand": {
                 "predicates": {
-                    "custom_data": "{custom_enchant:\"water_element\"}"
+                    "custom_data": "{custom_enchant:{id:\"water_element\"}}"
                 }
             }
         }
