@@ -9,10 +9,10 @@
     item replace entity @s player.crafting.1 with structure_void[custom_data={menu:"test1"},item_name='{"text":"▸パッシブスキル","color":"white","italic":false}']
     item replace entity @s player.crafting.2 with structure_void[custom_data={menu:"test2"},item_name='{"text":"【現在のタスク】","color":"white","italic":false}']
     item replace entity @s player.crafting.3 with structure_void[custom_data={menu:"test3"},item_name='{"text":"リコール","color":"#6FE58D","italic":false}']
+    item modify entity @s player.crafting.3 player:menu/recall/lore
     execute if entity @s[tag=MenuStatus] run function player:menu/clicked/0/update_status
     execute if entity @s[tag=MenuPassive] run function player:menu/clicked/1/update_passive
-    execute if score @s TaskID matches 0.. run function player:menu/clicked/2/update
-    item modify entity @s player.crafting.3 player:menu/recall
+    execute if score @s TaskID matches 0.. run function player:menu/clicked/2/update_task
 
 # オフハンド・カーソルの検知用アイテムをclear
     execute if items entity @s weapon.offhand structure_void run item replace entity @s weapon.offhand with air

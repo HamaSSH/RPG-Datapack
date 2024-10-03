@@ -1,0 +1,116 @@
+[
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "#D8D8D8",
+                    "italic": false
+                },
+                {
+                    "text": "クリックで発動。詠唱後、"
+                }
+            ],
+            [
+                {
+                    "text": "",
+                    "color": "#D8D8D8",
+                    "italic": false
+                },
+                {
+                    "text": "スポーン地点にワープする。"
+                }
+            ]
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "dark_gray",
+                    "italic": false,
+                    "strikethrough": true
+                },
+                {
+                    "text": "                          "
+                }
+            ]
+        ],
+        "mode": "append"
+    },
+    {
+        "function": "set_lore",
+        "mode": "append",
+        "lore": [
+            [
+                {
+                    "text": "\uF823\uE102\uF823",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "消費ＭＰ: ",
+                    "color": "#B8C4E7"
+                },
+                {
+                    "text": "10"
+                }
+            ]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "mode": "append",
+        "lore": [
+            [
+                {
+                    "text": "\uF823\uE107\uF801\uF823",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "クールダウン: ",
+                    "color": "#E0E0E0"
+                },
+                {
+                    "text": "0.0s"
+                }
+            ]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "mode": "append",
+        "lore": [
+            {
+                "text": "                          ",
+                "color": "dark_gray",
+                "strikethrough": true
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "mode": "append",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "▸魔法"
+                },
+                {
+                    "text": "【\uE151】"
+                }
+            ]
+        ]
+    }
+]

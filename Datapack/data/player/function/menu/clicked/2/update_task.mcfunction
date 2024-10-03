@@ -1,4 +1,4 @@
-#> player:menu/clicked/2/update
+#> player:menu/clicked/2/update_task
 # 現在の目的の更新
 
 # タスクIDごとの内容

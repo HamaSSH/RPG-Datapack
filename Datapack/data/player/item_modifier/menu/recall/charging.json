@@ -1,0 +1,40 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "lore": [
+        [
+            {
+                "text": "",
+                "color": "#D8D8D8",
+                "italic": false
+            },
+            "クリックで",
+            {
+                "text": "中断。",
+                "color": "#FF4D4D"
+            },
+            "詠唱中..."
+
+        ],
+        [
+            {
+                "text": "",
+                "italic": false
+            },
+            {
+                "nbt": "recall.charge[0]",
+                "storage": "player:",
+                "interpret": true,
+                "color": "#3FEC6A"
+            },
+            {
+                "nbt": "recall.charge[1]",
+                "storage": "player:",
+                "interpret": true,
+                "color": "dark_gray"
+            }
+        ]
+    ],
+    "mode": "replace_section",
+    "offset": 0
+}

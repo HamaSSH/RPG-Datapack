@@ -98,6 +98,7 @@
     function player:menu/_
     execute if entity @s[tag=MenuStatusUpdate] run function player:menu/clicked/0/update_status
     execute if entity @s[tag=MenuPassiveUpdate] run function player:menu/clicked/1/update_passive
+    execute if entity @s[tag=MenuRecallUpdate] run function player:menu/clicked/3/update_timer
 
 # リスポーン処理
     execute if entity @s[tag=Respawn] run function player:on_death/respawn
