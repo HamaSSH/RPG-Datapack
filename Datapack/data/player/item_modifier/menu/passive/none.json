@@ -1,0 +1,32 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": [
+            [
+                {
+                    "text": "▾パッシブスキル",
+                    "color": "#777777",
+                    "italic": false
+                }
+            ]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "text": "職業を選択してスキルをＧＥＴ！"
+                }
+            ]
+        ],
+        "mode": "replace_all"
+    }
+]

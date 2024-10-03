@@ -4,10 +4,10 @@
 # 適正武器「杖・魔導書の装備時ステータスＵＰ」
     execute if predicate player:class/weapon/wizard run function player:class/wizard/passive/weapon
 
-# アクセラレート「魔導書のクールダウン低減」
+# アクセラレート「魔導書のクールダウンの低減」
     execute if score @s PassiveSkill1 matches 1.. run function player:class/wizard/passive/skill1/_
 
-# マナサージ「魔法ダメージをＭＰとして回復」
+# マナサージ「一部魔法ダメージをＭＰとして回復」
     execute if score @s PassiveSkill2 matches 1.. run function player:class/wizard/passive/skill2/_
 
 # エレメントフォーカス「属性纏い概念の強化」

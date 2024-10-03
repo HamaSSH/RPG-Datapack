@@ -7,13 +7,13 @@
     {
         "function": "set_lore",
         "entity": "this",
-        "lore": [[{"text": "","color": "white","italic": false},{"selector":"@s"},"\uF826",{"text":"Lv.\uF821","color":"#E0E0E0"},{"score":{"name":"@s","objective":"LVL"},"bold":true}]],
+        "lore": [[""],[{"text": "\uE302\uF822","color": "white","italic": false},{"selector":"@s"},"\uF826",{"text":"Lv.\uF821","color":"#E0E0E0"},{"score":{"name":"@s","objective":"LVL"},"bold":true},"\uF824\uE303"]],
         "mode": "replace_all"
     },
     {
         "function": "set_lore",
         "entity": "this",
-        "lore": [[{"text": "                                  ","color":"gray","strikethrough":true}]],
+        "lore": [[{"text": "","color":"#808080","strikethrough":true}]],
         "mode": "append"
     },
     {
@@ -31,7 +31,7 @@
     {
         "function": "set_lore",
         "entity": "this",
-        "lore": [[{"text": "                                  ","color":"gray","strikethrough":true}]],
+        "lore": [[{"text": "","color":"#808080","strikethrough":true}]],
         "mode": "append"
     },
     {
@@ -49,7 +49,7 @@
     {
         "function": "set_lore",
         "entity": "this",
-        "lore": [[{"text": "\uE106\uF802▸","color": "white","italic": false},{"text": "器用: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"DEX"},"bold":true},"\uF826",{"text": "\uE109\uF802▸","color": "white","italic": false},{"text": "素早さ: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"AGI"},"bold":true}]],
+        "lore": [[{"text": "\uE106\uF802▸","color": "white","italic": false},{"text": "器用: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"DEX"},"bold":true},"\uF826",{"text": "\uE109\uF802▸","color": "white","italic": false},{"text": "素早さ: ","color": "#E0E0E0"},{"score":{"name":"@s","objective":"AGI"},"bold":true}],[""]],
         "mode": "append"
     }
 ]

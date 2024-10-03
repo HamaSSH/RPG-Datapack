@@ -7,10 +7,10 @@
 # リファイン「受けるバフの強化＋デバフ弱化」
     # バフを受ける際の処理
 
-# スペルスラスト「物理攻撃に追加魔法ダメージ」
+# スペルスラスト「物理攻撃で追加魔法ダメージを与える」
     execute if score @s PassiveSkill2 matches 1.. run function player:class/paladin/passive/skill2/_
 
-# グレイスシールド「被ダメージを低減する盾をチャージ」
+# グレイスシールド「被ダメージを半減する盾をチャージ」
     execute if score @s PassiveSkill3 matches 1.. run function player:class/paladin/passive/skill3/_
 
 # エンハンスメント「バフを受けている間ステータスＵＰ」

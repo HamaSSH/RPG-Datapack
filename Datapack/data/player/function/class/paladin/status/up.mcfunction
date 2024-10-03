@@ -66,12 +66,12 @@
         execute if score @s LVL matches 20 run scoreboard players set @s PassiveSkill1 2
         execute if score @s LVL matches 35 run scoreboard players set @s PassiveSkill1 3
         execute if score @s LVL matches 50 run scoreboard players set @s PassiveSkill1 4
-    # スペルスラスト「物理攻撃に追加魔法ダメージ」
+    # スペルスラスト「物理攻撃で追加魔法ダメージを与える」
         execute if score @s LVL matches 10 run scoreboard players set @s PassiveSkill2 1
         execute if score @s LVL matches 25 run scoreboard players set @s PassiveSkill2 2
         execute if score @s LVL matches 40 run scoreboard players set @s PassiveSkill2 3
         execute if score @s LVL matches 50 run scoreboard players set @s PassiveSkill2 4
-    # グレイスシールド「被ダメージを低減する盾をチャージ」
+    # グレイスシールド「被ダメージを半減する盾をチャージ」
         execute if score @s LVL matches 15 run scoreboard players set @s PassiveSkill3 1
         execute if score @s LVL matches 30 run scoreboard players set @s PassiveSkill3 2
         execute if score @s LVL matches 40 run scoreboard players set @s PassiveSkill3 3

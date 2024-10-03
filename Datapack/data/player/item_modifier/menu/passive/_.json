@@ -1,0 +1,32 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": [[{"text": "▾パッシブスキル","color": "#777777","italic": false}]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [[""],[{"nbt": "menu.color","storage": "player:","interpret": true},"《 ",{"nbt": "menu.passive1.name","storage": "player:","bold": true,"interpret": true},"\uF822",{"nbt": "menu.passive1.rank","storage": "player:","interpret": true}," 》 ",{"nbt": "menu.passive1.line","storage": "player:","interpret": true,"color": "#808080","strikethrough": true}],[{"text":"\uF821","color": "#E0E0E0","italic": false},{"nbt": "menu.passive1.desc","storage": "player:","interpret": true}],[""]],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [[{"nbt": "menu.color","storage": "player:","interpret": true},"《 ",{"nbt": "menu.passive2.name","storage": "player:","bold": true,"interpret": true},"\uF822",{"nbt": "menu.passive2.rank","storage": "player:","interpret": true}," 》 ",{"nbt": "menu.passive2.line","storage": "player:","interpret": true,"color": "#808080","strikethrough": true}],[{"text":"\uF821","color": "#E0E0E0","italic": false},{"nbt": "menu.passive2.desc","storage": "player:","interpret": true}],[""]],
+        "mode": "append"
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [[{"nbt": "menu.color","storage": "player:","interpret": true},"《 ",{"nbt": "menu.passive3.name","storage": "player:","bold": true,"interpret": true},"\uF822",{"nbt": "menu.passive3.rank","storage": "player:","interpret": true}," 》 ",{"nbt": "menu.passive3.line","storage": "player:","interpret": true,"color": "#808080","strikethrough": true}],[{"text":"\uF821","color": "#E0E0E0","italic": false},{"nbt": "menu.passive3.desc","storage": "player:","interpret": true}],[""]],
+        "mode": "append"
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [[{"nbt": "menu.color","storage": "player:","interpret": true},"《 ",{"nbt": "menu.passive4.name","storage": "player:","bold": true,"interpret": true},"\uF822",{"nbt": "menu.passive4.rank","storage": "player:","interpret": true}," 》 ",{"nbt": "menu.passive4.line","storage": "player:","interpret": true,"color": "#808080","strikethrough": true}],[{"text":"\uF821","color": "#E0E0E0","italic": false},{"nbt": "menu.passive4.desc","storage": "player:","interpret": true}],[""]],
+        "mode": "append"
+    }
+]
