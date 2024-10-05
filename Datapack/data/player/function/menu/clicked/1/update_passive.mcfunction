@@ -5,18 +5,18 @@ tag @s remove MenuPassiveUpdate
 tag @s add NoClass
 
 # 未取得時のパッシブ
-    data modify storage player: menu.passive1.name set value '"？？？"'
+    data modify storage player: menu.passive1.name set value '"\\uF822？？？"'
     data modify storage player: menu.passive1.desc set value '""'
-    data modify storage player: menu.passive1.line set value '"　　　　　　　　　 "'
-    data modify storage player: menu.passive2.name set value '"？？？"'
+    data modify storage player: menu.passive1.line set value '"　　　　　　　　　　　\\uF822"'
+    data modify storage player: menu.passive2.name set value '"\\uF822？？？"'
     data modify storage player: menu.passive2.desc set value '""'
-    data modify storage player: menu.passive2.line set value '"　　　　　　　　　 "'
-    data modify storage player: menu.passive3.name set value '"？？？"'
+    data modify storage player: menu.passive2.line set value '"　　　　　　　　　　　\\uF822"'
+    data modify storage player: menu.passive3.name set value '"\\uF822？？？"'
     data modify storage player: menu.passive3.desc set value '""'
-    data modify storage player: menu.passive3.line set value '"　　　　　　　　　 "'
-    data modify storage player: menu.passive4.name set value '"？？？"'
+    data modify storage player: menu.passive3.line set value '"　　　　　　　　　　　\\uF822"'
+    data modify storage player: menu.passive4.name set value '"\\uF822？？？"'
     data modify storage player: menu.passive4.desc set value '""'
-    data modify storage player: menu.passive4.line set value '"　　　　　　　　　 "'
+    data modify storage player: menu.passive4.line set value '"　　　　　　　　　　　\\uF822"'
 
 # 職業ごとの操作
     execute if predicate player:class/is_fighter run function player:menu/clicked/1/class/fighter
