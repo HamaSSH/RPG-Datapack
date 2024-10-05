@@ -13,6 +13,7 @@
     execute if entity @s[tag=MenuStatus] run function player:menu/clicked/0/update_status
     execute if entity @s[tag=MenuPassive] run function player:menu/clicked/1/update_passive
     execute if score @s TaskID matches 0.. run function player:menu/clicked/2/update_task
+    execute if score @s 5404.Tick matches 0.. run function player:menu/clicked/3/update_timer
 
 # オフハンド・カーソルの検知用アイテムをclear
     execute if items entity @s weapon.offhand structure_void run item replace entity @s weapon.offhand with air
