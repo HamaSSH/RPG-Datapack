@@ -5,6 +5,7 @@
     execute unless entity @s[tag=InitialSound] run tag @s add PlaysoundOnce
 
 # メニュー内でUIに関連するアイテムのみ音が鳴るように
+    execute on vehicle run data modify storage ui: ClassItems append from entity @s Items[{id:"minecraft:player_head"}]
     execute on vehicle run data modify storage ui: ClassItems append from entity @s Items[{components:{"minecraft:custom_data":{ui:{item_type:"blank"}}}}]
     execute store success storage ui: ClassChanged int 1 run data modify entity @s data.ClassItems set from storage ui: ClassItems
     execute unless data storage ui: {ClassChanged:1} run tag @s remove PlaysoundOnce
