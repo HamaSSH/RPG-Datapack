@@ -1,0 +1,19 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific": {
+            "type": "player",
+            "looking_at": {
+                "type": "mule",
+                "nbt": "{Tags:[\"BrewingMule\"]}",
+                "distance": {
+                    "absolute": {
+                        "min": 0,
+                        "max": 4.5
+                    }
+                }
+            }
+        }
+    }
+}

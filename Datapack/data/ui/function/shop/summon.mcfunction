@@ -1,6 +1,8 @@
 #> ui:shop/summon
 # 店UIの召喚
 
+tag @s add LookingAtUI
+
 # 店UIを村人と結び付ける
     execute anchored eyes positioned ^ ^ ^ run function ui:shop/get_npc
 

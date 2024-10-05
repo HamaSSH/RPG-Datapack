@@ -23,3 +23,7 @@
 # エンダーチェストを開いたことの検知
     execute as @a if score @s OpenEnderchest matches 1.. run function ui:enderchest/open
     execute as @a if entity @s[tag=UsingUI,tag=UsingEnderchest] run function ui:enderchest/tick
+
+# UIブロックを見ていない場合はメニューkill
+    execute as @a[tag=LookingAtUI] at @s positioned ~ ~1.1 ~ run function ui:not_looking
+    tag @a remove LookingAtUI

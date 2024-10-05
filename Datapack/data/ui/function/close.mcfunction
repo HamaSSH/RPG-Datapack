@@ -14,8 +14,8 @@
     execute as @e[type=interaction,tag=UIInteraction,distance=..0.01] run function ui:cleanup
 
 # 職業変更書見台
-    execute if entity @s[tag=ClassLectern] run trigger ChangeClass set -1
-    execute if entity @s[tag=ClassLectern] run tag @s remove ClassLectern
+    # execute if entity @s[tag=ClassLectern] run trigger ChangeClass set -1
+    # execute if entity @s[tag=ClassLectern] run tag @s remove ClassLectern
 
 # リセット
     tag @s remove UsingUI
