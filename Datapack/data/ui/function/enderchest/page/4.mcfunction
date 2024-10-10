@@ -18,7 +18,7 @@ function ui:enderchest/put_item {id:1704,slot:15}
 function ui:enderchest/put_item {id:1705,slot:18}
 function ui:enderchest/put_item {id:1706,slot:19}
 function ui:enderchest/put_item {id:1707,slot:20}
-function ui:enderchest/put_item {id:2101,slot:21}
-function ui:enderchest/put_item {id:2102,slot:22}
-function ui:enderchest/put_item {id:2103,slot:23}
-function ui:enderchest/put_item {id:2104,slot:24}
+function ui:enderchest/put_item {id:2201,slot:21}
+function ui:enderchest/put_item {id:2202,slot:22}
+function ui:enderchest/put_item {id:2203,slot:23}
+function ui:enderchest/put_item {id:2204,slot:24}

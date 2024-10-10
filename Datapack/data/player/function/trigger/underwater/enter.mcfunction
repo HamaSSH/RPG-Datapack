@@ -4,4 +4,4 @@
 tag @s add Underwater
 
 # 内部的な酸素ゲージは減らないようにattributeを設定
-    attribute @s generic.oxygen_bonus base set 1024
+    attribute @s oxygen_bonus base set 1024

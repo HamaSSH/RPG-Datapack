@@ -5,7 +5,7 @@
     clear @s structure_void
     execute as @e[type=item] if data entity @s Item{id:"minecraft:structure_void"} run kill @s
 
-# generic.movement_speedの再設定
+# movement_speedの再設定
     function player:status/agi/movement_speed/_
 
 # リセット

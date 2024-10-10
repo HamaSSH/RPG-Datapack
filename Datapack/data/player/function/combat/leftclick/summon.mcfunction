@@ -13,8 +13,8 @@ tag @s add CanLeftClick
     execute anchored eyes positioned ^ ^ ^ if block ~ ~ ~ #lib:air if entity @s[tag=CanLeftClick] run function player:combat/leftclick/outside_block
 
 # NoCollisionのブロック内にいる場合
-    execute anchored eyes positioned ^ ^ ^ unless block ~ ~ ~ #lib:air if entity @s[tag=CanLeftClick] run summon vex ~ ~-0.6 ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],attributes:[{id:"generic.max_health",base:1024}]}
-    execute if block ~ ~ ~ #lib:no_collision if entity @s[tag=CanLeftClick] run summon vex ~ ~ ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],attributes:[{id:"generic.max_health",base:1024}]}
+    execute anchored eyes positioned ^ ^ ^ unless block ~ ~ ~ #lib:air if entity @s[tag=CanLeftClick] run summon vex ~ ~-0.6 ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],attributes:[{id:"max_health",base:1024}]}
+    execute if block ~ ~ ~ #lib:no_collision if entity @s[tag=CanLeftClick] run summon vex ~ ~ ~ {Silent:1b,NoAI:1b,Health:1024f,Team:"NoCollision",Tags:["AutoKill","LeftClick"],active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:10,show_particles:0b}],attributes:[{id:"max_health",base:1024}]}
 
 # リセット
     tag @s remove CanLeftClick

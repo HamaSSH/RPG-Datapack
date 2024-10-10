@@ -4,4 +4,4 @@
 tag @s remove Underwater
 
 # 水中検知が再度できるようにattributeリセット
-    attribute @s generic.oxygen_bonus base set 0
+    attribute @s oxygen_bonus base set 0

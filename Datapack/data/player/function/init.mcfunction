@@ -15,8 +15,8 @@
 
 # 初期ステータス
     team leave @s
-    attribute @s minecraft:generic.attack_speed base set 3.0
-    attribute @s minecraft:generic.scale base set 0.92448
+    attribute @s attack_speed base set 3.0
+    attribute @s scale base set 0.92448
     function player:status/init
 
 # 実績の初期化

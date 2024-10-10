@@ -2,7 +2,7 @@
 # モブデータの適用
 
 # 共通データの設定
-    attribute @s generic.max_health base set 1024
+    attribute @s max_health base set 1024
     data modify entity @s Health set value 1024f
 
 # Healthが0にならないよう
