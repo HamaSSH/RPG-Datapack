@@ -13,21 +13,21 @@
                 {
                     "#": "骨の杖",
                     "type": "loot_table",
-                    "value": "asset:item/2502",
+                    "value": "asset:item/2503",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "クリスタルの杖",
                     "type": "loot_table",
-                    "value": "asset:item/2506",
+                    "value": "asset:item/2510",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
                     "#": "ネザライトワンド",
                     "type": "loot_table",
-                    "value": "asset:item/2510",
+                    "value": "asset:item/2513",
                     "weight": 500,
                     "quality": 1
                 }

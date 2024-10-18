@@ -13,14 +13,14 @@
                 {
                     "#": "骨の弓",
                     "type": "loot_table",
-                    "value": "asset:item/2602",
+                    "value": "asset:item/2603",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "クリスタルの弓",
                     "type": "loot_table",
-                    "value": "asset:item/2606",
+                    "value": "asset:item/2610",
                     "weight": 1000,
                     "quality": 1
                 }

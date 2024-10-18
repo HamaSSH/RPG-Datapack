@@ -13,70 +13,70 @@
                 {
                     "#": "骨の槍",
                     "type": "loot_table",
-                    "value": "asset:item/2302",
+                    "value": "asset:item/2303",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "石の槍",
                     "type": "loot_table",
-                    "value": "asset:item/2303",
+                    "value": "asset:item/2302",
                     "weight": 3000,
                     "quality": -2
                 },
                 {
                     "#": "鉄の槍",
                     "type": "loot_table",
-                    "value": "asset:item/2304",
+                    "value": "asset:item/2308",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "金の槍",
                     "type": "loot_table",
-                    "value": "asset:item/2305",
+                    "value": "asset:item/2309",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "クリスタルの槍",
                     "type": "loot_table",
-                    "value": "asset:item/2306",
+                    "value": "asset:item/2310",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
                     "#": "銅の槍",
                     "type": "loot_table",
-                    "value": "asset:item/2307",
+                    "value": "asset:item/2304",
                     "weight": 2500,
                     "quality": -1
                 },
                 {
                     "#": "ダイヤモンドの槍",
                     "type": "loot_table",
-                    "value": "asset:item/2308",
+                    "value": "asset:item/2311",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
                     "#": "エメラルドの槍",
                     "type": "loot_table",
-                    "value": "asset:item/2309",
+                    "value": "asset:item/2312",
                     "weight": 1000,
                     "quality": 1
                 },
                 {
                     "#": "ネザライトスピア",
                     "type": "loot_table",
-                    "value": "asset:item/2310",
+                    "value": "asset:item/2313",
                     "weight": 500,
                     "quality": 1
                 },
                 {
                     "#": "トライデント",
                     "type": "loot_table",
-                    "value": "asset:item/2311",
+                    "value": "asset:item/2314",
                     "weight": 100,
                     "quality": 2
                 }

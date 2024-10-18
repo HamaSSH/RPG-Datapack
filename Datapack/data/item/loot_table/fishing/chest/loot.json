@@ -20,37 +20,37 @@
                 {
                     "#": "クリスタルの短剣",
                     "type": "loot_table",
-                    "value": "asset:item/2106"
+                    "value": "asset:item/2110"
                 },
                 {
                     "#": "ダイヤモンドの刀剣",
                     "type": "loot_table",
-                    "value": "asset:item/2208"
+                    "value": "asset:item/2211"
                 },
                 {
                     "#": "エメラルドの槍",
                     "type": "loot_table",
-                    "value": "asset:item/2309"
+                    "value": "asset:item/2312"
                 },
                 {
                     "#": "トライデント",
                     "type": "loot_table",
-                    "value": "asset:item/2311"
+                    "value": "asset:item/2314"
                 },
                 {
                     "#": "クリスタルのハンマー",
                     "type": "loot_table",
-                    "value": "asset:item/2406"
+                    "value": "asset:item/2410"
                 },
                 {
                     "#": "クリスタルの杖",
                     "type": "loot_table",
-                    "value": "asset:item/2506"
+                    "value": "asset:item/2510"
                 },
                 {
                     "#": "クリスタルの弓",
                     "type": "loot_table",
-                    "value": "asset:item/2606"
+                    "value": "asset:item/2610"
                 }
             ]
         }

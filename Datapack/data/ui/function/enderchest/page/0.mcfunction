@@ -15,10 +15,10 @@ function ui:enderchest/put_item {id:1011,slot:12}
 function ui:enderchest/put_item {id:1012,slot:13}
 function ui:enderchest/put_item {id:1013,slot:14}
 function ui:enderchest/put_item {id:1014,slot:15}
-function ui:enderchest/put_item {id:1020,slot:18}
-function ui:enderchest/put_item {id:1021,slot:19}
-function ui:enderchest/put_item {id:1022,slot:20}
-function ui:enderchest/put_item {id:1023,slot:21}
-function ui:enderchest/put_item {id:1024,slot:22}
-function ui:enderchest/put_item {id:1025,slot:23}
-function ui:enderchest/put_item {id:1026,slot:24}
+function ui:enderchest/put_item {id:1015,slot:18}
+function ui:enderchest/put_item {id:1016,slot:19}
+function ui:enderchest/put_item {id:1017,slot:20}
+function ui:enderchest/put_item {id:1018,slot:21}
+function ui:enderchest/put_item {id:1019,slot:22}
+function ui:enderchest/put_item {id:1020,slot:23}
+function ui:enderchest/put_item {id:1021,slot:24}

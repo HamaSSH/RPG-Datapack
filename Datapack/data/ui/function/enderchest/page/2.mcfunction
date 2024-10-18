@@ -1,11 +1,11 @@
 #> ui:enderchest/page/2
 # ページごとのアイテム設置
 
-function ui:enderchest/put_item {id:1049,slot:0}
-function ui:enderchest/put_item {id:1052,slot:1}
-function ui:enderchest/put_item {id:1055,slot:2}
-function ui:enderchest/put_item {id:1056,slot:3}
-function ui:enderchest/put_item {id:1057,slot:4}
+function ui:enderchest/put_item {id:1044,slot:0}
+function ui:enderchest/put_item {id:1048,slot:1}
+function ui:enderchest/put_item {id:1049,slot:2}
+function ui:enderchest/put_item {id:1052,slot:3}
+function ui:enderchest/put_item {id:1055,slot:4}
 function ui:enderchest/put_item {id:1058,slot:5}
 function ui:enderchest/put_item {id:1059,slot:6}
 function ui:enderchest/put_item {id:1061,slot:9}
