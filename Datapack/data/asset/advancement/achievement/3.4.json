@@ -3,7 +3,7 @@
         "icon": {
             "id": "carrot_on_a_stick",
             "components": {
-                "custom_model_data": 2410
+                "item_model": "resource:weapon/netherite_hammer"
             }
         },
         "title": {

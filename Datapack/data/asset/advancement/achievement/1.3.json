@@ -3,7 +3,7 @@
         "icon": {
             "id": "carrot_on_a_stick",
             "components": {
-                "custom_model_data": 5101
+                "item_model": "resource:magic/fire_ball"
             }
         },
         "title": {

@@ -2,7 +2,7 @@
 # advancement asset:achievement/0.1の達成
 
 advancement grant @s only asset:achievement/0.1
-execute positioned 295 -51 -350 run summon item_display ~ ~0.5 ~ {item:{components:{"custom_model_data":5001},id:"glass_bottle"}}
+execute positioned 295 -51 -350 run summon item_display ~ ~0.5 ~ {item:{components:{"item_model":"resource:custom/trophy/fishing"},id:"glass_bottle"}}
 
 # クリアメッセージ
     playsound resource:custom.levelup master @s ~ ~ ~ 0.3 1.3

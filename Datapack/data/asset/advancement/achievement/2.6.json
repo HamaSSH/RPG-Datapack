@@ -3,7 +3,7 @@
         "icon": {
             "id": "tropical_fish",
             "components": {
-                "custom_model_data": 1074
+                "item_model": "resource:loot/chicken_stew"
             }
         },
         "title": {

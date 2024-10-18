@@ -3,7 +3,7 @@
         "icon": {
             "id": "fishing_rod",
             "components": {
-                "custom_model_data": 4502
+                "item_model": "resource:tool/gorgeous_fishing_rod"
             }
         },
         "title": {
