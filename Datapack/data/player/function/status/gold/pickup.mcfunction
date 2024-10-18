@@ -2,9 +2,9 @@
 # ゴールドを取得した時の処理
 
 # Gold換算
-    execute store result score $1G Temporary run clear @s nautilus_shell[item_model="resource:other/gold/1",custom_data={item_type:"gold"}]
-    execute store result score $10G Temporary run clear @s nautilus_shell[item_model="resource:other/gold/10",custom_data={item_type:"gold"}]
-    execute store result score $100G Temporary run clear @s nautilus_shell[item_model="resource:other/gold/100",custom_data={item_type:"gold"}]
+    execute store result score $1G Temporary run clear @s nautilus_shell[item_model="resource:others/gold/1",custom_data={item_type:"gold"}]
+    execute store result score $10G Temporary run clear @s nautilus_shell[item_model="resource:others/gold/10",custom_data={item_type:"gold"}]
+    execute store result score $100G Temporary run clear @s nautilus_shell[item_model="resource:others/gold/100",custom_data={item_type:"gold"}]
     scoreboard players operation $10G Temporary *= #10 Constant
     scoreboard players operation $100G Temporary *= #100 Constant
 
