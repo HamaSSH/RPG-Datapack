@@ -35,8 +35,10 @@
                             }
                         },
                         {
-                            "function": "set_custom_model_data",
-                            "value": 1
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/1"
+                            }
                         },
                         {
                             "function": "set_custom_data",
@@ -81,8 +83,10 @@
                             }
                         },
                         {
-                            "function": "set_custom_model_data",
-                            "value": 10
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/10"
+                            }
                         },
                         {
                             "function": "set_custom_data",
@@ -127,8 +131,10 @@
                             }
                         },
                         {
-                            "function": "set_custom_model_data",
-                            "value": 100
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/100"
+                            }
                         },
                         {
                             "function": "set_custom_data",

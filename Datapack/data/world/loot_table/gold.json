@@ -32,8 +32,10 @@
                             }
                         },
                         {
-                            "function": "set_custom_model_data",
-                            "value": 10
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/10"
+                            }
                         },
                         {
                             "function": "set_custom_data",
@@ -42,7 +44,7 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:random_chance",
+                            "condition": "random_chance",
                             "chance": 0.2
                         }
                     ]
@@ -69,8 +71,10 @@
                             ]
                         },
                         {
-                            "function": "set_custom_model_data",
-                            "value": 100
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/100"
+                            }
                         },
                         {
                             "function": "set_custom_data",
@@ -79,7 +83,7 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:random_chance",
+                            "condition": "random_chance",
                             "chance": 0.1
                         }
                     ]
