@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"stick",components:{custom_model_data:10021}}]}]}
+    summon silverfish ~ ~ ~ {Silent:1b,Tags:["MobInit"],Passengers:[{id:"magma_cube",Tags:["Hitbox"]},{id:"armor_stand",Tags:["CustomModel"],ArmorItems:[{},{},{},{id:"nautilus_shell",components:{"item_model":"resource:custom/mob/skull"}}]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 2
