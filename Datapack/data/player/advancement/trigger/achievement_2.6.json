@@ -1,101 +1,131 @@
 {
     "criteria": {
-        "1034": {
-            "trigger": "minecraft:consume_item",
+        "cooked_cod": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1034
+                        "item_model": "cooked_cod"
                     }
                 }
             }
         },
-        "1041": {
-            "trigger": "minecraft:consume_item",
+        "vegetable_soup": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1041
+                        "item_model": "resource:vegetable_soup"
                     }
                 }
             }
         },
-        "1042": {
-            "trigger": "minecraft:consume_item",
+        "bread": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1042
+                        "item_model": "bread"
                     }
                 }
             }
         },
-        "1048": {
-            "trigger": "minecraft:consume_item",
+        "cookie": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1048
+                        "item_model": "cookie"
                     }
                 }
             }
         },
-        "1067": {
-            "trigger": "minecraft:consume_item",
+        "honey_apple": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1067
+                        "item_model": "resource:honey_apple"
                     }
                 }
             }
         },
-        "1068": {
-            "trigger": "minecraft:consume_item",
+        "chicken_stew": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1068
+                        "item_model": "resource:chicken_stew"
                     }
                 }
             }
         },
-        "1071": {
-            "trigger": "minecraft:consume_item",
+        "chocolate_cookie": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1071
+                        "item_model": "resource:chocolate_cookie"
                     }
                 }
             }
         },
-        "1072": {
-            "trigger": "minecraft:consume_item",
+        "frozen_berries": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1072
+                        "item_model": "resource:frozen_berries"
                     }
                 }
             }
         },
-        "1073": {
-            "trigger": "minecraft:consume_item",
+        "grilled_steak": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1073
+                        "item_model": "resource:grilled_steak"
                     }
                 }
             }
         },
-        "1074": {
-            "trigger": "minecraft:consume_item",
+        "berry_cake": {
+            "trigger": "consume_item",
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_model_data": 1074
+                        "item_model": "resource:berry_cake"
+                    }
+                }
+            }
+        },
+        "spoiled_meal": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "item_model": "resource:spoiled_meal"
+                    }
+                }
+            }
+        },
+        "mushroom_soup": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "item_model": "resource:mushroom_soup"
+                    }
+                }
+            }
+        },
+        "poisonous_stew": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "item_model": "resource:poisonous_stew"
                     }
                 }
             }
