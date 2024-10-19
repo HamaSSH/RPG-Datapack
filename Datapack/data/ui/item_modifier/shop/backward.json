@@ -1,7 +1,9 @@
 [
     {
-        "function": "set_custom_model_data",
-        "value": 3014
+        "function": "set_components",
+        "components": {
+            "item_model": "resource:others/shop_icon/left"
+        }
     },
     {
         "function": "set_custom_data",
