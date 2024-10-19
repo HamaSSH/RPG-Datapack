@@ -1,14 +1,54 @@
 [
     {
-        "function": "set_custom_model_data",
-        "value": {
-            "type": "score",
-            "target": {
-                "type": "fixed",
-                "name": "$PaladinCMD"
-            },
-            "score": "Temporary"
-        }
+        "function": "set_components",
+        "components": {
+            "item_model": "resource:others/emblem/paladin_0"
+        },
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "player:",
+                    "path": "class_icon.paladin"
+                },
+                "range": 0
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "item_model": "resource:others/emblem/paladin_1"
+        },
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "player:",
+                    "path": "class_icon.paladin"
+                },
+                "range": 1
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "item_model": "resource:others/emblem/paladin_2"
+        },
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "player:",
+                    "path": "class_icon.paladin"
+                },
+                "range": 2
+            }
+        ]
     },
     {
         "function": "set_name",
