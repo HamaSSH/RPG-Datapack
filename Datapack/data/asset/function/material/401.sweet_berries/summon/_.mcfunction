@@ -7,6 +7,7 @@
 
 # データの設定
     data modify storage asset:material Data.ID set value 401
+    data modify storage asset:material Data.item_model set value "resource:custom/material/sweet_berries_3"
     data modify storage asset:material Data.LootTable set value "asset:material/401.sweet_berries"
     data modify storage asset:material Data.HP set value 5
 

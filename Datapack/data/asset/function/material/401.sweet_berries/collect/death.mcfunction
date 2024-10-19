@@ -2,7 +2,7 @@
 # 死亡処理
 
 # 見た目の変更
-    function asset:material/401.sweet_berries/collect/stage/1
+    execute on passengers run data modify entity @s item.components.minecraft:item_model set value "resource:custom/material/sweet_berries_1"
 
 # ばらまく
     loot spawn ~ ~ ~ loot asset:material/401.sweet_berries

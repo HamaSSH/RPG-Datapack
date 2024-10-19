@@ -8,7 +8,7 @@
     data modify entity @s DeathLootTable set from storage asset:material LootTable
     data modify entity @s ArmorItems set value [{},{},{},{id:"glass_bottle"}]
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.HP set from storage asset:material Data.HP
-    data modify entity @s ArmorItems[3].components.minecraft:custom_data.MaxHP set from storage asset:material Data.HP
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.HPMax set from storage asset:material Data.HP
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.ID set from storage asset:material Data.ID
 
 # 見た目の設定
