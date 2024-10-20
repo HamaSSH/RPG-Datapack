@@ -34,8 +34,8 @@
 					"immune_blocks": "#lib:every_block",
 					"knockback_multiplier": {
 						"type": "linear",
-						"base": 0.010204082,
-						"per_level_above_first": 0.010204082
+						"base": 1.7802199,
+						"per_level_above_first": 1.7802199
 					}
 				},
 				"requirements": {
@@ -54,7 +54,7 @@
 								"condition": "entity_properties",
 								"entity": "this",
 								"predicate": {
-									"nbt": "{Tags:[\"v2_100\"]}"
+									"nbt": "{Tags:[\"h3_100\"]}"
 								}
 							}
 						}
@@ -78,8 +78,8 @@
 					"immune_blocks": "#lib:every_block",
 					"knockback_multiplier": {
 						"type": "linear",
-						"base": -0.010204082,
-						"per_level_above_first": -0.010204082
+						"base": -1.7802199,
+						"per_level_above_first": -1.7802199
 					}
 				},
 				"requirements": {
@@ -98,7 +98,7 @@
 								"condition": "entity_properties",
 								"entity": "this",
 								"predicate": {
-									"nbt": "{Tags:[\"v2_100\"]}"
+									"nbt": "{Tags:[\"h3_100\"]}"
 								}
 							}
 						}

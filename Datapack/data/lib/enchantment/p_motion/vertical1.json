@@ -16,39 +16,99 @@
 		"armor"
 	],
 	"effects": {
-		"minecraft:tick": [
+		"tick": [
 			{
 				"effect": {
-					"type": "minecraft:run_function",
-					"function": "lib:p_motion/enchant/vertical/others"
-				}
-			},
-			{
-				"effect": {
-					"type": "minecraft:explode",
+					"type": "explode",
 					"radius": 0.0001,
 					"block_interaction": "none",
 					"small_particle": {
-						"type": "minecraft:block",
-						"block_state": "minecraft:air"
+						"type": "block",
+						"block_state": "air"
 					},
 					"large_particle": {
-						"type": "minecraft:block",
-						"block_state": "minecraft:air"
+						"type": "block",
+						"block_state": "air"
 					},
-					"sound": "minecraft:entity.cod.ambient",
+					"sound": "entity.cod.ambient",
 					"immune_blocks": "#lib:every_block",
 					"knockback_multiplier": {
-						"type": "minecraft:linear",
-						"base": 1.0,
-						"per_level_above_first": 1.0
+						"type": "linear",
+						"base": 1.0204082,
+						"per_level_above_first": 1.0204082
 					}
+				},
+				"requirements": {
+					"condition": "all_of",
+					"terms": [
+						{
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"nbt": "{Tags:[\"+\"]}"
+							}
+						},
+						{
+							"condition": "inverted",
+							"term": {
+								"condition": "entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"v1_100\"]}"
+								}
+							}
+						}
+					]
 				}
 			},
 			{
 				"effect": {
-					"type": "minecraft:run_function",
-					"function": "lib:p_motion/enchant/vertical/kill"
+					"type": "explode",
+					"radius": 0.0001,
+					"block_interaction": "none",
+					"small_particle": {
+						"type": "block",
+						"block_state": "air"
+					},
+					"large_particle": {
+						"type": "block",
+						"block_state": "air"
+					},
+					"sound": "entity.cod.ambient",
+					"immune_blocks": "#lib:every_block",
+					"knockback_multiplier": {
+						"type": "linear",
+						"base": -1.0204082,
+						"per_level_above_first": -1.0204082
+					}
+				},
+				"requirements": {
+					"condition": "all_of",
+					"terms": [
+						{
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"nbt": "{Tags:[\"-\"]}"
+							}
+						},
+						{
+							"condition": "inverted",
+							"term": {
+								"condition": "entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"v1_100\"]}"
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "lib:p_motion/enchant/kill"
 				}
 			}
 		]

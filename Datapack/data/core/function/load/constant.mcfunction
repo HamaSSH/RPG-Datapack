@@ -43,4 +43,3 @@ scoreboard players set #3000 Constant 3000
 scoreboard players set #10000 Constant 10000
 scoreboard players set #60000 Constant 60000
 scoreboard players set #65536 Constant 65536
-scoreboard players set #1000000 Constant 1000000

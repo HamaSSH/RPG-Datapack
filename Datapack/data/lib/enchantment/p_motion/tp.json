@@ -1,0 +1,60 @@
+{
+	"description": "",
+	"supported_items": [],
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"tick": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "lib:p_motion/enchant/pre_tp"
+				},
+				"requirements": {
+					"condition": "inverted",
+					"term": {
+						"condition": "entity_properties",
+						"entity": "this",
+						"predicate": {
+							"nbt": "{Tags:[\"PreTP\"]}"
+						}
+					}
+				}
+			},
+            {
+				"effect": {
+					"type": "run_function",
+					"function": "lib:p_motion/enchant/post_tp"
+				},
+				"requirements": {
+					"condition": "inverted",
+					"term": {
+						"condition": "entity_properties",
+						"entity": "this",
+						"predicate": {
+							"nbt": "{Tags:[\"PostTP\"]}"
+						}
+					}
+				}
+			},
+            {
+                "effect": {
+					"type": "run_function",
+					"function": "lib:p_motion/enchant/kill"
+                }
+            }
+		]
+	}
+}
