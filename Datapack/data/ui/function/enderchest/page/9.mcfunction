@@ -1,24 +1,24 @@
 #> ui:enderchest/page/9
 # ページごとのアイテム設置
 
-function ui:enderchest/put_item {id:5303,slot:0}
-function ui:enderchest/put_item {id:5401,slot:1}
-function ui:enderchest/put_item {id:5402,slot:2}
-function ui:enderchest/put_item {id:5501,slot:3}
-function ui:enderchest/put_item {id:5502,slot:4}
-function ui:enderchest/put_item {id:5503,slot:5}
-function ui:enderchest/no_item {slot:6}
-function ui:enderchest/no_item {slot:9}
-function ui:enderchest/no_item {slot:10}
-function ui:enderchest/no_item {slot:11}
-function ui:enderchest/no_item {slot:12}
-function ui:enderchest/no_item {slot:13}
-function ui:enderchest/no_item {slot:14}
-function ui:enderchest/no_item {slot:15}
-function ui:enderchest/no_item {slot:18}
-function ui:enderchest/no_item {slot:19}
-function ui:enderchest/no_item {slot:20}
-function ui:enderchest/no_item {slot:21}
-function ui:enderchest/no_item {slot:22}
-function ui:enderchest/no_item {slot:23}
-function ui:enderchest/no_item {slot:24}
+function ui:enderchest/put_item {id:3204,slot:0}
+function ui:enderchest/put_item {id:3205,slot:1}
+function ui:enderchest/put_item {id:3301,slot:2}
+function ui:enderchest/put_item {id:3302,slot:3}
+function ui:enderchest/put_item {id:3303,slot:4}
+function ui:enderchest/put_item {id:3304,slot:5}
+function ui:enderchest/put_item {id:3305,slot:6}
+function ui:enderchest/put_item {id:3401,slot:9}
+function ui:enderchest/put_item {id:3402,slot:10}
+function ui:enderchest/put_item {id:3403,slot:11}
+function ui:enderchest/put_item {id:3404,slot:12}
+function ui:enderchest/put_item {id:3405,slot:13}
+function ui:enderchest/put_item {id:3602,slot:14}
+function ui:enderchest/put_item {id:3603,slot:15}
+function ui:enderchest/put_item {id:3604,slot:18}
+function ui:enderchest/put_item {id:4101,slot:19}
+function ui:enderchest/put_item {id:4102,slot:20}
+function ui:enderchest/put_item {id:4103,slot:21}
+function ui:enderchest/put_item {id:4304,slot:22}
+function ui:enderchest/put_item {id:4401,slot:23}
+function ui:enderchest/put_item {id:4501,slot:24}
