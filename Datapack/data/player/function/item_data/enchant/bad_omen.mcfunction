@@ -17,4 +17,4 @@
 
 # リセット
     scoreboard players reset $EnchantLUK Temporary
-    data remove storage player: Enchant[{id:bad_omen}]
+    data remove storage player: Enchant[{id:"bad_omen"}]

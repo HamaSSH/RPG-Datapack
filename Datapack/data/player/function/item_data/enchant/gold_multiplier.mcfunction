@@ -5,4 +5,4 @@
     scoreboard players add @s GoldMultiplier 25
 
 # リセット
-    data remove storage player: Enchant[{id:gold_multiplier}]
+    data remove storage player: Enchant[{id:"gold_multiplier"}]

@@ -7,4 +7,4 @@
     tag @s add FireProtEnch
 
 # リセット
-    data remove storage player: Enchant[{id:fire_protection}]
+    data remove storage player: Enchant[{id:"fire_protection"}]

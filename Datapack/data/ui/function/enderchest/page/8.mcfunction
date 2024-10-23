@@ -19,6 +19,6 @@ function ui:enderchest/put_item {id:3104,slot:18}
 function ui:enderchest/put_item {id:3105,slot:19}
 function ui:enderchest/put_item {id:3106,slot:20}
 function ui:enderchest/put_item {id:3107,slot:21}
-function ui:enderchest/put_item {id:3201,slot:22}
-function ui:enderchest/put_item {id:3202,slot:23}
-function ui:enderchest/put_item {id:3203,slot:24}
+function ui:enderchest/put_item {id:3108,slot:22}
+function ui:enderchest/put_item {id:3201,slot:23}
+function ui:enderchest/put_item {id:3202,slot:24}

@@ -5,4 +5,4 @@
     scoreboard players add @s HPDrain 13
 
 # リセット
-    data remove storage player: Enchant[{id:abyss_blessing}]
+    data remove storage player: Enchant[{id:"abyss_blessing"}]

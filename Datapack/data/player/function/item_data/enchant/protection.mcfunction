@@ -8,4 +8,4 @@
 
 # リセット
     scoreboard players reset $EnchantDEF Temporary
-    data remove storage player: Enchant[{id:protection}]
+    data remove storage player: Enchant[{id:"protection"}]

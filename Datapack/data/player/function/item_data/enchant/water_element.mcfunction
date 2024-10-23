@@ -2,4 +2,4 @@
 # 常時水纏い状態になる
 
 # リセット
-    data remove storage player: Enchant[{id:water_element}]
+    data remove storage player: Enchant[{id:"water_element"}]

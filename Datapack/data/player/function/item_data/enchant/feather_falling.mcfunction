@@ -5,4 +5,4 @@
     scoreboard players add @s FDR 250
 
 # リセット
-    data remove storage player: Enchant[{id:feather_falling}]
+    data remove storage player: Enchant[{id:"feather_falling"}]

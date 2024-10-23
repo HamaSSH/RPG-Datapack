@@ -1,5 +1,5 @@
 #> player:item_data/enchant/strength
-# 物理攻撃力を10％強化する
+# 物理攻撃力を少し強化する
 
 # 物理攻撃力の強化
     scoreboard players operation $EnchantSTR Temporary = @s STR
@@ -8,4 +8,4 @@
 
 # リセット
     scoreboard players reset $EnchantSTR Temporary
-    data remove storage player: Enchant[{id:strength}]
+    data remove storage player: Enchant[{id:"strength"}]
