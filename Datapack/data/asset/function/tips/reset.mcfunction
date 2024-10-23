@@ -16,5 +16,4 @@ advancement revoke @s only asset:tips/pickaxe
 advancement revoke @s only asset:tips/repair
 advancement revoke @s only asset:tips/shears
 advancement revoke @s only asset:tips/smithing
-advancement revoke @s only asset:tips/status_check
 advancement revoke @s only asset:tips/zukan
