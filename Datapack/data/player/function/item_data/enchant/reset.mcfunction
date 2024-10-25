@@ -1,6 +1,11 @@
 #> player:item_data/enchant/reset
 # エンチャント効果のリセット
 
+# attributeのリセット
+    execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s scale modifier remove jump_boost
+    execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s safe_fall_distance modifier remove jump_boost
+    execute unless data storage player: Enchant[{id:"small_scale"}] run attribute @s scale modifier remove small_scale
+
 # タグのリセット
     execute unless data storage player: Enchant[{id:"fire_protection"}] run tag @s remove FireProtEnch
     execute unless data storage player: Enchant[{id:"poison_immune"}] run tag @s remove PoisonImmune
