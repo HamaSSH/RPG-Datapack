@@ -2,7 +2,7 @@
 # エンチャント効果のリセット
 
 # attributeのリセット
-    execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s scale modifier remove jump_boost
+    execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s jump_strength modifier remove jump_boost
     execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s safe_fall_distance modifier remove jump_boost
     execute unless data storage player: Enchant[{id:"small_scale"}] run attribute @s scale modifier remove small_scale
 
