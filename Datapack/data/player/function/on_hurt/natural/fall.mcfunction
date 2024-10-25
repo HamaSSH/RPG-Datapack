@@ -7,7 +7,7 @@
     scoreboard players operation $FallDamage Temporary = @s FallDistance
     scoreboard players operation $FallDamage Temporary /= #40 Constant
     # 落下ダメージ耐性
-        execute if score @s FDR matches 1.. run function player:status/passive/fall_resistance/_
+        execute if score @s FallDamageRes matches 1.. run function player:status/passive/fall_resistance/_
     scoreboard players operation @s DmgReceived = $FallDamage Temporary
 
 # ダメージの適用

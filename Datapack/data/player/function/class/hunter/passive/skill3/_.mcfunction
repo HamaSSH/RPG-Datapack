@@ -7,7 +7,7 @@
     execute if score @s PassiveSkill3 matches 4 run scoreboard players set $AttackSpeed Temporary 600
     scoreboard players operation $AttackSpeed Temporary *= @s AGI
     scoreboard players operation $AttackSpeed Temporary /= #1000 Constant
-    scoreboard players operation @s AS += $AttackSpeed Temporary
+    scoreboard players operation @s AttackSpeed += $AttackSpeed Temporary
 
 # 素早さに応じて会心値補正 I=0.1倍｜II=0.15倍｜III=0.2倍｜IV=0.25倍
     scoreboard players operation $ClassCRT Temporary = @s AGI

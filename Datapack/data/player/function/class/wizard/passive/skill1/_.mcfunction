@@ -6,7 +6,7 @@
     execute if score @s PassiveSkill1 matches 2 run scoreboard players set $CooldownReduction Temporary 350
     execute if score @s PassiveSkill1 matches 3 run scoreboard players set $CooldownReduction Temporary 500
     execute if score @s PassiveSkill1 matches 4 run scoreboard players set $CooldownReduction Temporary 600
-    scoreboard players operation @s CDR += $CooldownReduction Temporary
+    scoreboard players operation @s CDReduction += $CooldownReduction Temporary
 
 # リセット
     scoreboard players reset $CooldownReduction Temporary

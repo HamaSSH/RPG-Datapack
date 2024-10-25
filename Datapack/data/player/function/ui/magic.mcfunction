@@ -5,7 +5,7 @@
     execute store result score $Cooldown Temporary run data get storage player: Inventory[{Slot:-106b}].components.minecraft:custom_data.magic.cooldown
     execute store result score $UsedTick Temporary run data get storage player: Inventory[{Slot:-106b}].components.minecraft:custom_data.magic.used_tick
     execute store result score $Time Temporary run time query gametime
-    execute if score @s CDR matches 1.. run function player:status/cd/reduction
+    execute if score @s CDReduction matches 1.. run function player:status/cd/reduction
     scoreboard players operation $Time Temporary -= $UsedTick Temporary
     scoreboard players operation $Time Temporary *= #15 Constant
     scoreboard players operation $Time Temporary /= $Cooldown Temporary

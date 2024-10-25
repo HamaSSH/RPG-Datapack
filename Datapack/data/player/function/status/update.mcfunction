@@ -14,10 +14,10 @@
     scoreboard players operation @s CRT = @s BaseCRT
     scoreboard players operation @s LUK = @s BaseLUK
     # 特殊ステータス
-        scoreboard players set @s CDR 0
-        scoreboard players set @s KBR 0
-        scoreboard players set @s FDR 0
-        scoreboard players set @s AS 0
+        scoreboard players set @s CDReduction 0
+        scoreboard players set @s KnockBackRes 0
+        scoreboard players set @s FallDamageRes 0
+        scoreboard players set @s AttackSpeed 0
         scoreboard players set @s GrimReset 0
         scoreboard players set @s ElementFocus 0
         scoreboard players set @s MaxArrowLC 0
@@ -108,10 +108,10 @@
     execute if score @s CRT matches 999.. run function player:status/crt/max
     execute if score @s LUK matches 999.. run function player:status/luk/max
     # 特殊ステータス
-        execute if score @s CDR matches 1000.. run scoreboard players set @s CDR 1000
-        execute if score @s KBR matches 1000.. run scoreboard players set @s KBR 1000
-        execute if score @s FDR matches 1000.. run scoreboard players set @s FDR 1000
-        execute if score @s AS matches 1000.. run scoreboard players set @s AS 1000
+        execute if score @s CDReduction matches 1000.. run scoreboard players set @s CDReduction 1000
+        execute if score @s KnockBackRes matches 1000.. run scoreboard players set @s KnockBackRes 1000
+        execute if score @s FallDamageRes matches 1000.. run scoreboard players set @s FallDamageRes 1000
+        execute if score @s AttackSpeed matches 1000.. run scoreboard players set @s AttackSpeed 1000
         execute if score @s GrimReset matches 100.. run scoreboard players set @s GrimReset 100
         execute if score @s MaxArrowLC matches 3.. run scoreboard players set @s MaxArrowLC 3
         execute if score @s Multishot matches 2.. run scoreboard players set @s Multishot 2
@@ -133,8 +133,8 @@
 # ⓼attributeの設定
     execute unless score @s PreviousAGI = @s AGI run function player:status/agi/_
     execute unless score @s PreviousLUK = @s LUK run function player:status/luk/generic_luck/_
-    execute unless score @s PreviousKBR = @s KBR run function player:status/passive/knockback_resistance/_
-    execute unless score @s PreviousAS = @s AS run function player:status/passive/attack_speed/_
+    execute unless score @s PreviousKBR = @s KnockBackRes run function player:status/passive/knockback_resistance/_
+    execute unless score @s PreviousAS = @s AttackSpeed run function player:status/passive/attack_speed/_
 
 # ⓽ステータス更新時HPMPをMAXにするか
     execute if entity @s[tag=HPFull] run scoreboard players operation @s HP = @s HPMax

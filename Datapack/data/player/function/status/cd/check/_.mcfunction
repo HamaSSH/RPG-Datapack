@@ -11,7 +11,7 @@
 
 # クールダウンの計算
     execute store result score $Cooldown Temporary run data get storage player: magic.cooldown
-    execute if score @s CDR matches 1.. run function player:status/cd/reduction
+    execute if score @s CDReduction matches 1.. run function player:status/cd/reduction
 
 # クールダウンが終わっているか
     execute if score $Time Temporary < $Cooldown Temporary run function player:status/cd/check/fail
