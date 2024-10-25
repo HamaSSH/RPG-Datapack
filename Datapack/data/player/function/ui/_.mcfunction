@@ -11,7 +11,7 @@
     data modify storage player:ui Quiver.LeftHanded set value '"\\uF829\\uF828\\uF821"'
     data modify storage player:ui arrow set value '""'
     data modify storage player:ui shield set value '""'
-    data modify storage player:ui oxygen set value '"\\uE70A"'
+    data modify storage player:ui oxygen set value '"\\uF82A\\uF828\\uF825"'
 
 # それぞれのUIの設定
     function player:ui/hp_bar
