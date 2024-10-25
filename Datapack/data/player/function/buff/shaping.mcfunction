@@ -15,6 +15,9 @@
     execute if data storage player: buff.effect run function player:buff/effect/icon/init
     execute unless data storage player: buff.effect run data modify storage player: buff.effect set value "-"
 
+# バフ/デバフ無効のタグ処理
+    execute if entity @s[tag=PoisonImmune] if data storage player: buff{effect:"poison"} run function player:buff/modifier/poison_immune
+
 # パラディンのバフ強化/デバフ弱化
     execute if predicate player:class/is_paladin if score @s PassiveSkill1 matches 1.. run function player:class/paladin/passive/skill1/_
 
