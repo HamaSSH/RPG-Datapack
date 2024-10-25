@@ -1,5 +1,5 @@
 #> player:item_data/enchant/protection
-# 防御力を5％強化する
+# 防御力を少し強化する
 
 # 防御力の強化
     scoreboard players operation $EnchantDEF Temporary = @s DEF
