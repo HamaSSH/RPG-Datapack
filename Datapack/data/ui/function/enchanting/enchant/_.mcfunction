@@ -8,6 +8,10 @@
     data modify storage ui: Material.lore set from storage ui: NewItems[{Slot:12b}].components.minecraft:lore
 
 # エンチャント上書き処理
+    # camera_overlay
+        data remove storage ui: NewItems[{Slot:10b}].components.minecraft:equippable.camera_overlay
+        execute if data storage ui: ItemData.weapon run data remove storage ui: NewItems[{Slot:10b}].components.minecraft:equippable.slot
+        execute if data storage ui: Material.custom_enchant{id:"bad_sight"} run function ui:enchanting/enchant/camera_overlay
     # custom_data
         data modify storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data.custom_enchant set from storage ui: Material.custom_enchant
     # enchantment_glint_override
