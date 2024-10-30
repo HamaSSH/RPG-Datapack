@@ -1,6 +1,8 @@
 #> ui:enchanting/enchant/_
 # エンチャント処理
 
+advancement grant @s only asset:tips/enchant_duplicate
+
 # 素材アイテムのエンチャント取得
     data modify storage ui: ItemData set from storage ui: NewItems[{Slot:10b}].components.minecraft:custom_data
     data modify storage ui: ItemData.lore set from storage ui: NewItems[{Slot:10b}].components.minecraft:lore

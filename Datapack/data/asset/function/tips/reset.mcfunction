@@ -9,9 +9,11 @@ advancement revoke @s only asset:tips/charge_attack
 advancement revoke @s only asset:tips/class
 advancement revoke @s only asset:tips/cooking
 advancement revoke @s only asset:tips/element
+advancement revoke @s only asset:tips/enchant_duplicate
 advancement revoke @s only asset:tips/enchanting
 advancement revoke @s only asset:tips/fishing_rod
 advancement revoke @s only asset:tips/magic
+advancement revoke @s only asset:tips/magic_cycle
 advancement revoke @s only asset:tips/pickaxe
 advancement revoke @s only asset:tips/repair
 advancement revoke @s only asset:tips/shears

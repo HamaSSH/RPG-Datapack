@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": "carrot_on_a_stick",
+                                    "predicates": {
+                                        "custom_data": "{weapon:\"wand\"}"
+                                    }
+                                },
+                                "offhand": {
+                                    "items": "carrot_on_a_stick",
+                                    "predicates": {
+                                        "custom_data": "{item_group_name:\"魔法\"}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "asset:tips/magic_cycle"
+    }
+}
