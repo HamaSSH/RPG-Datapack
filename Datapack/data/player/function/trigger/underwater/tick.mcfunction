@@ -2,7 +2,7 @@
 # 水中関連のtick処理
 
 # 酸素ゲージ操作
-    execute if entity @s[tag=!Underwater] unless score @s Oxygen = @s MaxOxygen run scoreboard players add @s Oxygen 2
+    execute if entity @s[tag=!Underwater] unless score @s Oxygen = @s MaxOxygen run function player:trigger/underwater/breathe
     execute if entity @s[tag=Underwater] run scoreboard players remove @s Oxygen 1
 
 # 最小値を下回る場合水没ダメージ

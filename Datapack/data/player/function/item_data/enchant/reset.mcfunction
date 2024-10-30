@@ -5,6 +5,8 @@
     execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s jump_strength modifier remove jump_boost
     execute unless data storage player: Enchant[{id:"jump_boost"}] run attribute @s safe_fall_distance modifier remove jump_boost
     execute unless data storage player: Enchant[{id:"small_scale"}] run attribute @s scale modifier remove small_scale
+    execute unless data storage player: Enchant[{id:"jellyfish_grace"}] run attribute @s water_movement_efficiency modifier remove jellyfish_grace
+    execute unless data storage player: Enchant[{id:"jellyfish_grace"}] run attribute @s submerged_mining_speed modifier remove jellyfish_grace
 
 # タグのリセット
     execute unless data storage player: Enchant[{id:"fire_protection"}] run tag @s remove FireProtEnch
