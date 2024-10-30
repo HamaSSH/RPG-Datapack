@@ -26,6 +26,10 @@
     execute if score $ItemRarity Temporary matches 4 run data modify storage ui: PotionData.Name set value '{"text":"クラフトポーション","color":"#F65A5A","italic":false}'
     execute if score $ItemRarity Temporary matches 5 run data modify storage ui: PotionData.Name set value '{"text":"クラフトポーション","color":"#F7F76D","italic":false}'
 
+# アイテムのtooltip_style
+    execute store result storage ui: PotionData.rarity.value int 1 run scoreboard players get $ItemRarity Temporary
+    function ui:brewing/brew/potion/tooltip_style with storage ui: PotionData.rarity
+
 # 下2行は固定
     data modify storage ui: PotionData.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
     execute store result storage ui: PotionData.rarity.value int 0.999 run scoreboard players get $ItemRarity Temporary

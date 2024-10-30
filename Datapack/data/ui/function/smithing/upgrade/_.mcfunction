@@ -61,6 +61,10 @@
     function ui:smithing/upgrade/item/name with storage ui: ItemData
     data remove storage ui: ItemData.display
 
+# アイテムのtooltip_style
+    execute store result storage ui: ItemData.rarity int 1 run scoreboard players get $ItemRarity Temporary
+    function ui:smithing/upgrade/item/tooltip_style with storage ui: ItemData
+
 # アイテムLoreの下2行
     data modify storage ui: Result.display.Lore append value '{"text": "                          ","color": "dark_gray","strikethrough": true}'
     execute store result storage ui: ItemData.rarity int 0.999 run scoreboard players get $ItemRarity Temporary

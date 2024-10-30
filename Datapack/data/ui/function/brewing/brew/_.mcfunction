@@ -23,7 +23,8 @@
 
 # ポーションのdisplayの設定
     function ui:brewing/brew/potion/display
-    data modify storage ui: Results[].components.minecraft:item_name set from storage ui: PotionData.Name
+    data modify storage ui: Results[].components.minecraft:tooltip_style set from storage ui: PotionData.tooltip_style
+    data modify storage ui: Results[].components.minecraft:custom_name set from storage ui: PotionData.Name
     data modify storage ui: Results[].components.minecraft:lore set from storage ui: PotionData.Lore
 
 # 素材アイテムの消費
