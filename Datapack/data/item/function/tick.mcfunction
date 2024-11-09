@@ -1,6 +1,9 @@
 #> item:tick
 # アイテム関連の常時実行処理
 
+# 耕地を再生する処理
+    execute at @a as @e[type=item,distance=..10] if data entity @s Item.components.minecraft:custom_data{item_type:"farmland"} run function item:material/farmland
+
 # 採集ポイント
     execute at @a as @e[type=armor_stand,tag=Material,distance=..6] at @s run function item:material/collect/tick
 
