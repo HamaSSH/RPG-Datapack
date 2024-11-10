@@ -9,7 +9,7 @@
                     "children": [
                         {
                             "type": "loot_table",
-                            "value": "asset:item/1031",
+                            "value": "asset:item/1059",
                             "conditions": [
                                 {
                                     "condition": "block_state_property",
@@ -22,7 +22,7 @@
                         },
                         {
                             "type": "loot_table",
-                            "value": "asset:item/1032"
+                            "value": "asset:item/1060"
                         }
                     ]
                 }
@@ -33,7 +33,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1032",
+                    "value": "asset:item/1060",
                     "functions": [
                         {
                             "enchantment": "fortune",
