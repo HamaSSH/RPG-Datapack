@@ -6,6 +6,7 @@
 
 # 採集ポイント
     execute at @a as @e[type=armor_stand,tag=Material,distance=..6] at @s run function item:material/collect/tick
+    execute as @e[type=armor_stand,tag=Growing] at @s if block ~ ~1 ~ nether_wart[age=3] run function item:material/respawn
 
 # 釣り宝箱
     execute as @e[type=item] if data entity @s Item.components.minecraft:custom_data{item_type:"fishing_chest"} if predicate lib:is_on_ground run function item:fishing/chest/reveal_rarity
