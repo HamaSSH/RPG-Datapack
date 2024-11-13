@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "enter_block",
+            "conditions": {
+                "block": "pitcher_crop"
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:trigger/location/pitcher_crop"
+    }
+}
