@@ -6,6 +6,7 @@
     # loot spawn ~ ~ ~ loot asset:material/401.sweet_berries_2
 
 # 後処理
+    fill ~ ~1 ~ ~ ~1 ~ air replace nether_wart
     execute on passengers run kill @s
     kill @s
 
