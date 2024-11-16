@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon cow ~ ~ ~ {Tags:["MobInit"],Passengers:[{id:"silverfish",Tags:["Controller"]}]}
+    summon cow ~ ~ ~ {Tags:["MobInit"],Age:1000000000,Passengers:[{id:"silverfish",Tags:["Controller"]}]}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 13

@@ -2,7 +2,7 @@
 # 召喚処理
 
 # 元のモブの召喚
-    summon pig ~ ~ ~ {Tags:["MobInit"]}
+    summon pig ~ ~ ~ {Tags:["MobInit"],Age:1000000000}
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 15
