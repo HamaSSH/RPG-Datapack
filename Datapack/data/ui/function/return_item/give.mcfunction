@@ -3,6 +3,7 @@
 
 # アイテムの召喚
     data remove storage ui: GiveItem.Slot
+    data modify block 0 0 0 Items set value [{id:"barrier"}]
     data modify block 0 0 0 Items[0] set from storage ui: GiveItem
     loot spawn ~ ~ ~ mine 0 0 0 debug_stick
 
