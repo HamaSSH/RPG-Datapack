@@ -10,8 +10,8 @@
     function ui:enderchest/page/update
 
 # UI閉じ検知用の処理
-    execute unless predicate player:armor/helmet run item replace entity @s armor.head with nautilus_shell
-    function ui:close_detector/add
+    execute unless predicate player:armor/helmet run item replace entity @s armor.head with nautilus_shell[item_model="resource:air"]
+    item modify entity @s armor.head ui:close_detector/add
 
 # リセット
     scoreboard players reset @s OpenEnderchest

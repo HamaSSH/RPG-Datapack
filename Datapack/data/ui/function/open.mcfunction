@@ -11,7 +11,7 @@ tag @s add OpenedUI
 
 # UI閉じ検知用の処理
     execute unless predicate player:armor/helmet run item replace entity @s armor.head with nautilus_shell[item_model="resource:air"]
-    function ui:close_detector/add
+    item modify entity @s armor.head ui:close_detector/add
 
 # リセット
     tag @s remove OpenedUI

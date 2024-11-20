@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "equippable": {
+                "slot": "head",
+                "equip_sound": "entity.salmon.ambient"
+            }
+        }
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{ui:{close_detector:1b}}"
+    }
+]
