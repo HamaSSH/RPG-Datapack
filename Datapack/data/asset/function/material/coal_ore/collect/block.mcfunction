@@ -1,7 +1,7 @@
 #> asset:material/coal_ore/collect/block
 # 採集ポイントを1段階破壊
 
-execute unless entity @s[tag=HasHPScore] run function asset:material/manager/init
+execute unless entity @s[tag=HasHPScore] run function asset:material/.manager/init
 
 # HPバーの表示
     scoreboard players remove @s HP 1

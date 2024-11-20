@@ -20,5 +20,5 @@
     function player:status/init
 
 # 実績の初期化
-    function asset:achievement/init
+    function asset:achievement/.manager/init
     advancement grant @s only asset:achievement/1.1

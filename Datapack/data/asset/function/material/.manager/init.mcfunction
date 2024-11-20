@@ -1,4 +1,4 @@
-#> asset:material/manager/init
+#> asset:material/.manager/init
 # ArmorItems[3]のデータをスコアに初期化
 
 execute store result score @s HP run data get entity @s ArmorItems[3].components.minecraft:custom_data.HP

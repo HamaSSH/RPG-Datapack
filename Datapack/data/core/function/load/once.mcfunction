@@ -34,7 +34,7 @@
     function core:load/constant
 
 # アセットの初期処理
-    function asset:achievement/load
+    function asset:achievement/.manager/load
     function #asset:magic/load
     function #asset:mob/load
 

@@ -1,4 +1,4 @@
-#> asset:tips/reset
+#> asset:tips/.manager/reset
 # TIPSを再び聞けるようにする
 
 advancement revoke @s only asset:tips/accessory

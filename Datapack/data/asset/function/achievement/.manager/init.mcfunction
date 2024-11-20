@@ -1,4 +1,4 @@
-#> asset:achievement/init
+#> asset:achievement/.manager/init
 # 実績画面の初期化
 
 # 全ての進捗を剥奪

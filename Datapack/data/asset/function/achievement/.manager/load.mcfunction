@@ -1,4 +1,4 @@
-#> asset:achievement/load
+#> asset:achievement/.manager/load
 # 実績用のスコア定義
 
 scoreboard objectives add 0.1.RevokeTimer dummy

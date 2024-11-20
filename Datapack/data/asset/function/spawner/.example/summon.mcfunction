@@ -1,4 +1,4 @@
-#> asset:spawner/example/summon
+#> asset:spawner/.example/summon
 # スポナーの召喚
 
 # スポナーの情報

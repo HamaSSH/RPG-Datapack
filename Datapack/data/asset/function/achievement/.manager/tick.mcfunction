@@ -1,4 +1,4 @@
-#> asset:achievement/tick
+#> asset:achievement/.manager/tick
 # 実績用のtick処理
 
 # 一瞬でachiemenet0.1をはく奪する

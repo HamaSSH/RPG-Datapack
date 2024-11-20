@@ -37,7 +37,7 @@
     # execute positioned ~ ~1.2 ~ as @e[type=item,distance=..0.01] run function player:trigger/drop_item
 
 # achievementのtick処理
-    function asset:achievement/tick
+    function asset:achievement/.manager/tick
 
 # 魔導書スワップ処理
     function player:magic/swap/check

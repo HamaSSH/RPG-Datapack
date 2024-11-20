@@ -22,7 +22,7 @@
         advancement revoke @s only player:trigger/achievement_0.1
         advancement revoke @s only player:trigger/achievement_1.6
         advancement revoke @s only player:trigger/achievement_2.6
-    function asset:achievement/init
+    function asset:achievement/.manager/init
 
 # TIPSの初期化
-    function asset:tips/reset
+    function asset:tips/.manager/reset
