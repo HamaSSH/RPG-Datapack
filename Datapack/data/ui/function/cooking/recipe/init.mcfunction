@@ -2,12 +2,12 @@
 # 料理レシピの初期化
 
 data modify storage recipe:dish Data set value []
-data modify storage recipe:dish Data append value {ingredients:{id1:[1059],id2:[1059],id3:[1059]},result:{id:1094}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1059],id2:[1083],id3:[0]},result:{id:1095}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1059],id2:[1083],id3:[1083]},result:{id:1096}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1047],id2:[1082],id3:[0]},result:{id:1097}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1049],id2:[1053],id3:[1059]},result:{id:1098}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1057],id2:[1055],id3:[1071]},result:{id:1099}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1038],id2:[1057],id3:[1055]},result:{id:1100}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1051],id2:[1033],id3:[0]},result:{id:1101}}
-data modify storage recipe:dish Data append value {ingredients:{id1:[1037],id2:[1078],id3:[1079]},result:{id:1102}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[wheat],id2:[wheat],id3:[wheat]},result:{id:"bread"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[wheat],id2:[cocoa_beans],id3:[0]},result:{id:"cookie"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[wheat],id2:[cocoa_beans],id3:[cocoa_beans]},result:{id:"chocolate_cookie"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[apple],id2:[honeycomb],id3:[0]},result:{id:"honey_apple"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[sweet_berries],id2:[glow_berries],id3:[wheat]},result:{id:"berry_cake"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[carrot],id2:[potato],id3:[pumpkin_slice]},result:{id:"vegetable_soup"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[chicken],id2:[carrot],id3:[potato]},result:{id:"chicken_stew"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[blue_berries],id2:[ice_cube],id3:[0]},result:{id:"frozen_berries"}}
+data modify storage recipe:dish Data append value {ingredients:{id1:[beef],id2:[red_shroom],id3:[brown_shroom]},result:{id:"grilled_steak"}}
