@@ -12,6 +12,10 @@
             {
                 "namespace": "minecraft",
                 "path": "advancement/.*"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "loot_table/.*"
             }
         ]
     }
