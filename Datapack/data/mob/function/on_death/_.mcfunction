@@ -22,7 +22,7 @@ tag @s add Dead
 
 # アセットのdeath処理呼び出し
     data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
-    function asset:mob/manager/death with storage asset:mob
+    function asset:mob/.manager/death with storage asset:mob
     data remove storage asset:mob namespace
 
 # リセット

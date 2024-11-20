@@ -14,7 +14,7 @@
 
 # 被ダメージ時のトリガー(アセットのhurt処理呼び出し)
     data modify storage asset:mob namespace set from entity @s ArmorItems[3].components.minecraft:custom_data.namespace
-    function asset:mob/manager/hurt with storage asset:mob
+    function asset:mob/.manager/hurt with storage asset:mob
     data remove storage asset:mob namespace
 
 # クリティカルヒットの場合のパーティクル
