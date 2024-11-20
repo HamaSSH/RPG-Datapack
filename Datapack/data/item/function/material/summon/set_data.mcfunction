@@ -12,7 +12,7 @@
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.namespace set from storage asset:material Data.namespace
 
 # 見た目の設定
-    execute summon item_display run function item:material/summon/set_display with storage asset:material Data
+    execute if data storage asset:material Data.item_model summon item_display run function item:material/summon/set_display with storage asset:material Data
 
 # HPバーの設定
     execute if data storage asset:material Data{HP:2} run data modify entity @s CustomName set value '[{"text":"■■","color":"green"},"\\uF801"]'

@@ -8,7 +8,6 @@
 # データの設定
     data modify storage asset:material Data.namespace set value "sweet_berries"
     data modify storage asset:material Data.item_model set value "resource:custom/material/sweet_berries_3"
-    data modify storage asset:material Data.LootTable set value "asset:material/sweet_berries"
     data modify storage asset:material Data.HP set value 5
 
 # データの適用

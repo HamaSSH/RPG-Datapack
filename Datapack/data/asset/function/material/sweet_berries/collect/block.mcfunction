@@ -2,7 +2,6 @@
 # 破壊処理
 
 # ばらまく
-    loot spawn ~ ~ ~ loot asset:material/sweet_berries
     loot spawn ~ ~ ~ loot asset:material/sweet_berries_sapling
 
 # 後処理

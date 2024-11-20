@@ -12,7 +12,7 @@ execute unless entity @s[tag=HasHPScore] run function asset:material/.manager/in
     execute if score @s HP matches 0 run data modify entity @s CustomName set value '[{"text":"■■■■","color":"dark_gray"},"\\uF801"]'
 
 # アイテムドロップ
-    loot spawn ~ ~ ~ loot blocks/coal_ore
+    loot spawn ~ ~ ~ loot asset:material/coal_ore
 
 # 見た目の変更
     execute if score @s HP matches 1.. run setblock ~ ~ ~ coal_ore

@@ -7,7 +7,7 @@
 
 # データの設定
     data modify storage asset:material Data.namespace set value "coal_ore"
-    data modify storage asset:material Data.LootTable set value "asset:material/coal_ore"
+    # data modify storage asset:material Data.item_model set value ""
     data modify storage asset:material Data.HP set value 4
 
 # データの適用

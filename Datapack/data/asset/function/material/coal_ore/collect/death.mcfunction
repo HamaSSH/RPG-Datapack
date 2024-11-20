@@ -2,7 +2,7 @@
 # 死亡処理
 
 # ばらまく
-    loot spawn ~ ~ ~ loot blocks/coal_ore
+    loot spawn ~ ~ ~ loot asset:material/coal_ore
 
 # 後処理
     execute on passengers run kill @s
