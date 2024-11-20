@@ -6,7 +6,7 @@
 
 # データの設定
     data modify storage asset:mob Data.MobID set value 0
-    data modify storage asset:mob Data.namespace set value "example"
+    data modify storage asset:mob Data.namespace set value ".example"
     # 名前
         data modify storage asset:mob Data.CustomName set value '{"text":"サンドバッグ"}'
         data modify storage asset:mob Data.NameChar set value 6
