@@ -1,4 +1,4 @@
-#> asset:material/101.coal_ore/collect/death
+#> asset:material/coal_ore/collect/death
 # 死亡処理
 
 # ばらまく

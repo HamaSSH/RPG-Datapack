@@ -9,7 +9,7 @@
     data modify entity @s ArmorItems set value [{},{},{},{id:"glass_bottle"}]
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.HP set from storage asset:material Data.HP
     data modify entity @s ArmorItems[3].components.minecraft:custom_data.HPMax set from storage asset:material Data.HP
-    data modify entity @s ArmorItems[3].components.minecraft:custom_data.ID set from storage asset:material Data.ID
+    data modify entity @s ArmorItems[3].components.minecraft:custom_data.namespace set from storage asset:material Data.namespace
 
 # 見た目の設定
     execute summon item_display run function item:material/summon/set_display with storage asset:material Data

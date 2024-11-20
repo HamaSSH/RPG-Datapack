@@ -1,4 +1,4 @@
-#> asset:material/401.sweet_berries/collect/death
+#> asset:material/sweet_berries/collect/death
 # 死亡処理
 
 # リスポーンタイマーの始動
@@ -9,8 +9,8 @@
     execute on passengers run data modify entity @s item.components.minecraft:item_model set value "resource:custom/material/sweet_berries_1"
 
 # ばらまく
-    loot spawn ~ ~ ~ loot asset:material/401.sweet_berries
-    loot spawn ~ ~ ~ loot asset:material/401.sweet_berries
+    loot spawn ~ ~ ~ loot asset:material/sweet_berries
+    loot spawn ~ ~ ~ loot asset:material/sweet_berries
     data modify entity @s CustomNameVisible set value 0b
 
 # 演出

@@ -1,4 +1,4 @@
-#> item:material/collect/destroy
+#> asset:material/others/collect/block
 # 植物の採取(destroy)
 
 setblock ~ ~ ~ air destroy

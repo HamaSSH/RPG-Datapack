@@ -1,4 +1,4 @@
-#> asset:material/401.sweet_berries/collect/damage
+#> asset:material/sweet_berries/collect/damage
 # 採集ポイントを1段階破壊
 
 # HPバーの表示
@@ -11,9 +11,9 @@
     execute if score @s HP matches 0 run data modify entity @s CustomName set value '[{"text":"■■■■■","color":"dark_gray"}]'
 
 # アイテムドロップ
-    loot spawn ~ ~ ~ loot asset:material/401.sweet_berries
+    loot spawn ~ ~ ~ loot asset:material/sweet_berries
     playsound block.sweet_berry_bush.pick_berries master @a
 
 # 見た目の変更 #TODO: リスポーン管理
     execute if score @s HP matches 3 on passengers run data modify entity @s item.components.minecraft:item_model set value "resource:custom/material/sweet_berries_2"
-    execute if score @s HP matches ..0 run function asset:material/401.sweet_berries/collect/death
+    execute if score @s HP matches ..0 run function asset:material/sweet_berries/collect/death

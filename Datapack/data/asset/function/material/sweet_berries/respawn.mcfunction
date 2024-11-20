@@ -1,5 +1,5 @@
-#> asset:material/401.sweet_berries/respawn/_
-# 召喚処理
+#> asset:material/sweet_berries/respawn
+# リスポーン処理
 
 # リスポーンタイマーを止める
     tag @s remove Growing

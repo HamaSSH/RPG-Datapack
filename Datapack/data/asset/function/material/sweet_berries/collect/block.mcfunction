@@ -1,9 +1,9 @@
-#> asset:material/401.sweet_berries/collect/break
+#> asset:material/sweet_berries/collect/block
 # 破壊処理
 
 # ばらまく
-    # loot spawn ~ ~ ~ loot asset:material/401.sweet_berries
-    # loot spawn ~ ~ ~ loot asset:material/401.sweet_berries_2
+    loot spawn ~ ~ ~ loot asset:material/sweet_berries
+    loot spawn ~ ~ ~ loot asset:material/sweet_berries_sapling
 
 # 後処理
     fill ~ ~1 ~ ~ ~1 ~ air replace nether_wart

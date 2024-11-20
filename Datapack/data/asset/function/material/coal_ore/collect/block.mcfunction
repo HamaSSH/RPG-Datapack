@@ -1,4 +1,4 @@
-#> asset:material/101.coal_ore/collect/damage
+#> asset:material/coal_ore/collect/block
 # 採集ポイントを1段階破壊
 
 execute unless entity @s[tag=HasHPScore] run function asset:material/manager/init
@@ -16,4 +16,4 @@ execute unless entity @s[tag=HasHPScore] run function asset:material/manager/ini
 
 # 見た目の変更
     execute if score @s HP matches 1.. run setblock ~ ~ ~ coal_ore
-    execute if score @s HP matches ..0 run function asset:material/101.coal_ore/collect/death
+    execute if score @s HP matches ..0 run function asset:material/coal_ore/collect/death
