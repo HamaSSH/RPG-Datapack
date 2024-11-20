@@ -10,7 +10,7 @@ summon villager ~ ~ ~ {Tags:["NPCInit"]}
         data modify storage asset:npc Data.CustomName set value '"タベモノ"'
 
 # 店のデータ
-    data modify storage asset:npc Data.shop_data append value [1042,1027,1025,1041,1033,1034]
+    data modify storage asset:npc Data.shop_data append value ["cooked_cod","bread","cookie","chocolate_cookie","honey_apple","vegetable_soup"]
 
 # データの適用
     execute as @e[type=villager,tag=NPCInit,distance=..0.01,limit=1] run function asset:npc/set_data with storage asset:npc Data
