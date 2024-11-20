@@ -18,7 +18,7 @@ function ui:enderchest/put_item {id:"golden_helmet",slot:15}
 function ui:enderchest/put_item {id:"diamond_helmet",slot:18}
 function ui:enderchest/put_item {id:"netherite_helmet",slot:19}
 function ui:enderchest/put_item {id:"skeleton_skull",slot:20}
-function ui:enderchest/put_item {id:"crown",slot:21}
-function ui:enderchest/put_item {id:"carved_pumpkin",slot:22}
-function ui:enderchest/put_item {id:"leather_chestplate",slot:23}
-function ui:enderchest/put_item {id:"iron_chestplate",slot:24}
+function ui:enderchest/put_item {id:"wither_skeleton_skull",slot:21}
+function ui:enderchest/put_item {id:"crown",slot:22}
+function ui:enderchest/put_item {id:"carved_pumpkin",slot:23}
+function ui:enderchest/put_item {id:"leather_chestplate",slot:24}

@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1035"
+                    "value": "asset:item/wither_skeleton_skull"
                 }
             ]
         }

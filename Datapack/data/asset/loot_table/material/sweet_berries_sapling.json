@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1050"
+                    "value": "asset:item/sweet_berries_sapling"
                 }
             ]
         }

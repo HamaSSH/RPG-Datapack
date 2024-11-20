@@ -8,7 +8,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1020"
+                    "value": "asset:item/rotten_flesh"
                 }
             ]
         },
@@ -17,11 +17,11 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1029"
+                    "value": "asset:item/potato"
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1030"
+                    "value": "asset:item/carrot"
                 }
             ],
             "conditions": [
@@ -36,13 +36,13 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1004"
+                    "value": "asset:item/iron"
                 }
             ],
             "conditions": [
                 {
                     "condition": "random_chance",
-                    "chance": 0.1
+                    "chance": 0.05
                 }
             ]
         }

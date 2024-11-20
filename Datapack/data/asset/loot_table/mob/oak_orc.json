@@ -2,13 +2,13 @@
     "pools": [
         {
             "rolls": {
-                "min": 0,
+                "min": 1,
                 "max": 2
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1020"
+                    "value": "asset:item/rotten_flesh"
                 }
             ]
         },
@@ -20,7 +20,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1023"
+                    "value": "asset:item/oak_log"
                 }
             ]
         }

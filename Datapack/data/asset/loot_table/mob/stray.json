@@ -2,25 +2,29 @@
     "pools": [
         {
             "rolls": {
-                "min": 1,
-                "max": 2
-            },
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1037"
-                }
-            ]
-        },
-        {
-            "rolls": {
                 "min": 0,
                 "max": 2
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1021"
+                    "value": "asset:item/bone"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/stained_bone"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/bone_meal"
                 }
             ]
         }

@@ -2,40 +2,53 @@
     "pools": [
         {
             "rolls": {
-                "min": 1,
-                "max": 2
-            },
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "value": "asset:item/1037"
-                }
-            ]
-        },
-        {
-            "rolls": {
                 "min": 0,
                 "max": 2
             },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1021"
+                    "value": "asset:item/stained_bone"
                 }
             ]
         },
         {
-            "rolls": 1,
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1064"
+                    "value": "asset:item/bone_meal"
                 }
-            ],
-            "conditions": [
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
                 {
-                    "condition": "random_chance",
-                    "chance": 0.3
+                    "type": "loot_table",
+                    "value": "asset:item/red_shroom",
+                    "weight": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/brown_shroom",
+                    "weight": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/blaze_shroom",
+                    "weight": 1
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/grim_fungus",
+                    "weight": 1
                 }
             ]
         }

@@ -5,7 +5,31 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1035"
+                    "value": "asset:item/skeleton_skull"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/red_shroom"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/brown_shroom"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/blaze_shroom"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "asset:item/grim_fungus"
                 }
             ]
         }

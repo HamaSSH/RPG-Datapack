@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1001"
+                    "value": "asset:item/coal"
                 }
             ]
         }
