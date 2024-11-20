@@ -1,10 +1,10 @@
-#> asset:npc/002.loot/summon
+#> asset:npc/loot/summon
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "002.loot"
+        data modify storage asset:npc Data.namespace set value "loot"
         data modify storage asset:npc Data.npc_type set value "ShopNPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"ソザイ"'

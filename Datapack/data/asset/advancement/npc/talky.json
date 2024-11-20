@@ -4,12 +4,12 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"005.talky\"]}"
+                    "nbt": "{Tags:[\"talky\"]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "asset:npc/005.talky/interact"
+        "function": "asset:npc/talky/interact"
     }
 }

@@ -1,11 +1,11 @@
-#> asset:npc/001.equipment/summon
+#> asset:npc/equipment/summon
 # 村人NPCの召喚
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "001.equipment"
+        data modify storage asset:npc Data.namespace set value "equipment"
         data modify storage asset:npc Data.npc_type set value "ShopNPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"ソウビ"'

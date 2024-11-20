@@ -1,11 +1,11 @@
-#> asset:npc/005.talky/summon
+#> asset:npc/talky/summon
 # 村人NPCの召喚
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "005.talky"
+        data modify storage asset:npc Data.namespace set value "talky"
         data modify storage asset:npc Data.npc_type set value "NPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"おしゃべり"'

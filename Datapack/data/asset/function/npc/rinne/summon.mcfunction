@@ -1,11 +1,11 @@
-#> asset:npc/004.rinne/summon
+#> asset:npc/rinne/summon
 # 村人NPCの召喚
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "004.rinne"
+        data modify storage asset:npc Data.namespace set value "rinne"
         data modify storage asset:npc Data.npc_type set value "ClassNPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"リンネ"'

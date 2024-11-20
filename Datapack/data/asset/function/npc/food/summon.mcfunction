@@ -1,10 +1,10 @@
-#> asset:npc/003.food/summon
+#> asset:npc/food/summon
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "003.food"
+        data modify storage asset:npc Data.namespace set value "food"
         data modify storage asset:npc Data.npc_type set value "ShopNPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"タベモノ"'

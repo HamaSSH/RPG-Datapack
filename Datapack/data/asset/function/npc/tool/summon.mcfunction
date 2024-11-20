@@ -1,10 +1,10 @@
-#> asset:npc/006.tool/summon
+#> asset:npc/tool/summon
 
 summon villager ~ ~ ~ {Tags:["NPCInit"]}
 
 # データの設定
     # ID
-        data modify storage asset:npc Data.namespace set value "006.tool"
+        data modify storage asset:npc Data.namespace set value "tool"
         data modify storage asset:npc Data.npc_type set value "ShopNPC"
     # 名前
         data modify storage asset:npc Data.CustomName set value '"ツール"'
