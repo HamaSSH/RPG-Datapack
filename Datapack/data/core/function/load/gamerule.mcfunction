@@ -36,6 +36,7 @@ execute if data storage global: {IsProduction:0b} run gamerule logAdminCommands 
 gamerule maxCommandChainLength 65536
 gamerule maxCommandForkCount 65536
 gamerule maxEntityCramming 24
+gamerule minecartMaxSpeed 8
 gamerule mobExplosionDropDecay false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
@@ -48,8 +49,8 @@ execute if data storage global: {IsProduction:1b} run gamerule reducedDebugInfo 
 execute if data storage global: {IsProduction:0b} run gamerule reducedDebugInfo false
 execute if data storage global: {IsProduction:1b} run gamerule sendCommandFeedback false
 execute if data storage global: {IsProduction:0b} run gamerule sendCommandFeedback true
-gamerule showDeathMessages true
-gamerule snowAccumulationHeight 1
+gamerule showDeathMessages false
+gamerule snowAccumulationHeight 0
 gamerule spawnChunkRadius 2
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
