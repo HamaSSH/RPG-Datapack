@@ -1,7 +1,7 @@
 #> item:zukan/fish/init
 # 釣り図鑑の初期化
 
-data modify storage global: fish.item_id set value 1800
+data modify storage global: fish.item_id set value "fish_zukan"
 data modify storage global: fish.zukan_ver set value 0
 data modify storage zukan:fish Data set value []
 data modify storage zukan:fish Data append value {icon:'"\\uE650"',id:1600,name:'"\\uF823？|？|？"',crown:"🥉",length:'"0.00"',count:0}

@@ -13,11 +13,11 @@ tag @s add UsedRod
 
 # 全種類釣っているか検知
     execute unless data storage zukan:fish Data[{count:0}] run advancement grant @a only asset:achievement/2.5
-    execute unless data storage zukan:fish Data[{count:0}] run data modify storage global: fish.item_id set value 1801
+    execute unless data storage zukan:fish Data[{count:0}] run data modify storage global: fish.item_id set value "completed_fish_zukan"
     execute store result score $FishKind Temporary if data storage zukan:fish Data[]
     execute store result score $KingKind Temporary if data storage zukan:fish Data[{crown:"🥇"}]
     execute if score $KingKind Temporary = $FishKind Temporary run advancement grant @a only player:trigger/achievement_0.1
-    execute if score $KingKind Temporary = $FishKind Temporary run data modify storage global: fish.item_id set value 1802
+    execute if score $KingKind Temporary = $FishKind Temporary run data modify storage global: fish.item_id set value "perfect_fish_zukan"
 
 # レベルが上がらないように
     kill @e[type=experience_orb,distance=..1]
