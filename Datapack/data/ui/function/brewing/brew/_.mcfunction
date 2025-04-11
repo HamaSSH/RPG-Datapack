@@ -7,9 +7,9 @@
     data remove storage ui: Items[{id:"minecraft:potion"}]
 
 # クラフトポーションの生成
-    data modify storage ui: Results append value {id:"potion",Slot:14b,components:{"minecraft:hide_additional_tooltip":{}}}
-    data modify storage ui: Results append value {id:"potion",Slot:15b,components:{"minecraft:hide_additional_tooltip":{}}}
-    data modify storage ui: Results append value {id:"potion",Slot:16b,components:{"minecraft:hide_additional_tooltip":{}}}
+    data modify storage ui: Results append value {id:"potion",Slot:14b,components:{"minecraft:tooltip_display":{"hidden_components":["potion_contents"]}}}
+    data modify storage ui: Results append value {id:"potion",Slot:15b,components:{"minecraft:tooltip_display":{"hidden_components":["potion_contents"]}}}
+    data modify storage ui: Results append value {id:"potion",Slot:16b,components:{"minecraft:tooltip_display":{"hidden_components":["potion_contents"]}}}
 
 # ポーションの色を決定
     function ui:brewing/brew/potion/color
