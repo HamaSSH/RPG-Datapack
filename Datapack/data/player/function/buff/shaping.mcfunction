@@ -1,8 +1,10 @@
 #> player:buff/shaping
 # バフのデータを整形する
 
-# ステータスバフ
+# アイコンのphase初期化
     data modify storage player: buff.phase set value 0
+
+# ステータスバフ
     execute if data storage player: buff.status run function player:buff/icon/init
     execute unless data storage player: buff.status run data modify storage player: buff.status set value "-"
     execute unless data storage player: buff.sign run data modify storage player: buff.sign set value "-"

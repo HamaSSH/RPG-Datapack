@@ -17,7 +17,6 @@
     execute store result storage player: buff.phase int 1 run scoreboard players get $Phase Temporary
 
 # Phaseの値が変わる際iconを更新
-    execute unless score $PrevPhase Temporary = $Phase Temporary run data modify storage player: buff.icon set string storage player: buff.icon 3 6
     execute unless score $PrevPhase Temporary = $Phase Temporary if entity @s[tag=Status] run function player:buff/icon/set with storage player: buff
     execute unless score $PrevPhase Temporary = $Phase Temporary if entity @s[tag=Effect] run function player:buff/effect/icon/set with storage player: buff
     execute unless score $PrevPhase Temporary = $Phase Temporary if entity @s[tag=Element] run function player:buff/effect/icon/set with storage player: buff
