@@ -1,6 +1,7 @@
 #> core:load/gamerule
 # ゲームルールの設定
 
+gamerule allowFireTicksAwayFromPlayer false
 gamerule announceAdvancements false
 gamerule blockExplosionDropDecay false
 gamerule commandBlockOutput false
@@ -36,7 +37,7 @@ execute if data storage global: {IsProduction:0b} run gamerule logAdminCommands 
 gamerule maxCommandChainLength 65536
 gamerule maxCommandForkCount 65536
 gamerule maxEntityCramming 24
-gamerule minecartMaxSpeed 8
+# gamerule minecartMaxSpeed 8
 gamerule mobExplosionDropDecay false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
@@ -54,6 +55,7 @@ gamerule snowAccumulationHeight 0
 gamerule spawnChunkRadius 2
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
+gamerule tntExplodes false
 gamerule tntExplosionDropDecay false
 gamerule universalAnger true
 gamerule waterSourceConversion true
