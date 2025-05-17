@@ -4,9 +4,8 @@
             "rolls": 1,
             "entries": [
                 {
-                    "#": "ネザライト",
                     "type": "loot_table",
-                    "value": "asset:item/1047",
+                    "value": "asset:item/netherite",
                     "functions": [
                         {
                             "function": "set_count",
@@ -18,39 +17,28 @@
                     ]
                 },
                 {
-                    "#": "クリスタルの短剣",
                     "type": "loot_table",
-                    "value": "asset:item/2110"
+                    "value": "asset:item/crystal_dagger"
                 },
                 {
-                    "#": "ダイヤモンドの刀剣",
                     "type": "loot_table",
-                    "value": "asset:item/2211"
+                    "value": "asset:item/diamond_sword"
                 },
                 {
-                    "#": "エメラルドの槍",
                     "type": "loot_table",
-                    "value": "asset:item/2312"
+                    "value": "asset:item/trident"
                 },
                 {
-                    "#": "トライデント",
                     "type": "loot_table",
-                    "value": "asset:item/2314"
+                    "value": "asset:item/crystal_hammer"
                 },
                 {
-                    "#": "クリスタルのハンマー",
                     "type": "loot_table",
-                    "value": "asset:item/2410"
+                    "value": "asset:item/crystal_wand"
                 },
                 {
-                    "#": "クリスタルの杖",
                     "type": "loot_table",
-                    "value": "asset:item/2510"
-                },
-                {
-                    "#": "クリスタルの弓",
-                    "type": "loot_table",
-                    "value": "asset:item/2610"
+                    "value": "asset:item/crystal_bow"
                 }
             ]
         }

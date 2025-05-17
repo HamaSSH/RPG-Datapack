@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1068",
+                    "value": "asset:item/melon_slice",
                     "functions": [
                         {
                             "function": "set_count",
@@ -39,7 +39,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1070",
+                    "value": "asset:item/melon_seeds",
                     "functions": [
                         {
                             "function": "set_count",

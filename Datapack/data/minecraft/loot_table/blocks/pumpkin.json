@@ -21,7 +21,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1071",
+                    "value": "asset:item/pumpkin_slice",
                     "functions": [
                         {
                             "function": "set_count",
@@ -39,7 +39,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1072",
+                    "value": "asset:item/pumpkin_seeds",
                     "functions": [
                         {
                             "function": "set_count",
@@ -57,11 +57,11 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/3108",
+                    "value": "asset:item/carved_pumpkin",
                     "conditions": [
                         {
                             "condition": "random_chance",
-                            "chance": 0.5
+                            "chance": 0.02
                         }
                     ]
                 }

@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1029"
+                    "value": "asset:item/potato"
                 }
             ]
         },
@@ -15,7 +15,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1029",
+                    "value": "asset:item/potato",
                     "functions": [
                         {
                             "enchantment": "fortune",
@@ -44,7 +44,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1080",
+                    "value": "asset:item/poisonous_potato",
                     "conditions": [
                         {
                             "condition": "random_chance",

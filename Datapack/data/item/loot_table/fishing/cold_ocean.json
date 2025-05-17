@@ -5,25 +5,25 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1605",
+                    "value": "asset:item/icefish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1615",
+                    "value": "asset:item/frost_carp",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1619",
+                    "value": "asset:item/ice_turtle",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1065",
+                    "value": "asset:item/ice_cube",
                     "weight": 2000,
                     "quality": 1
                 }

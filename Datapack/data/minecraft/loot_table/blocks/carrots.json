@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1030"
+                    "value": "asset:item/carrot"
                 }
             ]
         },
@@ -15,7 +15,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1030",
+                    "value": "asset:item/carrot",
                     "functions": [
                         {
                             "enchantment": "fortune",
@@ -44,7 +44,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1081",
+                    "value": "asset:item/golden_carrot",
                     "conditions": [
                         {
                             "condition": "random_chance",

@@ -9,7 +9,7 @@
                     "children": [
                         {
                             "type": "loot_table",
-                            "value": "asset:item/1059",
+                            "value": "asset:item/wheat_seeds",
                             "conditions": [
                                 {
                                     "condition": "block_state_property",
@@ -22,7 +22,7 @@
                         },
                         {
                             "type": "loot_table",
-                            "value": "asset:item/1060"
+                            "value": "asset:item/wheat"
                         }
                     ]
                 }
@@ -33,7 +33,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1060",
+                    "value": "asset:item/wheat",
                     "functions": [
                         {
                             "enchantment": "fortune",

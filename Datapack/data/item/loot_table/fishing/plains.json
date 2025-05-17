@@ -5,145 +5,145 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1600",
+                    "value": "asset:item/cod",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1601",
+                    "value": "asset:item/salmon",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1602",
+                    "value": "asset:item/tropical_fish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1603",
+                    "value": "asset:item/pufferfish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1604",
+                    "value": "asset:item/charred_fish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1605",
+                    "value": "asset:item/icefish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1606",
+                    "value": "asset:item/rock_bream",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1607",
+                    "value": "asset:item/moss_fish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1608",
+                    "value": "asset:item/goblin_fish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1609",
+                    "value": "asset:item/aqua_gel",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1610",
+                    "value": "asset:item/fishbone",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1611",
+                    "value": "asset:item/mushroom_fish",
                     "weight": 6000,
                     "quality": -3
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1612",
+                    "value": "asset:item/sun_gleam",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1613",
+                    "value": "asset:item/piscus",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1614",
+                    "value": "asset:item/sunset_bass",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1615",
+                    "value": "asset:item/frost_carp",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1616",
+                    "value": "asset:item/coralfin",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1617",
+                    "value": "asset:item/golden_whisper",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1618",
+                    "value": "asset:item/yv_fish",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1619",
+                    "value": "asset:item/ice_turtle",
                     "weight": 3000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1620",
+                    "value": "asset:item/blaze_scale",
                     "weight": 2000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1621",
+                    "value": "asset:item/crystal_shark",
                     "weight": 2000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1622",
+                    "value": "asset:item/crescent",
                     "weight": 2000,
                     "quality": 1
                 },
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1623",
+                    "value": "asset:item/noctourne",
                     "weight": 2000,
                     "quality": 1
                 },

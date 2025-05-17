@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "value": "asset:item/1032",
+                    "value": "asset:item/wheat_seeds",
                     "conditions": [
                         {
                             "condition": "random_chance",
