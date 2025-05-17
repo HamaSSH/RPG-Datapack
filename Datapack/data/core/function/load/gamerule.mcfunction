@@ -1,7 +1,6 @@
 #> core:load/gamerule
 # ゲームルールの設定
 
-gamerule allowFireTicksAwayFromPlayer false
 gamerule announceAdvancements false
 gamerule blockExplosionDropDecay false
 gamerule commandBlockOutput false
@@ -55,7 +54,6 @@ gamerule snowAccumulationHeight 0
 gamerule spawnChunkRadius 2
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
-gamerule tntExplodes false
 gamerule tntExplosionDropDecay false
 gamerule universalAnger true
 gamerule waterSourceConversion true

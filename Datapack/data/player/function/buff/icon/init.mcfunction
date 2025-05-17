@@ -2,17 +2,17 @@
 # バフアイコンデータの初期化
 
 # バフごとのアイコン
-    execute if data storage player: buff{status:"HP"} run data modify storage player: buff.icon_base set value "E31"
-    execute if data storage player: buff{status:"HPR"} run data modify storage player: buff.icon_base set value "E32"
-    execute if data storage player: buff{status:"MP"} run data modify storage player: buff.icon_base set value "E33"
-    execute if data storage player: buff{status:"MPR"} run data modify storage player: buff.icon_base set value "E34"
-    execute if data storage player: buff{status:"STR"} run data modify storage player: buff.icon_base set value "E35"
-    execute if data storage player: buff{status:"INT"} run data modify storage player: buff.icon_base set value "E36"
-    execute if data storage player: buff{status:"DEX"} run data modify storage player: buff.icon_base set value "E37"
-    execute if data storage player: buff{status:"DEF"} run data modify storage player: buff.icon_base set value "E38"
-    execute if data storage player: buff{status:"AGI"} run data modify storage player: buff.icon_base set value "E39"
-    execute if data storage player: buff{status:"CRT"} run data modify storage player: buff.icon_base set value "E3A"
-    execute if data storage player: buff{status:"LUK"} run data modify storage player: buff.icon_base set value "E3B"
+    execute if data storage player: buff{status:"HP"} run data modify storage player: buff.icon set value "E31"
+    execute if data storage player: buff{status:"HPR"} run data modify storage player: buff.icon set value "E32"
+    execute if data storage player: buff{status:"MP"} run data modify storage player: buff.icon set value "E33"
+    execute if data storage player: buff{status:"MPR"} run data modify storage player: buff.icon set value "E34"
+    execute if data storage player: buff{status:"STR"} run data modify storage player: buff.icon set value "E35"
+    execute if data storage player: buff{status:"INT"} run data modify storage player: buff.icon set value "E36"
+    execute if data storage player: buff{status:"DEX"} run data modify storage player: buff.icon set value "E37"
+    execute if data storage player: buff{status:"DEF"} run data modify storage player: buff.icon set value "E38"
+    execute if data storage player: buff{status:"AGI"} run data modify storage player: buff.icon set value "E39"
+    execute if data storage player: buff{status:"CRT"} run data modify storage player: buff.icon set value "E3A"
+    execute if data storage player: buff{status:"LUK"} run data modify storage player: buff.icon set value "E3B"
 
 # バフの＋－アイコン
     execute store result score $StatusAmplifier Temporary run data get storage player: buff.amplifier

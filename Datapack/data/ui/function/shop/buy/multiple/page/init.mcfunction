@@ -1,16 +1,16 @@
 #> ui:shop/buy/multiple/page/init
 # UIの初期化
 
-data modify entity @s Items append value {Slot:9b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:17b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:18b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:19b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:20b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:21b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:22b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:23b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:24b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
-data modify entity @s Items append value {Slot:25b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"tooltip_display":{"hide_tooltip":true}}}
+data modify entity @s Items append value {Slot:9b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:17b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:18b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:19b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:20b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:21b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:22b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:23b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:24b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
+data modify entity @s Items append value {Slot:25b,id:"glass_bottle",components:{"custom_data":{ui:{item_type:"none"}},"hide_tooltip":{}}}
 
 # 購入アイテムの配置更新
     data modify entity @s Items[{components:{"custom_data":{ui:{item_type:"goods"}}}}].Slot set value 11b
