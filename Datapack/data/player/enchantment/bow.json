@@ -19,8 +19,8 @@
         "ammo_use": [
             {
                 "effect": {
-                    "type": "minecraft:add",
-                    "value": -1.0
+                    "type": "add",
+                    "value": -1
                 }
             }
         ]
