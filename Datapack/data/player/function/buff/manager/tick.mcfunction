@@ -11,6 +11,7 @@
     data modify entity @s data.buff set from storage player: buff
 
 # timer:0になったらバフを削除
+    execute if data storage player: buff{timer:0,effect:"fire_resistance"} run function player:buff/manager/fire_res
     execute if data storage player: buff{timer:0} run function player:buff/manager/remove
 
 # リセット
