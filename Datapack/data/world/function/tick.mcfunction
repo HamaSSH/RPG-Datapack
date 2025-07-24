@@ -1,6 +1,9 @@
 #> world:tick
 # ワールドとしてのtick処理
 
+# フラグ管理
+    function world:flags/_
+
 # 村人がプレイヤーの方向を向く
     execute as @e[type=villager] at @s if entity @p[distance=..8] run tp @s ~ ~ ~ facing entity @p
 
