@@ -28,6 +28,7 @@ tag @s add Upgradable
 
 # 強化アイテムを持っているか1つずつ確認
     execute if data storage ui: Material[0] run function ui:smithing/upgrade/check/rec
+    execute if entity @s[tag=Upgradable] if data storage ui: ItemData{group:"golden"} if data storage ui: ItemData{grade:2} run function ui:smithing/upgrade/evolve/check
     execute if entity @s[tag=Upgradable] run function ui:smithing/upgrade/_
 
 # 効果音
