@@ -16,9 +16,9 @@ function ui:enderchest/put_item {id:"stone_bow",slot:13}
 function ui:enderchest/put_item {id:"bone_bow",slot:14}
 function ui:enderchest/put_item {id:"crystal_bow",slot:15}
 function ui:enderchest/put_item {id:"leather_helmet",slot:18}
-function ui:enderchest/put_item {id:"iron_helmet",slot:19}
-function ui:enderchest/put_item {id:"golden_helmet",slot:20}
-function ui:enderchest/put_item {id:"diamond_helmet",slot:21}
-function ui:enderchest/put_item {id:"netherite_helmet",slot:22}
-function ui:enderchest/put_item {id:"skeleton_skull",slot:23}
-function ui:enderchest/put_item {id:"wither_skeleton_skull",slot:24}
+function ui:enderchest/put_item {id:"copper_helmet",slot:19}
+function ui:enderchest/put_item {id:"iron_helmet",slot:20}
+function ui:enderchest/put_item {id:"skeleton_skull",slot:21}
+function ui:enderchest/put_item {id:"golden_helmet",slot:22}
+function ui:enderchest/put_item {id:"diamond_helmet",slot:23}
+function ui:enderchest/put_item {id:"netherite_helmet",slot:24}
