@@ -2,7 +2,7 @@
 # ページごとのエンダーチェストの更新
 
 execute if score @s UIPage matches ..0 run scoreboard players set @s UIPage 0
-execute if score @s UIPage matches 12.. run scoreboard players set @s UIPage 12
+execute if score @s UIPage matches 13.. run scoreboard players set @s UIPage 13
 
 function ui:enderchest/page/init
 execute if score @s UIPage matches 0 run function ui:enderchest/page/0
@@ -18,3 +18,4 @@ execute if score @s UIPage matches 9 run function ui:enderchest/page/9
 execute if score @s UIPage matches 10 run function ui:enderchest/page/10
 execute if score @s UIPage matches 11 run function ui:enderchest/page/11
 execute if score @s UIPage matches 12 run function ui:enderchest/page/12
+execute if score @s UIPage matches 13 run function ui:enderchest/page/13
