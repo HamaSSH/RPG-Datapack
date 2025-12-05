@@ -6,4 +6,5 @@
 
 # スコアボード
     scoreboard objectives add Rejoin custom:leave_game "ワールドRejoin処理"
+    scoreboard objectives add RightClick used:warped_fungus_on_a_stick "右クリック"
     scoreboard objectives add PlayerID dummy "プレイヤーID"

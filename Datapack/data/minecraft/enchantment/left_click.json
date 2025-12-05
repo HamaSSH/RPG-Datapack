@@ -1,0 +1,30 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "translate": ""
+    },
+    "effects": {
+        "post_piercing_attack": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "player:trigger/left_click"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": [
+        "hand"
+    ],
+    "supported_items": [],
+    "weight": 1
+}

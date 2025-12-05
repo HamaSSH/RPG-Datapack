@@ -6,3 +6,6 @@
 
 # ワールドへの2回目以降のjoin
     execute if score @s Rejoin matches 1.. run function core:trigger/rejoin
+
+# トリガー検知
+    execute if score @s RightClick matches 1.. run function player:trigger/right_click
