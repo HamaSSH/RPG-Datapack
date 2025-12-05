@@ -9,3 +9,9 @@
 
 # トリガー検知
     execute if score @s RightClick matches 1.. run function player:trigger/right_click
+
+# ステータススコア関連
+    function player:status/hp/_
+    effect give @s resistance infinite 255 true
+    effect give @s instant_health infinite 0 true
+    function player:status/mp/_

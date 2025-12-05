@@ -8,9 +8,20 @@
     scoreboard objectives add Rejoin custom:leave_game "ワールドRejoin処理"
     scoreboard objectives add RightClick used:warped_fungus_on_a_stick "右クリック"
     scoreboard objectives add PlayerID dummy "プレイヤーID"
-    scoreboard objectives add Temporary dummy "一時スコア"
 
-# ステータススコア
+# 汎用スコア
+    scoreboard objectives add Temporary dummy "一時スコア"
+    scoreboard objectives add Constant dummy "定数"
+    function core:load/constant
+
+# ステータス用スコア
+    scoreboard objectives add HPRatio dummy "HP割合"
+    scoreboard objectives setdisplay list HPRatio
+    scoreboard objectives modify HPRatio rendertype hearts
+    scoreboard objectives add MPRatio dummy "MP割合"
+    scoreboard objectives add PrevMPRatio dummy "MP割合記録"
+    scoreboard objectives add HPRTimer dummy "HP回復Timer"
+    scoreboard objectives add MPRTimer dummy "MP回復Timer"
     # 値
         scoreboard objectives add HP dummy "現HP"
         scoreboard objectives add MP dummy "現MP"
