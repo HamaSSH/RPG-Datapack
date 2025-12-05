@@ -7,3 +7,8 @@
 # プレイヤーIDの付与
     scoreboard players add World PlayerID 1
     scoreboard players operation @s PlayerID = World PlayerID
+
+# ステータス初期化処理
+    attribute @s attack_speed base set 3.0
+    attribute @s sclae base set 0.92448
+    function player:status/init
