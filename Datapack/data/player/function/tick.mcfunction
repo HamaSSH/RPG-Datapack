@@ -16,5 +16,8 @@
     effect give @s instant_health infinite 0 true
     function player:status/mp/_
 
+# スキルバー
+    execute unless score @s SkillTimer matches 560.. run scoreboard players add @s SkillTimer 1
+
 # アクションバーUI
     function player:actionbar/_

@@ -23,6 +23,7 @@
     scoreboard objectives add HPRTimer dummy "HP回復Timer"
     scoreboard objectives add MPRTimer dummy "MP回復Timer"
     scoreboard objectives add NextEXP dummy "必要経験値"
+    scoreboard objectives add SkillTimer dummy "スキル用タイマー"
     # 値
         scoreboard objectives add HP dummy "現HP"
         scoreboard objectives add MP dummy "現MP"
