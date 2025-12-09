@@ -22,6 +22,7 @@
     scoreboard objectives add PrevMPRatio dummy "MP割合記録"
     scoreboard objectives add HPRTimer dummy "HP回復Timer"
     scoreboard objectives add MPRTimer dummy "MP回復Timer"
+    scoreboard objectives add NextEXP dummy "必要経験値"
     # 値
         scoreboard objectives add HP dummy "現HP"
         scoreboard objectives add MP dummy "現MP"

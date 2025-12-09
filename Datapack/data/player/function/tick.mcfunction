@@ -15,3 +15,6 @@
     effect give @s resistance infinite 255 true
     effect give @s instant_health infinite 0 true
     function player:status/mp/_
+
+# アクションバーUI
+    function player:actionbar/_
