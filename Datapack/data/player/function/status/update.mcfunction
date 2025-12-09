@@ -13,6 +13,9 @@
     scoreboard players operation @s AGI = @s BaseAGI
     scoreboard players operation @s CRT = @s BaseCRT
     scoreboard players operation @s LUK = @s BaseLUK
+    # 特殊スコア
+        scoreboard players set @s PaladinMaxShield 0
+        scoreboard players set @s HunterMaxArrow 0
 
 # 2. 補正ステータスを加算
     # まずリセット

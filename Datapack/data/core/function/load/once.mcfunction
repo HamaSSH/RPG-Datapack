@@ -24,6 +24,10 @@
     scoreboard objectives add MPRTimer dummy "MP回復Timer"
     scoreboard objectives add NextEXP dummy "必要経験値"
     scoreboard objectives add SkillTimer dummy "スキル用タイマー"
+    scoreboard objectives add PaladinMaxShield dummy "最大盾数"
+    scoreboard objectives add PaladinShield dummy "盾数"
+    scoreboard objectives add HunterMaxArrow dummy "最大矢数"
+    scoreboard objectives add HunterArrow dummy "矢数"
     # 値
         scoreboard objectives add HP dummy "現HP"
         scoreboard objectives add MP dummy "現MP"
