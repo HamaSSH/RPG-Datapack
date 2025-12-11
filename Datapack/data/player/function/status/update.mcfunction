@@ -14,8 +14,9 @@
     scoreboard players operation @s CRT = @s BaseCRT
     scoreboard players operation @s LUK = @s BaseLUK
     # 特殊スコア
-        scoreboard players set @s PaladinMaxShield 0
-        scoreboard players set @s HunterMaxArrow 0
+        scoreboard players set @s MaxPShield 0
+        scoreboard players set @s MaxHArrow 0
+        scoreboard players set @s MaxOxygen 100
 
 # 2. 補正ステータスを加算
     # まずリセット

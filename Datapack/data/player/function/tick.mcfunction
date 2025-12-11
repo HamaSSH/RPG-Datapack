@@ -20,4 +20,6 @@
     execute unless score @s SkillTimer matches 560.. run scoreboard players add @s SkillTimer 1
 
 # アクションバーUI
+    # プレイヤーが水中にいる時の処理
+        function player:underwater/_
     function player:actionbar/_

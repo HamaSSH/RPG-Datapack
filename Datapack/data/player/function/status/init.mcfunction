@@ -30,6 +30,7 @@
     scoreboard players set @s EXP 0
     scoreboard players set @s NextEXP 50
     scoreboard players set @s Gold 200
+    scoreboard players set @s Oxygen 100
 
 # ステータスの適用
     function player:status/update
