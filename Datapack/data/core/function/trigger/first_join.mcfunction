@@ -11,4 +11,5 @@
 # ステータス初期化処理
     attribute @s attack_speed base set 3.0
     attribute @s scale base set 0.92448
+    attribute @s oxygen_bonus base set 0
     function player:status/init
