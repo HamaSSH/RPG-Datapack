@@ -30,6 +30,7 @@
     scoreboard objectives add HArrow dummy "矢数"
     scoreboard objectives add MaxOxygen dummy "最大酸素"
     scoreboard objectives add Oxygen dummy "酸素"
+    scoreboard objectives add PreviousSlot dummy "前選択スロット"
     # 値
         scoreboard objectives add HP dummy "現HP"
         scoreboard objectives add MP dummy "現MP"

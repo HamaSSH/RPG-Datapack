@@ -8,6 +8,8 @@
     execute if score @s Rejoin matches 1.. run function core:trigger/rejoin
 
 # トリガー検知
+    function player:trigger/selected_slot/detect
+    execute if entity @s[advancements={core:inventory_changed=true}] run function player:trigger/inventory_changed
     execute if score @s RightClick matches 1.. run function player:trigger/right_click
 
 # ステータススコア関連
@@ -18,6 +20,9 @@
 
 # スキルバー
     execute unless score @s SkillTimer matches 560.. run scoreboard players add @s SkillTimer 1
+
+# ステータス更新
+    execute if entity @s[tag=StatusUpdate] run function player:status/update
 
 # アクションバーUI
     # プレイヤーが水中にいる時の処理

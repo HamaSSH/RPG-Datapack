@@ -61,6 +61,8 @@
 # 4. エンチャント
 
 # 5. 職業のパッシブによるステータス補正
+        scoreboard players set @s MaxPShield 3
+        scoreboard players set @s PShield 2
 
 # 6. 最大値を超えた場合の調整
     execute if score @s HP >= @s MaxHP run scoreboard players operation @s HP = @s MaxHP
