@@ -1,43 +1,51 @@
 #> player:actionbar/_
 # プレイヤーのアクションバーUI
 
-# 数値のあるUI
+# 動的な値のあるUI群
     data modify storage player:temp hp set value ["",{"text":"\uE100","shadow_color":0},{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
     data modify storage player:temp lvl set value [{"text":"","color":"#E0E0E0"},"Lv.\uF822",{"score":{"name":"@s","objective":"LVL"},"color":"white","bold":true},"\uF822(",{"score":{"name":"@s","objective":"EXP"},"color":"#9EE082"},"/",{"score":{"name":"@s","objective":"NextEXP"}},") "]
     data modify storage player:temp gold set value ["",{"score":{"name":"@s","objective":"Gold"}},{"text":"G","color":"#FFEE59"},"\uF822",{"text":"\uE101","shadow_color":0}]
+
 # HPバー
-    scoreboard players operation $MaxHP Temporary = @s MaxHP
-    scoreboard players operation $MaxHP Temporary /= #5 Constant
-    execute store result storage macro:temp hp_bar.value int 1 run scoreboard players add $MaxHP Temporary 10
-    function player:actionbar/hp_bar with storage macro:temp hp_bar
+    # HPの割合計算
+        scoreboard players operation $MaxHP Temporary = @s MaxHP
+        scoreboard players operation $MaxHP Temporary /= #5 Constant
+        execute store result storage macro:temp hp_bar.value int 1 run scoreboard players add $MaxHP Temporary 10
+    # 適用
+        function player:actionbar/hp_bar with storage macro:temp hp_bar
+
 # スキルバー
-    scoreboard players operation $SkillTimer Temporary = @s SkillTimer
-    scoreboard players operation $SkillTimer Temporary /= #20 Constant
-    scoreboard players add $SkillTimer Temporary 10
-    execute if entity @s run scoreboard players add $SkillTimer Temporary 40
-    execute store result storage macro:temp skill_bar.value int 1 run scoreboard players get $SkillTimer Temporary
-    function player:actionbar/skill_bar with storage macro:temp skill_bar
-# TODO: 職業用アイコン
-    execute store result storage macro:temp skill_icon.max_shield int 1 run scoreboard players get @s MaxPShield
-    execute store result storage macro:temp skill_icon.shield int 1 run scoreboard players get @s PShield
-    function player:actionbar/shield with storage macro:temp skill_icon
-    # execute store result storage macro:temp skill_icon.max_arrow int 1 run scoreboard players get @s MaxHArrow
-    # execute store result storage macro:temp skill_icon.arrow int 1 run scoreboard players get @s HArrow
-    # function player:actionbar/arrow with storage macro:temp skill_icon
+    # スキルクールダウンの割合計算
+        scoreboard players operation $SkillTimer Temporary = @s SkillTimer
+        scoreboard players operation $SkillTimer Temporary /= #20 Constant
+        scoreboard players add $SkillTimer Temporary 10
+        execute if entity @s run scoreboard players add $SkillTimer Temporary 40
+        execute store result storage macro:temp skill_bar.value int 1 run scoreboard players get $SkillTimer Temporary
+    # 適用
+        function player:actionbar/skill_bar with storage macro:temp skill_bar
+
+# 職業用アイコン
+    execute if predicate player:class/is_paladin run function player:actionbar/paladin/_
+    execute if predicate player:class/is_hunter run function player:actionbar/hunter/_
+
 # 酸素ゲージ
     data modify storage player:temp oxygen set value {"text":"\uE60A"}
-    scoreboard players operation $OxygenRatio Temporary = @s Oxygen
-    scoreboard players operation $OxygenRatio Temporary *= #100 Constant
-    scoreboard players operation $OxygenRatio Temporary /= @s MaxOxygen
-    execute if score $OxygenRatio Temporary matches 1 run data modify storage player:temp oxygen set value {"text":"\uE60B","shadow_color":0}
-    execute if score $OxygenRatio Temporary matches 21 run data modify storage player:temp oxygen set value {"text":"\uE60C","shadow_color":0}
-    execute if score $OxygenRatio Temporary matches 41 run data modify storage player:temp oxygen set value {"text":"\uE60D","shadow_color":0}
-    execute if score $OxygenRatio Temporary matches 61 run data modify storage player:temp oxygen set value {"text":"\uE60E","shadow_color":0}
-    execute if score $OxygenRatio Temporary matches 81 run data modify storage player:temp oxygen set value {"text":"\uE60F","shadow_color":0}
-    scoreboard players add $OxygenRatio Temporary 19
-    scoreboard players operation $OxygenRatio Temporary /= #20 Constant
-    execute store result storage macro:temp oxygen.value int 1 run scoreboard players get $OxygenRatio Temporary
-    execute unless score @s Oxygen = @s MaxOxygen run function player:actionbar/oxygen with storage macro:temp oxygen
+    # 酸素ゲージの割合を計算
+        scoreboard players operation $OxygenRatio Temporary = @s Oxygen
+        scoreboard players operation $OxygenRatio Temporary *= #100 Constant
+        scoreboard players operation $OxygenRatio Temporary /= @s MaxOxygen
+    # 気泡が破裂するアイコン
+        execute if entity @s[tag=Underwater] if score $OxygenRatio Temporary matches 1 run data modify storage player:temp oxygen set value {"text":"\uE60B","shadow_color":0}
+        execute if entity @s[tag=Underwater] if score $OxygenRatio Temporary matches 21 run data modify storage player:temp oxygen set value {"text":"\uE60C","shadow_color":0}
+        execute if entity @s[tag=Underwater] if score $OxygenRatio Temporary matches 41 run data modify storage player:temp oxygen set value {"text":"\uE60D","shadow_color":0}
+        execute if entity @s[tag=Underwater] if score $OxygenRatio Temporary matches 61 run data modify storage player:temp oxygen set value {"text":"\uE60E","shadow_color":0}
+        execute if entity @s[tag=Underwater] if score $OxygenRatio Temporary matches 81 run data modify storage player:temp oxygen set value {"text":"\uE60F","shadow_color":0}
+    # 割合に応じて気泡アイコンを表示
+        scoreboard players add $OxygenRatio Temporary 19
+        scoreboard players operation $OxygenRatio Temporary /= #20 Constant
+        execute store result storage macro:temp oxygen.value int 1 run scoreboard players get $OxygenRatio Temporary
+    # 酸素ゲージが満タンの時は非表示
+        execute unless score @s Oxygen = @s MaxOxygen run function player:actionbar/oxygen with storage macro:temp oxygen
 
 # 1. HPの表示
     # title @s actionbar ["",{"text":"\uE100","shadow_color":0},{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
