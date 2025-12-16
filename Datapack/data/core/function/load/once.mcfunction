@@ -14,6 +14,9 @@
     scoreboard objectives add Constant dummy "定数"
     function core:load/constant
 
+# teamの設定
+    function core:load/team
+
 # ステータス用スコア
     scoreboard objectives add HPRatio dummy "HP割合"
     scoreboard objectives setdisplay list HPRatio
