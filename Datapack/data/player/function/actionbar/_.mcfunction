@@ -2,9 +2,9 @@
 # プレイヤーのアクションバーUI
 
 # 動的な値のあるUI群
-    data modify storage player:temp hp set value ["",{"text":"\uE100","shadow_color":0},{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
-    data modify storage player:temp lvl set value [{"text":"","color":"#E0E0E0"},"Lv.\uF822",{"score":{"name":"@s","objective":"LVL"},"color":"white","bold":true},"\uF822(",{"score":{"name":"@s","objective":"EXP"},"color":"#9EE082"},"/",{"score":{"name":"@s","objective":"NextEXP"}},") "]
-    data modify storage player:temp gold set value ["",{"score":{"name":"@s","objective":"Gold"}},{"text":"G","color":"#FFEE59"},"\uF822",{"text":"\uE101","shadow_color":0}]
+    data modify storage player:temp hp set value [{"text":"","font":"y-22px"},{"text":"\uE100","shadow_color":0},"\uF822",{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
+    data modify storage player:temp lvl set value [{"text":"","color":"#E0E0E0","font":"y-16px"},"Lv.\uF822",{"score":{"name":"@s","objective":"LVL"},"color":"white","bold":true},"\uF822(",{"score":{"name":"@s","objective":"EXP"},"color":"#9EE082"},"/",{"score":{"name":"@s","objective":"NextEXP"}},") "]
+    data modify storage player:temp gold set value [{"text":"","font":"y-16px"},{"score":{"name":"@s","objective":"Gold"}},{"text":"G","color":"#FFEE59"},"\uF822",{"text":"\uE101","shadow_color":0}]
 
 # HPバー
     # HPの割合計算
@@ -47,40 +47,20 @@
     # 酸素ゲージが満タンの時は非表示
         execute unless score @s Oxygen = @s MaxOxygen run function player:actionbar/oxygen with storage macro:temp oxygen
 
-# 1. HPの表示
-    # title @s actionbar ["",{"text":"\uE100","shadow_color":0},{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
-
-# 2. storageに入れる
-    # title @s actionbar ["",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 3. 右揃え
-    # title @s actionbar ["","\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 4. LVL,Goldの表示
-    # title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 5. HPバーの表示
-    # title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"hp_bar","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 6. スキルバーの表示
-    # title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"hp_bar","storage":"player:temp","interpret":true},{"nbt":"skill_bar","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 7. 職業スキル用アイコン
-    # title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"hp_bar","storage":"player:temp","interpret":true},{"nbt":"skill_icon","storage":"player:temp","interpret":true},{"nbt":"skill_bar","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 8. 酸素ゲージ
-    title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"hp_bar","storage":"player:temp","interpret":true},{"nbt":"skill_icon","storage":"player:temp","interpret":true},{"nbt":"skill_bar","storage":"player:temp","interpret":true},{"nbt":"oxygen","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
-# 9. バフ用アイコン
-
-# 10.縦合わせ
-    # data modify storage player:temp hp set value [{"text":"","font":"y-22px"},{"text":"\uE100","shadow_color":0},{"score":{"name":"@s","objective":"HP"}},"/",{"score":{"name":"@s","objective":"MaxHP"}}]
-    # data modify storage player:temp lvl set value [{"text":"","color":"#E0E0E0","font":"y-16px"},"Lv.\uF822",{"score":{"name":"@s","objective":"LVL"},"color":"white","bold":true},"\uF822(",{"score":{"name":"@s","objective":"EXP"},"color":"#9EE082"},"/",{"score":{"name":"@s","objective":"NextEXP"}},") "]
-    # data modify storage player:temp gold set value [{"text":"","font":"y-16px"},{"score":{"name":"@s","objective":"Gold"}},{"text":"G","color":"#FFEE59"},"\uF822",{"text":"\uE101","shadow_color":0}]
-
-# 11. 横合わせ
-    # title @s actionbar ["",{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F","\uF80B\uF828\uF823",{"nbt":"hp","storage":"player:temp","interpret":true},{"nbt":"hp_bar","storage":"player:temp","interpret":true},{"nbt":"skill_icon","storage":"player:temp","interpret":true},{"nbt":"skill_bar","storage":"player:temp","interpret":true},{"nbt":"lvl","storage":"player:temp","interpret":true},{"nbt":"gold","storage":"player:temp","interpret":true},"\uF82F",{"nbt":"hp","storage":"player:temp","interpret":true}]
-
+# UIの表示
+   title @s actionbar ["",\
+   {"nbt":"lvl","storage":"player:temp","interpret":true},\
+   {"nbt":"gold","storage":"player:temp","interpret":true},\
+   "\uF82F",{"translate":"space.-79"},\
+   {"nbt":"hp","storage":"player:temp","interpret":true},{"translate":"space.6"},\
+   {"nbt":"hp_bar","storage":"player:temp","interpret":true},\
+   {"nbt":"skill_icon","storage":"player:temp","interpret":true},{"translate":"space.53"},\
+   {"nbt":"skill_bar","storage":"player:temp","interpret":true},{"translate":"space.2"},\
+   {"nbt":"oxygen","storage":"player:temp","interpret":true},{"translate":"space.-126"},\
+   {"nbt":"lvl","storage":"player:temp","interpret":true},\
+   {"nbt":"gold","storage":"player:temp","interpret":true},\
+   {"translate":"space.8"},"\uF82F",\
+   {"nbt":"hp","storage":"player:temp","interpret":true}]
 
 # リセット
     data remove storage player:temp hp
