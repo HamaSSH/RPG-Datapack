@@ -3,3 +3,6 @@
 
 # ステータスの更新
     tag @s add StatusUpdate
+
+# リセット
+    advancement revoke @s only core:inventory_changed
