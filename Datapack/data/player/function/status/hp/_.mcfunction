@@ -22,7 +22,7 @@
     execute store result storage macro:temp hp_ratio.value int 1 run scoreboard players get $HPRatio Temporary
 
 # HPハートの適用
-    function player:status/hp/bar/_ with storage macro:temp hp_ratio
+    function player:status/hp/bar/set.m with storage macro:temp hp_ratio
     effect give @s health_boost infinite 0 true
     effect clear @s health_boost
 

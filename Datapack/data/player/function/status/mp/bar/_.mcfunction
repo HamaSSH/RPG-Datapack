@@ -17,12 +17,12 @@
     xp set @s 0 points
     scoreboard players operation $XPBarPoints Temporary += $XPBarDif Temporary
     execute store result storage macro:temp xp_bar.point int 1 run scoreboard players get $XPBarPoints Temporary
-    function player:status/mp/bar/set_point with storage macro:temp xp_bar
+    function player:status/mp/bar/set_point.m with storage macro:temp xp_bar
 
 # レベル数値加算
     xp set @s 0 levels
     execute store result storage macro:temp xp_bar.level int 1 run scoreboard players get $XPBarLevels Temporary
-    function player:status/mp/bar/set_level with storage macro:temp xp_bar
+    function player:status/mp/bar/set_level.m with storage macro:temp xp_bar
 
 # MPに変化がある時だけfunctionを常時実行
     scoreboard players set @s PrevMPRatio -1

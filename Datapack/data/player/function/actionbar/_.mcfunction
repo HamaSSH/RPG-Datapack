@@ -12,7 +12,7 @@
         scoreboard players operation $MaxHP Temporary /= #5 Constant
         execute store result storage macro:temp hp_bar.value int 1 run scoreboard players add $MaxHP Temporary 10
     # 適用
-        function player:actionbar/hp_bar with storage macro:temp hp_bar
+        function player:actionbar/hp_bar.m with storage macro:temp hp_bar
 
 # スキルバー
     # スキルクールダウンの割合計算
@@ -22,7 +22,7 @@
         execute if entity @s run scoreboard players add $SkillTimer Temporary 40
         execute store result storage macro:temp skill_bar.value int 1 run scoreboard players get $SkillTimer Temporary
     # 適用
-        function player:actionbar/skill_bar with storage macro:temp skill_bar
+        function player:actionbar/skill_bar.m with storage macro:temp skill_bar
 
 # 職業用アイコン
     data modify storage player:temp skill_icon set value "\uE400"
@@ -46,7 +46,7 @@
         scoreboard players operation $OxygenRatio Temporary /= #20 Constant
         execute store result storage macro:temp oxygen.value int 1 run scoreboard players get $OxygenRatio Temporary
     # 酸素ゲージが満タンの時は非表示
-        execute unless score @s Oxygen = @s MaxOxygen run function player:actionbar/oxygen with storage macro:temp oxygen
+        execute unless score @s Oxygen = @s MaxOxygen run function player:actionbar/oxygen.m with storage macro:temp oxygen
 
 # UIの表示
    title @s actionbar ["",\

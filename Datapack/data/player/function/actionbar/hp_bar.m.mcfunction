@@ -1,4 +1,4 @@
-#> player:actionbar/hp_bar
+#> player:actionbar/hp_bar.m
 # 最大HPごとのHPバー表示
 
 execute if score $MaxHP Temporary matches ..9 run data modify storage player:temp hp_bar set value {"text":"\uE211","shadow_color":0}

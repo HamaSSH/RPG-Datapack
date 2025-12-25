@@ -4,4 +4,4 @@
 # マクロでアイコンを設定
     execute store result storage macro:temp skill_icon.max_shield int 1 run scoreboard players get @s MaxPShield
     execute store result storage macro:temp skill_icon.shield int 1 run scoreboard players get @s PShield
-    function player:actionbar/paladin/shield with storage macro:temp skill_icon
+    function player:actionbar/paladin/shield.m with storage macro:temp skill_icon
