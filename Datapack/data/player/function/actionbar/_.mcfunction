@@ -25,11 +25,12 @@
         function player:actionbar/skill_bar with storage macro:temp skill_bar
 
 # 職業用アイコン
+    data modify storage player:temp skill_icon set value "\uE400"
     execute if predicate player:class/is_paladin run function player:actionbar/paladin/_
     execute if predicate player:class/is_hunter run function player:actionbar/hunter/_
 
 # 酸素ゲージ
-    data modify storage player:temp oxygen set value {"text":"\uE60A"}
+    data modify storage player:temp oxygen set value "\uE60A"
     # 酸素ゲージの割合を計算
         scoreboard players operation $OxygenRatio Temporary = @s Oxygen
         scoreboard players operation $OxygenRatio Temporary *= #100 Constant
