@@ -1,6 +1,5 @@
 {
 	"env": {
-		"dataSource": "GitHub",
 		"dependencies": [
 			"@vanilla-mcdoc"
 		],
@@ -22,12 +21,10 @@
 			"selectionRanges": true,
 			"signatures": true
 		},
-		"gameVersion": "1.21.6",
-		"language": "Default",
+		"gameVersion": "26.3 Snapshot 6",
 		"permissionLevel": 2,
 		"plugins": [],
-		"mcmetaSummaryOverrides": {},
-		"useFilePolling": false
+		"mcmetaSummaryOverrides": {}
 	},
 	"format": {
 		"blockStateBracketSpacing": { "inside": 0 },
