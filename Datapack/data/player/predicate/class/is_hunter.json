@@ -1,22 +1,22 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Hunter"
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Hunter1"
             }
         },
         {
-            "condition": "entity_properties",
+            "type": "entity_properties",
             "entity": "this",
             "predicate": {
                 "team": "Hunter2"
