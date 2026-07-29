@@ -1,0 +1,11 @@
+{
+    "type": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "location": {
+            "fluid": {
+                "fluids": "#lava"
+            }
+        }
+    }
+}
