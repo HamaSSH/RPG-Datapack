@@ -4,6 +4,11 @@
 # データパックのバージョン
     data modify storage global: version set value "v0.3.0"
 
+# 汎用エンティティ・ストレージ 83a-51-1-X-X
+    execute in overworld run summon marker 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,0]}
+    execute in overworld run summon armor_stand 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,1],Marker:1b,Invisible:1b}
+    execute in overworld run setblock 0 0 0 white_shulker_box
+
 # スコアボード
     scoreboard objectives add Rejoin custom:leave_game "ワールドRejoin処理"
     scoreboard objectives add RightClick used:warped_fungus_on_a_stick "右クリック"
