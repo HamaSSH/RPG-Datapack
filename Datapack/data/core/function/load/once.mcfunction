@@ -17,7 +17,11 @@
 # teamの設定
     function core:load/team
 
+# ゲームルールの設定
+    function core:load/gamerule
+
 # ステータス用スコア
+    scoreboard objectives add DmgReceived dummy "被ダメージ"
     scoreboard objectives add HPRatio dummy "HP割合"
     scoreboard objectives setdisplay list HPRatio
     scoreboard objectives modify HPRatio rendertype hearts
