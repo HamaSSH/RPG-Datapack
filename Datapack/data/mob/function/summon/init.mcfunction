@@ -8,7 +8,7 @@
     execute store result score @s HP run data get storage mob:temp data.hp
     execute store result score @s HPMax run data get storage mob:temp data.hp
     execute store result score @s DmgDealt run data get storage mob:temp data.dmg
-    execute store result score @s data run data get storage mob:temp data.data
+    execute store result score @s DEF run data get storage mob:temp data.def
     execute store result score @s LVL run data get storage mob:temp data.lvl
     execute store result score @s EXP run data get storage mob:temp data.exp
     execute store result score @s Gold run data get storage mob:temp data.gold
