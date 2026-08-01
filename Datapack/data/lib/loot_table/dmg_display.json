@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void",
+                    "modifier": [
+                        {
+                            "type": "set_custom_data",
+                            "tag": "{Tags:[\"DmgDisplay\"]}"
+                        },
+                        {
+                            "type": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "nbt": "Damage.name",
+                                "storage": "lib:temp",
+                                "interpret": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
