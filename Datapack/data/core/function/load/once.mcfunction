@@ -29,6 +29,11 @@
     function core:load/gamerule
 
 # ステータス用スコア
+    scoreboard objectives add PreviousAGI dummy "AGI変更検知"
+    scoreboard objectives add PreviousLUK dummy "LUK変更検知"
+    scoreboard objectives add EXPGained dummy "取得予定経験値"
+    scoreboard objectives add GoldTimer dummy "ゴールド表示Timer"
+    scoreboard objectives add GoldDisplay dummy "ゴールド表示用スコア"
     scoreboard objectives add DmgReceived dummy "被ダメージ"
     scoreboard objectives add HPMax dummy "最大HP(モブ)"
     scoreboard objectives add DmgDealt dummy "与ダメージ"

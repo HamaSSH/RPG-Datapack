@@ -5,4 +5,4 @@
     tag @s add StatusUpdate
 
 # リセット
-    advancement revoke @s only core:inventory_changed
+    advancement revoke @s only player:trigger/inventory_changed

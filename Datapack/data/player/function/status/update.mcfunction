@@ -87,6 +87,10 @@
     execute if score @s LUK matches ..0 run scoreboard players set @s LUK 0
 
 # 8. スコアを元にしたattributeの設定
+    execute unless score @s PreviousAGI = @s AGI run function player:status/agi/_
+    scoreboard players operation @s PreviousAGI = @s AGI
+    execute unless score @s PreviousLUK = @s LUK run function player:status/luk/_
+    scoreboard players operation @s PreviousLUK = @s LUK
 
 # 9. HP/MPを最大にするタグ
 

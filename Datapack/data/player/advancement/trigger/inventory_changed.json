@@ -1,0 +1,7 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "inventory_changed"
+        }
+    }
+}
