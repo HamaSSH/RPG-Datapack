@@ -1,0 +1,40 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "translate": ""
+    },
+    "effects": {
+        "post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "attacker",
+                "effect": {
+                    "type": "run_function",
+                    "function": "player:trigger/on_attack"
+                }
+            },
+            {
+                "enchanted": "victim",
+                "affected": "victim",
+                "effect": {
+                    "type": "run_function",
+                    "function": "mob:trigger/on_hurt"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": [
+        "any"
+    ],
+    "supported_items": [],
+    "weight": 1
+}

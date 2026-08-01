@@ -19,6 +19,9 @@
     scoreboard objectives add Constant dummy "定数"
     function core:load/constant
 
+# モブ用の定義データ
+    function mob:def/hp_bar
+
 # teamの設定
     function core:load/team
 
@@ -27,6 +30,13 @@
 
 # ステータス用スコア
     scoreboard objectives add DmgReceived dummy "被ダメージ"
+    scoreboard objectives add HPMax dummy "最大HP(モブ)"
+    scoreboard objectives add DmgDealt dummy "与ダメージ"
+    scoreboard objectives add MobUUID dummy "モブ識別子"
+    scoreboard objectives add HurtTime dummy "無敵時間"
+    scoreboard objectives add InCombat dummy "戦闘中タイマー"
+    scoreboard objectives add MobTick dummy "モブ用tickカウンタ"
+    scoreboard objectives add Timer dummy "汎用タイマー"
     scoreboard objectives add HPRatio dummy "HP割合"
     scoreboard objectives setdisplay list HPRatio
     scoreboard objectives modify HPRatio rendertype hearts
