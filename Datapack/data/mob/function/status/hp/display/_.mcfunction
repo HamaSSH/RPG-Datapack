@@ -1,5 +1,7 @@
 #> mob:status/hp/display/_
 # モブのCustomName表示更新（HPバー+名前）
+# 前提: 呼び出し元が事前に `mob:temp data` を用意していること
+# （summon/init・tick・on_hurtはいずれも呼び出し前に用意済み）
 
 # HP割合（0〜40）を計算
     scoreboard players operation @s HPRatio = @s HP
@@ -21,11 +23,11 @@
         execute store result storage macro:temp hp_display.right int 1 run scoreboard players get $HPBarRight Temporary
 
 # 名前の文字数スペース幅のインデックスを計算
-    execute store result score $NameChar Temporary run data get entity @s data.name_char
+    execute store result score $NameChar Temporary run data get storage mob:temp data.name_char
     execute store result storage macro:temp hp_display.space int 1 run scoreboard players get $NameChar Temporary
 
 # マクロ引数を用意して適用
-    data modify storage macro:temp hp_display.name set from entity @s data.name
+    data modify storage macro:temp hp_display.name set from storage mob:temp data.name
     function mob:status/hp/display/apply.m with storage macro:temp hp_display
 
 # InCombatが0の時はリセット

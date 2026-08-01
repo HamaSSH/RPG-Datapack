@@ -1,6 +1,9 @@
 #> mob:trigger/on_hurt
 # ダメージを受けた際の処理
 
+# dataをstorageへ
+    data modify storage mob:temp data set from entity @s data
+
 # ダメージ量
     # TODO: プレイヤーの攻撃力からDmgReceivedを算出
     execute unless score @s DmgReceived matches -2147483648..2147483647 run scoreboard players set @s DmgReceived 100
@@ -16,8 +19,8 @@
     execute if data storage lib:temp Damage{Critical:1b} run particle crit ~ ~0.1 ~ 0 0 0 0.7 20 force
 
 # モブ固有のhurt処理
-    execute if data entity @s {data:{triggers:["hurt"]}} run data modify storage macro:temp mob.id set from entity @s data.id
-    execute if data entity @s {data:{triggers:["hurt"]}} run function mob:macro/hurt.m with storage macro:temp mob
+    execute if data storage mob:temp data{triggers:["hurt"]} run data modify storage macro:temp mob.id set from storage mob:temp data.id
+    execute if data storage mob:temp data{triggers:["hurt"]} run function mob:macro/hurt.m with storage macro:temp mob
 
 # HP表示の更新
     function mob:status/hp/display/_
@@ -32,5 +35,6 @@
 
 # リセット
     tag @a remove Attacker
+    data remove storage mob:temp data
     data remove storage macro:temp mob
     scoreboard players reset @s DmgReceived
