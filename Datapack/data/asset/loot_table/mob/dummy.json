@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "uniform",
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bone"
+                }
+            ]
+        }
+    ]
+}
