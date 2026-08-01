@@ -7,8 +7,8 @@ gamerule command_block_output false
 gamerule max_block_modifications 32768
 gamerule elytra_movement_check true
 gamerule raids false
-execute if data storage global: {IsProduction:1b} run gamerule advance_time true
-execute if data storage global: {IsProduction:0b} run gamerule advance_time false
+execute if data storage global: {is_production:1b} run gamerule advance_time true
+execute if data storage global: {is_production:0b} run gamerule advance_time false
 gamerule entity_drops false
 gamerule fire_spread_radius_around_player 0
 gamerule immediate_respawn true
@@ -31,8 +31,8 @@ gamerule freeze_damage true
 gamerule global_sound_events true
 gamerule keep_inventory true
 gamerule lava_source_conversion true
-execute if data storage global: {IsProduction:1b} run gamerule log_admin_commands false
-execute if data storage global: {IsProduction:0b} run gamerule log_admin_commands true
+execute if data storage global: {is_production:1b} run gamerule log_admin_commands false
+execute if data storage global: {is_production:0b} run gamerule log_admin_commands true
 gamerule max_command_sequence_length 65536
 gamerule max_command_forks 65536
 gamerule max_entity_cramming 24
@@ -45,10 +45,10 @@ gamerule players_nether_portal_default_delay 1000000000
 gamerule players_sleeping_percentage 200
 gamerule projectiles_can_break_blocks false
 gamerule random_tick_speed 3
-execute if data storage global: {IsProduction:1b} run gamerule reduced_debug_info true
-execute if data storage global: {IsProduction:0b} run gamerule reduced_debug_info false
-execute if data storage global: {IsProduction:1b} run gamerule send_command_feedback false
-execute if data storage global: {IsProduction:0b} run gamerule send_command_feedback true
+execute if data storage global: {is_production:1b} run gamerule reduced_debug_info true
+execute if data storage global: {is_production:0b} run gamerule reduced_debug_info false
+execute if data storage global: {is_production:1b} run gamerule send_command_feedback false
+execute if data storage global: {is_production:0b} run gamerule send_command_feedback true
 gamerule show_death_messages false
 gamerule max_snow_accumulation_height 0
 gamerule respawn_radius 0
