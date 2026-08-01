@@ -1,0 +1,70 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "lib:item/gold_1",
+                    "modifier": [
+                        {
+                            "type": "set_count",
+                            "count": {
+                                "type": "score",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "$1G"
+                                },
+                                "score": "Temporary"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "lib:item/gold_10",
+                    "modifier": [
+                        {
+                            "type": "set_count",
+                            "count": {
+                                "type": "score",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "$10G"
+                                },
+                                "score": "Temporary"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "lib:item/gold_100",
+                    "modifier": [
+                        {
+                            "type": "set_count",
+                            "count": {
+                                "type": "score",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "$100G"
+                                },
+                                "score": "Temporary"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

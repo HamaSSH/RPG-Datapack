@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "modifier": [
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "resource:others/gold/100"
+                            }
+                        },
+                        {
+                            "type": "set_custom_data",
+                            "tag": "{item_type:\"gold\",value:100}"
+                        },
+                        {
+                            "type": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "100",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "G",
+                                    "color": "#FFEE59"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

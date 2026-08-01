@@ -10,9 +10,14 @@ tag @s add Dead
     execute if data storage mob:temp data{triggers:["death"]} run data modify storage macro:temp mob.id set from storage mob:temp data.id
     execute if data storage mob:temp data{triggers:["death"]} run function mob:macro/death.m with storage macro:temp mob
 
-# TODO: ドロップとプレイヤー連携
-    # ドロップ（loot / exp / gold）— PlayerID・EXPGained・幸運補正
-    # 実績達成チェック・キル数カウント
+# アイテムドロップ
+    execute if data storage mob:temp data.loot_table run function mob:trigger/on_death/drop/loot
+
+# ゴールド・EXPドロップ
+    execute as @p[tag=Attacker] run function mob:trigger/on_death/drop/gold/_
+    execute as @p[tag=Attacker] run function mob:trigger/on_death/drop/exp/_
+
+# TODO: 実績達成チェック・キル数カウント
 
 # リセット
     data remove storage mob:temp data
