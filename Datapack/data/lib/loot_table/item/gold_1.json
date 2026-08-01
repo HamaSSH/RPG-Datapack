@@ -19,12 +19,10 @@
                         },
                         {
                             "type": "set_name",
+                            "target": "item_name",
                             "entity": "this",
                             "name": [
-                                {
-                                    "text": "1",
-                                    "italic": false
-                                },
+                                "1",
                                 {
                                     "text": "G",
                                     "color": "#FFEE59"
